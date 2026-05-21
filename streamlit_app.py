@@ -349,3 +349,4 @@ elif st.session_state.page == "learn":
     learn()
 elif st.session_state.page == "quiz":
     quiz()
+
