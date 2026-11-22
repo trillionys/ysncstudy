@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.CpaConceptLab" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#0B1F3A</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+</resources>

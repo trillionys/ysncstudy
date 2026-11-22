@@ -77,6 +77,11 @@ android {
             it.systemProperty("schemaDir", file("schemas").absolutePath)
             it.systemProperty("reportDir", layout.buildDirectory.dir("reports/content").get().asFile.absolutePath)
             it.maxHeapSize = "2g"
+            // Robolectric 안드로이드 런타임 jar 다운로드 저장소(Maven Central 요청 제한 시 미러 사용)
+            it.systemProperty(
+                "robolectric.dependency.repo.url",
+                (project.findProperty("robolectricRepo") as String?) ?: "https://maven-central.storage-download.googleapis.com/maven2",
+            )
         }
     }
     packaging {
@@ -108,6 +113,7 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlinx.coroutines.android)
     debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
 
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
@@ -115,4 +121,6 @@ dependencies {
     testImplementation(libs.androidx.test.ext.junit)
     testImplementation(libs.robolectric)
     testImplementation(libs.androidx.room.testing)
+    testImplementation(platform(libs.androidx.compose.bom))
+    testImplementation(libs.androidx.ui.test.junit4)
 }

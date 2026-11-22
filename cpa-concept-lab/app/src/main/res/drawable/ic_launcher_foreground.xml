@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- 펼친 책 + 체크 표시: 개념 학습과 정답 확인을 상징 -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M30,38 L52,42 L52,74 L30,70 Z" />
+    <path android:fillColor="#DCE6F5"
+        android:pathData="M56,42 L78,38 L78,70 L56,74 Z" />
+    <path android:strokeColor="#3B82F6" android:strokeWidth="4" android:fillColor="#00000000"
+        android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M60,57 L65,62 L74,50" />
+</vector>

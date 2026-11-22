@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+ 클라우드 백업 및 기기 간 이전 규칙 -->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="cpa_concept_lab.db" />
+        <include domain="database" path="cpa_concept_lab.db-wal" />
+        <include domain="database" path="cpa_concept_lab.db-shm" />
+        <include domain="file" path="datastore/" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="cpa_concept_lab.db" />
+        <include domain="database" path="cpa_concept_lab.db-wal" />
+        <include domain="database" path="cpa_concept_lab.db-shm" />
+        <include domain="file" path="datastore/" />
+    </device-transfer>
+</data-extraction-rules>

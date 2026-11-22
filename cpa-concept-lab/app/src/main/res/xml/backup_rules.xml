@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 이하 Auto Backup: 학습기록 DB 와 설정(DataStore)을 포함한다. 자동복원은 기기·계정 환경에 따라 보장되지 않으므로 앱 내 수동 백업도 제공한다. -->
+<full-backup-content>
+    <include domain="database" path="cpa_concept_lab.db" />
+    <include domain="database" path="cpa_concept_lab.db-wal" />
+    <include domain="database" path="cpa_concept_lab.db-shm" />
+    <include domain="file" path="datastore/" />
+</full-backup-content>

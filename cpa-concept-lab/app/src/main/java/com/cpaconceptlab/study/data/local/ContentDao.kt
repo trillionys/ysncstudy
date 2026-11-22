@@ -1,0 +1,56 @@
+package com.cpaconceptlab.study.data.local
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Upsert
+import kotlinx.coroutines.flow.Flow
+
+@Dao
+interface ContentDao {
+    @Upsert suspend fun upsertSubjects(items: List<SubjectEntity>)
+    @Upsert suspend fun upsertChapters(items: List<ChapterEntity>)
+    @Upsert suspend fun upsertSections(items: List<SectionEntity>)
+    @Upsert suspend fun upsertExamScopes(items: List<ExamScopeEntity>)
+    @Upsert suspend fun upsertConcepts(items: List<ConceptEntity>)
+    @Upsert suspend fun upsertQuestions(items: List<QuestionEntity>)
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insertCrossRefs(items: List<QuestionConceptCrossRef>)
+
+    @Query("DELETE FROM question_concepts WHERE questionId IN (:questionIds)")
+    suspend fun deleteCrossRefsFor(questionIds: List<String>)
+
+    @Insert suspend fun insertContentVersion(item: ContentVersionEntity): Long
+
+    @Upsert suspend fun upsertImportedPack(item: ImportedPackEntity)
+
+    @Query("SELECT * FROM imported_packs ORDER BY importedAt")
+    suspend fun importedPacks(): List<ImportedPackEntity>
+
+    @Query("SELECT * FROM subjects ORDER BY sortOrder") suspend fun subjects(): List<SubjectEntity>
+    @Query("SELECT * FROM chapters ORDER BY sortOrder") suspend fun chapters(): List<ChapterEntity>
+    @Query("SELECT * FROM sections ORDER BY sortOrder") suspend fun sections(): List<SectionEntity>
+    @Query("SELECT * FROM exam_scopes ORDER BY number") suspend fun examScopes(): List<ExamScopeEntity>
+    @Query("SELECT * FROM concepts ORDER BY sortOrder") suspend fun concepts(): List<ConceptEntity>
+    @Query("SELECT * FROM questions ORDER BY sortOrder") suspend fun questions(): List<QuestionEntity>
+    @Query("SELECT * FROM question_concepts") suspend fun crossRefs(): List<QuestionConceptCrossRef>
+
+    @Query("SELECT id, revision FROM concepts") suspend fun conceptRevisions(): List<IdRevision>
+    @Query("SELECT id, revision FROM questions") suspend fun questionRevisions(): List<IdRevision>
+
+    @Query("SELECT * FROM content_versions ORDER BY id DESC")
+    fun contentVersionsFlow(): Flow<List<ContentVersionEntity>>
+
+    @Query("SELECT * FROM content_versions ORDER BY id DESC")
+    suspend fun contentVersions(): List<ContentVersionEntity>
+
+    @Query("SELECT MAX(version) FROM content_versions WHERE source = 'bundled'")
+    suspend fun bundledVersion(): Int?
+
+    @Query("SELECT COUNT(*) FROM concepts WHERE isActive = 1") suspend fun activeConceptCount(): Int
+    @Query("SELECT COUNT(*) FROM questions WHERE isActive = 1") suspend fun activeQuestionCount(): Int
+}
+
+data class IdRevision(val id: String, val revision: Int)
