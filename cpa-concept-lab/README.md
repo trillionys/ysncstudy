@@ -2,19 +2,19 @@
 
 CPA 재무회계 개념을 **개념 학습 → 초성 힌트 빈칸(기본) → 무힌트 빈칸(심화) → 오답·간격 복습** 순서로 장기기억에 남기기 위한 네이티브 Android 앱입니다. 모든 기능은 오프라인에서 동작합니다.
 
-- 패키지: `com.cpaconceptlab.study` · 버전 1.0.0 (versionCode 1) · minSdk 26(Android 8.0) / targetSdk 35
+- 패키지: `com.cpaconceptlab.study` · 버전 1.0.1 (versionCode 2) · 콘텐츠 v2 · minSdk 26(Android 8.0) / targetSdk 35
 - 기술: Kotlin 2.0, Jetpack Compose + Material 3, MVVM, Room(스키마 v2, 명시적 마이그레이션), Coroutines/Flow, DataStore, Navigation Compose, kotlinx.serialization, Storage Access Framework
-- 설치 파일: [`dist/CPAConceptLab-1.0.0-debug.apk`](dist/CPAConceptLab-1.0.0-debug.apk) (디버그 서명)
+- 설치 파일: [`dist/CPAConceptLab-1.0.1-debug.apk`](dist/CPAConceptLab-1.0.1-debug.apk) (디버그 서명)
 
 ## 1. 설치
 
-1. 휴대폰에서 이 저장소의 `cpa-concept-lab/dist/CPAConceptLab-1.0.0-debug.apk`를 내려받습니다.
+1. 휴대폰에서 이 저장소의 `cpa-concept-lab/dist/CPAConceptLab-1.0.1-debug.apk`를 내려받습니다.
 2. 파일을 열고 "출처를 알 수 없는 앱 설치"를 허용한 뒤 설치합니다.
 3. 첫 실행 때 앱에 들어 있는 콘텐츠(개념 285개, 문항 600개)가 데이터베이스에 등록됩니다.
 
 > 새 버전으로 업데이트할 때는 **앱을 삭제하지 말고** 새 APK를 그 위에 설치하세요. 그래야 학습기록이 유지됩니다. 자세한 내용은 [UPDATE_GUIDE.md](UPDATE_GUIDE.md)를 참고하세요.
 
-## 2. 수록 콘텐츠(v1)
+## 2. 수록 콘텐츠(v2)
 
 | 대단원 | 개념 | 문항 |
 |---|---|---|
@@ -36,6 +36,10 @@ CPA 재무회계 개념을 **개념 학습 → 초성 힌트 빈칸(기본) → 
 - 기출 01~46번 출제범위를 각각 하나 이상의 개념에 연결했고, 범위마다 3문항 이상이 연결되어 있습니다. 기출 원문은 수록하지 않았으며, 문제번호는 범위 추적용으로만 씁니다.
 - 기준 표시: 각 개념·문항에 `[현재 기준]`, `[시행 예정 기준]`, `[과거 기준]`, `[개정사항 확인 필요]`를 표시합니다. K-IFRS 제1118호는 2027.1.1부터 시행되므로 2026년 기기 날짜에서는 "시행 예정"으로 보입니다. 원문 대조가 더 필요한 항목(제1118호 금융제공기업 선택권, 제1001호→제1008호 이관 조문 등)은 확정하지 않고 "개정사항 확인 필요"로 남겼습니다.
 - 검증 결과: [docs/CONTENT_VALIDATION_REPORT.md](docs/CONTENT_VALIDATION_REPORT.md), [docs/content-validation.txt](docs/content-validation.txt)
+
+### 변경 이력
+- **1.0.1 (versionCode 2, 콘텐츠 v2)**: 600개 문항 전체에 관련 개념(relatedConceptIds)을 연결하고, 대단원별 기준 시행일(effectiveFrom)을 채웠습니다. 대단원 A는 회계기준이 아닌 경제 이론이라 시행일이 없습니다. 모든 항목의 revision을 2로 올려, 1.0.0 위에 설치하면 학습기록은 유지된 채 콘텐츠만 갱신됩니다.
+- 1.0.0 (versionCode 1, 콘텐츠 v1): 최초 버전입니다.
 
 ## 3. 주요 기능
 
@@ -76,7 +80,7 @@ cpa-concept-lab/
     domain/usecase    출제 엔진, 복습 스케줄러, 숙달도·통계 계산
     ui/…              home, subjects, concepts, quiz, review, statistics, settings, theme, components
     utils             초성 추출
-  app/src/main/assets/content   manifest.json, structure_v1.json, concepts_v1.json, questions_v1.json
+  app/src/main/assets/content   manifest.json, structure_v2.json, concepts_v2.json, questions_v2.json
   app/schemas                   Room 스키마 1.json, 2.json
   tools/content                 콘텐츠 원본(파이썬 DSL)과 필수 개념 목록·출제범위 매핑
   tools/build_content.py        콘텐츠 검증과 JSON 생성

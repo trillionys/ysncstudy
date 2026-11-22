@@ -106,7 +106,7 @@ class DatabaseTest {
             contentVersion = 2, packId = "v2-test",
             concepts = listOf(
                 base.copy(id = "D37", koreanName = "테스트 신규 개념", sortOrder = 9999),
-                base.copy(definition = base.definition + " (보완)", revision = 2),
+                base.copy(definition = base.definition + " (보완)", revision = base.revision + 1),
             ),
             questions = listOf(
                 com.cpaconceptlab.study.data.model.QuestionDto(

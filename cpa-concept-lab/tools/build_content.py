@@ -22,7 +22,7 @@ import ch_a, ch_b, ch_c, ch_d, ch_e, ch_f, ch_g, ch_h, ch_i, ch_j, ch_k  # noqa:
 import exam_scopes  # noqa: E402,F401
 from required_concepts import REQUIRED  # noqa: E402
 
-CONTENT_VERSION = 1
+CONTENT_VERSION = 2
 FORMAT_VERSION = 1
 ASSET_DIR = os.path.join(ROOT, "app", "src", "main", "assets", "content")
 REGISTRY = os.path.join(ROOT, "tools", "content", "id_registry.json")
@@ -192,7 +192,7 @@ def main():
     for x in questions:
         h = hashlib.sha1((x["primaryConceptId"] + "|" + norm(x["blankAnswer"])).encode()).hexdigest()[:12]
         old = registry.get("questions", {}).get(x["id"])
-        if old and old != h and x["revision"] == 1:
+        if old and old != h:
             errors.append(f"[ID] {x['id']} 기존 발급 ID 의 정답/개념이 변경됨 → 새 questionId 를 발급하거나 revision 정책 적용")
         registry.setdefault("questions", {})[x["id"]] = h
     for c in concepts:

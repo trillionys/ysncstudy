@@ -15,6 +15,18 @@ EXAM_SCOPES = []   # dict(number, title, conceptIds)
 
 _state = {"chapter": None, "section": None, "defaults": {}}
 
+# 콘텐츠 리비전: 기존 ID 의 설명·메타데이터를 고치면 올린다(앱은 더 높은 리비전만 갱신).
+# v2: 문항 relatedConceptIds·effectiveFrom 보강
+REVISION = 2
+
+# 대단원별 기준 시행일 기본값(개념·문항에 eff 를 따로 주지 않은 경우)
+#  B: K-IFRS 의무 적용 2011.1.1 / C~H: 2018 개정 개념체계 시행 2020.1.1
+#  I: K-IFRS 제1001호 2011.1.1 / J: 부채 유동·비유동 분류 개정 2024.1.1 / K: 제1118호 2027.1.1
+#  A: 회계기준이 아닌 학술 이론이므로 시행일 없음
+CHAPTER_EFFECTIVE = {"B": "2011-01-01", "C": "2020-01-01", "D": "2020-01-01", "E": "2020-01-01",
+                     "F": "2020-01-01", "G": "2020-01-01", "H": "2020-01-01", "I": "2011-01-01",
+                     "J": "2024-01-01", "K": "2027-01-01"}
+
 
 def chapter(code, title, english, **defaults):
     ch = {
@@ -28,6 +40,7 @@ def chapter(code, title, english, **defaults):
     CHAPTERS.append(ch)
     _state["chapter"] = ch
     _state["section"] = None
+    defaults.setdefault("eff", CHAPTER_EFFECTIVE.get(code))
     _state["defaults"] = defaults
     return ch
 
@@ -94,7 +107,7 @@ def concept(cid, ko, en, d, why, core, cmp, ex, tip, trap, rel="", f=None,
         "isRequired": True,
         "isActive": True,
         "sortOrder": len(CONCEPTS) + 1,
-        "revision": 1,
+        "revision": REVISION,
     }
     CONCEPTS.append(c)
     _state["concept"] = c
@@ -119,6 +132,7 @@ def q(cid, text, answer, exp, alt=(), t="definition", lv=1, conf=None,
         if c["id"] == cid:
             ch_id = c["chapterId"]
             c_std, c_eff = c["standardReference"], c["effectiveFrom"]
+            c_rel = c["relatedConceptIds"]
             break
     else:
         raise ValueError(f"unknown concept {cid} for question")
@@ -132,6 +146,7 @@ def q(cid, text, answer, exp, alt=(), t="definition", lv=1, conf=None,
         "questionText": text,
         "blankAnswer": answer,
         "acceptedAnswers": _dedupe([answer] + list(alt)),
+        "relatedConceptIds": [r for r in c_rel if r != cid and r not in _split(also)],
         "unit": unit,
         "explanation": exp,
         "confusion": conf,
@@ -143,7 +158,7 @@ def q(cid, text, answer, exp, alt=(), t="definition", lv=1, conf=None,
         "revisionNote": note,
         "reviewStatus": "NEEDS_REVIEW" if review else "REVIEWED",
         "isActive": True,
-        "revision": 1,
+        "revision": REVISION,
         "sortOrder": len(QUESTIONS) + 1,
     }
     QUESTIONS.append(qq)

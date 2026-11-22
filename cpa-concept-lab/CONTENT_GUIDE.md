@@ -121,7 +121,7 @@ python3 tools/build_content.py
 
 - 다른 과목을 추가하려면 `subjects`에 과목을, `chapters`에 대단원을, `sections`에 중단원을 함께 넣습니다. 미리 등록해 둔 과목 ID는 IA(중급), AA(고급), CM(원가관리), FM(재무관리), EC(경제), BL(기업법), TX(세법)이며, 콘텐츠가 들어오면 활성화됩니다.
 - 가져온 팩의 원본은 DB에 보관되며 **전체 백업**에 포함되어 재설치 후에도 복원됩니다.
-- 대단원·중단원 ID 형식: `FA-D`, `FA-D-S02`. 현재 ID 목록은 `app/src/main/assets/content/structure_v1.json`에 있습니다.
+- 대단원·중단원 ID 형식: `FA-D`, `FA-D-S02`. 현재 ID 목록은 `app/src/main/assets/content/structure_v2.json`에 있습니다.
 - 향후 HTTPS 업데이트를 붙일 때는 `ContentSource` 인터페이스를 구현해 같은 `ContentImporter`에 연결하면 됩니다.
 
 ## 검증 리포트 확인
