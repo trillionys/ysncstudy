@@ -1,0 +1,1134 @@
+{
+ "formatVersion": 1,
+ "contentVersion": 1,
+ "packId": "fa-structure",
+ "generatedAt": "2026-11-22",
+ "subjects": [
+  {
+   "id": "FA",
+   "name": "재무회계",
+   "description": "재무보고를 위한 개념체계 및 재무제표 표시",
+   "sortOrder": 1,
+   "isActive": true
+  },
+  {
+   "id": "IA",
+   "name": "중급회계",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 2,
+   "isActive": false
+  },
+  {
+   "id": "AA",
+   "name": "고급회계",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 3,
+   "isActive": false
+  },
+  {
+   "id": "CM",
+   "name": "원가관리회계",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 4,
+   "isActive": false
+  },
+  {
+   "id": "FM",
+   "name": "재무관리",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 5,
+   "isActive": false
+  },
+  {
+   "id": "EC",
+   "name": "경제학",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 6,
+   "isActive": false
+  },
+  {
+   "id": "BL",
+   "name": "기업법",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 7,
+   "isActive": false
+  },
+  {
+   "id": "TX",
+   "name": "세법개론",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 8,
+   "isActive": false
+  }
+ ],
+ "chapters": [
+  {
+   "id": "FA-A",
+   "code": "A",
+   "subjectId": "FA",
+   "title": "회계정보의 경제적 기능",
+   "englishTitle": "Economic role of accounting information",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-B",
+   "code": "B",
+   "subjectId": "FA",
+   "title": "회계기준과 국제회계기준",
+   "englishTitle": "Accounting standards and IFRS",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-C",
+   "code": "C",
+   "subjectId": "FA",
+   "title": "일반목적재무보고",
+   "englishTitle": "General purpose financial reporting",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-D",
+   "code": "D",
+   "subjectId": "FA",
+   "title": "재무정보의 질적특성",
+   "englishTitle": "Qualitative characteristics of useful financial information",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-E",
+   "code": "E",
+   "subjectId": "FA",
+   "title": "재무제표 요소",
+   "englishTitle": "Elements of financial statements",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-F",
+   "code": "F",
+   "subjectId": "FA",
+   "title": "인식과 제거",
+   "englishTitle": "Recognition and derecognition",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-G",
+   "code": "G",
+   "subjectId": "FA",
+   "title": "자본과 자본유지",
+   "englishTitle": "Concepts of capital and capital maintenance",
+   "sortOrder": 7
+  },
+  {
+   "id": "FA-H",
+   "code": "H",
+   "subjectId": "FA",
+   "title": "재무제표 요소의 측정",
+   "englishTitle": "Measurement",
+   "sortOrder": 8
+  },
+  {
+   "id": "FA-I",
+   "code": "I",
+   "subjectId": "FA",
+   "title": "재무제표의 표시와 공시",
+   "englishTitle": "Presentation and disclosure of financial statements",
+   "sortOrder": 9
+  },
+  {
+   "id": "FA-J",
+   "code": "J",
+   "subjectId": "FA",
+   "title": "유동·비유동 분류",
+   "englishTitle": "Current and non-current classification",
+   "sortOrder": 10
+  },
+  {
+   "id": "FA-K",
+   "code": "K",
+   "subjectId": "FA",
+   "title": "K-IFRS 제1118호 재무제표 표시와 공시",
+   "englishTitle": "IFRS 18 Presentation and Disclosure in Financial Statements",
+   "sortOrder": 11
+  }
+ ],
+ "sections": [
+  {
+   "id": "FA-A-S01",
+   "chapterId": "FA-A",
+   "title": "정보 비대칭과 그 결과",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-A-S02",
+   "chapterId": "FA-A",
+   "title": "대리인 이론",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-A-S03",
+   "chapterId": "FA-A",
+   "title": "수탁책임과 성과평가",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-A-S04",
+   "chapterId": "FA-A",
+   "title": "자원배분과 의사결정 유용성",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-B-S01",
+   "chapterId": "FA-B",
+   "title": "국제회계기준과 K-IFRS",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-B-S02",
+   "chapterId": "FA-B",
+   "title": "회계기준 제정기구",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-B-S03",
+   "chapterId": "FA-B",
+   "title": "기준의 성격과 제정·해석",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-B-S04",
+   "chapterId": "FA-B",
+   "title": "연결재무제표와 지배력",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-B-S05",
+   "chapterId": "FA-B",
+   "title": "개념체계의 위상",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-C-S01",
+   "chapterId": "FA-C",
+   "title": "일반목적재무보고의 목적",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-C-S02",
+   "chapterId": "FA-C",
+   "title": "주요 정보이용자",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-C-S03",
+   "chapterId": "FA-C",
+   "title": "재무보고가 제공하는 정보",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-C-S04",
+   "chapterId": "FA-C",
+   "title": "재무보고의 한계",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-C-S05",
+   "chapterId": "FA-C",
+   "title": "발생주의 회계",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-C-S06",
+   "chapterId": "FA-C",
+   "title": "보고기업과 계속기업",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-D-S01",
+   "chapterId": "FA-D",
+   "title": "질적특성의 체계",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-D-S02",
+   "chapterId": "FA-D",
+   "title": "목적적합성",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-D-S03",
+   "chapterId": "FA-D",
+   "title": "충실한 표현",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-D-S04",
+   "chapterId": "FA-D",
+   "title": "신중성",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-D-S05",
+   "chapterId": "FA-D",
+   "title": "보강적 질적특성: 비교가능성",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-D-S06",
+   "chapterId": "FA-D",
+   "title": "보강적 질적특성: 검증가능성",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-D-S07",
+   "chapterId": "FA-D",
+   "title": "보강적 질적특성: 적시성·이해가능성",
+   "sortOrder": 7
+  },
+  {
+   "id": "FA-D-S08",
+   "chapterId": "FA-D",
+   "title": "질적특성의 적용과 원가 제약",
+   "sortOrder": 8
+  },
+  {
+   "id": "FA-E-S01",
+   "chapterId": "FA-E",
+   "title": "자산의 정의",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-E-S02",
+   "chapterId": "FA-E",
+   "title": "부채의 정의",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-E-S03",
+   "chapterId": "FA-E",
+   "title": "자본·수익·비용",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-F-S01",
+   "chapterId": "FA-F",
+   "title": "인식의 의의와 인식기준",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-F-S02",
+   "chapterId": "FA-F",
+   "title": "제거",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-F-S03",
+   "chapterId": "FA-F",
+   "title": "회계단위와 미이행계약",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-G-S01",
+   "chapterId": "FA-G",
+   "title": "자본의 개념",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-G-S02",
+   "chapterId": "FA-G",
+   "title": "자본유지개념",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-G-S03",
+   "chapterId": "FA-G",
+   "title": "이익과 자본유지조정",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-G-S04",
+   "chapterId": "FA-G",
+   "title": "자본유지 계산",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-H-S01",
+   "chapterId": "FA-H",
+   "title": "측정과 측정기준",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-H-S02",
+   "chapterId": "FA-H",
+   "title": "역사적 원가",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-H-S03",
+   "chapterId": "FA-H",
+   "title": "현행가치: 공정가치",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-H-S04",
+   "chapterId": "FA-H",
+   "title": "현행가치: 현행원가",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-H-S05",
+   "chapterId": "FA-H",
+   "title": "현행가치: 사용가치와 이행가치",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-H-S06",
+   "chapterId": "FA-H",
+   "title": "측정기준의 비교와 계산",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-I-S01",
+   "chapterId": "FA-I",
+   "title": "재무제표의 목적과 공정한 표시",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-I-S02",
+   "chapterId": "FA-I",
+   "title": "재무제표의 구성",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-I-S03",
+   "chapterId": "FA-I",
+   "title": "비교정보와 표시의 일관성",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-I-S04",
+   "chapterId": "FA-I",
+   "title": "중요성, 통합·세분화와 분류",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-I-S05",
+   "chapterId": "FA-I",
+   "title": "상계표시",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-I-S06",
+   "chapterId": "FA-I",
+   "title": "K-IFRS 준수와 계속기업",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-I-S07",
+   "chapterId": "FA-I",
+   "title": "재무제표 표시 형식",
+   "sortOrder": 7
+  },
+  {
+   "id": "FA-I-S08",
+   "chapterId": "FA-I",
+   "title": "기타포괄손익",
+   "sortOrder": 8
+  },
+  {
+   "id": "FA-J-S01",
+   "chapterId": "FA-J",
+   "title": "유동자산과 비유동자산",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-J-S02",
+   "chapterId": "FA-J",
+   "title": "유동부채와 비유동부채",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-J-S03",
+   "chapterId": "FA-J",
+   "title": "결제 연기 권리와 차입약정",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-J-S04",
+   "chapterId": "FA-J",
+   "title": "차환과 만기연장",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-K-S01",
+   "chapterId": "FA-K",
+   "title": "제1118호의 도입",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-K-S02",
+   "chapterId": "FA-K",
+   "title": "손익계산서의 다섯 범주",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-K-S03",
+   "chapterId": "FA-K",
+   "title": "주된 사업활동",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-K-S04",
+   "chapterId": "FA-K",
+   "title": "필수 중간합계와 추가 중간합계",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-K-S05",
+   "chapterId": "FA-K",
+   "title": "경영진이 정의한 성과측정치(MPM)",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-K-S06",
+   "chapterId": "FA-K",
+   "title": "비용의 분류와 공시",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-K-S07",
+   "chapterId": "FA-K",
+   "title": "특정 항목의 범주 분류",
+   "sortOrder": 7
+  }
+ ],
+ "examScopes": [
+  {
+   "number": "01",
+   "title": "회계정보의 기능과 정보 비대칭",
+   "conceptIds": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13"
+   ]
+  },
+  {
+   "number": "02",
+   "title": "한국채택국제회계기준 도입",
+   "conceptIds": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B12",
+    "B13",
+    "B14",
+    "B15",
+    "B16"
+   ]
+  },
+  {
+   "number": "03",
+   "title": "회계기준 제정 및 관련 기관",
+   "conceptIds": [
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11"
+   ]
+  },
+  {
+   "number": "04",
+   "title": "일반목적재무보고의 목적",
+   "conceptIds": [
+    "C01",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11"
+   ]
+  },
+  {
+   "number": "05",
+   "title": "주요 정보이용자",
+   "conceptIds": [
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+   ]
+  },
+  {
+   "number": "06",
+   "title": "재무보고와 기업가치",
+   "conceptIds": [
+    "C14",
+    "C15",
+    "C16"
+   ]
+  },
+  {
+   "number": "07",
+   "title": "발생주의와 수탁책임",
+   "conceptIds": [
+    "C17",
+    "C18",
+    "C19",
+    "C08",
+    "A08"
+   ]
+  },
+  {
+   "number": "08",
+   "title": "질적특성",
+   "conceptIds": [
+    "D01",
+    "D02",
+    "D03",
+    "D09",
+    "D20",
+    "D25",
+    "D29",
+    "D31"
+   ]
+  },
+  {
+   "number": "09",
+   "title": "목적적합성·무오류·검증가능성",
+   "conceptIds": [
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D12",
+    "D13",
+    "D25"
+   ]
+  },
+  {
+   "number": "10",
+   "title": "질적특성과 일관성",
+   "conceptIds": [
+    "D20",
+    "D21",
+    "D22",
+    "D23",
+    "D24"
+   ]
+  },
+  {
+   "number": "11",
+   "title": "개념체계의 위상",
+   "conceptIds": [
+    "B17",
+    "B18",
+    "B19"
+   ]
+  },
+  {
+   "number": "12",
+   "title": "검증가능성과 충실한 표현",
+   "conceptIds": [
+    "D25",
+    "D26",
+    "D27",
+    "D28",
+    "D09",
+    "D10"
+   ]
+  },
+  {
+   "number": "13",
+   "title": "근본적 질적특성의 관계",
+   "conceptIds": [
+    "D01",
+    "D33",
+    "D34",
+    "D03",
+    "D09"
+   ]
+  },
+  {
+   "number": "14",
+   "title": "신중성과 원가 제약",
+   "conceptIds": [
+    "D17",
+    "D18",
+    "D19",
+    "D35",
+    "D36"
+   ]
+  },
+  {
+   "number": "15",
+   "title": "중립성과 합리적 추정",
+   "conceptIds": [
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15"
+   ]
+  },
+  {
+   "number": "16",
+   "title": "질적특성의 종합 적용",
+   "conceptIds": [
+    "D02",
+    "D07",
+    "D08",
+    "D16",
+    "D30",
+    "D32",
+    "D34"
+   ]
+  },
+  {
+   "number": "17",
+   "title": "보고기업과 계속기업",
+   "conceptIds": [
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24"
+   ]
+  },
+  {
+   "number": "18",
+   "title": "일반목적재무보고",
+   "conceptIds": [
+    "C01",
+    "C05",
+    "C11",
+    "C12",
+    "C13",
+    "C15"
+   ]
+  },
+  {
+   "number": "19",
+   "title": "자산과 경제적 자원",
+   "conceptIds": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11"
+   ]
+  },
+  {
+   "number": "20",
+   "title": "자본과 자본유지",
+   "conceptIds": [
+    "E17",
+    "G01",
+    "G02",
+    "G03",
+    "G06",
+    "G09",
+    "G10",
+    "G11"
+   ]
+  },
+  {
+   "number": "21",
+   "title": "실물자본유지 계산",
+   "conceptIds": [
+    "G06",
+    "G07",
+    "G16",
+    "G17",
+    "G18",
+    "G19"
+   ]
+  },
+  {
+   "number": "22",
+   "title": "실물자본유지 계산",
+   "conceptIds": [
+    "G08",
+    "G12",
+    "G13",
+    "G14",
+    "G15",
+    "G16",
+    "G19"
+   ]
+  },
+  {
+   "number": "23",
+   "title": "재무자본과 실물자본",
+   "conceptIds": [
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G11",
+    "G12",
+    "G13"
+   ]
+  },
+  {
+   "number": "24",
+   "title": "미이행계약과 회계단위",
+   "conceptIds": [
+    "F17",
+    "F18",
+    "F19",
+    "F20"
+   ]
+  },
+  {
+   "number": "25",
+   "title": "인식과 제거",
+   "conceptIds": [
+    "F01",
+    "F02",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16"
+   ]
+  },
+  {
+   "number": "26",
+   "title": "측정기준",
+   "conceptIds": [
+    "H01",
+    "H02",
+    "H03",
+    "H10",
+    "H11",
+    "H16",
+    "H20",
+    "H23"
+   ]
+  },
+  {
+   "number": "27",
+   "title": "역사적 원가·공정가치·현행원가 계산",
+   "conceptIds": [
+    "H28",
+    "H03",
+    "H04",
+    "H11",
+    "H15",
+    "H16",
+    "H18"
+   ]
+  },
+  {
+   "number": "28",
+   "title": "표시와 공시",
+   "conceptIds": [
+    "I01",
+    "I07",
+    "I08",
+    "I15",
+    "I16",
+    "I17",
+    "I18",
+    "I30"
+   ]
+  },
+  {
+   "number": "29",
+   "title": "자산의 인식과 측정",
+   "conceptIds": [
+    "E09",
+    "F03",
+    "F04",
+    "F06",
+    "F07",
+    "F08",
+    "H06",
+    "H07",
+    "H08"
+   ]
+  },
+  {
+   "number": "30",
+   "title": "거래원가와 측정기준",
+   "conceptIds": [
+    "H04",
+    "H05",
+    "H15",
+    "H18",
+    "H19",
+    "H22",
+    "H24",
+    "H25"
+   ]
+  },
+  {
+   "number": "31",
+   "title": "역사적 원가와 현행가치",
+   "conceptIds": [
+    "H09",
+    "H10",
+    "H12",
+    "H13",
+    "H14",
+    "H17",
+    "H20",
+    "H21",
+    "H26",
+    "H27",
+    "H29",
+    "H30"
+   ]
+  },
+  {
+   "number": "32",
+   "title": "인식과 제거",
+   "conceptIds": [
+    "F05",
+    "F09",
+    "F10",
+    "F11",
+    "F13",
+    "F14",
+    "F16"
+   ]
+  },
+  {
+   "number": "33",
+   "title": "인식기준",
+   "conceptIds": [
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08"
+   ]
+  },
+  {
+   "number": "34",
+   "title": "재무제표 표시",
+   "conceptIds": [
+    "I02",
+    "I03",
+    "I04",
+    "I05",
+    "I06",
+    "I07",
+    "I08",
+    "I36"
+   ]
+  },
+  {
+   "number": "35",
+   "title": "개념체계와 재무보고",
+   "conceptIds": [
+    "B17",
+    "C01",
+    "C15",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E18",
+    "E19",
+    "E20",
+    "E21"
+   ]
+  },
+  {
+   "number": "36",
+   "title": "유동·비유동과 차입약정",
+   "conceptIds": [
+    "J16",
+    "J17",
+    "J18",
+    "J19",
+    "J20",
+    "J21",
+    "J22"
+   ]
+  },
+  {
+   "number": "37",
+   "title": "평가충당금·순액표시",
+   "conceptIds": [
+    "I21",
+    "I23",
+    "I24",
+    "I25",
+    "I26",
+    "I27",
+    "I28",
+    "I29"
+   ]
+  },
+  {
+   "number": "38",
+   "title": "손익계산서 다섯 범주",
+   "conceptIds": [
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06",
+    "K07",
+    "K08",
+    "K09",
+    "K10",
+    "K11",
+    "K12",
+    "K13",
+    "K30",
+    "K31",
+    "K32"
+   ]
+  },
+  {
+   "number": "39",
+   "title": "상계, 장기차입금, 기타포괄손익",
+   "conceptIds": [
+    "I21",
+    "I22",
+    "J22",
+    "J23",
+    "J24",
+    "I38",
+    "I39",
+    "I40",
+    "I41",
+    "I42",
+    "I43",
+    "I44",
+    "I45"
+   ]
+  },
+  {
+   "number": "40",
+   "title": "재무제표 표시와 정상영업주기",
+   "conceptIds": [
+    "J03",
+    "J04",
+    "J05",
+    "J13",
+    "I36",
+    "I37"
+   ]
+  },
+  {
+   "number": "41",
+   "title": "재무제표 요소의 정의와 계속기업",
+   "conceptIds": [
+    "E01",
+    "E12",
+    "E17",
+    "E18",
+    "E19",
+    "C23",
+    "I34",
+    "I35"
+   ]
+  },
+  {
+   "number": "42",
+   "title": "비교정보·중요성·상계",
+   "conceptIds": [
+    "I09",
+    "I10",
+    "I15",
+    "I16",
+    "I17",
+    "I19",
+    "I20",
+    "I21"
+   ]
+  },
+  {
+   "number": "43",
+   "title": "일관성·재분류·비용분류",
+   "conceptIds": [
+    "I11",
+    "I12",
+    "I13",
+    "I14",
+    "K21",
+    "K22",
+    "K23"
+   ]
+  },
+  {
+   "number": "44",
+   "title": "제1118호 중간합계와 비용분류",
+   "conceptIds": [
+    "K01",
+    "K14",
+    "K15",
+    "K16",
+    "K17",
+    "K18",
+    "K19",
+    "K20",
+    "K24",
+    "K25",
+    "K26",
+    "K27",
+    "K28",
+    "K29"
+   ]
+  },
+  {
+   "number": "45",
+   "title": "공시·비교정보·유동성 순서",
+   "conceptIds": [
+    "I07",
+    "I09",
+    "I18",
+    "I31",
+    "I32",
+    "I33",
+    "I37"
+   ]
+  },
+  {
+   "number": "46",
+   "title": "유동자산·유동부채와 장기차입약정",
+   "conceptIds": [
+    "J01",
+    "J02",
+    "J06",
+    "J07",
+    "J08",
+    "J09",
+    "J10",
+    "J11",
+    "J12",
+    "J14",
+    "J15",
+    "J16",
+    "J25",
+    "J26"
+   ]
+  }
+ ]
+}
