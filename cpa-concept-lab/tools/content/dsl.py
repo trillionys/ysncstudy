@@ -32,12 +32,12 @@ CHAPTER_EFFECTIVE = {"B": "2011-01-01", "C": "2020-01-01", "D": "2020-01-01", "E
                      "J": "2024-01-01", "K": "2027-01-01"}
 
 
-def chapter(code, title, english, part=DEFAULT_PART, **defaults):
+def chapter(code, title, english, part=DEFAULT_PART, subject=SUBJECT_ID, chapter_id=None, **defaults):
     ch = {
         "partTitle": part,
-        "id": f"FA-{code}",
+        "id": chapter_id or f"FA-{code}",
         "code": code,
-        "subjectId": SUBJECT_ID,
+        "subjectId": subject,
         "title": title,
         "englishTitle": english,
         "sortOrder": len(CHAPTERS) + 1,
@@ -85,7 +85,7 @@ def concept(cid, ko, en, d, why, core, cmp, ex, tip, trap, rel="", f=None,
     dflt = _state["defaults"]
     c = {
         "id": cid,
-        "subjectId": SUBJECT_ID,
+        "subjectId": ch["subjectId"],
         "chapterId": ch["id"],
         "sectionId": sec["id"],
         "parentConceptId": parent,
@@ -142,6 +142,7 @@ def q(cid, text, answer, exp, alt=(), t="definition", lv=1, conf=None,
     for c in CONCEPTS:
         if c["id"] == cid:
             ch_id = c["chapterId"]
+            subj = c["subjectId"]
             c_std, c_eff = c["standardReference"], c["effectiveFrom"]
             c_rel = c["relatedConceptIds"]
             break
@@ -151,7 +152,7 @@ def q(cid, text, answer, exp, alt=(), t="definition", lv=1, conf=None,
         "id": f"{cid}-Q{n:02d}",
         "primaryConceptId": cid,
         "conceptIds": [cid] + [x for x in _split(also) if x != cid],
-        "subjectId": SUBJECT_ID,
+        "subjectId": subj,
         "chapterId": ch_id,
         "questionType": t,
         "questionText": text,
