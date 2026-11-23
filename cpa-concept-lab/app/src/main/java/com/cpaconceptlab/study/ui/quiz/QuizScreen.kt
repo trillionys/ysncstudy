@@ -62,6 +62,9 @@ import com.cpaconceptlab.study.ui.components.VSpace
 import com.cpaconceptlab.study.ui.components.pct
 import com.cpaconceptlab.study.ui.theme.LocalStatusColors
 import com.cpaconceptlab.study.utils.Chosung
+import com.cpaconceptlab.study.domain.model.LawApplicability
+import com.cpaconceptlab.study.domain.model.ScopeType
+import com.cpaconceptlab.study.data.local.ConceptEntity
 import java.time.LocalDate
 
 private val TYPE_LABEL = mapOf(
@@ -69,6 +72,7 @@ private val TYPE_LABEL = mapOf(
     "correction" to "잘못된 설명 수정", "classification" to "분류 판단", "treatment" to "처리방법",
     "formula" to "공식 구성", "calculation" to "계산", "choice" to "4지선다", "matching" to "개념 매칭",
     "order" to "순서 배열", "journal" to "분개 계정 선택",
+    "number" to "숫자·기간", "effect" to "법률효과", "procedure" to "절차",
 )
 
 @Composable
@@ -226,6 +230,27 @@ private fun questionAnnotated(text: String, filled: String?) = buildAnnotatedStr
     append(text.substring(i + BLANK_TOKEN.length))
 }
 
+/** 기업법 해설: 조문 근거, 정답-조문 대조 여부, 적용 기준 라벨 */
+@Composable
+private fun LawBasisBlock(q: QuestionEntity, concept: ConceptEntity, content: ContentSnapshot) {
+    val verify = when (q.answerVerification) {
+        "STATUTE_TEXT_MATCHED" -> "정답이 근거 조문 원문에 그대로 있음을 자동 대조함"
+        "INTERPRETIVE" -> "해석·선택형 문항(조문 문언 직접 대조 대상 아님)"
+        else -> null
+    }
+    val applic = LawApplicability.of(concept.examApplicability)?.label
+    InfoBlock("[조문 근거]", listOfNotNull(
+        q.standardReference.takeIf { it.isNotBlank() },
+        applic,
+        verify,
+        concept.lawVersion?.let { "법령: ${concept.lawName.orEmpty()} · $it" },
+    ).joinToString("\n"))
+    val refs = q.standardReference.split(",").mapNotNull { ContentSnapshot.articleKey(it.trim()) }.distinct()
+    refs.mapNotNull { content.lawArticleById[it] }.take(2).forEach { a ->
+        InfoBlock("[조문 원문] ${a.articleId}(${a.title})", a.text.take(600) + if (a.text.length > 600) " …" else "")
+    }
+}
+
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun Explanation(q: QuestionEntity, content: ContentSnapshot, onOpenConcept: (String) -> Unit) {
@@ -245,6 +270,9 @@ fun Explanation(q: QuestionEntity, content: ContentSnapshot, onOpenConcept: (Str
         InfoBlock("[CPA 출제 포인트]", concept?.examTips)
         if (q.calculation != null || (q.questionType == "calculation" && concept?.formula != null)) {
             InfoBlock("[계산문제] 공식·대입·계산 순서·결과", listOfNotNull(concept?.formula?.let { "공식: $it" }, q.calculation).joinToString("\n"))
+        }
+        if (concept != null && concept.articleRefs.isNotEmpty()) {
+            LawBasisBlock(q, concept, content)
         }
         val status = StandardStatusResolver.resolve(q.effectiveFrom, q.effectiveTo, q.isHistorical, LocalDate.now())
         VSpace(4)
@@ -277,6 +305,18 @@ private fun QuizSummary(
                 Text("이번 세트 정답률이 80% 이상입니다. 같은 범위를 힌트 없는 심화 모드로 이어서 풀어 보세요.", style = MaterialTheme.typography.bodyMedium)
                 VSpace(8)
                 Button(onClick = onAdvance, modifier = Modifier.fillMaxWidth()) { Text("심화 모드로 이동") }
+            }
+            VSpace(12)
+        }
+        if (s.scope.type == ScopeType.WEIGHTED) {
+            SectionCard(title = "CPA 실전 비중 모의 점수") {
+                val score = s.correctCount * 100.0 / s.questions.size.coerceAtLeast(1)
+                Text("${"%.1f".format(score)}점 / 100점", style = MaterialTheme.typography.headlineSmall)
+                VSpace(4)
+                s.history.groupBy { it.first.examArea }.forEach { (area, rows) ->
+                    val name = content.examAreas.firstOrNull { it.id == area }?.name ?: "기타"
+                    Text("· $name: ${rows.count { it.second.isCorrect }} / ${rows.size}", style = MaterialTheme.typography.bodySmall)
+                }
             }
             VSpace(12)
         }

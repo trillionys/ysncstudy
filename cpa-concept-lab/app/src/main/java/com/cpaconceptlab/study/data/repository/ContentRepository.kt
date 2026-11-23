@@ -7,6 +7,7 @@ import com.cpaconceptlab.study.data.importer.ContentSource
 import com.cpaconceptlab.study.data.importer.toDto
 import com.cpaconceptlab.study.data.local.AppDatabase
 import com.cpaconceptlab.study.data.local.ContentVersionEntity
+import com.cpaconceptlab.study.domain.usecase.LawCoverage
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -56,6 +57,11 @@ class ContentRepository(
             bundledVersion = dao.bundledVersion() ?: 0,
             problemSources = dao.problemSources(),
             scopeItems = dao.scopeItems(),
+            lawArticles = dao.lawArticles(),
+            numericRules = dao.numericRules(),
+            caseNotes = dao.caseNotes(),
+            examAreas = dao.examAreas(),
+            lawVersions = dao.lawVersions(),
         )
     }
 
@@ -91,5 +97,6 @@ class ContentRepository(
             requiredConceptIds = requiredConceptIds,
             sourceStatuses = snapshot.problemSources.map { it.verificationStatus },
             scopeCoverage = snapshot.scopeItems.count { it.covered } to snapshot.scopeItems.size,
+            lawRows = LawCoverage.rows(snapshot.lawArticles),
         )
 }

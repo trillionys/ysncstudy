@@ -18,6 +18,19 @@ interface ContentDao {
     @Upsert suspend fun upsertProblemSources(items: List<ProblemSourceEntity>)
     @Upsert suspend fun upsertScopeItems(items: List<ScopeItemEntity>)
 
+    @Upsert suspend fun upsertLawArticles(items: List<LawArticleEntity>)
+    @Upsert suspend fun upsertNumericRules(items: List<NumericRuleEntity>)
+    @Upsert suspend fun upsertCaseNotes(items: List<CaseNoteEntity>)
+    @Upsert suspend fun upsertExamAreas(items: List<ExamAreaEntity>)
+    @Upsert suspend fun upsertLawVersions(items: List<LawVersionEntity>)
+
+    @Query("SELECT * FROM law_articles ORDER BY lawShortName, articleNo, branch") suspend fun lawArticles(): List<LawArticleEntity>
+    @Query("SELECT * FROM law_articles WHERE id IN (:ids)") suspend fun lawArticlesByIds(ids: List<String>): List<LawArticleEntity>
+    @Query("SELECT * FROM numeric_rules ORDER BY ruleId") suspend fun numericRules(): List<NumericRuleEntity>
+    @Query("SELECT * FROM case_notes ORDER BY id") suspend fun caseNotes(): List<CaseNoteEntity>
+    @Query("SELECT * FROM exam_areas ORDER BY id") suspend fun examAreas(): List<ExamAreaEntity>
+    @Query("SELECT * FROM law_versions ORDER BY lawShortName") suspend fun lawVersions(): List<LawVersionEntity>
+
     @Query("SELECT * FROM problem_sources ORDER BY sourceId") suspend fun problemSources(): List<ProblemSourceEntity>
     @Query("SELECT * FROM scope_items ORDER BY sortOrder") suspend fun scopeItems(): List<ScopeItemEntity>
 

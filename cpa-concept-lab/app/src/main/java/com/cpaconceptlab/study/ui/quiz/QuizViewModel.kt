@@ -77,15 +77,17 @@ class QuizViewModel(
             val picked = withContext(Dispatchers.Default) {
                 val user = container.studyRepository.currentSnapshot()
                 val candidates = candidatesFor(scope, content, user, now)
+                val quota = if (scope.type == ScopeType.WEIGHTED) weightedQuota(content, scope.id) else emptyMap()
                 QuestionSelector().select(
                     candidates = candidates,
                     mode = mode,
                     scopeType = if (scope.type == ScopeType.QUESTION) ScopeType.MOCK else scope.type,
-                    size = if (scope.type == ScopeType.QUESTION) 1 else size,
+                    size = if (scope.type == ScopeType.QUESTION) 1 else if (quota.isNotEmpty()) quota.values.sum() else size,
                     progress = user.progressMap,
                     wrongNotes = user.wrongNotes,
                     now = now,
                     recentlyAnswered = container.studyRepository.recentlyAnswered(10 * 60_000, now),
+                    areaQuota = quota,
                 )
             }
             if (scope.type != ScopeType.QUESTION) {
@@ -178,6 +180,8 @@ class QuizViewModel(
             val active = content.questions.filter { q -> content.conceptById[q.primaryConceptId]?.isActive == true }
             val scoped = when (scope.type) {
                 ScopeType.ALL, ScopeType.DUE, ScopeType.MOCK -> active
+                ScopeType.SUBJECT -> active.filter { it.subjectId == scope.id }
+                ScopeType.WEIGHTED -> active.filter { it.subjectId == (scope.id ?: LAW_SUBJECT) && it.examArea != null }
                 ScopeType.WRONG -> if (scope.id == null) active else active.filter { scope.id in it.conceptIds }
                 ScopeType.PART -> {
                     val chapters = content.chapters.filter { it.partTitle == scope.id }.map { it.id }.toSet()
@@ -217,6 +221,15 @@ class QuizViewModel(
                 }
             }
         }
+
+        const val LAW_SUBJECT = "CPA-LAW"
+
+        /** 실전 비중 모의의 영역별 배정 문항 수(공고 비중 기준, 기업법 40문항) */
+        fun weightedQuota(content: ContentSnapshot, subjectId: String?): Map<String, Int> =
+            content.examAreas.filter { it.subjectId == (subjectId ?: LAW_SUBJECT) }.sortedBy { AREA_ORDER.indexOf(it.id) }
+                .associate { it.id to it.mockQuestions }
+
+        private val AREA_ORDER = listOf("GENERAL", "COMPANY", "CPA_ACT", "AUDIT_ACT")
 
         /** 취약 개념: 두 모드 합산 시도 3회 이상이면서 정답률 60% 미만이거나, 미해결 오답이 2개 이상인 개념 */
         fun weakConcepts(content: ContentSnapshot, user: UserSnapshot): Set<String> {

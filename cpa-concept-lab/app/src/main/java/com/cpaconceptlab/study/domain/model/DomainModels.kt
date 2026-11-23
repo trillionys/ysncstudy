@@ -25,6 +25,10 @@ enum class ScopeType(val label: String) {
     RECENT("최근 추가 개념"),
     DUE("복습 예정"),
     MOCK("랜덤 모의테스트"),
+    /** v4: 과목 하나의 전체 개념 균등학습(id = subjectId) */
+    SUBJECT("과목별 개념 균등학습"),
+    /** v4: 공고 출제비중에 맞춘 실전 모의(id = subjectId, 기업법 40문항·100점) */
+    WEIGHTED("CPA 실전 비중 모의"),
     QUESTION("선택 문항 다시 풀기");
 
     companion object {
@@ -117,5 +121,48 @@ object StandardStatusResolver {
         val from = effectiveFrom?.let { runCatching { LocalDate.parse(it) }.getOrNull() }
         if (from != null && today.isBefore(from)) return StandardStatus.UPCOMING
         return StandardStatus.CURRENT
+    }
+}
+
+/**
+ * 기업법 조문·개념의 시험 적용 구분.
+ *  APPLIES_2027 [2027년 적용 기준] / PAST [과거 기출 기준] / NOT_IN_FORCE [미시행 개정] / CHECK_DATE [시행일 확인 필요]
+ */
+enum class LawApplicability(val label: String) {
+    APPLIES_2027("[2027년 적용 기준]"),
+    PAST("[과거 기출 기준]"),
+    NOT_IN_FORCE("[미시행 개정]"),
+    CHECK_DATE("[시행일 확인 필요]");
+
+    companion object {
+        fun of(code: String?): LawApplicability? = entries.firstOrNull { it.name == code }
+
+        /**
+         * 시행일·폐지일과 기준일(시험 기준일)로 적용 구분을 판정한다.
+         * 시행일을 확인하지 못했으면(null·형식 오류·verified=false) CHECK_DATE 로 둔다. 추측으로 적용 기준을 정하지 않는다.
+         */
+        fun classify(effectiveDate: String?, repealedDate: String?, referenceDate: LocalDate, verified: Boolean = true): LawApplicability {
+            val from = effectiveDate?.let { runCatching { LocalDate.parse(it) }.getOrNull() }
+            if (!verified || from == null) return CHECK_DATE
+            val to = repealedDate?.let { runCatching { LocalDate.parse(it) }.getOrNull() }
+            if (to != null && !referenceDate.isBefore(to)) return PAST
+            if (referenceDate.isBefore(from)) return NOT_IN_FORCE
+            return APPLIES_2027
+        }
+    }
+}
+
+/** 조문 커버리지 상태 */
+enum class ArticleStatus(val label: String) {
+    COMPLETED("학습 완료"),
+    WRITING("학습 콘텐츠 작성 중"),
+    INTEGRATED("관련 개념에 통합"),
+    OUT_OF_SCOPE("시험범위 밖"),
+    DELETED("삭제 조문"),
+    NOT_IN_FORCE("미시행"),
+    REVIEW_NEEDED("검토 필요");
+
+    companion object {
+        fun of(code: String?): ArticleStatus = entries.firstOrNull { it.name == code } ?: REVIEW_NEEDED
     }
 }

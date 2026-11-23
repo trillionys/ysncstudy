@@ -47,6 +47,11 @@ import com.cpaconceptlab.study.ui.components.StandardBadges
 import com.cpaconceptlab.study.ui.components.VSpace
 import com.cpaconceptlab.study.ui.components.pct
 import java.time.LocalDate
+import com.cpaconceptlab.study.data.local.ConceptEntity
+import com.cpaconceptlab.study.data.repository.ContentSnapshot
+import com.cpaconceptlab.study.domain.model.LawApplicability
+import com.cpaconceptlab.study.ui.components.Pill
+import com.cpaconceptlab.study.ui.theme.LocalStatusColors
 
 /** 개념 학습 화면: 요구사항 5의 11개 요소를 모두 표시한다. */
 @OptIn(ExperimentalLayoutApi::class)
@@ -124,19 +129,38 @@ fun ConceptScreen(
         }
         VSpace(10)
 
+        val isLaw = c.articleRefs.isNotEmpty()
+        if (isLaw) {
+            LawInfoCard(c, dash.content)
+            VSpace(12)
+        }
         SectionCard(modifier = Modifier.onGloballyPositioned { explanationY = it.positionInParent().y.toInt() }) {
-            InfoBlock("① 정확한 정의", c.definition, emphasize = true)
-            InfoBlock("② 개념이 필요한 이유", c.whyItMatters)
-            InfoBlock("③ 핵심 원리", c.detailedExplanation)
-            InfoBlock("④ 유사 개념과의 차이", c.comparison)
-            InfoBlock("⑤ 실제 회계 사례", c.example)
-            InfoBlock("⑥ 공식과 계산과정", c.formula ?: "해당 없음 — 계산이 필요한 개념이 아닙니다.")
-            InfoBlock("⑦ CPA 출제 포인트", c.examTips)
-            InfoBlock("⑧ 자주 틀리는 함정", c.commonMistakes)
-            c.recognitionRules?.let { InfoBlock("인식 요건", it) }
-            c.measurementRules?.let { InfoBlock("측정 기준", it) }
-            c.exceptions?.let { InfoBlock("예외", it) }
-            c.journalEntries?.let { InfoBlock("분개", it) }
+            if (isLaw) {
+                InfoBlock("① 법률상 정확한 의미", c.definition, emphasize = true)
+                InfoBlock("② 쉬운 설명", c.whyItMatters)
+                c.recognitionRules?.let { InfoBlock("③ 요건", it) }
+                c.measurementRules?.let { InfoBlock("④ 법률효과", it) }
+                c.exceptions?.let { InfoBlock("⑤ 예외", it) }
+                c.caseLaw?.let { InfoBlock("⑥ 판례 법리 (사건번호 미기재 · 판례 원문 미대조)", it) }
+                InfoBlock("⑦ 비교 개념", c.comparison)
+                InfoBlock("⑧ 간단한 사례", c.example)
+                c.formula?.let { InfoBlock("⑨ 숫자·기간·정족수", it) }
+                InfoBlock("⑩ 출제 포인트", c.examTips)
+                InfoBlock("⑪ 함정", c.commonMistakes)
+            } else {
+                InfoBlock("① 정확한 정의", c.definition, emphasize = true)
+                InfoBlock("② 개념이 필요한 이유", c.whyItMatters)
+                InfoBlock("③ 핵심 원리", c.detailedExplanation)
+                InfoBlock("④ 유사 개념과의 차이", c.comparison)
+                InfoBlock("⑤ 실제 회계 사례", c.example)
+                InfoBlock("⑥ 공식과 계산과정", c.formula ?: "해당 없음 — 계산이 필요한 개념이 아닙니다.")
+                InfoBlock("⑦ CPA 출제 포인트", c.examTips)
+                InfoBlock("⑧ 자주 틀리는 함정", c.commonMistakes)
+                c.recognitionRules?.let { InfoBlock("인식 요건", it) }
+                c.measurementRules?.let { InfoBlock("측정 기준", it) }
+                c.exceptions?.let { InfoBlock("예외", it) }
+                c.journalEntries?.let { InfoBlock("분개", it) }
+            }
             if (c.sourceProblemIds.isNotEmpty()) InfoBlock("연결된 원본 문제", c.sourceProblemIds.joinToString(", "))
         }
         VSpace(12)
@@ -181,10 +205,56 @@ fun ConceptScreen(
     }
 }
 
+/** 기업법 개념의 법령 정보: 적용 기준 라벨, 법령 버전·시행일, 경과규정, 근거 조문 원문, 숫자 규칙 */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun LawInfoCard(c: ConceptEntity, content: ContentSnapshot) {
+    val s = LocalStatusColors.current
+    val cs = MaterialTheme.colorScheme
+    var showText by remember(c.id) { mutableStateOf(false) }
+    SectionCard(title = "법령 근거") {
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            when (LawApplicability.of(c.examApplicability)) {
+                LawApplicability.APPLIES_2027 -> Pill(LawApplicability.APPLIES_2027.label, s.correctContainer, s.correct)
+                LawApplicability.PAST -> Pill(LawApplicability.PAST.label, cs.surfaceContainerHighest, cs.onSurfaceVariant)
+                LawApplicability.NOT_IN_FORCE -> Pill(LawApplicability.NOT_IN_FORCE.label, cs.secondaryContainer, cs.onSecondaryContainer)
+                LawApplicability.CHECK_DATE -> Pill(LawApplicability.CHECK_DATE.label, s.warnContainer, s.warn)
+                null -> {}
+            }
+        }
+        VSpace(6)
+        KeyValue("법령", c.lawName.orEmpty())
+        KeyValue("조문", c.articleRefs.joinToString(", "))
+        c.lawVersion?.let { KeyValue("법령 버전", it) }
+        c.promulgationDate?.let { KeyValue("공포일", it) }
+        c.effectiveFrom?.let { KeyValue("시행일", it) }
+        c.examYear?.let { KeyValue("적용 시험", "${it}년 공인회계사 1차") }
+        c.verifiedAt?.let { KeyValue("조문 대조일", it) }
+        c.transitionRule?.let { InfoBlock("경과규정·개정 메모", it) }
+        val rules = content.numericRulesOf(c.id)
+        if (rules.isNotEmpty()) {
+            InfoBlock("숫자·기간·정족수 규칙", rules.joinToString("\n") { "· ${it.ruleName}: ${it.value}${it.unit} (${it.article})" })
+        }
+        val notes = content.caseNotesOf(c.id)
+        notes.forEach { n -> InfoBlock("판례 법리: ${n.topic}", "${n.holding}\n(사건번호 미기재 · 판례 원문 미대조 — 판례 법리 요약만 제공합니다)") }
+        val articles = content.articlesOf(c)
+        if (articles.isNotEmpty()) {
+            TextButton(onClick = { showText = !showText }) { Text(if (showText) "조문 원문 접기" else "조문 원문 보기 (${articles.size})") }
+            if (showText) {
+                articles.forEach { a ->
+                    InfoBlock("${a.lawShortName} ${a.articleId}(${a.title}) · ${a.statusLabel}", a.text.ifBlank { "(원문 없음)" })
+                }
+                c.sourceUrl?.let { Text("출처: 국가법령정보센터 $it", style = MaterialTheme.typography.bodySmall, color = cs.onSurfaceVariant) }
+            }
+        }
+    }
+}
+
 /** 검수 상태 표시. 공식 기준서 원문과 대조하지 않은 콘텐츠는 '검증 완료'로 표시하지 않는다. */
 fun verificationLabel(status: String): String = when (status) {
     "VERIFIED" -> "공식 자료 대조 완료"
     "NEEDS_REVIEW" -> "검토 필요(교재 관행·개정 확인 대상 포함)"
     "AUTHOR_REVIEWED" -> "작성자 검토 완료 · 기준서 원문 대조 전"
+    "STATUTE_CHECKED" -> "법령 원문(국가법령정보센터) 대조 · 정답 자동 대조"
     else -> status
 }

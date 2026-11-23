@@ -37,6 +37,96 @@ data class ContentPack(
     val problemSources: List<ProblemSourceDto> = emptyList(),
     /** v3: 지정 학습범위 체크리스트(세부항목 → 연결 개념) */
     val scopeItems: List<ScopeItemDto> = emptyList(),
+    /** v4(기업법): 조문 원문·커버리지 상태 */
+    val lawArticles: List<LawArticleDto> = emptyList(),
+    /** v4: 숫자·기간·정족수 규칙 DB */
+    val numericRules: List<NumericRuleDto> = emptyList(),
+    /** v4: 판례 법리 노트(사건번호를 확인하지 못한 경우 비움) */
+    val caseNotes: List<CaseNoteDto> = emptyList(),
+    /** v4: 시험 출제 영역과 공고 비중 */
+    val examAreas: List<ExamAreaDto> = emptyList(),
+    /** v4: 법령 버전(공포일·시행일·출처) */
+    val lawVersions: List<LawVersionDto> = emptyList(),
+)
+
+/** 조문 1개. status: COMPLETED·INTEGRATED·WRITING·OUT_OF_SCOPE·DELETED·NOT_IN_FORCE·REVIEW_NEEDED */
+@Serializable
+data class LawArticleDto(
+    val id: String,
+    val lawName: String,
+    val lawShortName: String,
+    val articleId: String,
+    val articleNo: Int,
+    val branch: Int = 0,
+    val title: String = "",
+    val text: String = "",
+    val part: String = "",
+    val chapter: String = "",
+    val deleted: Boolean = false,
+    val inScope: Boolean = true,
+    val status: String,
+    val statusLabel: String = "",
+    val note: String? = null,
+    val examArea: String? = null,
+    val conceptIds: List<String> = emptyList(),
+    val questionCount: Int = 0,
+    val lawVersion: String = "",
+    val effectiveDate: String? = null,
+    val sourceUrl: String? = null,
+    val verifiedAt: String? = null,
+)
+
+@Serializable
+data class NumericRuleDto(
+    val ruleId: String,
+    val lawName: String,
+    val article: String,
+    val ruleName: String,
+    val subject: String = "",
+    val condition: String = "",
+    val value: String,
+    val unit: String = "",
+    val exception: String? = null,
+    val effectiveDate: String? = null,
+    val sourceUrl: String? = null,
+    val conceptId: String? = null,
+    val questionId: String? = null,
+)
+
+@Serializable
+data class CaseNoteDto(
+    val id: String,
+    val conceptId: String,
+    val topic: String,
+    val holding: String,
+    val caseNumber: String? = null,
+    val decisionDate: String? = null,
+    val court: String = "",
+    val articles: String = "",
+    val verificationStatus: String = "DOCTRINE_ONLY_NOT_VERIFIED",
+)
+
+@Serializable
+data class ExamAreaDto(
+    val id: String,
+    val name: String,
+    val minPercent: Int,
+    val maxPercent: Int,
+    val mockQuestions: Int,
+    val questionCount: Int = 0,
+    val subjectId: String,
+)
+
+@Serializable
+data class LawVersionDto(
+    val lawName: String,
+    val lawShortName: String,
+    val lawVersion: String,
+    val promulgationDate: String? = null,
+    val effectiveDate: String? = null,
+    val sourceUrl: String? = null,
+    val verifiedAt: String? = null,
+    val examYear: Int? = null,
 )
 
 @Serializable
@@ -152,6 +242,19 @@ data class ConceptDto(
     val journalEntries: String? = null,
     val sourceProblemIds: List<String> = emptyList(),
     val verificationStatus: String = "AUTHOR_REVIEWED",
+    // v4(기업법) 추가 필드
+    val lawName: String? = null,
+    val articleRefs: List<String> = emptyList(),
+    val lawVersion: String? = null,
+    val promulgationDate: String? = null,
+    val transitionRule: String? = null,
+    val examYear: Int? = null,
+    /** APPLIES_2027 | PAST | NOT_IN_FORCE | CHECK_DATE */
+    val examApplicability: String? = null,
+    val sourceUrl: String? = null,
+    val verifiedAt: String? = null,
+    val caseLaw: String? = null,
+    val examArea: String? = null,
 )
 
 @Serializable
@@ -192,6 +295,10 @@ data class QuestionDto(
     val sourceProblemIds: List<String> = emptyList(),
     /** BOTH(기본·심화 모두) | OPTIONS(보기 선택형) */
     val mode: String = "BOTH",
+    /** v4: STATUTE_TEXT_MATCHED(정답이 근거 조문 원문에 있음) | INTERPRETIVE(해석·선택형) */
+    val answerVerification: String? = null,
+    /** v4: 기업법 출제 영역(GENERAL·COMPANY·CPA_ACT·AUDIT_ACT) */
+    val examArea: String? = null,
 )
 
 const val INPUT_TEXT = "text"

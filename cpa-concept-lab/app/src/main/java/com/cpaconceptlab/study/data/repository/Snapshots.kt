@@ -1,6 +1,11 @@
 package com.cpaconceptlab.study.data.repository
 
+import com.cpaconceptlab.study.data.local.CaseNoteEntity
 import com.cpaconceptlab.study.data.local.ChapterEntity
+import com.cpaconceptlab.study.data.local.ExamAreaEntity
+import com.cpaconceptlab.study.data.local.LawArticleEntity
+import com.cpaconceptlab.study.data.local.LawVersionEntity
+import com.cpaconceptlab.study.data.local.NumericRuleEntity
 import com.cpaconceptlab.study.data.local.ConceptEntity
 import com.cpaconceptlab.study.data.local.ConceptProgressEntity
 import com.cpaconceptlab.study.data.local.ExamScopeEntity
@@ -28,7 +33,22 @@ data class ContentSnapshot(
     val bundledVersion: Int,
     val problemSources: List<ProblemSourceEntity> = emptyList(),
     val scopeItems: List<ScopeItemEntity> = emptyList(),
+    // v4 기업법 참조 데이터
+    val lawArticles: List<LawArticleEntity> = emptyList(),
+    val numericRules: List<NumericRuleEntity> = emptyList(),
+    val caseNotes: List<CaseNoteEntity> = emptyList(),
+    val examAreas: List<ExamAreaEntity> = emptyList(),
+    val lawVersions: List<LawVersionEntity> = emptyList(),
 ) {
+    val lawArticleById: Map<String, LawArticleEntity> = lawArticles.associateBy { it.id }
+
+    /** 개념의 근거 조문 원문. articleRefs('상법 제368조 제1항') → law_articles('상법|제368조') */
+    fun articlesOf(concept: ConceptEntity): List<LawArticleEntity> =
+        concept.articleRefs.mapNotNull { ref -> articleKey(ref)?.let { lawArticleById[it] } }.distinctBy { it.id }
+
+    fun caseNotesOf(conceptId: String) = caseNotes.filter { it.conceptId == conceptId }
+    fun numericRulesOf(conceptId: String) = numericRules.filter { it.conceptId == conceptId }
+
     val concepts: List<ConceptEntity> = allConcepts.filter { it.isActive }
     val questions: List<QuestionEntity> = allQuestions.filter { it.isActive }
     val conceptById: Map<String, ConceptEntity> = allConcepts.associateBy { it.id }
@@ -47,6 +67,11 @@ data class ContentSnapshot(
     fun conceptsOfChapter(chapterId: String) = concepts.filter { it.chapterId == chapterId }.sortedBy { it.sortOrder }
 
     companion object {
+        private val REF = Regex("^(상법|공인회계사법|외부감사법) (제\\d+조(?:의\\d+)?)")
+
+        /** '상법 제368조 제1항' → '상법|제368조' */
+        fun articleKey(ref: String): String? = REF.find(ref)?.let { "${it.groupValues[1]}|${it.groupValues[2]}" }
+
         val EMPTY = ContentSnapshot(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), 0)
     }
 }

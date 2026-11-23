@@ -15,6 +15,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         ContentVersionEntity::class, ImportedPackEntity::class, ProblemSourceEntity::class, ScopeItemEntity::class,
         QuestionAttemptEntity::class, QuestionProgressEntity::class, ConceptProgressEntity::class,
         WrongNoteEntity::class, StudyDayEntity::class,
+        LawArticleEntity::class, NumericRuleEntity::class, CaseNoteEntity::class, ExamAreaEntity::class, LawVersionEntity::class,
     ],
     version = AppDatabase.VERSION,
     exportSchema = true,
@@ -25,7 +26,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun progressDao(): ProgressDao
 
     companion object {
-        const val VERSION = 3
+        const val VERSION = 4
         const val NAME = "cpa_concept_lab.db"
 
         /**
@@ -73,7 +74,55 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
-        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2, MIGRATION_2_3)
+        /**
+         * v3 → v4: 2027 공인회계사 1차 기업법(CPA-LAW) 업데이트.
+         * 개념·문항 테이블에 법령 메타데이터 컬럼을 추가하고(기본값 지정) 법령 참조 테이블 5개를 만든다.
+         * 기존 자리표시자 과목 'BL'(기업법, 비활성·콘텐츠 없음)은 실제 과목 'CPA-LAW' 로 대체되므로 삭제한다.
+         * 사용자 학습기록 테이블(question_attempts·question_progress·concept_progress·wrong_notes·study_days)은 건드리지 않는다.
+         */
+        val MIGRATION_3_4 = object : Migration(3, 4) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                listOf("lawName", "lawVersion", "promulgationDate", "transitionRule", "examApplicability", "sourceUrl",
+                    "verifiedAt", "caseLaw", "examArea").forEach { db.execSQL("ALTER TABLE concepts ADD COLUMN `$it` TEXT") }
+                db.execSQL("ALTER TABLE concepts ADD COLUMN `articleRefs` TEXT NOT NULL DEFAULT '[]'")
+                db.execSQL("ALTER TABLE concepts ADD COLUMN `examYear` INTEGER")
+                db.execSQL("ALTER TABLE questions ADD COLUMN `answerVerification` TEXT")
+                db.execSQL("ALTER TABLE questions ADD COLUMN `examArea` TEXT")
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `law_articles` (`id` TEXT NOT NULL, `lawName` TEXT NOT NULL, `lawShortName` TEXT NOT NULL, " +
+                        "`articleId` TEXT NOT NULL, `articleNo` INTEGER NOT NULL, `branch` INTEGER NOT NULL, `title` TEXT NOT NULL, " +
+                        "`text` TEXT NOT NULL, `part` TEXT NOT NULL, `chapter` TEXT NOT NULL, `deleted` INTEGER NOT NULL, " +
+                        "`inScope` INTEGER NOT NULL, `status` TEXT NOT NULL, `statusLabel` TEXT NOT NULL, `note` TEXT, `examArea` TEXT, " +
+                        "`conceptIds` TEXT NOT NULL, `questionCount` INTEGER NOT NULL, `lawVersion` TEXT NOT NULL, `effectiveDate` TEXT, " +
+                        "`sourceUrl` TEXT, `verifiedAt` TEXT, PRIMARY KEY(`id`))",
+                )
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_law_articles_lawShortName` ON `law_articles` (`lawShortName`)")
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `numeric_rules` (`ruleId` TEXT NOT NULL, `lawName` TEXT NOT NULL, `article` TEXT NOT NULL, " +
+                        "`ruleName` TEXT NOT NULL, `subject` TEXT NOT NULL, `condition` TEXT NOT NULL, `value` TEXT NOT NULL, " +
+                        "`unit` TEXT NOT NULL, `exception` TEXT, `effectiveDate` TEXT, `sourceUrl` TEXT, `conceptId` TEXT, " +
+                        "`questionId` TEXT, PRIMARY KEY(`ruleId`))",
+                )
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `case_notes` (`id` TEXT NOT NULL, `conceptId` TEXT NOT NULL, `topic` TEXT NOT NULL, " +
+                        "`holding` TEXT NOT NULL, `caseNumber` TEXT, `decisionDate` TEXT, `court` TEXT NOT NULL, `articles` TEXT NOT NULL, " +
+                        "`verificationStatus` TEXT NOT NULL, PRIMARY KEY(`id`))",
+                )
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `exam_areas` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `minPercent` INTEGER NOT NULL, " +
+                        "`maxPercent` INTEGER NOT NULL, `mockQuestions` INTEGER NOT NULL, `questionCount` INTEGER NOT NULL, " +
+                        "`subjectId` TEXT NOT NULL, PRIMARY KEY(`id`))",
+                )
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `law_versions` (`lawShortName` TEXT NOT NULL, `lawName` TEXT NOT NULL, " +
+                        "`lawVersion` TEXT NOT NULL, `promulgationDate` TEXT, `effectiveDate` TEXT, `sourceUrl` TEXT, `verifiedAt` TEXT, " +
+                        "`examYear` INTEGER, PRIMARY KEY(`lawShortName`))",
+                )
+                db.execSQL("DELETE FROM subjects WHERE id = 'BL' AND NOT EXISTS (SELECT 1 FROM chapters WHERE subjectId = 'BL')")
+            }
+        }
+
+        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
 
         fun build(context: Context): AppDatabase =
             Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, NAME)

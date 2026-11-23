@@ -1,5 +1,6 @@
 package com.cpaconceptlab.study.data.importer
 
+import com.cpaconceptlab.study.domain.usecase.LawCoverage
 import com.cpaconceptlab.study.data.model.BLANK_TOKEN
 import com.cpaconceptlab.study.data.model.INPUT_CHOICE
 import com.cpaconceptlab.study.data.model.INPUT_SLOTS
@@ -19,6 +20,7 @@ import com.cpaconceptlab.study.utils.Chosung
 object ContentCoverageValidator {
 
     const val SUPPORTED_FORMAT_VERSION = 1
+    const val LAW_SUBJECT = "CPA-LAW"
 
     data class Report(
         val requiredConcepts: Int,
@@ -40,6 +42,12 @@ object ContentCoverageValidator {
         val unverifiedSources: Int = 0,
         val scopeCovered: Int = 0,
         val scopeTotal: Int = 0,
+        // v4 기업법
+        val lawConcepts: Int = 0,
+        val lawQuestions: Int = 0,
+        val statuteMatched: Int = 0,
+        val interpretive: Int = 0,
+        val lawRows: List<LawCoverage.Row> = emptyList(),
     ) {
         val passed: Boolean get() = errors.isEmpty()
 
@@ -58,6 +66,15 @@ object ContentCoverageValidator {
             appendLine("OX·예/아니요형 문항: ${oxQuestions}개")
             if (scopeTotal > 0) appendLine("지정 학습범위 체크리스트: ${scopeCovered}/${scopeTotal} 반영")
             if (problemSources > 0) appendLine("원본 문제 출처: ${problemSources}개 등록 · 원본 미확인/미검증 ${unverifiedSources}개")
+            if (lawConcepts > 0) {
+                appendLine("기업법 개념: ${lawConcepts}개 · 문항: ${lawQuestions}개 (정답-조문 원문 대조 일치 ${statuteMatched} · 해석·선택형 ${interpretive})")
+                lawRows.forEach {
+                    appendLine(
+                        "  ${it.group}: 현행 ${it.live}조 · 학습 완료 ${it.completed} · 통합 ${it.integrated} · 작성 중 ${it.writing} · " +
+                            "검토 필요 ${it.review} · 개념 연결률 ${"%.1f".format(it.rate * 100)}%",
+                    )
+                }
+            }
             appendLine("검증 실패: ${errors.size}개")
             errors.take(100).forEach { appendLine(" - $it") }
         }
@@ -73,6 +90,7 @@ object ContentCoverageValidator {
         examScopeCount: Int = 46,
         sourceStatuses: List<String> = emptyList(),
         scopeCoverage: Pair<Int, Int> = 0 to 0,
+        lawRows: List<LawCoverage.Row> = emptyList(),
     ): Report {
         val errors = mutableListOf<String>()
         val conceptById = concepts.associateBy { it.id }
@@ -161,7 +179,17 @@ object ContentCoverageValidator {
             if (v == q.blankAnswer) calcOk++ else errors += "[14] ${q.id} 계산 정답 불일치: 콘텐츠 ${q.blankAnswer} / 앱 재계산 $v"
         }
 
+        // 20. 기업법: 문항 출제영역·정답 대조 상태
+        val lawQs = active.filter { it.subjectId == LAW_SUBJECT }
+        lawQs.filter { it.examArea == null }.forEach { errors += "[20] ${it.id} 출제 영역(examArea) 없음" }
+        lawQs.filter { it.answerVerification == null }.forEach { errors += "[20] ${it.id} 정답-조문 대조 상태 없음" }
+
         return Report(
+            lawConcepts = concepts.count { it.subjectId == LAW_SUBJECT },
+            lawQuestions = lawQs.size,
+            statuteMatched = lawQs.count { it.answerVerification == "STATUTE_TEXT_MATCHED" },
+            interpretive = lawQs.count { it.answerVerification == "INTERPRETIVE" },
+            lawRows = lawRows,
             calcQuestions = calcQs.size,
             calcVerified = calcOk,
             oxQuestions = active.count { OxDetector.isOxLike(it) },

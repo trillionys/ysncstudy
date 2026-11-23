@@ -85,6 +85,18 @@ data class ConceptEntity(
     val journalEntries: String? = null,
     @ColumnInfo(defaultValue = "[]") val sourceProblemIds: List<String> = emptyList(),
     @ColumnInfo(defaultValue = "AUTHOR_REVIEWED") val verificationStatus: String = "AUTHOR_REVIEWED",
+    // 스키마 v4 추가 컬럼(기업법)
+    val lawName: String? = null,
+    @ColumnInfo(defaultValue = "[]") val articleRefs: List<String> = emptyList(),
+    val lawVersion: String? = null,
+    val promulgationDate: String? = null,
+    val transitionRule: String? = null,
+    val examYear: Int? = null,
+    val examApplicability: String? = null,
+    val sourceUrl: String? = null,
+    val verifiedAt: String? = null,
+    val caseLaw: String? = null,
+    val examArea: String? = null,
 )
 
 @Entity(tableName = "questions", indices = [Index("primaryConceptId"), Index("chapterId")])
@@ -125,6 +137,9 @@ data class QuestionEntity(
     /** 계산 입력값 JSON(이름 → 값) */
     val calcParams: String? = null,
     @ColumnInfo(defaultValue = "[]") val sourceProblemIds: List<String> = emptyList(),
+    // 스키마 v4 추가 컬럼
+    val answerVerification: String? = null,
+    val examArea: String? = null,
 )
 
 @Entity(
@@ -181,6 +196,90 @@ data class ScopeItemEntity(
     val conceptId: String?,
     val covered: Boolean,
     val sortOrder: Int,
+)
+
+/** 스키마 v4: 조문 원문과 커버리지 상태 */
+@Entity(tableName = "law_articles", indices = [Index("lawShortName")])
+data class LawArticleEntity(
+    @PrimaryKey val id: String,
+    val lawName: String,
+    val lawShortName: String,
+    val articleId: String,
+    val articleNo: Int,
+    val branch: Int,
+    val title: String,
+    val text: String,
+    val part: String,
+    val chapter: String,
+    val deleted: Boolean,
+    val inScope: Boolean,
+    val status: String,
+    val statusLabel: String,
+    val note: String?,
+    val examArea: String?,
+    val conceptIds: List<String>,
+    val questionCount: Int,
+    val lawVersion: String,
+    val effectiveDate: String?,
+    val sourceUrl: String?,
+    val verifiedAt: String?,
+)
+
+/** 스키마 v4: 숫자·기간·정족수 규칙 */
+@Entity(tableName = "numeric_rules")
+data class NumericRuleEntity(
+    @PrimaryKey val ruleId: String,
+    val lawName: String,
+    val article: String,
+    val ruleName: String,
+    val subject: String,
+    val condition: String,
+    val value: String,
+    val unit: String,
+    val exception: String?,
+    val effectiveDate: String?,
+    val sourceUrl: String?,
+    val conceptId: String?,
+    val questionId: String?,
+)
+
+/** 스키마 v4: 판례 법리 노트 */
+@Entity(tableName = "case_notes")
+data class CaseNoteEntity(
+    @PrimaryKey val id: String,
+    val conceptId: String,
+    val topic: String,
+    val holding: String,
+    val caseNumber: String?,
+    val decisionDate: String?,
+    val court: String,
+    val articles: String,
+    val verificationStatus: String,
+)
+
+/** 스키마 v4: 출제 영역과 공고 비중(실전 비중 모드) */
+@Entity(tableName = "exam_areas")
+data class ExamAreaEntity(
+    @PrimaryKey val id: String,
+    val name: String,
+    val minPercent: Int,
+    val maxPercent: Int,
+    val mockQuestions: Int,
+    val questionCount: Int,
+    val subjectId: String,
+)
+
+/** 스키마 v4: 법령 버전 */
+@Entity(tableName = "law_versions")
+data class LawVersionEntity(
+    @PrimaryKey val lawShortName: String,
+    val lawName: String,
+    val lawVersion: String,
+    val promulgationDate: String?,
+    val effectiveDate: String?,
+    val sourceUrl: String?,
+    val verifiedAt: String?,
+    val examYear: Int?,
 )
 
 /** 콘텐츠 가져오기 이력. 번들 콘텐츠 버전 비교와 가져오기 결과 표시에 사용한다. */

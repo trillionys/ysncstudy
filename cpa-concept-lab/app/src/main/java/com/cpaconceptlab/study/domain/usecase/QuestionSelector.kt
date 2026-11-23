@@ -48,9 +48,11 @@ class QuestionSelector(private val random: Random = Random.Default) {
         wrongNotes: List<WrongNoteEntity>,
         now: Long,
         recentlyAnswered: Set<String> = emptySet(),
+        areaQuota: Map<String, Int> = emptyMap(),
     ): List<QuestionEntity> {
         if (candidates.isEmpty() || size <= 0) return emptyList()
         return when (scopeType) {
+            ScopeType.WEIGHTED -> selectWeighted(candidates, areaQuota)
             ScopeType.WRONG -> selectWrong(candidates, mode, size, wrongNotes)
             ScopeType.DUE -> selectDue(candidates, mode, size, progress, now)
             ScopeType.MOCK -> selectMock(candidates, size)
@@ -194,7 +196,16 @@ class QuestionSelector(private val random: Random = Random.Default) {
         .take(size)
 
     /** 랜덤 모의테스트: 대단원 비중을 유지하며 무작위 추출(같은 개념 중복 최소화). */
+    /**
+     * CPA 실전 비중 모의: 출제 영역(examArea)별 배정 문항 수를 정확히 맞춘다.
+     * 영역 안에서는 개념 중복 없이 대단원 비중을 유지해 뽑는다(selectMock).
+     * 영역 문항이 배정보다 적으면 있는 만큼만 출제한다(부족분을 다른 영역으로 채우지 않아 비중이 왜곡되지 않게 함).
+     */
+    fun selectWeighted(candidates: List<QuestionEntity>, areaQuota: Map<String, Int>): List<QuestionEntity> =
+        areaQuota.flatMap { (area, n) -> selectMock(candidates.filter { it.examArea == area }, n) }
+
     private fun selectMock(candidates: List<QuestionEntity>, size: Int): List<QuestionEntity> {
+        if (candidates.isEmpty() || size <= 0) return emptyList()
         val shuffled = candidates.shuffled(random)
         val firstPerConcept = shuffled.distinctBy { it.primaryConceptId }
         val byChapter = firstPerConcept.groupBy { it.chapterId }.mapValues { ArrayDeque(it.value) }.toMutableMap()

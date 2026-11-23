@@ -41,6 +41,7 @@ import com.cpaconceptlab.study.ui.components.ProgressLine
 import com.cpaconceptlab.study.ui.components.SectionCard
 import com.cpaconceptlab.study.ui.components.VSpace
 import com.cpaconceptlab.study.ui.components.pct
+import com.cpaconceptlab.study.domain.usecase.LawCoverage
 
 /** 과목 → 대단원 → 중단원 → 세부 개념 계층 화면 */
 @Composable
@@ -59,6 +60,9 @@ fun SubjectScreen(
     LazyColumn(Modifier.fillMaxSize(), contentPadding = androidx.compose.foundation.layout.PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             OutlinedTextField(query, { query = it }, label = { Text("개념 검색 (이름·코드·영문)") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+        }
+        if (query.isBlank() && c.examAreas.any { it.subjectId == subjectId }) {
+            item(key = "law-header") { LawSubjectHeader(dash, subjectId, onStartQuiz) }
         }
         if (query.isBlank()) {
             val parts = StatsCalculator.partStats(c, dash.user, dash.overview.masteryByConcept)
@@ -153,6 +157,48 @@ fun ExamScopeScreen(dash: DashboardState, onOpenConcept: (String) -> Unit, onSta
                         OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.EXAM, s.number)) }, modifier = Modifier.weight(1f)) { Text("심화 풀기") }
                     }
                 }
+            }
+        }
+    }
+}
+
+/** 기업법: 두 가지 학습 모드 + 법률별 조문 커버리지 */
+@Composable
+fun LawSubjectHeader(dash: DashboardState, subjectId: String, onStartQuiz: (QuizMode, QuizScope) -> Unit) {
+    val c = dash.content
+    var showCoverage by rememberSaveable { mutableStateOf(false) }
+    SectionCard(title = "학습 모드") {
+        Text("① 전체 개념 균등학습: 모든 개념을 한 번씩 출제한 뒤에 반복합니다.", style = MaterialTheme.typography.bodySmall)
+        Text(
+            "② CPA 실전 비중 모드: 공고 출제비중(" + c.examAreas.filter { it.subjectId == subjectId }
+                .joinToString(" · ") { "${it.name} ${it.minPercent}~${it.maxPercent}%" } + ")에 맞춘 40문항·100점 모의고사입니다.",
+            style = MaterialTheme.typography.bodySmall,
+        )
+        VSpace(6)
+        Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            OutlinedButton(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.SUBJECT, subjectId)) }, modifier = Modifier.weight(1f)) { Text("균등 기본") }
+            OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.SUBJECT, subjectId)) }, modifier = Modifier.weight(1f)) { Text("균등 심화") }
+        }
+        Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            OutlinedButton(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.WEIGHTED, subjectId)) }, modifier = Modifier.weight(1f)) { Text("실전 모의 기본") }
+            OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.WEIGHTED, subjectId)) }, modifier = Modifier.weight(1f)) { Text("실전 모의 심화") }
+        }
+        TextButton(onClick = { showCoverage = !showCoverage }) { Text(if (showCoverage) "조문 커버리지 접기" else "조문 커버리지 보기") }
+        if (showCoverage) {
+            LawCoverage.rows(c.lawArticles).forEach { r ->
+                VSpace(6)
+                Text(r.group, style = MaterialTheme.typography.titleSmall)
+                ProgressLine("개념 연결 조문", r.linked, r.live)
+                Text(
+                    "현행 ${r.live} · 학습 완료 ${r.completed} · 관련 개념에 통합 ${r.integrated} · 작성 중 ${r.writing} · 검토 필요 ${r.review} · 삭제 ${r.deleted}",
+                    style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            val outOfScope = c.lawArticles.count { it.status == "OUT_OF_SCOPE" }
+            VSpace(6)
+            Text("시험범위 밖 조문(상법 보험·해상·항공운송편): ${outOfScope}개", style = MaterialTheme.typography.bodySmall)
+            c.lawArticles.filter { it.status == "REVIEW_NEEDED" }.forEach {
+                Text("검토 필요: ${it.lawShortName} ${it.articleId}(${it.title}) — ${it.note.orEmpty()}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
             }
         }
     }

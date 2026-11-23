@@ -19,6 +19,16 @@ import com.cpaconceptlab.study.data.model.ContentJson
 import com.cpaconceptlab.study.data.model.ProblemSourceDto
 import com.cpaconceptlab.study.data.model.ScopeItemDto
 import com.cpaconceptlab.study.data.model.SlotDto
+import com.cpaconceptlab.study.data.local.CaseNoteEntity
+import com.cpaconceptlab.study.data.local.ExamAreaEntity
+import com.cpaconceptlab.study.data.local.LawArticleEntity
+import com.cpaconceptlab.study.data.local.LawVersionEntity
+import com.cpaconceptlab.study.data.local.NumericRuleEntity
+import com.cpaconceptlab.study.data.model.CaseNoteDto
+import com.cpaconceptlab.study.data.model.ExamAreaDto
+import com.cpaconceptlab.study.data.model.LawArticleDto
+import com.cpaconceptlab.study.data.model.LawVersionDto
+import com.cpaconceptlab.study.data.model.NumericRuleDto
 import kotlinx.serialization.builtins.MapSerializer
 import kotlinx.serialization.builtins.serializer
 
@@ -48,6 +58,9 @@ fun ConceptDto.toEntity(packVersion: Int) = ConceptEntity(
     sortOrder = sortOrder, revision = revision, contentVersion = contentVersion ?: packVersion,
     recognitionRules = recognitionRules, measurementRules = measurementRules, exceptions = exceptions,
     journalEntries = journalEntries, sourceProblemIds = sourceProblemIds, verificationStatus = verificationStatus,
+    lawName = lawName, articleRefs = articleRefs, lawVersion = lawVersion, promulgationDate = promulgationDate,
+    transitionRule = transitionRule, examYear = examYear, examApplicability = examApplicability, sourceUrl = sourceUrl,
+    verifiedAt = verifiedAt, caseLaw = caseLaw, examArea = examArea,
 )
 
 fun QuestionDto.toEntity(packVersion: Int) = QuestionEntity(
@@ -63,7 +76,7 @@ fun QuestionDto.toEntity(packVersion: Int) = QuestionEntity(
     contentVersion = contentVersion ?: packVersion,
     inputType = inputType, choices = choices, slotLabels = slots.map { it.label }, slotAnswers = slots.map { it.answer },
     calcFormulaId = calcSpec?.formulaId, calcParams = calcSpec?.let { encodeParams(it.params) },
-    sourceProblemIds = sourceProblemIds,
+    sourceProblemIds = sourceProblemIds, answerVerification = answerVerification, examArea = examArea,
 )
 
 fun ConceptEntity.toDto() = ConceptDto(
@@ -72,6 +85,8 @@ fun ConceptEntity.toDto() = ConceptDto(
     prerequisiteConceptIds, examReferenceNumbers, standardReference, effectiveFrom, effectiveTo, isHistorical,
     requiresReview, revisionNote, originalExamYear, reviewStatus, isRequired, isActive, sortOrder, revision, contentVersion,
     recognitionRules, measurementRules, exceptions, journalEntries, sourceProblemIds, verificationStatus,
+    lawName, articleRefs, lawVersion, promulgationDate, transitionRule, examYear, examApplicability, sourceUrl,
+    verifiedAt, caseLaw, examArea,
 )
 
 fun QuestionEntity.toDto() = QuestionDto(
@@ -79,7 +94,7 @@ fun QuestionEntity.toDto() = QuestionDto(
     unit, explanation, confusion, calculation, difficulty, examReferenceNumbers, relatedConceptIds, standardReference,
     effectiveFrom, effectiveTo, isHistorical, requiresReview, revisionNote, reviewStatus, isActive, revision, sortOrder,
     contentVersion, inputType, choices, slotLabels.zip(slotAnswers).map { (l, a) -> SlotDto(l, a) }, calcSpec(), sourceProblemIds,
-    if (inputType == "text") "BOTH" else "OPTIONS",
+    if (inputType == "text") "BOTH" else "OPTIONS", answerVerification, examArea,
 )
 
 fun ProblemSourceDto.toEntity() = ProblemSourceEntity(
@@ -90,3 +105,16 @@ fun ProblemSourceDto.toEntity() = ProblemSourceEntity(
 fun ScopeItemDto.toEntity() = ScopeItemEntity(id, area, item, conceptId, covered, sortOrder)
 
 fun ExamScopeEntity.toDto() = ExamScopeDto(number, title, conceptIds, subjectId)
+
+fun LawArticleDto.toEntity() = LawArticleEntity(
+    id, lawName, lawShortName, articleId, articleNo, branch, title, text, part, chapter, deleted, inScope, status,
+    statusLabel, note, examArea, conceptIds, questionCount, lawVersion, effectiveDate, sourceUrl, verifiedAt,
+)
+
+fun NumericRuleDto.toEntity() = NumericRuleEntity(
+    ruleId, lawName, article, ruleName, subject, condition, value, unit, exception, effectiveDate, sourceUrl, conceptId, questionId,
+)
+
+fun CaseNoteDto.toEntity() = CaseNoteEntity(id, conceptId, topic, holding, caseNumber, decisionDate, court, articles, verificationStatus)
+fun ExamAreaDto.toEntity() = ExamAreaEntity(id, name, minPercent, maxPercent, mockQuestions, questionCount, subjectId)
+fun LawVersionDto.toEntity() = LawVersionEntity(lawShortName, lawName, lawVersion, promulgationDate, effectiveDate, sourceUrl, verifiedAt, examYear)

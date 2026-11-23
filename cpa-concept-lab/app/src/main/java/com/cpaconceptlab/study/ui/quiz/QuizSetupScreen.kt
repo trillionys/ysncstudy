@@ -75,7 +75,7 @@ fun QuizSetupScreen(
         VSpace(12)
         SectionCard(title = "출제 범위") {
             val selectable = listOf(
-                ScopeType.ALL, ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM,
+                ScopeType.ALL, ScopeType.SUBJECT, ScopeType.WEIGHTED, ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM,
                 ScopeType.UNSTUDIED, ScopeType.WRONG, ScopeType.WEAK, ScopeType.RECENT, ScopeType.DUE, ScopeType.MOCK,
             )
             FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -85,11 +85,25 @@ fun QuizSetupScreen(
             }
             VSpace(8)
             when (type) {
+                ScopeType.SUBJECT -> {
+                    Hint("선택한 과목의 모든 개념을 한 번씩 출제한 뒤에 반복하는 균등학습입니다.")
+                    content.subjects.filter { s -> s.isActive && content.chapters.any { it.subjectId == s.id } }.forEach { sub ->
+                        ChoiceRow(sub.name, targetId == sub.id) { targetId = sub.id }
+                    }
+                }
+                ScopeType.WEIGHTED -> {
+                    val areas = content.examAreas.filter { it.subjectId == QuizViewModel.LAW_SUBJECT }
+                    Hint(
+                        "기업법 1차 시험(금융위원회 공고 출제비중)에 맞춘 ${areas.sumOf { it.mockQuestions }}문항 모의고사입니다. " +
+                            "문항당 2.5점, 100점 만점으로 채점합니다. 아래 난이도·형식 필터와 문항 수 설정은 적용되지 않습니다.",
+                    )
+                    areas.forEach { a -> Text("· ${a.name}: ${a.mockQuestions}문항 (공고 ${a.minPercent}~${a.maxPercent}%)", style = MaterialTheme.typography.bodySmall) }
+                }
                 ScopeType.PART -> content.chapters.map { it.partTitle }.filter { it.isNotBlank() }.distinct().forEach { part ->
                     ChoiceRow(part, targetId == part) { targetId = part }
                 }
                 ScopeType.WEAK -> Hint("정답률 60% 미만(시도 3회 이상)이거나 미해결 오답이 2개 이상인 개념을 모아 출제합니다.")
-                ScopeType.RECENT -> Hint("가장 최근 콘텐츠 업데이트에서 추가된 개념(재고자산·유형자산·차입원가·농림어업)을 출제합니다.")
+                ScopeType.RECENT -> Hint("가장 최근 콘텐츠 업데이트(v4: 기업법 — 상법 총칙·상행위·회사편, 공인회계사법, 외부감사법)에서 추가된 개념을 출제합니다.")
                 ScopeType.CHAPTER -> content.chapters.forEach { ch ->
                     ChoiceRow("${ch.code}. ${ch.title}", targetId == ch.id) { targetId = ch.id }
                 }
@@ -132,10 +146,10 @@ fun QuizSetupScreen(
             Slider(value = size, onValueChange = { size = it }, valueRange = 5f..50f, steps = 8)
         }
         VSpace(16)
-        val needsTarget = type in setOf(ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM)
+        val needsTarget = type in setOf(ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM, ScopeType.SUBJECT)
         Button(
             onClick = {
-                val scope = QuizScope(
+                val scope = if (type == ScopeType.WEIGHTED) QuizScope(ScopeType.WEIGHTED, QuizViewModel.LAW_SUBJECT) else QuizScope(
                     type, if (needsTarget) targetId else null,
                     levels.start.toInt(), levels.endInclusive.toInt(), kind,
                 )
