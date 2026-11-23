@@ -143,8 +143,11 @@ class V3FeaturesTest {
         assertTrue(blank.all { it.inputType == INPUT_TEXT && it.questionType != "calculation" })
         val options = QuizViewModel.candidatesFor(QuizScope(ScopeType.ALL, kind = QuestionKind.OPTIONS), content, user, 0)
         assertTrue(options.isNotEmpty() && options.all { it.inputType != INPUT_TEXT })
+        // v4 부터 '최근 추가 개념'은 가장 최근 콘텐츠 버전(v4: 기업법)의 개념이다
         val recent = QuizViewModel.candidatesFor(QuizScope(ScopeType.RECENT), content, user, 0)
-        assertTrue(recent.isNotEmpty() && recent.all { it.chapterId in newChapters })
+        assertTrue(recent.isNotEmpty() && recent.all { it.subjectId == "CPA-LAW" })
+        val v3 = content.questions.filter { it.chapterId in newChapters }
+        assertTrue(v3.isNotEmpty() && v3.all { it.contentVersion == 3 })
     }
 
     @Test fun partStatsCoverInventoryPpeAndBorrowingCosts() {

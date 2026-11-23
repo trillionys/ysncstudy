@@ -30,6 +30,13 @@ object TestContent {
             allQuestions = packs.flatMap { it.questions }.map { it.toEntity(v) },
             examScopes = packs.flatMap { it.examScopes }.map { it.toEntity() },
             bundledVersion = v,
+            problemSources = packs.flatMap { it.problemSources }.map { it.toEntity() },
+            scopeItems = packs.flatMap { it.scopeItems }.map { it.toEntity() },
+            lawArticles = packs.flatMap { it.lawArticles }.map { it.toEntity() },
+            numericRules = packs.flatMap { it.numericRules }.map { it.toEntity() },
+            caseNotes = packs.flatMap { it.caseNotes }.map { it.toEntity() },
+            examAreas = packs.flatMap { it.examAreas }.map { it.toEntity() },
+            lawVersions = packs.flatMap { it.lawVersions }.map { it.toEntity() },
         )
     }
 

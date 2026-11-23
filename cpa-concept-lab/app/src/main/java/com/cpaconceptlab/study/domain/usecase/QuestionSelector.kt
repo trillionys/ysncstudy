@@ -135,10 +135,11 @@ class QuestionSelector(private val random: Random = Random.Default) {
             val pickedPerChapter = mutableMapOf<String, Int>()
             var pickedInRound = 0
             while (result.size < size && queues.isNotEmpty()) {
-                // 목표 비중 대비 가장 덜 뽑힌 대단원을 선택(동률이면 우선순위가 높은 개념을 가진 단원)
+                // 목표 비중 대비 가장 덜 뽑힌 대단원을 선택(동률이면 우선순위가 높은 개념을 가진 단원).
+                // Sainte-Laguë 배분((2·선택 수 + 1) / 비중 최소)을 사용해 대단원이 많아도 작은 단원이 과대 배정되지 않게 한다.
                 val chapter = queues.keys.minWith(
                     compareBy<String> { ch ->
-                        (pickedPerChapter[ch] ?: 0) / (chapterShare[ch] ?: 1.0)
+                        (2.0 * (pickedPerChapter[ch] ?: 0) + 1) / (chapterShare[ch] ?: 1.0)
                     }.thenComparator { a, b -> PRIORITY_ORDER.compare(queues[a]!!.first(), queues[b]!!.first()) },
                 )
                 val queue = queues[chapter]!!
@@ -214,7 +215,7 @@ class QuestionSelector(private val random: Random = Random.Default) {
         val picked = mutableListOf<QuestionEntity>()
         val count = mutableMapOf<String, Int>()
         while (picked.size < size && byChapter.isNotEmpty()) {
-            val ch = byChapter.keys.minBy { (count[it] ?: 0) / share.getValue(it) + random.nextDouble() * 1e-6 }
+            val ch = byChapter.keys.minBy { (2.0 * (count[it] ?: 0) + 1) / share.getValue(it) + random.nextDouble() * 1e-6 }
             val dq = byChapter.getValue(ch)
             picked += dq.removeFirst()
             count[ch] = (count[ch] ?: 0) + 1

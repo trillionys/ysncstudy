@@ -378,6 +378,78 @@ class DatabaseTest {
         ctx.deleteDatabase(name)
     }
 
+    // DB 마이그레이션 3 → 4 + v4(기업법) 번들 동기화: 1.0.2(v3) 사용자의 학습기록·오답·북마크·메모·복습일정이 모두 보존되는지
+    @Test fun migration3To4KeepsLearningRecordsAndAddsCorporateLaw() = runBlocking<Unit> {
+        val name = "migration34-test.db"
+        val (helper, v3) = createDbFromSchema(name, 3)
+        helper.writableDatabase.apply {
+            execSQL(insertSql(v3, "subjects", mapOf("id" to "FA", "name" to "재무회계", "description" to "", "sortOrder" to 1, "isActive" to 1)))
+            execSQL(insertSql(v3, "subjects", mapOf("id" to "BL", "name" to "기업법", "description" to "콘텐츠 팩 추가 시 활성화", "sortOrder" to 7, "isActive" to 0)))
+            execSQL(insertSql(v3, "chapters", mapOf("id" to "FA-L", "code" to "L", "subjectId" to "FA", "title" to "재고자산", "englishTitle" to "", "sortOrder" to 12, "partTitle" to "재고자산")))
+            execSQL(insertSql(v3, "concepts", mapOf("id" to "L001", "subjectId" to "FA", "chapterId" to "FA-L", "sectionId" to "FA-L-S01",
+                "koreanName" to "재고자산의 정의", "definition" to "정의", "reviewStatus" to "REVIEWED", "isRequired" to 1, "isActive" to 1, "revision" to 99, "contentVersion" to 3)))
+            execSQL(insertSql(v3, "questions", mapOf("id" to "L001-Q01", "primaryConceptId" to "L001", "conceptIds" to "[\"L001\"]", "subjectId" to "FA",
+                "chapterId" to "FA-L", "questionType" to "definition", "questionText" to "v3 문항 (______)", "blankAnswer" to "재고자산",
+                "acceptedAnswers" to "[\"재고자산\"]", "explanation" to "해설", "difficulty" to 1, "reviewStatus" to "REVIEWED", "isActive" to 1, "revision" to 1, "contentVersion" to 3)))
+            execSQL(insertSql(v3, "content_versions", mapOf("version" to 3, "source" to "bundled", "packId" to "fa", "importedAt" to 1,
+                "conceptCount" to 462, "questionCount" to 1127)))
+            execSQL(insertSql(v3, "concept_progress", mapOf("conceptId" to "L001", "firstStudiedAt" to 1, "lastStudiedAt" to 2, "viewCount" to 7,
+                "basicAttemptCount" to 4, "basicCorrectCount" to 3, "advancedAttemptCount" to 2, "advancedCorrectCount" to 1,
+                "masteryLevel" to "ADVANCED_PRACTICING", "nextReviewAt" to 77, "isBookmarked" to 1, "memo" to "저가법 주의")))
+            execSQL("INSERT INTO question_progress VALUES ('L001-Q01','ADVANCED',1,6,4,2,3,5,0,4000,3,888,0.6)")
+            execSQL("INSERT INTO question_attempts (questionId, mode, userAnswer, isCorrect, attemptedAt, responseTimeMs) VALUES ('L001-Q01','ADVANCED','재고',0,5,4000)")
+            execSQL("INSERT INTO wrong_notes VALUES ('L001-Q01','ADVANCED','재고',3,1,3,0,NULL)")
+            execSQL("INSERT INTO study_days VALUES (20400, 9, 6, 26000)")
+            close()
+        }
+        val migrated = Room.databaseBuilder(ctx, AppDatabase::class.java, name)
+            .addMigrations(*AppDatabase.MIGRATIONS).allowMainThreadQueries().build()
+        // 마이그레이션 직후: 새 컬럼 기본값, 자리표시자 과목 BL 제거, 기존 콘텐츠 유지
+        val c0 = migrated.contentDao().concepts().single()
+        assertTrue(c0.articleRefs.isEmpty() && c0.lawName == null && c0.examArea == null)
+        assertNull(migrated.contentDao().questions().single().answerVerification)
+        assertEquals(listOf("FA"), migrated.contentDao().subjects().map { it.id })
+        assertTrue(migrated.contentDao().lawArticles().isEmpty())
+
+        // 새 APK(콘텐츠 v4) 첫 실행 동기화
+        val repo = ContentRepository(migrated, BundledAssetContentSource(ctx.assets))
+        val r = repo.syncBundled()
+        assertNotNull(r); assertTrue(r!!.message, r.success)
+        val snap = repo.snapshot.value!!
+        assertEquals(TestContent.manifest.conceptCount, snap.concepts.size)
+        assertEquals(TestContent.manifest.questionCount, snap.questions.size)
+        assertTrue(snap.subjects.any { it.id == "CPA-LAW" && it.name == "기업법" && it.isActive })
+        assertTrue(snap.subjects.none { it.id == "BL" })
+        assertEquals(TestContent.packs.sumOf { it.lawArticles.size }, snap.lawArticles.size)
+        assertEquals(4, snap.examAreas.size)
+        assertTrue(snap.numericRules.size >= 150)
+        assertTrue(snap.concepts.count { it.subjectId == "CPA-LAW" } >= 250)
+        // 기기에 있는 개념의 revision 이 번들보다 같거나 높으면 덮어쓰지 않는다
+        assertEquals("정의", snap.conceptById["L001"]!!.definition)
+
+        // 학습기록 보존
+        val pd = migrated.progressDao()
+        val cp = pd.conceptProgress("L001")!!
+        assertEquals(7, cp.viewCount); assertEquals("ADVANCED_PRACTICING", cp.masteryLevel); assertTrue(cp.isBookmarked); assertEquals("저가법 주의", cp.memo)
+        assertEquals(77L, cp.nextReviewAt)
+        val qp = pd.questionProgress("L001-Q01", "ADVANCED")!!
+        assertEquals(6, qp.totalAttempts); assertEquals(888L, qp.nextReviewAt); assertEquals(3, qp.stage)
+        val wn = pd.allWrongNotes().single()
+        assertEquals(3, wn.wrongCount); assertFalse(wn.isResolved)
+        assertEquals(9, pd.allStudyDays().single().solvedCount)
+        // 새 기업법 개념은 미학습 초기 상태로 추가된다
+        assertEquals("NOT_STARTED", pd.conceptProgress("LD045")!!.masteryLevel)
+        assertEquals(TestContent.manifest.conceptCount, pd.allConceptProgress().size)
+
+        // 다시 동기화해도 중복이 생기지 않는다
+        migrated.openHelper.writableDatabase.execSQL("UPDATE content_versions SET version = 3")
+        repo.syncBundled()
+        assertEquals(TestContent.manifest.questionCount, migrated.contentDao().questions().size)
+        assertEquals(TestContent.packs.sumOf { it.lawArticles.size }, migrated.contentDao().lawArticles().size)
+        migrated.close()
+        ctx.deleteDatabase(name)
+    }
+
     // 앱 업데이트(콘텐츠 버전 상승) 시뮬레이션: 같은 DB 파일을 다시 열어 동기화해도 학습진도 유지
     @Test fun progressSurvivesAppRestartAndResync() = runBlocking<Unit> {
         val name = "update-test.db"
