@@ -1,15 +1,16 @@
 {
  "formatVersion": 1,
- "contentVersion": 3,
+ "contentVersion": 4,
  "contentId": "cpa-concept-lab-bundled",
  "generatedAt": "2026-11-23",
  "files": [
-  "structure_v3.json",
-  "concepts_v3.json",
-  "questions_v3.json"
+  "structure_v4.json",
+  "concepts_v4.json",
+  "questions_v4.json",
+  "law_v4.json"
  ],
- "conceptCount": 462,
- "questionCount": 1127,
+ "conceptCount": 725,
+ "questionCount": 1842,
  "requiredConceptIds": [
   "A01",
   "A02",

@@ -21,7 +21,8 @@ EXAM_YEAR = 2027
 VERIFIED_AT = "2026-11-23"
 
 LAWS = {
-    "상법": dict(file="sangbeop.json", version="법률 제21044호", promulgated="2025-09-09", effective="2026-09-10",
+    "상법": dict(file="sangbeop.json", version="법률 제21448호(2026. 3. 6. 공포)까지 반영된 2026. 9. 10. 시행 현행 조문",
+               promulgated="2026-03-06", effective="2026-09-10",
                url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=273629"),
     "공인회계사법": dict(file="cpa_act.json", version="법률 제20055호", promulgated="2024-01-16", effective="2024-01-16",
                    url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=258791"),

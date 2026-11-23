@@ -1,6 +1,6 @@
 {
  "formatVersion": 1,
- "contentVersion": 3,
+ "contentVersion": 4,
  "packId": "fa-structure",
  "generatedAt": "2026-11-23",
  "subjects": [
@@ -47,11 +47,11 @@
    "isActive": false
   },
   {
-   "id": "BL",
+   "id": "CPA-LAW",
    "name": "기업법",
-   "description": "콘텐츠 팩 추가 시 활성화",
+   "description": "상법 총칙·상행위·회사편, 공인회계사법, 외부감사법 (2027 1차 시험범위)",
    "sortOrder": 7,
-   "isActive": false
+   "isActive": true
   },
   {
    "id": "TX",
@@ -214,6 +214,87 @@
    "title": "농림어업",
    "englishTitle": "Agriculture",
    "sortOrder": 17
+  },
+  {
+   "partTitle": "상법총칙·상행위법",
+   "id": "LAW-A",
+   "code": "A",
+   "subjectId": "CPA-LAW",
+   "title": "상법총칙",
+   "englishTitle": "Commercial Act Part I: General provisions",
+   "sortOrder": 18
+  },
+  {
+   "partTitle": "상법총칙·상행위법",
+   "id": "LAW-B",
+   "code": "B",
+   "subjectId": "CPA-LAW",
+   "title": "상행위법",
+   "englishTitle": "Commercial Act Part II: Commercial transactions",
+   "sortOrder": 19
+  },
+  {
+   "partTitle": "회사법",
+   "id": "LAW-C",
+   "code": "C",
+   "subjectId": "CPA-LAW",
+   "title": "회사법 총론",
+   "englishTitle": "Company law: general provisions",
+   "sortOrder": 20
+  },
+  {
+   "partTitle": "회사법",
+   "id": "LAW-E",
+   "code": "E",
+   "subjectId": "CPA-LAW",
+   "title": "기타 회사",
+   "englishTitle": "Other company forms and foreign companies",
+   "sortOrder": 21
+  },
+  {
+   "partTitle": "회사법",
+   "id": "LAW-D",
+   "code": "D",
+   "subjectId": "CPA-LAW",
+   "title": "주식회사",
+   "englishTitle": "Stock company",
+   "sortOrder": 22
+  },
+  {
+   "partTitle": "회사법",
+   "id": "LAW-F",
+   "code": "F",
+   "subjectId": "CPA-LAW",
+   "title": "회사의 조직변경·합병·분할·해산",
+   "englishTitle": "Restructuring, merger, division and dissolution",
+   "sortOrder": 23
+  },
+  {
+   "partTitle": "공인회계사법",
+   "id": "LAW-G",
+   "code": "G",
+   "subjectId": "CPA-LAW",
+   "title": "공인회계사법",
+   "englishTitle": "Certified Public Accountant Act",
+   "sortOrder": 24
+  },
+  {
+   "partTitle": "외부감사법",
+   "id": "LAW-H",
+   "code": "H",
+   "subjectId": "CPA-LAW",
+   "title": "주식회사 등의 외부감사에 관한 법률",
+   "englishTitle": "Act on External Audit of Stock Companies, etc.",
+   "sortOrder": 25
+  },
+  {
+   "partTitle": "종합",
+   "id": "LAW-I",
+   "code": "I",
+   "subjectId": "CPA-LAW",
+   "title": "기업법 종합·비교·응용",
+   "englishTitle": "Integrated comparisons",
+   "sortOrder": 26
   }
  ],
  "sections": [
@@ -791,6 +872,318 @@
    "id": "FA-R-S02",
    "chapterId": "FA-R",
    "title": "측정과 손익",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-A-S01",
+   "chapterId": "LAW-A",
+   "title": "상법의 기본원리",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-A-S02",
+   "chapterId": "LAW-A",
+   "title": "상인",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-A-S03",
+   "chapterId": "LAW-A",
+   "title": "상업사용인",
+   "sortOrder": 3
+  },
+  {
+   "id": "LAW-A-S04",
+   "chapterId": "LAW-A",
+   "title": "상호",
+   "sortOrder": 4
+  },
+  {
+   "id": "LAW-A-S05",
+   "chapterId": "LAW-A",
+   "title": "상업장부",
+   "sortOrder": 5
+  },
+  {
+   "id": "LAW-A-S06",
+   "chapterId": "LAW-A",
+   "title": "상업등기",
+   "sortOrder": 6
+  },
+  {
+   "id": "LAW-A-S07",
+   "chapterId": "LAW-A",
+   "title": "영업양도",
+   "sortOrder": 7
+  },
+  {
+   "id": "LAW-B-S01",
+   "chapterId": "LAW-B",
+   "title": "상행위 통칙",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-B-S02",
+   "chapterId": "LAW-B",
+   "title": "상사매매",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-B-S03",
+   "chapterId": "LAW-B",
+   "title": "상호계산·익명조합·합자조합",
+   "sortOrder": 3
+  },
+  {
+   "id": "LAW-B-S04",
+   "chapterId": "LAW-B",
+   "title": "대리상·중개업·위탁매매업",
+   "sortOrder": 4
+  },
+  {
+   "id": "LAW-B-S05",
+   "chapterId": "LAW-B",
+   "title": "운송주선업·운송업",
+   "sortOrder": 5
+  },
+  {
+   "id": "LAW-B-S06",
+   "chapterId": "LAW-B",
+   "title": "공중접객업·창고업",
+   "sortOrder": 6
+  },
+  {
+   "id": "LAW-B-S07",
+   "chapterId": "LAW-B",
+   "title": "금융리스업·가맹업·채권매입업",
+   "sortOrder": 7
+  },
+  {
+   "id": "LAW-C-S01",
+   "chapterId": "LAW-C",
+   "title": "회사의 기본 개념",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-E-S01",
+   "chapterId": "LAW-E",
+   "title": "합명회사",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-E-S02",
+   "chapterId": "LAW-E",
+   "title": "합자회사",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-E-S03",
+   "chapterId": "LAW-E",
+   "title": "유한책임회사",
+   "sortOrder": 3
+  },
+  {
+   "id": "LAW-E-S04",
+   "chapterId": "LAW-E",
+   "title": "유한회사",
+   "sortOrder": 4
+  },
+  {
+   "id": "LAW-E-S05",
+   "chapterId": "LAW-E",
+   "title": "외국회사",
+   "sortOrder": 5
+  },
+  {
+   "id": "LAW-D-S01",
+   "chapterId": "LAW-D",
+   "title": "주식회사의 설립",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-D-S02",
+   "chapterId": "LAW-D",
+   "title": "주식의 기본 개념과 종류주식",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-D-S03",
+   "chapterId": "LAW-D",
+   "title": "주주권과 주권·주식양도",
+   "sortOrder": 3
+  },
+  {
+   "id": "LAW-D-S04",
+   "chapterId": "LAW-D",
+   "title": "자기주식·상호주·주식매수선택권",
+   "sortOrder": 4
+  },
+  {
+   "id": "LAW-D-S05",
+   "chapterId": "LAW-D",
+   "title": "주주총회",
+   "sortOrder": 5
+  },
+  {
+   "id": "LAW-D-S06",
+   "chapterId": "LAW-D",
+   "title": "이사",
+   "sortOrder": 6
+  },
+  {
+   "id": "LAW-D-S07",
+   "chapterId": "LAW-D",
+   "title": "이사회와 대표이사·집행임원",
+   "sortOrder": 7
+  },
+  {
+   "id": "LAW-D-S08",
+   "chapterId": "LAW-D",
+   "title": "감사와 감사위원회",
+   "sortOrder": 8
+  },
+  {
+   "id": "LAW-D-S09",
+   "chapterId": "LAW-D",
+   "title": "상장회사에 대한 특례",
+   "sortOrder": 9
+  },
+  {
+   "id": "LAW-D-S10",
+   "chapterId": "LAW-D",
+   "title": "신주발행",
+   "sortOrder": 10
+  },
+  {
+   "id": "LAW-D-S11",
+   "chapterId": "LAW-D",
+   "title": "정관변경과 자본금 변동",
+   "sortOrder": 11
+  },
+  {
+   "id": "LAW-D-S12",
+   "chapterId": "LAW-D",
+   "title": "회사의 회계와 이익배당",
+   "sortOrder": 12
+  },
+  {
+   "id": "LAW-D-S13",
+   "chapterId": "LAW-D",
+   "title": "사채",
+   "sortOrder": 13
+  },
+  {
+   "id": "LAW-F-S01",
+   "chapterId": "LAW-F",
+   "title": "구조변경 개관",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-F-S02",
+   "chapterId": "LAW-F",
+   "title": "합병",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-F-S03",
+   "chapterId": "LAW-F",
+   "title": "회사의 분할",
+   "sortOrder": 3
+  },
+  {
+   "id": "LAW-F-S04",
+   "chapterId": "LAW-F",
+   "title": "주식의 포괄적 교환·이전",
+   "sortOrder": 4
+  },
+  {
+   "id": "LAW-F-S05",
+   "chapterId": "LAW-F",
+   "title": "해산과 청산",
+   "sortOrder": 5
+  },
+  {
+   "id": "LAW-F-S06",
+   "chapterId": "LAW-F",
+   "title": "회사법상 벌칙·과태료",
+   "sortOrder": 6
+  },
+  {
+   "id": "LAW-G-S01",
+   "chapterId": "LAW-G",
+   "title": "공인회계사의 자격·시험·등록",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-G-S02",
+   "chapterId": "LAW-G",
+   "title": "공인회계사의 권리·의무",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-G-S03",
+   "chapterId": "LAW-G",
+   "title": "회계법인",
+   "sortOrder": 3
+  },
+  {
+   "id": "LAW-G-S04",
+   "chapterId": "LAW-G",
+   "title": "외국공인회계사",
+   "sortOrder": 4
+  },
+  {
+   "id": "LAW-G-S05",
+   "chapterId": "LAW-G",
+   "title": "한국공인회계사회·징계·벌칙",
+   "sortOrder": 5
+  },
+  {
+   "id": "LAW-H-S01",
+   "chapterId": "LAW-H",
+   "title": "총칙·외부감사 대상",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-H-S02",
+   "chapterId": "LAW-H",
+   "title": "회사의 회계처리·내부회계관리제도",
+   "sortOrder": 2
+  },
+  {
+   "id": "LAW-H-S03",
+   "chapterId": "LAW-H",
+   "title": "감사인의 자격·선임·지정",
+   "sortOrder": 3
+  },
+  {
+   "id": "LAW-H-S04",
+   "chapterId": "LAW-H",
+   "title": "감사의 실시·보고",
+   "sortOrder": 4
+  },
+  {
+   "id": "LAW-H-S05",
+   "chapterId": "LAW-H",
+   "title": "감리·조치·손해배상",
+   "sortOrder": 5
+  },
+  {
+   "id": "LAW-H-S06",
+   "chapterId": "LAW-H",
+   "title": "벌칙·과태료·기타",
+   "sortOrder": 6
+  },
+  {
+   "id": "LAW-I-S01",
+   "chapterId": "LAW-I",
+   "title": "법률 간 비교",
+   "sortOrder": 1
+  },
+  {
+   "id": "LAW-I-S02",
+   "chapterId": "LAW-I",
+   "title": "사례 응용",
    "sortOrder": 2
   }
  ],

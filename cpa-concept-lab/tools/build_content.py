@@ -28,9 +28,14 @@ import sources  # noqa: E402,F401
 import scope_items  # noqa: E402
 import calc as calcmod  # noqa: E402
 from required_concepts import REQUIRED  # noqa: E402
+# v4: 2027 공인회계사 1차 기업법(CPA-LAW) 전 범위
+import lawdsl  # noqa: E402
+import law_a, law_b, law_ce, law_d1, law_d2, law_d3, law_d4, law_f, law_g, law_h, law_i, law_extra  # noqa: E402,F401
+import law_coverage  # noqa: E402
 
-CONTENT_VERSION = 3
+CONTENT_VERSION = 4
 NEW_CHAPTERS = {"FA-L", "FA-M", "FA-N", "FA-P", "FA-Q", "FA-R"}
+LAW_SUBJECT = "CPA-LAW"
 PREV_CONCEPT_COUNT = 285
 SELECTION_FORMULAS = {"recoverable", "bc_general"}
 PREV_QUESTION_COUNT = 600
@@ -47,7 +52,7 @@ SUBJECTS = [
     {"id": "CM", "name": "원가관리회계", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 4, "isActive": False},
     {"id": "FM", "name": "재무관리", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 5, "isActive": False},
     {"id": "EC", "name": "경제학", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 6, "isActive": False},
-    {"id": "BL", "name": "기업법", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 7, "isActive": False},
+    {"id": "CPA-LAW", "name": "기업법", "description": "상법 총칙·상행위·회사편, 공인회계사법, 외부감사법 (2027 1차 시험범위)", "sortOrder": 7, "isActive": True},
     {"id": "TX", "name": "세법개론", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 8, "isActive": False},
 ]
 SUBJECTS[0]["isActive"] = True
@@ -84,7 +89,7 @@ def main():
     for rid, rname in REQUIRED:
         if rid not in cmap:
             errors.append(f"[1] 필수 개념 누락: {rid} {rname}")
-    extra = [c["id"] for c in concepts if c["id"] not in dict(REQUIRED)]
+    extra = [c["id"] for c in concepts if c["id"] not in dict(REQUIRED) and c["subjectId"] == "FA"]
     if extra:
         warnings.append(f"필수 목록 외 추가 개념: {', '.join(extra)}")
 
@@ -203,6 +208,8 @@ def main():
     # ───────── v3 추가 검증 ─────────
     new_concepts = [c for c in concepts if c["chapterId"] in NEW_CHAPTERS]
     new_q = [x for x in active_q if x["chapterId"] in NEW_CHAPTERS]
+    law_concepts = [c for c in concepts if c["subjectId"] == LAW_SUBJECT]
+    law_q = [x for x in active_q if x["subjectId"] == LAW_SUBJECT]
     # 13. OX·참거짓·예아니요 금지
     ox_words = re.compile(r"(O\s*/\s*X|\bOX\b|참\s*/\s*거짓|참·거짓|참 또는 거짓|맞음\s*/\s*틀림|맞으면|틀리면|옳으면|예\s*/\s*아니요|예·아니요|옳은지 판단|사실인지)")
     yesno = {"예", "아니요", "아니오", "o", "x", "참", "거짓", "맞음", "틀림", "옳다", "옳지않다", "옳음", "틀리다", "해당", "해당없음", "있음", "없음"}
@@ -243,8 +250,8 @@ def main():
                 errors.append(f"[16] {x['id']} 계산 정답 불일치: {x['blankAnswer']} vs {calcmod.fmt(v)}")
     # 14. 신규 개념별 기본·심화·구별/응용 문항
     application_types = {"choice", "matching", "classification", "comparison", "situation", "exception", "order",
-                         "journal", "calculation", "treatment", "correction"}
-    for c in new_concepts:
+                         "journal", "calculation", "treatment", "correction", "number", "effect"}
+    for c in new_concepts + law_concepts:
         mine = [x for x in active_q if x["primaryConceptId"] == c["id"]]
         if not any(x["difficulty"] <= 2 for x in mine):
             errors.append(f"[14] {c['id']} 기본문제(난이도 1~2) 없음")
@@ -269,6 +276,10 @@ def main():
         if p["verificationStatus"] == "VERIFIED" and p["readingConfidence"] in ("NONE", "LOW"):
             errors.append(f"[18] {p['sourceId']} 판독 신뢰도가 낮은데 VERIFIED")
     unverified_sources = sum(1 for p in dsl.PROBLEM_SOURCES if p["verificationStatus"] != "VERIFIED")
+    # 20. 기업법: 정답-조문 원문 대조, 조문 커버리지, 숫자 규칙, 시험 비중
+    law_ok, law_interp, law_err = lawdsl.verify_answers(law_q)
+    errors.extend(law_err)
+    law = law_coverage.build(concepts, questions, errors, warnings)
     # 19. 기존 콘텐츠 보존(이전에 발급된 모든 개념·문항 ID 가 남아 있고 활성)
     prev_reg = {}
     if os.path.exists(REGISTRY):
@@ -284,10 +295,12 @@ def main():
     # 신규 개념의 검증 상태: 원문 대조 전이므로 verified 로 표시하지 않는다
     for c in concepts:
         c["verificationStatus"] = "NEEDS_REVIEW" if c["requiresReview"] else "AUTHOR_REVIEWED"
-        c["contentVersion"] = 3 if c["chapterId"] in NEW_CHAPTERS else 2
+        c["contentVersion"] = 4 if c["subjectId"] == LAW_SUBJECT else 3 if c["chapterId"] in NEW_CHAPTERS else 2
+        if c["subjectId"] == LAW_SUBJECT and not c["requiresReview"]:
+            c["verificationStatus"] = "STATUTE_CHECKED"
     for x in questions:
         x["mode"] = "BOTH" if x["inputType"] == "text" else "OPTIONS"
-        x["contentVersion"] = 3 if x["chapterId"] in NEW_CHAPTERS else 2
+        x["contentVersion"] = 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
 
     # ID 레지스트리: 이미 발급한 ID 의 정답이 바뀌면 오류(새 ID 발급 필요)
     registry = {}
@@ -336,6 +349,10 @@ def main():
     lines.append(f"| OX·예/아니요형 문항 | {ox_count}개 |")
     lines.append(f"| 계산 재검산 실패 | {calc_fail}건 |")
     lines.append(f"| 원본 출처(NEW-INV) | {len(src_ids)}개 등록, 미검증 {unverified_sources}개 |")
+    lines.append(f"| v4 기업법 개념 | {len(law_concepts)}개 |")
+    lines.append(f"| v4 기업법 문항 | {len(law_q)}개 (조문 원문 대조 일치 {law_ok}, 해석·선택형 {law_interp}) |")
+    lines.append(f"| 기업법 숫자 규칙 | {len(lawdsl.NUMERIC_RULES)}개 |")
+    lines.append(f"| 기업법 판례 법리 노트 | {len(lawdsl.CASE_NOTES)}개 (사건번호 미기재·원문 미대조) |")
     lines.append(f"| 검증 실패 | {len(errors)}건 |")
     lines.append(f"| 경고 | {len(warnings)}건 |")
     lines.append("")
@@ -381,6 +398,7 @@ def main():
     for p in dsl.PROBLEM_SOURCES:
         lines.append(f"| {p['sourceId']} | {p['topic']} | {p['readingConfidence']} | {p['verificationStatus']} | {len(p['conceptIds'])} | {len(p['linkedQuestionIds'])} |")
     lines.append("")
+    lines += law["reportLines"]
     if errors:
         lines.append("## 오류")
         lines += [f"- {e}" for e in errors]
@@ -416,6 +434,9 @@ def main():
                                                    problemSources=dsl.PROBLEM_SOURCES, scopeItems=scope_list),
         f"concepts_v{CONTENT_VERSION}.json": pack("fa-concepts", concepts=concepts),
         f"questions_v{CONTENT_VERSION}.json": pack("fa-questions", questions=questions),
+        f"law_v{CONTENT_VERSION}.json": pack("law-data", lawArticles=law["articles"], numericRules=lawdsl.NUMERIC_RULES,
+                                             caseNotes=lawdsl.CASE_NOTES, examAreas=law["examAreas"],
+                                             lawVersions=law["lawVersions"]),
     }
     for name in os.listdir(ASSET_DIR):
         if name.endswith(".json"):
