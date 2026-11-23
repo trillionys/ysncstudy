@@ -1,0 +1,7960 @@
+{
+ "formatVersion": 1,
+ "contentVersion": 3,
+ "packId": "fa-structure",
+ "generatedAt": "2026-11-23",
+ "subjects": [
+  {
+   "id": "FA",
+   "name": "재무회계",
+   "description": "개념체계·재무제표 표시·재고자산·유형자산·차입원가·농림어업",
+   "sortOrder": 1,
+   "isActive": true
+  },
+  {
+   "id": "IA",
+   "name": "중급회계",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 2,
+   "isActive": false
+  },
+  {
+   "id": "AA",
+   "name": "고급회계",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 3,
+   "isActive": false
+  },
+  {
+   "id": "CM",
+   "name": "원가관리회계",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 4,
+   "isActive": false
+  },
+  {
+   "id": "FM",
+   "name": "재무관리",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 5,
+   "isActive": false
+  },
+  {
+   "id": "EC",
+   "name": "경제학",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 6,
+   "isActive": false
+  },
+  {
+   "id": "BL",
+   "name": "기업법",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 7,
+   "isActive": false
+  },
+  {
+   "id": "TX",
+   "name": "세법개론",
+   "description": "콘텐츠 팩 추가 시 활성화",
+   "sortOrder": 8,
+   "isActive": false
+  }
+ ],
+ "chapters": [
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-A",
+   "code": "A",
+   "subjectId": "FA",
+   "title": "회계정보의 경제적 기능",
+   "englishTitle": "Economic role of accounting information",
+   "sortOrder": 1
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-B",
+   "code": "B",
+   "subjectId": "FA",
+   "title": "회계기준과 국제회계기준",
+   "englishTitle": "Accounting standards and IFRS",
+   "sortOrder": 2
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-C",
+   "code": "C",
+   "subjectId": "FA",
+   "title": "일반목적재무보고",
+   "englishTitle": "General purpose financial reporting",
+   "sortOrder": 3
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-D",
+   "code": "D",
+   "subjectId": "FA",
+   "title": "재무정보의 질적특성",
+   "englishTitle": "Qualitative characteristics of useful financial information",
+   "sortOrder": 4
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-E",
+   "code": "E",
+   "subjectId": "FA",
+   "title": "재무제표 요소",
+   "englishTitle": "Elements of financial statements",
+   "sortOrder": 5
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-F",
+   "code": "F",
+   "subjectId": "FA",
+   "title": "인식과 제거",
+   "englishTitle": "Recognition and derecognition",
+   "sortOrder": 6
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-G",
+   "code": "G",
+   "subjectId": "FA",
+   "title": "자본과 자본유지",
+   "englishTitle": "Concepts of capital and capital maintenance",
+   "sortOrder": 7
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-H",
+   "code": "H",
+   "subjectId": "FA",
+   "title": "재무제표 요소의 측정",
+   "englishTitle": "Measurement",
+   "sortOrder": 8
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-I",
+   "code": "I",
+   "subjectId": "FA",
+   "title": "재무제표의 표시와 공시",
+   "englishTitle": "Presentation and disclosure of financial statements",
+   "sortOrder": 9
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-J",
+   "code": "J",
+   "subjectId": "FA",
+   "title": "유동·비유동 분류",
+   "englishTitle": "Current and non-current classification",
+   "sortOrder": 10
+  },
+  {
+   "partTitle": "개념체계와 재무제표 표시",
+   "id": "FA-K",
+   "code": "K",
+   "subjectId": "FA",
+   "title": "K-IFRS 제1118호 재무제표 표시와 공시",
+   "englishTitle": "IFRS 18 Presentation and Disclosure in Financial Statements",
+   "sortOrder": 11
+  },
+  {
+   "partTitle": "재고자산",
+   "id": "FA-L",
+   "code": "L",
+   "subjectId": "FA",
+   "title": "재고자산의 매입과 기말재고 조정",
+   "englishTitle": "Inventories: purchases and year-end adjustments",
+   "sortOrder": 12
+  },
+  {
+   "partTitle": "재고자산",
+   "id": "FA-M",
+   "code": "M",
+   "subjectId": "FA",
+   "title": "재고자산 감모손실과 평가손실",
+   "englishTitle": "Inventory shrinkage and write-downs",
+   "sortOrder": 13
+  },
+  {
+   "partTitle": "재고자산",
+   "id": "FA-N",
+   "code": "N",
+   "subjectId": "FA",
+   "title": "특수한 원가배분 방법",
+   "englishTitle": "Special cost allocation methods",
+   "sortOrder": 14
+  },
+  {
+   "partTitle": "유형자산",
+   "id": "FA-P",
+   "code": "P",
+   "subjectId": "FA",
+   "title": "유형자산",
+   "englishTitle": "Property, plant and equipment",
+   "sortOrder": 15
+  },
+  {
+   "partTitle": "차입원가",
+   "id": "FA-Q",
+   "code": "Q",
+   "subjectId": "FA",
+   "title": "차입원가",
+   "englishTitle": "Borrowing costs",
+   "sortOrder": 16
+  },
+  {
+   "partTitle": "재고자산",
+   "id": "FA-R",
+   "code": "R",
+   "subjectId": "FA",
+   "title": "농림어업",
+   "englishTitle": "Agriculture",
+   "sortOrder": 17
+  }
+ ],
+ "sections": [
+  {
+   "id": "FA-A-S01",
+   "chapterId": "FA-A",
+   "title": "정보 비대칭과 그 결과",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-A-S02",
+   "chapterId": "FA-A",
+   "title": "대리인 이론",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-A-S03",
+   "chapterId": "FA-A",
+   "title": "수탁책임과 성과평가",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-A-S04",
+   "chapterId": "FA-A",
+   "title": "자원배분과 의사결정 유용성",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-B-S01",
+   "chapterId": "FA-B",
+   "title": "국제회계기준과 K-IFRS",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-B-S02",
+   "chapterId": "FA-B",
+   "title": "회계기준 제정기구",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-B-S03",
+   "chapterId": "FA-B",
+   "title": "기준의 성격과 제정·해석",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-B-S04",
+   "chapterId": "FA-B",
+   "title": "연결재무제표와 지배력",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-B-S05",
+   "chapterId": "FA-B",
+   "title": "개념체계의 위상",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-C-S01",
+   "chapterId": "FA-C",
+   "title": "일반목적재무보고의 목적",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-C-S02",
+   "chapterId": "FA-C",
+   "title": "주요 정보이용자",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-C-S03",
+   "chapterId": "FA-C",
+   "title": "재무보고가 제공하는 정보",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-C-S04",
+   "chapterId": "FA-C",
+   "title": "재무보고의 한계",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-C-S05",
+   "chapterId": "FA-C",
+   "title": "발생주의 회계",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-C-S06",
+   "chapterId": "FA-C",
+   "title": "보고기업과 계속기업",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-D-S01",
+   "chapterId": "FA-D",
+   "title": "질적특성의 체계",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-D-S02",
+   "chapterId": "FA-D",
+   "title": "목적적합성",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-D-S03",
+   "chapterId": "FA-D",
+   "title": "충실한 표현",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-D-S04",
+   "chapterId": "FA-D",
+   "title": "신중성",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-D-S05",
+   "chapterId": "FA-D",
+   "title": "보강적 질적특성: 비교가능성",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-D-S06",
+   "chapterId": "FA-D",
+   "title": "보강적 질적특성: 검증가능성",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-D-S07",
+   "chapterId": "FA-D",
+   "title": "보강적 질적특성: 적시성·이해가능성",
+   "sortOrder": 7
+  },
+  {
+   "id": "FA-D-S08",
+   "chapterId": "FA-D",
+   "title": "질적특성의 적용과 원가 제약",
+   "sortOrder": 8
+  },
+  {
+   "id": "FA-E-S01",
+   "chapterId": "FA-E",
+   "title": "자산의 정의",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-E-S02",
+   "chapterId": "FA-E",
+   "title": "부채의 정의",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-E-S03",
+   "chapterId": "FA-E",
+   "title": "자본·수익·비용",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-F-S01",
+   "chapterId": "FA-F",
+   "title": "인식의 의의와 인식기준",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-F-S02",
+   "chapterId": "FA-F",
+   "title": "제거",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-F-S03",
+   "chapterId": "FA-F",
+   "title": "회계단위와 미이행계약",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-G-S01",
+   "chapterId": "FA-G",
+   "title": "자본의 개념",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-G-S02",
+   "chapterId": "FA-G",
+   "title": "자본유지개념",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-G-S03",
+   "chapterId": "FA-G",
+   "title": "이익과 자본유지조정",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-G-S04",
+   "chapterId": "FA-G",
+   "title": "자본유지 계산",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-H-S01",
+   "chapterId": "FA-H",
+   "title": "측정과 측정기준",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-H-S02",
+   "chapterId": "FA-H",
+   "title": "역사적 원가",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-H-S03",
+   "chapterId": "FA-H",
+   "title": "현행가치: 공정가치",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-H-S04",
+   "chapterId": "FA-H",
+   "title": "현행가치: 현행원가",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-H-S05",
+   "chapterId": "FA-H",
+   "title": "현행가치: 사용가치와 이행가치",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-H-S06",
+   "chapterId": "FA-H",
+   "title": "측정기준의 비교와 계산",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-I-S01",
+   "chapterId": "FA-I",
+   "title": "재무제표의 목적과 공정한 표시",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-I-S02",
+   "chapterId": "FA-I",
+   "title": "재무제표의 구성",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-I-S03",
+   "chapterId": "FA-I",
+   "title": "비교정보와 표시의 일관성",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-I-S04",
+   "chapterId": "FA-I",
+   "title": "중요성, 통합·세분화와 분류",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-I-S05",
+   "chapterId": "FA-I",
+   "title": "상계표시",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-I-S06",
+   "chapterId": "FA-I",
+   "title": "K-IFRS 준수와 계속기업",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-I-S07",
+   "chapterId": "FA-I",
+   "title": "재무제표 표시 형식",
+   "sortOrder": 7
+  },
+  {
+   "id": "FA-I-S08",
+   "chapterId": "FA-I",
+   "title": "기타포괄손익",
+   "sortOrder": 8
+  },
+  {
+   "id": "FA-J-S01",
+   "chapterId": "FA-J",
+   "title": "유동자산과 비유동자산",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-J-S02",
+   "chapterId": "FA-J",
+   "title": "유동부채와 비유동부채",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-J-S03",
+   "chapterId": "FA-J",
+   "title": "결제 연기 권리와 차입약정",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-J-S04",
+   "chapterId": "FA-J",
+   "title": "차환과 만기연장",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-K-S01",
+   "chapterId": "FA-K",
+   "title": "제1118호의 도입",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-K-S02",
+   "chapterId": "FA-K",
+   "title": "손익계산서의 다섯 범주",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-K-S03",
+   "chapterId": "FA-K",
+   "title": "주된 사업활동",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-K-S04",
+   "chapterId": "FA-K",
+   "title": "필수 중간합계와 추가 중간합계",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-K-S05",
+   "chapterId": "FA-K",
+   "title": "경영진이 정의한 성과측정치(MPM)",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-K-S06",
+   "chapterId": "FA-K",
+   "title": "비용의 분류와 공시",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-K-S07",
+   "chapterId": "FA-K",
+   "title": "특정 항목의 범주 분류",
+   "sortOrder": 7
+  },
+  {
+   "id": "FA-L-S01",
+   "chapterId": "FA-L",
+   "title": "재고자산의 기본 개념",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-L-S02",
+   "chapterId": "FA-L",
+   "title": "매입과 취득원가",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-L-S03",
+   "chapterId": "FA-L",
+   "title": "매입과 판매의 기간귀속",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-L-S04",
+   "chapterId": "FA-L",
+   "title": "기말재고자산 수량 조정",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-L-S05",
+   "chapterId": "FA-L",
+   "title": "재고자산 원가흐름",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-L-S06",
+   "chapterId": "FA-L",
+   "title": "기말재고 오류와 재무제표 영향",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-M-S01",
+   "chapterId": "FA-M",
+   "title": "재고자산 감모손실",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-M-S02",
+   "chapterId": "FA-M",
+   "title": "순실현가능가치",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-M-S03",
+   "chapterId": "FA-M",
+   "title": "재고자산평가손실과 환입",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-M-S04",
+   "chapterId": "FA-M",
+   "title": "감모·평가 종합 계산",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-N-S01",
+   "chapterId": "FA-N",
+   "title": "매출총이익률법",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-N-S02",
+   "chapterId": "FA-N",
+   "title": "소매재고법 기본",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-N-S03",
+   "chapterId": "FA-N",
+   "title": "소매재고법의 여러 방식",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-N-S04",
+   "chapterId": "FA-N",
+   "title": "소매재고법의 특수 항목",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-N-S05",
+   "chapterId": "FA-N",
+   "title": "기타 원가배분",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-P-S01",
+   "chapterId": "FA-P",
+   "title": "유형자산의 정의와 분류",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-P-S02",
+   "chapterId": "FA-P",
+   "title": "유형자산 최초 인식과 측정",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-P-S03",
+   "chapterId": "FA-P",
+   "title": "취득원가의 구성",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-P-S04",
+   "chapterId": "FA-P",
+   "title": "토지의 취득과 토지조성원가",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-P-S05",
+   "chapterId": "FA-P",
+   "title": "자가건설과 건설중인자산",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-P-S06",
+   "chapterId": "FA-P",
+   "title": "정부보조금",
+   "sortOrder": 6
+  },
+  {
+   "id": "FA-P-S07",
+   "chapterId": "FA-P",
+   "title": "유형자산 교환취득",
+   "sortOrder": 7
+  },
+  {
+   "id": "FA-P-S08",
+   "chapterId": "FA-P",
+   "title": "후속원가",
+   "sortOrder": 8
+  },
+  {
+   "id": "FA-P-S09",
+   "chapterId": "FA-P",
+   "title": "감가상각 기본",
+   "sortOrder": 9
+  },
+  {
+   "id": "FA-P-S10",
+   "chapterId": "FA-P",
+   "title": "감가상각 계산방법",
+   "sortOrder": 10
+  },
+  {
+   "id": "FA-P-S11",
+   "chapterId": "FA-P",
+   "title": "원가모형",
+   "sortOrder": 11
+  },
+  {
+   "id": "FA-P-S12",
+   "chapterId": "FA-P",
+   "title": "재평가모형",
+   "sortOrder": 12
+  },
+  {
+   "id": "FA-P-S13",
+   "chapterId": "FA-P",
+   "title": "유형자산 손상",
+   "sortOrder": 13
+  },
+  {
+   "id": "FA-P-S14",
+   "chapterId": "FA-P",
+   "title": "해체·복구충당부채",
+   "sortOrder": 14
+  },
+  {
+   "id": "FA-P-S15",
+   "chapterId": "FA-P",
+   "title": "유형자산의 제거와 처분",
+   "sortOrder": 15
+  },
+  {
+   "id": "FA-P-S16",
+   "chapterId": "FA-P",
+   "title": "유형자산 관련 경계 주제",
+   "sortOrder": 16
+  },
+  {
+   "id": "FA-Q-S01",
+   "chapterId": "FA-Q",
+   "title": "차입원가의 개념",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-Q-S02",
+   "chapterId": "FA-Q",
+   "title": "적격자산",
+   "sortOrder": 2
+  },
+  {
+   "id": "FA-Q-S03",
+   "chapterId": "FA-Q",
+   "title": "특정차입금과 일반차입금",
+   "sortOrder": 3
+  },
+  {
+   "id": "FA-Q-S04",
+   "chapterId": "FA-Q",
+   "title": "자본화 기간",
+   "sortOrder": 4
+  },
+  {
+   "id": "FA-Q-S05",
+   "chapterId": "FA-Q",
+   "title": "자본화 계산 응용",
+   "sortOrder": 5
+  },
+  {
+   "id": "FA-R-S01",
+   "chapterId": "FA-R",
+   "title": "생물자산과 수확물",
+   "sortOrder": 1
+  },
+  {
+   "id": "FA-R-S02",
+   "chapterId": "FA-R",
+   "title": "측정과 손익",
+   "sortOrder": 2
+  }
+ ],
+ "examScopes": [
+  {
+   "number": "01",
+   "title": "회계정보의 기능과 정보 비대칭",
+   "conceptIds": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13"
+   ]
+  },
+  {
+   "number": "02",
+   "title": "한국채택국제회계기준 도입",
+   "conceptIds": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B12",
+    "B13",
+    "B14",
+    "B15",
+    "B16"
+   ]
+  },
+  {
+   "number": "03",
+   "title": "회계기준 제정 및 관련 기관",
+   "conceptIds": [
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11"
+   ]
+  },
+  {
+   "number": "04",
+   "title": "일반목적재무보고의 목적",
+   "conceptIds": [
+    "C01",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11"
+   ]
+  },
+  {
+   "number": "05",
+   "title": "주요 정보이용자",
+   "conceptIds": [
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+   ]
+  },
+  {
+   "number": "06",
+   "title": "재무보고와 기업가치",
+   "conceptIds": [
+    "C14",
+    "C15",
+    "C16"
+   ]
+  },
+  {
+   "number": "07",
+   "title": "발생주의와 수탁책임",
+   "conceptIds": [
+    "C17",
+    "C18",
+    "C19",
+    "C08",
+    "A08"
+   ]
+  },
+  {
+   "number": "08",
+   "title": "질적특성",
+   "conceptIds": [
+    "D01",
+    "D02",
+    "D03",
+    "D09",
+    "D20",
+    "D25",
+    "D29",
+    "D31"
+   ]
+  },
+  {
+   "number": "09",
+   "title": "목적적합성·무오류·검증가능성",
+   "conceptIds": [
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D12",
+    "D13",
+    "D25"
+   ]
+  },
+  {
+   "number": "10",
+   "title": "질적특성과 일관성",
+   "conceptIds": [
+    "D20",
+    "D21",
+    "D22",
+    "D23",
+    "D24"
+   ]
+  },
+  {
+   "number": "11",
+   "title": "개념체계의 위상",
+   "conceptIds": [
+    "B17",
+    "B18",
+    "B19"
+   ]
+  },
+  {
+   "number": "12",
+   "title": "검증가능성과 충실한 표현",
+   "conceptIds": [
+    "D25",
+    "D26",
+    "D27",
+    "D28",
+    "D09",
+    "D10"
+   ]
+  },
+  {
+   "number": "13",
+   "title": "근본적 질적특성의 관계",
+   "conceptIds": [
+    "D01",
+    "D33",
+    "D34",
+    "D03",
+    "D09"
+   ]
+  },
+  {
+   "number": "14",
+   "title": "신중성과 원가 제약",
+   "conceptIds": [
+    "D17",
+    "D18",
+    "D19",
+    "D35",
+    "D36"
+   ]
+  },
+  {
+   "number": "15",
+   "title": "중립성과 합리적 추정",
+   "conceptIds": [
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15"
+   ]
+  },
+  {
+   "number": "16",
+   "title": "질적특성의 종합 적용",
+   "conceptIds": [
+    "D02",
+    "D07",
+    "D08",
+    "D16",
+    "D30",
+    "D32",
+    "D34"
+   ]
+  },
+  {
+   "number": "17",
+   "title": "보고기업과 계속기업",
+   "conceptIds": [
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24"
+   ]
+  },
+  {
+   "number": "18",
+   "title": "일반목적재무보고",
+   "conceptIds": [
+    "C01",
+    "C05",
+    "C11",
+    "C12",
+    "C13",
+    "C15"
+   ]
+  },
+  {
+   "number": "19",
+   "title": "자산과 경제적 자원",
+   "conceptIds": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11"
+   ]
+  },
+  {
+   "number": "20",
+   "title": "자본과 자본유지",
+   "conceptIds": [
+    "E17",
+    "G01",
+    "G02",
+    "G03",
+    "G06",
+    "G09",
+    "G10",
+    "G11"
+   ]
+  },
+  {
+   "number": "21",
+   "title": "실물자본유지 계산",
+   "conceptIds": [
+    "G06",
+    "G07",
+    "G16",
+    "G17",
+    "G18",
+    "G19"
+   ]
+  },
+  {
+   "number": "22",
+   "title": "실물자본유지 계산",
+   "conceptIds": [
+    "G08",
+    "G12",
+    "G13",
+    "G14",
+    "G15",
+    "G16",
+    "G19"
+   ]
+  },
+  {
+   "number": "23",
+   "title": "재무자본과 실물자본",
+   "conceptIds": [
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G11",
+    "G12",
+    "G13"
+   ]
+  },
+  {
+   "number": "24",
+   "title": "미이행계약과 회계단위",
+   "conceptIds": [
+    "F17",
+    "F18",
+    "F19",
+    "F20"
+   ]
+  },
+  {
+   "number": "25",
+   "title": "인식과 제거",
+   "conceptIds": [
+    "F01",
+    "F02",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16"
+   ]
+  },
+  {
+   "number": "26",
+   "title": "측정기준",
+   "conceptIds": [
+    "H01",
+    "H02",
+    "H03",
+    "H10",
+    "H11",
+    "H16",
+    "H20",
+    "H23"
+   ]
+  },
+  {
+   "number": "27",
+   "title": "역사적 원가·공정가치·현행원가 계산",
+   "conceptIds": [
+    "H28",
+    "H03",
+    "H04",
+    "H11",
+    "H15",
+    "H16",
+    "H18"
+   ]
+  },
+  {
+   "number": "28",
+   "title": "표시와 공시",
+   "conceptIds": [
+    "I01",
+    "I07",
+    "I08",
+    "I15",
+    "I16",
+    "I17",
+    "I18",
+    "I30"
+   ]
+  },
+  {
+   "number": "29",
+   "title": "자산의 인식과 측정",
+   "conceptIds": [
+    "E09",
+    "F03",
+    "F04",
+    "F06",
+    "F07",
+    "F08",
+    "H06",
+    "H07",
+    "H08"
+   ]
+  },
+  {
+   "number": "30",
+   "title": "거래원가와 측정기준",
+   "conceptIds": [
+    "H04",
+    "H05",
+    "H15",
+    "H18",
+    "H19",
+    "H22",
+    "H24",
+    "H25"
+   ]
+  },
+  {
+   "number": "31",
+   "title": "역사적 원가와 현행가치",
+   "conceptIds": [
+    "H09",
+    "H10",
+    "H12",
+    "H13",
+    "H14",
+    "H17",
+    "H20",
+    "H21",
+    "H26",
+    "H27",
+    "H29",
+    "H30"
+   ]
+  },
+  {
+   "number": "32",
+   "title": "인식과 제거",
+   "conceptIds": [
+    "F05",
+    "F09",
+    "F10",
+    "F11",
+    "F13",
+    "F14",
+    "F16"
+   ]
+  },
+  {
+   "number": "33",
+   "title": "인식기준",
+   "conceptIds": [
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08"
+   ]
+  },
+  {
+   "number": "34",
+   "title": "재무제표 표시",
+   "conceptIds": [
+    "I02",
+    "I03",
+    "I04",
+    "I05",
+    "I06",
+    "I07",
+    "I08",
+    "I36"
+   ]
+  },
+  {
+   "number": "35",
+   "title": "개념체계와 재무보고",
+   "conceptIds": [
+    "B17",
+    "C01",
+    "C15",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E18",
+    "E19",
+    "E20",
+    "E21"
+   ]
+  },
+  {
+   "number": "36",
+   "title": "유동·비유동과 차입약정",
+   "conceptIds": [
+    "J16",
+    "J17",
+    "J18",
+    "J19",
+    "J20",
+    "J21",
+    "J22"
+   ]
+  },
+  {
+   "number": "37",
+   "title": "평가충당금·순액표시",
+   "conceptIds": [
+    "I21",
+    "I23",
+    "I24",
+    "I25",
+    "I26",
+    "I27",
+    "I28",
+    "I29"
+   ]
+  },
+  {
+   "number": "38",
+   "title": "손익계산서 다섯 범주",
+   "conceptIds": [
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06",
+    "K07",
+    "K08",
+    "K09",
+    "K10",
+    "K11",
+    "K12",
+    "K13",
+    "K30",
+    "K31",
+    "K32"
+   ]
+  },
+  {
+   "number": "39",
+   "title": "상계, 장기차입금, 기타포괄손익",
+   "conceptIds": [
+    "I21",
+    "I22",
+    "J22",
+    "J23",
+    "J24",
+    "I38",
+    "I39",
+    "I40",
+    "I41",
+    "I42",
+    "I43",
+    "I44",
+    "I45"
+   ]
+  },
+  {
+   "number": "40",
+   "title": "재무제표 표시와 정상영업주기",
+   "conceptIds": [
+    "J03",
+    "J04",
+    "J05",
+    "J13",
+    "I36",
+    "I37"
+   ]
+  },
+  {
+   "number": "41",
+   "title": "재무제표 요소의 정의와 계속기업",
+   "conceptIds": [
+    "E01",
+    "E12",
+    "E17",
+    "E18",
+    "E19",
+    "C23",
+    "I34",
+    "I35"
+   ]
+  },
+  {
+   "number": "42",
+   "title": "비교정보·중요성·상계",
+   "conceptIds": [
+    "I09",
+    "I10",
+    "I15",
+    "I16",
+    "I17",
+    "I19",
+    "I20",
+    "I21"
+   ]
+  },
+  {
+   "number": "43",
+   "title": "일관성·재분류·비용분류",
+   "conceptIds": [
+    "I11",
+    "I12",
+    "I13",
+    "I14",
+    "K21",
+    "K22",
+    "K23"
+   ]
+  },
+  {
+   "number": "44",
+   "title": "제1118호 중간합계와 비용분류",
+   "conceptIds": [
+    "K01",
+    "K14",
+    "K15",
+    "K16",
+    "K17",
+    "K18",
+    "K19",
+    "K20",
+    "K24",
+    "K25",
+    "K26",
+    "K27",
+    "K28",
+    "K29"
+   ]
+  },
+  {
+   "number": "45",
+   "title": "공시·비교정보·유동성 순서",
+   "conceptIds": [
+    "I07",
+    "I09",
+    "I18",
+    "I31",
+    "I32",
+    "I33",
+    "I37"
+   ]
+  },
+  {
+   "number": "46",
+   "title": "유동자산·유동부채와 장기차입약정",
+   "conceptIds": [
+    "J01",
+    "J02",
+    "J06",
+    "J07",
+    "J08",
+    "J09",
+    "J10",
+    "J11",
+    "J12",
+    "J14",
+    "J15",
+    "J16",
+    "J25",
+    "J26"
+   ]
+  }
+ ],
+ "problemSources": [
+  {
+   "sourceId": "NEW-INV-001",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "01",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-002",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "02",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-003",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "03",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-004",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "04",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-005",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "05",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-006",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "06",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-007",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "07",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-008",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "08",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-009",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "09",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-010",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "10",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-011",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "11",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-012",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "12",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-013",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "13",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-014",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "14",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-015",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "15",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-016",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "16",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-017",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "17",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-018",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "18",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-019",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "19",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-020",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "20",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-021",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "21",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-022",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "22",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-023",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "23",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-024",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "24",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-025",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "25",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-026",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "26",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-027",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "27",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-028",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "28",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-029",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "29",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-030",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "30",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-031",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "31",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-032",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "32",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-033",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "33",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-034",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "34",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-035",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "35",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-036",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "36",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-037",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "37",
+   "topic": "재고자산(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [],
+   "linkChapterId": null,
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": []
+  },
+  {
+   "sourceId": "NEW-INV-038",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "38",
+   "topic": "농림어업(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [
+    "R001",
+    "R002",
+    "R003",
+    "R004",
+    "R005",
+    "R006",
+    "R007",
+    "R008"
+   ],
+   "linkChapterId": "FA-R",
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": [
+    "R001-Q01",
+    "R001-Q02",
+    "R001-Q03",
+    "R002-Q01",
+    "R002-Q02",
+    "R002-Q03",
+    "R003-Q01",
+    "R003-Q02",
+    "R003-Q03",
+    "R003-Q04",
+    "R004-Q01",
+    "R004-Q02",
+    "R004-Q03",
+    "R004-Q04",
+    "R005-Q01",
+    "R005-Q02",
+    "R005-Q03",
+    "R005-Q04",
+    "R006-Q01",
+    "R006-Q02",
+    "R006-Q03",
+    "R007-Q01",
+    "R007-Q02",
+    "R008-Q01",
+    "R008-Q02"
+   ]
+  },
+  {
+   "sourceId": "NEW-INV-039",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "39",
+   "topic": "농림어업(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [
+    "R001",
+    "R002",
+    "R003",
+    "R004",
+    "R005",
+    "R006",
+    "R007",
+    "R008"
+   ],
+   "linkChapterId": "FA-R",
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": [
+    "R001-Q01",
+    "R001-Q02",
+    "R001-Q03",
+    "R002-Q01",
+    "R002-Q02",
+    "R002-Q03",
+    "R003-Q01",
+    "R003-Q02",
+    "R003-Q03",
+    "R003-Q04",
+    "R004-Q01",
+    "R004-Q02",
+    "R004-Q03",
+    "R004-Q04",
+    "R005-Q01",
+    "R005-Q02",
+    "R005-Q03",
+    "R005-Q04",
+    "R006-Q01",
+    "R006-Q02",
+    "R006-Q03",
+    "R007-Q01",
+    "R007-Q02",
+    "R008-Q01",
+    "R008-Q02"
+   ]
+  },
+  {
+   "sourceId": "NEW-INV-040",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "40",
+   "topic": "농림어업(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [
+    "R001",
+    "R002",
+    "R003",
+    "R004",
+    "R005",
+    "R006",
+    "R007",
+    "R008"
+   ],
+   "linkChapterId": "FA-R",
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": [
+    "R001-Q01",
+    "R001-Q02",
+    "R001-Q03",
+    "R002-Q01",
+    "R002-Q02",
+    "R002-Q03",
+    "R003-Q01",
+    "R003-Q02",
+    "R003-Q03",
+    "R003-Q04",
+    "R004-Q01",
+    "R004-Q02",
+    "R004-Q03",
+    "R004-Q04",
+    "R005-Q01",
+    "R005-Q02",
+    "R005-Q03",
+    "R005-Q04",
+    "R006-Q01",
+    "R006-Q02",
+    "R006-Q03",
+    "R007-Q01",
+    "R007-Q02",
+    "R008-Q01",
+    "R008-Q02"
+   ]
+  },
+  {
+   "sourceId": "NEW-INV-041",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "41",
+   "topic": "농림어업(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [
+    "R001",
+    "R002",
+    "R003",
+    "R004",
+    "R005",
+    "R006",
+    "R007",
+    "R008"
+   ],
+   "linkChapterId": "FA-R",
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": [
+    "R001-Q01",
+    "R001-Q02",
+    "R001-Q03",
+    "R002-Q01",
+    "R002-Q02",
+    "R002-Q03",
+    "R003-Q01",
+    "R003-Q02",
+    "R003-Q03",
+    "R003-Q04",
+    "R004-Q01",
+    "R004-Q02",
+    "R004-Q03",
+    "R004-Q04",
+    "R005-Q01",
+    "R005-Q02",
+    "R005-Q03",
+    "R005-Q04",
+    "R006-Q01",
+    "R006-Q02",
+    "R006-Q03",
+    "R007-Q01",
+    "R007-Q02",
+    "R008-Q01",
+    "R008-Q02"
+   ]
+  },
+  {
+   "sourceId": "NEW-INV-042",
+   "sourceFile": null,
+   "sourcePage": null,
+   "originalNumber": "42",
+   "topic": "농림어업(사용자 설명 기준, 세부 논점 미확인)",
+   "conceptIds": [
+    "R001",
+    "R002",
+    "R003",
+    "R004",
+    "R005",
+    "R006",
+    "R007",
+    "R008"
+   ],
+   "linkChapterId": "FA-R",
+   "formula": null,
+   "solutionSteps": null,
+   "keyTrap": null,
+   "readingConfidence": "NONE",
+   "verificationStatus": "SOURCE_NOT_PROVIDED",
+   "reviewRequired": true,
+   "note": "원본 이미지 미제공 — 판독하지 않음. 원본 확인 후 세부 논점·연결 개념 등록 필요.",
+   "linkedQuestionIds": [
+    "R001-Q01",
+    "R001-Q02",
+    "R001-Q03",
+    "R002-Q01",
+    "R002-Q02",
+    "R002-Q03",
+    "R003-Q01",
+    "R003-Q02",
+    "R003-Q03",
+    "R003-Q04",
+    "R004-Q01",
+    "R004-Q02",
+    "R004-Q03",
+    "R004-Q04",
+    "R005-Q01",
+    "R005-Q02",
+    "R005-Q03",
+    "R005-Q04",
+    "R006-Q01",
+    "R006-Q02",
+    "R006-Q03",
+    "R007-Q01",
+    "R007-Q02",
+    "R008-Q01",
+    "R008-Q02"
+   ]
+  }
+ ],
+ "scopeItems": [
+  {
+   "id": "SC0001",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "재고자산의 정의",
+   "conceptId": "L001",
+   "covered": true,
+   "sortOrder": 1
+  },
+  {
+   "id": "SC0002",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "상품",
+   "conceptId": "L020",
+   "covered": true,
+   "sortOrder": 2
+  },
+  {
+   "id": "SC0003",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "제품",
+   "conceptId": "L002",
+   "covered": true,
+   "sortOrder": 3
+  },
+  {
+   "id": "SC0004",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "반제품",
+   "conceptId": "L002",
+   "covered": true,
+   "sortOrder": 4
+  },
+  {
+   "id": "SC0005",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "재공품",
+   "conceptId": "L002",
+   "covered": true,
+   "sortOrder": 5
+  },
+  {
+   "id": "SC0006",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "원재료",
+   "conceptId": "L001",
+   "covered": true,
+   "sortOrder": 6
+  },
+  {
+   "id": "SC0007",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "부재료",
+   "conceptId": "L002",
+   "covered": true,
+   "sortOrder": 7
+  },
+  {
+   "id": "SC0008",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "저장품",
+   "conceptId": "L002",
+   "covered": true,
+   "sortOrder": 8
+  },
+  {
+   "id": "SC0009",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "판매목적 자산",
+   "conceptId": "L001",
+   "covered": true,
+   "sortOrder": 9
+  },
+  {
+   "id": "SC0010",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "생산과정에 있는 자산",
+   "conceptId": "L013",
+   "covered": true,
+   "sortOrder": 10
+  },
+  {
+   "id": "SC0011",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "생산에 사용되는 재료와 소모품",
+   "conceptId": "L002",
+   "covered": true,
+   "sortOrder": 11
+  },
+  {
+   "id": "SC0012",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "재고자산과 유형자산의 차이",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 12
+  },
+  {
+   "id": "SC0013",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "재고자산과 투자부동산의 차이",
+   "conceptId": "P072",
+   "covered": true,
+   "sortOrder": 13
+  },
+  {
+   "id": "SC0014",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "재고자산과 농림어업 수확물의 관계",
+   "conceptId": "L003",
+   "covered": true,
+   "sortOrder": 14
+  },
+  {
+   "id": "SC0015",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "재고자산 인식의 범위",
+   "conceptId": "L001",
+   "covered": true,
+   "sortOrder": 15
+  },
+  {
+   "id": "SC0016",
+   "area": "A-1 재고자산의 기본 개념",
+   "item": "재고자산의 수량과 소유권·통제 판단",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 16
+  },
+  {
+   "id": "SC0017",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입가격",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 17
+  },
+  {
+   "id": "SC0018",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입원가",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 18
+  },
+  {
+   "id": "SC0019",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입운임",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 19
+  },
+  {
+   "id": "SC0020",
+   "area": "A-2 매입과 취득원가",
+   "item": "운반비",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 20
+  },
+  {
+   "id": "SC0021",
+   "area": "A-2 매입과 취득원가",
+   "item": "하역비",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 21
+  },
+  {
+   "id": "SC0022",
+   "area": "A-2 매입과 취득원가",
+   "item": "수입관세",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 22
+  },
+  {
+   "id": "SC0023",
+   "area": "A-2 매입과 취득원가",
+   "item": "환급받을 수 없는 세금",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 23
+  },
+  {
+   "id": "SC0024",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입수수료",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 24
+  },
+  {
+   "id": "SC0025",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입부대비용",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 25
+  },
+  {
+   "id": "SC0026",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입에누리",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 26
+  },
+  {
+   "id": "SC0027",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입환출",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 27
+  },
+  {
+   "id": "SC0028",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입할인",
+   "conceptId": "L007",
+   "covered": true,
+   "sortOrder": 28
+  },
+  {
+   "id": "SC0029",
+   "area": "A-2 매입과 취득원가",
+   "item": "거래할인",
+   "conceptId": "L008",
+   "covered": true,
+   "sortOrder": 29
+  },
+  {
+   "id": "SC0030",
+   "area": "A-2 매입과 취득원가",
+   "item": "수량할인",
+   "conceptId": "L008",
+   "covered": true,
+   "sortOrder": 30
+  },
+  {
+   "id": "SC0031",
+   "area": "A-2 매입과 취득원가",
+   "item": "리베이트",
+   "conceptId": "L008",
+   "covered": true,
+   "sortOrder": 31
+  },
+  {
+   "id": "SC0032",
+   "area": "A-2 매입과 취득원가",
+   "item": "현금할인",
+   "conceptId": "L007",
+   "covered": true,
+   "sortOrder": 32
+  },
+  {
+   "id": "SC0033",
+   "area": "A-2 매입과 취득원가",
+   "item": "장기외상매입의 금융요소",
+   "conceptId": "L010",
+   "covered": true,
+   "sortOrder": 33
+  },
+  {
+   "id": "SC0034",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입채무와 재고자산 취득원가",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 34
+  },
+  {
+   "id": "SC0035",
+   "area": "A-2 매입과 취득원가",
+   "item": "외화매입 거래",
+   "conceptId": "L011",
+   "covered": true,
+   "sortOrder": 35
+  },
+  {
+   "id": "SC0036",
+   "area": "A-2 매입과 취득원가",
+   "item": "선급금 및 선급비용과 재고자산의 관계",
+   "conceptId": "L012",
+   "covered": true,
+   "sortOrder": 36
+  },
+  {
+   "id": "SC0037",
+   "area": "A-2 매입과 취득원가",
+   "item": "비정상적인 지출",
+   "conceptId": "L013",
+   "covered": true,
+   "sortOrder": 37
+  },
+  {
+   "id": "SC0038",
+   "area": "A-2 매입과 취득원가",
+   "item": "판매비와 일반관리비",
+   "conceptId": "L033",
+   "covered": true,
+   "sortOrder": 38
+  },
+  {
+   "id": "SC0039",
+   "area": "A-2 매입과 취득원가",
+   "item": "보관원가",
+   "conceptId": "L013",
+   "covered": true,
+   "sortOrder": 39
+  },
+  {
+   "id": "SC0040",
+   "area": "A-2 매입과 취득원가",
+   "item": "정상적 생산과정에서 필요한 보관원가",
+   "conceptId": "L013",
+   "covered": true,
+   "sortOrder": 40
+  },
+  {
+   "id": "SC0041",
+   "area": "A-2 매입과 취득원가",
+   "item": "재고자산 취득원가에 포함하지 않는 금액",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 41
+  },
+  {
+   "id": "SC0042",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입환출",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 42
+  },
+  {
+   "id": "SC0043",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입에누리",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 43
+  },
+  {
+   "id": "SC0044",
+   "area": "A-2 매입과 취득원가",
+   "item": "매입할인",
+   "conceptId": "L007",
+   "covered": true,
+   "sortOrder": 44
+  },
+  {
+   "id": "SC0045",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "거래의 발생시점",
+   "conceptId": "A01",
+   "covered": true,
+   "sortOrder": 45
+  },
+  {
+   "id": "SC0046",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "재고자산의 통제 이전",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 46
+  },
+  {
+   "id": "SC0047",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "거래의 실질",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 47
+  },
+  {
+   "id": "SC0048",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "재고자산의 인도",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 48
+  },
+  {
+   "id": "SC0049",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "미착품",
+   "conceptId": "L015",
+   "covered": true,
+   "sortOrder": 49
+  },
+  {
+   "id": "SC0050",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "운송 중 상품",
+   "conceptId": "L016",
+   "covered": true,
+   "sortOrder": 50
+  },
+  {
+   "id": "SC0051",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "선적지 인도조건",
+   "conceptId": "L015",
+   "covered": true,
+   "sortOrder": 51
+  },
+  {
+   "id": "SC0052",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "도착지 인도조건",
+   "conceptId": "L016",
+   "covered": true,
+   "sortOrder": 52
+  },
+  {
+   "id": "SC0053",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "FOB Shipping Point",
+   "conceptId": "L015",
+   "covered": true,
+   "sortOrder": 53
+  },
+  {
+   "id": "SC0054",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "FOB Destination",
+   "conceptId": "L016",
+   "covered": true,
+   "sortOrder": 54
+  },
+  {
+   "id": "SC0055",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "운송비 부담과 재고자산 귀속의 차이",
+   "conceptId": "L017",
+   "covered": true,
+   "sortOrder": 55
+  },
+  {
+   "id": "SC0056",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "운송조건과 위험·통제 이전의 관계",
+   "conceptId": "L015",
+   "covered": true,
+   "sortOrder": 56
+  },
+  {
+   "id": "SC0057",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "매입상품의 기말 귀속",
+   "conceptId": "L015",
+   "covered": true,
+   "sortOrder": 57
+  },
+  {
+   "id": "SC0058",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "매출상품의 기말 귀속",
+   "conceptId": "L016",
+   "covered": true,
+   "sortOrder": 58
+  },
+  {
+   "id": "SC0059",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "반품권이 있는 판매",
+   "conceptId": "L018",
+   "covered": true,
+   "sortOrder": 59
+  },
+  {
+   "id": "SC0060",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "반품예상상품",
+   "conceptId": "L018",
+   "covered": true,
+   "sortOrder": 60
+  },
+  {
+   "id": "SC0061",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "고객의 검수 또는 승인 조건",
+   "conceptId": "L019",
+   "covered": true,
+   "sortOrder": 61
+  },
+  {
+   "id": "SC0062",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "시용판매",
+   "conceptId": "L019",
+   "covered": true,
+   "sortOrder": 62
+  },
+  {
+   "id": "SC0063",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "위탁판매",
+   "conceptId": "L020",
+   "covered": true,
+   "sortOrder": 63
+  },
+  {
+   "id": "SC0064",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "적송품",
+   "conceptId": "L020",
+   "covered": true,
+   "sortOrder": 64
+  },
+  {
+   "id": "SC0065",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "수탁상품",
+   "conceptId": "L020",
+   "covered": true,
+   "sortOrder": 65
+  },
+  {
+   "id": "SC0066",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "위탁자와 수탁자의 재고자산 귀속",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 66
+  },
+  {
+   "id": "SC0067",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "상품매매예약",
+   "conceptId": "L023",
+   "covered": true,
+   "sortOrder": 67
+  },
+  {
+   "id": "SC0068",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "재매입약정",
+   "conceptId": "L021",
+   "covered": true,
+   "sortOrder": 68
+  },
+  {
+   "id": "SC0069",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "재고자산 담보거래",
+   "conceptId": "L021",
+   "covered": true,
+   "sortOrder": 69
+  },
+  {
+   "id": "SC0070",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "판매 후 재매입",
+   "conceptId": "L021",
+   "covered": true,
+   "sortOrder": 70
+  },
+  {
+   "id": "SC0071",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "보관판매약정 Bill-and-Hold",
+   "conceptId": "L022",
+   "covered": true,
+   "sortOrder": 71
+  },
+  {
+   "id": "SC0072",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "매출 인식과 재고자산 제거의 관계",
+   "conceptId": "L024",
+   "covered": true,
+   "sortOrder": 72
+  },
+  {
+   "id": "SC0073",
+   "area": "A-3 매입과 판매의 기간귀속",
+   "item": "매출채권과 재고자산의 동시 처리",
+   "conceptId": "F10",
+   "covered": true,
+   "sortOrder": 73
+  },
+  {
+   "id": "SC0074",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "실사재고",
+   "conceptId": "L026",
+   "covered": true,
+   "sortOrder": 74
+  },
+  {
+   "id": "SC0075",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "장부재고",
+   "conceptId": "L025",
+   "covered": true,
+   "sortOrder": 75
+  },
+  {
+   "id": "SC0076",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "실지재고조사법",
+   "conceptId": "L025",
+   "covered": true,
+   "sortOrder": 76
+  },
+  {
+   "id": "SC0077",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "계속기록법",
+   "conceptId": "L025",
+   "covered": true,
+   "sortOrder": 77
+  },
+  {
+   "id": "SC0078",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "실사차이",
+   "conceptId": "L025",
+   "covered": true,
+   "sortOrder": 78
+  },
+  {
+   "id": "SC0079",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "미착품 가산과 제외",
+   "conceptId": "L015",
+   "covered": true,
+   "sortOrder": 79
+  },
+  {
+   "id": "SC0080",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "적송품 가산과 제외",
+   "conceptId": "L016",
+   "covered": true,
+   "sortOrder": 80
+  },
+  {
+   "id": "SC0081",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "수탁상품 제외",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 81
+  },
+  {
+   "id": "SC0082",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "고객에게 인도되지 않은 상품",
+   "conceptId": "L026",
+   "covered": true,
+   "sortOrder": 82
+  },
+  {
+   "id": "SC0083",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "이미 매출 처리한 미인도상품",
+   "conceptId": "L016",
+   "covered": true,
+   "sortOrder": 83
+  },
+  {
+   "id": "SC0084",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "반품예상재고",
+   "conceptId": "L028",
+   "covered": true,
+   "sortOrder": 84
+  },
+  {
+   "id": "SC0085",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "누락매입",
+   "conceptId": "L027",
+   "covered": true,
+   "sortOrder": 85
+  },
+  {
+   "id": "SC0086",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "누락매출",
+   "conceptId": "L027",
+   "covered": true,
+   "sortOrder": 86
+  },
+  {
+   "id": "SC0087",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "이중계상",
+   "conceptId": "L027",
+   "covered": true,
+   "sortOrder": 87
+  },
+  {
+   "id": "SC0088",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "재고자산 마감오류",
+   "conceptId": "L027",
+   "covered": true,
+   "sortOrder": 88
+  },
+  {
+   "id": "SC0089",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "거래의 기간귀속 오류",
+   "conceptId": "L027",
+   "covered": true,
+   "sortOrder": 89
+  },
+  {
+   "id": "SC0090",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "재고자산 수량 확정",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 90
+  },
+  {
+   "id": "SC0091",
+   "area": "A-4 기말재고자산 수량 조정",
+   "item": "실사수량과 재무제표 수량의 차이",
+   "conceptId": "L027",
+   "covered": true,
+   "sortOrder": 91
+  },
+  {
+   "id": "SC0092",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "기초재고자산",
+   "conceptId": "L038",
+   "covered": true,
+   "sortOrder": 92
+  },
+  {
+   "id": "SC0093",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "당기매입액",
+   "conceptId": "L009",
+   "covered": true,
+   "sortOrder": 93
+  },
+  {
+   "id": "SC0094",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "매입가능재고",
+   "conceptId": "L029",
+   "covered": true,
+   "sortOrder": 94
+  },
+  {
+   "id": "SC0095",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "매출원가",
+   "conceptId": "L029",
+   "covered": true,
+   "sortOrder": 95
+  },
+  {
+   "id": "SC0096",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "기말재고자산",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 96
+  },
+  {
+   "id": "SC0097",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "실지재고조사법의 매출원가 계산",
+   "conceptId": "L025",
+   "covered": true,
+   "sortOrder": 97
+  },
+  {
+   "id": "SC0098",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "계속기록법의 매출원가 기록",
+   "conceptId": "L024",
+   "covered": true,
+   "sortOrder": 98
+  },
+  {
+   "id": "SC0099",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "개별법",
+   "conceptId": "L030",
+   "covered": true,
+   "sortOrder": 99
+  },
+  {
+   "id": "SC0100",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "선입선출법 FIFO",
+   "conceptId": "L031",
+   "covered": true,
+   "sortOrder": 100
+  },
+  {
+   "id": "SC0101",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "가중평균법",
+   "conceptId": "L036",
+   "covered": true,
+   "sortOrder": 101
+  },
+  {
+   "id": "SC0102",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "총평균법",
+   "conceptId": "L032",
+   "covered": true,
+   "sortOrder": 102
+  },
+  {
+   "id": "SC0103",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "이동평균법",
+   "conceptId": "L033",
+   "covered": true,
+   "sortOrder": 103
+  },
+  {
+   "id": "SC0104",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "매입시점별 원가층",
+   "conceptId": "L031",
+   "covered": true,
+   "sortOrder": 104
+  },
+  {
+   "id": "SC0105",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "매출시점별 원가층",
+   "conceptId": "L033",
+   "covered": true,
+   "sortOrder": 105
+  },
+  {
+   "id": "SC0106",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "평균단가 재계산 시점",
+   "conceptId": "L032",
+   "covered": true,
+   "sortOrder": 106
+  },
+  {
+   "id": "SC0107",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "원가흐름 가정과 실제 물품흐름의 차이",
+   "conceptId": "L034",
+   "covered": true,
+   "sortOrder": 107
+  },
+  {
+   "id": "SC0108",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "후입선출법 LIFO와 K-IFRS상 허용 여부",
+   "conceptId": "L035",
+   "covered": true,
+   "sortOrder": 108
+  },
+  {
+   "id": "SC0109",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "원가계산방법의 일관성",
+   "conceptId": "L036",
+   "covered": true,
+   "sortOrder": 109
+  },
+  {
+   "id": "SC0110",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "회계정책 변경",
+   "conceptId": "L036",
+   "covered": true,
+   "sortOrder": 110
+  },
+  {
+   "id": "SC0111",
+   "area": "A-5 재고자산 원가흐름",
+   "item": "기말재고자산",
+   "conceptId": "L004",
+   "covered": true,
+   "sortOrder": 111
+  },
+  {
+   "id": "SC0112",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "기초재고 과대계상",
+   "conceptId": "L029",
+   "covered": true,
+   "sortOrder": 112
+  },
+  {
+   "id": "SC0113",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "기초재고 과소계상",
+   "conceptId": "L029",
+   "covered": true,
+   "sortOrder": 113
+  },
+  {
+   "id": "SC0114",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "기말재고 과대계상",
+   "conceptId": "L029",
+   "covered": true,
+   "sortOrder": 114
+  },
+  {
+   "id": "SC0115",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "기말재고 과소계상",
+   "conceptId": "L029",
+   "covered": true,
+   "sortOrder": 115
+  },
+  {
+   "id": "SC0116",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "매출원가 과대계상",
+   "conceptId": "L010",
+   "covered": true,
+   "sortOrder": 116
+  },
+  {
+   "id": "SC0117",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "매출원가 과소계상",
+   "conceptId": "L029",
+   "covered": true,
+   "sortOrder": 117
+  },
+  {
+   "id": "SC0118",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "매출총이익에 미치는 영향",
+   "conceptId": "L037",
+   "covered": true,
+   "sortOrder": 118
+  },
+  {
+   "id": "SC0119",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "당기순이익에 미치는 영향",
+   "conceptId": "L037",
+   "covered": true,
+   "sortOrder": 119
+  },
+  {
+   "id": "SC0120",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "자산총계에 미치는 영향",
+   "conceptId": "L037",
+   "covered": true,
+   "sortOrder": 120
+  },
+  {
+   "id": "SC0121",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "자본총계에 미치는 영향",
+   "conceptId": "L037",
+   "covered": true,
+   "sortOrder": 121
+  },
+  {
+   "id": "SC0122",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "전기오류가 차기에 미치는 영향",
+   "conceptId": "L039",
+   "covered": true,
+   "sortOrder": 122
+  },
+  {
+   "id": "SC0123",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "오류의 상쇄효과",
+   "conceptId": "L039",
+   "covered": true,
+   "sortOrder": 123
+  },
+  {
+   "id": "SC0124",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "오류의 자동반전과 그 한계",
+   "conceptId": "L039",
+   "covered": true,
+   "sortOrder": 124
+  },
+  {
+   "id": "SC0125",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "두 회계기간 누적손익 영향",
+   "conceptId": "L039",
+   "covered": true,
+   "sortOrder": 125
+  },
+  {
+   "id": "SC0126",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "기초이익잉여금 수정",
+   "conceptId": "L039",
+   "covered": true,
+   "sortOrder": 126
+  },
+  {
+   "id": "SC0127",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "전기오류수정",
+   "conceptId": "L039",
+   "covered": true,
+   "sortOrder": 127
+  },
+  {
+   "id": "SC0128",
+   "area": "A-6 기말재고 오류와 재무제표 영향",
+   "item": "재고자산 누락거래의 분개",
+   "conceptId": "L041",
+   "covered": true,
+   "sortOrder": 128
+  },
+  {
+   "id": "SC0129",
+   "area": "B-1 재고자산 감모손실",
+   "item": "감모손실의 정의",
+   "conceptId": "L025",
+   "covered": true,
+   "sortOrder": 129
+  },
+  {
+   "id": "SC0130",
+   "area": "B-1 재고자산 감모손실",
+   "item": "장부수량",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 130
+  },
+  {
+   "id": "SC0131",
+   "area": "B-1 재고자산 감모손실",
+   "item": "실사수량",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 131
+  },
+  {
+   "id": "SC0132",
+   "area": "B-1 재고자산 감모손실",
+   "item": "장부수량과 실사수량 차이",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 132
+  },
+  {
+   "id": "SC0133",
+   "area": "B-1 재고자산 감모손실",
+   "item": "정상감모",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 133
+  },
+  {
+   "id": "SC0134",
+   "area": "B-1 재고자산 감모손실",
+   "item": "비정상감모",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 134
+  },
+  {
+   "id": "SC0135",
+   "area": "B-1 재고자산 감모손실",
+   "item": "파손",
+   "conceptId": "M002",
+   "covered": true,
+   "sortOrder": 135
+  },
+  {
+   "id": "SC0136",
+   "area": "B-1 재고자산 감모손실",
+   "item": "도난",
+   "conceptId": "M002",
+   "covered": true,
+   "sortOrder": 136
+  },
+  {
+   "id": "SC0137",
+   "area": "B-1 재고자산 감모손실",
+   "item": "변질",
+   "conceptId": "M002",
+   "covered": true,
+   "sortOrder": 137
+  },
+  {
+   "id": "SC0138",
+   "area": "B-1 재고자산 감모손실",
+   "item": "자연감소",
+   "conceptId": "M002",
+   "covered": true,
+   "sortOrder": 138
+  },
+  {
+   "id": "SC0139",
+   "area": "B-1 재고자산 감모손실",
+   "item": "증발",
+   "conceptId": "M002",
+   "covered": true,
+   "sortOrder": 139
+  },
+  {
+   "id": "SC0140",
+   "area": "B-1 재고자산 감모손실",
+   "item": "제조과정의 정상적인 손실",
+   "conceptId": "M002",
+   "covered": true,
+   "sortOrder": 140
+  },
+  {
+   "id": "SC0141",
+   "area": "B-1 재고자산 감모손실",
+   "item": "비정상적인 손실",
+   "conceptId": "M002",
+   "covered": true,
+   "sortOrder": 141
+  },
+  {
+   "id": "SC0142",
+   "area": "B-1 재고자산 감모손실",
+   "item": "감모수량의 측정",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 142
+  },
+  {
+   "id": "SC0143",
+   "area": "B-1 재고자산 감모손실",
+   "item": "감모수량에 대한 취득원가 적용",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 143
+  },
+  {
+   "id": "SC0144",
+   "area": "B-1 재고자산 감모손실",
+   "item": "감모손실의 손익 분류",
+   "conceptId": "M016",
+   "covered": true,
+   "sortOrder": 144
+  },
+  {
+   "id": "SC0145",
+   "area": "B-1 재고자산 감모손실",
+   "item": "정상감모손실과 매출원가",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 145
+  },
+  {
+   "id": "SC0146",
+   "area": "B-1 재고자산 감모손실",
+   "item": "비정상감모손실의 별도 비용처리",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 146
+  },
+  {
+   "id": "SC0147",
+   "area": "B-1 재고자산 감모손실",
+   "item": "실사재고액 산정",
+   "conceptId": "M015",
+   "covered": true,
+   "sortOrder": 147
+  },
+  {
+   "id": "SC0148",
+   "area": "B-1 재고자산 감모손실",
+   "item": "장부수량 및 감모수량에 대한 계산",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 148
+  },
+  {
+   "id": "SC0149",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "순실현가능가치 NRV",
+   "conceptId": "M006",
+   "covered": true,
+   "sortOrder": 149
+  },
+  {
+   "id": "SC0150",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "예상판매가격",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 150
+  },
+  {
+   "id": "SC0151",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "예상완성원가",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 151
+  },
+  {
+   "id": "SC0152",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "판매에 필요한 원가",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 152
+  },
+  {
+   "id": "SC0153",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "판매수수료",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 153
+  },
+  {
+   "id": "SC0154",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "운송비",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 154
+  },
+  {
+   "id": "SC0155",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "추가 가공비",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 155
+  },
+  {
+   "id": "SC0156",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "계약판매가격",
+   "conceptId": "M007",
+   "covered": true,
+   "sortOrder": 156
+  },
+  {
+   "id": "SC0157",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "일반판매가격",
+   "conceptId": "M007",
+   "covered": true,
+   "sortOrder": 157
+  },
+  {
+   "id": "SC0158",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "시장가격과 순실현가능가치의 차이",
+   "conceptId": "M006",
+   "covered": true,
+   "sortOrder": 158
+  },
+  {
+   "id": "SC0159",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "공정가치와 순실현가능가치의 차이",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 159
+  },
+  {
+   "id": "SC0160",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "원가와 순실현가능가치 중 낮은 금액",
+   "conceptId": "M006",
+   "covered": true,
+   "sortOrder": 160
+  },
+  {
+   "id": "SC0161",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "저가법",
+   "conceptId": "M008",
+   "covered": true,
+   "sortOrder": 161
+  },
+  {
+   "id": "SC0162",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "품목별 평가",
+   "conceptId": "M009",
+   "covered": true,
+   "sortOrder": 162
+  },
+  {
+   "id": "SC0163",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "유사한 품목의 집단평가",
+   "conceptId": "M009",
+   "covered": true,
+   "sortOrder": 163
+  },
+  {
+   "id": "SC0164",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "원재료의 순실현가능가치",
+   "conceptId": "M006",
+   "covered": true,
+   "sortOrder": 164
+  },
+  {
+   "id": "SC0165",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "완성제품의 원가와 원재료 평가",
+   "conceptId": "M010",
+   "covered": true,
+   "sortOrder": 165
+  },
+  {
+   "id": "SC0166",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "원재료 대체원가",
+   "conceptId": "M006",
+   "covered": true,
+   "sortOrder": 166
+  },
+  {
+   "id": "SC0167",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "예상가격 하락",
+   "conceptId": "M008",
+   "covered": true,
+   "sortOrder": 167
+  },
+  {
+   "id": "SC0168",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "진부화",
+   "conceptId": "M008",
+   "covered": true,
+   "sortOrder": 168
+  },
+  {
+   "id": "SC0169",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "손상",
+   "conceptId": "M008",
+   "covered": true,
+   "sortOrder": 169
+  },
+  {
+   "id": "SC0170",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "판매비용 추정",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 170
+  },
+  {
+   "id": "SC0171",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "확정판매계약이 있는 재고자산",
+   "conceptId": "M006",
+   "covered": true,
+   "sortOrder": 171
+  },
+  {
+   "id": "SC0172",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "예상완성원가",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 172
+  },
+  {
+   "id": "SC0173",
+   "area": "B-2 재고자산의 순실현가능가치",
+   "item": "판매에 필요한 예상원가",
+   "conceptId": "M005",
+   "covered": true,
+   "sortOrder": 173
+  },
+  {
+   "id": "SC0174",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실의 발생",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 174
+  },
+  {
+   "id": "SC0175",
+   "area": "B-3 재고자산평가손실",
+   "item": "감모손실과 평가손실의 구분",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 175
+  },
+  {
+   "id": "SC0176",
+   "area": "B-3 재고자산평가손실",
+   "item": "원가보다 NRV가 낮은 경우",
+   "conceptId": "M008",
+   "covered": true,
+   "sortOrder": 176
+  },
+  {
+   "id": "SC0177",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실의 측정",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 177
+  },
+  {
+   "id": "SC0178",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실의 인식",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 178
+  },
+  {
+   "id": "SC0179",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가충당금",
+   "conceptId": "M011",
+   "covered": true,
+   "sortOrder": 179
+  },
+  {
+   "id": "SC0180",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가충당금 사용 회계처리",
+   "conceptId": "M014",
+   "covered": true,
+   "sortOrder": 180
+  },
+  {
+   "id": "SC0181",
+   "area": "B-3 재고자산평가손실",
+   "item": "기말 장부금액",
+   "conceptId": "M008",
+   "covered": true,
+   "sortOrder": 181
+  },
+  {
+   "id": "SC0182",
+   "area": "B-3 재고자산평가손실",
+   "item": "매출원가 및 손익에 대한 영향",
+   "conceptId": "M016",
+   "covered": true,
+   "sortOrder": 182
+  },
+  {
+   "id": "SC0183",
+   "area": "B-3 재고자산평가손실",
+   "item": "재고자산 평가손실의 손익 표시",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 183
+  },
+  {
+   "id": "SC0184",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실 환입",
+   "conceptId": "M013",
+   "covered": true,
+   "sortOrder": 184
+  },
+  {
+   "id": "SC0185",
+   "area": "B-3 재고자산평가손실",
+   "item": "순실현가능가치 회복",
+   "conceptId": "I25",
+   "covered": true,
+   "sortOrder": 185
+  },
+  {
+   "id": "SC0186",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실 환입 한도",
+   "conceptId": "M013",
+   "covered": true,
+   "sortOrder": 186
+  },
+  {
+   "id": "SC0187",
+   "area": "B-3 재고자산평가손실",
+   "item": "최초 취득원가 상한",
+   "conceptId": "M013",
+   "covered": true,
+   "sortOrder": 187
+  },
+  {
+   "id": "SC0188",
+   "area": "B-3 재고자산평가손실",
+   "item": "전기 평가손실의 당기 환입",
+   "conceptId": "M013",
+   "covered": true,
+   "sortOrder": 188
+  },
+  {
+   "id": "SC0189",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실의 환입과 신규 평가이익의 차이",
+   "conceptId": "M013",
+   "covered": true,
+   "sortOrder": 189
+  },
+  {
+   "id": "SC0190",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실과 감모손실이 동시에 발생한 경우",
+   "conceptId": "M012",
+   "covered": true,
+   "sortOrder": 190
+  },
+  {
+   "id": "SC0191",
+   "area": "B-3 재고자산평가손실",
+   "item": "평가손실이 있는 재고자산의 판매",
+   "conceptId": "M007",
+   "covered": true,
+   "sortOrder": 191
+  },
+  {
+   "id": "SC0192",
+   "area": "B-4 종합 계산",
+   "item": "장부수량",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 192
+  },
+  {
+   "id": "SC0193",
+   "area": "B-4 종합 계산",
+   "item": "실사수량",
+   "conceptId": "M001",
+   "covered": true,
+   "sortOrder": 193
+  },
+  {
+   "id": "SC0194",
+   "area": "B-4 종합 계산",
+   "item": "정상감모",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 194
+  },
+  {
+   "id": "SC0195",
+   "area": "B-4 종합 계산",
+   "item": "비정상감모",
+   "conceptId": "M003",
+   "covered": true,
+   "sortOrder": 195
+  },
+  {
+   "id": "SC0196",
+   "area": "B-4 종합 계산",
+   "item": "취득단가",
+   "conceptId": "M004",
+   "covered": true,
+   "sortOrder": 196
+  },
+  {
+   "id": "SC0197",
+   "area": "B-4 종합 계산",
+   "item": "순실현가능가치",
+   "conceptId": "M006",
+   "covered": true,
+   "sortOrder": 197
+  },
+  {
+   "id": "SC0198",
+   "area": "B-4 종합 계산",
+   "item": "전기 평가충당금",
+   "conceptId": "M013",
+   "covered": true,
+   "sortOrder": 198
+  },
+  {
+   "id": "SC0199",
+   "area": "B-4 종합 계산",
+   "item": "매출수량",
+   "conceptId": "M004",
+   "covered": true,
+   "sortOrder": 199
+  },
+  {
+   "id": "SC0200",
+   "area": "C-1 매출총이익률법",
+   "item": "매출총이익률의 정의",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 200
+  },
+  {
+   "id": "SC0201",
+   "area": "C-1 매출총이익률법",
+   "item": "매출총이익",
+   "conceptId": "N002",
+   "covered": true,
+   "sortOrder": 201
+  },
+  {
+   "id": "SC0202",
+   "area": "C-1 매출총이익률법",
+   "item": "순매출액",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 202
+  },
+  {
+   "id": "SC0203",
+   "area": "C-1 매출총이익률법",
+   "item": "매출원가",
+   "conceptId": "N013",
+   "covered": true,
+   "sortOrder": 203
+  },
+  {
+   "id": "SC0204",
+   "area": "C-1 매출총이익률법",
+   "item": "매출액 기준 매출총이익률",
+   "conceptId": "N002",
+   "covered": true,
+   "sortOrder": 204
+  },
+  {
+   "id": "SC0205",
+   "area": "C-1 매출총이익률법",
+   "item": "원가 기준 이익률",
+   "conceptId": "N002",
+   "covered": true,
+   "sortOrder": 205
+  },
+  {
+   "id": "SC0206",
+   "area": "C-1 매출총이익률법",
+   "item": "두 이익률의 변환",
+   "conceptId": "N002",
+   "covered": true,
+   "sortOrder": 206
+  },
+  {
+   "id": "SC0207",
+   "area": "C-1 매출총이익률법",
+   "item": "기말재고 추정",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 207
+  },
+  {
+   "id": "SC0208",
+   "area": "C-1 매출총이익률법",
+   "item": "화재·도난 등 재고손실 추정",
+   "conceptId": "N003",
+   "covered": true,
+   "sortOrder": 208
+  },
+  {
+   "id": "SC0209",
+   "area": "C-1 매출총이익률법",
+   "item": "보험금 청구를 위한 재고 추정",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 209
+  },
+  {
+   "id": "SC0210",
+   "area": "C-1 매출총이익률법",
+   "item": "추정 매출원가",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 210
+  },
+  {
+   "id": "SC0211",
+   "area": "C-1 매출총이익률법",
+   "item": "추정 재고자산",
+   "conceptId": "N004",
+   "covered": true,
+   "sortOrder": 211
+  },
+  {
+   "id": "SC0212",
+   "area": "C-1 매출총이익률법",
+   "item": "매출총이익률법의 한계",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 212
+  },
+  {
+   "id": "SC0213",
+   "area": "C-1 매출총이익률법",
+   "item": "기간별 매출총이익률 변동",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 213
+  },
+  {
+   "id": "SC0214",
+   "area": "C-1 매출총이익률법",
+   "item": "과거 매출총이익률 적용 시 유의사항",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 214
+  },
+  {
+   "id": "SC0215",
+   "area": "C-2 소매재고법 기본",
+   "item": "소매재고법",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 215
+  },
+  {
+   "id": "SC0216",
+   "area": "C-2 소매재고법 기본",
+   "item": "소매재고법이 필요한 상황",
+   "conceptId": "N004",
+   "covered": true,
+   "sortOrder": 216
+  },
+  {
+   "id": "SC0217",
+   "area": "C-2 소매재고법 기본",
+   "item": "원가열과 매가열",
+   "conceptId": "N004",
+   "covered": true,
+   "sortOrder": 217
+  },
+  {
+   "id": "SC0218",
+   "area": "C-2 소매재고법 기본",
+   "item": "소매재고법의 원가율",
+   "conceptId": "N010",
+   "covered": true,
+   "sortOrder": 218
+  },
+  {
+   "id": "SC0219",
+   "area": "C-2 소매재고법 기본",
+   "item": "원가율 분자",
+   "conceptId": "N005",
+   "covered": true,
+   "sortOrder": 219
+  },
+  {
+   "id": "SC0220",
+   "area": "C-2 소매재고법 기본",
+   "item": "원가율 분모",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 220
+  },
+  {
+   "id": "SC0221",
+   "area": "C-2 소매재고법 기본",
+   "item": "기초재고 원가",
+   "conceptId": "N007",
+   "covered": true,
+   "sortOrder": 221
+  },
+  {
+   "id": "SC0222",
+   "area": "C-2 소매재고법 기본",
+   "item": "기초재고 매가",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 222
+  },
+  {
+   "id": "SC0223",
+   "area": "C-2 소매재고법 기본",
+   "item": "당기매입 원가",
+   "conceptId": "N009",
+   "covered": true,
+   "sortOrder": 223
+  },
+  {
+   "id": "SC0224",
+   "area": "C-2 소매재고법 기본",
+   "item": "당기매입 매가",
+   "conceptId": "N005",
+   "covered": true,
+   "sortOrder": 224
+  },
+  {
+   "id": "SC0225",
+   "area": "C-2 소매재고법 기본",
+   "item": "원가 대비 매가",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 225
+  },
+  {
+   "id": "SC0226",
+   "area": "C-2 소매재고법 기본",
+   "item": "재고자산의 소매가액",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 226
+  },
+  {
+   "id": "SC0227",
+   "area": "C-2 소매재고법 기본",
+   "item": "소매가액에서 원가로의 환산",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 227
+  },
+  {
+   "id": "SC0228",
+   "area": "C-2 소매재고법 기본",
+   "item": "기말재고 매가 계산",
+   "conceptId": "N013",
+   "covered": true,
+   "sortOrder": 228
+  },
+  {
+   "id": "SC0229",
+   "area": "C-2 소매재고법 기본",
+   "item": "기말재고 원가 계산",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 229
+  },
+  {
+   "id": "SC0230",
+   "area": "C-2 소매재고법 기본",
+   "item": "매출액과 매출환입",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 230
+  },
+  {
+   "id": "SC0231",
+   "area": "C-2 소매재고법 기본",
+   "item": "매출에누리",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 231
+  },
+  {
+   "id": "SC0232",
+   "area": "C-2 소매재고법 기본",
+   "item": "정상파손",
+   "conceptId": "N012",
+   "covered": true,
+   "sortOrder": 232
+  },
+  {
+   "id": "SC0233",
+   "area": "C-2 소매재고법 기본",
+   "item": "비정상파손",
+   "conceptId": "N012",
+   "covered": true,
+   "sortOrder": 233
+  },
+  {
+   "id": "SC0234",
+   "area": "C-2 소매재고법 기본",
+   "item": "종업원할인",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 234
+  },
+  {
+   "id": "SC0235",
+   "area": "C-2 소매재고법 기본",
+   "item": "판매촉진 할인",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 235
+  },
+  {
+   "id": "SC0236",
+   "area": "C-2 소매재고법 기본",
+   "item": "원가율의 반올림",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 236
+  },
+  {
+   "id": "SC0237",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "원가기준 소매재고법",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 237
+  },
+  {
+   "id": "SC0238",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "저가기준 소매재고법",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 238
+  },
+  {
+   "id": "SC0239",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "선입선출 소매재고법",
+   "conceptId": "N009",
+   "covered": true,
+   "sortOrder": 239
+  },
+  {
+   "id": "SC0240",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "가중평균 소매재고법",
+   "conceptId": "N007",
+   "covered": true,
+   "sortOrder": 240
+  },
+  {
+   "id": "SC0241",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "기초재고 포함 여부",
+   "conceptId": "N007",
+   "covered": true,
+   "sortOrder": 241
+  },
+  {
+   "id": "SC0242",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "가격인상",
+   "conceptId": "N006",
+   "covered": true,
+   "sortOrder": 242
+  },
+  {
+   "id": "SC0243",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "가격인상취소",
+   "conceptId": "N006",
+   "covered": true,
+   "sortOrder": 243
+  },
+  {
+   "id": "SC0244",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "가격인하",
+   "conceptId": "N006",
+   "covered": true,
+   "sortOrder": 244
+  },
+  {
+   "id": "SC0245",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "가격인하취소",
+   "conceptId": "N006",
+   "covered": true,
+   "sortOrder": 245
+  },
+  {
+   "id": "SC0246",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "순가격인상",
+   "conceptId": "N006",
+   "covered": true,
+   "sortOrder": 246
+  },
+  {
+   "id": "SC0247",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "순가격인하",
+   "conceptId": "N007",
+   "covered": true,
+   "sortOrder": 247
+  },
+  {
+   "id": "SC0248",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "원가율 분모에서의 가격변동 처리",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 248
+  },
+  {
+   "id": "SC0249",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "소매재고법에서 원가근사",
+   "conceptId": "P041",
+   "covered": true,
+   "sortOrder": 249
+  },
+  {
+   "id": "SC0250",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "기존 원가층과 당기매입 원가층 구별",
+   "conceptId": "N009",
+   "covered": true,
+   "sortOrder": 250
+  },
+  {
+   "id": "SC0251",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "저가기준 소매재고법의 논리",
+   "conceptId": "N008",
+   "covered": true,
+   "sortOrder": 251
+  },
+  {
+   "id": "SC0252",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "소매재고법과 순실현가능가치의 관계",
+   "conceptId": "N017",
+   "covered": true,
+   "sortOrder": 252
+  },
+  {
+   "id": "SC0253",
+   "area": "C-3 소매재고법의 여러 방식",
+   "item": "소매재고법의 한계",
+   "conceptId": "N001",
+   "covered": true,
+   "sortOrder": 253
+  },
+  {
+   "id": "SC0254",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "정상파손",
+   "conceptId": "N012",
+   "covered": true,
+   "sortOrder": 254
+  },
+  {
+   "id": "SC0255",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "비정상파손",
+   "conceptId": "N012",
+   "covered": true,
+   "sortOrder": 255
+  },
+  {
+   "id": "SC0256",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "종업원할인",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 256
+  },
+  {
+   "id": "SC0257",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "매출환입",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 257
+  },
+  {
+   "id": "SC0258",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "판매가격 변경",
+   "conceptId": "N006",
+   "covered": true,
+   "sortOrder": 258
+  },
+  {
+   "id": "SC0259",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "표시가격과 실제판매가격",
+   "conceptId": "N011",
+   "covered": true,
+   "sortOrder": 259
+  },
+  {
+   "id": "SC0260",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "선입선출 소매재고법에서의 기초재고",
+   "conceptId": "N009",
+   "covered": true,
+   "sortOrder": 260
+  },
+  {
+   "id": "SC0261",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "가중평균 소매재고법에서의 기초재고",
+   "conceptId": "N007",
+   "covered": true,
+   "sortOrder": 261
+  },
+  {
+   "id": "SC0262",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "매가를 통한 재고수량 추정",
+   "conceptId": "N004",
+   "covered": true,
+   "sortOrder": 262
+  },
+  {
+   "id": "SC0263",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "재고손실 추정",
+   "conceptId": "N003",
+   "covered": true,
+   "sortOrder": 263
+  },
+  {
+   "id": "SC0264",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "각 항목의 기말재고 매가에 대한 영향",
+   "conceptId": "N013",
+   "covered": true,
+   "sortOrder": 264
+  },
+  {
+   "id": "SC0265",
+   "area": "C-4 소매재고법의 특수 항목",
+   "item": "원가율에 포함하는 항목과 제외하는 항목",
+   "conceptId": "N007",
+   "covered": true,
+   "sortOrder": 265
+  },
+  {
+   "id": "SC0266",
+   "area": "C-5 기타 원가배분",
+   "item": "개별법과 원가흐름 가정",
+   "conceptId": "N017",
+   "covered": true,
+   "sortOrder": 266
+  },
+  {
+   "id": "SC0267",
+   "area": "C-5 기타 원가배분",
+   "item": "표준원가법",
+   "conceptId": "N014",
+   "covered": true,
+   "sortOrder": 267
+  },
+  {
+   "id": "SC0268",
+   "area": "C-5 기타 원가배분",
+   "item": "표준원가와 실제원가 차이",
+   "conceptId": "N014",
+   "covered": true,
+   "sortOrder": 268
+  },
+  {
+   "id": "SC0269",
+   "area": "C-5 기타 원가배분",
+   "item": "표준원가 사용 요건",
+   "conceptId": "N014",
+   "covered": true,
+   "sortOrder": 269
+  },
+  {
+   "id": "SC0270",
+   "area": "C-5 기타 원가배분",
+   "item": "결합제품",
+   "conceptId": "N015",
+   "covered": true,
+   "sortOrder": 270
+  },
+  {
+   "id": "SC0271",
+   "area": "C-5 기타 원가배분",
+   "item": "부산물",
+   "conceptId": "N016",
+   "covered": true,
+   "sortOrder": 271
+  },
+  {
+   "id": "SC0272",
+   "area": "C-5 기타 원가배분",
+   "item": "결합원가",
+   "conceptId": "N015",
+   "covered": true,
+   "sortOrder": 272
+  },
+  {
+   "id": "SC0273",
+   "area": "C-5 기타 원가배분",
+   "item": "분리점",
+   "conceptId": "N015",
+   "covered": true,
+   "sortOrder": 273
+  },
+  {
+   "id": "SC0274",
+   "area": "C-5 기타 원가배분",
+   "item": "상대적 판매가치 기준",
+   "conceptId": "N015",
+   "covered": true,
+   "sortOrder": 274
+  },
+  {
+   "id": "SC0275",
+   "area": "C-5 기타 원가배분",
+   "item": "상대적 순실현가능가치",
+   "conceptId": "N015",
+   "covered": true,
+   "sortOrder": 275
+  },
+  {
+   "id": "SC0276",
+   "area": "C-5 기타 원가배분",
+   "item": "결합원가 배분",
+   "conceptId": "N016",
+   "covered": true,
+   "sortOrder": 276
+  },
+  {
+   "id": "SC0277",
+   "area": "C-5 기타 원가배분",
+   "item": "부산물 회계처리의 개념",
+   "conceptId": "N016",
+   "covered": true,
+   "sortOrder": 277
+  },
+  {
+   "id": "SC0278",
+   "area": "C-5 기타 원가배분",
+   "item": "원가배분과 재고자산 평가의 관계",
+   "conceptId": "N017",
+   "covered": true,
+   "sortOrder": 278
+  },
+  {
+   "id": "SC0279",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "유형자산의 정의",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 279
+  },
+  {
+   "id": "SC0280",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "물리적 실체",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 280
+  },
+  {
+   "id": "SC0281",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "생산에 사용하는 자산",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 281
+  },
+  {
+   "id": "SC0282",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "용역제공에 사용하는 자산",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 282
+  },
+  {
+   "id": "SC0283",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "임대목적 자산",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 283
+  },
+  {
+   "id": "SC0284",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "관리목적 자산",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 284
+  },
+  {
+   "id": "SC0285",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "한 회계기간을 초과하여 사용하는 자산",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 285
+  },
+  {
+   "id": "SC0286",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "토지",
+   "conceptId": "P018",
+   "covered": true,
+   "sortOrder": 286
+  },
+  {
+   "id": "SC0287",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "건물",
+   "conceptId": "P019",
+   "covered": true,
+   "sortOrder": 287
+  },
+  {
+   "id": "SC0288",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "구축물",
+   "conceptId": "P020",
+   "covered": true,
+   "sortOrder": 288
+  },
+  {
+   "id": "SC0289",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "기계장치",
+   "conceptId": "P002",
+   "covered": true,
+   "sortOrder": 289
+  },
+  {
+   "id": "SC0290",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "차량운반구",
+   "conceptId": "P002",
+   "covered": true,
+   "sortOrder": 290
+  },
+  {
+   "id": "SC0291",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "공구와 기구",
+   "conceptId": "P002",
+   "covered": true,
+   "sortOrder": 291
+  },
+  {
+   "id": "SC0292",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "비품",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 292
+  },
+  {
+   "id": "SC0293",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "건설중인자산",
+   "conceptId": "P024",
+   "covered": true,
+   "sortOrder": 293
+  },
+  {
+   "id": "SC0294",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "유형자산과 재고자산의 차이",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 294
+  },
+  {
+   "id": "SC0295",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "유형자산과 무형자산의 차이",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 295
+  },
+  {
+   "id": "SC0296",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "유형자산과 투자부동산의 차이",
+   "conceptId": "P072",
+   "covered": true,
+   "sortOrder": 296
+  },
+  {
+   "id": "SC0297",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "자가사용부동산",
+   "conceptId": "P003",
+   "covered": true,
+   "sortOrder": 297
+  },
+  {
+   "id": "SC0298",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "생산용식물",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 298
+  },
+  {
+   "id": "SC0299",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "주요 예비부품",
+   "conceptId": "P004",
+   "covered": true,
+   "sortOrder": 299
+  },
+  {
+   "id": "SC0300",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "대기성 장비",
+   "conceptId": "P004",
+   "covered": true,
+   "sortOrder": 300
+  },
+  {
+   "id": "SC0301",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "유지보수 장비",
+   "conceptId": "P004",
+   "covered": true,
+   "sortOrder": 301
+  },
+  {
+   "id": "SC0302",
+   "area": "D-1 유형자산의 정의와 분류",
+   "item": "유형자산 인식의 단위",
+   "conceptId": "P005",
+   "covered": true,
+   "sortOrder": 302
+  },
+  {
+   "id": "SC0303",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "미래경제적효익 유입 가능성",
+   "conceptId": "P006",
+   "covered": true,
+   "sortOrder": 303
+  },
+  {
+   "id": "SC0304",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "원가의 신뢰성 있는 측정",
+   "conceptId": "P006",
+   "covered": true,
+   "sortOrder": 304
+  },
+  {
+   "id": "SC0305",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "최초 인식 시 원가 측정",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 305
+  },
+  {
+   "id": "SC0306",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "개별 취득",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 306
+  },
+  {
+   "id": "SC0307",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "일괄 취득",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 307
+  },
+  {
+   "id": "SC0308",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "공동 취득",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 308
+  },
+  {
+   "id": "SC0309",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "일괄취득가격의 배분",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 309
+  },
+  {
+   "id": "SC0310",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "상대적 공정가치에 의한 배분",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 310
+  },
+  {
+   "id": "SC0311",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "현물출자와 자산 취득",
+   "conceptId": "P009",
+   "covered": true,
+   "sortOrder": 311
+  },
+  {
+   "id": "SC0312",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "무상취득 관련 회계",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 312
+  },
+  {
+   "id": "SC0313",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "정부보조금에 의한 취득",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 313
+  },
+  {
+   "id": "SC0314",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "교환취득",
+   "conceptId": "P033",
+   "covered": true,
+   "sortOrder": 314
+  },
+  {
+   "id": "SC0315",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "외상취득",
+   "conceptId": "P011",
+   "covered": true,
+   "sortOrder": 315
+  },
+  {
+   "id": "SC0316",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "장기연불조건 취득",
+   "conceptId": "P011",
+   "covered": true,
+   "sortOrder": 316
+  },
+  {
+   "id": "SC0317",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "현금가격상당액",
+   "conceptId": "P011",
+   "covered": true,
+   "sortOrder": 317
+  },
+  {
+   "id": "SC0318",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "금융요소와 이자비용",
+   "conceptId": "L010",
+   "covered": true,
+   "sortOrder": 318
+  },
+  {
+   "id": "SC0319",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "자가건설",
+   "conceptId": "P023",
+   "covered": true,
+   "sortOrder": 319
+  },
+  {
+   "id": "SC0320",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "건설중인자산",
+   "conceptId": "P024",
+   "covered": true,
+   "sortOrder": 320
+  },
+  {
+   "id": "SC0321",
+   "area": "D-2 유형자산 최초 인식",
+   "item": "완성자산으로의 대체",
+   "conceptId": "P024",
+   "covered": true,
+   "sortOrder": 321
+  },
+  {
+   "id": "SC0322",
+   "area": "D-3 취득원가의 구성",
+   "item": "매입가격",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 322
+  },
+  {
+   "id": "SC0323",
+   "area": "D-3 취득원가의 구성",
+   "item": "수입관세",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 323
+  },
+  {
+   "id": "SC0324",
+   "area": "D-3 취득원가의 구성",
+   "item": "환급받을 수 없는 세금",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 324
+  },
+  {
+   "id": "SC0325",
+   "area": "D-3 취득원가의 구성",
+   "item": "매입에누리·할인",
+   "conceptId": "L005",
+   "covered": true,
+   "sortOrder": 325
+  },
+  {
+   "id": "SC0326",
+   "area": "D-3 취득원가의 구성",
+   "item": "설치비",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 326
+  },
+  {
+   "id": "SC0327",
+   "area": "D-3 취득원가의 구성",
+   "item": "운송비",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 327
+  },
+  {
+   "id": "SC0328",
+   "area": "D-3 취득원가의 구성",
+   "item": "하역비",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 328
+  },
+  {
+   "id": "SC0329",
+   "area": "D-3 취득원가의 구성",
+   "item": "부지 정지비",
+   "conceptId": "P015",
+   "covered": true,
+   "sortOrder": 329
+  },
+  {
+   "id": "SC0330",
+   "area": "D-3 취득원가의 구성",
+   "item": "자산 설치를 위한 직접노무비",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 330
+  },
+  {
+   "id": "SC0331",
+   "area": "D-3 취득원가의 구성",
+   "item": "전문가 수수료",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 331
+  },
+  {
+   "id": "SC0332",
+   "area": "D-3 취득원가의 구성",
+   "item": "시험가동 관련 원가",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 332
+  },
+  {
+   "id": "SC0333",
+   "area": "D-3 취득원가의 구성",
+   "item": "사용 가능 상태에 이르게 하는 원가",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 333
+  },
+  {
+   "id": "SC0334",
+   "area": "D-3 취득원가의 구성",
+   "item": "해체원가",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 334
+  },
+  {
+   "id": "SC0335",
+   "area": "D-3 취득원가의 구성",
+   "item": "철거원가",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 335
+  },
+  {
+   "id": "SC0336",
+   "area": "D-3 취득원가의 구성",
+   "item": "원상복구원가",
+   "conceptId": "P017",
+   "covered": true,
+   "sortOrder": 336
+  },
+  {
+   "id": "SC0337",
+   "area": "D-3 취득원가의 구성",
+   "item": "복구충당부채의 현재가치",
+   "conceptId": "P017",
+   "covered": true,
+   "sortOrder": 337
+  },
+  {
+   "id": "SC0338",
+   "area": "D-3 취득원가의 구성",
+   "item": "사용 전 생산된 재화의 판매",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 338
+  },
+  {
+   "id": "SC0339",
+   "area": "D-3 취득원가의 구성",
+   "item": "시험생산품 판매대금의 회계",
+   "conceptId": "P014",
+   "covered": true,
+   "sortOrder": 339
+  },
+  {
+   "id": "SC0340",
+   "area": "D-3 취득원가의 구성",
+   "item": "사용 전 생산된 재화의 관련 원가",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 340
+  },
+  {
+   "id": "SC0341",
+   "area": "D-3 취득원가의 구성",
+   "item": "원가에 포함하지 않는 일반관리비",
+   "conceptId": "P015",
+   "covered": true,
+   "sortOrder": 341
+  },
+  {
+   "id": "SC0342",
+   "area": "D-3 취득원가의 구성",
+   "item": "개설비",
+   "conceptId": "P015",
+   "covered": true,
+   "sortOrder": 342
+  },
+  {
+   "id": "SC0343",
+   "area": "D-3 취득원가의 구성",
+   "item": "광고선전비",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 343
+  },
+  {
+   "id": "SC0344",
+   "area": "D-3 취득원가의 구성",
+   "item": "종업원 교육비",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 344
+  },
+  {
+   "id": "SC0345",
+   "area": "D-3 취득원가의 구성",
+   "item": "신규 사업의 개시비용",
+   "conceptId": "P015",
+   "covered": true,
+   "sortOrder": 345
+  },
+  {
+   "id": "SC0346",
+   "area": "D-3 취득원가의 구성",
+   "item": "초기 영업손실",
+   "conceptId": "P016",
+   "covered": true,
+   "sortOrder": 346
+  },
+  {
+   "id": "SC0347",
+   "area": "D-3 취득원가의 구성",
+   "item": "재배치 및 재편성비용",
+   "conceptId": "P015",
+   "covered": true,
+   "sortOrder": 347
+  },
+  {
+   "id": "SC0348",
+   "area": "D-3 취득원가의 구성",
+   "item": "가동 준비 후 발생한 원가",
+   "conceptId": "P016",
+   "covered": true,
+   "sortOrder": 348
+  },
+  {
+   "id": "SC0349",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "토지의 취득원가",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 349
+  },
+  {
+   "id": "SC0350",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "중개수수료",
+   "conceptId": "P018",
+   "covered": true,
+   "sortOrder": 350
+  },
+  {
+   "id": "SC0351",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "취득세 등 관련 세금",
+   "conceptId": "P018",
+   "covered": true,
+   "sortOrder": 351
+  },
+  {
+   "id": "SC0352",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "등기비",
+   "conceptId": "P018",
+   "covered": true,
+   "sortOrder": 352
+  },
+  {
+   "id": "SC0353",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "기존 건물 철거 목적",
+   "conceptId": "P019",
+   "covered": true,
+   "sortOrder": 353
+  },
+  {
+   "id": "SC0354",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "철거비와 잔여물 매각대금",
+   "conceptId": "P019",
+   "covered": true,
+   "sortOrder": 354
+  },
+  {
+   "id": "SC0355",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "토지 조성비",
+   "conceptId": "P020",
+   "covered": true,
+   "sortOrder": 355
+  },
+  {
+   "id": "SC0356",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "부지 정지비",
+   "conceptId": "P015",
+   "covered": true,
+   "sortOrder": 356
+  },
+  {
+   "id": "SC0357",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "배수시설",
+   "conceptId": "P020",
+   "covered": true,
+   "sortOrder": 357
+  },
+  {
+   "id": "SC0358",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "포장공사",
+   "conceptId": "P020",
+   "covered": true,
+   "sortOrder": 358
+  },
+  {
+   "id": "SC0359",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "영구적인 토지개량",
+   "conceptId": "P020",
+   "covered": true,
+   "sortOrder": 359
+  },
+  {
+   "id": "SC0360",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "내용연수가 한정된 토지개량",
+   "conceptId": "P020",
+   "covered": true,
+   "sortOrder": 360
+  },
+  {
+   "id": "SC0361",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "토지와 건물의 일괄취득",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 361
+  },
+  {
+   "id": "SC0362",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "토지와 건물의 취득원가 배분",
+   "conceptId": "P008",
+   "covered": true,
+   "sortOrder": 362
+  },
+  {
+   "id": "SC0363",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "자가건설을 위한 토지 취득",
+   "conceptId": "P018",
+   "covered": true,
+   "sortOrder": 363
+  },
+  {
+   "id": "SC0364",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "토지와 건물의 감가상각 구분",
+   "conceptId": "P018",
+   "covered": true,
+   "sortOrder": 364
+  },
+  {
+   "id": "SC0365",
+   "area": "D-4 토지 취득과 토지조성원가",
+   "item": "토지의 공정가치 재평가",
+   "conceptId": "P022",
+   "covered": true,
+   "sortOrder": 365
+  },
+  {
+   "id": "SC0366",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "자가건설원가",
+   "conceptId": "P023",
+   "covered": true,
+   "sortOrder": 366
+  },
+  {
+   "id": "SC0367",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "직접재료비",
+   "conceptId": "P023",
+   "covered": true,
+   "sortOrder": 367
+  },
+  {
+   "id": "SC0368",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "직접노무비",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 368
+  },
+  {
+   "id": "SC0369",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "제조간접비",
+   "conceptId": "P023",
+   "covered": true,
+   "sortOrder": 369
+  },
+  {
+   "id": "SC0370",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "정상적인 건설원가",
+   "conceptId": "P023",
+   "covered": true,
+   "sortOrder": 370
+  },
+  {
+   "id": "SC0371",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "비정상적인 낭비",
+   "conceptId": "P023",
+   "covered": true,
+   "sortOrder": 371
+  },
+  {
+   "id": "SC0372",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "자가건설이익",
+   "conceptId": "P023",
+   "covered": true,
+   "sortOrder": 372
+  },
+  {
+   "id": "SC0373",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "건설중인자산 계정",
+   "conceptId": "P002",
+   "covered": true,
+   "sortOrder": 373
+  },
+  {
+   "id": "SC0374",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "자산을 사용할 수 있는 시점",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 374
+  },
+  {
+   "id": "SC0375",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "준공과 감가상각 개시",
+   "conceptId": "I17",
+   "covered": true,
+   "sortOrder": 375
+  },
+  {
+   "id": "SC0376",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "시운전비용",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 376
+  },
+  {
+   "id": "SC0377",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "차입원가 자본화",
+   "conceptId": "P011",
+   "covered": true,
+   "sortOrder": 377
+  },
+  {
+   "id": "SC0378",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "건설기간 중 발생하는 손상",
+   "conceptId": "P024",
+   "covered": true,
+   "sortOrder": 378
+  },
+  {
+   "id": "SC0379",
+   "area": "D-5 자가건설과 건설중인자산",
+   "item": "자가건설 완료 후 대체분개",
+   "conceptId": "P024",
+   "covered": true,
+   "sortOrder": 379
+  },
+  {
+   "id": "SC0380",
+   "area": "D-6 정부보조금",
+   "item": "정부보조금의 정의",
+   "conceptId": "P010",
+   "covered": true,
+   "sortOrder": 380
+  },
+  {
+   "id": "SC0381",
+   "area": "D-6 정부보조금",
+   "item": "정부지원과 정부보조금",
+   "conceptId": "P025",
+   "covered": true,
+   "sortOrder": 381
+  },
+  {
+   "id": "SC0382",
+   "area": "D-6 정부보조금",
+   "item": "보조금 인식요건",
+   "conceptId": "P025",
+   "covered": true,
+   "sortOrder": 382
+  },
+  {
+   "id": "SC0383",
+   "area": "D-6 정부보조금",
+   "item": "자산관련 보조금",
+   "conceptId": "P026",
+   "covered": true,
+   "sortOrder": 383
+  },
+  {
+   "id": "SC0384",
+   "area": "D-6 정부보조금",
+   "item": "수익관련 보조금",
+   "conceptId": "P026",
+   "covered": true,
+   "sortOrder": 384
+  },
+  {
+   "id": "SC0385",
+   "area": "D-6 정부보조금",
+   "item": "자산관련 보조금의 표시",
+   "conceptId": "P025",
+   "covered": true,
+   "sortOrder": 385
+  },
+  {
+   "id": "SC0386",
+   "area": "D-6 정부보조금",
+   "item": "자산 차감법",
+   "conceptId": "P027",
+   "covered": true,
+   "sortOrder": 386
+  },
+  {
+   "id": "SC0387",
+   "area": "D-6 정부보조금",
+   "item": "이연수익법",
+   "conceptId": "P027",
+   "covered": true,
+   "sortOrder": 387
+  },
+  {
+   "id": "SC0388",
+   "area": "D-6 정부보조금",
+   "item": "감가상각에 대한 영향",
+   "conceptId": "P018",
+   "covered": true,
+   "sortOrder": 388
+  },
+  {
+   "id": "SC0389",
+   "area": "D-6 정부보조금",
+   "item": "보조금 상환",
+   "conceptId": "P028",
+   "covered": true,
+   "sortOrder": 389
+  },
+  {
+   "id": "SC0390",
+   "area": "D-6 정부보조금",
+   "item": "정부보조금과 유형자산의 취득원가",
+   "conceptId": "P025",
+   "covered": true,
+   "sortOrder": 390
+  },
+  {
+   "id": "SC0391",
+   "area": "D-6 정부보조금",
+   "item": "정부보조금을 받은 자산의 처분",
+   "conceptId": "P025",
+   "covered": true,
+   "sortOrder": 391
+  },
+  {
+   "id": "SC0392",
+   "area": "D-6 정부보조금",
+   "item": "조건부 보조금",
+   "conceptId": "P029",
+   "covered": true,
+   "sortOrder": 392
+  },
+  {
+   "id": "SC0393",
+   "area": "D-6 정부보조금",
+   "item": "비화폐성 보조금",
+   "conceptId": "P029",
+   "covered": true,
+   "sortOrder": 393
+  },
+  {
+   "id": "SC0394",
+   "area": "D-7 유형자산 교환취득",
+   "item": "화폐성자산과 비화폐성자산",
+   "conceptId": "P029",
+   "covered": true,
+   "sortOrder": 394
+  },
+  {
+   "id": "SC0395",
+   "area": "D-7 유형자산 교환취득",
+   "item": "비화폐성자산 교환",
+   "conceptId": "P031",
+   "covered": true,
+   "sortOrder": 395
+  },
+  {
+   "id": "SC0396",
+   "area": "D-7 유형자산 교환취득",
+   "item": "상업적 실질",
+   "conceptId": "P032",
+   "covered": true,
+   "sortOrder": 396
+  },
+  {
+   "id": "SC0397",
+   "area": "D-7 유형자산 교환취득",
+   "item": "현금흐름 구성의 변화",
+   "conceptId": "P032",
+   "covered": true,
+   "sortOrder": 397
+  },
+  {
+   "id": "SC0398",
+   "area": "D-7 유형자산 교환취득",
+   "item": "현금흐름의 위험·시기·금액",
+   "conceptId": "P032",
+   "covered": true,
+   "sortOrder": 398
+  },
+  {
+   "id": "SC0399",
+   "area": "D-7 유형자산 교환취득",
+   "item": "기업 특유의 가치",
+   "conceptId": "P032",
+   "covered": true,
+   "sortOrder": 399
+  },
+  {
+   "id": "SC0400",
+   "area": "D-7 유형자산 교환취득",
+   "item": "공정가치의 신뢰성 있는 측정",
+   "conceptId": "P031",
+   "covered": true,
+   "sortOrder": 400
+  },
+  {
+   "id": "SC0401",
+   "area": "D-7 유형자산 교환취득",
+   "item": "교환취득자산의 최초 측정",
+   "conceptId": "P033",
+   "covered": true,
+   "sortOrder": 401
+  },
+  {
+   "id": "SC0402",
+   "area": "D-7 유형자산 교환취득",
+   "item": "제공자산의 공정가치",
+   "conceptId": "P033",
+   "covered": true,
+   "sortOrder": 402
+  },
+  {
+   "id": "SC0403",
+   "area": "D-7 유형자산 교환취득",
+   "item": "취득자산의 공정가치",
+   "conceptId": "P010",
+   "covered": true,
+   "sortOrder": 403
+  },
+  {
+   "id": "SC0404",
+   "area": "D-7 유형자산 교환취득",
+   "item": "공정가치 측정이 불가능한 경우",
+   "conceptId": "D28",
+   "covered": true,
+   "sortOrder": 404
+  },
+  {
+   "id": "SC0405",
+   "area": "D-7 유형자산 교환취득",
+   "item": "제공자산의 장부금액",
+   "conceptId": "P031",
+   "covered": true,
+   "sortOrder": 405
+  },
+  {
+   "id": "SC0406",
+   "area": "D-7 유형자산 교환취득",
+   "item": "현금 수수금이 있는 교환",
+   "conceptId": "P033",
+   "covered": true,
+   "sortOrder": 406
+  },
+  {
+   "id": "SC0407",
+   "area": "D-7 유형자산 교환취득",
+   "item": "교환손익",
+   "conceptId": "P034",
+   "covered": true,
+   "sortOrder": 407
+  },
+  {
+   "id": "SC0408",
+   "area": "D-7 유형자산 교환취득",
+   "item": "상업적 실질이 없는 교환",
+   "conceptId": "P033",
+   "covered": true,
+   "sortOrder": 408
+  },
+  {
+   "id": "SC0409",
+   "area": "D-7 유형자산 교환취득",
+   "item": "교환거래의 분개",
+   "conceptId": "P034",
+   "covered": true,
+   "sortOrder": 409
+  },
+  {
+   "id": "SC0410",
+   "area": "D-8 후속원가",
+   "item": "일상적인 수선유지비",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 410
+  },
+  {
+   "id": "SC0411",
+   "area": "D-8 후속원가",
+   "item": "자본적 지출",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 411
+  },
+  {
+   "id": "SC0412",
+   "area": "D-8 후속원가",
+   "item": "수익적 지출",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 412
+  },
+  {
+   "id": "SC0413",
+   "area": "D-8 후속원가",
+   "item": "자산의 구성요소 대체",
+   "conceptId": "P036",
+   "covered": true,
+   "sortOrder": 413
+  },
+  {
+   "id": "SC0414",
+   "area": "D-8 후속원가",
+   "item": "주요 부품의 교체",
+   "conceptId": "P036",
+   "covered": true,
+   "sortOrder": 414
+  },
+  {
+   "id": "SC0415",
+   "area": "D-8 후속원가",
+   "item": "주요 정기검사",
+   "conceptId": "P036",
+   "covered": true,
+   "sortOrder": 415
+  },
+  {
+   "id": "SC0416",
+   "area": "D-8 후속원가",
+   "item": "대규모 정비",
+   "conceptId": "K09",
+   "covered": true,
+   "sortOrder": 416
+  },
+  {
+   "id": "SC0417",
+   "area": "D-8 후속원가",
+   "item": "안전·환경 관련 설비",
+   "conceptId": "P006",
+   "covered": true,
+   "sortOrder": 417
+  },
+  {
+   "id": "SC0418",
+   "area": "D-8 후속원가",
+   "item": "후속원가의 인식요건",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 418
+  },
+  {
+   "id": "SC0419",
+   "area": "D-8 후속원가",
+   "item": "교체된 구성요소의 제거",
+   "conceptId": "P036",
+   "covered": true,
+   "sortOrder": 419
+  },
+  {
+   "id": "SC0420",
+   "area": "D-8 후속원가",
+   "item": "정기검사 관련 기존 장부금액의 제거",
+   "conceptId": "P036",
+   "covered": true,
+   "sortOrder": 420
+  },
+  {
+   "id": "SC0421",
+   "area": "D-8 후속원가",
+   "item": "성능개선",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 421
+  },
+  {
+   "id": "SC0422",
+   "area": "D-8 후속원가",
+   "item": "내용연수 증가",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 422
+  },
+  {
+   "id": "SC0423",
+   "area": "D-8 후속원가",
+   "item": "미래경제적효익 증가",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 423
+  },
+  {
+   "id": "SC0424",
+   "area": "D-8 후속원가",
+   "item": "후속원가와 감가상각",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 424
+  },
+  {
+   "id": "SC0425",
+   "area": "D-9 감가상각 기본",
+   "item": "감가상각의 정의",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 425
+  },
+  {
+   "id": "SC0426",
+   "area": "D-9 감가상각 기본",
+   "item": "감가상각대상금액",
+   "conceptId": "P038",
+   "covered": true,
+   "sortOrder": 426
+  },
+  {
+   "id": "SC0427",
+   "area": "D-9 감가상각 기본",
+   "item": "취득원가",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 427
+  },
+  {
+   "id": "SC0428",
+   "area": "D-9 감가상각 기본",
+   "item": "잔존가치",
+   "conceptId": "P038",
+   "covered": true,
+   "sortOrder": 428
+  },
+  {
+   "id": "SC0429",
+   "area": "D-9 감가상각 기본",
+   "item": "내용연수",
+   "conceptId": "P039",
+   "covered": true,
+   "sortOrder": 429
+  },
+  {
+   "id": "SC0430",
+   "area": "D-9 감가상각 기본",
+   "item": "경제적 내용연수",
+   "conceptId": "P039",
+   "covered": true,
+   "sortOrder": 430
+  },
+  {
+   "id": "SC0431",
+   "area": "D-9 감가상각 기본",
+   "item": "기업 특유의 사용기간",
+   "conceptId": "P039",
+   "covered": true,
+   "sortOrder": 431
+  },
+  {
+   "id": "SC0432",
+   "area": "D-9 감가상각 기본",
+   "item": "감가상각 개시시점",
+   "conceptId": "P024",
+   "covered": true,
+   "sortOrder": 432
+  },
+  {
+   "id": "SC0433",
+   "area": "D-9 감가상각 기본",
+   "item": "사용가능 상태",
+   "conceptId": "P013",
+   "covered": true,
+   "sortOrder": 433
+  },
+  {
+   "id": "SC0434",
+   "area": "D-9 감가상각 기본",
+   "item": "실제 가동시점과의 차이",
+   "conceptId": "P040",
+   "covered": true,
+   "sortOrder": 434
+  },
+  {
+   "id": "SC0435",
+   "area": "D-9 감가상각 기본",
+   "item": "감가상각 종료시점",
+   "conceptId": "P038",
+   "covered": true,
+   "sortOrder": 435
+  },
+  {
+   "id": "SC0436",
+   "area": "D-9 감가상각 기본",
+   "item": "유휴자산",
+   "conceptId": "P040",
+   "covered": true,
+   "sortOrder": 436
+  },
+  {
+   "id": "SC0437",
+   "area": "D-9 감가상각 기본",
+   "item": "생산중단",
+   "conceptId": "P040",
+   "covered": true,
+   "sortOrder": 437
+  },
+  {
+   "id": "SC0438",
+   "area": "D-9 감가상각 기본",
+   "item": "감가상각과 자산가치 하락의 차이",
+   "conceptId": "P037",
+   "covered": true,
+   "sortOrder": 438
+  },
+  {
+   "id": "SC0439",
+   "area": "D-9 감가상각 기본",
+   "item": "구성요소별 감가상각",
+   "conceptId": "P041",
+   "covered": true,
+   "sortOrder": 439
+  },
+  {
+   "id": "SC0440",
+   "area": "D-9 감가상각 기본",
+   "item": "감가상각방법의 주기적 검토",
+   "conceptId": "P042",
+   "covered": true,
+   "sortOrder": 440
+  },
+  {
+   "id": "SC0441",
+   "area": "D-9 감가상각 기본",
+   "item": "잔존가치의 검토",
+   "conceptId": "P028",
+   "covered": true,
+   "sortOrder": 441
+  },
+  {
+   "id": "SC0442",
+   "area": "D-9 감가상각 기본",
+   "item": "내용연수의 검토",
+   "conceptId": "P038",
+   "covered": true,
+   "sortOrder": 442
+  },
+  {
+   "id": "SC0443",
+   "area": "D-9 감가상각 기본",
+   "item": "회계추정 변경",
+   "conceptId": "P075",
+   "covered": true,
+   "sortOrder": 443
+  },
+  {
+   "id": "SC0444",
+   "area": "D-9 감가상각 기본",
+   "item": "감가상각방법 변경과 회계추정 변경",
+   "conceptId": "P042",
+   "covered": true,
+   "sortOrder": 444
+  },
+  {
+   "id": "SC0445",
+   "area": "D-9 감가상각 기본",
+   "item": "사용량과 경제적효익 소비형태",
+   "conceptId": "P043",
+   "covered": true,
+   "sortOrder": 445
+  },
+  {
+   "id": "SC0446",
+   "area": "D-10 감가상각 계산방법",
+   "item": "정액법",
+   "conceptId": "P044",
+   "covered": true,
+   "sortOrder": 446
+  },
+  {
+   "id": "SC0447",
+   "area": "D-10 감가상각 계산방법",
+   "item": "정률법",
+   "conceptId": "P045",
+   "covered": true,
+   "sortOrder": 447
+  },
+  {
+   "id": "SC0448",
+   "area": "D-10 감가상각 계산방법",
+   "item": "이중체감법",
+   "conceptId": "P045",
+   "covered": true,
+   "sortOrder": 448
+  },
+  {
+   "id": "SC0449",
+   "area": "D-10 감가상각 계산방법",
+   "item": "연수합계법",
+   "conceptId": "P046",
+   "covered": true,
+   "sortOrder": 449
+  },
+  {
+   "id": "SC0450",
+   "area": "D-10 감가상각 계산방법",
+   "item": "생산량비례법",
+   "conceptId": "P047",
+   "covered": true,
+   "sortOrder": 450
+  },
+  {
+   "id": "SC0451",
+   "area": "D-10 감가상각 계산방법",
+   "item": "작업시간비례법",
+   "conceptId": "P047",
+   "covered": true,
+   "sortOrder": 451
+  },
+  {
+   "id": "SC0452",
+   "area": "D-10 감가상각 계산방법",
+   "item": "취득연도 월할계산",
+   "conceptId": "P048",
+   "covered": true,
+   "sortOrder": 452
+  },
+  {
+   "id": "SC0453",
+   "area": "D-10 감가상각 계산방법",
+   "item": "처분연도 월할계산",
+   "conceptId": "P048",
+   "covered": true,
+   "sortOrder": 453
+  },
+  {
+   "id": "SC0454",
+   "area": "D-10 감가상각 계산방법",
+   "item": "중도 취득",
+   "conceptId": "P048",
+   "covered": true,
+   "sortOrder": 454
+  },
+  {
+   "id": "SC0455",
+   "area": "D-10 감가상각 계산방법",
+   "item": "중도 처분",
+   "conceptId": "P048",
+   "covered": true,
+   "sortOrder": 455
+  },
+  {
+   "id": "SC0456",
+   "area": "D-10 감가상각 계산방법",
+   "item": "잔존가치 변경",
+   "conceptId": "P028",
+   "covered": true,
+   "sortOrder": 456
+  },
+  {
+   "id": "SC0457",
+   "area": "D-10 감가상각 계산방법",
+   "item": "내용연수 변경",
+   "conceptId": "P038",
+   "covered": true,
+   "sortOrder": 457
+  },
+  {
+   "id": "SC0458",
+   "area": "D-10 감가상각 계산방법",
+   "item": "감가상각방법 변경",
+   "conceptId": "P042",
+   "covered": true,
+   "sortOrder": 458
+  },
+  {
+   "id": "SC0459",
+   "area": "D-10 감가상각 계산방법",
+   "item": "재평가 후 감가상각",
+   "conceptId": "P054",
+   "covered": true,
+   "sortOrder": 459
+  },
+  {
+   "id": "SC0460",
+   "area": "D-10 감가상각 계산방법",
+   "item": "손상차손 이후 감가상각",
+   "conceptId": "P050",
+   "covered": true,
+   "sortOrder": 460
+  },
+  {
+   "id": "SC0461",
+   "area": "D-10 감가상각 계산방법",
+   "item": "구성요소별 감가상각",
+   "conceptId": "P041",
+   "covered": true,
+   "sortOrder": 461
+  },
+  {
+   "id": "SC0462",
+   "area": "D-11 원가모형",
+   "item": "원가모형의 정의",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 462
+  },
+  {
+   "id": "SC0463",
+   "area": "D-11 원가모형",
+   "item": "취득원가",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 463
+  },
+  {
+   "id": "SC0464",
+   "area": "D-11 원가모형",
+   "item": "감가상각누계액",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 464
+  },
+  {
+   "id": "SC0465",
+   "area": "D-11 원가모형",
+   "item": "손상차손누계액",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 465
+  },
+  {
+   "id": "SC0466",
+   "area": "D-11 원가모형",
+   "item": "장부금액",
+   "conceptId": "P061",
+   "covered": true,
+   "sortOrder": 466
+  },
+  {
+   "id": "SC0467",
+   "area": "D-11 원가모형",
+   "item": "후속원가",
+   "conceptId": "P035",
+   "covered": true,
+   "sortOrder": 467
+  },
+  {
+   "id": "SC0468",
+   "area": "D-11 원가모형",
+   "item": "원가모형에서의 손상",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 468
+  },
+  {
+   "id": "SC0469",
+   "area": "D-11 원가모형",
+   "item": "감가상각과 손상차손의 관계",
+   "conceptId": "L003",
+   "covered": true,
+   "sortOrder": 469
+  },
+  {
+   "id": "SC0470",
+   "area": "D-11 원가모형",
+   "item": "감가상각누계액",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 470
+  },
+  {
+   "id": "SC0471",
+   "area": "D-11 원가모형",
+   "item": "손상차손누계액",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 471
+  },
+  {
+   "id": "SC0472",
+   "area": "D-12 재평가모형",
+   "item": "재평가모형",
+   "conceptId": "P062",
+   "covered": true,
+   "sortOrder": 472
+  },
+  {
+   "id": "SC0473",
+   "area": "D-12 재평가모형",
+   "item": "재평가금액",
+   "conceptId": "P054",
+   "covered": true,
+   "sortOrder": 473
+  },
+  {
+   "id": "SC0474",
+   "area": "D-12 재평가모형",
+   "item": "재평가일 공정가치",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 474
+  },
+  {
+   "id": "SC0475",
+   "area": "D-12 재평가모형",
+   "item": "재평가주기",
+   "conceptId": "P050",
+   "covered": true,
+   "sortOrder": 475
+  },
+  {
+   "id": "SC0476",
+   "area": "D-12 재평가모형",
+   "item": "유형자산 전체 분류별 재평가",
+   "conceptId": "P002",
+   "covered": true,
+   "sortOrder": 476
+  },
+  {
+   "id": "SC0477",
+   "area": "D-12 재평가모형",
+   "item": "일부 자산만 선택적으로 재평가하는 문제",
+   "conceptId": "P050",
+   "covered": true,
+   "sortOrder": 477
+  },
+  {
+   "id": "SC0478",
+   "area": "D-12 재평가모형",
+   "item": "재평가증가",
+   "conceptId": "P051",
+   "covered": true,
+   "sortOrder": 478
+  },
+  {
+   "id": "SC0479",
+   "area": "D-12 재평가모형",
+   "item": "재평가감소",
+   "conceptId": "P051",
+   "covered": true,
+   "sortOrder": 479
+  },
+  {
+   "id": "SC0480",
+   "area": "D-12 재평가모형",
+   "item": "재평가잉여금",
+   "conceptId": "P056",
+   "covered": true,
+   "sortOrder": 480
+  },
+  {
+   "id": "SC0481",
+   "area": "D-12 재평가모형",
+   "item": "기타포괄손익",
+   "conceptId": "P051",
+   "covered": true,
+   "sortOrder": 481
+  },
+  {
+   "id": "SC0482",
+   "area": "D-12 재평가모형",
+   "item": "당기손익",
+   "conceptId": "P014",
+   "covered": true,
+   "sortOrder": 482
+  },
+  {
+   "id": "SC0483",
+   "area": "D-12 재평가모형",
+   "item": "과거 재평가감소의 환입",
+   "conceptId": "P051",
+   "covered": true,
+   "sortOrder": 483
+  },
+  {
+   "id": "SC0484",
+   "area": "D-12 재평가모형",
+   "item": "과거 재평가증가의 감소",
+   "conceptId": "P051",
+   "covered": true,
+   "sortOrder": 484
+  },
+  {
+   "id": "SC0485",
+   "area": "D-12 재평가모형",
+   "item": "재평가차익의 처리",
+   "conceptId": "P051",
+   "covered": true,
+   "sortOrder": 485
+  },
+  {
+   "id": "SC0486",
+   "area": "D-12 재평가모형",
+   "item": "재평가손실의 처리",
+   "conceptId": "P052",
+   "covered": true,
+   "sortOrder": 486
+  },
+  {
+   "id": "SC0487",
+   "area": "D-12 재평가모형",
+   "item": "재평가일의 감가상각누계액 처리",
+   "conceptId": "P053",
+   "covered": true,
+   "sortOrder": 487
+  },
+  {
+   "id": "SC0488",
+   "area": "D-12 재평가모형",
+   "item": "재평가 후 감가상각",
+   "conceptId": "P054",
+   "covered": true,
+   "sortOrder": 488
+  },
+  {
+   "id": "SC0489",
+   "area": "D-12 재평가모형",
+   "item": "재평가잉여금의 이익잉여금 대체",
+   "conceptId": "P054",
+   "covered": true,
+   "sortOrder": 489
+  },
+  {
+   "id": "SC0490",
+   "area": "D-12 재평가모형",
+   "item": "직접 대체와 당기손익 재분류의 차이",
+   "conceptId": "P055",
+   "covered": true,
+   "sortOrder": 490
+  },
+  {
+   "id": "SC0491",
+   "area": "D-12 재평가모형",
+   "item": "유형자산 처분과 재평가잉여금",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 491
+  },
+  {
+   "id": "SC0492",
+   "area": "D-12 재평가모형",
+   "item": "재평가모형 관련 법인세효과",
+   "conceptId": "P056",
+   "covered": true,
+   "sortOrder": 492
+  },
+  {
+   "id": "SC0493",
+   "area": "D-13 유형자산 손상",
+   "item": "손상차손의 정의",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 493
+  },
+  {
+   "id": "SC0494",
+   "area": "D-13 유형자산 손상",
+   "item": "손상징후",
+   "conceptId": "P057",
+   "covered": true,
+   "sortOrder": 494
+  },
+  {
+   "id": "SC0495",
+   "area": "D-13 유형자산 손상",
+   "item": "외부정보",
+   "conceptId": "P057",
+   "covered": true,
+   "sortOrder": 495
+  },
+  {
+   "id": "SC0496",
+   "area": "D-13 유형자산 손상",
+   "item": "내부정보",
+   "conceptId": "P057",
+   "covered": true,
+   "sortOrder": 496
+  },
+  {
+   "id": "SC0497",
+   "area": "D-13 유형자산 손상",
+   "item": "회수가능액",
+   "conceptId": "P061",
+   "covered": true,
+   "sortOrder": 497
+  },
+  {
+   "id": "SC0498",
+   "area": "D-13 유형자산 손상",
+   "item": "공정가치에서 처분부대원가를 차감한 금액",
+   "conceptId": "P038",
+   "covered": true,
+   "sortOrder": 498
+  },
+  {
+   "id": "SC0499",
+   "area": "D-13 유형자산 손상",
+   "item": "사용가치",
+   "conceptId": "P058",
+   "covered": true,
+   "sortOrder": 499
+  },
+  {
+   "id": "SC0500",
+   "area": "D-13 유형자산 손상",
+   "item": "미래 현금흐름",
+   "conceptId": "P032",
+   "covered": true,
+   "sortOrder": 500
+  },
+  {
+   "id": "SC0501",
+   "area": "D-13 유형자산 손상",
+   "item": "현재가치",
+   "conceptId": "P064",
+   "covered": true,
+   "sortOrder": 501
+  },
+  {
+   "id": "SC0502",
+   "area": "D-13 유형자산 손상",
+   "item": "할인율",
+   "conceptId": "P064",
+   "covered": true,
+   "sortOrder": 502
+  },
+  {
+   "id": "SC0503",
+   "area": "D-13 유형자산 손상",
+   "item": "현금창출단위 CGU",
+   "conceptId": "P060",
+   "covered": true,
+   "sortOrder": 503
+  },
+  {
+   "id": "SC0504",
+   "area": "D-13 유형자산 손상",
+   "item": "회수가능액과 장부금액 비교",
+   "conceptId": "P059",
+   "covered": true,
+   "sortOrder": 504
+  },
+  {
+   "id": "SC0505",
+   "area": "D-13 유형자산 손상",
+   "item": "손상차손",
+   "conceptId": "P059",
+   "covered": true,
+   "sortOrder": 505
+  },
+  {
+   "id": "SC0506",
+   "area": "D-13 유형자산 손상",
+   "item": "손상차손 인식",
+   "conceptId": "P049",
+   "covered": true,
+   "sortOrder": 506
+  },
+  {
+   "id": "SC0507",
+   "area": "D-13 유형자산 손상",
+   "item": "손상차손 배분",
+   "conceptId": "P060",
+   "covered": true,
+   "sortOrder": 507
+  },
+  {
+   "id": "SC0508",
+   "area": "D-13 유형자산 손상",
+   "item": "손상차손 환입",
+   "conceptId": "P061",
+   "covered": true,
+   "sortOrder": 508
+  },
+  {
+   "id": "SC0509",
+   "area": "D-13 유형자산 손상",
+   "item": "손상차손 환입 한도",
+   "conceptId": "P061",
+   "covered": true,
+   "sortOrder": 509
+  },
+  {
+   "id": "SC0510",
+   "area": "D-13 유형자산 손상",
+   "item": "원가모형의 손상",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 510
+  },
+  {
+   "id": "SC0511",
+   "area": "D-13 유형자산 손상",
+   "item": "재평가모형의 손상",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 511
+  },
+  {
+   "id": "SC0512",
+   "area": "D-13 유형자산 손상",
+   "item": "손상 후 감가상각",
+   "conceptId": "P062",
+   "covered": true,
+   "sortOrder": 512
+  },
+  {
+   "id": "SC0513",
+   "area": "D-13 유형자산 손상",
+   "item": "손상차손과 재고자산 평가손실의 차이",
+   "conceptId": "P063",
+   "covered": true,
+   "sortOrder": 513
+  },
+  {
+   "id": "SC0514",
+   "area": "D-14 해체·복구충당부채",
+   "item": "해체의무",
+   "conceptId": "P017",
+   "covered": true,
+   "sortOrder": 514
+  },
+  {
+   "id": "SC0515",
+   "area": "D-14 해체·복구충당부채",
+   "item": "복구의무",
+   "conceptId": "P017",
+   "covered": true,
+   "sortOrder": 515
+  },
+  {
+   "id": "SC0516",
+   "area": "D-14 해체·복구충당부채",
+   "item": "원상복구충당부채",
+   "conceptId": "P017",
+   "covered": true,
+   "sortOrder": 516
+  },
+  {
+   "id": "SC0517",
+   "area": "D-14 해체·복구충당부채",
+   "item": "최초 현재가치",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 517
+  },
+  {
+   "id": "SC0518",
+   "area": "D-14 해체·복구충당부채",
+   "item": "할인율",
+   "conceptId": "P064",
+   "covered": true,
+   "sortOrder": 518
+  },
+  {
+   "id": "SC0519",
+   "area": "D-14 해체·복구충당부채",
+   "item": "현재가치 계산",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 519
+  },
+  {
+   "id": "SC0520",
+   "area": "D-14 해체·복구충당부채",
+   "item": "복구원가의 유형자산 원가 포함",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 520
+  },
+  {
+   "id": "SC0521",
+   "area": "D-14 해체·복구충당부채",
+   "item": "시간이 경과함에 따른 할인액 상각",
+   "conceptId": "P065",
+   "covered": true,
+   "sortOrder": 521
+  },
+  {
+   "id": "SC0522",
+   "area": "D-14 해체·복구충당부채",
+   "item": "금융원가",
+   "conceptId": "P065",
+   "covered": true,
+   "sortOrder": 522
+  },
+  {
+   "id": "SC0523",
+   "area": "D-14 해체·복구충당부채",
+   "item": "복구충당부채 추정 변경",
+   "conceptId": "P057",
+   "covered": true,
+   "sortOrder": 523
+  },
+  {
+   "id": "SC0524",
+   "area": "D-14 해체·복구충당부채",
+   "item": "복구예상 현금흐름 변경",
+   "conceptId": "P066",
+   "covered": true,
+   "sortOrder": 524
+  },
+  {
+   "id": "SC0525",
+   "area": "D-14 해체·복구충당부채",
+   "item": "할인율 변경",
+   "conceptId": "P057",
+   "covered": true,
+   "sortOrder": 525
+  },
+  {
+   "id": "SC0526",
+   "area": "D-14 해체·복구충당부채",
+   "item": "추정 변경이 원가모형에 미치는 영향",
+   "conceptId": "P066",
+   "covered": true,
+   "sortOrder": 526
+  },
+  {
+   "id": "SC0527",
+   "area": "D-14 해체·복구충당부채",
+   "item": "추정 변경이 재평가모형에 미치는 영향",
+   "conceptId": "P066",
+   "covered": true,
+   "sortOrder": 527
+  },
+  {
+   "id": "SC0528",
+   "area": "D-14 해체·복구충당부채",
+   "item": "자산의 잔여 내용연수",
+   "conceptId": "P030",
+   "covered": true,
+   "sortOrder": 528
+  },
+  {
+   "id": "SC0529",
+   "area": "D-14 해체·복구충당부채",
+   "item": "관련 자산의 손상검토",
+   "conceptId": "P066",
+   "covered": true,
+   "sortOrder": 529
+  },
+  {
+   "id": "SC0530",
+   "area": "D-14 해체·복구충당부채",
+   "item": "실제 복구비 지출",
+   "conceptId": "P067",
+   "covered": true,
+   "sortOrder": 530
+  },
+  {
+   "id": "SC0531",
+   "area": "D-14 해체·복구충당부채",
+   "item": "복구충당부채의 소멸",
+   "conceptId": "P067",
+   "covered": true,
+   "sortOrder": 531
+  },
+  {
+   "id": "SC0532",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "처분",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 532
+  },
+  {
+   "id": "SC0533",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "폐기",
+   "conceptId": "P069",
+   "covered": true,
+   "sortOrder": 533
+  },
+  {
+   "id": "SC0534",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "멸실",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 534
+  },
+  {
+   "id": "SC0535",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "제거",
+   "conceptId": "P036",
+   "covered": true,
+   "sortOrder": 535
+  },
+  {
+   "id": "SC0536",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "처분대금",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 536
+  },
+  {
+   "id": "SC0537",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "처분관련원가",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 537
+  },
+  {
+   "id": "SC0538",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "처분 시점의 장부금액",
+   "conceptId": "P019",
+   "covered": true,
+   "sortOrder": 538
+  },
+  {
+   "id": "SC0539",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "유형자산처분이익",
+   "conceptId": "P034",
+   "covered": true,
+   "sortOrder": 539
+  },
+  {
+   "id": "SC0540",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "유형자산처분손실",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 540
+  },
+  {
+   "id": "SC0541",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "처분손익",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 541
+  },
+  {
+   "id": "SC0542",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "감가상각 누계액 제거",
+   "conceptId": "P034",
+   "covered": true,
+   "sortOrder": 542
+  },
+  {
+   "id": "SC0543",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "손상차손 누계액 제거",
+   "conceptId": "P068",
+   "covered": true,
+   "sortOrder": 543
+  },
+  {
+   "id": "SC0544",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "매각예정비유동자산",
+   "conceptId": "K07",
+   "covered": true,
+   "sortOrder": 544
+  },
+  {
+   "id": "SC0545",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "매각예정 분류 요건",
+   "conceptId": "P069",
+   "covered": true,
+   "sortOrder": 545
+  },
+  {
+   "id": "SC0546",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "매각예정 분류 이후 감가상각",
+   "conceptId": "P070",
+   "covered": true,
+   "sortOrder": 546
+  },
+  {
+   "id": "SC0547",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "매각예정자산의 측정",
+   "conceptId": "P070",
+   "covered": true,
+   "sortOrder": 547
+  },
+  {
+   "id": "SC0548",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "유형자산 손상과 제3자 보상",
+   "conceptId": "P071",
+   "covered": true,
+   "sortOrder": 548
+  },
+  {
+   "id": "SC0549",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "보험금 회계처리",
+   "conceptId": "P071",
+   "covered": true,
+   "sortOrder": 549
+  },
+  {
+   "id": "SC0550",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "교체자산의 취득",
+   "conceptId": "P071",
+   "covered": true,
+   "sortOrder": 550
+  },
+  {
+   "id": "SC0551",
+   "area": "D-15 유형자산 제거 및 처분",
+   "item": "보상과 자산제거의 구별",
+   "conceptId": "P071",
+   "covered": true,
+   "sortOrder": 551
+  },
+  {
+   "id": "SC0552",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "투자부동산과 유형자산",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 552
+  },
+  {
+   "id": "SC0553",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "자가사용부동산과 임대목적 부동산",
+   "conceptId": "P003",
+   "covered": true,
+   "sortOrder": 553
+  },
+  {
+   "id": "SC0554",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "재고자산에서 유형자산으로의 용도변경",
+   "conceptId": "P072",
+   "covered": true,
+   "sortOrder": 554
+  },
+  {
+   "id": "SC0555",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "유형자산에서 투자부동산으로의 용도변경",
+   "conceptId": "P072",
+   "covered": true,
+   "sortOrder": 555
+  },
+  {
+   "id": "SC0556",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "리스 사용권자산과 유형자산",
+   "conceptId": "P073",
+   "covered": true,
+   "sortOrder": 556
+  },
+  {
+   "id": "SC0557",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "리스개량자산",
+   "conceptId": "P073",
+   "covered": true,
+   "sortOrder": 557
+  },
+  {
+   "id": "SC0558",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "사용권자산 감가상각",
+   "conceptId": "P073",
+   "covered": true,
+   "sortOrder": 558
+  },
+  {
+   "id": "SC0559",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "생산용식물과 생물자산",
+   "conceptId": "P001",
+   "covered": true,
+   "sortOrder": 559
+  },
+  {
+   "id": "SC0560",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "비화폐성자산 교환",
+   "conceptId": "P031",
+   "covered": true,
+   "sortOrder": 560
+  },
+  {
+   "id": "SC0561",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "유형자산 관련 정부보조금",
+   "conceptId": "P007",
+   "covered": true,
+   "sortOrder": 561
+  },
+  {
+   "id": "SC0562",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "유형자산 관련 차입원가",
+   "conceptId": "P011",
+   "covered": true,
+   "sortOrder": 562
+  },
+  {
+   "id": "SC0563",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "유형자산 관련 이연법인세",
+   "conceptId": "P074",
+   "covered": true,
+   "sortOrder": 563
+  },
+  {
+   "id": "SC0564",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "회계정책 변경과 회계추정 변경",
+   "conceptId": "P042",
+   "covered": true,
+   "sortOrder": 564
+  },
+  {
+   "id": "SC0565",
+   "area": "D-16 유형자산 관련 경계 주제",
+   "item": "유형자산 공시",
+   "conceptId": "P076",
+   "covered": true,
+   "sortOrder": 565
+  },
+  {
+   "id": "SC0566",
+   "area": "E-1 차입원가의 개념",
+   "item": "차입원가의 정의",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 566
+  },
+  {
+   "id": "SC0567",
+   "area": "E-1 차입원가의 개념",
+   "item": "이자비용",
+   "conceptId": "Q020",
+   "covered": true,
+   "sortOrder": 567
+  },
+  {
+   "id": "SC0568",
+   "area": "E-1 차입원가의 개념",
+   "item": "유효이자율법에 따른 이자",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 568
+  },
+  {
+   "id": "SC0569",
+   "area": "E-1 차입원가의 개념",
+   "item": "차입금 할인발행차금",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 569
+  },
+  {
+   "id": "SC0570",
+   "area": "E-1 차입원가의 개념",
+   "item": "차입금 할증발행차금",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 570
+  },
+  {
+   "id": "SC0571",
+   "area": "E-1 차입원가의 개념",
+   "item": "차입 관련 금융원가",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 571
+  },
+  {
+   "id": "SC0572",
+   "area": "E-1 차입원가의 개념",
+   "item": "리스부채 이자비용",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 572
+  },
+  {
+   "id": "SC0573",
+   "area": "E-1 차입원가의 개념",
+   "item": "외화차입금의 환산차이",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 573
+  },
+  {
+   "id": "SC0574",
+   "area": "E-1 차입원가의 개념",
+   "item": "이자원가 조정으로 볼 수 있는 외환차이",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 574
+  },
+  {
+   "id": "SC0575",
+   "area": "E-1 차입원가의 개념",
+   "item": "단순 외환차이와 차입원가의 구별",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 575
+  },
+  {
+   "id": "SC0576",
+   "area": "E-1 차입원가의 개념",
+   "item": "차입원가 자본화의 목적",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 576
+  },
+  {
+   "id": "SC0577",
+   "area": "E-1 차입원가의 개념",
+   "item": "자본화하는 차입원가",
+   "conceptId": "Q002",
+   "covered": true,
+   "sortOrder": 577
+  },
+  {
+   "id": "SC0578",
+   "area": "E-1 차입원가의 개념",
+   "item": "즉시 비용처리하는 차입원가",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 578
+  },
+  {
+   "id": "SC0579",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "적격자산의 정의",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 579
+  },
+  {
+   "id": "SC0580",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "의도한 용도로 사용하거나 판매 가능한 상태까지 상당한 기간이 필요한 자산",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 580
+  },
+  {
+   "id": "SC0581",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "상당한 기간의 판단",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 581
+  },
+  {
+   "id": "SC0582",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "자가건설 건물",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 582
+  },
+  {
+   "id": "SC0583",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "장기간 건설되는 공장",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 583
+  },
+  {
+   "id": "SC0584",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "발전시설",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 584
+  },
+  {
+   "id": "SC0585",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "건설중인자산",
+   "conceptId": "Q020",
+   "covered": true,
+   "sortOrder": 585
+  },
+  {
+   "id": "SC0586",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "장기제조재고자산",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 586
+  },
+  {
+   "id": "SC0587",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "장기간 숙성되는 재고자산",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 587
+  },
+  {
+   "id": "SC0588",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "생산용식물",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 588
+  },
+  {
+   "id": "SC0589",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "투자부동산",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 589
+  },
+  {
+   "id": "SC0590",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "개발목적 토지",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 590
+  },
+  {
+   "id": "SC0591",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "단기간에 생산되는 재고자산",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 591
+  },
+  {
+   "id": "SC0592",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "즉시 사용 가능한 자산",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 592
+  },
+  {
+   "id": "SC0593",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "취득시점에 사용 가능한 자산",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 593
+  },
+  {
+   "id": "SC0594",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "금융자산과 차입원가",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 594
+  },
+  {
+   "id": "SC0595",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "적격자산 판단 시 경제적 실질",
+   "conceptId": "Q004",
+   "covered": true,
+   "sortOrder": 595
+  },
+  {
+   "id": "SC0596",
+   "area": "E-2 적격자산(Qualifying Asset)",
+   "item": "관련 기준에서 인정하는 적용 예외",
+   "conceptId": "Q005",
+   "covered": true,
+   "sortOrder": 596
+  },
+  {
+   "id": "SC0597",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "직접 관련 차입원가",
+   "conceptId": "Q002",
+   "covered": true,
+   "sortOrder": 597
+  },
+  {
+   "id": "SC0598",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "자본화가능 차입원가",
+   "conceptId": "Q004",
+   "covered": true,
+   "sortOrder": 598
+  },
+  {
+   "id": "SC0599",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "기간비용 차입원가",
+   "conceptId": "Q002",
+   "covered": true,
+   "sortOrder": 599
+  },
+  {
+   "id": "SC0600",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "특정차입금",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 600
+  },
+  {
+   "id": "SC0601",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "일반차입금",
+   "conceptId": "Q009",
+   "covered": true,
+   "sortOrder": 601
+  },
+  {
+   "id": "SC0602",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "차입원가의 자본화 한도",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 602
+  },
+  {
+   "id": "SC0603",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "실제 발생한 차입원가",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 603
+  },
+  {
+   "id": "SC0604",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "적격자산 원가에 포함하는 금액",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 604
+  },
+  {
+   "id": "SC0605",
+   "area": "E-3 차입원가 자본화의 기본원리",
+   "item": "자본화원가가 이후 감가상각에 미치는 영향",
+   "conceptId": "Q002",
+   "covered": true,
+   "sortOrder": 605
+  },
+  {
+   "id": "SC0606",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금의 정의",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 606
+  },
+  {
+   "id": "SC0607",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금 실제 이자",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 607
+  },
+  {
+   "id": "SC0608",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금의 유효이자율",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 608
+  },
+  {
+   "id": "SC0609",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금 일시운용",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 609
+  },
+  {
+   "id": "SC0610",
+   "area": "E-4 특정차입금",
+   "item": "일시운용 투자수익",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 610
+  },
+  {
+   "id": "SC0611",
+   "area": "E-4 특정차입금",
+   "item": "자본화가능 차입원가",
+   "conceptId": "Q004",
+   "covered": true,
+   "sortOrder": 611
+  },
+  {
+   "id": "SC0612",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금 차입일",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 612
+  },
+  {
+   "id": "SC0613",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금 상환일",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 613
+  },
+  {
+   "id": "SC0614",
+   "area": "E-4 특정차입금",
+   "item": "건설기간 중 차입금 잔액 변동",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 614
+  },
+  {
+   "id": "SC0615",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금과 일반차입금의 결합",
+   "conceptId": "Q010",
+   "covered": true,
+   "sortOrder": 615
+  },
+  {
+   "id": "SC0616",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금 규모보다 적격자산 지출이 적은 경우",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 616
+  },
+  {
+   "id": "SC0617",
+   "area": "E-4 특정차입금",
+   "item": "차입금을 다른 목적으로 일부 사용하는 경우",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 617
+  },
+  {
+   "id": "SC0618",
+   "area": "E-4 특정차입금",
+   "item": "특정차입금의 자본화 종료 이후 처리",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 618
+  },
+  {
+   "id": "SC0619",
+   "area": "E-4 특정차입금",
+   "item": "관련 자금의 일시운용에서 발생한 투자수익",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 619
+  },
+  {
+   "id": "SC0620",
+   "area": "E-5 일반차입금",
+   "item": "일반차입금의 정의",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 620
+  },
+  {
+   "id": "SC0621",
+   "area": "E-5 일반차입금",
+   "item": "복수 일반차입금",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 621
+  },
+  {
+   "id": "SC0622",
+   "area": "E-5 일반차입금",
+   "item": "일반차입금 가중평균 차입이자율",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 622
+  },
+  {
+   "id": "SC0623",
+   "area": "E-5 일반차입금",
+   "item": "자본화이자율",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 623
+  },
+  {
+   "id": "SC0624",
+   "area": "E-5 일반차입금",
+   "item": "차입금의 기간가중",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 624
+  },
+  {
+   "id": "SC0625",
+   "area": "E-5 일반차입금",
+   "item": "차입금 잔액 변동",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 625
+  },
+  {
+   "id": "SC0626",
+   "area": "E-5 일반차입금",
+   "item": "가중평균 누적지출액",
+   "conceptId": "Q008",
+   "covered": true,
+   "sortOrder": 626
+  },
+  {
+   "id": "SC0627",
+   "area": "E-5 일반차입금",
+   "item": "특정차입금과 일반차입금 구별",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 627
+  },
+  {
+   "id": "SC0628",
+   "area": "E-5 일반차입금",
+   "item": "일반차입금 자본화 한도",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 628
+  },
+  {
+   "id": "SC0629",
+   "area": "E-5 일반차입금",
+   "item": "개별 차입금의 실제 이자",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 629
+  },
+  {
+   "id": "SC0630",
+   "area": "E-5 일반차입금",
+   "item": "일반차입금의 총 실제 차입원가",
+   "conceptId": "Q010",
+   "covered": true,
+   "sortOrder": 630
+  },
+  {
+   "id": "SC0631",
+   "area": "E-5 일반차입금",
+   "item": "자본화 종료 후 특정차입금의 일반차입금 포함 가능성",
+   "conceptId": "Q011",
+   "covered": true,
+   "sortOrder": 631
+  },
+  {
+   "id": "SC0632",
+   "area": "E-5 일반차입금",
+   "item": "연결재무제표에서 자본화이자율 산정",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 632
+  },
+  {
+   "id": "SC0633",
+   "area": "E-5 일반차입금",
+   "item": "그룹 내 자금조달 구조",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 633
+  },
+  {
+   "id": "SC0634",
+   "area": "E-6 자본화 개시",
+   "item": "지출만 발생하고 차입원가는 아직 없음",
+   "conceptId": "Q012",
+   "covered": true,
+   "sortOrder": 634
+  },
+  {
+   "id": "SC0635",
+   "area": "E-6 자본화 개시",
+   "item": "차입원가는 발생했지만 건설활동이 시작되지 않음",
+   "conceptId": "Q012",
+   "covered": true,
+   "sortOrder": 635
+  },
+  {
+   "id": "SC0636",
+   "area": "E-6 자본화 개시",
+   "item": "설계·허가·행정활동이 진행 중",
+   "conceptId": "Q012",
+   "covered": true,
+   "sortOrder": 636
+  },
+  {
+   "id": "SC0637",
+   "area": "E-6 자본화 개시",
+   "item": "물리적 공사는 아직 시작되지 않음",
+   "conceptId": "Q012",
+   "covered": true,
+   "sortOrder": 637
+  },
+  {
+   "id": "SC0638",
+   "area": "E-6 자본화 개시",
+   "item": "일반차입금 차입 전에 이미 지출한 금액이 있음",
+   "conceptId": "Q012",
+   "covered": true,
+   "sortOrder": 638
+  },
+  {
+   "id": "SC0639",
+   "area": "E-7 자본화 중단",
+   "item": "장기간의 건설활동 중단",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 639
+  },
+  {
+   "id": "SC0640",
+   "area": "E-7 자본화 중단",
+   "item": "불필요한 공사중단",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 640
+  },
+  {
+   "id": "SC0641",
+   "area": "E-7 자본화 중단",
+   "item": "일시적 중단",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 641
+  },
+  {
+   "id": "SC0642",
+   "area": "E-7 자본화 중단",
+   "item": "정상적인 행정절차",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 642
+  },
+  {
+   "id": "SC0643",
+   "area": "E-7 자본화 중단",
+   "item": "자연적인 공정 지연",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 643
+  },
+  {
+   "id": "SC0644",
+   "area": "E-7 자본화 중단",
+   "item": "계절적 요인",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 644
+  },
+  {
+   "id": "SC0645",
+   "area": "E-7 자본화 중단",
+   "item": "정상적인 건설활동에 필요한 대기기간",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 645
+  },
+  {
+   "id": "SC0646",
+   "area": "E-7 자본화 중단",
+   "item": "기술·행정활동이 계속되는 기간",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 646
+  },
+  {
+   "id": "SC0647",
+   "area": "E-7 자본화 중단",
+   "item": "중단기간의 차입원가 비용처리",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 647
+  },
+  {
+   "id": "SC0648",
+   "area": "E-7 자본화 중단",
+   "item": "자본화 재개",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 648
+  },
+  {
+   "id": "SC0649",
+   "area": "E-8 자본화 종료",
+   "item": "실질적으로 대부분의 활동 완료",
+   "conceptId": "Q015",
+   "covered": true,
+   "sortOrder": 649
+  },
+  {
+   "id": "SC0650",
+   "area": "E-8 자본화 종료",
+   "item": "의도한 용도 사용가능 상태",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 650
+  },
+  {
+   "id": "SC0651",
+   "area": "E-8 자본화 종료",
+   "item": "판매가능 상태",
+   "conceptId": "Q003",
+   "covered": true,
+   "sortOrder": 651
+  },
+  {
+   "id": "SC0652",
+   "area": "E-8 자본화 종료",
+   "item": "실제 사용 시작일과 종료일의 차이",
+   "conceptId": "Q015",
+   "covered": true,
+   "sortOrder": 652
+  },
+  {
+   "id": "SC0653",
+   "area": "E-8 자본화 종료",
+   "item": "준공일",
+   "conceptId": "Q015",
+   "covered": true,
+   "sortOrder": 653
+  },
+  {
+   "id": "SC0654",
+   "area": "E-8 자본화 종료",
+   "item": "행정적 마무리 작업",
+   "conceptId": "Q015",
+   "covered": true,
+   "sortOrder": 654
+  },
+  {
+   "id": "SC0655",
+   "area": "E-8 자본화 종료",
+   "item": "여러 부분으로 구성된 자산",
+   "conceptId": "Q016",
+   "covered": true,
+   "sortOrder": 655
+  },
+  {
+   "id": "SC0656",
+   "area": "E-8 자본화 종료",
+   "item": "일부 부분의 독립적 사용가능 여부",
+   "conceptId": "Q016",
+   "covered": true,
+   "sortOrder": 656
+  },
+  {
+   "id": "SC0657",
+   "area": "E-8 자본화 종료",
+   "item": "부분별 자본화 종료",
+   "conceptId": "Q016",
+   "covered": true,
+   "sortOrder": 657
+  },
+  {
+   "id": "SC0658",
+   "area": "E-8 자본화 종료",
+   "item": "건물과 토지의 관계",
+   "conceptId": "L001",
+   "covered": true,
+   "sortOrder": 658
+  },
+  {
+   "id": "SC0659",
+   "area": "E-8 자본화 종료",
+   "item": "완성 후에도 미상환된 차입금",
+   "conceptId": "Q015",
+   "covered": true,
+   "sortOrder": 659
+  },
+  {
+   "id": "SC0660",
+   "area": "E-8 자본화 종료",
+   "item": "자본화 종료 후 이자비용",
+   "conceptId": "Q015",
+   "covered": true,
+   "sortOrder": 660
+  },
+  {
+   "id": "SC0661",
+   "area": "E-9 계산문제",
+   "item": "유형 A: 특정차입금만 존재",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 661
+  },
+  {
+   "id": "SC0662",
+   "area": "E-9 계산문제",
+   "item": "유형 B: 일반차입금만 존재",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 662
+  },
+  {
+   "id": "SC0663",
+   "area": "E-9 계산문제",
+   "item": "유형 C: 특정차입금과 일반차입금 혼합",
+   "conceptId": "Q010",
+   "covered": true,
+   "sortOrder": 663
+  },
+  {
+   "id": "SC0664",
+   "area": "E-9 계산문제",
+   "item": "유형 D: 여러 차입금의 기간가중",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 664
+  },
+  {
+   "id": "SC0665",
+   "area": "E-9 계산문제",
+   "item": "유형 E: 건설지출 시점이 다른 경우",
+   "conceptId": "Q008",
+   "covered": true,
+   "sortOrder": 665
+  },
+  {
+   "id": "SC0666",
+   "area": "E-9 계산문제",
+   "item": "유형 F: 특정차입금 일시운용수익",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 666
+  },
+  {
+   "id": "SC0667",
+   "area": "E-9 계산문제",
+   "item": "유형 G: 중도 차입",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 667
+  },
+  {
+   "id": "SC0668",
+   "area": "E-9 계산문제",
+   "item": "유형 H: 중도 상환",
+   "conceptId": "Q006",
+   "covered": true,
+   "sortOrder": 668
+  },
+  {
+   "id": "SC0669",
+   "area": "E-9 계산문제",
+   "item": "유형 I: 공사 중단기간",
+   "conceptId": "Q014",
+   "covered": true,
+   "sortOrder": 669
+  },
+  {
+   "id": "SC0670",
+   "area": "E-9 계산문제",
+   "item": "유형 J: 건설 완료 및 자본화 종료",
+   "conceptId": "Q015",
+   "covered": true,
+   "sortOrder": 670
+  },
+  {
+   "id": "SC0671",
+   "area": "E-9 계산문제",
+   "item": "유형 K: 연도별 자본화 금액",
+   "conceptId": "Q017",
+   "covered": true,
+   "sortOrder": 671
+  },
+  {
+   "id": "SC0672",
+   "area": "E-9 계산문제",
+   "item": "유형 L: 자본화 이후 감가상각",
+   "conceptId": "Q017",
+   "covered": true,
+   "sortOrder": 672
+  },
+  {
+   "id": "SC0673",
+   "area": "E-9 계산문제",
+   "item": "유형 M: 차입원가 자본화와 재고자산",
+   "conceptId": "Q018",
+   "covered": true,
+   "sortOrder": 673
+  },
+  {
+   "id": "SC0674",
+   "area": "E-9 계산문제",
+   "item": "유형 N: 차입원가 자본화와 토지",
+   "conceptId": "Q004",
+   "covered": true,
+   "sortOrder": 674
+  },
+  {
+   "id": "SC0675",
+   "area": "E-9 계산문제",
+   "item": "유형 O: 외화차입 관련 차입원가",
+   "conceptId": "Q019",
+   "covered": true,
+   "sortOrder": 675
+  },
+  {
+   "id": "SC0676",
+   "area": "E-9 계산문제",
+   "item": "유형 P: 일반차입금 차입 전 지출",
+   "conceptId": "Q013",
+   "covered": true,
+   "sortOrder": 676
+  },
+  {
+   "id": "SC0677",
+   "area": "E-9 계산문제",
+   "item": "유형 Q: 실제 발생 차입원가의 상한",
+   "conceptId": "Q009",
+   "covered": true,
+   "sortOrder": 677
+  },
+  {
+   "id": "SC0678",
+   "area": "E-10 분개와 연결 개념",
+   "item": "차입금 수령",
+   "conceptId": "Q008",
+   "covered": true,
+   "sortOrder": 678
+  },
+  {
+   "id": "SC0679",
+   "area": "E-10 분개와 연결 개념",
+   "item": "이자비용 발생",
+   "conceptId": "Q001",
+   "covered": true,
+   "sortOrder": 679
+  },
+  {
+   "id": "SC0680",
+   "area": "E-10 분개와 연결 개념",
+   "item": "건설중인자산 증가",
+   "conceptId": "P057",
+   "covered": true,
+   "sortOrder": 680
+  },
+  {
+   "id": "SC0681",
+   "area": "E-10 분개와 연결 개념",
+   "item": "자본화차입원가",
+   "conceptId": "Q017",
+   "covered": true,
+   "sortOrder": 681
+  },
+  {
+   "id": "SC0682",
+   "area": "E-10 분개와 연결 개념",
+   "item": "이자비용과 자본화 금액의 구별",
+   "conceptId": "Q020",
+   "covered": true,
+   "sortOrder": 682
+  },
+  {
+   "id": "SC0683",
+   "area": "E-10 분개와 연결 개념",
+   "item": "차입원가 자본화가 자산 장부금액에 미치는 영향",
+   "conceptId": "Q020",
+   "covered": true,
+   "sortOrder": 683
+  },
+  {
+   "id": "SC0684",
+   "area": "E-10 분개와 연결 개념",
+   "item": "건설 완료 후 자산 대체",
+   "conceptId": "Q020",
+   "covered": true,
+   "sortOrder": 684
+  },
+  {
+   "id": "SC0685",
+   "area": "E-10 분개와 연결 개념",
+   "item": "감가상각비",
+   "conceptId": "Q002",
+   "covered": true,
+   "sortOrder": 685
+  },
+  {
+   "id": "SC0686",
+   "area": "E-10 분개와 연결 개념",
+   "item": "재무상태표 영향",
+   "conceptId": "F09",
+   "covered": true,
+   "sortOrder": 686
+  },
+  {
+   "id": "SC0687",
+   "area": "E-10 분개와 연결 개념",
+   "item": "당기손익 영향",
+   "conceptId": "Q020",
+   "covered": true,
+   "sortOrder": 687
+  },
+  {
+   "id": "SC0688",
+   "area": "E-10 분개와 연결 개념",
+   "item": "현금흐름표 관련 구별",
+   "conceptId": "Q020",
+   "covered": true,
+   "sortOrder": 688
+  },
+  {
+   "id": "SC0689",
+   "area": "E-10 분개와 연결 개념",
+   "item": "차입원가 공시",
+   "conceptId": "Q007",
+   "covered": true,
+   "sortOrder": 689
+  },
+  {
+   "id": "SC0690",
+   "area": "농림어업 연결",
+   "item": "생물자산",
+   "conceptId": "R001",
+   "covered": true,
+   "sortOrder": 690
+  },
+  {
+   "id": "SC0691",
+   "area": "농림어업 연결",
+   "item": "농림어업활동",
+   "conceptId": "R001",
+   "covered": true,
+   "sortOrder": 691
+  },
+  {
+   "id": "SC0692",
+   "area": "농림어업 연결",
+   "item": "생물적 변환",
+   "conceptId": "R001",
+   "covered": true,
+   "sortOrder": 692
+  },
+  {
+   "id": "SC0693",
+   "area": "농림어업 연결",
+   "item": "생산용식물",
+   "conceptId": "R003",
+   "covered": true,
+   "sortOrder": 693
+  },
+  {
+   "id": "SC0694",
+   "area": "농림어업 연결",
+   "item": "생산용식물의 유형자산 분류",
+   "conceptId": "L003",
+   "covered": true,
+   "sortOrder": 694
+  },
+  {
+   "id": "SC0695",
+   "area": "농림어업 연결",
+   "item": "생산용식물에서 자라는 농산물",
+   "conceptId": "R003",
+   "covered": true,
+   "sortOrder": 695
+  },
+  {
+   "id": "SC0696",
+   "area": "농림어업 연결",
+   "item": "수확시점",
+   "conceptId": "R006",
+   "covered": true,
+   "sortOrder": 696
+  },
+  {
+   "id": "SC0697",
+   "area": "농림어업 연결",
+   "item": "수확물",
+   "conceptId": "R002",
+   "covered": true,
+   "sortOrder": 697
+  },
+  {
+   "id": "SC0698",
+   "area": "농림어업 연결",
+   "item": "수확시점 공정가치",
+   "conceptId": "R003",
+   "covered": true,
+   "sortOrder": 698
+  },
+  {
+   "id": "SC0699",
+   "area": "농림어업 연결",
+   "item": "처분부대원가",
+   "conceptId": "R004",
+   "covered": true,
+   "sortOrder": 699
+  },
+  {
+   "id": "SC0700",
+   "area": "농림어업 연결",
+   "item": "최초 인식손익",
+   "conceptId": "R005",
+   "covered": true,
+   "sortOrder": 700
+  },
+  {
+   "id": "SC0701",
+   "area": "농림어업 연결",
+   "item": "생물자산 공정가치 변동손익",
+   "conceptId": "R005",
+   "covered": true,
+   "sortOrder": 701
+  },
+  {
+   "id": "SC0702",
+   "area": "농림어업 연결",
+   "item": "수확물의 재고자산 전환",
+   "conceptId": "R001",
+   "covered": true,
+   "sortOrder": 702
+  },
+  {
+   "id": "SC0703",
+   "area": "농림어업 연결",
+   "item": "수확 후 매출원가 계산",
+   "conceptId": "R006",
+   "covered": true,
+   "sortOrder": 703
+  },
+  {
+   "id": "SC0704",
+   "area": "농림어업 연결",
+   "item": "공정가치 측정의 신뢰성 관련 예외",
+   "conceptId": "R004",
+   "covered": true,
+   "sortOrder": 704
+  },
+  {
+   "id": "SC0705",
+   "area": "농림어업 연결",
+   "item": "농림어업 관련 정부보조금",
+   "conceptId": "R007",
+   "covered": true,
+   "sortOrder": 705
+  }
+ ]
+}
