@@ -23,6 +23,23 @@ python3 tools/build_content.py
 
 이 전체 과정은 Room 트랜잭션으로 실행됩니다. 중간에 실패하면 이전 상태가 그대로 유지됩니다.
 
+## 1.0.2 → 1.0.3 업데이트에서 일어나는 일
+
+1. DB 마이그레이션 3→4: 개념·문항 테이블에 법령 메타데이터 컬럼(lawName, articleRefs, lawVersion, examApplicability 등)을 기본값과 함께 추가하고, 법령 참조 테이블 5개(law_articles, numeric_rules, case_notes, exam_areas, law_versions)를 만듭니다. 콘텐츠가 없던 자리표시자 과목 `BL`은 실제 과목 `CPA-LAW`(기업법)로 대체되어 삭제됩니다.
+2. 학습기록 테이블(question_attempts·question_progress·concept_progress·wrong_notes·study_days)은 건드리지 않습니다.
+3. 첫 실행 시 번들 콘텐츠 v4를 동기화합니다. 기존 재무회계 개념·문항은 revision이 같으므로 덮어쓰지 않고, 기업법 개념은 '미학습' 상태로 추가됩니다.
+
+## 법령 개정 업데이트 가이드(기업법)
+
+법령 문언은 앱 콘텐츠의 정답 근거입니다. 개정이 있을 때는 아래 순서를 지킵니다.
+
+1. **원문 다시 받기**: 국가법령정보센터 `lsInfoR.do`(lsiSeq·efYd 지정) 응답을 `tools/law/parse_law.py`로 변환해 `tools/law/data/*.json`을 교체합니다. 기존 파일은 덮어쓰기 전에 버전명으로 보관합니다(예: `sangbeop_21448.json`). 과거 판은 삭제하지 않습니다.
+2. **버전 정보 갱신**: `tools/content/lawdsl.py`의 `LAWS`(법률 번호·공포일·시행일·URL)와 `VERIFIED_AT`(대조일)을 고칩니다.
+3. **빌드 검증**: `python3 tools/build_content.py --check`. 개정으로 문언이 바뀌어 정답이 조문 원문에서 사라진 문항은 `[L1]` 오류로 빌드가 멈춥니다. 그 문항은 **정답을 고치지 말고** 새 questionId로 새 문항을 만들고, 기존 문항은 `isActive=False`(과거 기출 기준)로 둡니다.
+4. **적용 구분 표시**: 개념의 `applic`을 `APPLIES_2027`(2027년 적용 기준) / `PAST`(과거 기출 기준) / `NOT_IN_FORCE`(미시행 개정) / `CHECK_DATE`(시행일 확인 필요)로 지정합니다. 시행일을 확인하지 못한 개정은 추측하지 말고 `CHECK_DATE`로 둡니다.
+5. **커버리지 확인**: 검증 리포트의 '기업법 조문 커버리지' 표에서 신설 조문이 '학습 콘텐츠 작성 중'으로 나오면 개념·문항을 추가합니다. 시행 전 개정 조문 원문을 확보하지 못한 경우 `tools/content/law_coverage.py`의 `PENDING_2027`에 넣어 '검토 필요'로 표시합니다.
+6. **버전 올리기**: `CONTENT_VERSION`과 앱 `versionCode`를 올리고 APK를 다시 빌드합니다.
+
 ## 1.0.1 → 1.0.2 업데이트에서 일어나는 일
 
 1. 같은 applicationId(`com.cpaconceptlab.study`)·같은 공유 디버그 키로 서명되고 versionCode 가 2 → 3 으로 올라가므로 기존 앱 위에 설치된다(삭제 불필요).

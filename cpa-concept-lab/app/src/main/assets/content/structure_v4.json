@@ -1185,6 +1185,54 @@
    "chapterId": "LAW-I",
    "title": "사례 응용",
    "sortOrder": 2
+  },
+  {
+   "id": "LAW-E-S06",
+   "chapterId": "LAW-E",
+   "title": "합명회사 세부(등기·소송·업무집행·청산)",
+   "sortOrder": 6
+  },
+  {
+   "id": "LAW-E-S07",
+   "chapterId": "LAW-E",
+   "title": "합자회사·유한책임회사 세부",
+   "sortOrder": 7
+  },
+  {
+   "id": "LAW-E-S08",
+   "chapterId": "LAW-E",
+   "title": "유한회사·외국회사 세부",
+   "sortOrder": 8
+  },
+  {
+   "id": "LAW-D-S14",
+   "chapterId": "LAW-D",
+   "title": "주식회사 세부 절차",
+   "sortOrder": 14
+  },
+  {
+   "id": "LAW-D-S15",
+   "chapterId": "LAW-D",
+   "title": "사채 세부",
+   "sortOrder": 15
+  },
+  {
+   "id": "LAW-F-S07",
+   "chapterId": "LAW-F",
+   "title": "합병·분할 서류와 준용",
+   "sortOrder": 7
+  },
+  {
+   "id": "LAW-B-S08",
+   "chapterId": "LAW-B",
+   "title": "운송·창고 세부와 준용",
+   "sortOrder": 8
+  },
+  {
+   "id": "LAW-G-S06",
+   "chapterId": "LAW-G",
+   "title": "외국공인회계사 세부·보칙·과징금",
+   "sortOrder": 6
   }
  ],
  "examScopes": [

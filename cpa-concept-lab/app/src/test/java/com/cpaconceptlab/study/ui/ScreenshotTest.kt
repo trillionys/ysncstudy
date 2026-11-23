@@ -47,11 +47,17 @@ class ScreenshotTest {
         waitText("오늘의 학습")
         shot("01_home")
         rule.onNodeWithText("기본 문제").performScrollTo().performClick()
-        waitText("초성 힌트", sub = true)
+        // 전체 범위에는 빈칸·4지선다·매칭형이 섞여 있다(v4: 기업법 포함). 문항 형식과 무관하게 진행한다.
+        waitText("모르겠음")
         shot("02_quiz_basic")
-        rule.onNode(hasSetTextAction()).performTextInput("모르는 답")
-        rule.onNodeWithText("제출").performClick()
-        waitText("오답입니다")
+        if (rule.onAllNodes(hasSetTextAction()).fetchSemanticsNodes().isNotEmpty()) {
+            rule.onNode(hasSetTextAction()).performTextInput("모르는 답")
+            rule.onNodeWithText("제출").performClick()
+            waitText("오답입니다")
+        } else {
+            rule.onNodeWithText("모르겠음").performClick()
+            waitText("정답을 확인하세요")
+        }
         shot("03_quiz_feedback")
         rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
         waitText("오늘의 학습")
@@ -77,5 +83,11 @@ class ScreenshotTest {
         tab("오답노트")
         waitText("오답노트 (", sub = true)
         shot("07_wrong_notes")
+        // v4: 기업법 과목 화면(학습 모드 2종·조문 커버리지)
+        tab("과목")
+        waitText("기업법")
+        rule.onNodeWithText("기업법").performClick()
+        waitText("학습 모드")
+        shot("08_law_subject")
     }
 }

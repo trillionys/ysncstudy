@@ -171,6 +171,7 @@ fun LawSubjectHeader(dash: DashboardState, subjectId: String, onStartQuiz: (Quiz
         Text("① 전체 개념 균등학습: 모든 개념을 한 번씩 출제한 뒤에 반복합니다.", style = MaterialTheme.typography.bodySmall)
         Text(
             "② CPA 실전 비중 모드: 공고 출제비중(" + c.examAreas.filter { it.subjectId == subjectId }
+                .sortedBy { listOf("GENERAL", "COMPANY", "CPA_ACT", "AUDIT_ACT").indexOf(it.id) }
                 .joinToString(" · ") { "${it.name} ${it.minPercent}~${it.maxPercent}%" } + ")에 맞춘 40문항·100점 모의고사입니다.",
             style = MaterialTheme.typography.bodySmall,
         )

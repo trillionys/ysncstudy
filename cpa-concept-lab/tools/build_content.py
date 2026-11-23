@@ -31,7 +31,8 @@ from required_concepts import REQUIRED  # noqa: E402
 # v4: 2027 공인회계사 1차 기업법(CPA-LAW) 전 범위
 import lawdsl  # noqa: E402
 import law_a, law_b, law_ce, law_d1, law_d2, law_d3, law_d4, law_f, law_g, law_h, law_i, law_extra  # noqa: E402,F401
-import law_e2, law_e3  # noqa: E402,F401
+import law_e2, law_e3, law_d5, law_extra2  # noqa: E402,F401
+import law_auto  # noqa: E402  (반드시 마지막: 다른 기업법 문항을 모두 읽은 뒤 생성)
 import law_coverage  # noqa: E402
 
 CONTENT_VERSION = 4
@@ -352,6 +353,7 @@ def main():
     lines.append(f"| 원본 출처(NEW-INV) | {len(src_ids)}개 등록, 미검증 {unverified_sources}개 |")
     lines.append(f"| v4 기업법 개념 | {len(law_concepts)}개 |")
     lines.append(f"| v4 기업법 문항 | {len(law_q)}개 (조문 원문 대조 일치 {law_ok}, 해석·선택형 {law_interp}) |")
+    lines.append(f"| 기업법 구조화 자동 생성 문항 | 조문 연결 {len(law_auto.AUTO_COMPARISON)}개 · 법률효과 연결 {len(law_auto.AUTO_EFFECT)}개 (작성자 검토 개념 데이터로 정답 확정, 해석 문항으로 집계) |")
     lines.append(f"| 기업법 숫자 규칙 | {len(lawdsl.NUMERIC_RULES)}개 |")
     lines.append(f"| 기업법 판례 법리 노트 | {len(lawdsl.CASE_NOTES)}개 (사건번호 미기재·원문 미대조) |")
     lines.append(f"| 검증 실패 | {len(errors)}건 |")

@@ -92,6 +92,16 @@ cq("P044", "원가 {cost}원, 잔존가치 {rv}원, 내용연수 {life}년 ... (
 - 원본 문제 출처: `tools/content/sources.py` (NEW-INV-001~042). 원본 이미지를 실제로 판독한 경우에만 `readingConfidence`, `verificationStatus` 를 올린다. 판독할 수 없는 숫자로 정답을 만들지 않는다.
 - 세부 설명 보강: `tools/content/addenda.py` 가 개념 핵심 원리 끝에 [세부] 문단을 덧붙인다.
 
+## v4 기업법 콘텐츠(tools/content/law_*.py)
+
+- `lawdsl.lchapter(code, title, english, part, law)`로 대단원(`LAW-X`)을 만들고, `reopen("LAW-X")`로 보강 파일에서 이어 씁니다.
+- `lc(cid, ..., art="제368조① 외부감사법 제10조", easy=, legal=, req=, eff=, exc=, cmp=, ex=, nums=, case=, tip=, trap=, applic=, transition=)`: 쉬운 설명·법률상 의미·요건·효과·예외·판례 법리·비교·사례·숫자·출제 포인트·함정을 모두 적습니다. 조문 번호가 법령 데이터에 없으면 빌드가 실패합니다.
+- `lq(..., art=)`: 정답(또는 동의어)이 근거 조문 원문에 실제로 있는지 빌드에서 대조합니다(`verify=True` 기본). 해석형만 `verify=False`.
+- `nr(rule_id, ...)`: 숫자·기간·정족수 규칙 DB 등록 + 숫자 문항. 값이 원문에 없으면 빌드 실패.
+- `case_note(...)`: 판례 법리 요약. **확인하지 않은 사건번호·선고일은 적지 않습니다.** 판례 원문을 대량 복제하지 않습니다.
+- OX·참거짓·예/아니요형 문항은 검증기가 금지합니다.
+- `law_auto.py`는 비교·효과 문항이 없는 개념에 한해, 작성자가 검토한 개념 데이터(주된 조문·[효과])만으로 정답이 확정되는 매칭형 문항을 만듭니다(새 법률 내용을 만들지 않음).
+
 ## ID와 수정 정책(중요)
 
 - conceptId(`D37`), questionId(`D37-Q01`)는 **영구 식별자**입니다. 학습기록은 이 ID에만 연결됩니다.

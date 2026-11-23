@@ -93,6 +93,7 @@ fun QuizSetupScreen(
                 }
                 ScopeType.WEIGHTED -> {
                     val areas = content.examAreas.filter { it.subjectId == QuizViewModel.LAW_SUBJECT }
+                        .sortedBy { listOf("GENERAL", "COMPANY", "CPA_ACT", "AUDIT_ACT").indexOf(it.id) }
                     Hint(
                         "기업법 1차 시험(금융위원회 공고 출제비중)에 맞춘 ${areas.sumOf { it.mockQuestions }}문항 모의고사입니다. " +
                             "문항당 2.5점, 100점 만점으로 채점합니다. 아래 난이도·형식 필터와 문항 수 설정은 적용되지 않습니다.",

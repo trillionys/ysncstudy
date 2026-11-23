@@ -2,13 +2,13 @@
 
 CPA 재무회계 개념을 **개념 학습 → 초성 힌트 빈칸(기본) → 무힌트 빈칸(심화) → 오답·간격 복습** 순서로 장기기억에 남기기 위한 네이티브 Android 앱입니다. 모든 기능은 오프라인에서 동작합니다.
 
-- 패키지: `com.cpaconceptlab.study` · 버전 1.0.2 (versionCode 3) · 콘텐츠 v3 · minSdk 26(Android 8.0) / targetSdk 35
+- 패키지: `com.cpaconceptlab.study` · 버전 1.0.3 (versionCode 4) · 콘텐츠 v4 · DB 스키마 v4 · minSdk 26(Android 8.0) / targetSdk 35
 - 기술: Kotlin 2.0, Jetpack Compose + Material 3, MVVM, Room(스키마 v3, 명시적 마이그레이션 1→2→3), Coroutines/Flow, DataStore, Navigation Compose, kotlinx.serialization, Storage Access Framework
-- 설치 파일: [`dist/CPAConceptLab-1.0.2-debug.apk`](dist/CPAConceptLab-1.0.2-debug.apk) (1.0.0·1.0.1과 같은 공유 디버그 키로 서명 → 기존 앱 위에 업데이트 설치 가능)
+- 설치 파일: [`dist/CPAConceptLab-1.0.3-debug.apk`](dist/CPAConceptLab-1.0.3-debug.apk) (1.0.0~1.0.2와 같은 공유 디버그 키로 서명 → 기존 앱 위에 업데이트 설치 가능)
 
 ## 1. 설치
 
-1. 휴대폰에서 이 저장소의 `cpa-concept-lab/dist/CPAConceptLab-1.0.2-debug.apk`를 내려받습니다.
+1. 휴대폰에서 이 저장소의 `cpa-concept-lab/dist/CPAConceptLab-1.0.3-debug.apk`를 내려받습니다.
 2. 파일을 열고 "출처를 알 수 없는 앱 설치"를 허용한 뒤 설치합니다.
 3. 첫 실행 때 앱에 들어 있는 콘텐츠(개념 462개, 문항 1,127개)가 데이터베이스에 등록됩니다.
 
@@ -46,6 +46,7 @@ CPA 재무회계 개념을 **개념 학습 → 초성 힌트 빈칸(기본) → 
 - 검증 결과: [docs/CONTENT_VALIDATION_REPORT.md](docs/CONTENT_VALIDATION_REPORT.md), [docs/content-validation.txt](docs/content-validation.txt)
 
 ### 변경 이력
+- **1.0.3 (versionCode 4, 콘텐츠 v4, DB 스키마 v4)**: 2027 공인회계사 1차 **기업법**(과목 ID `CPA-LAW`)을 추가했습니다. 시험범위(금융위원회 공고 제2026-284호): 상법 제1편 총칙·제2편 상행위·제3편 회사(어음·수표, 보험·해상·항공운송편 제외), 공인회계사법, 주식회사 등의 외부감사에 관한 법률 — 법률만(시행령 제외). 개념 296개, 문항 1,155개(정답이 근거 조문 원문에 그대로 있음을 빌드 때 자동 대조한 문항 726개), 숫자·기간·정족수 규칙 223개, 조문 원문 1,321개(시험범위 밖 315개 포함)와 조문별 커버리지 상태, 판례 법리 노트 16개(사건번호 미기재·원문 미대조). 학습 모드 2종: 과목별 개념 균등학습, CPA 실전 비중 모의(40문항·100점: 총칙·상행위 6 / 회사 24 / 공인회계사법 4 / 외부감사법 6). 기존 재무회계 콘텐츠·학습기록은 그대로 유지됩니다(마이그레이션 3→4 테스트로 확인).
 - **1.0.2 (versionCode 3, 콘텐츠 v3, DB 스키마 v3)**: 재고자산·유형자산·차입원가·농림어업 6개 대단원(개념 177개, 문항 527개, 계산 162개)을 추가했습니다. 문항 유형에 4지선다·매칭·분류·순서 배열·분개 계정 선택을 추가하고, 난이도(Level 1~5)·문항 형식(빈칸/계산/선택형) 필터, 학습 파트·취약 개념·최근 추가 범위, 파트 카드(개념·학습·문제·정답률·오답·숙달률), 개념 화면의 [개념 공부][기본 문제][심화 문제][계산 연습][오답 복습] 버튼, 기본 세트 80% 이상 시 '심화 모드로 이동', 복습 간격 기본값 1·3·7·14·30·60일을 넣었습니다. 기존 개념·문항·학습기록은 그대로 유지됩니다(마이그레이션 2→3 테스트로 확인).
 - **1.0.1 (versionCode 2, 콘텐츠 v2)**: 600개 문항 전체에 관련 개념(relatedConceptIds)을 연결하고, 대단원별 기준 시행일(effectiveFrom)을 채웠습니다. 대단원 A는 회계기준이 아닌 경제 이론이라 시행일이 없습니다. 모든 항목의 revision을 2로 올려, 1.0.0 위에 설치하면 학습기록은 유지된 채 콘텐츠만 갱신됩니다.
 - 1.0.0 (versionCode 1, 콘텐츠 v1): 최초 버전입니다.
