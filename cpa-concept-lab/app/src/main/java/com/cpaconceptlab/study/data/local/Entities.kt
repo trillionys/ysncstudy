@@ -33,6 +33,8 @@ data class ChapterEntity(
     val title: String,
     val englishTitle: String,
     val sortOrder: Int,
+    /** 스키마 v3: 학습 파트 */
+    @ColumnInfo(defaultValue = "") val partTitle: String = "",
 )
 
 @Entity(tableName = "sections", indices = [Index("chapterId")])
@@ -76,6 +78,13 @@ data class ConceptEntity(
     val sortOrder: Int,
     val revision: Int,
     val contentVersion: Int,
+    // 스키마 v3 추가 컬럼
+    val recognitionRules: String? = null,
+    val measurementRules: String? = null,
+    val exceptions: String? = null,
+    val journalEntries: String? = null,
+    @ColumnInfo(defaultValue = "[]") val sourceProblemIds: List<String> = emptyList(),
+    @ColumnInfo(defaultValue = "AUTHOR_REVIEWED") val verificationStatus: String = "AUTHOR_REVIEWED",
 )
 
 @Entity(tableName = "questions", indices = [Index("primaryConceptId"), Index("chapterId")])
@@ -107,6 +116,15 @@ data class QuestionEntity(
     val revision: Int,
     val sortOrder: Int,
     val contentVersion: Int,
+    // 스키마 v3 추가 컬럼
+    @ColumnInfo(defaultValue = "text") val inputType: String = "text",
+    @ColumnInfo(defaultValue = "[]") val choices: List<String> = emptyList(),
+    @ColumnInfo(defaultValue = "[]") val slotLabels: List<String> = emptyList(),
+    @ColumnInfo(defaultValue = "[]") val slotAnswers: List<String> = emptyList(),
+    val calcFormulaId: String? = null,
+    /** 계산 입력값 JSON(이름 → 값) */
+    val calcParams: String? = null,
+    @ColumnInfo(defaultValue = "[]") val sourceProblemIds: List<String> = emptyList(),
 )
 
 @Entity(
@@ -133,6 +151,36 @@ data class ExamScopeEntity(
     val subjectId: String,
     val title: String,
     val conceptIds: List<String>,
+)
+
+/** 스키마 v3: 원본 문제 출처(NEW-INV-001 등). 원본 이미지를 판독하지 못한 항목은 검수 상태로 구분한다. */
+@Entity(tableName = "problem_sources")
+data class ProblemSourceEntity(
+    @PrimaryKey val sourceId: String,
+    val sourceFile: String?,
+    val sourcePage: String?,
+    val originalNumber: String?,
+    val topic: String,
+    val conceptIds: List<String>,
+    val formula: String?,
+    val solutionSteps: String?,
+    val keyTrap: String?,
+    val linkedQuestionIds: List<String>,
+    val readingConfidence: String,
+    val verificationStatus: String,
+    val reviewRequired: Boolean,
+    val note: String?,
+)
+
+/** 스키마 v3: 지정 학습범위 체크리스트 */
+@Entity(tableName = "scope_items")
+data class ScopeItemEntity(
+    @PrimaryKey val id: String,
+    val area: String,
+    val item: String,
+    val conceptId: String?,
+    val covered: Boolean,
+    val sortOrder: Int,
 )
 
 /** 콘텐츠 가져오기 이력. 번들 콘텐츠 버전 비교와 가져오기 결과 표시에 사용한다. */

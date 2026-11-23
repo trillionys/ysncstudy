@@ -54,6 +54,8 @@ class ContentRepository(
             allQuestions = dao.questions(),
             examScopes = dao.examScopes(),
             bundledVersion = dao.bundledVersion() ?: 0,
+            problemSources = dao.problemSources(),
+            scopeItems = dao.scopeItems(),
         )
     }
 
@@ -87,5 +89,7 @@ class ContentRepository(
             questions = snapshot.allQuestions.map { it.toDto() },
             examScopes = snapshot.examScopes.map { it.toDto() },
             requiredConceptIds = requiredConceptIds,
+            sourceStatuses = snapshot.problemSources.map { it.verificationStatus },
+            scopeCoverage = snapshot.scopeItems.count { it.covered } to snapshot.scopeItems.size,
         )
 }

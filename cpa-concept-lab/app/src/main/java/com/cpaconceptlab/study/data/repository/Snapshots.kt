@@ -4,6 +4,8 @@ import com.cpaconceptlab.study.data.local.ChapterEntity
 import com.cpaconceptlab.study.data.local.ConceptEntity
 import com.cpaconceptlab.study.data.local.ConceptProgressEntity
 import com.cpaconceptlab.study.data.local.ExamScopeEntity
+import com.cpaconceptlab.study.data.local.ProblemSourceEntity
+import com.cpaconceptlab.study.data.local.ScopeItemEntity
 import com.cpaconceptlab.study.data.local.QuestionEntity
 import com.cpaconceptlab.study.data.local.QuestionProgressEntity
 import com.cpaconceptlab.study.data.local.SectionEntity
@@ -24,6 +26,8 @@ data class ContentSnapshot(
     val allQuestions: List<QuestionEntity>,
     val examScopes: List<ExamScopeEntity>,
     val bundledVersion: Int,
+    val problemSources: List<ProblemSourceEntity> = emptyList(),
+    val scopeItems: List<ScopeItemEntity> = emptyList(),
 ) {
     val concepts: List<ConceptEntity> = allConcepts.filter { it.isActive }
     val questions: List<QuestionEntity> = allQuestions.filter { it.isActive }

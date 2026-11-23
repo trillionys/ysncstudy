@@ -17,6 +17,7 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
+import androidx.compose.material3.RangeSlider
 import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
@@ -34,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import com.cpaconceptlab.study.data.repository.ContentSnapshot
 import com.cpaconceptlab.study.domain.model.QuizMode
 import com.cpaconceptlab.study.domain.model.QuizScope
+import com.cpaconceptlab.study.domain.model.QuestionKind
 import com.cpaconceptlab.study.domain.model.ScopeType
 import com.cpaconceptlab.study.ui.components.SectionCard
 import com.cpaconceptlab.study.ui.components.VSpace
@@ -53,6 +55,8 @@ fun QuizSetupScreen(
     var targetId by remember { mutableStateOf(initialScope.id) }
     var size by remember { mutableFloatStateOf(defaultSize.toFloat()) }
     var query by remember { mutableStateOf("") }
+    var levels by remember { mutableStateOf(initialScope.minLevel.toFloat()..initialScope.maxLevel.toFloat()) }
+    var kind by remember { mutableStateOf(initialScope.kind) }
 
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         SectionCard(title = "풀이 모드") {
@@ -71,8 +75,8 @@ fun QuizSetupScreen(
         VSpace(12)
         SectionCard(title = "출제 범위") {
             val selectable = listOf(
-                ScopeType.ALL, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM,
-                ScopeType.UNSTUDIED, ScopeType.WRONG, ScopeType.DUE, ScopeType.MOCK,
+                ScopeType.ALL, ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM,
+                ScopeType.UNSTUDIED, ScopeType.WRONG, ScopeType.WEAK, ScopeType.RECENT, ScopeType.DUE, ScopeType.MOCK,
             )
             FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 selectable.forEach { t ->
@@ -81,6 +85,11 @@ fun QuizSetupScreen(
             }
             VSpace(8)
             when (type) {
+                ScopeType.PART -> content.chapters.map { it.partTitle }.filter { it.isNotBlank() }.distinct().forEach { part ->
+                    ChoiceRow(part, targetId == part) { targetId = part }
+                }
+                ScopeType.WEAK -> Hint("정답률 60% 미만(시도 3회 이상)이거나 미해결 오답이 2개 이상인 개념을 모아 출제합니다.")
+                ScopeType.RECENT -> Hint("가장 최근 콘텐츠 업데이트에서 추가된 개념(재고자산·유형자산·차입원가·농림어업)을 출제합니다.")
                 ScopeType.CHAPTER -> content.chapters.forEach { ch ->
                     ChoiceRow("${ch.code}. ${ch.title}", targetId == ch.id) { targetId = ch.id }
                 }
@@ -105,13 +114,33 @@ fun QuizSetupScreen(
             }
         }
         VSpace(12)
+        SectionCard(title = "난이도: Level ${levels.start.toInt()} ~ ${levels.endInclusive.toInt()}") {
+            RangeSlider(value = levels, onValueChange = { levels = it }, valueRange = 1f..5f, steps = 3)
+            Text(
+                "1 정의·용어 / 2 개념 구별 / 3 사례 적용 / 4 계산 / 5 개념 연결 응용",
+                style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        VSpace(12)
+        SectionCard(title = "문항 형식") {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                QuestionKind.entries.forEach { k -> FilterChip(selected = kind == k, onClick = { kind = k }, label = { Text(k.label) }) }
+            }
+        }
+        VSpace(12)
         SectionCard(title = "문항 수: ${size.toInt()}개") {
             Slider(value = size, onValueChange = { size = it }, valueRange = 5f..50f, steps = 8)
         }
         VSpace(16)
-        val needsTarget = type in setOf(ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM)
+        val needsTarget = type in setOf(ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM)
         Button(
-            onClick = { onStart(mode, QuizScope(type, if (needsTarget) targetId else null), size.toInt()) },
+            onClick = {
+                val scope = QuizScope(
+                    type, if (needsTarget) targetId else null,
+                    levels.start.toInt(), levels.endInclusive.toInt(), kind,
+                )
+                onStart(mode, scope, size.toInt())
+            },
             enabled = !needsTarget || targetId != null,
             modifier = Modifier.fillMaxWidth(),
         ) { Text("시작하기") }

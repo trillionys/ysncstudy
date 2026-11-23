@@ -23,6 +23,19 @@ data class ChapterStat(
     val status: ChapterStatus,
 )
 
+/** 학습 파트(재고자산·유형자산·차입원가 등) 카드 통계 */
+data class PartStat(
+    val partTitle: String,
+    val chapterIds: List<String>,
+    val conceptCount: Int,
+    val studiedConcepts: Int,
+    val questionCount: Int,
+    val solvedQuestions: Int,
+    val accuracy: Double?,
+    val wrongCount: Int,
+    val masteryRate: Double,
+)
+
 data class ConceptWeakness(val conceptId: String, val name: String, val wrong: Int, val attempts: Int) {
     val wrongRate: Double get() = if (attempts == 0) 0.0 else wrong.toDouble() / attempts
 }
@@ -190,6 +203,34 @@ object StatsCalculator {
                 questionCount = qs.size,
                 solvedQuestions = rows.map { it.questionId }.distinct().size,
                 accuracy = if (total == 0) null else rows.sumOf { it.correctAttempts }.toDouble() / total,
+            )
+        }
+    }
+
+    /**
+     * 파트별 통계. 정답률은 두 모드 합산 시도 기준, 오답 수는 미해결 오답노트 문항 수,
+     * 숙달률은 '기본문제 숙달' 이상 단계에 도달한 개념의 비율이다.
+     */
+    fun partStats(content: ContentSnapshot, user: UserSnapshot, mastery: Map<String, MasteryLevel>): List<PartStat> {
+        val activeIds = content.questions.map { it.id }.toSet()
+        val mastered = setOf(MasteryLevel.BASIC_MASTERED, MasteryLevel.ADVANCED_MASTERED, MasteryLevel.FULL_MASTERY)
+        return content.chapters.sortedBy { it.sortOrder }.groupBy { it.partTitle.ifBlank { "기타" } }.map { (part, chs) ->
+            val chIds = chs.map { it.id }.toSet()
+            val cs = content.concepts.filter { it.chapterId in chIds }
+            val qs = content.questions.filter { it.chapterId in chIds }
+            val qids = qs.map { it.id }.toSet()
+            val rows = user.questionProgress.filter { it.questionId in qids && it.questionId in activeIds }
+            val total = rows.sumOf { it.totalAttempts }
+            PartStat(
+                partTitle = part,
+                chapterIds = chs.map { it.id },
+                conceptCount = cs.size,
+                studiedConcepts = cs.count { (mastery[it.id] ?: MasteryLevel.NOT_STARTED) != MasteryLevel.NOT_STARTED },
+                questionCount = qs.size,
+                solvedQuestions = rows.map { it.questionId }.distinct().size,
+                accuracy = if (total == 0) null else rows.sumOf { it.correctAttempts }.toDouble() / total,
+                wrongCount = user.wrongNotes.count { !it.isResolved && it.questionId in qids },
+                masteryRate = if (cs.isEmpty()) 0.0 else cs.count { mastery[it.id] in mastered }.toDouble() / cs.size,
             )
         }
     }

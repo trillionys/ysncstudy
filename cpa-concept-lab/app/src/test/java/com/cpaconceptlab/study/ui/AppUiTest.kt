@@ -49,10 +49,19 @@ class AppUiTest {
         waitText("오늘의 학습")
         rule.onNodeWithText("전체 학습현황").assertExists()
         val snapshot = app.container.contentRepository.snapshot.value!!
-        assertEquals(285, snapshot.concepts.size)
+        assertEquals(com.cpaconceptlab.study.TestContent.manifest.conceptCount, snapshot.concepts.size)
 
-        // 2) 기본 문제 시작 → 첫 문제와 초성 힌트 출력
-        rule.onNodeWithText("기본 문제").performScrollTo().performClick()
+        // 2) 기본 모드·빈칸형만 선택해 시작 → 첫 문제와 초성 힌트 출력
+        //    (전체 범위에는 4지선다·매칭형도 섞여 있으므로 '이어서 공부하기'에 빈칸형 필터를 지정한다)
+        runBlocking {
+            app.container.settingsRepository.update {
+                it.copy(lastMode = "BASIC", lastScope = com.cpaconceptlab.study.domain.model.QuizScope(
+                    com.cpaconceptlab.study.domain.model.ScopeType.ALL, kind = com.cpaconceptlab.study.domain.model.QuestionKind.BLANK,
+                ).encode())
+            }
+        }
+        rule.waitForIdle()
+        rule.onNodeWithText("이어서 공부하기").performScrollTo().performClick()
         waitText("초성 힌트", substring = true)
         val shown = currentQuestionText()
         val q1 = snapshot.questions.first { it.questionText.replace(BLANK_TOKEN, " ______ ") == shown }

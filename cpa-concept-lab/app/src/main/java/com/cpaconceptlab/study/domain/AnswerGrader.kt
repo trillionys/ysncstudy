@@ -78,4 +78,30 @@ object AnswerGrader {
         }
         return Result(false, null)
     }
+
+    /* ───────── v3: 보기 선택형 문항 ───────── */
+
+    const val SLOT_ARROW = " → "
+    const val SLOT_SEP = " / "
+
+    /** 슬롯형 답안을 콘텐츠 정답과 같은 형식('라벨 → 답 / 라벨 → 답')으로 만든다. 선택하지 않은 칸은 빈 문자열. */
+    fun encodeSlots(labels: List<String>, picks: List<String?>): String =
+        labels.mapIndexed { i, l -> l + SLOT_ARROW + (picks.getOrNull(i) ?: "") }.joinToString(SLOT_SEP)
+
+    /** 4지선다: 선택한 보기가 정답 보기와 정확히 같아야 정답(부분 일치·유사어 불인정). */
+    fun gradeChoice(selected: String?, answer: String): Result {
+        if (selected.isNullOrBlank()) return Result(false, null)
+        return if (normalize(selected) == normalize(answer)) Result(true, answer) else Result(false, null)
+    }
+
+    /** 슬롯형(매칭·분류·순서·분개 계정): 모든 칸이 정답과 같아야 정답. */
+    fun gradeSlots(picks: List<String?>, answers: List<String>): Result {
+        if (picks.size != answers.size || picks.any { it.isNullOrBlank() }) return Result(false, null)
+        val ok = picks.zip(answers).all { (p, a) -> normalize(p!!) == normalize(a) }
+        return Result(ok, if (ok) answers.joinToString(SLOT_SEP) else null)
+    }
+
+    /** 슬롯형 부분 점수(맞힌 칸 수). 해설 화면에서 칸별 정오를 보여줄 때 사용한다. */
+    fun slotHits(picks: List<String?>, answers: List<String>): List<Boolean> =
+        answers.mapIndexed { i, a -> picks.getOrNull(i)?.let { normalize(it) == normalize(a) } ?: false }
 }

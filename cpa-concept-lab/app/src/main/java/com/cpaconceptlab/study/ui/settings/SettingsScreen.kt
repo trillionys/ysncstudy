@@ -40,6 +40,7 @@ import com.cpaconceptlab.study.data.backup.BackupKind
 import com.cpaconceptlab.study.data.backup.BackupManager
 import com.cpaconceptlab.study.data.backup.RestoreMode
 import com.cpaconceptlab.study.ui.MainViewModel
+import com.cpaconceptlab.study.data.repository.DEFAULT_INTERVALS
 import com.cpaconceptlab.study.ui.components.KeyValue
 import com.cpaconceptlab.study.ui.components.SectionCard
 import com.cpaconceptlab.study.ui.components.VSpace
@@ -141,7 +142,7 @@ fun SettingsScreen(vm: MainViewModel, onOpenReport: () -> Unit) {
             OutlinedTextField(intervals, { intervals = it }, label = { Text("복습 간격(일, 쉼표 구분)") }, singleLine = true, modifier = Modifier.fillMaxWidth())
             Row {
                 TextButton(onClick = { vm.updateSettings { it.copy(reviewIntervals = intervals) }; vm.showMessage("복습 간격을 저장했습니다. 다음 풀이부터 적용됩니다.") }) { Text("간격 저장") }
-                TextButton(onClick = { intervals = "1,3,7,14,30"; vm.updateSettings { it.copy(reviewIntervals = "1,3,7,14,30") } }) { Text("기본값(1·3·7·14·30)") }
+                TextButton(onClick = { intervals = DEFAULT_INTERVALS; vm.updateSettings { it.copy(reviewIntervals = DEFAULT_INTERVALS) } }) { Text("기본값(1·3·7·14·30·60)") }
             }
             Text("정답이면 다음 간격으로, 오답이면 첫 간격부터 다시 시작합니다. 응답이 매우 느리면 단계를 올리지 않고, 정답률이 낮은 문항은 간격을 줄입니다.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }

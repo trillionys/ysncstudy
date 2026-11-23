@@ -5,6 +5,7 @@ import com.cpaconceptlab.study.data.importer.ContentCoverageValidator
 import com.cpaconceptlab.study.data.importer.ContentParser
 import com.cpaconceptlab.study.data.importer.PackValidator
 import com.cpaconceptlab.study.data.model.BLANK_TOKEN
+import com.cpaconceptlab.study.data.model.INPUT_TEXT
 import com.cpaconceptlab.study.domain.AnswerGrader
 import com.cpaconceptlab.study.utils.Chosung
 import org.junit.Assert.assertEquals
@@ -28,7 +29,8 @@ class ContentCoverageTest {
         File(TestContent.reportDir(), "content-validation.txt").writeText(report.toText())
         println(report.toText())
         assertEquals(285, required.size)
-        assertEquals(required.size, report.registeredConcepts)
+        assertTrue("필수 개념 이상 등록", report.registeredConcepts >= required.size)
+        assertEquals(TestContent.manifest.conceptCount, report.registeredConcepts)
         assertEquals(report.registeredConcepts, report.explainedConcepts)
         assertEquals(report.registeredConcepts, report.linkedConcepts)
         assertEquals(46, report.examScopesLinked)
@@ -68,7 +70,7 @@ class ContentCoverageTest {
 
     // 모든 문항은 빈칸 1개, 정답·해설 존재, 두 모드 응시 가능
     @Test fun everyQuestionHasOneBlankAnswerExplanationAndBothModes() {
-        questions.forEach { q ->
+        questions.filter { it.inputType == INPUT_TEXT }.forEach { q ->
             assertEquals("${q.id} 빈칸 수", 1, q.questionText.windowed(BLANK_TOKEN.length).count { it == BLANK_TOKEN })
             assertTrue("${q.id} 정답", q.blankAnswer.isNotBlank())
             assertTrue("${q.id} 해설", q.explanation.isNotBlank())

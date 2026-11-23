@@ -71,10 +71,10 @@ class DatabaseTest {
         val r = content.syncBundled()
         assertNotNull(r); assertTrue(r!!.success)
         val snap = content.snapshot.value!!
-        assertEquals(285, snap.concepts.size)
+        assertEquals(TestContent.manifest.conceptCount, snap.concepts.size)
         assertEquals(TestContent.manifest.questionCount, snap.questions.size)
         assertEquals(46, snap.examScopes.size)
-        assertEquals(285, db.progressDao().allConceptProgress().size)
+        assertEquals(TestContent.manifest.conceptCount, db.progressDao().allConceptProgress().size)
         assertTrue(content.validationReport(snap).passed)
     }
 
@@ -85,7 +85,7 @@ class DatabaseTest {
         val again = importer.import(TestContent.packs, ContentImporter.SOURCE_BUNDLED)
         assertTrue(again.success)
         assertEquals(0, again.insertedConcepts + again.insertedQuestions + again.updatedConcepts + again.updatedQuestions)
-        assertEquals(285, db.contentDao().concepts().size)
+        assertEquals(TestContent.manifest.conceptCount, db.contentDao().concepts().size)
         assertEquals(TestContent.manifest.questionCount, db.contentDao().questions().size)
         val crossRefs = db.contentDao().crossRefs()
         assertEquals(crossRefs.size, crossRefs.toSet().size)
@@ -120,7 +120,7 @@ class DatabaseTest {
         assertEquals(1, r.insertedConcepts); assertEquals(1, r.updatedConcepts); assertEquals(1, r.insertedQuestions)
         content.reload()
         val snap = content.snapshot.value!!
-        assertEquals(286, snap.concepts.size)
+        assertEquals(TestContent.manifest.conceptCount + 1, snap.concepts.size)
         assertTrue(snap.conceptById.getValue("D03").definition.endsWith("(보완)"))
         // 학습기록(정답률·오답노트·학습일·복습일) 그대로 유지
         val after = study.currentSnapshot()
@@ -130,7 +130,7 @@ class DatabaseTest {
         assertEquals(before.conceptProgress.size + 1, after.conceptProgress.size)  // 새 개념만 초기 상태 생성
         // 통계 분모는 새 개념을 포함해 재계산
         val ov = StatsCalculator.overview(snap, after, 3_000)
-        assertEquals(286, ov.totalConcepts)
+        assertEquals(TestContent.manifest.conceptCount + 1, ov.totalConcepts)
         assertEquals(1, ov.solvedQuestions)
     }
 
@@ -268,6 +268,116 @@ class DatabaseTest {
         ctx.deleteDatabase(name)
     }
 
+    /** 내보낸 스키마 JSON(version)으로 실제 SQLite 파일을 만든다. */
+    private fun createDbFromSchema(name: String, version: Int): Pair<SupportSQLiteOpenHelper, JsonObject> {
+        val schemaDir = File(System.getProperty("schemaDir") ?: "schemas", AppDatabase::class.java.name)
+        val schema = Json.parseToJsonElement(File(schemaDir, "$version.json").readText()).jsonObject["database"]!!.jsonObject
+        ctx.deleteDatabase(name)
+        val helper = FrameworkSQLiteOpenHelperFactory().create(
+            SupportSQLiteOpenHelper.Configuration.builder(ctx).name(name).callback(object : SupportSQLiteOpenHelper.Callback(version) {
+                override fun onCreate(db: androidx.sqlite.db.SupportSQLiteDatabase) {
+                    schema["entities"]!!.jsonArray.forEach { e ->
+                        val o = e.jsonObject
+                        val table = o["tableName"]!!.jsonPrimitive.content
+                        db.execSQL(o["createSql"]!!.jsonPrimitive.content.replace("\${TABLE_NAME}", table))
+                        (o["indices"] as? kotlinx.serialization.json.JsonArray)?.forEach { idx ->
+                            db.execSQL(idx.jsonObject["createSql"]!!.jsonPrimitive.content.replace("\${TABLE_NAME}", table))
+                        }
+                    }
+                    schema["setupQueries"]!!.jsonArray.forEach { db.execSQL(it.jsonPrimitive.content) }
+                }
+                override fun onUpgrade(db: androidx.sqlite.db.SupportSQLiteDatabase, oldVersion: Int, newVersion: Int) = Unit
+            }).build(),
+        )
+        return helper to schema
+    }
+
+    /** 스키마의 모든 NOT NULL 컬럼을 채운 INSERT 문(지정하지 않은 값은 형식별 기본값) */
+    private fun insertSql(schema: JsonObject, table: String, values: Map<String, Any?>): String {
+        val entity = schema["entities"]!!.jsonArray.map { it.jsonObject }.first { it["tableName"]!!.jsonPrimitive.content == table }
+        val cols = entity["fields"]!!.jsonArray.map { it.jsonObject }
+        val names = cols.map { it["columnName"]!!.jsonPrimitive.content }
+        val vals = cols.map { f ->
+            val n = f["columnName"]!!.jsonPrimitive.content
+            val v = if (n in values) values[n] else when (f["affinity"]!!.jsonPrimitive.content) {
+                "INTEGER", "REAL" -> 0
+                else -> if (f["notNull"]!!.jsonPrimitive.content == "true") (if (n.endsWith("Ids") || n == "acceptedAnswers" || n.endsWith("Numbers") || n == "conceptIds") "[]" else "") else null
+            }
+            when (v) { null -> "NULL"; is Number -> v.toString(); is Boolean -> if (v) "1" else "0"; else -> "'" + v.toString().replace("'", "''") + "'" }
+        }
+        return "INSERT INTO $table (${names.joinToString(",")}) VALUES (${vals.joinToString(",")})"
+    }
+
+    // DB 마이그레이션 2 → 3 + v3 번들 콘텐츠 동기화: 1.0.1(v2) 사용자의 학습기록·오답·북마크·메모·복습일정이 모두 보존되는지
+    @Test fun migration2To3KeepsLearningRecordsAndAddsNewContent() = runBlocking<Unit> {
+        val name = "migration23-test.db"
+        val (helper, v2) = createDbFromSchema(name, 2)
+        helper.writableDatabase.apply {
+            // 1.0.1 에 있던 콘텐츠 일부(기존 개념·문항)와 번들 버전 2 기록
+            execSQL(insertSql(v2, "chapters", mapOf("id" to "FA-D", "code" to "D", "subjectId" to "FA", "title" to "질적 특성", "englishTitle" to "", "sortOrder" to 4)))
+            execSQL(insertSql(v2, "concepts", mapOf("id" to "D03", "subjectId" to "FA", "chapterId" to "FA-D", "sectionId" to "FA-D-S01",
+                "koreanName" to "목적적합성", "definition" to "구 정의", "reviewStatus" to "REVIEWED", "isRequired" to 1, "isActive" to 1, "revision" to 2, "contentVersion" to 2)))
+            execSQL(insertSql(v2, "questions", mapOf("id" to "D03-Q01", "primaryConceptId" to "D03", "conceptIds" to "[\"D03\"]", "subjectId" to "FA",
+                "chapterId" to "FA-D", "questionType" to "definition", "questionText" to "구 문항 (______)", "blankAnswer" to "목적적합성",
+                "acceptedAnswers" to "[\"목적적합성\"]", "explanation" to "해설", "difficulty" to 1, "reviewStatus" to "REVIEWED", "isActive" to 1, "revision" to 2, "contentVersion" to 2)))
+            execSQL(insertSql(v2, "content_versions", mapOf("version" to 2, "source" to "bundled", "packId" to "fa", "importedAt" to 1,
+                "conceptCount" to 285, "questionCount" to 600)))
+            // 사용자 학습기록
+            execSQL(insertSql(v2, "concept_progress", mapOf("conceptId" to "D03", "firstStudiedAt" to 1, "lastStudiedAt" to 2, "viewCount" to 3,
+                "basicAttemptCount" to 4, "basicCorrectCount" to 3, "advancedAttemptCount" to 2, "advancedCorrectCount" to 1,
+                "masteryLevel" to "BASIC_MASTERED", "nextReviewAt" to 99, "isBookmarked" to 1, "memo" to "내 메모")))
+            execSQL("INSERT INTO question_progress VALUES ('D03-Q01','BASIC',1,4,3,1,2,5,1,4000,2,999,0.7)")
+            execSQL("INSERT INTO question_attempts (questionId, mode, userAnswer, isCorrect, attemptedAt, responseTimeMs) VALUES ('D03-Q01','BASIC','목적적합성',1,5,4000)")
+            execSQL("INSERT INTO wrong_notes VALUES ('D03-Q01','ADVANCED','충실한 표현',2,1,3,0,NULL)")
+            execSQL("INSERT INTO study_days VALUES (20000, 4, 3, 16000)")
+            close()
+        }
+        val migrated = Room.databaseBuilder(ctx, AppDatabase::class.java, name)
+            .addMigrations(*AppDatabase.MIGRATIONS).allowMainThreadQueries().build()
+        // 마이그레이션 직후: 새 컬럼 기본값
+        val q = migrated.contentDao().questions().single()
+        assertEquals("text", q.inputType)
+        assertTrue(q.choices.isEmpty() && q.slotLabels.isEmpty() && q.calcFormulaId == null)
+        assertEquals("AUTHOR_REVIEWED", migrated.contentDao().concepts().single().verificationStatus)
+        assertEquals("", migrated.contentDao().chapters().single().partTitle)
+
+        // 새 APK(콘텐츠 v3) 첫 실행 동기화
+        val repo = ContentRepository(migrated, BundledAssetContentSource(ctx.assets))
+        val r = repo.syncBundled()
+        assertNotNull(r); assertTrue(r!!.message, r.success)
+        val snap = repo.snapshot.value!!
+        assertEquals(TestContent.manifest.conceptCount, snap.concepts.size)
+        assertEquals(TestContent.manifest.questionCount, snap.questions.size)
+        assertEquals(42, snap.problemSources.size)
+        assertTrue(snap.scopeItems.size >= 700)
+        assertEquals("재고자산", snap.chapterById["FA-L"]!!.partTitle)
+        assertEquals("개념체계와 재무제표 표시", snap.chapterById["FA-D"]!!.partTitle)
+        assertTrue(snap.questions.any { it.inputType == "choice" } && snap.questions.any { it.inputType == "slots" })
+        assertTrue(snap.questions.any { it.calcFormulaId != null })
+
+        // 학습기록 보존
+        val pd = migrated.progressDao()
+        val cp = pd.conceptProgress("D03")!!
+        assertEquals(3, cp.viewCount); assertEquals("BASIC_MASTERED", cp.masteryLevel); assertTrue(cp.isBookmarked); assertEquals("내 메모", cp.memo)
+        assertEquals(99L, cp.nextReviewAt)
+        val qp = pd.questionProgress("D03-Q01", "BASIC")!!
+        assertEquals(4, qp.totalAttempts); assertEquals(999L, qp.nextReviewAt); assertEquals(2, qp.stage)
+        val wn = pd.allWrongNotes().single()
+        assertEquals(2, wn.wrongCount); assertFalse(wn.isResolved)
+        assertEquals(4, pd.allStudyDays().single().solvedCount)
+        // 새 개념은 미학습 초기 상태로 추가된다
+        assertEquals("NOT_STARTED", pd.conceptProgress("P044")!!.masteryLevel)
+        assertEquals(TestContent.manifest.conceptCount, pd.allConceptProgress().size)
+
+        // 같은 콘텐츠로 다시 동기화해도 중복이 생기지 않는다
+        migrated.openHelper.writableDatabase.execSQL("UPDATE content_versions SET version = 2")
+        repo.syncBundled()
+        assertEquals(TestContent.manifest.questionCount, migrated.contentDao().questions().size)
+        assertEquals(42, migrated.contentDao().problemSources().size)
+        migrated.close()
+        ctx.deleteDatabase(name)
+    }
+
     // 앱 업데이트(콘텐츠 버전 상승) 시뮬레이션: 같은 DB 파일을 다시 열어 동기화해도 학습진도 유지
     @Test fun progressSurvivesAppRestartAndResync() = runBlocking<Unit> {
         val name = "update-test.db"
@@ -290,7 +400,7 @@ class DatabaseTest {
         assertEquals(before.questionProgress, after.questionProgress)
         assertEquals(before.conceptProgress.toSet(), after.conceptProgress.toSet())
         assertEquals(before.studyDays, after.studyDays)
-        assertEquals(285, repo.snapshot.value!!.concepts.size)
+        assertEquals(TestContent.manifest.conceptCount, repo.snapshot.value!!.concepts.size)
         fileDb.close()
         ctx.deleteDatabase(name)
     }

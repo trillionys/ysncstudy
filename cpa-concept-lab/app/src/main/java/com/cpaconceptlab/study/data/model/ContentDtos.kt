@@ -33,7 +33,47 @@ data class ContentPack(
     val examScopes: List<ExamScopeDto> = emptyList(),
     val concepts: List<ConceptDto> = emptyList(),
     val questions: List<QuestionDto> = emptyList(),
+    /** v3: 원본 문제 출처(교재 문항 번호 → 개념·문항 연결, 판독 신뢰도·검수 상태) */
+    val problemSources: List<ProblemSourceDto> = emptyList(),
+    /** v3: 지정 학습범위 체크리스트(세부항목 → 연결 개념) */
+    val scopeItems: List<ScopeItemDto> = emptyList(),
 )
+
+@Serializable
+data class ProblemSourceDto(
+    val sourceId: String,
+    val sourceFile: String? = null,
+    val sourcePage: String? = null,
+    val originalNumber: String? = null,
+    val topic: String = "",
+    val conceptIds: List<String> = emptyList(),
+    val formula: String? = null,
+    val solutionSteps: String? = null,
+    val keyTrap: String? = null,
+    val linkedQuestionIds: List<String> = emptyList(),
+    val readingConfidence: String = "NONE",
+    val verificationStatus: String = "SOURCE_NOT_PROVIDED",
+    val reviewRequired: Boolean = true,
+    val note: String? = null,
+)
+
+@Serializable
+data class ScopeItemDto(
+    val id: String,
+    val area: String,
+    val item: String,
+    val conceptId: String? = null,
+    val covered: Boolean = false,
+    val sortOrder: Int = 0,
+)
+
+/** 슬롯형 문항(매칭·분류·순서·분개 계정)의 한 칸 */
+@Serializable
+data class SlotDto(val label: String, val answer: String)
+
+/** 계산문항의 공식 ID 와 입력값. 앱의 FormulaEngine 이 같은 값을 독립적으로 다시 계산해 검산한다. */
+@Serializable
+data class CalcSpecDto(val formulaId: String, val params: Map<String, Double> = emptyMap())
 
 @Serializable
 data class SubjectDto(
@@ -52,6 +92,8 @@ data class ChapterDto(
     val title: String,
     val englishTitle: String = "",
     val sortOrder: Int = 0,
+    /** v3: 학습 파트(개념체계와 재무제표 표시 / 재고자산 / 유형자산 / 차입원가) */
+    val partTitle: String = "",
 )
 
 @Serializable
@@ -103,6 +145,13 @@ data class ConceptDto(
     val sortOrder: Int = 0,
     val revision: Int = 1,
     val contentVersion: Int? = null,
+    // v3 추가 필드
+    val recognitionRules: String? = null,
+    val measurementRules: String? = null,
+    val exceptions: String? = null,
+    val journalEntries: String? = null,
+    val sourceProblemIds: List<String> = emptyList(),
+    val verificationStatus: String = "AUTHOR_REVIEWED",
 )
 
 @Serializable
@@ -134,7 +183,20 @@ data class QuestionDto(
     val revision: Int = 1,
     val sortOrder: Int = 0,
     val contentVersion: Int? = null,
+    // v3 추가 필드
+    /** text(빈칸 입력) | choice(4지선다) | slots(매칭·분류·순서·분개 계정 선택) */
+    val inputType: String = INPUT_TEXT,
+    val choices: List<String> = emptyList(),
+    val slots: List<SlotDto> = emptyList(),
+    val calcSpec: CalcSpecDto? = null,
+    val sourceProblemIds: List<String> = emptyList(),
+    /** BOTH(기본·심화 모두) | OPTIONS(보기 선택형) */
+    val mode: String = "BOTH",
 )
+
+const val INPUT_TEXT = "text"
+const val INPUT_CHOICE = "choice"
+const val INPUT_SLOTS = "slots"
 
 /** 콘텐츠·백업 JSON 공통 파서 설정. 알 수 없는 필드는 무시하여 향후 확장에 대비한다. */
 val ContentJson: Json = Json {

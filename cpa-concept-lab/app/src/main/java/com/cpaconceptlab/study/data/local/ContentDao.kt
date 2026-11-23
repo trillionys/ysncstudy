@@ -15,6 +15,11 @@ interface ContentDao {
     @Upsert suspend fun upsertExamScopes(items: List<ExamScopeEntity>)
     @Upsert suspend fun upsertConcepts(items: List<ConceptEntity>)
     @Upsert suspend fun upsertQuestions(items: List<QuestionEntity>)
+    @Upsert suspend fun upsertProblemSources(items: List<ProblemSourceEntity>)
+    @Upsert suspend fun upsertScopeItems(items: List<ScopeItemEntity>)
+
+    @Query("SELECT * FROM problem_sources ORDER BY sourceId") suspend fun problemSources(): List<ProblemSourceEntity>
+    @Query("SELECT * FROM scope_items ORDER BY sortOrder") suspend fun scopeItems(): List<ScopeItemEntity>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertCrossRefs(items: List<QuestionConceptCrossRef>)

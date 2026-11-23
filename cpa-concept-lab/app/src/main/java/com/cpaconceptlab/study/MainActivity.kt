@@ -99,7 +99,7 @@ private val TABS = listOf(
 
 private val TITLES = mapOf(
     "home" to "CPA Concept Lab", "subjects" to "과목", "wrong" to "오답노트", "stats" to "학습 통계", "settings" to "설정",
-    "subject" to "개념 목록", "concept" to "개념 학습", "setup" to "문제 풀이 설정", "quiz" to "빈칸 문제", "exam" to "기출범위별 학습현황",
+    "subject" to "개념 목록", "concept" to "개념 학습", "setup" to "문제 풀이 설정", "quiz" to "학습 문제", "exam" to "기출범위별 학습현황",
     "report" to "개념 누락 검증 리포트",
 )
 
@@ -224,6 +224,7 @@ private fun AppRoot(vm: MainViewModel) {
                         onOpenConcept = openConcept,
                         onFinish = { nav.popBackStack("home", inclusive = false) },
                         onRestart = { nav.popBackStack(); nav.startQuiz(mode, scope, size) },
+                        onAdvance = { nav.popBackStack(); nav.startQuiz(QuizMode.ADVANCED, scope, size) },
                     )
                 }
             }

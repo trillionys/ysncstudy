@@ -14,12 +14,15 @@ enum class QuizMode(val label: String, val description: String) {
 /** 출제 범위 */
 enum class ScopeType(val label: String) {
     ALL("전체 범위"),
+    PART("학습 파트"),
     CHAPTER("대단원"),
     SECTION("중단원"),
     CONCEPT("특정 개념"),
     EXAM("기출 출제범위"),
     UNSTUDIED("미학습 개념"),
     WRONG("오답 개념"),
+    WEAK("취약 개념"),
+    RECENT("최근 추가 개념"),
     DUE("복습 예정"),
     MOCK("랜덤 모의테스트"),
     QUESTION("선택 문항 다시 풀기");
@@ -29,14 +32,49 @@ enum class ScopeType(val label: String) {
     }
 }
 
-data class QuizScope(val type: ScopeType, val id: String? = null) {
-    fun encode(): String = if (id == null) type.name else "${type.name}:$id"
+/** 문항 형식 필터 */
+enum class QuestionKind(val label: String) {
+    ALL("모든 유형"),
+    BLANK("빈칸만"),
+    CALC("계산만"),
+    OPTIONS("선택·매칭·분류");
+
+    companion object {
+        fun of(name: String?): QuestionKind = entries.firstOrNull { it.name == name } ?: ALL
+    }
+}
+
+/**
+ * 출제 범위 + 필터(난이도 범위, 문항 형식).
+ * 인코딩: "TYPE[:id][~min-max~KIND]" — 필터가 기본값이면 기존(v1·v2) 형식과 같다.
+ */
+data class QuizScope(
+    val type: ScopeType,
+    val id: String? = null,
+    val minLevel: Int = 1,
+    val maxLevel: Int = 5,
+    val kind: QuestionKind = QuestionKind.ALL,
+) {
+    val hasFilter: Boolean get() = minLevel != 1 || maxLevel != 5 || kind != QuestionKind.ALL
+
+    fun encode(): String {
+        val base = if (id == null) type.name else "${type.name}:$id"
+        return if (hasFilter) "$base~$minLevel-$maxLevel~${kind.name}" else base
+    }
+
+    fun levelLabel(): String = if (minLevel == 1 && maxLevel == 5) "전체 난이도" else if (minLevel == maxLevel) "Level $minLevel" else "Level $minLevel~$maxLevel"
 
     companion object {
         fun decode(s: String?): QuizScope {
             if (s.isNullOrBlank()) return QuizScope(ScopeType.ALL)
-            val parts = s.split(":", limit = 2)
-            return QuizScope(ScopeType.of(parts[0]), parts.getOrNull(1)?.takeIf { it.isNotBlank() })
+            val segs = s.split("~")
+            val parts = segs[0].split(":", limit = 2)
+            val type = ScopeType.of(parts[0])
+            val id = parts.getOrNull(1)?.takeIf { it.isNotBlank() }
+            val lv = segs.getOrNull(1)?.split("-")?.mapNotNull { it.toIntOrNull() }
+            val min = lv?.getOrNull(0)?.coerceIn(1, 5) ?: 1
+            val max = lv?.getOrNull(1)?.coerceIn(min, 5) ?: 5
+            return QuizScope(type, id, min, max, QuestionKind.of(segs.getOrNull(2)))
         }
     }
 }

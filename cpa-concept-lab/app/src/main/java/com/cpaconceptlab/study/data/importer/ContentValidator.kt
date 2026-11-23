@@ -1,11 +1,15 @@
 package com.cpaconceptlab.study.data.importer
 
 import com.cpaconceptlab.study.data.model.BLANK_TOKEN
+import com.cpaconceptlab.study.data.model.INPUT_CHOICE
+import com.cpaconceptlab.study.data.model.INPUT_SLOTS
+import com.cpaconceptlab.study.data.model.INPUT_TEXT
 import com.cpaconceptlab.study.data.model.ConceptDto
 import com.cpaconceptlab.study.data.model.ContentPack
 import com.cpaconceptlab.study.data.model.ExamScopeDto
 import com.cpaconceptlab.study.data.model.QuestionDto
 import com.cpaconceptlab.study.domain.AnswerGrader
+import com.cpaconceptlab.study.domain.FormulaEngine
 import com.cpaconceptlab.study.utils.Chosung
 
 /**
@@ -29,6 +33,13 @@ object ContentCoverageValidator {
         val examScopeTotal: Int,
         val selectorCandidateConcepts: Int,
         val errors: List<String>,
+        val calcQuestions: Int = 0,
+        val calcVerified: Int = 0,
+        val oxQuestions: Int = 0,
+        val problemSources: Int = 0,
+        val unverifiedSources: Int = 0,
+        val scopeCovered: Int = 0,
+        val scopeTotal: Int = 0,
     ) {
         val passed: Boolean get() = errors.isEmpty()
 
@@ -43,6 +54,10 @@ object ContentCoverageValidator {
             appendLine("심화 모드 이용 가능: ${advancedModeAvailable}개")
             appendLine("출제범위 01~${examScopeTotal.toString().padStart(2, '0')} 연결: ${examScopesLinked}개")
             appendLine("균등출제 후보 개념: ${selectorCandidateConcepts}개")
+            appendLine("계산문항 앱 독립 검산: ${calcVerified}/${calcQuestions}개 일치")
+            appendLine("OX·예/아니요형 문항: ${oxQuestions}개")
+            if (scopeTotal > 0) appendLine("지정 학습범위 체크리스트: ${scopeCovered}/${scopeTotal} 반영")
+            if (problemSources > 0) appendLine("원본 문제 출처: ${problemSources}개 등록 · 원본 미확인/미검증 ${unverifiedSources}개")
             appendLine("검증 실패: ${errors.size}개")
             errors.take(100).forEach { appendLine(" - $it") }
         }
@@ -56,6 +71,8 @@ object ContentCoverageValidator {
         examScopes: List<ExamScopeDto>,
         requiredConceptIds: List<String>,
         examScopeCount: Int = 46,
+        sourceStatuses: List<String> = emptyList(),
+        scopeCoverage: Pair<Int, Int> = 0 to 0,
     ): Report {
         val errors = mutableListOf<String>()
         val conceptById = concepts.associateBy { it.id }
@@ -114,9 +131,15 @@ object ContentCoverageValidator {
             (q.conceptIds + q.primaryConceptId).distinct().filter { it !in conceptById }
                 .forEach { errors += "[9] ${q.id} 미존재 개념 $it" }
             if (q.isActive) {
-                val blanks = q.questionText.windowed(BLANK_TOKEN.length).count { it == BLANK_TOKEN }
-                val hintOk = Chosung.hint(q.blankAnswer).isNotBlank()
-                if (blanks == 1 && hintOk) basicOk++ else errors += "[11] ${q.id} 빈칸 ${blanks}개 또는 힌트 생성 불가"
+                if (q.inputType == INPUT_TEXT) {
+                    val blanks = q.questionText.windowed(BLANK_TOKEN.length).count { it == BLANK_TOKEN }
+                    val hintOk = Chosung.hint(q.blankAnswer).isNotBlank()
+                    if (blanks == 1 && hintOk) basicOk++ else errors += "[11] ${q.id} 빈칸 ${blanks}개 또는 힌트 생성 불가"
+                } else {
+                    structureErrors(q).forEach { errors += "[11] ${q.id} $it" }
+                    if (structureErrors(q).isEmpty()) basicOk++
+                }
+                if (OxDetector.isOxLike(q)) errors += "[13] ${q.id} OX·예/아니요형 문항은 허용하지 않음"
             }
         }
 
@@ -129,7 +152,23 @@ object ContentCoverageValidator {
         val candidateConcepts = active.flatMap { it.conceptIds + it.primaryConceptId }.toSet()
         concepts.filter { it.isActive && it.id !in candidateConcepts }.forEach { errors += "[12] ${it.id} 균등출제 후보 아님" }
 
+        // 14. 계산문항 독립 검산(빌드 도구와 다른 구현인 FormulaEngine 으로 다시 계산)
+        val calcQs = active.filter { it.calcSpec != null }
+        var calcOk = 0
+        for (q in calcQs) {
+            val spec = q.calcSpec!!
+            val v = runCatching { FormulaEngine.format(FormulaEngine.evaluate(spec.formulaId, spec.params)) }.getOrNull()
+            if (v == q.blankAnswer) calcOk++ else errors += "[14] ${q.id} 계산 정답 불일치: 콘텐츠 ${q.blankAnswer} / 앱 재계산 $v"
+        }
+
         return Report(
+            calcQuestions = calcQs.size,
+            calcVerified = calcOk,
+            oxQuestions = active.count { OxDetector.isOxLike(it) },
+            problemSources = sourceStatuses.size,
+            unverifiedSources = sourceStatuses.count { it != "VERIFIED" },
+            scopeCovered = scopeCoverage.first,
+            scopeTotal = scopeCoverage.second,
             requiredConcepts = requiredConceptIds.size,
             registeredConcepts = concepts.size,
             explainedConcepts = explained,
@@ -143,6 +182,45 @@ object ContentCoverageValidator {
             selectorCandidateConcepts = concepts.count { it.isActive && it.id in candidateConcepts },
             errors = errors,
         )
+    }
+}
+
+/** 보기 선택형 문항 구조 검사(4지선다·슬롯형) */
+fun structureErrors(q: QuestionDto): List<String> = buildList {
+    when (q.inputType) {
+        INPUT_TEXT -> Unit
+        INPUT_CHOICE -> {
+            if (q.choices.size != 4) add("4지선다 보기 ${q.choices.size}개(4개여야 함)")
+            if (q.choices.distinct().size != q.choices.size) add("보기 중복")
+            if (q.blankAnswer !in q.choices) add("정답이 보기에 없음")
+        }
+        INPUT_SLOTS -> {
+            if (q.slots.isEmpty()) add("슬롯 없음")
+            if (q.choices.size < 2) add("보기 ${q.choices.size}개")
+            q.slots.filter { it.answer !in q.choices }.forEach { add("슬롯 '${it.label}' 정답이 보기에 없음") }
+        }
+        else -> add("알 수 없는 입력 형식 ${q.inputType}")
+    }
+}
+
+/**
+ * OX·참거짓·예/아니요 형식 판별기. 콘텐츠 정책상 이런 문항은 만들지 않으며, 가져온 팩에 있으면 거부한다.
+ */
+object OxDetector {
+    private val WORDS = Regex("(O\\s*/\\s*X|\\bOX\\b|참\\s*/\\s*거짓|참·거짓|참 또는 거짓|맞음\\s*/\\s*틀림|맞으면|틀리면|옳으면|예\\s*/\\s*아니요|예·아니요|옳은지 판단)")
+    private val YES_NO = setOf("예", "아니요", "아니오", "o", "x", "참", "거짓", "맞음", "틀림", "옳다", "옳지않다", "옳음", "틀리다", "해당", "해당없음", "있음", "없음")
+    private val NEG = listOf("아님", "아니다", "않음", "않는다", "제외", "불가", "없음")
+
+    fun isOxLike(q: QuestionDto): Boolean {
+        if (WORDS.containsMatchIn(q.questionText)) return true
+        val opts = q.choices.map { AnswerGrader.normalize(it) }
+        if (opts.isNotEmpty() && opts.all { it in YES_NO }) return true
+        if (q.inputType == INPUT_CHOICE && opts.size < 3) return true
+        if (opts.size == 2) {
+            val (a, b) = opts
+            if (NEG.any { a + it == b || b + it == a }) return true
+        }
+        return false
     }
 }
 
@@ -216,8 +294,15 @@ object PackValidator {
             if (!ID_PATTERN.matches(q.id)) errors += "questionId 형식 오류: '${q.id}'"
             if (q.blankAnswer.isBlank()) errors += "${q.id}: 정답(blankAnswer) 없음"
             if (q.explanation.isBlank()) errors += "${q.id}: 해설(explanation) 없음"
-            val blanks = q.questionText.windowed(BLANK_TOKEN.length).count { it == BLANK_TOKEN }
-            if (blanks != 1) errors += "${q.id}: 빈칸 '$BLANK_TOKEN' 은 정확히 1개여야 합니다(현재 $blanks)"
+            if (q.inputType == INPUT_TEXT) {
+                val blanks = q.questionText.windowed(BLANK_TOKEN.length).count { it == BLANK_TOKEN }
+                if (blanks != 1) errors += "${q.id}: 빈칸 '$BLANK_TOKEN' 은 정확히 1개여야 합니다(현재 $blanks)"
+            }
+            structureErrors(q).forEach { errors += "${q.id}: $it" }
+            if (OxDetector.isOxLike(q)) errors += "${q.id}: OX·예/아니요형 문항은 가져올 수 없습니다"
+            q.calcSpec?.let { spec ->
+                if (!com.cpaconceptlab.study.domain.FormulaEngine.has(spec.formulaId)) warnings += "${q.id}: 앱이 모르는 공식 ${spec.formulaId} — 자동 검산 생략"
+            }
             val linkedIds = (q.conceptIds + q.primaryConceptId).distinct()
             if (q.primaryConceptId.isBlank()) errors += "${q.id}: 개념 연결(primaryConceptId) 없음"
             linkedIds.filter { it !in allConceptIds }.forEach { errors += "${q.id}: 존재하지 않는 개념 $it 참조" }

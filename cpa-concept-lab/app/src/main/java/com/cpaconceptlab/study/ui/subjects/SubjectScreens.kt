@@ -31,6 +31,9 @@ import com.cpaconceptlab.study.domain.model.MasteryLevel
 import com.cpaconceptlab.study.domain.model.QuizMode
 import com.cpaconceptlab.study.domain.model.QuizScope
 import com.cpaconceptlab.study.domain.model.ScopeType
+import com.cpaconceptlab.study.domain.model.QuestionKind
+import com.cpaconceptlab.study.domain.usecase.PartStat
+import com.cpaconceptlab.study.domain.usecase.StatsCalculator
 import com.cpaconceptlab.study.ui.DashboardState
 import com.cpaconceptlab.study.ui.components.ChapterStatusPill
 import com.cpaconceptlab.study.ui.components.MasteryPill
@@ -56,6 +59,11 @@ fun SubjectScreen(
     LazyColumn(Modifier.fillMaxSize(), contentPadding = androidx.compose.foundation.layout.PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             OutlinedTextField(query, { query = it }, label = { Text("개념 검색 (이름·코드·영문)") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+        }
+        if (query.isBlank()) {
+            val parts = StatsCalculator.partStats(c, dash.user, dash.overview.masteryByConcept)
+                .filter { p -> p.chapterIds.any { id -> c.chapterById[id]?.subjectId == subjectId } }
+            items(parts, key = { "part-" + it.partTitle }) { p -> PartCard(p, onStartQuiz) }
         }
         if (query.isNotBlank()) {
             val found = c.concepts.filter {
@@ -146,6 +154,27 @@ fun ExamScopeScreen(dash: DashboardState, onOpenConcept: (String) -> Unit, onSta
                     }
                 }
             }
+        }
+    }
+}
+
+/** 파트 카드: 개념 수·학습 개념·문제 수·정답률·오답 수·숙달률 */
+@Composable
+fun PartCard(p: PartStat, onStartQuiz: (QuizMode, QuizScope) -> Unit) {
+    SectionCard(title = p.partTitle) {
+        ProgressLine("개념 ${p.conceptCount} · 학습 ${p.studiedConcepts}", p.studiedConcepts, p.conceptCount)
+        Text(
+            "문제 ${p.questionCount} (풀이 ${p.solvedQuestions}) · 정답률 ${pct(p.accuracy)} · 미해결 오답 ${p.wrongCount} · 숙달률 ${pct(p.masteryRate)}",
+            style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        VSpace(6)
+        Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            OutlinedButton(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.PART, p.partTitle)) }, modifier = Modifier.weight(1f)) { Text("기본") }
+            OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.PART, p.partTitle)) }, modifier = Modifier.weight(1f)) { Text("심화") }
+            OutlinedButton(
+                onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.PART, p.partTitle, kind = QuestionKind.CALC)) },
+                modifier = Modifier.weight(1f),
+            ) { Text("계산") }
         }
     }
 }

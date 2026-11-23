@@ -10,6 +10,7 @@ import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import com.cpaconceptlab.study.MainActivity
 import com.cpaconceptlab.study.TestContent
+import androidx.compose.ui.test.performScrollToNode
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -57,8 +58,11 @@ class ScreenshotTest {
         tab("과목")
         waitText("재무회계")
         rule.onNodeWithText("재무회계").performClick()
-        waitText("재무정보의 질적특성", sub = true)
-        rule.onNodeWithText("D. 재무정보의 질적특성").performScrollTo().performClick()
+        waitText("유형자산")
+        shot("04a_part_cards")
+        rule.onNode(androidx.compose.ui.test.hasScrollToNodeAction())
+            .performScrollToNode(androidx.compose.ui.test.hasText("D. 재무정보의 질적특성"))
+        rule.onNodeWithText("D. 재무정보의 질적특성").performClick()
         waitText("목적적합성")
         shot("04_subject_tree")
         rule.onNode(androidx.compose.ui.test.hasText("목적적합성") and androidx.compose.ui.test.hasClickAction()).performScrollTo().performClick()

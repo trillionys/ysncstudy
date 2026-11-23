@@ -31,6 +31,11 @@ import com.cpaconceptlab.study.domain.model.MasteryLevel
 import com.cpaconceptlab.study.domain.model.QuizMode
 import com.cpaconceptlab.study.domain.model.QuizScope
 import com.cpaconceptlab.study.domain.model.ScopeType
+import com.cpaconceptlab.study.domain.model.QuestionKind
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.layout.positionInParent
+import kotlinx.coroutines.launch
 import com.cpaconceptlab.study.domain.model.StandardStatusResolver
 import com.cpaconceptlab.study.ui.DashboardState
 import com.cpaconceptlab.study.ui.components.EmptyState
@@ -64,8 +69,15 @@ fun ConceptScreen(
     val section = dash.content.sectionById[c.sectionId]
     val questions = dash.content.questionsByPrimary[conceptId].orEmpty()
     var memo by remember(conceptId) { mutableStateOf(cp?.memo.orEmpty()) }
+    val scroll = rememberScrollState()
+    val scopeLaunch = rememberCoroutineScope()
+    var explanationY by remember { mutableStateOf(0) }
+    val linkedQuestions = dash.content.questionsByLinked[conceptId].orEmpty()
+    val calcCount = linkedQuestions.count { it.questionType == "calculation" }
+    val linkedIds = linkedQuestions.map { it.id }.toSet()
+    val unresolvedWrong = dash.user.wrongNotes.count { !it.isResolved && it.questionId in linkedIds }
 
-    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
+    Column(Modifier.fillMaxSize().verticalScroll(scroll).padding(16.dp)) {
         Text("${chapter?.code}. ${chapter?.title} › ${section?.title}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         VSpace(4)
         // 1. 개념명(국문·영문)
@@ -83,13 +95,36 @@ fun ConceptScreen(
             StandardStatusResolver.resolve(c.effectiveFrom, c.effectiveTo, c.isHistorical, LocalDate.now()),
             c.requiresReview, c.standardReference, c.revisionNote,
         )
+        VSpace(4)
+        Text(
+            "검수 상태: " + verificationLabel(c.verificationStatus),
+            style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        VSpace(10)
+        // 학습 동작 버튼: 개념 공부 · 기본 문제 · 심화 문제 · 계산 연습 · 오답 복습
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            OutlinedButton(onClick = { onViewed(conceptId); scopeLaunch.launch { scroll.animateScrollTo(explanationY) } }) { Text("개념 공부") }
+            Button(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.CONCEPT, c.id)) }) { Text("기본 문제") }
+            OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.CONCEPT, c.id)) }) { Text("심화 문제") }
+            OutlinedButton(
+                onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.CONCEPT, c.id, kind = QuestionKind.CALC)) },
+                enabled = calcCount > 0,
+            ) { Text("계산 연습 $calcCount") }
+            OutlinedButton(
+                onClick = {
+                    val mode = if (dash.user.wrongNotes.any { !it.isResolved && it.questionId in linkedIds && it.mode == QuizMode.ADVANCED.name }) QuizMode.ADVANCED else QuizMode.BASIC
+                    onStartQuiz(mode, QuizScope(ScopeType.WRONG, c.id))
+                },
+                enabled = unresolvedWrong > 0,
+            ) { Text("오답 복습 $unresolvedWrong") }
+        }
         if (c.parentConceptId != null) {
             VSpace(4)
             TextButton(onClick = { onOpenConcept(c.parentConceptId) }) { Text("상위 개념: ${c.parentConceptId} ${dash.content.conceptById[c.parentConceptId]?.koreanName.orEmpty()}") }
         }
         VSpace(10)
 
-        SectionCard {
+        SectionCard(modifier = Modifier.onGloballyPositioned { explanationY = it.positionInParent().y.toInt() }) {
             InfoBlock("① 정확한 정의", c.definition, emphasize = true)
             InfoBlock("② 개념이 필요한 이유", c.whyItMatters)
             InfoBlock("③ 핵심 원리", c.detailedExplanation)
@@ -98,6 +133,11 @@ fun ConceptScreen(
             InfoBlock("⑥ 공식과 계산과정", c.formula ?: "해당 없음 — 계산이 필요한 개념이 아닙니다.")
             InfoBlock("⑦ CPA 출제 포인트", c.examTips)
             InfoBlock("⑧ 자주 틀리는 함정", c.commonMistakes)
+            c.recognitionRules?.let { InfoBlock("인식 요건", it) }
+            c.measurementRules?.let { InfoBlock("측정 기준", it) }
+            c.exceptions?.let { InfoBlock("예외", it) }
+            c.journalEntries?.let { InfoBlock("분개", it) }
+            if (c.sourceProblemIds.isNotEmpty()) InfoBlock("연결된 원본 문제", c.sourceProblemIds.joinToString(", "))
         }
         VSpace(12)
 
@@ -139,4 +179,12 @@ fun ConceptScreen(
         VSpace(24)
         HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
     }
+}
+
+/** 검수 상태 표시. 공식 기준서 원문과 대조하지 않은 콘텐츠는 '검증 완료'로 표시하지 않는다. */
+fun verificationLabel(status: String): String = when (status) {
+    "VERIFIED" -> "공식 자료 대조 완료"
+    "NEEDS_REVIEW" -> "검토 필요(교재 관행·개정 확인 대상 포함)"
+    "AUTHOR_REVIEWED" -> "작성자 검토 완료 · 기준서 원문 대조 전"
+    else -> status
 }

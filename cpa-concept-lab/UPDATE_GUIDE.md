@@ -23,6 +23,16 @@ python3 tools/build_content.py
 
 이 전체 과정은 Room 트랜잭션으로 실행됩니다. 중간에 실패하면 이전 상태가 그대로 유지됩니다.
 
+## 1.0.1 → 1.0.2 업데이트에서 일어나는 일
+
+1. 같은 applicationId(`com.cpaconceptlab.study`)·같은 공유 디버그 키로 서명되고 versionCode 가 2 → 3 으로 올라가므로 기존 앱 위에 설치된다(삭제 불필요).
+2. Room 이 `MIGRATION_2_3` 을 실행한다. 콘텐츠 테이블에 컬럼만 추가하고(chapters.partTitle, concepts 6개, questions 7개, 모두 기본값 지정) 새 콘텐츠 테이블 `problem_sources`, `scope_items` 를 만든다. **학습기록 테이블(question_attempts, question_progress, concept_progress, wrong_notes, study_days)은 건드리지 않는다.**
+3. 첫 실행 동기화에서 콘텐츠 버전 2 < 3 이므로 새 개념 177개·문항 527개를 추가한다. 기존 285개 개념·600개 문항은 revision 이 같아 건너뛴다(중복 없음). 새 개념에만 '미학습' 초기 상태를 만든다.
+4. 복습 간격: 이전 기본값(1,3,7,14,30)을 그대로 쓰던 사용자는 새 기본값(1,3,7,14,30,60)으로 올라가고, 직접 바꾼 간격은 유지된다.
+5. 검증: `DatabaseTest.migration2To3KeepsLearningRecordsAndAddsNewContent` 가 v2 스키마 DB 에 학습기록·오답·북마크·메모·복습일을 넣고 마이그레이션 + v3 동기화 후 모두 남아 있는지 확인한다.
+
+콘텐츠 버전(contentVersion, 현재 3)과 DB 스키마 버전(AppDatabase.VERSION, 현재 3)과 앱 버전(versionCode 3 / 1.0.2)은 서로 독립적으로 관리한다. 콘텐츠만 바뀌면 DB 스키마는 올리지 않는다.
+
 ## 데이터베이스 스키마를 바꿀 때
 - 학습기록 테이블(`question_attempts`, `question_progress`, `concept_progress`, `wrong_notes`, `study_days`)과 콘텐츠 테이블은 분리되어 있습니다. 학습기록 테이블에는 콘텐츠 외래키를 걸지 않았기 때문에, 콘텐츠를 수정해도 기록이 연쇄 삭제되지 않습니다.
 - 엔티티를 바꾸면 `AppDatabase.VERSION`을 올리고 **명시적 `Migration`을 추가**합니다(예: `MIGRATION_1_2`가 `concept_progress.memo` 컬럼을 추가). `fallbackToDestructiveMigration`은 사용하지 않습니다.

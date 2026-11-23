@@ -12,9 +12,27 @@ import com.cpaconceptlab.study.data.model.ExamScopeDto
 import com.cpaconceptlab.study.data.model.QuestionDto
 import com.cpaconceptlab.study.data.model.SectionDto
 import com.cpaconceptlab.study.data.model.SubjectDto
+import com.cpaconceptlab.study.data.local.ProblemSourceEntity
+import com.cpaconceptlab.study.data.local.ScopeItemEntity
+import com.cpaconceptlab.study.data.model.CalcSpecDto
+import com.cpaconceptlab.study.data.model.ContentJson
+import com.cpaconceptlab.study.data.model.ProblemSourceDto
+import com.cpaconceptlab.study.data.model.ScopeItemDto
+import com.cpaconceptlab.study.data.model.SlotDto
+import kotlinx.serialization.builtins.MapSerializer
+import kotlinx.serialization.builtins.serializer
+
+private val PARAMS_SER = MapSerializer(String.serializer(), Double.serializer())
+
+fun encodeParams(params: Map<String, Double>): String = ContentJson.encodeToString(PARAMS_SER, params)
+fun decodeParams(json: String?): Map<String, Double> =
+    if (json.isNullOrBlank()) emptyMap() else runCatching { ContentJson.decodeFromString(PARAMS_SER, json) }.getOrElse { emptyMap() }
+
+/** 문항 엔티티의 계산 명세(없으면 null) */
+fun QuestionEntity.calcSpec(): CalcSpecDto? = calcFormulaId?.let { CalcSpecDto(it, decodeParams(calcParams)) }
 
 fun SubjectDto.toEntity() = SubjectEntity(id, name, description, sortOrder, isActive)
-fun ChapterDto.toEntity() = ChapterEntity(id, code, subjectId, title, englishTitle, sortOrder)
+fun ChapterDto.toEntity() = ChapterEntity(id, code, subjectId, title, englishTitle, sortOrder, partTitle)
 fun SectionDto.toEntity() = SectionEntity(id, chapterId, title, sortOrder)
 fun ExamScopeDto.toEntity() = ExamScopeEntity(number, subjectId, title, conceptIds)
 
@@ -28,6 +46,8 @@ fun ConceptDto.toEntity(packVersion: Int) = ConceptEntity(
     isHistorical = isHistorical, requiresReview = requiresReview, revisionNote = revisionNote,
     originalExamYear = originalExamYear, reviewStatus = reviewStatus, isRequired = isRequired, isActive = isActive,
     sortOrder = sortOrder, revision = revision, contentVersion = contentVersion ?: packVersion,
+    recognitionRules = recognitionRules, measurementRules = measurementRules, exceptions = exceptions,
+    journalEntries = journalEntries, sourceProblemIds = sourceProblemIds, verificationStatus = verificationStatus,
 )
 
 fun QuestionDto.toEntity(packVersion: Int) = QuestionEntity(
@@ -41,6 +61,9 @@ fun QuestionDto.toEntity(packVersion: Int) = QuestionEntity(
     isHistorical = isHistorical, requiresReview = requiresReview, revisionNote = revisionNote,
     reviewStatus = reviewStatus, isActive = isActive, revision = revision, sortOrder = sortOrder,
     contentVersion = contentVersion ?: packVersion,
+    inputType = inputType, choices = choices, slotLabels = slots.map { it.label }, slotAnswers = slots.map { it.answer },
+    calcFormulaId = calcSpec?.formulaId, calcParams = calcSpec?.let { encodeParams(it.params) },
+    sourceProblemIds = sourceProblemIds,
 )
 
 fun ConceptEntity.toDto() = ConceptDto(
@@ -48,13 +71,22 @@ fun ConceptEntity.toDto() = ConceptDto(
     detailedExplanation, comparison, example, formula, examTips, commonMistakes, relatedConceptIds,
     prerequisiteConceptIds, examReferenceNumbers, standardReference, effectiveFrom, effectiveTo, isHistorical,
     requiresReview, revisionNote, originalExamYear, reviewStatus, isRequired, isActive, sortOrder, revision, contentVersion,
+    recognitionRules, measurementRules, exceptions, journalEntries, sourceProblemIds, verificationStatus,
 )
 
 fun QuestionEntity.toDto() = QuestionDto(
     id, primaryConceptId, conceptIds, subjectId, chapterId, questionType, questionText, blankAnswer, acceptedAnswers,
     unit, explanation, confusion, calculation, difficulty, examReferenceNumbers, relatedConceptIds, standardReference,
     effectiveFrom, effectiveTo, isHistorical, requiresReview, revisionNote, reviewStatus, isActive, revision, sortOrder,
-    contentVersion,
+    contentVersion, inputType, choices, slotLabels.zip(slotAnswers).map { (l, a) -> SlotDto(l, a) }, calcSpec(), sourceProblemIds,
+    if (inputType == "text") "BOTH" else "OPTIONS",
 )
+
+fun ProblemSourceDto.toEntity() = ProblemSourceEntity(
+    sourceId, sourceFile, sourcePage, originalNumber, topic, conceptIds, formula, solutionSteps, keyTrap,
+    linkedQuestionIds, readingConfidence, verificationStatus, reviewRequired, note,
+)
+
+fun ScopeItemDto.toEntity() = ScopeItemEntity(id, area, item, conceptId, covered, sortOrder)
 
 fun ExamScopeEntity.toDto() = ExamScopeDto(number, title, conceptIds, subjectId)

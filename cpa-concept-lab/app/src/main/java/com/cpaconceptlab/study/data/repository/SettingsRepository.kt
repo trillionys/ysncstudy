@@ -20,7 +20,7 @@ data class UserSettings(
     val themeMode: String = "SYSTEM",
     val dailyGoal: Int = 30,
     val sessionSize: Int = 10,
-    val reviewIntervals: String = "1,3,7,14,30",
+    val reviewIntervals: String = DEFAULT_INTERVALS,
     val lastScope: String = "ALL",
     val lastMode: String = "BASIC",
 ) {
@@ -46,7 +46,8 @@ class SettingsRepository(private val context: Context) {
             themeMode = p[Keys.THEME] ?: "SYSTEM",
             dailyGoal = p[Keys.GOAL] ?: 30,
             sessionSize = p[Keys.SESSION] ?: 10,
-            reviewIntervals = p[Keys.INTERVALS] ?: "1,3,7,14,30",
+            // v1.0.2: 기본 간격에 60일 단계를 추가. 이전 기본값을 그대로 쓰던 사용자만 새 기본값으로 올리고, 직접 바꾼 간격은 유지한다.
+            reviewIntervals = p[Keys.INTERVALS]?.takeIf { it != LEGACY_DEFAULT_INTERVALS } ?: DEFAULT_INTERVALS,
             lastScope = p[Keys.LAST_SCOPE] ?: "ALL",
             lastMode = p[Keys.LAST_MODE] ?: "BASIC",
         )
@@ -71,3 +72,6 @@ class SettingsRepository(private val context: Context) {
         }
     }
 }
+
+const val DEFAULT_INTERVALS = "1,3,7,14,30,60"
+const val LEGACY_DEFAULT_INTERVALS = "1,3,7,14,30"

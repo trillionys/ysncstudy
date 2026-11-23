@@ -11,6 +11,10 @@ import com.cpaconceptlab.study.domain.model.MasteryLevel
 import com.cpaconceptlab.study.domain.model.QuizMode
 import com.cpaconceptlab.study.domain.model.QuizScope
 import com.cpaconceptlab.study.domain.model.ScopeType
+import com.cpaconceptlab.study.domain.model.QuestionKind
+import com.cpaconceptlab.study.data.model.INPUT_CHOICE
+import com.cpaconceptlab.study.data.model.INPUT_SLOTS
+import com.cpaconceptlab.study.data.model.INPUT_TEXT
 import com.cpaconceptlab.study.domain.usecase.QuestionSelector
 import com.cpaconceptlab.study.domain.usecase.ReviewScheduler
 import com.cpaconceptlab.study.domain.usecase.StatsCalculator
@@ -33,6 +37,10 @@ data class QuizUiState(
     val questions: List<QuestionEntity> = emptyList(),
     val index: Int = 0,
     val input: String = "",
+    /** 4지선다에서 고른 보기 */
+    val selectedChoice: String? = null,
+    /** 슬롯형에서 칸별로 고른 보기 */
+    val slotPicks: List<String?> = emptyList(),
     val result: AnswerResult? = null,
     val correctCount: Int = 0,
     val answeredCount: Int = 0,
@@ -41,6 +49,14 @@ data class QuizUiState(
     val emptyReason: String? = null,
 ) {
     val current: QuestionEntity? get() = questions.getOrNull(index)
+    val accuracy: Double? get() = if (answeredCount == 0) null else correctCount.toDouble() / answeredCount
+    /** 기본 모드 세션을 80% 이상 맞히면 같은 범위의 심화 모드로 넘어가도록 제안한다. */
+    val suggestAdvanced: Boolean get() = finished && mode == QuizMode.BASIC && answeredCount >= 5 && (accuracy ?: 0.0) >= 0.8
+    val canSubmit: Boolean get() = when (current?.inputType) {
+        INPUT_CHOICE -> selectedChoice != null
+        INPUT_SLOTS -> slotPicks.size == current?.slotLabels?.size && slotPicks.none { it == null }
+        else -> input.isNotBlank()
+    }
 }
 
 class QuizViewModel(
@@ -88,13 +104,33 @@ class QuizViewModel(
 
     fun onInput(v: String) = _state.update { if (it.result == null) it.copy(input = v) else it }
 
+    fun onChoice(v: String) = _state.update { if (it.result == null) it.copy(selectedChoice = v) else it }
+
+    fun onSlot(index: Int, v: String) = _state.update { st ->
+        if (st.result != null) return@update st
+        val size = st.current?.slotLabels?.size ?: 0
+        val picks = MutableList(size) { st.slotPicks.getOrNull(it) }
+        if (index in picks.indices) picks[index] = v
+        st.copy(slotPicks = picks)
+    }
+
     fun submit(skip: Boolean = false) {
         val s = _state.value
         val q = s.current ?: return
         if (s.result != null) return
-        val answer = if (skip) "" else s.input.trim()
-        if (!skip && answer.isEmpty()) return
-        val graded = AnswerGrader.grade(answer, q.blankAnswer, q.acceptedAnswers, q.unit)
+        if (!skip && !s.canSubmit) return
+        val answer = when {
+            skip -> ""
+            q.inputType == INPUT_CHOICE -> s.selectedChoice.orEmpty()
+            q.inputType == INPUT_SLOTS -> AnswerGrader.encodeSlots(q.slotLabels, s.slotPicks)
+            else -> s.input.trim()
+        }
+        val graded = when {
+            skip -> AnswerGrader.Result(false, null)
+            q.inputType == INPUT_CHOICE -> AnswerGrader.gradeChoice(s.selectedChoice, q.blankAnswer)
+            q.inputType == INPUT_SLOTS -> AnswerGrader.gradeSlots(s.slotPicks, q.slotAnswers)
+            else -> AnswerGrader.grade(answer, q.blankAnswer, q.acceptedAnswers, q.unit)
+        }
         val res = AnswerResult(graded.isCorrect, if (skip) "(모름)" else answer, skip)
         val responseMs = System.currentTimeMillis() - questionShownAt
         _state.update {
@@ -123,7 +159,7 @@ class QuizViewModel(
     fun next() {
         _state.update {
             if (it.index + 1 >= it.questions.size) it.copy(finished = true)
-            else it.copy(index = it.index + 1, input = "", result = null)
+            else it.copy(index = it.index + 1, input = "", selectedChoice = null, slotPicks = emptyList(), result = null)
         }
         questionShownAt = System.currentTimeMillis()
     }
@@ -132,15 +168,21 @@ class QuizViewModel(
         ScopeType.WRONG -> "현재 모드에서 미해결 오답이 없습니다."
         ScopeType.DUE -> "오늘 복습할 문항이 없습니다."
         ScopeType.UNSTUDIED -> "모든 개념을 학습했습니다."
-        else -> "출제할 문항이 없습니다."
+        ScopeType.WEAK -> "현재 취약 개념이 없습니다. 문제를 더 풀면 정답률 60% 미만 개념이 여기에 모입니다."
+        else -> "선택한 범위·난이도·문항 형식에 해당하는 문항이 없습니다."
     }
 
     companion object {
-        /** 출제 범위별 후보 문항(활성 문항만) */
+        /** 출제 범위별 후보 문항(활성 문항만). 난이도·형식 필터를 함께 적용한다. */
         fun candidatesFor(scope: QuizScope, content: ContentSnapshot, user: UserSnapshot, now: Long): List<QuestionEntity> {
             val active = content.questions.filter { q -> content.conceptById[q.primaryConceptId]?.isActive == true }
-            return when (scope.type) {
-                ScopeType.ALL, ScopeType.WRONG, ScopeType.DUE, ScopeType.MOCK -> active
+            val scoped = when (scope.type) {
+                ScopeType.ALL, ScopeType.DUE, ScopeType.MOCK -> active
+                ScopeType.WRONG -> if (scope.id == null) active else active.filter { scope.id in it.conceptIds }
+                ScopeType.PART -> {
+                    val chapters = content.chapters.filter { it.partTitle == scope.id }.map { it.id }.toSet()
+                    active.filter { it.chapterId in chapters }
+                }
                 ScopeType.CHAPTER -> active.filter { it.chapterId == scope.id }
                 ScopeType.SECTION -> active.filter { content.conceptById[it.primaryConceptId]?.sectionId == scope.id }
                 ScopeType.CONCEPT -> active.filter { scope.id in it.conceptIds }
@@ -155,7 +197,40 @@ class QuizViewModel(
                         mastery[it.primaryConceptId] == MasteryLevel.NOT_STARTED || mastery[it.primaryConceptId] == MasteryLevel.STARTED
                     }
                 }
+                ScopeType.WEAK -> {
+                    val weak = weakConcepts(content, user)
+                    active.filter { it.primaryConceptId in weak }
+                }
+                ScopeType.RECENT -> {
+                    val latest = content.concepts.maxOfOrNull { it.contentVersion } ?: 0
+                    val recent = content.concepts.filter { it.contentVersion == latest }.map { it.id }.toSet()
+                    active.filter { it.primaryConceptId in recent }
+                }
             }
+            if (scope.type == ScopeType.QUESTION) return scoped
+            return scoped.filter { q ->
+                q.difficulty in scope.minLevel..scope.maxLevel && when (scope.kind) {
+                    QuestionKind.ALL -> true
+                    QuestionKind.BLANK -> q.inputType == INPUT_TEXT && q.questionType != "calculation"
+                    QuestionKind.CALC -> q.questionType == "calculation"
+                    QuestionKind.OPTIONS -> q.inputType != INPUT_TEXT
+                }
+            }
+        }
+
+        /** 취약 개념: 두 모드 합산 시도 3회 이상이면서 정답률 60% 미만이거나, 미해결 오답이 2개 이상인 개념 */
+        fun weakConcepts(content: ContentSnapshot, user: UserSnapshot): Set<String> {
+            val unresolved = user.wrongNotes.filter { !it.isResolved }
+                .mapNotNull { content.questionById[it.questionId]?.primaryConceptId }
+                .groupingBy { it }.eachCount()
+            return content.concepts.map { it.id }.filter { cid ->
+                val rows = content.questionsByPrimary[cid].orEmpty().flatMap { q ->
+                    QuizMode.entries.mapNotNull { m -> user.progressMap[q.id to m.name] }
+                }
+                val attempts = rows.sumOf { it.totalAttempts }
+                val correct = rows.sumOf { it.correctAttempts }
+                (attempts >= 3 && correct.toDouble() / attempts < 0.6) || (unresolved[cid] ?: 0) >= 2
+            }.toSet()
         }
     }
 }

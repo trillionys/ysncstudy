@@ -63,6 +63,8 @@ class ContentImporter(private val db: AppDatabase) {
                 if (p.chapters.isNotEmpty()) dao.upsertChapters(p.chapters.map { it.toEntity() })
                 if (p.sections.isNotEmpty()) dao.upsertSections(p.sections.map { it.toEntity() })
                 if (p.examScopes.isNotEmpty()) dao.upsertExamScopes(p.examScopes.map { it.toEntity() })
+                if (p.problemSources.isNotEmpty()) dao.upsertProblemSources(p.problemSources.map { it.toEntity() })
+                if (p.scopeItems.isNotEmpty()) dao.upsertScopeItems(p.scopeItems.map { it.toEntity() })
 
                 val conceptsToWrite = p.concepts.filter { c ->
                     val old = conceptRev[c.id]
