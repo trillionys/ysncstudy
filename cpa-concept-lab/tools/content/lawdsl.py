@@ -182,3 +182,10 @@ def verify_answers(questions):
         else:
             errors.append(f"[L1] {x['id']} 정답 '{x['blankAnswer']}' 이(가) 근거 조문({x['standardReference']}) 원문에 없음")
     return ok, interp, errors
+
+
+def lcq(cid, text, formula_id, params, exp, unit="원", lv=4, art=None, **kw):
+    """기업법 계산문항(정족수·배당가능이익 등). 정답은 calc.py 공식으로 계산하고 앱 FormulaEngine 이 독립 검산한다."""
+    qq = dsl.cq(cid, text, formula_id, params, exp, unit=unit, lv=lv, **kw)
+    qq["questionType"] = "number"
+    return _register(qq, art, False)

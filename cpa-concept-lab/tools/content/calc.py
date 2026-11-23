@@ -533,6 +533,60 @@ def bio_change(fv1, cts1, fv0, cts0):
     return v, f"평가손익 = 기말 순공정가치 {fmt(fv1 - cts1)} − 기초 순공정가치 {fmt(fv0 - cts0)} = {fmt(v)}"
 
 
+# ───────── 기업법(상법) 계산 ─────────
+import math
+
+
+@formula("qty")
+def res_ordinary_min(total, nonvote, present):
+    """보통결의 가결에 필요한 최소 찬성 의결권 수(제368조①, 제371조①): 출석 과반수 + 발행주식총수(의결권 있는)의 4분의 1 이상."""
+    base = total - nonvote
+    v = max(math.floor(present / 2) + 1, math.ceil(base / 4))
+    return v, (f"출석 의결권 {fmt(present)}의 과반수 = {fmt(math.floor(present / 2) + 1)}, "
+               f"(발행주식총수 {fmt(total)} − 의결권 없는 주식 {fmt(nonvote)}) × 1/4 = {fmt(math.ceil(base / 4))} → 둘 중 큰 수 {fmt(v)}")
+
+
+@formula("qty")
+def res_special_min(total, nonvote, present):
+    """특별결의 가결에 필요한 최소 찬성 의결권 수(제434조, 제371조①): 출석 3분의 2 이상 + 발행주식총수 3분의 1 이상."""
+    base = total - nonvote
+    a = math.ceil(present * 2 / 3)
+    b = math.ceil(base / 3)
+    v = max(a, b)
+    return v, (f"출석 의결권 {fmt(present)} × 2/3 = {fmt(a)}, (발행주식총수 {fmt(total)} − 의결권 없는 주식 {fmt(nonvote)}) × 1/3 = {fmt(b)} "
+               f"→ 둘 중 큰 수 {fmt(v)}")
+
+
+@formula()
+def div_capacity(na, cap, cres, lres, newres, unreal):
+    """배당가능이익(제462조①): 순자산 − 자본금 − 자본준비금·이익준비금 합계 − 당기 적립할 이익준비금 − 미실현이익."""
+    v = na - cap - cres - lres - newres - unreal
+    return v, (f"순자산 {fmt(na)} − 자본금 {fmt(cap)} − 자본준비금 {fmt(cres)} − 이익준비금 {fmt(lres)} − 적립할 이익준비금 {fmt(newres)} "
+               f"− 미실현이익 {fmt(unreal)} = {fmt(v)}")
+
+
+@formula()
+def legal_reserve_min(div, cap, lres):
+    """적립할 이익준비금 최소액(제458조): 이익배당액(금전)의 10분의 1, 다만 이익준비금이 자본금의 2분의 1에 이를 때까지."""
+    need = max(0, cap / 2 - lres)
+    v = r0(min(div / 10, need))
+    return v, f"Min(배당액 {fmt(div)} × 1/10 = {fmt(r0(div / 10))}, 자본금의 1/2 {fmt(r0(cap / 2))} − 기적립 이익준비금 {fmt(lres)} = {fmt(r0(need))}) = {fmt(v)}"
+
+
+@formula()
+def reserve_reducible(cres, lres, cap):
+    """준비금 감소 가능액(제461조의2): 자본준비금·이익준비금 총액이 자본금의 1.5배를 초과하는 금액."""
+    v = r0(max(0, cres + lres - cap * 1.5))
+    return v, f"(자본준비금 {fmt(cres)} + 이익준비금 {fmt(lres)}) − 자본금 {fmt(cap)} × 1.5 = {fmt(v)}"
+
+
+@formula()
+def stock_div_max(total_div):
+    """주식배당 한도(제462조의2①): 이익배당총액의 2분의 1."""
+    v = r0(total_div / 2)
+    return v, f"이익배당총액 {fmt(total_div)} × 1/2 = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

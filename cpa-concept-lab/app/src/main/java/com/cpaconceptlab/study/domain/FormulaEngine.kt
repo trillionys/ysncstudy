@@ -3,6 +3,8 @@ package com.cpaconceptlab.study.domain
 import java.math.BigDecimal
 import java.math.RoundingMode
 import java.util.Locale
+import kotlin.math.ceil
+import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
@@ -132,6 +134,19 @@ object FormulaEngine {
             val general = min((it["avgexp"] - specAvg) * it["grate"] / 100, it["glimit"])
             r0(spec + max(0.0, general))
         }
+        // ── 기업법(상법) ──
+        put("res_ordinary_min", Formula(Kind.QTY) {
+            val base = it["total"] - it["nonvote"]
+            max(floor(it["present"] / 2) + 1, ceil(base / 4))
+        })
+        put("res_special_min", Formula(Kind.QTY) {
+            val base = it["total"] - it["nonvote"]
+            max(ceil(it["present"] * 2 / 3), ceil(base / 3))
+        })
+        amount("div_capacity") { it["na"] - it["cap"] - it["cres"] - it["lres"] - it["newres"] - it["unreal"] }
+        amount("legal_reserve_min") { r0(min(it["div"] / 10, max(0.0, it["cap"] / 2 - it["lres"]))) }
+        amount("reserve_reducible") { r0(max(0.0, it["cres"] + it["lres"] - it["cap"] * 1.5)) }
+        amount("stock_div_max") { r0(it["total_div"] / 2) }
         // ── 농림어업 ──
         amount("bio_fvlcs") { it["fv"] - it["cts"] }
         amount("bio_change") { (it["fv1"] - it["cts1"]) - (it["fv0"] - it["cts0"]) }
