@@ -190,3 +190,16 @@ def lcq(cid, text, formula_id, params, exp, unit="원", lv=4, art=None, **kw):
     qq = dsl.cq(cid, text, formula_id, params, exp, unit=unit, lv=lv, **kw)
     qq["questionType"] = "number"
     return _register(qq, art, False)
+
+
+def reopen(chapter_id, law="상법"):
+    """이미 만든 대단원(chapter_id)에 이어서 중단원·개념을 추가한다(보강 파일용)."""
+    ch = next(c for c in dsl.CHAPTERS if c["id"] == chapter_id)
+    meta = LAWS[law]
+    _state["law"] = law
+    dsl._state["chapter"] = ch
+    dsl._state["section"] = None
+    dsl._state["defaults"] = dict(
+        std=f"{meta.get('full', law)} ({meta['version']}, {meta['promulgated']} 공포, {meta['effective']} 시행)",
+        eff=meta["effective"])
+    return ch

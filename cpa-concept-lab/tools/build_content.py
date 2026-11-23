@@ -31,6 +31,7 @@ from required_concepts import REQUIRED  # noqa: E402
 # v4: 2027 공인회계사 1차 기업법(CPA-LAW) 전 범위
 import lawdsl  # noqa: E402
 import law_a, law_b, law_ce, law_d1, law_d2, law_d3, law_d4, law_f, law_g, law_h, law_i, law_extra  # noqa: E402,F401
+import law_e2, law_e3  # noqa: E402,F401
 import law_coverage  # noqa: E402
 
 CONTENT_VERSION = 4
