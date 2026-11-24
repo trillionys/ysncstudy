@@ -110455,6 +110455,6772 @@
    "examArea": null,
    "mode": "BOTH",
    "contentVersion": 5
+  },
+  {
+   "id": "CM001-Q01",
+   "primaryConceptId": "CM001",
+   "conceptIds": [
+    "CM001"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "원가를 집계하려는 제품·부문·활동 등의 대상을 (______)이라 한다.",
+   "blankAnswer": "원가대상",
+   "acceptedAnswers": [
+    "원가대상"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Cost object.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2354,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM001-Q02",
+   "primaryConceptId": "CM001",
+   "conceptIds": [
+    "CM001"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "situation",
+   "questionText": "공장장 급여는 공장을 원가대상으로 하면 직접원가지만 개별 제품을 원가대상으로 하면 (______)원가이다.",
+   "blankAnswer": "간접",
+   "acceptedAnswers": [
+    "간접"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원가대상에 따라 분류가 달라진다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2355,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM002-Q01",
+   "primaryConceptId": "CM002",
+   "conceptIds": [
+    "CM002"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "조업도가 변해도 관련범위 내에서 총액이 일정한 원가를 (______)원가라 한다.",
+   "blankAnswer": "고정",
+   "acceptedAnswers": [
+    "고정"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Fixed cost.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2356,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM002-Q02",
+   "primaryConceptId": "CM002",
+   "conceptIds": [
+    "CM002"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "classification",
+   "questionText": "조업도가 증가할 때 원가의 변화를 연결하시오.",
+   "blankAnswer": "변동원가 총액 → 증가 / 고정원가 단위당 → 감소 / 변동원가 단위당 → 일정",
+   "acceptedAnswers": [
+    "변동원가 총액 → 증가 / 고정원가 단위당 → 감소 / 변동원가 단위당 → 일정"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "감소",
+    "일정",
+    "증가"
+   ],
+   "slots": [
+    {
+     "label": "변동원가 총액",
+     "answer": "증가"
+    },
+    {
+     "label": "고정원가 단위당",
+     "answer": "감소"
+    },
+    {
+     "label": "변동원가 단위당",
+     "answer": "일정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "변동원가는 총액 비례·단위당 일정, 고정원가는 총액 일정·단위당 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2357,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM003-Q01",
+   "primaryConceptId": "CM003",
+   "conceptIds": [
+    "CM003"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "판매비와 일반관리비처럼 재고자산을 거치지 않고 발생 즉시 비용으로 처리하는 원가를 (______)원가라 한다.",
+   "blankAnswer": "기간",
+   "acceptedAnswers": [
+    "기간"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Period cost.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2358,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM003-Q02",
+   "primaryConceptId": "CM003",
+   "conceptIds": [
+    "CM003"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "classification",
+   "questionText": "원가를 제품원가와 기간원가로 분류하시오.",
+   "blankAnswer": "공장 건물 감가상각비 → 제품원가 / 본사 광고선전비 → 기간원가 / 생산직 임금 → 제품원가",
+   "acceptedAnswers": [
+    "공장 건물 감가상각비 → 제품원가 / 본사 광고선전비 → 기간원가 / 생산직 임금 → 제품원가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기간원가",
+    "제품원가"
+   ],
+   "slots": [
+    {
+     "label": "공장 건물 감가상각비",
+     "answer": "제품원가"
+    },
+    {
+     "label": "본사 광고선전비",
+     "answer": "기간원가"
+    },
+    {
+     "label": "생산직 임금",
+     "answer": "제품원가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제조 관련 = 제품원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2359,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM004-Q01",
+   "primaryConceptId": "CM004",
+   "conceptIds": [
+    "CM004"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "다른 대안을 선택했다면 얻을 수 있었던 최대 이익을 (______)원가라 한다.",
+   "blankAnswer": "기회",
+   "acceptedAnswers": [
+    "기회"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Opportunity cost.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2360,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM004-Q02",
+   "primaryConceptId": "CM004",
+   "conceptIds": [
+    "CM004"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "classification",
+   "questionText": "의사결정 관련성을 분류하시오.",
+   "blankAnswer": "이미 지출한 설비 구입비 → 비관련원가 / 대안 선택 시 사라지는 감독자 급여 → 관련원가 / 포기한 임대수익 → 관련원가",
+   "acceptedAnswers": [
+    "이미 지출한 설비 구입비 → 비관련원가 / 대안 선택 시 사라지는 감독자 급여 → 관련원가 / 포기한 임대수익 → 관련원가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "관련원가",
+    "비관련원가"
+   ],
+   "slots": [
+    {
+     "label": "이미 지출한 설비 구입비",
+     "answer": "비관련원가"
+    },
+    {
+     "label": "대안 선택 시 사라지는 감독자 급여",
+     "answer": "관련원가"
+    },
+    {
+     "label": "포기한 임대수익",
+     "answer": "관련원가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "매몰원가는 비관련, 회피가능원가·기회원가는 관련.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2361,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM005-Q01",
+   "primaryConceptId": "CM005",
+   "conceptIds": [
+    "CM005"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "당기에 완성되어 제품으로 대체된 제조원가를 (______)라 한다.",
+   "blankAnswer": "당기제품제조원가",
+   "acceptedAnswers": [
+    "당기제품제조원가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기초재공품 + 당기총제조원가 − 기말재공품.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2362,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM005-Q02",
+   "primaryConceptId": "CM005",
+   "conceptIds": [
+    "CM005"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "calculation",
+   "questionText": "기초재공품 200,000원, 당기총제조원가 1,000,000원, 기말재공품 150,000원일 때 당기제품제조원가는 (______)원이다.",
+   "blankAnswer": "1,050,000",
+   "acceptedAnswers": [
+    "1,050,000",
+    "1,050,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cogs",
+    "params": {
+     "bi": 200000.0,
+     "purch": 1000000.0,
+     "ei": 150000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "재공품 계정 흐름: 기초 + 투입 − 기말.",
+   "confusion": null,
+   "calculation": "매출원가 = 기초 200,000 + 순매입 1,000,000 − 기말 150,000 = 1,050,000",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2363,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM010-Q01",
+   "primaryConceptId": "CM010",
+   "conceptIds": [
+    "CM010"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "실제 제조간접원가가 예정배부액보다 클 때를 (______)배부라 한다.",
+   "blankAnswer": "과소",
+   "acceptedAnswers": [
+    "과소"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Underapplied.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2364,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM010-Q02",
+   "primaryConceptId": "CM010",
+   "conceptIds": [
+    "CM010"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "예산 제조간접원가 1,200,000원, 예정 직접노동시간 4,000시간일 때 시간당 예정배부율은 (______)원이다.",
+   "blankAnswer": "300",
+   "acceptedAnswers": [
+    "300",
+    "300원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "poh_rate",
+    "params": {
+     "boh": 1200000.0,
+     "base": 4000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "예산 ÷ 예정 배부기준.",
+   "confusion": null,
+   "calculation": "예정배부율 = 예산 제조간접원가 1,200,000 ÷ 예정 배부기준 4,000 = 300.0",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2365,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM010-Q03",
+   "primaryConceptId": "CM010",
+   "conceptIds": [
+    "CM010"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "situation",
+   "questionText": "과소배부액을 매출원가조정법으로 처리하면 매출원가가 (______)한다.",
+   "blankAnswer": "증가",
+   "acceptedAnswers": [
+    "증가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "과소배부 → 원가를 덜 배부했으므로 추가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2366,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM011-Q01",
+   "primaryConceptId": "CM011",
+   "conceptIds": [
+    "CM011"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "보조부문 상호 간의 용역수수를 완전히 반영하는 배부방법을 (______)이라 한다.",
+   "blankAnswer": "상호배부법",
+   "acceptedAnswers": [
+    "상호배부법"
+   ],
+   "relatedConceptIds": [
+    "CM010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가장 정확.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2367,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM011-Q02",
+   "primaryConceptId": "CM011",
+   "conceptIds": [
+    "CM011"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "comparison",
+   "questionText": "보조부문원가 배부방법 중 배부 순서에 따라 결과가 달라지는 것은?",
+   "blankAnswer": "단계배부법",
+   "acceptedAnswers": [
+    "단계배부법"
+   ],
+   "relatedConceptIds": [
+    "CM010"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "단계배부법",
+    "직접배부법",
+    "상호배부법",
+    "어느 방법도 아니다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "부분적으로 보조부문 간 용역을 반영하므로 순서 의존.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2368,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM012-Q01",
+   "primaryConceptId": "CM012",
+   "conceptIds": [
+    "CM012"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "주문 단위로 작업원가표를 작성하여 원가를 집계하는 방법을 (______)원가계산이라 한다.",
+   "blankAnswer": "개별",
+   "acceptedAnswers": [
+    "개별"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Job-order costing.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2369,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM012-Q02",
+   "primaryConceptId": "CM012",
+   "conceptIds": [
+    "CM012"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "matching",
+   "questionText": "업종과 적합한 원가계산방법을 연결하시오.",
+   "blankAnswer": "선박 건조 → 개별원가계산 / 시멘트 연속생산 → 종합원가계산",
+   "acceptedAnswers": [
+    "선박 건조 → 개별원가계산 / 시멘트 연속생산 → 종합원가계산"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "개별원가계산",
+    "종합원가계산"
+   ],
+   "slots": [
+    {
+     "label": "선박 건조",
+     "answer": "개별원가계산"
+    },
+    {
+     "label": "시멘트 연속생산",
+     "answer": "종합원가계산"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주문생산 vs 연속대량생산.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2370,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM013-Q01",
+   "primaryConceptId": "CM013",
+   "conceptIds": [
+    "CM013"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "종합원가계산에서 기초재공품을 당기 투입분과 구분하지 않고 합산하는 방법을 (______)이라 한다.",
+   "blankAnswer": "평균법",
+   "acceptedAnswers": [
+    "평균법",
+    "가중평균법"
+   ],
+   "relatedConceptIds": [
+    "CM012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가중평균법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2371,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM013-Q02",
+   "primaryConceptId": "CM013",
+   "conceptIds": [
+    "CM013"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "완성품 900개, 기말재공품 200개(가공원가 완성도 40%)일 때 평균법 가공원가 완성품환산량은 (______)개이다.",
+   "blankAnswer": "980",
+   "acceptedAnswers": [
+    "980",
+    "980개"
+   ],
+   "relatedConceptIds": [
+    "CM012"
+   ],
+   "unit": "개",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eu_wavg",
+    "params": {
+     "done": 900.0,
+     "end": 200.0,
+     "pct": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "완성품 + 기말 × 완성도.",
+   "confusion": null,
+   "calculation": "평균법 완성품환산량 = 완성품 900 + 기말재공품 200 × 40% = 980",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2372,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM013-Q03",
+   "primaryConceptId": "CM013",
+   "conceptIds": [
+    "CM013"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "완성품 1,000개, 기초재공품 300개(완성도 60%), 기말재공품 200개(완성도 50%)일 때 선입선출법 가공원가 완성품환산량은 (______)개이다.",
+   "blankAnswer": "920",
+   "acceptedAnswers": [
+    "920",
+    "920개"
+   ],
+   "relatedConceptIds": [
+    "CM012"
+   ],
+   "unit": "개",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eu_fifo",
+    "params": {
+     "done": 1000.0,
+     "beg": 300.0,
+     "bpct": 60.0,
+     "end": 200.0,
+     "epct": 50.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "완성품 − 기초 × 기초완성도 + 기말 × 기말완성도.",
+   "confusion": null,
+   "calculation": "선입선출법 완성품환산량 = 완성품 1,000 − 기초재공품 300×60% + 기말재공품 200×50% = 920",
+   "difficulty": 5,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2373,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM014-Q01",
+   "primaryConceptId": "CM014",
+   "conceptIds": [
+    "CM014"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "효율적인 생산에서도 불가피하게 발생하는 공손을 (______)공손이라 하며 합격품 원가에 포함한다.",
+   "blankAnswer": "정상",
+   "acceptedAnswers": [
+    "정상"
+   ],
+   "relatedConceptIds": [
+    "CM013"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Normal spoilage.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2374,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM014-Q02",
+   "primaryConceptId": "CM014",
+   "conceptIds": [
+    "CM014"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "exception",
+   "questionText": "회피 가능한 비정상공손의 원가는 제품원가가 아닌 (______)비용으로 처리한다.",
+   "blankAnswer": "기간",
+   "acceptedAnswers": [
+    "기간"
+   ],
+   "relatedConceptIds": [
+    "CM013"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "당기 손실 처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2375,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM015-Q01",
+   "primaryConceptId": "CM015",
+   "conceptIds": [
+    "CM015"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "여러 결합제품이 개별적으로 식별되는 생산 시점을 (______)이라 한다.",
+   "blankAnswer": "분리점",
+   "acceptedAnswers": [
+    "분리점"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Split-off point.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2376,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM015-Q02",
+   "primaryConceptId": "CM015",
+   "conceptIds": [
+    "CM015"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "situation",
+   "questionText": "결합제품의 추가가공 여부를 결정할 때 분리점 이전에 발생한 결합원가는 (______)원가이다.",
+   "blankAnswer": "비관련",
+   "acceptedAnswers": [
+    "비관련"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "어느 대안에도 같이 발생.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2377,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM016-Q01",
+   "primaryConceptId": "CM016",
+   "conceptIds": [
+    "CM016"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "ABC에서 활동원가를 제품에 배부하는 기준을 (______)이라 한다.",
+   "blankAnswer": "원가동인",
+   "acceptedAnswers": [
+    "원가동인"
+   ],
+   "relatedConceptIds": [
+    "CM010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Cost driver.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2378,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM016-Q02",
+   "primaryConceptId": "CM016",
+   "conceptIds": [
+    "CM016"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "classification",
+   "questionText": "활동과 활동 계층을 연결하시오.",
+   "blankAnswer": "기계 작업준비 → 묶음수준활동 / 공장 경비 → 설비유지활동 / 제품 설계 변경 → 제품유지활동",
+   "acceptedAnswers": [
+    "기계 작업준비 → 묶음수준활동 / 공장 경비 → 설비유지활동 / 제품 설계 변경 → 제품유지활동"
+   ],
+   "relatedConceptIds": [
+    "CM010"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "묶음수준활동",
+    "설비유지활동",
+    "제품유지활동"
+   ],
+   "slots": [
+    {
+     "label": "기계 작업준비",
+     "answer": "묶음수준활동"
+    },
+    {
+     "label": "공장 경비",
+     "answer": "설비유지활동"
+    },
+    {
+     "label": "제품 설계 변경",
+     "answer": "제품유지활동"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "묶음(배치) 단위, 공장 전체, 제품 종류별.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2379,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM017-Q01",
+   "primaryConceptId": "CM017",
+   "conceptIds": [
+    "CM017"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "고정제조간접원가를 기간비용으로 처리하는 원가계산방법을 (______)원가계산이라 한다.",
+   "blankAnswer": "변동",
+   "acceptedAnswers": [
+    "변동",
+    "직접"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Variable(direct) costing.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2380,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM017-Q02",
+   "primaryConceptId": "CM017",
+   "conceptIds": [
+    "CM017"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "number",
+   "questionText": "재고가 100단위 증가하고 단위당 고정제조간접원가가 30원이면 전부원가계산 이익은 변동원가계산보다 (______)원 크다.",
+   "blankAnswer": "3,000",
+   "acceptedAnswers": [
+    "3,000",
+    "3000"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "100 × 30.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2381,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM018-Q01",
+   "primaryConceptId": "CM018",
+   "conceptIds": [
+    "CM018"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "실제 산출량에 허용된 표준투입량과 실제투입량의 차이에 표준가격을 곱한 차이를 (______)차이라 한다.",
+   "blankAnswer": "수량",
+   "acceptedAnswers": [
+    "수량",
+    "능률"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "능률차이(노무).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2382,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM018-Q02",
+   "primaryConceptId": "CM018",
+   "conceptIds": [
+    "CM018"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "재료 실제구입단가 12원, 표준단가 10원, 실제사용량 1,000kg일 때 재료가격차이는 (______)원이다(양수 = 불리).",
+   "blankAnswer": "2,000",
+   "acceptedAnswers": [
+    "2,000",
+    "2,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "price_var",
+    "params": {
+     "aq": 1000.0,
+     "ap": 12.0,
+     "sp": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(AP − SP) × AQ.",
+   "confusion": null,
+   "calculation": "가격(임률)차이 = (실제가격 12 − 표준가격 10) × 실제투입량 1,000 = 2,000 (양수 = 불리)",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2383,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM018-Q03",
+   "primaryConceptId": "CM018",
+   "conceptIds": [
+    "CM018"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "실제 직접노동시간 2,200시간, 실제 산출량에 허용된 표준시간 2,000시간, 표준임률 15,000원일 때 노무능률차이는 (______)원이다(양수 = 불리).",
+   "blankAnswer": "3,000,000",
+   "acceptedAnswers": [
+    "3,000,000",
+    "3,000,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "qty_var",
+    "params": {
+     "aq": 2200.0,
+     "sq": 2000.0,
+     "sp": 15000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(AQ − SQ) × SP.",
+   "confusion": null,
+   "calculation": "수량(능률)차이 = (실제투입량 2,200 − 표준투입량 2,000) × 표준가격 15,000 = 3,000,000 (양수 = 불리)",
+   "difficulty": 5,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2384,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM019-Q01",
+   "primaryConceptId": "CM019",
+   "conceptIds": [
+    "CM019"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "고저점법에서 최고점과 최저점은 원가가 아니라 (______)를 기준으로 선택한다.",
+   "blankAnswer": "조업도",
+   "acceptedAnswers": [
+    "조업도"
+   ],
+   "relatedConceptIds": [
+    "CM002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Activity level.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2385,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM019-Q02",
+   "primaryConceptId": "CM019",
+   "conceptIds": [
+    "CM019"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "조업도 1,000시간에 원가 50,000원, 600시간에 38,000원일 때 고저점법에 따른 시간당 변동원가는 (______)원이다.",
+   "blankAnswer": "30",
+   "acceptedAnswers": [
+    "30",
+    "30원"
+   ],
+   "relatedConceptIds": [
+    "CM002"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "high_low_vc",
+    "params": {
+     "c_hi": 50000.0,
+     "c_lo": 38000.0,
+     "x_hi": 1000.0,
+     "x_lo": 600.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원가 차이 ÷ 조업도 차이.",
+   "confusion": null,
+   "calculation": "단위당 변동원가 = (50,000 − 38,000) ÷ (1,000 − 600) = 30.0",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2386,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM020-Q01",
+   "primaryConceptId": "CM020",
+   "conceptIds": [
+    "CM020"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "매출액에서 변동원가를 뺀 금액을 (______)이라 한다.",
+   "blankAnswer": "공헌이익",
+   "acceptedAnswers": [
+    "공헌이익"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Contribution margin.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2387,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM020-Q02",
+   "primaryConceptId": "CM020",
+   "conceptIds": [
+    "CM020"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "고정원가 600,000원, 판매가격 500원, 단위당 변동원가 300원일 때 손익분기점 판매량은 (______)개이다.",
+   "blankAnswer": "3,000",
+   "acceptedAnswers": [
+    "3,000",
+    "3,000개"
+   ],
+   "relatedConceptIds": [],
+   "unit": "개",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "bep_units",
+    "params": {
+     "fc": 600000.0,
+     "p": 500.0,
+     "vc": 300.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "고정원가 ÷ 단위당 공헌이익.",
+   "confusion": null,
+   "calculation": "손익분기점 판매량 = 고정원가 600,000 ÷ 단위당 공헌이익(500 − 300) = 3,000",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2388,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM020-Q03",
+   "primaryConceptId": "CM020",
+   "conceptIds": [
+    "CM020"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "판매가격 800원, 단위당 변동원가 560원일 때 공헌이익률은 (______)%이다.",
+   "blankAnswer": "30",
+   "acceptedAnswers": [
+    "30",
+    "30%"
+   ],
+   "relatedConceptIds": [],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cm_ratio",
+    "params": {
+     "p": 800.0,
+     "vc": 560.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(P − VC) ÷ P.",
+   "confusion": null,
+   "calculation": "공헌이익률 = (800 − 560) ÷ 800 = 30.0%",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2389,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM021-Q01",
+   "primaryConceptId": "CM021",
+   "conceptIds": [
+    "CM021"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "예상 매출액이 손익분기점 매출액을 초과하는 금액을 (______)이라 한다.",
+   "blankAnswer": "안전한계",
+   "acceptedAnswers": [
+    "안전한계"
+   ],
+   "relatedConceptIds": [
+    "CM020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Margin of safety.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2390,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM021-Q02",
+   "primaryConceptId": "CM021",
+   "conceptIds": [
+    "CM021"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "고정원가 600,000원, 목표이익 200,000원, 판매가격 500원, 단위당 변동원가 300원일 때 목표이익 달성 판매량은 (______)개이다.",
+   "blankAnswer": "4,000",
+   "acceptedAnswers": [
+    "4,000",
+    "4,000개"
+   ],
+   "relatedConceptIds": [
+    "CM020"
+   ],
+   "unit": "개",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "target_units",
+    "params": {
+     "fc": 600000.0,
+     "ti": 200000.0,
+     "p": 500.0,
+     "vc": 300.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(고정원가 + 목표이익) ÷ 단위당 공헌이익.",
+   "confusion": null,
+   "calculation": "목표판매량 = (고정원가 600,000 + 목표이익 200,000) ÷ 단위당 공헌이익 200 = 4,000",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2391,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM022-Q01",
+   "primaryConceptId": "CM022",
+   "conceptIds": [
+    "CM022"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "고정적인 제조·판매 원가 구조 때문에 매출액 변화율보다 이익(EBIT) 변화율이 커지는 효과를 (______)레버리지라 한다.",
+   "blankAnswer": "영업",
+   "acceptedAnswers": [
+    "영업"
+   ],
+   "relatedConceptIds": [
+    "CM021"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Operating leverage.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2392,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM022-Q02",
+   "primaryConceptId": "CM022",
+   "conceptIds": [
+    "CM022"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "공헌이익 500,000원, 영업이익 125,000원일 때 영업레버리지도는 (______)이다.",
+   "blankAnswer": "4",
+   "acceptedAnswers": [
+    "4"
+   ],
+   "relatedConceptIds": [
+    "CM021"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "dol",
+    "params": {
+     "cm": 500000.0,
+     "oi": 125000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공헌이익 ÷ 영업이익.",
+   "confusion": null,
+   "calculation": "영업레버리지도 = 공헌이익 500,000 ÷ 영업이익 125,000 = 4.0",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2393,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM023-Q01",
+   "primaryConceptId": "CM023",
+   "conceptIds": [
+    "CM023"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "복수제품 CVP 분석은 제품 간 판매 비율인 (______)이 일정하다고 가정한다.",
+   "blankAnswer": "매출배합",
+   "acceptedAnswers": [
+    "매출배합"
+   ],
+   "relatedConceptIds": [
+    "CM020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Sales mix.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2394,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM023-Q02",
+   "primaryConceptId": "CM023",
+   "conceptIds": [
+    "CM023"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "situation",
+   "questionText": "공헌이익률이 높은 제품의 매출 비중이 커지면 손익분기점 매출액은 (______)한다.",
+   "blankAnswer": "감소",
+   "acceptedAnswers": [
+    "감소",
+    "낮아진다"
+   ],
+   "relatedConceptIds": [
+    "CM020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가중평균 공헌이익률 상승.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2395,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM024-Q01",
+   "primaryConceptId": "CM024",
+   "conceptIds": [
+    "CM024"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "유휴생산능력이 있을 때 특별주문 수락의 기회원가는 (______)이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "없음",
+    "영"
+   ],
+   "relatedConceptIds": [
+    "CM004"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "포기하는 정규판매가 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2396,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM024-Q02",
+   "primaryConceptId": "CM024",
+   "conceptIds": [
+    "CM024"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "situation",
+   "questionText": "부품을 외부에서 구입해도 계속 발생하는 고정원가는 자가제조·외부구입 결정에서 (______)원가이다.",
+   "blankAnswer": "비관련",
+   "acceptedAnswers": [
+    "비관련"
+   ],
+   "relatedConceptIds": [
+    "CM004"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회피불능원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2397,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM025-Q01",
+   "primaryConceptId": "CM025",
+   "conceptIds": [
+    "CM025"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "제약자원이 있을 때는 제약자원 (______)당 공헌이익이 큰 제품부터 생산한다.",
+   "blankAnswer": "단위",
+   "acceptedAnswers": [
+    "단위"
+   ],
+   "relatedConceptIds": [
+    "CM024"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "희소자원 효율.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2398,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM025-Q02",
+   "primaryConceptId": "CM025",
+   "conceptIds": [
+    "CM025"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "situation",
+   "questionText": "제품 A(단위당 공헌이익 60, 기계 3시간)와 B(40, 1시간)가 있고 기계시간이 제약자원일 때 우선 생산할 제품은?",
+   "blankAnswer": "B",
+   "acceptedAnswers": [
+    "B"
+   ],
+   "relatedConceptIds": [
+    "CM024"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "B",
+    "A",
+    "A와 B를 같은 수량",
+    "판단할 수 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기계시간당 공헌이익 A 20, B 40.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2399,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM030-Q01",
+   "primaryConceptId": "CM030",
+   "conceptIds": [
+    "CM030"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "실제 조업도 수준에 맞추어 조정한 예산을 (______)예산이라 한다.",
+   "blankAnswer": "변동",
+   "acceptedAnswers": [
+    "변동"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Flexible budget.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2400,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM030-Q02",
+   "primaryConceptId": "CM030",
+   "conceptIds": [
+    "CM030"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "order",
+   "questionText": "종합예산 편성 순서를 배열하시오.",
+   "blankAnswer": "1단계 → 판매예산 / 2단계 → 생산예산 / 3단계 → 제조원가예산 / 4단계 → 현금예산",
+   "acceptedAnswers": [
+    "1단계 → 판매예산 / 2단계 → 생산예산 / 3단계 → 제조원가예산 / 4단계 → 현금예산"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "생산예산",
+    "제조원가예산",
+    "판매예산",
+    "현금예산"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "판매예산"
+    },
+    {
+     "label": "2단계",
+     "answer": "생산예산"
+    },
+    {
+     "label": "3단계",
+     "answer": "제조원가예산"
+    },
+    {
+     "label": "4단계",
+     "answer": "현금예산"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판매에서 출발해 현금으로.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2401,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM030-Q03",
+   "primaryConceptId": "CM030",
+   "conceptIds": [
+    "CM030"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "number",
+   "questionText": "예산 판매량 1,000개, 기말제품 목표 200개, 기초제품 100개일 때 예산 생산량은 (______)개이다.",
+   "blankAnswer": "1,100",
+   "acceptedAnswers": [
+    "1,100",
+    "1100"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판매 + 기말 − 기초.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2402,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM031-Q01",
+   "primaryConceptId": "CM031",
+   "conceptIds": [
+    "CM031"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "원가·수익과 함께 사용하는 자산(자본)의 규모에까지 책임을 지는 책임중심점을 (______)중심점이라 한다.",
+   "blankAnswer": "투자",
+   "acceptedAnswers": [
+    "투자"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Investment center.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2403,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM031-Q02",
+   "primaryConceptId": "CM031",
+   "conceptIds": [
+    "CM031"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "영업이익 300,000원, 투자액 2,000,000원일 때 ROI는 (______)%이다.",
+   "blankAnswer": "15",
+   "acceptedAnswers": [
+    "15",
+    "15%"
+   ],
+   "relatedConceptIds": [],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "roi",
+    "params": {
+     "oi": 300000.0,
+     "ia": 2000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "영업이익 ÷ 투자액.",
+   "confusion": null,
+   "calculation": "ROI = 영업이익 300,000 ÷ 투자액 2,000,000 = 15.0%",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2404,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM031-Q03",
+   "primaryConceptId": "CM031",
+   "conceptIds": [
+    "CM031"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "영업이익 300,000원, 투자액 2,000,000원, 최저필수수익률 12%일 때 잔여이익은 (______)원이다.",
+   "blankAnswer": "60,000",
+   "acceptedAnswers": [
+    "60,000",
+    "60,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ri",
+    "params": {
+     "oi": 300000.0,
+     "ia": 2000000.0,
+     "rr": 12.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "영업이익 − 투자액 × 최저필수수익률.",
+   "confusion": null,
+   "calculation": "RI = 영업이익 300,000 − 투자액 2,000,000 × 최저필수수익률 12% = 60,000",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2405,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM032-Q01",
+   "primaryConceptId": "CM032",
+   "conceptIds": [
+    "CM032"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "공급사업부에 유휴생산능력이 있으면 최소대체가격은 단위당 (______)원가와 같다.",
+   "blankAnswer": "변동",
+   "acceptedAnswers": [
+    "변동",
+    "증분"
+   ],
+   "relatedConceptIds": [
+    "CM031"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기회원가 0.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2406,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM032-Q02",
+   "primaryConceptId": "CM032",
+   "conceptIds": [
+    "CM032"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "number",
+   "questionText": "공급사업부가 완전가동 중이고 단위당 변동원가 50원, 외부판매가 80원이면 최소대체가격에 포함되는 단위당 기회원가는 (______)원이다.",
+   "blankAnswer": "30",
+   "acceptedAnswers": [
+    "30"
+   ],
+   "relatedConceptIds": [
+    "CM031"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "외부판매 포기분의 공헌이익 80 − 50.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2407,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM033-Q01",
+   "primaryConceptId": "CM033",
+   "conceptIds": [
+    "CM033"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "시장에서 받아들여질 가격에서 원하는 이익을 뺀 허용원가를 (______)원가라 한다.",
+   "blankAnswer": "목표",
+   "acceptedAnswers": [
+    "목표"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Target cost.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2408,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM033-Q02",
+   "primaryConceptId": "CM033",
+   "conceptIds": [
+    "CM033"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "classification",
+   "questionText": "품질원가를 분류하시오.",
+   "blankAnswer": "품질교육 → 예방원가 / 원재료 수입검사 → 평가원가 / 판매 후 보증수리 → 외부실패원가",
+   "acceptedAnswers": [
+    "품질교육 → 예방원가 / 원재료 수입검사 → 평가원가 / 판매 후 보증수리 → 외부실패원가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "예방원가",
+    "외부실패원가",
+    "평가원가"
+   ],
+   "slots": [
+    {
+     "label": "품질교육",
+     "answer": "예방원가"
+    },
+    {
+     "label": "원재료 수입검사",
+     "answer": "평가원가"
+    },
+    {
+     "label": "판매 후 보증수리",
+     "answer": "외부실패원가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예방·평가·내부실패·외부실패.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2409,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM034-Q01",
+   "primaryConceptId": "CM034",
+   "conceptIds": [
+    "CM034"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "EOQ에서는 연간 주문비용과 연간 (______)비용이 같아진다.",
+   "blankAnswer": "재고유지",
+   "acceptedAnswers": [
+    "재고유지",
+    "유지"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "총비용 최소점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2410,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM034-Q02",
+   "primaryConceptId": "CM034",
+   "conceptIds": [
+    "CM034"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "연간 수요 7,200개, 1회 주문비 100원, 단위당 연간 유지비 16원일 때 경제적 주문량은 (______)개이다.",
+   "blankAnswer": "300",
+   "acceptedAnswers": [
+    "300",
+    "300개"
+   ],
+   "relatedConceptIds": [],
+   "unit": "개",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eoq",
+    "params": {
+     "d": 7200.0,
+     "s": 100.0,
+     "h": 16.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "√(2DS ÷ H).",
+   "confusion": null,
+   "calculation": "EOQ = √(2 × 연간수요 7,200 × 1회 주문비 100 ÷ 단위당 유지비 16) = 300",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2411,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM035-Q01",
+   "primaryConceptId": "CM035",
+   "conceptIds": [
+    "CM035"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "number",
+   "questionText": "완전정보 하 기대이익이 150, 정보가 없을 때 최적 대안의 기대이익이 110이면 완전정보의 기대가치는 (______)이다.",
+   "blankAnswer": "40",
+   "acceptedAnswers": [
+    "40"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "150 − 110.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2412,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM035-Q02",
+   "primaryConceptId": "CM035",
+   "conceptIds": [
+    "CM035"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "완전정보를 얻기 위해 지불할 수 있는 최대 금액을 완전정보의 (______)라 한다.",
+   "blankAnswer": "기대가치",
+   "acceptedAnswers": [
+    "기대가치",
+    "EVPI"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "EVPI.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2413,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC001-Q01",
+   "primaryConceptId": "EC001",
+   "conceptIds": [
+    "EC001"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "재화 자체의 가격 변화로 수요곡선 위에서 움직이는 것을 (______)의 변화라 한다.",
+   "blankAnswer": "수요량",
+   "acceptedAnswers": [
+    "수요량"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "곡선 이동은 '수요'의 변화.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2414,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC001-Q02",
+   "primaryConceptId": "EC001",
+   "conceptIds": [
+    "EC001"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "정상재의 수요곡선을 오른쪽으로 이동시키는 요인은?",
+   "blankAnswer": "소비자 소득 증가",
+   "acceptedAnswers": [
+    "소비자 소득 증가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "소비자 소득 증가",
+    "해당 재화 가격 하락",
+    "생산비용 하락",
+    "공급자 수 증가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격 하락은 곡선 상 이동, 생산비·공급자는 공급곡선 요인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2415,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC002-Q01",
+   "primaryConceptId": "EC002",
+   "conceptIds": [
+    "EC002"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "수요의 가격탄력성이 1보다 큰 재화의 가격을 인상하면 판매자의 총수입은 (______)한다.",
+   "blankAnswer": "감소",
+   "acceptedAnswers": [
+    "감소"
+   ],
+   "relatedConceptIds": [
+    "EC001"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "탄력적 → 수량 감소율 > 가격 상승률.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2416,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC002-Q02",
+   "primaryConceptId": "EC002",
+   "conceptIds": [
+    "EC002"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "calculation",
+   "questionText": "가격이 10원에서 12원으로 오르자 수요량이 100개에서 80개로 줄었다. 중간점 방식 수요의 가격탄력성은 (______)이다.",
+   "blankAnswer": "1.22",
+   "acceptedAnswers": [
+    "1.22"
+   ],
+   "relatedConceptIds": [
+    "EC001"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "elast_mid",
+    "params": {
+     "q1": 100.0,
+     "q2": 80.0,
+     "p1": 10.0,
+     "p2": 12.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "|(ΔQ/평균Q) ÷ (ΔP/평균P)|.",
+   "confusion": null,
+   "calculation": "중간점 가격탄력성 = |(ΔQ/평균Q) ÷ (ΔP/평균P)| = 1.22",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2417,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC002-Q03",
+   "primaryConceptId": "EC002",
+   "conceptIds": [
+    "EC002"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "소득이 증가할 때 수요가 감소하는 재화를 (______)재라 한다.",
+   "blankAnswer": "열등",
+   "acceptedAnswers": [
+    "열등"
+   ],
+   "relatedConceptIds": [
+    "EC001"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "소득탄력성 < 0.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2418,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC003-Q01",
+   "primaryConceptId": "EC003",
+   "conceptIds": [
+    "EC003"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "조세 부과로 사라지는 총잉여의 감소분을 (______)손실이라 한다.",
+   "blankAnswer": "자중",
+   "acceptedAnswers": [
+    "자중",
+    "사중"
+   ],
+   "relatedConceptIds": [
+    "EC002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Deadweight loss.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2419,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC003-Q02",
+   "primaryConceptId": "EC003",
+   "conceptIds": [
+    "EC003"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "수요가 공급보다 비탄력적이면 조세의 실질 부담은 (______)가 더 많이 진다.",
+   "blankAnswer": "소비자",
+   "acceptedAnswers": [
+    "소비자"
+   ],
+   "relatedConceptIds": [
+    "EC002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비탄력적인 쪽이 더 부담.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2420,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC004-Q01",
+   "primaryConceptId": "EC004",
+   "conceptIds": [
+    "EC004"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "균형임금보다 높은 최저임금은 노동시장에 초과(______)을 발생시킨다.",
+   "blankAnswer": "공급",
+   "acceptedAnswers": [
+    "공급"
+   ],
+   "relatedConceptIds": [
+    "EC001"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실업.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2421,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC004-Q02",
+   "primaryConceptId": "EC004",
+   "conceptIds": [
+    "EC004"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "matching",
+   "questionText": "정책과 결과를 연결하시오.",
+   "blankAnswer": "구속력 있는 가격상한 → 초과수요 / 구속력 있는 가격하한 → 초과공급",
+   "acceptedAnswers": [
+    "구속력 있는 가격상한 → 초과수요 / 구속력 있는 가격하한 → 초과공급"
+   ],
+   "relatedConceptIds": [
+    "EC001"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "초과공급",
+    "초과수요"
+   ],
+   "slots": [
+    {
+     "label": "구속력 있는 가격상한",
+     "answer": "초과수요"
+    },
+    {
+     "label": "구속력 있는 가격하한",
+     "answer": "초과공급"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상한 → 부족, 하한 → 잉여.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2422,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC010-Q01",
+   "primaryConceptId": "EC010",
+   "conceptIds": [
+    "EC010"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "소비자 최적점에서는 한계대체율이 두 재화의 (______)와 같다.",
+   "blankAnswer": "가격비",
+   "acceptedAnswers": [
+    "가격비",
+    "상대가격"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MRS = Px/Py.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2423,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC010-Q02",
+   "primaryConceptId": "EC010",
+   "conceptIds": [
+    "EC010"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "MUx/Px가 MUy/Py보다 클 때 효용을 높이려면 X재 소비를 (______)해야 한다.",
+   "blankAnswer": "증가",
+   "acceptedAnswers": [
+    "증가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "1원당 한계효용 균등화.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2424,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC011-Q01",
+   "primaryConceptId": "EC011",
+   "conceptIds": [
+    "EC011"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "실질소득을 일정하게 유지할 때 상대가격 변화만으로 생기는 수요량 변화를 (______)효과라 한다.",
+   "blankAnswer": "대체",
+   "acceptedAnswers": [
+    "대체"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Substitution effect.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2425,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC011-Q02",
+   "primaryConceptId": "EC011",
+   "conceptIds": [
+    "EC011"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "열등재 중 소득효과가 대체효과보다 커서 가격과 수요량이 같은 방향으로 움직이는 재화를 (______)재라 한다.",
+   "blankAnswer": "기펜",
+   "acceptedAnswers": [
+    "기펜"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Giffen good.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2426,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC011-Q03",
+   "primaryConceptId": "EC011",
+   "conceptIds": [
+    "EC011"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "classification",
+   "questionText": "가격 하락 시 효과의 방향을 연결하시오.",
+   "blankAnswer": "정상재의 소득효과 → 수요량 증가 / 열등재의 소득효과 → 수요량 감소 / 대체효과 → 수요량 증가",
+   "acceptedAnswers": [
+    "정상재의 소득효과 → 수요량 증가 / 열등재의 소득효과 → 수요량 감소 / 대체효과 → 수요량 증가"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "수요량 감소",
+    "수요량 증가"
+   ],
+   "slots": [
+    {
+     "label": "정상재의 소득효과",
+     "answer": "수요량 증가"
+    },
+    {
+     "label": "열등재의 소득효과",
+     "answer": "수요량 감소"
+    },
+    {
+     "label": "대체효과",
+     "answer": "수요량 증가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대체효과는 항상 가격과 반대, 소득효과는 재화 성격에 따름.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2427,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC012-Q01",
+   "primaryConceptId": "EC012",
+   "conceptIds": [
+    "EC012"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "효용함수가 오목한 경제주체는 위험(______)자이다.",
+   "blankAnswer": "회피",
+   "acceptedAnswers": [
+    "회피"
+   ],
+   "relatedConceptIds": [
+    "FM036"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "한계효용 체감.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2428,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC012-Q02",
+   "primaryConceptId": "EC012",
+   "conceptIds": [
+    "EC012"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "자산의 기대값이 400만원이고 확실성등가가 360만원이면 위험프리미엄은 (______)만원이다.",
+   "blankAnswer": "40",
+   "acceptedAnswers": [
+    "40"
+   ],
+   "relatedConceptIds": [
+    "FM036"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "400 − 360.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2429,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC020-Q01",
+   "primaryConceptId": "EC020",
+   "conceptIds": [
+    "EC020"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "생산함수 Q = K^0.6L^0.6은 규모수익 (______)이다.",
+   "blankAnswer": "체증",
+   "acceptedAnswers": [
+    "체증"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지수 합 1.2 > 1.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2430,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC020-Q02",
+   "primaryConceptId": "EC020",
+   "conceptIds": [
+    "EC020"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "다른 요소를 고정하고 한 요소만 늘릴 때 추가 산출이 점점 줄어드는 현상을 한계생산 (______)의 법칙이라 한다.",
+   "blankAnswer": "체감",
+   "acceptedAnswers": [
+    "체감"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "단기 개념.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2431,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC021-Q01",
+   "primaryConceptId": "EC021",
+   "conceptIds": [
+    "EC021"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "단기에 가격이 평균가변비용의 최저점보다 낮으면 기업은 (______)한다.",
+   "blankAnswer": "생산을 중단",
+   "acceptedAnswers": [
+    "생산을 중단",
+    "조업을 중단",
+    "생산중단",
+    "조업중단"
+   ],
+   "relatedConceptIds": [
+    "EC020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조업중단점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2432,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC021-Q02",
+   "primaryConceptId": "EC021",
+   "conceptIds": [
+    "EC021"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "비용최소화 조건에서 한계기술대체율은 요소가격비 (______)와 같다.",
+   "blankAnswer": "w/r",
+   "acceptedAnswers": [
+    "w/r",
+    "임금/이자율",
+    "임금 대 임대료"
+   ],
+   "relatedConceptIds": [
+    "EC020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MRTS = w/r.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2433,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC030-Q01",
+   "primaryConceptId": "EC030",
+   "conceptIds": [
+    "EC030"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "완전경쟁시장의 장기균형에서 기업의 경제적 이윤은 (______)이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "영"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "진입·퇴출로 소멸.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2434,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC030-Q02",
+   "primaryConceptId": "EC030",
+   "conceptIds": [
+    "EC030"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "calculation",
+   "questionText": "시장수요 P = 100 − 2Q, 한계비용 20로 일정할 때 완전경쟁 시장 산출량은 (______)이다.",
+   "blankAnswer": "40",
+   "acceptedAnswers": [
+    "40"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "comp_q",
+    "params": {
+     "a": 100.0,
+     "b": 2.0,
+     "c": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "P = MC.",
+   "confusion": null,
+   "calculation": "완전경쟁 산출량: P = MC → 100 − 2Q = 20 → Q = 40.0",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2435,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC031-Q01",
+   "primaryConceptId": "EC031",
+   "conceptIds": [
+    "EC031"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "독점기업은 한계수입과 (______)이 같아지는 수량을 생산한다.",
+   "blankAnswer": "한계비용",
+   "acceptedAnswers": [
+    "한계비용",
+    "MC"
+   ],
+   "relatedConceptIds": [
+    "EC030"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MR = MC.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2436,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC031-Q02",
+   "primaryConceptId": "EC031",
+   "conceptIds": [
+    "EC031"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "calculation",
+   "questionText": "시장수요 P = 100 − 2Q, 한계비용 40로 일정한 독점기업의 이윤극대화 산출량은 (______)이다.",
+   "blankAnswer": "15",
+   "acceptedAnswers": [
+    "15"
+   ],
+   "relatedConceptIds": [
+    "EC030"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "monopoly_q",
+    "params": {
+     "a": 100.0,
+     "b": 2.0,
+     "c": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "MR = a − 2bQ = MC.",
+   "confusion": null,
+   "calculation": "독점 산출량: MR = 100 − 2×2Q = MC 40 → Q = 15.0",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2437,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC031-Q03",
+   "primaryConceptId": "EC031",
+   "conceptIds": [
+    "EC031"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "3급 가격차별을 하는 독점기업은 수요가 더 (______)인 시장에 더 낮은 가격을 매긴다.",
+   "blankAnswer": "탄력적",
+   "acceptedAnswers": [
+    "탄력적"
+   ],
+   "relatedConceptIds": [
+    "EC030"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "역탄력성 규칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2438,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC032-Q01",
+   "primaryConceptId": "EC032",
+   "conceptIds": [
+    "EC032"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "calculation",
+   "questionText": "시장수요 P = 120 − 1Q, 두 기업의 한계비용이 24로 같은 쿠르노 복점에서 기업 하나의 균형 산출량은 (______)이다.",
+   "blankAnswer": "32",
+   "acceptedAnswers": [
+    "32"
+   ],
+   "relatedConceptIds": [
+    "EC031",
+    "EC033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cournot_q",
+    "params": {
+     "a": 120.0,
+     "b": 1.0,
+     "c": 24.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "q = (a − c) ÷ 3b.",
+   "confusion": null,
+   "calculation": "쿠르노 복점 기업별 산출량 = (a − c) ÷ 3b = (120 − 24) ÷ 3 = 32.0",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2439,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC032-Q02",
+   "primaryConceptId": "EC032",
+   "conceptIds": [
+    "EC032"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "동질재를 생산하는 두 기업이 가격으로 경쟁하면 균형가격이 한계비용과 같아지는 현상을 (______) 역설이라 한다.",
+   "blankAnswer": "베르트랑",
+   "acceptedAnswers": [
+    "베르트랑"
+   ],
+   "relatedConceptIds": [
+    "EC031",
+    "EC033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Bertrand paradox.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2440,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC033-Q01",
+   "primaryConceptId": "EC033",
+   "conceptIds": [
+    "EC033"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "상대방 전략과 관계없이 항상 최선인 전략을 (______)전략이라 한다.",
+   "blankAnswer": "우월",
+   "acceptedAnswers": [
+    "우월"
+   ],
+   "relatedConceptIds": [
+    "EC032"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Dominant strategy.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2441,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC033-Q02",
+   "primaryConceptId": "EC033",
+   "conceptIds": [
+    "EC033"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "각 경기자가 우월전략을 선택한 결과가 모두에게 더 나쁜 결과가 되는 상황을 (______)의 딜레마라 한다.",
+   "blankAnswer": "죄수",
+   "acceptedAnswers": [
+    "죄수"
+   ],
+   "relatedConceptIds": [
+    "EC032"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Prisoner's dilemma.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2442,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC040-Q01",
+   "primaryConceptId": "EC040",
+   "conceptIds": [
+    "EC040"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "다른 사람의 효용을 감소시키지 않고는 어떤 사람의 효용도 증가시킬 수 없는 상태를 (______)이라 한다.",
+   "blankAnswer": "파레토효율",
+   "acceptedAnswers": [
+    "파레토효율",
+    "파레토최적"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Pareto efficiency.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2443,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC040-Q02",
+   "primaryConceptId": "EC040",
+   "conceptIds": [
+    "EC040"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "완전경쟁시장의 균형이 파레토효율적이라는 명제를 후생경제학 제(______)정리라 한다.",
+   "blankAnswer": "1",
+   "acceptedAnswers": [
+    "1",
+    "일",
+    "첫번째"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1정리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2444,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC040-Q03",
+   "primaryConceptId": "EC040",
+   "conceptIds": [
+    "EC040"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "두 소비자의 한계대체율이 서로 다를 때의 배분에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "교환을 통해 두 사람 모두 효용을 높일 수 있다",
+   "acceptedAnswers": [
+    "교환을 통해 두 사람 모두 효용을 높일 수 있다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "교환을 통해 두 사람 모두 효용을 높일 수 있다",
+    "이미 파레토효율적이다",
+    "계약곡선 위에 있다",
+    "공평한 배분이다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "교환의 효율 조건은 MRS 일치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2445,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC041-Q01",
+   "primaryConceptId": "EC041",
+   "conceptIds": [
+    "EC041"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "부정적 외부효과를 교정하기 위해 외부비용만큼 부과하는 세금을 (______)세라 한다.",
+   "blankAnswer": "피구",
+   "acceptedAnswers": [
+    "피구"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Pigouvian tax.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2446,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC041-Q02",
+   "primaryConceptId": "EC041",
+   "conceptIds": [
+    "EC041"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "classification",
+   "questionText": "재화와 분류를 연결하시오.",
+   "blankAnswer": "국방 → 공공재 / 공해상의 어족자원 → 공유자원 / 유료 케이블TV → 클럽재",
+   "acceptedAnswers": [
+    "국방 → 공공재 / 공해상의 어족자원 → 공유자원 / 유료 케이블TV → 클럽재"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "공공재",
+    "공유자원",
+    "클럽재"
+   ],
+   "slots": [
+    {
+     "label": "국방",
+     "answer": "공공재"
+    },
+    {
+     "label": "공해상의 어족자원",
+     "answer": "공유자원"
+    },
+    {
+     "label": "유료 케이블TV",
+     "answer": "클럽재"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "경합성·배제성 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2447,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC042-Q01",
+   "primaryConceptId": "EC042",
+   "conceptIds": [
+    "EC042"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "중고차 시장에서 품질 정보가 비대칭이어서 저품질 차량만 거래되는 현상을 (______)이라 한다.",
+   "blankAnswer": "역선택",
+   "acceptedAnswers": [
+    "역선택"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "레몬 문제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2448,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC042-Q02",
+   "primaryConceptId": "EC042",
+   "conceptIds": [
+    "EC042"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "classification",
+   "questionText": "사례를 분류하시오.",
+   "blankAnswer": "보험 가입 후 안전운전을 소홀히 함 → 도덕적 해이 / 건강이 나쁜 사람이 보험에 더 많이 가입 → 역선택",
+   "acceptedAnswers": [
+    "보험 가입 후 안전운전을 소홀히 함 → 도덕적 해이 / 건강이 나쁜 사람이 보험에 더 많이 가입 → 역선택"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "도덕적 해이",
+    "역선택"
+   ],
+   "slots": [
+    {
+     "label": "보험 가입 후 안전운전을 소홀히 함",
+     "answer": "도덕적 해이"
+    },
+    {
+     "label": "건강이 나쁜 사람이 보험에 더 많이 가입",
+     "answer": "역선택"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약 후 행동 vs 계약 전 특성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2449,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC050-Q01",
+   "primaryConceptId": "EC050",
+   "conceptIds": [
+    "EC050"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "GDP는 일정 기간 국내에서 생산된 (______) 재화와 서비스의 시장가치이다.",
+   "blankAnswer": "최종",
+   "acceptedAnswers": [
+    "최종"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "중간재 제외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2450,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC050-Q02",
+   "primaryConceptId": "EC050",
+   "conceptIds": [
+    "EC050"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "명목GDP 2,200조원, 실질GDP 2,000조원일 때 GDP 디플레이터는 (______)이다.",
+   "blankAnswer": "110",
+   "acceptedAnswers": [
+    "110"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "deflator",
+    "params": {
+     "ngdp": 2200.0,
+     "rgdp": 2000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "명목 ÷ 실질 × 100.",
+   "confusion": null,
+   "calculation": "GDP 디플레이터 = 명목GDP 2,200 ÷ 실질GDP 2,000 × 100 = 110.0",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2451,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC050-Q03",
+   "primaryConceptId": "EC050",
+   "conceptIds": [
+    "EC050"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "classification",
+   "questionText": "올해 GDP에 포함되는 것은?",
+   "blankAnswer": "올해 생산된 신차의 판매",
+   "acceptedAnswers": [
+    "올해 생산된 신차의 판매"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "올해 생산된 신차의 판매",
+    "작년에 생산된 중고차 거래",
+    "정부의 실업수당 지급",
+    "주식 매매 차익"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "중고품·이전지출·금융거래는 제외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2452,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC051-Q01",
+   "primaryConceptId": "EC051",
+   "conceptIds": [
+    "EC051"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "구직활동을 포기한 구직단념자가 늘어나면 측정된 실업률은 (______)할 수 있다.",
+   "blankAnswer": "하락",
+   "acceptedAnswers": [
+    "하락",
+    "감소"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비경제활동인구로 이동.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2453,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC051-Q02",
+   "primaryConceptId": "EC051",
+   "conceptIds": [
+    "EC051"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "취업자와 실업자를 합한 인구를 (______)인구라 한다.",
+   "blankAnswer": "경제활동",
+   "acceptedAnswers": [
+    "경제활동"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실업률의 분모.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2454,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC051-Q03",
+   "primaryConceptId": "EC051",
+   "conceptIds": [
+    "EC051"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "실업자 60만 명, 취업자 1,140만 명일 때 실업률은 (______)%이다.",
+   "blankAnswer": "5",
+   "acceptedAnswers": [
+    "5",
+    "5%"
+   ],
+   "relatedConceptIds": [],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "unemp",
+    "params": {
+     "u": 60.0,
+     "e": 1140.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "실업자 ÷ 경제활동인구.",
+   "confusion": null,
+   "calculation": "실업률 = 실업자 60 ÷ 경제활동인구 1,200 = 5.0%",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2455,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC052-Q01",
+   "primaryConceptId": "EC052",
+   "conceptIds": [
+    "EC052"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "한계소비성향이 75%일 때 단순 정부지출승수는 (______)이다.",
+   "blankAnswer": "4",
+   "acceptedAnswers": [
+    "4"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "spend_mult",
+    "params": {
+     "mpc": 75.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "1 ÷ (1 − MPC).",
+   "confusion": null,
+   "calculation": "정부지출승수 = 1 ÷ (1 − MPC 75%) = 4.0",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2456,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC052-Q02",
+   "primaryConceptId": "EC052",
+   "conceptIds": [
+    "EC052"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "한계소비성향이 80%일 때 단순 조세승수는 (______)이다.",
+   "blankAnswer": "-4",
+   "acceptedAnswers": [
+    "-4"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "tax_mult",
+    "params": {
+     "mpc": 80.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "−MPC ÷ (1 − MPC).",
+   "confusion": null,
+   "calculation": "조세승수 = −MPC ÷ (1 − MPC) = -4.0",
+   "difficulty": 5,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2457,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC052-Q03",
+   "primaryConceptId": "EC052",
+   "conceptIds": [
+    "EC052"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "정부지출과 조세를 같은 금액만큼 늘릴 때의 승수를 균형재정승수라 하며 그 값은 (______)이다.",
+   "blankAnswer": "1",
+   "acceptedAnswers": [
+    "1",
+    "일"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지출승수 + 조세승수.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2458,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC053-Q01",
+   "primaryConceptId": "EC053",
+   "conceptIds": [
+    "EC053"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "정부지출 증가로 이자율이 상승하여 민간투자가 감소하는 현상을 (______)효과라 한다.",
+   "blankAnswer": "구축",
+   "acceptedAnswers": [
+    "구축"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Crowding-out.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2459,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC053-Q02",
+   "primaryConceptId": "EC053",
+   "conceptIds": [
+    "EC053"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "LM곡선이 수평인 유동성함정에서는 (______)정책이 무력하다.",
+   "blankAnswer": "통화",
+   "acceptedAnswers": [
+    "통화"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "화폐수요가 무한 탄력적.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2460,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC054-Q01",
+   "primaryConceptId": "EC054",
+   "conceptIds": [
+    "EC054"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "현금보유가 없을 때 단순 통화승수는 1을 (______)로 나눈 값이다.",
+   "blankAnswer": "지급준비율",
+   "acceptedAnswers": [
+    "지급준비율"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "1/rr.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2461,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC054-Q02",
+   "primaryConceptId": "EC054",
+   "conceptIds": [
+    "EC054"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "법정지급준비율이 8%이고 민간의 현금보유가 없을 때 단순 통화승수는 (______)이다.",
+   "blankAnswer": "12.5",
+   "acceptedAnswers": [
+    "12.5"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "money_mult",
+    "params": {
+     "rr": 8.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "1 ÷ 지급준비율.",
+   "confusion": null,
+   "calculation": "단순 통화승수 = 1 ÷ 지급준비율 8% = 12.5",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2462,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC054-Q03",
+   "primaryConceptId": "EC054",
+   "conceptIds": [
+    "EC054"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "중앙은행이 공개시장에서 국공채를 매입하면 본원통화는 (______)한다.",
+   "blankAnswer": "증가",
+   "acceptedAnswers": [
+    "증가"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "매입 대금 지급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2463,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC055-Q01",
+   "primaryConceptId": "EC055",
+   "conceptIds": [
+    "EC055"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "물가 상승과 경기 침체가 동시에 나타나는 현상을 (______)이라 한다.",
+   "blankAnswer": "스태그플레이션",
+   "acceptedAnswers": [
+    "스태그플레이션"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Stagflation.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2464,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC055-Q02",
+   "primaryConceptId": "EC055",
+   "conceptIds": [
+    "EC055"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "기대부가 필립스곡선 이론에서 장기 필립스곡선은 (______)실업률 수준에서 수직이다.",
+   "blankAnswer": "자연",
+   "acceptedAnswers": [
+    "자연"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Natural rate.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2465,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC056-Q01",
+   "primaryConceptId": "EC056",
+   "conceptIds": [
+    "EC056"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "솔로우 모형에서 1인당 소비를 극대화하는 정상상태를 자본축적의 (______)이라 한다.",
+   "blankAnswer": "황금률",
+   "acceptedAnswers": [
+    "황금률"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MPK = n + δ.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2466,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC056-Q02",
+   "primaryConceptId": "EC056",
+   "conceptIds": [
+    "EC056"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "솔로우 모형에서 저축률 상승은 장기 1인당 소득의 성장률이 아니라 (______)을 높인다.",
+   "blankAnswer": "수준",
+   "acceptedAnswers": [
+    "수준"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수준효과.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2467,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC057-Q01",
+   "primaryConceptId": "EC057",
+   "conceptIds": [
+    "EC057"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "먼델-플레밍 모형은 자본이동이 자유로운 (______) 개방경제를 분석한다.",
+   "blankAnswer": "소규모",
+   "acceptedAnswers": [
+    "소규모",
+    "소국"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Small open economy.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2468,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC057-Q02",
+   "primaryConceptId": "EC057",
+   "conceptIds": [
+    "EC057"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "자본이동이 완전한 소규모 개방경제의 변동환율제에서는 (______)정책이 국민소득을 변화시키는 데 효과적이다.",
+   "blankAnswer": "통화",
+   "acceptedAnswers": [
+    "통화"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재정정책은 환율로 상쇄.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2469,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC057-Q03",
+   "primaryConceptId": "EC057",
+   "conceptIds": [
+    "EC057"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "matching",
+   "questionText": "환율제도와 유효한 정책을 연결하시오.",
+   "blankAnswer": "변동환율제 → 통화정책 / 고정환율제 → 재정정책",
+   "acceptedAnswers": [
+    "변동환율제 → 통화정책 / 고정환율제 → 재정정책"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "재정정책",
+    "통화정책"
+   ],
+   "slots": [
+    {
+     "label": "변동환율제",
+     "answer": "통화정책"
+    },
+    {
+     "label": "고정환율제",
+     "answer": "재정정책"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "먼델-플레밍 결론.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2470,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC060-Q01",
+   "primaryConceptId": "EC060",
+   "conceptIds": [
+    "EC060"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "다른 나라보다 기회비용이 낮게 생산할 수 있는 능력을 (______)우위라 한다.",
+   "blankAnswer": "비교",
+   "acceptedAnswers": [
+    "비교"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Comparative advantage.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2471,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC060-Q02",
+   "primaryConceptId": "EC060",
+   "conceptIds": [
+    "EC060"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "갑국은 옷 1벌 생산에 쌀 2kg, 을국은 쌀 4kg을 포기해야 한다. 옷 생산에 비교우위가 있는 나라는?",
+   "blankAnswer": "갑국",
+   "acceptedAnswers": [
+    "갑국"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "갑국",
+    "을국",
+    "두 나라 모두",
+    "판단할 수 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "옷의 기회비용이 더 낮은 나라(쌀 2kg).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2472,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC061-Q01",
+   "primaryConceptId": "EC061",
+   "conceptIds": [
+    "EC061"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "헥셔-올린 모형에서 각국은 상대적으로 (______)한 요소를 집약적으로 쓰는 재화를 수출한다.",
+   "blankAnswer": "풍부",
+   "acceptedAnswers": [
+    "풍부"
+   ],
+   "relatedConceptIds": [
+    "EC060"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "요소부존.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2473,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC061-Q02",
+   "primaryConceptId": "EC061",
+   "conceptIds": [
+    "EC061"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "comparison",
+   "questionText": "자유무역으로 두 나라의 생산요소 가격이 같아지는 경향을 요소가격(______) 정리라 한다.",
+   "blankAnswer": "균등화",
+   "acceptedAnswers": [
+    "균등화"
+   ],
+   "relatedConceptIds": [
+    "EC060"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Factor price equalization.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2474,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC062-Q01",
+   "primaryConceptId": "EC062",
+   "conceptIds": [
+    "EC062"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "소국이 수입관세를 부과하면 국내 (______)잉여는 감소한다.",
+   "blankAnswer": "소비자",
+   "acceptedAnswers": [
+    "소비자"
+   ],
+   "relatedConceptIds": [
+    "EC003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "국내가격 상승.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2475,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC062-Q02",
+   "primaryConceptId": "EC062",
+   "conceptIds": [
+    "EC062"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "대국이 관세를 부과해 수입가격을 낮추면 (______)조건이 개선될 수 있다.",
+   "blankAnswer": "교역",
+   "acceptedAnswers": [
+    "교역"
+   ],
+   "relatedConceptIds": [
+    "EC003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Terms of trade.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2476,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC063-Q01",
+   "primaryConceptId": "EC063",
+   "conceptIds": [
+    "EC063"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "환율 변화율이 두 나라 인플레이션율의 차이와 같다는 이론을 상대적 (______)설이라 한다.",
+   "blankAnswer": "구매력평가",
+   "acceptedAnswers": [
+    "구매력평가"
+   ],
+   "relatedConceptIds": [
+    "FM063"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Relative PPP.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2477,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC063-Q02",
+   "primaryConceptId": "EC063",
+   "conceptIds": [
+    "EC063"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "calculation",
+   "questionText": "현물환율 1,200원/$, 국내 이자율 6%, 미국 이자율 2%일 때 커버된 이자율평가에 따른 1년 선물환율은 (______)원/$이다.",
+   "blankAnswer": "1,247.06",
+   "acceptedAnswers": [
+    "1,247.06",
+    "1,247.06원"
+   ],
+   "relatedConceptIds": [
+    "FM063"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "irp_fwd",
+    "params": {
+     "s": 1200.0,
+     "id_": 6.0,
+     "if_": 2.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "S × (1 + i) ÷ (1 + i*).",
+   "confusion": null,
+   "calculation": "선물환율 = 현물환율 1200 × (1 + 자국이자율 6%) ÷ (1 + 외국이자율 2%) = 1247.06",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2478,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR001-Q01",
+   "primaryConceptId": "HR001",
+   "conceptIds": [
+    "HR001"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "HR 활동을 기업의 경영전략과 일치시키는 것을 (______) 적합성이라 한다.",
+   "blankAnswer": "수직적",
+   "acceptedAnswers": [
+    "수직적"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Vertical fit.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2479,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR001-Q02",
+   "primaryConceptId": "HR001",
+   "conceptIds": [
+    "HR001"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "comparison",
+   "questionText": "선발·교육·보상 등 HR 활동 상호 간의 일관성을 (______) 적합성이라 한다.",
+   "blankAnswer": "수평적",
+   "acceptedAnswers": [
+    "수평적"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Horizontal fit.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2480,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR002-Q01",
+   "primaryConceptId": "HR002",
+   "conceptIds": [
+    "HR002"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "직무수행에 필요한 지식·기술·능력 등 인적 요건을 정리한 문서를 (______)라 한다.",
+   "blankAnswer": "직무명세서",
+   "acceptedAnswers": [
+    "직무명세서"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Job specification.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2481,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR002-Q02",
+   "primaryConceptId": "HR002",
+   "conceptIds": [
+    "HR002"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "matching",
+   "questionText": "직무분석 결과물과 내용을 연결하시오.",
+   "blankAnswer": "직무기술서 → 과업과 책임 / 직무명세서 → 자격요건",
+   "acceptedAnswers": [
+    "직무기술서 → 과업과 책임 / 직무명세서 → 자격요건"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "과업과 책임",
+    "자격요건"
+   ],
+   "slots": [
+    {
+     "label": "직무기술서",
+     "answer": "과업과 책임"
+    },
+    {
+     "label": "직무명세서",
+     "answer": "자격요건"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직무 중심 vs 사람 중심.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2482,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR003-Q01",
+   "primaryConceptId": "HR003",
+   "conceptIds": [
+    "HR003"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "직무에 계획·통제 권한을 추가하는 수직적 직무 확장을 (______)라 한다.",
+   "blankAnswer": "직무충실화",
+   "acceptedAnswers": [
+    "직무충실화"
+   ],
+   "relatedConceptIds": [
+    "HR002",
+    "HR021"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Job enrichment.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2483,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR003-Q02",
+   "primaryConceptId": "HR003",
+   "conceptIds": [
+    "HR003"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "classification",
+   "questionText": "해크먼과 올드햄의 직무특성모형의 핵심 직무특성이 아닌 것은?",
+   "blankAnswer": "임금 수준",
+   "acceptedAnswers": [
+    "임금 수준"
+   ],
+   "relatedConceptIds": [
+    "HR002",
+    "HR021"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "임금 수준",
+    "기술다양성",
+    "자율성",
+    "피드백"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "5가지: 기술다양성·과업정체성·과업중요성·자율성·피드백.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2484,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR004-Q01",
+   "primaryConceptId": "HR004",
+   "conceptIds": [
+    "HR004"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "선발 시험 점수와 입사 후 직무성과 간의 상관관계로 측정하는 타당성을 (______)타당성이라 한다.",
+   "blankAnswer": "예측",
+   "acceptedAnswers": [
+    "예측"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기준관련타당성의 하나.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2485,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR004-Q02",
+   "primaryConceptId": "HR004",
+   "conceptIds": [
+    "HR004"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "comparison",
+   "questionText": "신뢰성은 타당성의 (______)조건이다.",
+   "blankAnswer": "필요",
+   "acceptedAnswers": [
+    "필요"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "신뢰성 없이 타당성 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2486,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR005-Q01",
+   "primaryConceptId": "HR005",
+   "conceptIds": [
+    "HR005"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "한 가지 특성에 대한 좋은 인상이 다른 평가 요소에까지 영향을 주는 오류를 (______)효과라 한다.",
+   "blankAnswer": "후광",
+   "acceptedAnswers": [
+    "후광"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Halo effect.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2487,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR005-Q02",
+   "primaryConceptId": "HR005",
+   "conceptIds": [
+    "HR005"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "matching",
+   "questionText": "평가오류와 내용을 연결하시오.",
+   "blankAnswer": "관대화 경향 → 전반적으로 높게 평가 / 중심화 경향 → 중간 점수에 집중 / 최근효과 → 최근 행동을 과대 반영",
+   "acceptedAnswers": [
+    "관대화 경향 → 전반적으로 높게 평가 / 중심화 경향 → 중간 점수에 집중 / 최근효과 → 최근 행동을 과대 반영"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "전반적으로 높게 평가",
+    "중간 점수에 집중",
+    "최근 행동을 과대 반영"
+   ],
+   "slots": [
+    {
+     "label": "관대화 경향",
+     "answer": "전반적으로 높게 평가"
+    },
+    {
+     "label": "중심화 경향",
+     "answer": "중간 점수에 집중"
+    },
+    {
+     "label": "최근효과",
+     "answer": "최근 행동을 과대 반영"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "평가오류 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2488,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR006-Q01",
+   "primaryConceptId": "HR006",
+   "conceptIds": [
+    "HR006"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "order",
+   "questionText": "커크패트릭의 교육훈련 평가 단계를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 반응 / 2단계 → 학습 / 3단계 → 행동 / 4단계 → 결과",
+   "acceptedAnswers": [
+    "1단계 → 반응 / 2단계 → 학습 / 3단계 → 행동 / 4단계 → 결과"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "결과",
+    "반응",
+    "학습",
+    "행동"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "반응"
+    },
+    {
+     "label": "2단계",
+     "answer": "학습"
+    },
+    {
+     "label": "3단계",
+     "answer": "행동"
+    },
+    {
+     "label": "4단계",
+     "answer": "결과"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "반응 → 학습 → 행동 → 결과.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2489,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR006-Q02",
+   "primaryConceptId": "HR006",
+   "conceptIds": [
+    "HR006"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "업무를 수행하면서 상사나 선배에게 직접 지도받는 훈련 방식을 (______)라 한다.",
+   "blankAnswer": "OJT",
+   "acceptedAnswers": [
+    "OJT",
+    "직무중훈련",
+    "직장내훈련"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "On-the-Job Training.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2490,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR007-Q01",
+   "primaryConceptId": "HR007",
+   "conceptIds": [
+    "HR007"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "직무평가로 결정된 직무의 상대적 가치에 따라 임금을 정하는 체계를 (______)이라 한다.",
+   "blankAnswer": "직무급",
+   "acceptedAnswers": [
+    "직무급"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Job-based pay.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2491,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR007-Q02",
+   "primaryConceptId": "HR007",
+   "conceptIds": [
+    "HR007"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "matching",
+   "questionText": "집단성과배분제와 기준을 연결하시오.",
+   "blankAnswer": "스캔론 플랜 → 노무비 절감 / 럭커 플랜 → 부가가치",
+   "acceptedAnswers": [
+    "스캔론 플랜 → 노무비 절감 / 럭커 플랜 → 부가가치"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "노무비 절감",
+    "부가가치"
+   ],
+   "slots": [
+    {
+     "label": "스캔론 플랜",
+     "answer": "노무비 절감"
+    },
+    {
+     "label": "럭커 플랜",
+     "answer": "부가가치"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Scanlon vs Rucker.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2492,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR020-Q01",
+   "primaryConceptId": "HR020",
+   "conceptIds": [
+    "HR020"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "타인의 행동 원인을 상황보다 개인적 요인으로 과대 귀속시키는 경향을 기본적 (______)오류라 한다.",
+   "blankAnswer": "귀인",
+   "acceptedAnswers": [
+    "귀인"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Fundamental attribution error.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2493,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR020-Q02",
+   "primaryConceptId": "HR020",
+   "conceptIds": [
+    "HR020"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "situation",
+   "questionText": "켈리의 귀인이론에서 합의성 낮음, 특이성 낮음, 일관성 높음이면 (______) 귀인을 한다.",
+   "blankAnswer": "내적",
+   "acceptedAnswers": [
+    "내적"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Internal attribution.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2494,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR021-Q01",
+   "primaryConceptId": "HR021",
+   "conceptIds": [
+    "HR021"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "조직을 떠날 때의 비용 때문에 조직에 남는 몰입을 (______)적 몰입이라 한다.",
+   "blankAnswer": "지속",
+   "acceptedAnswers": [
+    "지속"
+   ],
+   "relatedConceptIds": [
+    "HR020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Continuance commitment.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2495,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR021-Q02",
+   "primaryConceptId": "HR021",
+   "conceptIds": [
+    "HR021"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "matching",
+   "questionText": "조직몰입 유형과 동기를 연결하시오.",
+   "blankAnswer": "정서적 몰입 → 원해서 / 지속적 몰입 → 필요해서 / 규범적 몰입 → 의무감에서",
+   "acceptedAnswers": [
+    "정서적 몰입 → 원해서 / 지속적 몰입 → 필요해서 / 규범적 몰입 → 의무감에서"
+   ],
+   "relatedConceptIds": [
+    "HR020"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "원해서",
+    "의무감에서",
+    "필요해서"
+   ],
+   "slots": [
+    {
+     "label": "정서적 몰입",
+     "answer": "원해서"
+    },
+    {
+     "label": "지속적 몰입",
+     "answer": "필요해서"
+    },
+    {
+     "label": "규범적 몰입",
+     "answer": "의무감에서"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Meyer & Allen.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2496,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR022-Q01",
+   "primaryConceptId": "HR022",
+   "conceptIds": [
+    "HR022"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "허즈버그 이론에서 충족되어도 불만족만 없앨 뿐 만족을 높이지는 못하는 요인을 (______)요인이라 한다.",
+   "blankAnswer": "위생",
+   "acceptedAnswers": [
+    "위생"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Hygiene factors.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2497,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR022-Q02",
+   "primaryConceptId": "HR022",
+   "conceptIds": [
+    "HR022"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "허즈버그 2요인을 분류하시오.",
+   "blankAnswer": "성취감 → 동기요인 / 임금 → 위생요인 / 작업조건 → 위생요인",
+   "acceptedAnswers": [
+    "성취감 → 동기요인 / 임금 → 위생요인 / 작업조건 → 위생요인"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "동기요인",
+    "위생요인"
+   ],
+   "slots": [
+    {
+     "label": "성취감",
+     "answer": "동기요인"
+    },
+    {
+     "label": "임금",
+     "answer": "위생요인"
+    },
+    {
+     "label": "작업조건",
+     "answer": "위생요인"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직무 내재 vs 직무 환경.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2498,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR023-Q01",
+   "primaryConceptId": "HR023",
+   "conceptIds": [
+    "HR023"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "브룸의 기대이론에서 성과가 보상으로 이어질 것이라는 믿음을 (______)이라 한다.",
+   "blankAnswer": "수단성",
+   "acceptedAnswers": [
+    "수단성"
+   ],
+   "relatedConceptIds": [
+    "HR022"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Instrumentality.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2499,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR023-Q02",
+   "primaryConceptId": "HR023",
+   "conceptIds": [
+    "HR023"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "situation",
+   "questionText": "기대감 0.8, 수단성 0, 유의성 1.0일 때 브룸 기대이론의 동기부여 수준은?",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0"
+   ],
+   "relatedConceptIds": [
+    "HR022"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "0",
+    "1.8",
+    "0.8",
+    "1.0"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "곱셈 모형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2500,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR024-Q01",
+   "primaryConceptId": "HR024",
+   "conceptIds": [
+    "HR024"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "바람직한 행동을 할 때 불쾌한 자극을 제거하여 그 행동을 증가시키는 것을 (______)강화라 한다.",
+   "blankAnswer": "부적",
+   "acceptedAnswers": [
+    "부적"
+   ],
+   "relatedConceptIds": [
+    "HR023"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Negative reinforcement.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2501,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR024-Q02",
+   "primaryConceptId": "HR024",
+   "conceptIds": [
+    "HR024"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "강화 방법과 행동 변화를 연결하시오.",
+   "blankAnswer": "정적강화 → 행동 증가 / 벌 → 행동 감소 / 소거 → 행동 감소",
+   "acceptedAnswers": [
+    "정적강화 → 행동 증가 / 벌 → 행동 감소 / 소거 → 행동 감소"
+   ],
+   "relatedConceptIds": [
+    "HR023"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "행동 감소",
+    "행동 증가"
+   ],
+   "slots": [
+    {
+     "label": "정적강화",
+     "answer": "행동 증가"
+    },
+    {
+     "label": "벌",
+     "answer": "행동 감소"
+    },
+    {
+     "label": "소거",
+     "answer": "행동 감소"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "강화는 증가, 벌·소거는 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2502,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR030-Q01",
+   "primaryConceptId": "HR030",
+   "conceptIds": [
+    "HR030"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "응집력이 높은 집단이 합의 압력 때문에 비판적 검토를 하지 못하는 현상을 (______)라 한다.",
+   "blankAnswer": "집단사고",
+   "acceptedAnswers": [
+    "집단사고"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Groupthink.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2503,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR030-Q02",
+   "primaryConceptId": "HR030",
+   "conceptIds": [
+    "HR030"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "comparison",
+   "questionText": "전문가들에게 익명으로 설문을 반복해 의견을 수렴하는 비대면 의사결정 기법을 (______)법이라 한다.",
+   "blankAnswer": "델파이",
+   "acceptedAnswers": [
+    "델파이"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Delphi.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2504,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR031-Q01",
+   "primaryConceptId": "HR031",
+   "conceptIds": [
+    "HR031"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "타인이 동일시하고 존경하는 데서 나오는 권력을 (______)권력이라 한다.",
+   "blankAnswer": "준거",
+   "acceptedAnswers": [
+    "준거"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Referent power.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2505,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR031-Q02",
+   "primaryConceptId": "HR031",
+   "conceptIds": [
+    "HR031"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "권력 원천을 분류하시오.",
+   "blankAnswer": "보상권력 → 공식적 권력 / 전문권력 → 개인적 권력 / 준거권력 → 개인적 권력",
+   "acceptedAnswers": [
+    "보상권력 → 공식적 권력 / 전문권력 → 개인적 권력 / 준거권력 → 개인적 권력"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "개인적 권력",
+    "공식적 권력"
+   ],
+   "slots": [
+    {
+     "label": "보상권력",
+     "answer": "공식적 권력"
+    },
+    {
+     "label": "전문권력",
+     "answer": "개인적 권력"
+    },
+    {
+     "label": "준거권력",
+     "answer": "개인적 권력"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직위 기반 vs 개인 기반.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2506,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR032-Q01",
+   "primaryConceptId": "HR032",
+   "conceptIds": [
+    "HR032"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "카리스마, 영감적 동기부여, 지적 자극, 개별적 배려로 구성원의 가치를 변화시키는 리더십을 (______) 리더십이라 한다.",
+   "blankAnswer": "변혁적",
+   "acceptedAnswers": [
+    "변혁적"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Transformational.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2507,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR032-Q02",
+   "primaryConceptId": "HR032",
+   "conceptIds": [
+    "HR032"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "situation",
+   "questionText": "피들러의 상황모형에서 상황 호의성이 중간일 때 효과적인 리더 유형은?",
+   "blankAnswer": "관계지향형",
+   "acceptedAnswers": [
+    "관계지향형"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "관계지향형",
+    "과업지향형",
+    "자유방임형",
+    "거래적 리더"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "호의성 극단 → 과업지향, 중간 → 관계지향.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2508,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR033-Q01",
+   "primaryConceptId": "HR033",
+   "conceptIds": [
+    "HR033"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "공식화와 집권화 정도가 낮아 유연하고 혁신적인 조직을 (______) 조직이라 한다.",
+   "blankAnswer": "유기적",
+   "acceptedAnswers": [
+    "유기적"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Organic.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2509,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR033-Q02",
+   "primaryConceptId": "HR033",
+   "conceptIds": [
+    "HR033"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "situation",
+   "questionText": "번스와 스토커에 따르면 환경이 동태적이고 불확실할수록 (______) 조직이 적합하다.",
+   "blankAnswer": "유기적",
+   "acceptedAnswers": [
+    "유기적"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상황적합이론.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2510,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR034-Q01",
+   "primaryConceptId": "HR034",
+   "conceptIds": [
+    "HR034"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "order",
+   "questionText": "레빈의 조직변화 단계를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 해빙 / 2단계 → 변화 / 3단계 → 재동결",
+   "acceptedAnswers": [
+    "1단계 → 해빙 / 2단계 → 변화 / 3단계 → 재동결"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "변화",
+    "재동결",
+    "해빙"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "해빙"
+    },
+    {
+     "label": "2단계",
+     "answer": "변화"
+    },
+    {
+     "label": "3단계",
+     "answer": "재동결"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Unfreezing → Change → Refreezing.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2511,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR034-Q02",
+   "primaryConceptId": "HR034",
+   "conceptIds": [
+    "HR034"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "변화를 추진하는 힘과 저항하는 힘을 분석하는 레빈의 기법을 (______)분석이라 한다.",
+   "blankAnswer": "역장",
+   "acceptedAnswers": [
+    "역장"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Force-field analysis.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 2512,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
   }
  ]
 }

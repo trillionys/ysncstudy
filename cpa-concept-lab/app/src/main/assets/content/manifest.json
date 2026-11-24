@@ -9,8 +9,8 @@
   "questions_v5.json",
   "law_v5.json"
  ],
- "conceptCount": 791,
- "questionCount": 2353,
+ "conceptCount": 863,
+ "questionCount": 2512,
  "requiredConceptIds": [
   "A01",
   "A02",

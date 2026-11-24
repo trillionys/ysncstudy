@@ -32,10 +32,11 @@ from required_concepts import REQUIRED  # noqa: E402
 import lawdsl  # noqa: E402
 import law_a, law_b, law_ce, law_d1, law_d2, law_d3, law_d4, law_f, law_g, law_h, law_i, law_extra  # noqa: E402,F401
 import law_e2, law_e3, law_d5, law_extra2  # noqa: E402,F401
-import law_auto  # noqa: E402
+import law_auto  # noqa: E402,F401  (기업법 문항을 모두 읽은 뒤 생성)
 # v5: CPA 1차 전 과목 팩
 import curriculum  # noqa: E402
-import pack_fm  # noqa: E402,F401  (반드시 마지막: 다른 기업법 문항을 모두 읽은 뒤 생성)
+import curriculum_links  # noqa: E402,F401
+import pack_fm, pack_cm, pack_ec, pack_hr  # noqa: E402,F401
 import law_coverage  # noqa: E402
 
 CONTENT_VERSION = 5
@@ -474,6 +475,19 @@ def main():
         json.dump(registry, f, ensure_ascii=False, indent=0, sort_keys=True)
     with open(REPORT, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
+    # 작업 재개용 체크포인트: 팩별 구축 완료·미구축 목차 항목(다음 작업 목록)
+    progress = {"contentVersion": CONTENT_VERSION, "generatedAt": gen, "packs": []}
+    for sub in SUBJECTS:
+        its = [i for i in cur_items if i["subjectId"] == sub["id"]]
+        progress["packs"].append({
+            "id": sub["id"], "name": sub["name"], "examSubject": sub["examSubject"], "active": sub["isActive"],
+            "concepts": sum(1 for c in concepts if c["subjectId"] == sub["id"]),
+            "questions": sum(1 for x in active_q if x["subjectId"] == sub["id"]),
+            "curriculumCovered": sum(i["covered"] for i in its), "curriculumTotal": len(its),
+            "todo": [f"{i['unit']} / {i['item']}" for i in its if not i["covered"]],
+        })
+    with open(os.path.join(ROOT, "docs", "curriculum_progress.json"), "w", encoding="utf-8") as f:
+        json.dump(progress, f, ensure_ascii=False, indent=1)
     print(f"\n생성 완료: {ASSET_DIR}")
 
 

@@ -165,7 +165,13 @@ def link(pack, item, *cids):
 # 목차 항목을 볼 때 함께 검색할 과목(중급회계 목차는 재무회계 기존 개념으로도 충족될 수 있다)
 SEARCH = {"IA": ["IA", "FA"], "FA": ["FA"]}
 # 재무회계 팩이 실제로 다루는 중급회계 단원만 재무회계 개념으로 충족을 인정한다
-FA_COVERED_IA_UNITS = {"재무보고", "재고자산", "유형자산", "차입원가", "생물자산"}
+FA_COVERED_IA_UNITS = {"재무보고", "재고자산", "유형자산", "차입원가", "생물자산", "투자부동산"}
+
+
+import json as _json
+import os as _os
+
+FULL = _json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "curriculum_full.json"), encoding="utf-8"))
 
 
 def build(concepts, questions, errors):
@@ -181,9 +187,9 @@ def build(concepts, questions, errors):
     for pack, _, _, _ in PACKS:
         cands = [c for c in concepts if c["subjectId"] in SEARCH.get(pack, [pack]) and c["id"] in ready]
         normed = [(c, _norm(c["koreanName"]), _norm(c["koreanName"] + c["definition"])) for c in cands]
-        for unit, text in M.get(pack, {}).items():
+        for unit, text in FULL.get(pack, {}).items():
             pool = normed if not (pack == "IA" and unit not in FA_COVERED_IA_UNITS) else [t for t in normed if t[0]["subjectId"] == "IA"]
-            for it in items_of(text):
+            for it in [w.strip() for w in text.split(", ") if w.strip()]:
                 n += 1
                 linked = [cid for cid in LINKS.get((pack, it), []) if cid in ready]
                 for cid in LINKS.get((pack, it), []):
