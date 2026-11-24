@@ -134,6 +134,55 @@ object FormulaEngine {
             val general = min((it["avgexp"] - specAvg) * it["grate"] / 100, it["glimit"])
             r0(spec + max(0.0, general))
         }
+
+        // ── 재무관리 ──
+        fun pc(x: Double) = x / 100.0
+        amount("fv") { r0(it["pv"] * (1 + pc(it["r"])).pow(it["n"])) }
+        amount("pv") { r0(it["fv"] / (1 + pc(it["r"])).pow(it["n"])) }
+        amount("annuity_pv") { val i = pc(it["r"]); r0(it["c"] * (1 - (1 + i).pow(-it["n"])) / i) }
+        amount("growing_perp") { r0(it["c1"] / (pc(it["r"]) - pc(it["g"]))) }
+        amount("npv3") { val i = 1 + pc(it["r"]); r0(-it["c0"] + it["c1"] / i + it["c2"] / i.pow(2) + it["c3"] / i.pow(3)) }
+        percent("capm") { r2(it["rf"] + it["beta"] * (it["rm"] - it["rf"])) }
+        percent("wacc") { r2((it["e"] * it["re"] + it["d"] * it["rd"] * (1 - pc(it["t"]))) / (it["e"] + it["d"])) }
+        amount("bond_price") { p ->
+            val i = pc(p["y"]); val c = p["face"] * pc(p["cr"]); val n = p["n"].toInt()
+            r0((1..n).sumOf { t -> c / (1 + i).pow(t) } + p["face"] / (1 + i).pow(n))
+        }
+        percent("eff_rate") { r2(((1 + pc(it["apr"]) / it["m"]).pow(it["m"]) - 1) * 100) }
+        percent("port_ret") { r2(pc(it["w1"]) * it["r1"] + (1 - pc(it["w1"])) * it["r2_"]) }
+        percent("port_sd") { p ->
+            val a = pc(p["w1"]); val b = 1 - a
+            r2(kotlin.math.sqrt(a * a * p["s1"] * p["s1"] + b * b * p["s2"] * p["s2"] + 2 * a * b * p["rho"] * p["s1"] * p["s2"]))
+        }
+        percent("put_parity") { r2(it["c"] - it["s"] + it["k"] / (1 + pc(it["r"])).pow(it["t"])) }
+        percent("fwd_rate") { r2(((1 + pc(it["r2y"])).pow(2) / (1 + pc(it["r1"])) - 1) * 100) }
+        // ── 원가관리회계 ──
+        put("bep_units", Formula(Kind.QTY) { r0(it["fc"] / (it["p"] - it["vc"])) })
+        put("target_units", Formula(Kind.QTY) { r0((it["fc"] + it["ti"]) / (it["p"] - it["vc"])) })
+        percent("cm_ratio") { r2((it["p"] - it["vc"]) / it["p"] * 100) }
+        percent("dol") { r2(it["cm"] / it["oi"]) }
+        amount("price_var") { r0((it["ap"] - it["sp"]) * it["aq"]) }
+        amount("qty_var") { r0((it["aq"] - it["sq"]) * it["sp"]) }
+        put("eoq", Formula(Kind.QTY) { r0(kotlin.math.sqrt(2 * it["d"] * it["s"] / it["h"])) })
+        percent("roi") { r2(it["oi"] / it["ia"] * 100) }
+        amount("ri") { r0(it["oi"] - it["ia"] * pc(it["rr"])) }
+        put("eu_wavg", Formula(Kind.QTY) { r0(it["done"] + it["end"] * pc(it["pct"])) })
+        put("eu_fifo", Formula(Kind.QTY) { r0(it["done"] - it["beg"] * pc(it["bpct"]) + it["end"] * pc(it["epct"])) })
+        percent("high_low_vc") { r2((it["c_hi"] - it["c_lo"]) / (it["x_hi"] - it["x_lo"])) }
+        percent("poh_rate") { r2(it["boh"] / it["base"]) }
+        // ── 경제학 ──
+        percent("elast_mid") { p ->
+            r2(kotlin.math.abs(((p["q2"] - p["q1"]) / ((p["q1"] + p["q2"]) / 2)) / ((p["p2"] - p["p1"]) / ((p["p1"] + p["p2"]) / 2))))
+        }
+        percent("spend_mult") { r2(1 / (1 - pc(it["mpc"]))) }
+        percent("tax_mult") { r2(-pc(it["mpc"]) / (1 - pc(it["mpc"]))) }
+        percent("money_mult") { r2(100 / it["rr"]) }
+        percent("unemp") { r2(it["u"] / (it["u"] + it["e"]) * 100) }
+        percent("deflator") { r2(it["ngdp"] / it["rgdp"] * 100) }
+        percent("monopoly_q") { r2((it["a"] - it["c"]) / (2 * it["b"])) }
+        percent("cournot_q") { r2((it["a"] - it["c"]) / (3 * it["b"])) }
+        percent("comp_q") { r2((it["a"] - it["c"]) / it["b"]) }
+        percent("irp_fwd") { r2(it["s"] * (1 + pc(it["id_"])) / (1 + pc(it["if_"]))) }
         // ── 기업법(상법) ──
         put("res_ordinary_min", Formula(Kind.QTY) {
             val base = it["total"] - it["nonvote"]

@@ -587,6 +587,234 @@ def stock_div_max(total_div):
     return v, f"이익배당총액 {fmt(total_div)} × 1/2 = {fmt(v)}"
 
 
+
+# ───────── 재무관리 ─────────
+def _pct(x):
+    return x / 100.0
+
+
+@formula()
+def fv(pv, r, n):
+    v = r0(pv * (1 + _pct(r)) ** n)
+    return v, f"FV = {fmt(pv)} × (1 + {r}%)^{n} = {fmt(v)}"
+
+
+@formula()
+def pv(fv, r, n):
+    v = r0(fv / (1 + _pct(r)) ** n)
+    return v, f"PV = {fmt(fv)} ÷ (1 + {r}%)^{n} = {fmt(v)}"
+
+
+@formula()
+def annuity_pv(c, r, n):
+    i = _pct(r)
+    v = r0(c * (1 - (1 + i) ** -n) / i)
+    return v, f"연금 현재가치 = {fmt(c)} × [1 − (1+{r}%)^−{n}] ÷ {r}% = {fmt(v)}"
+
+
+@formula()
+def growing_perp(c1, r, g):
+    v = r0(c1 / (_pct(r) - _pct(g)))
+    return v, f"성장영구연금 현재가치 = {fmt(c1)} ÷ ({r}% − {g}%) = {fmt(v)}"
+
+
+@formula()
+def npv3(c0, c1, c2, c3, r):
+    i = _pct(r)
+    v = r0(-c0 + c1 / (1 + i) + c2 / (1 + i) ** 2 + c3 / (1 + i) ** 3)
+    return v, f"NPV = −{fmt(c0)} + {fmt(c1)}/(1+{r}%) + {fmt(c2)}/(1+{r}%)² + {fmt(c3)}/(1+{r}%)³ = {fmt(v)}"
+
+
+@formula("percent")
+def capm(rf, beta, rm):
+    v = r2(rf + beta * (rm - rf))
+    return v, f"요구수익률 = {rf}% + {beta} × ({rm}% − {rf}%) = {v}%"
+
+
+@formula("percent")
+def wacc(e, d, re, rd, t):
+    v = r2((e * re + d * rd * (1 - _pct(t))) / (e + d))
+    return v, f"WACC = ({fmt(e)}×{re}% + {fmt(d)}×{rd}%×(1−{t}%)) ÷ {fmt(e + d)} = {v}%"
+
+
+@formula()
+def bond_price(face, cr, y, n):
+    i, c = _pct(y), face * _pct(cr)
+    v = r0(sum(c / (1 + i) ** t for t in range(1, int(n) + 1)) + face / (1 + i) ** n)
+    return v, f"채권가격 = Σ 이자 {fmt(c)}/(1+{y}%)^t + 액면 {fmt(face)}/(1+{y}%)^{n} = {fmt(v)}"
+
+
+@formula("percent")
+def eff_rate(apr, m):
+    v = r2(((1 + _pct(apr) / m) ** m - 1) * 100)
+    return v, f"실효이자율 = (1 + {apr}%/{m})^{m} − 1 = {v}%"
+
+
+@formula("percent")
+def port_ret(w1, r1, r2_):
+    v = r2(_pct(w1) * r1 + (1 - _pct(w1)) * r2_)
+    return v, f"포트폴리오 기대수익률 = {w1}%×{r1}% + {100 - w1}%×{r2_}% = {v}%"
+
+
+@formula("percent")
+def port_sd(w1, s1, s2, rho):
+    a, b = _pct(w1), 1 - _pct(w1)
+    v = r2((a * a * s1 * s1 + b * b * s2 * s2 + 2 * a * b * rho * s1 * s2) ** 0.5)
+    return v, f"σp = √(w1²σ1² + w2²σ2² + 2w1w2ρσ1σ2) = {v}%"
+
+
+@formula("percent")
+def put_parity(c, s, k, r, t):
+    v = r2(c - s + k / (1 + _pct(r)) ** t)
+    return v, f"P = C − S + K/(1+r)^T = {c} − {s} + {k}/(1+{r}%)^{t} = {v}"
+
+
+@formula("percent")
+def fwd_rate(r1, r2y):
+    v = r2(((1 + _pct(r2y)) ** 2 / (1 + _pct(r1)) - 1) * 100)
+    return v, f"1년 후 1년 선도이자율 = (1+{r2y}%)² ÷ (1+{r1}%) − 1 = {v}%"
+
+
+# ───────── 원가관리회계 ─────────
+@formula("qty")
+def bep_units(fc, p, vc):
+    v = r0(fc / (p - vc))
+    return v, f"손익분기점 판매량 = 고정원가 {fmt(fc)} ÷ 단위당 공헌이익({fmt(p)} − {fmt(vc)}) = {fmt(v)}"
+
+
+@formula("qty")
+def target_units(fc, ti, p, vc):
+    v = r0((fc + ti) / (p - vc))
+    return v, f"목표판매량 = (고정원가 {fmt(fc)} + 목표이익 {fmt(ti)}) ÷ 단위당 공헌이익 {fmt(p - vc)} = {fmt(v)}"
+
+
+@formula("percent")
+def cm_ratio(p, vc):
+    v = r2((p - vc) / p * 100)
+    return v, f"공헌이익률 = ({fmt(p)} − {fmt(vc)}) ÷ {fmt(p)} = {v}%"
+
+
+@formula("percent")
+def dol(cm, oi):
+    v = r2(cm / oi)
+    return v, f"영업레버리지도 = 공헌이익 {fmt(cm)} ÷ 영업이익 {fmt(oi)} = {v}"
+
+
+@formula()
+def price_var(aq, ap, sp):
+    v = r0((ap - sp) * aq)
+    return v, f"가격(임률)차이 = (실제가격 {fmt(ap)} − 표준가격 {fmt(sp)}) × 실제투입량 {fmt(aq)} = {fmt(v)} (양수 = 불리)"
+
+
+@formula()
+def qty_var(aq, sq, sp):
+    v = r0((aq - sq) * sp)
+    return v, f"수량(능률)차이 = (실제투입량 {fmt(aq)} − 표준투입량 {fmt(sq)}) × 표준가격 {fmt(sp)} = {fmt(v)} (양수 = 불리)"
+
+
+@formula("qty")
+def eoq(d, s, h):
+    v = r0((2 * d * s / h) ** 0.5)
+    return v, f"EOQ = √(2 × 연간수요 {fmt(d)} × 1회 주문비 {fmt(s)} ÷ 단위당 유지비 {fmt(h)}) = {fmt(v)}"
+
+
+@formula("percent")
+def roi(oi, ia):
+    v = r2(oi / ia * 100)
+    return v, f"ROI = 영업이익 {fmt(oi)} ÷ 투자액 {fmt(ia)} = {v}%"
+
+
+@formula()
+def ri(oi, ia, rr):
+    v = r0(oi - ia * _pct(rr))
+    return v, f"RI = 영업이익 {fmt(oi)} − 투자액 {fmt(ia)} × 최저필수수익률 {rr}% = {fmt(v)}"
+
+
+@formula("qty")
+def eu_wavg(done, end, pct):
+    v = r0(done + end * _pct(pct))
+    return v, f"평균법 완성품환산량 = 완성품 {fmt(done)} + 기말재공품 {fmt(end)} × {pct}% = {fmt(v)}"
+
+
+@formula("qty")
+def eu_fifo(done, beg, bpct, end, epct):
+    v = r0(done - beg * _pct(bpct) + end * _pct(epct))
+    return v, f"선입선출법 완성품환산량 = 완성품 {fmt(done)} − 기초재공품 {fmt(beg)}×{bpct}% + 기말재공품 {fmt(end)}×{epct}% = {fmt(v)}"
+
+
+@formula("percent")
+def high_low_vc(c_hi, c_lo, x_hi, x_lo):
+    v = r2((c_hi - c_lo) / (x_hi - x_lo))
+    return v, f"단위당 변동원가 = ({fmt(c_hi)} − {fmt(c_lo)}) ÷ ({fmt(x_hi)} − {fmt(x_lo)}) = {v}"
+
+
+@formula("percent")
+def poh_rate(boh, base):
+    v = r2(boh / base)
+    return v, f"예정배부율 = 예산 제조간접원가 {fmt(boh)} ÷ 예정 배부기준 {fmt(base)} = {v}"
+
+
+# ───────── 경제학 ─────────
+@formula("percent")
+def elast_mid(q1, q2, p1, p2):
+    v = r2(abs(((q2 - q1) / ((q1 + q2) / 2)) / ((p2 - p1) / ((p1 + p2) / 2))))
+    return v, f"중간점 가격탄력성 = |(ΔQ/평균Q) ÷ (ΔP/평균P)| = {v}"
+
+
+@formula("percent")
+def spend_mult(mpc):
+    v = r2(1 / (1 - _pct(mpc)))
+    return v, f"정부지출승수 = 1 ÷ (1 − MPC {mpc}%) = {v}"
+
+
+@formula("percent")
+def tax_mult(mpc):
+    v = r2(-_pct(mpc) / (1 - _pct(mpc)))
+    return v, f"조세승수 = −MPC ÷ (1 − MPC) = {v}"
+
+
+@formula("percent")
+def money_mult(rr):
+    v = r2(100 / rr)
+    return v, f"단순 통화승수 = 1 ÷ 지급준비율 {rr}% = {v}"
+
+
+@formula("percent")
+def unemp(u, e):
+    v = r2(u / (u + e) * 100)
+    return v, f"실업률 = 실업자 {fmt(u)} ÷ 경제활동인구 {fmt(u + e)} = {v}%"
+
+
+@formula("percent")
+def deflator(ngdp, rgdp):
+    v = r2(ngdp / rgdp * 100)
+    return v, f"GDP 디플레이터 = 명목GDP {fmt(ngdp)} ÷ 실질GDP {fmt(rgdp)} × 100 = {v}"
+
+
+@formula("percent")
+def monopoly_q(a, b, c):
+    v = r2((a - c) / (2 * b))
+    return v, f"독점 산출량: MR = {a} − 2×{b}Q = MC {c} → Q = {v}"
+
+
+@formula("percent")
+def cournot_q(a, b, c):
+    v = r2((a - c) / (3 * b))
+    return v, f"쿠르노 복점 기업별 산출량 = (a − c) ÷ 3b = ({a} − {c}) ÷ {3 * b} = {v}"
+
+
+@formula("percent")
+def comp_q(a, b, c):
+    v = r2((a - c) / b)
+    return v, f"완전경쟁 산출량: P = MC → {a} − {b}Q = {c} → Q = {v}"
+
+
+@formula("percent")
+def irp_fwd(s, id_, if_):
+    v = r2(s * (1 + _pct(id_)) / (1 + _pct(if_)))
+    return v, f"선물환율 = 현물환율 {s} × (1 + 자국이자율 {id_}%) ÷ (1 + 외국이자율 {if_}%) = {v}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

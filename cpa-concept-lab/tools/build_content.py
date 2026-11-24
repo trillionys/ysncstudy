@@ -32,10 +32,13 @@ from required_concepts import REQUIRED  # noqa: E402
 import lawdsl  # noqa: E402
 import law_a, law_b, law_ce, law_d1, law_d2, law_d3, law_d4, law_f, law_g, law_h, law_i, law_extra  # noqa: E402,F401
 import law_e2, law_e3, law_d5, law_extra2  # noqa: E402,F401
-import law_auto  # noqa: E402  (반드시 마지막: 다른 기업법 문항을 모두 읽은 뒤 생성)
+import law_auto  # noqa: E402
+# v5: CPA 1차 전 과목 팩
+import curriculum  # noqa: E402
+import pack_fm  # noqa: E402,F401  (반드시 마지막: 다른 기업법 문항을 모두 읽은 뒤 생성)
 import law_coverage  # noqa: E402
 
-CONTENT_VERSION = 4
+CONTENT_VERSION = 5
 NEW_CHAPTERS = {"FA-L", "FA-M", "FA-N", "FA-P", "FA-Q", "FA-R"}
 LAW_SUBJECT = "CPA-LAW"
 PREV_CONCEPT_COUNT = 285
@@ -48,16 +51,11 @@ REPORT = os.path.join(ROOT, "docs", "CONTENT_VALIDATION_REPORT.md")
 BLANK = "(______)"
 
 SUBJECTS = [
-    {"id": "FA", "name": "재무회계", "description": "개념체계·재무제표 표시·재고자산·유형자산·차입원가·농림어업", "sortOrder": 1, "isActive": True},
-    {"id": "IA", "name": "중급회계", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 2, "isActive": False},
-    {"id": "AA", "name": "고급회계", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 3, "isActive": False},
-    {"id": "CM", "name": "원가관리회계", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 4, "isActive": False},
-    {"id": "FM", "name": "재무관리", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 5, "isActive": False},
-    {"id": "EC", "name": "경제학", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 6, "isActive": False},
-    {"id": "CPA-LAW", "name": "기업법", "description": "상법 총칙·상행위·회사편, 공인회계사법, 외부감사법 (2027 1차 시험범위)", "sortOrder": 7, "isActive": True},
-    {"id": "TX", "name": "세법개론", "description": "콘텐츠 팩 추가 시 활성화", "sortOrder": 8, "isActive": False},
+    {"id": pid, "name": name, "description": desc, "sortOrder": i + 1, "isActive": False, "examSubject": ex}
+    for i, (pid, name, ex, desc) in enumerate(curriculum.PACKS)
 ]
-SUBJECTS[0]["isActive"] = True
+PACK_SUBJECTS = {"IA", "AA", "CM", "GA", "FM", "HR", "EC", "TX"}
+
 
 
 def norm(s):
@@ -211,6 +209,7 @@ def main():
     new_concepts = [c for c in concepts if c["chapterId"] in NEW_CHAPTERS]
     new_q = [x for x in active_q if x["chapterId"] in NEW_CHAPTERS]
     law_concepts = [c for c in concepts if c["subjectId"] == LAW_SUBJECT]
+    pack_concepts = [c for c in concepts if c["subjectId"] in PACK_SUBJECTS]
     law_q = [x for x in active_q if x["subjectId"] == LAW_SUBJECT]
     # 13. OX·참거짓·예아니요 금지
     ox_words = re.compile(r"(O\s*/\s*X|\bOX\b|참\s*/\s*거짓|참·거짓|참 또는 거짓|맞음\s*/\s*틀림|맞으면|틀리면|옳으면|예\s*/\s*아니요|예·아니요|옳은지 판단|사실인지)")
@@ -253,7 +252,7 @@ def main():
     # 14. 신규 개념별 기본·심화·구별/응용 문항
     application_types = {"choice", "matching", "classification", "comparison", "situation", "exception", "order",
                          "journal", "calculation", "treatment", "correction", "number", "effect"}
-    for c in new_concepts + law_concepts:
+    for c in new_concepts + law_concepts + pack_concepts:
         mine = [x for x in active_q if x["primaryConceptId"] == c["id"]]
         if not any(x["difficulty"] <= 2 for x in mine):
             errors.append(f"[14] {c['id']} 기본문제(난이도 1~2) 없음")
@@ -283,6 +282,10 @@ def main():
     law_ok, law_interp, law_err = lawdsl.verify_answers(law_q)
     errors.extend(law_err)
     law = law_coverage.build(concepts, questions, errors, warnings)
+    # 21. 출제범위 마스터 목차와 팩 활성화(실제 개념·문항이 있는 팩만 학습 가능)
+    cur_items, cur_stats = curriculum.build(concepts, questions, errors)
+    for sub in SUBJECTS:
+        sub["isActive"] = any(c["subjectId"] == sub["id"] and c["isActive"] for c in concepts)
     # 19. 기존 콘텐츠 보존(이전에 발급된 모든 개념·문항 ID 가 남아 있고 활성)
     prev_reg = {}
     if os.path.exists(REGISTRY):
@@ -298,12 +301,12 @@ def main():
     # 신규 개념의 검증 상태: 원문 대조 전이므로 verified 로 표시하지 않는다
     for c in concepts:
         c["verificationStatus"] = "NEEDS_REVIEW" if c["requiresReview"] else "AUTHOR_REVIEWED"
-        c["contentVersion"] = 4 if c["subjectId"] == LAW_SUBJECT else 3 if c["chapterId"] in NEW_CHAPTERS else 2
+        c["contentVersion"] = 5 if c["subjectId"] in PACK_SUBJECTS else 4 if c["subjectId"] == LAW_SUBJECT else 3 if c["chapterId"] in NEW_CHAPTERS else 2
         if c["subjectId"] == LAW_SUBJECT and not c["requiresReview"]:
             c["verificationStatus"] = "STATUTE_CHECKED"
     for x in questions:
         x["mode"] = "BOTH" if x["inputType"] == "text" else "OPTIONS"
-        x["contentVersion"] = 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
+        x["contentVersion"] = 5 if x["subjectId"] in PACK_SUBJECTS else 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
 
     # ID 레지스트리: 이미 발급한 ID 의 정답이 바뀌면 오류(새 ID 발급 필요)
     registry = {}
@@ -403,6 +406,13 @@ def main():
         lines.append(f"| {p['sourceId']} | {p['topic']} | {p['readingConfidence']} | {p['verificationStatus']} | {len(p['conceptIds'])} | {len(p['linkedQuestionIds'])} |")
     lines.append("")
     lines += law["reportLines"]
+    lines += ["", "## 과목 팩별 콘텐츠 구축 현황(2027 CPA 1차 출제범위 마스터 목차 기준)", "",
+              "| 팩 | 개념 | 문항 | 목차 구축 | 구축률 | 학습 가능 |", "|---|---|---|---|---|---|"]
+    for sub in SUBJECTS:
+        name, cov, tot = cur_stats[sub["id"]]
+        nc = sum(1 for c in concepts if c["subjectId"] == sub["id"])
+        nq = sum(1 for x in active_q if x["subjectId"] == sub["id"])
+        lines.append(f"| {name} | {nc} | {nq} | {cov}/{tot} | {100 * cov / tot if tot else 0:.1f}% | {'예' if sub['isActive'] else '아니요'} |")
     if errors:
         lines.append("## 오류")
         lines += [f"- {e}" for e in errors]
@@ -434,7 +444,7 @@ def main():
 
     files = {
         f"structure_v{CONTENT_VERSION}.json": pack("fa-structure", subjects=SUBJECTS, chapters=dsl.CHAPTERS,
-                                                   sections=dsl.SECTIONS, examScopes=scopes,
+                                                   sections=dsl.SECTIONS, examScopes=scopes, curriculumItems=cur_items,
                                                    problemSources=dsl.PROBLEM_SOURCES, scopeItems=scope_list),
         f"concepts_v{CONTENT_VERSION}.json": pack("fa-concepts", concepts=concepts),
         f"questions_v{CONTENT_VERSION}.json": pack("fa-questions", questions=questions),
