@@ -68,7 +68,7 @@ import com.cpaconceptlab.study.ui.review.WrongNotesScreen
 import com.cpaconceptlab.study.ui.settings.SettingsScreen
 import com.cpaconceptlab.study.ui.settings.ValidationReportScreen
 import com.cpaconceptlab.study.ui.statistics.StatsScreen
-import com.cpaconceptlab.study.ui.subjects.ExamScopeScreen
+import com.cpaconceptlab.study.ui.home.ExamSubjectScreen
 import com.cpaconceptlab.study.ui.subjects.SubjectScreen
 import com.cpaconceptlab.study.ui.theme.CpaTheme
 
@@ -99,7 +99,7 @@ private val TABS = listOf(
 
 private val TITLES = mapOf(
     "home" to "CPA Concept Lab", "subjects" to "과목", "wrong" to "오답노트", "stats" to "학습 통계", "settings" to "설정",
-    "subject" to "개념 목록", "concept" to "개념 학습", "setup" to "문제 풀이 설정", "quiz" to "학습 문제", "exam" to "기출범위별 학습현황",
+    "subject" to "개념 목록", "concept" to "개념 학습", "setup" to "문제 풀이 설정", "quiz" to "학습 문제", "examSubject" to "과목별 학습현황",
     "report" to "개념 누락 검증 리포트",
 )
 
@@ -164,7 +164,7 @@ private fun AppRoot(vm: MainViewModel) {
                 val quiz: (QuizMode, QuizScope) -> Unit = { m, s -> nav.startQuiz(m, s, settings.sessionSize) }
                 val openConcept: (String) -> Unit = { nav.navigate("concept/$it") }
                 composable("home") {
-                    dash?.let { HomeScreen(it, settings, quiz, { nav.navigate("setup") }, { id -> nav.navigate("subject/$id") }, { nav.navigate("exam") }) }
+                    dash?.let { HomeScreen(it, settings, quiz, { nav.navigate("setup") }, { id -> nav.navigate("examSubject/$id") }) }
                 }
                 composable("subjects") {
                     dash?.let { ds ->
@@ -179,7 +179,6 @@ private fun AppRoot(vm: MainViewModel) {
                                     } else Text("콘텐츠 팩을 가져오면 학습할 수 있습니다.", style = MaterialTheme.typography.bodySmall)
                                 }
                             }
-                            item { TextButton(onClick = { nav.navigate("exam") }, modifier = Modifier.fillMaxWidth()) { Text("기출범위별 학습현황 (01~46) 보기") } }
                         }
                     }
                 }
@@ -191,7 +190,9 @@ private fun AppRoot(vm: MainViewModel) {
                         ConceptScreen(it, e.arguments?.getString("id") ?: "", vm::markViewed, vm::toggleBookmark, vm::saveMemo, openConcept, quiz)
                     }
                 }
-                composable("exam") { dash?.let { ExamScopeScreen(it, openConcept, quiz) } }
+                composable("examSubject/{id}", arguments = listOf(navArgument("id") { type = NavType.StringType })) { e ->
+                    dash?.let { ExamSubjectScreen(it, e.arguments?.getString("id") ?: "ACC") { id -> nav.navigate("subject/$id") } }
+                }
                 composable("wrong") { dash?.let { WrongNotesScreen(it, openConcept, quiz) } }
                 composable("stats") { dash?.let { StatsScreen(it, openConcept) } }
                 composable("settings") { SettingsScreen(vm) { nav.navigate("report") } }

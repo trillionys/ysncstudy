@@ -51,7 +51,7 @@ fun QuizSetupScreen(
 ) {
     if (content == null) return
     var mode by remember { mutableStateOf(initialMode) }
-    var type by remember { mutableStateOf(initialScope.type.takeIf { it != ScopeType.QUESTION } ?: ScopeType.ALL) }
+    var type by remember { mutableStateOf(initialScope.type.takeIf { it != ScopeType.QUESTION && it != ScopeType.EXAM } ?: ScopeType.ALL) }
     var targetId by remember { mutableStateOf(initialScope.id) }
     var size by remember { mutableFloatStateOf(defaultSize.toFloat()) }
     var query by remember { mutableStateOf("") }
@@ -75,7 +75,7 @@ fun QuizSetupScreen(
         VSpace(12)
         SectionCard(title = "출제 범위") {
             val selectable = listOf(
-                ScopeType.ALL, ScopeType.SUBJECT, ScopeType.WEIGHTED, ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM,
+                ScopeType.ALL, ScopeType.SUBJECT, ScopeType.WEIGHTED, ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT,
                 ScopeType.UNSTUDIED, ScopeType.WRONG, ScopeType.WEAK, ScopeType.RECENT, ScopeType.DUE, ScopeType.MOCK,
             )
             FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {

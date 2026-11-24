@@ -1,5 +1,10 @@
 package com.cpaconceptlab.study.ui.home
 
+import androidx.compose.ui.draw.clip
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.runtime.remember
+import com.cpaconceptlab.study.domain.usecase.ExamSubjectProgress
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -39,13 +44,14 @@ fun HomeScreen(
     settings: UserSettings,
     onStartQuiz: (QuizMode, QuizScope) -> Unit,
     onOpenSetup: () -> Unit,
-    onOpenSubject: (String) -> Unit,
-    onOpenExamScopes: () -> Unit,
+    onOpenExamSubject: (String) -> Unit,
 ) {
     val ov = dash.overview
     val status = LocalStatusColors.current
     val recommended = maxOf(settings.dailyGoal, ov.dueQuestions.coerceAtMost(settings.dailyGoal * 2))
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
+        OverallProgressCard(dash, onOpenExamSubject)
+        VSpace(12)
         // 오늘의 학습
         SectionCard(title = "오늘의 학습") {
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -81,52 +87,61 @@ fun HomeScreen(
         }
         VSpace(12)
 
-        // 전체 학습현황
-        SectionCard(title = "전체 학습현황") {
-            ProgressLine("학습한 개념", ov.studiedConcepts, ov.totalConcepts)
-            ProgressLine("풀이한 문제(기본·심화 중 1회 이상)", ov.solvedQuestions, ov.totalQuestions)
-            ProgressLine("기본 모드 진도", ov.solvedBasic, ov.totalQuestions)
-            ProgressLine("심화 모드 진도", ov.solvedAdvanced, ov.totalQuestions)
-            VSpace(8)
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                StatTile("기본 정답률", pct(ov.basicAccuracy), Modifier.weight(1f))
-                StatTile("심화 정답률", pct(ov.advancedAccuracy), Modifier.weight(1f))
-                StatTile("복습 필요 개념", "${ov.reviewNeededConcepts}", Modifier.weight(1f))
-            }
-            VSpace(6)
-            Text(
-                "총 개념 ${ov.totalConcepts}개 · 전체 문제 ${ov.totalQuestions}개(각 문제 기본·심화 2가지 방식) · 콘텐츠 v${dash.content.bundledVersion}",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
-        VSpace(12)
+        VSpace(24)
+    }
+}
 
-        // 과목
-        SectionCard(title = "과목") {
-            dash.content.subjects.sortedBy { it.sortOrder }.forEach { sub ->
-                val concepts = dash.content.concepts.count { it.subjectId == sub.id }
-                val active = sub.isActive && concepts > 0
-                Surface(
-                    shape = RoundedCornerShape(10.dp),
-                    color = if (active) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant,
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 3.dp).clickable(enabled = active) { onOpenSubject(sub.id) },
-                ) {
-                    Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Column(Modifier.weight(1f)) {
-                            Text(sub.name, style = MaterialTheme.typography.titleSmall)
-                            Text(if (active) sub.description else "콘텐츠 팩 추가 시 학습 가능", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                        }
-                        if (active) {
-                            val studied = dash.content.concepts.count { it.subjectId == sub.id && ov.masteryByConcept[it.id]?.name != "NOT_STARTED" }
-                            Text("$studied/$concepts", style = MaterialTheme.typography.labelLarge)
-                        }
-                    }
+/** 전체 학습현황: 공식 시험과목 5개 요약. 과목을 누르면 세부 콘텐츠팩별 진도를 보여준다. */
+@Composable
+fun OverallProgressCard(dash: DashboardState, onOpen: (String) -> Unit) {
+    val stats = remember(dash) { ExamSubjectProgress.summary(dash.content, dash.user) }
+    SectionCard(title = "전체 학습현황") {
+        stats.forEach { st ->
+            ExamSubjectRow(st, onClick = { onOpen(st.id) })
+        }
+        Text(
+            "개념 진도 = 학습 완료 개념(설명 확인 + 기본·심화 정답) / 활성 개념 · 정답률 = 정답 제출 / 전체 제출",
+            style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+    }
+}
+
+@Composable
+fun ExamSubjectRow(st: ExamSubjectProgress.Stat, onClick: (() -> Unit)?) {
+    val status = LocalStatusColors.current
+    Surface(
+        shape = RoundedCornerShape(12.dp),
+        color = MaterialTheme.colorScheme.surfaceContainerLow,
+        modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp).let { if (onClick != null) it.clickable(onClick = onClick) else it },
+    ) {
+        Column(Modifier.padding(12.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(st.name, style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
+                when {
+                    !st.hasContent -> Text("콘텐츠 없음", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    st.complete -> Text("✓ 완료", style = MaterialTheme.typography.labelLarge, color = status.correct)
+                    else -> Text(pct(st.conceptRatio), style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
                 }
             }
-            HorizontalDivider(Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.outlineVariant)
-            OutlinedButton(onClick = onOpenExamScopes, modifier = Modifier.fillMaxWidth()) { Text("기출범위별 학습현황 (01~46)") }
+            if (st.hasContent) {
+                Text(
+                    "학습 완료 ${st.completedConcepts} / 전체 ${st.totalConcepts}개념 · 정답률 ${pct(st.accuracy)} · 복습 필요 ${st.reviewNeeded}",
+                    style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                VSpace(6)
+                LinearProgressIndicator(
+                    progress = { (st.conceptRatio ?: 0.0).toFloat() },
+                    modifier = Modifier.fillMaxWidth().height(6.dp).clip(RoundedCornerShape(3.dp)),
+                    color = if (st.complete) status.correct else MaterialTheme.colorScheme.secondary,
+                    trackColor = MaterialTheme.colorScheme.surfaceContainerHighest,
+                    drawStopIndicator = {},
+                )
+            }
+            st.buildRatio?.let {
+                VSpace(4)
+                Text("콘텐츠 구축 ${pct(it)} (출제범위 목차 ${st.curriculumCovered}/${st.curriculumTotal})",
+                    style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
         }
-        VSpace(24)
     }
 }

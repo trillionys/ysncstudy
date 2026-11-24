@@ -272,12 +272,13 @@ def main():
             errors.append(f"[18] NEW-INV-{n:03d} 미등록")
     for p in dsl.PROBLEM_SOURCES:
         if p.get("linkChapterId"):
-            p["conceptIds"] = [c["id"] for c in concepts if c["chapterId"] == p["linkChapterId"]]
+            chs = p["linkChapterId"].split()
+            p["conceptIds"] = [c["id"] for c in concepts if c["chapterId"] in chs]
         p["linkedQuestionIds"] = sorted({x["id"] for x in active_q if p["sourceId"] in x.get("sourceProblemIds", [])} |
                                         {x["id"] for x in active_q if p["conceptIds"] and x["primaryConceptId"] in p["conceptIds"]})
         if p["verificationStatus"] == "VERIFIED" and p["readingConfidence"] in ("NONE", "LOW"):
             errors.append(f"[18] {p['sourceId']} 판독 신뢰도가 낮은데 VERIFIED")
-    unverified_sources = sum(1 for p in dsl.PROBLEM_SOURCES if p["verificationStatus"] != "VERIFIED")
+    unverified_sources = sum(1 for p in dsl.PROBLEM_SOURCES if p["verificationStatus"] not in ("VERIFIED", "USER_CONFIRMED_COVERED"))
     # 20. 기업법: 정답-조문 원문 대조, 조문 커버리지, 숫자 규칙, 시험 비중
     law_ok, law_interp, law_err = lawdsl.verify_answers(law_q)
     errors.extend(law_err)

@@ -47,6 +47,8 @@ data class ContentPack(
     val examAreas: List<ExamAreaDto> = emptyList(),
     /** v4: 법령 버전(공포일·시행일·출처) */
     val lawVersions: List<LawVersionDto> = emptyList(),
+    /** v5: 과목별 공식 출제범위 마스터 목차 */
+    val curriculumItems: List<CurriculumItemDto> = emptyList(),
 )
 
 /** 조문 1개. status: COMPLETED·INTEGRATED·WRITING·OUT_OF_SCOPE·DELETED·NOT_IN_FORCE·REVIEW_NEEDED */
@@ -172,6 +174,20 @@ data class SubjectDto(
     val description: String = "",
     val sortOrder: Int = 0,
     val isActive: Boolean = true,
+    /** v5: 공식 시험과목(ACC 회계학·BUS 경영학·ECO 경제원론·LAW 기업법·TAX 세법개론) */
+    val examSubject: String = "",
+)
+
+/** v5: 공식 출제범위 마스터 목차 항목. conceptIds 가 실제 학습 가능한 개념이면 covered=true(콘텐츠 구축률 계산용). */
+@Serializable
+data class CurriculumItemDto(
+    val id: String,
+    val subjectId: String,
+    val unit: String,
+    val item: String,
+    val conceptIds: List<String> = emptyList(),
+    val covered: Boolean = false,
+    val sortOrder: Int = 0,
 )
 
 @Serializable

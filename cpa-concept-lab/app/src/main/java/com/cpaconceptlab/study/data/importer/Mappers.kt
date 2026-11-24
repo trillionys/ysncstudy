@@ -25,6 +25,7 @@ import com.cpaconceptlab.study.data.local.LawArticleEntity
 import com.cpaconceptlab.study.data.local.LawVersionEntity
 import com.cpaconceptlab.study.data.local.NumericRuleEntity
 import com.cpaconceptlab.study.data.model.CaseNoteDto
+import com.cpaconceptlab.study.data.model.CurriculumItemDto
 import com.cpaconceptlab.study.data.model.ExamAreaDto
 import com.cpaconceptlab.study.data.model.LawArticleDto
 import com.cpaconceptlab.study.data.model.LawVersionDto
@@ -41,7 +42,8 @@ fun decodeParams(json: String?): Map<String, Double> =
 /** 문항 엔티티의 계산 명세(없으면 null) */
 fun QuestionEntity.calcSpec(): CalcSpecDto? = calcFormulaId?.let { CalcSpecDto(it, decodeParams(calcParams)) }
 
-fun SubjectDto.toEntity() = SubjectEntity(id, name, description, sortOrder, isActive)
+fun SubjectDto.toEntity() = SubjectEntity(id, name, description, sortOrder, isActive, examSubject)
+fun CurriculumItemDto.toEntity() = com.cpaconceptlab.study.data.local.CurriculumItemEntity(id, subjectId, unit, item, conceptIds, covered, sortOrder)
 fun ChapterDto.toEntity() = ChapterEntity(id, code, subjectId, title, englishTitle, sortOrder, partTitle)
 fun SectionDto.toEntity() = SectionEntity(id, chapterId, title, sortOrder)
 fun ExamScopeDto.toEntity() = ExamScopeEntity(number, subjectId, title, conceptIds)

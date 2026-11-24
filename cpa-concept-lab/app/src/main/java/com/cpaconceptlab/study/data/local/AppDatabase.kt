@@ -15,7 +15,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         ContentVersionEntity::class, ImportedPackEntity::class, ProblemSourceEntity::class, ScopeItemEntity::class,
         QuestionAttemptEntity::class, QuestionProgressEntity::class, ConceptProgressEntity::class,
         WrongNoteEntity::class, StudyDayEntity::class,
-        LawArticleEntity::class, NumericRuleEntity::class, CaseNoteEntity::class, ExamAreaEntity::class, LawVersionEntity::class,
+        LawArticleEntity::class, NumericRuleEntity::class, CaseNoteEntity::class, ExamAreaEntity::class, LawVersionEntity::class, CurriculumItemEntity::class,
     ],
     version = AppDatabase.VERSION,
     exportSchema = true,
@@ -26,7 +26,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun progressDao(): ProgressDao
 
     companion object {
-        const val VERSION = 4
+        const val VERSION = 5
         const val NAME = "cpa_concept_lab.db"
 
         /**
@@ -122,7 +122,22 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
-        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
+        /**
+         * v4 → v5: CPA 1차 전 과목 확장.
+         * 과목에 공식 시험과목 그룹 컬럼을 추가하고 출제범위 마스터 목차 테이블을 만든다. 학습기록 테이블은 건드리지 않는다.
+         */
+        val MIGRATION_4_5 = object : Migration(4, 5) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE subjects ADD COLUMN `examSubject` TEXT NOT NULL DEFAULT ''")
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `curriculum_items` (`id` TEXT NOT NULL, `subjectId` TEXT NOT NULL, `unit` TEXT NOT NULL, " +
+                        "`item` TEXT NOT NULL, `conceptIds` TEXT NOT NULL, `covered` INTEGER NOT NULL, `sortOrder` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+                )
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_curriculum_items_subjectId` ON `curriculum_items` (`subjectId`)")
+            }
+        }
+
+        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5)
 
         fun build(context: Context): AppDatabase =
             Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, NAME)

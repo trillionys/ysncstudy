@@ -177,7 +177,11 @@ class QuizViewModel(
     companion object {
         /** 출제 범위별 후보 문항(활성 문항만). 난이도·형식 필터를 함께 적용한다. */
         fun candidatesFor(scope: QuizScope, content: ContentSnapshot, user: UserSnapshot, now: Long): List<QuestionEntity> {
-            val active = content.questions.filter { q -> content.conceptById[q.primaryConceptId]?.isActive == true }
+            // DRAFT·NEEDS_REVIEW 문항은 학습 출제에서 제외한다(선택 문항 다시 풀기만 허용)
+            val active = content.questions.filter { q ->
+                content.conceptById[q.primaryConceptId]?.isActive == true &&
+                    (scope.type == ScopeType.QUESTION || q.reviewStatus !in NOT_STUDYABLE)
+            }
             val scoped = when (scope.type) {
                 ScopeType.ALL, ScopeType.DUE, ScopeType.MOCK -> active
                 ScopeType.SUBJECT -> active.filter { it.subjectId == scope.id }
@@ -223,6 +227,7 @@ class QuizViewModel(
         }
 
         const val LAW_SUBJECT = "CPA-LAW"
+        val NOT_STUDYABLE = setOf("DRAFT", "NEEDS_REVIEW")
 
         /** 실전 비중 모의의 영역별 배정 문항 수(공고 비중 기준, 기업법 40문항) */
         fun weightedQuota(content: ContentSnapshot, subjectId: String?): Map<String, Int> =

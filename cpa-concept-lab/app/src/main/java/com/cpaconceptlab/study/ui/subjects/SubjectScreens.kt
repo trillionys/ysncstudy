@@ -125,43 +125,6 @@ fun ConceptRow(id: String, name: String, level: MasteryLevel, indent: Boolean = 
     }
 }
 
-/** 기출범위별 학습현황(01~46) */
-@Composable
-fun ExamScopeScreen(dash: DashboardState, onOpenConcept: (String) -> Unit, onStartQuiz: (QuizMode, QuizScope) -> Unit) {
-    var open by rememberSaveable { mutableStateOf<String?>(null) }
-    val scopes = dash.examScopes
-    LazyColumn(Modifier.fillMaxSize(), contentPadding = androidx.compose.foundation.layout.PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        item {
-            SectionCard(title = "기출범위 커버리지") {
-                val studied = scopes.count { it.studiedConcepts == it.conceptIds.size && it.conceptIds.isNotEmpty() }
-                ProgressLine("모든 핵심 개념을 학습한 출제범위", studied, scopes.size)
-                Text("원래 문제번호는 출제범위 추적용 정보이며 기출 원문은 수록하지 않습니다. 모든 문항은 개념을 바탕으로 새로 작성한 교육용 빈칸문제입니다.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            }
-        }
-        items(scopes, key = { it.number }) { s ->
-            SectionCard {
-                Row(Modifier.fillMaxWidth().clickable { open = if (open == s.number) null else s.number }, verticalAlignment = Alignment.CenterVertically) {
-                    Text(s.number, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.secondary, modifier = Modifier.width(36.dp))
-                    Text(s.title, style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
-                    Text(pct(s.accuracy), style = MaterialTheme.typography.labelLarge)
-                }
-                ProgressLine("개념 학습 ${s.studiedConcepts}/${s.conceptIds.size} · 문항 풀이", s.solvedQuestions, s.questionCount)
-                if (open == s.number) {
-                    s.conceptIds.forEach { id ->
-                        val con = dash.content.conceptById[id] ?: return@forEach
-                        ConceptRow(id, con.koreanName, dash.overview.masteryByConcept[id] ?: MasteryLevel.NOT_STARTED) { onOpenConcept(id) }
-                    }
-                    VSpace(6)
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        OutlinedButton(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.EXAM, s.number)) }, modifier = Modifier.weight(1f)) { Text("기본 풀기") }
-                        OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.EXAM, s.number)) }, modifier = Modifier.weight(1f)) { Text("심화 풀기") }
-                    }
-                }
-            }
-        }
-    }
-}
-
 /** 기업법: 두 가지 학습 모드 + 법률별 조문 커버리지 */
 @Composable
 fun LawSubjectHeader(dash: DashboardState, subjectId: String, onStartQuiz: (QuizMode, QuizScope) -> Unit) {

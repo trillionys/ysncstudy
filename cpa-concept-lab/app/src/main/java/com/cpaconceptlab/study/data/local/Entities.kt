@@ -23,6 +23,20 @@ data class SubjectEntity(
     val description: String,
     val sortOrder: Int,
     val isActive: Boolean,
+    /** 스키마 v5: 공식 시험과목 그룹 */
+    @ColumnInfo(defaultValue = "") val examSubject: String = "",
+)
+
+/** 스키마 v5: 공식 출제범위 마스터 목차(콘텐츠 구축률) */
+@Entity(tableName = "curriculum_items", indices = [Index("subjectId")])
+data class CurriculumItemEntity(
+    @PrimaryKey val id: String,
+    val subjectId: String,
+    val unit: String,
+    val item: String,
+    val conceptIds: List<String>,
+    val covered: Boolean,
+    val sortOrder: Int,
 )
 
 @Entity(tableName = "chapters", indices = [Index("subjectId")])

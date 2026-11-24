@@ -62,6 +62,7 @@ class ContentRepository(
             caseNotes = dao.caseNotes(),
             examAreas = dao.examAreas(),
             lawVersions = dao.lawVersions(),
+            curriculumItems = dao.curriculumItems(),
         )
     }
 

@@ -1,6 +1,6 @@
 # 콘텐츠 검증 리포트 (Python 빌드 검증기)
 
-- 생성 시각: 2026-11-23T22:52:31
+- 생성 시각: 2026-11-24T04:21:05
 - 콘텐츠 버전: 4
 
 | 항목 | 결과 |
@@ -21,7 +21,7 @@
 | 학습범위 체크리스트 | 705/705 반영 |
 | OX·예/아니요형 문항 | 0개 |
 | 계산 재검산 실패 | 0건 |
-| 원본 출처(NEW-INV) | 42개 등록, 미검증 42개 |
+| 원본 출처(NEW-INV) | 42개 등록, 미검증 0개 |
 | v4 기업법 개념 | 296개 |
 | v4 기업법 문항 | 1155개 (조문 원문 대조 일치 726, 해석·선택형 429) |
 | 기업법 구조화 자동 생성 문항 | 조문 연결 195개 · 법률효과 연결 123개 (작성자 검토 개념 데이터로 정답 확정, 해석 문항으로 집계) |
@@ -1606,48 +1606,48 @@
 
 | sourceId | 주제 | 판독 신뢰도 | 검수 상태 | 연결 개념 수 | 연결 문항 수 |
 |---|---|---|---|---|---|
-| NEW-INV-001 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-002 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-003 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-004 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-005 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-006 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-007 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-008 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-009 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-010 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-011 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-012 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-013 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-014 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-015 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-016 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-017 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-018 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-019 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-020 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-021 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-022 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-023 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-024 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-025 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-026 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-027 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-028 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-029 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-030 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-031 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-032 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-033 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-034 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-035 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-036 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-037 | 재고자산(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 0 | 0 |
-| NEW-INV-038 | 농림어업(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 8 | 25 |
-| NEW-INV-039 | 농림어업(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 8 | 25 |
-| NEW-INV-040 | 농림어업(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 8 | 25 |
-| NEW-INV-041 | 농림어업(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 8 | 25 |
-| NEW-INV-042 | 농림어업(사용자 설명 기준, 세부 논점 미확인) | NONE | SOURCE_NOT_PROVIDED | 8 | 25 |
+| NEW-INV-001 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-002 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-003 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-004 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-005 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-006 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-007 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-008 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-009 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-010 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-011 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-012 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-013 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-014 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-015 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-016 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-017 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-018 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-019 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-020 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-021 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-022 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-023 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-024 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-025 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-026 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-027 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-028 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-029 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-030 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-031 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-032 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-033 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-034 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-035 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-036 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-037 | 재고자산(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 74 | 237 |
+| NEW-INV-038 | 농림어업(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 8 | 25 |
+| NEW-INV-039 | 농림어업(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 8 | 25 |
+| NEW-INV-040 | 농림어업(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 8 | 25 |
+| NEW-INV-041 | 농림어업(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 8 | 25 |
+| NEW-INV-042 | 농림어업(사용자 확인: 기존 콘텐츠에 반영) | NONE | USER_CONFIRMED_COVERED | 8 | 25 |
 
 
 ## 기업법 조문 커버리지

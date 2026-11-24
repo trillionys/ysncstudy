@@ -66,6 +66,7 @@ class ContentImporter(private val db: AppDatabase) {
                 if (p.problemSources.isNotEmpty()) dao.upsertProblemSources(p.problemSources.map { it.toEntity() })
                 if (p.scopeItems.isNotEmpty()) dao.upsertScopeItems(p.scopeItems.map { it.toEntity() })
                 // v4 기업법 참조 데이터: 법령 개정·커버리지 변화가 반영되도록 항상 최신 값으로 upsert
+                if (p.curriculumItems.isNotEmpty()) dao.upsertCurriculumItems(p.curriculumItems.map { it.toEntity() })
                 if (p.lawArticles.isNotEmpty()) dao.upsertLawArticles(p.lawArticles.map { it.toEntity() })
                 if (p.numericRules.isNotEmpty()) dao.upsertNumericRules(p.numericRules.map { it.toEntity() })
                 if (p.caseNotes.isNotEmpty()) dao.upsertCaseNotes(p.caseNotes.map { it.toEntity() })

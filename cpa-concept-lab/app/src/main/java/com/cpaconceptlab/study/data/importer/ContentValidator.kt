@@ -65,7 +65,7 @@ object ContentCoverageValidator {
             appendLine("계산문항 앱 독립 검산: ${calcVerified}/${calcQuestions}개 일치")
             appendLine("OX·예/아니요형 문항: ${oxQuestions}개")
             if (scopeTotal > 0) appendLine("지정 학습범위 체크리스트: ${scopeCovered}/${scopeTotal} 반영")
-            if (problemSources > 0) appendLine("원본 문제 출처: ${problemSources}개 등록 · 원본 미확인/미검증 ${unverifiedSources}개")
+            if (problemSources > 0) appendLine("원본 문제 출처: ${problemSources}개 등록 · 반영 미확인 ${unverifiedSources}개")
             if (lawConcepts > 0) {
                 appendLine("기업법 개념: ${lawConcepts}개 · 문항: ${lawQuestions}개 (정답-조문 원문 대조 일치 ${statuteMatched} · 해석·선택형 ${interpretive})")
                 lawRows.forEach {
@@ -194,7 +194,7 @@ object ContentCoverageValidator {
             calcVerified = calcOk,
             oxQuestions = active.count { OxDetector.isOxLike(it) },
             problemSources = sourceStatuses.size,
-            unverifiedSources = sourceStatuses.count { it != "VERIFIED" },
+            unverifiedSources = sourceStatuses.count { it != "VERIFIED" && it != "USER_CONFIRMED_COVERED" },
             scopeCovered = scopeCoverage.first,
             scopeTotal = scopeCoverage.second,
             requiredConcepts = requiredConceptIds.size,

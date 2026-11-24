@@ -40,17 +40,6 @@ data class ConceptWeakness(val conceptId: String, val name: String, val wrong: I
     val wrongRate: Double get() = if (attempts == 0) 0.0 else wrong.toDouble() / attempts
 }
 
-data class ExamScopeStat(
-    val number: String,
-    val title: String,
-    val conceptIds: List<String>,
-    val studiedConcepts: Int,
-    val masteredConcepts: Int,
-    val questionCount: Int,
-    val solvedQuestions: Int,
-    val accuracy: Double?,
-)
-
 data class Overview(
     val totalConcepts: Int,
     val studiedConcepts: Int,
@@ -182,29 +171,6 @@ object StatsCalculator {
             masteryByConcept = mastery,
             masteryCounts = MasteryLevel.entries.associateWith { lvl -> mastery.count { it.value == lvl } },
         )
-    }
-
-    fun examScopes(content: ContentSnapshot, user: UserSnapshot, mastery: Map<String, MasteryLevel>): List<ExamScopeStat> {
-        val activeIds = content.questions.map { it.id }.toSet()
-        return content.examScopes.sortedBy { it.number }.map { s ->
-            val cids = s.conceptIds.filter { content.conceptById[it]?.isActive == true }
-            val qs = content.questions.filter { q -> q.conceptIds.any { it in cids } }
-            val qids = qs.map { it.id }.toSet()
-            val rows = user.questionProgress.filter { it.questionId in qids && it.questionId in activeIds }
-            val total = rows.sumOf { it.totalAttempts }
-            ExamScopeStat(
-                number = s.number,
-                title = s.title,
-                conceptIds = cids,
-                studiedConcepts = cids.count { (mastery[it] ?: MasteryLevel.NOT_STARTED) != MasteryLevel.NOT_STARTED },
-                masteredConcepts = cids.count {
-                    mastery[it] in setOf(MasteryLevel.BASIC_MASTERED, MasteryLevel.ADVANCED_MASTERED, MasteryLevel.FULL_MASTERY)
-                },
-                questionCount = qs.size,
-                solvedQuestions = rows.map { it.questionId }.distinct().size,
-                accuracy = if (total == 0) null else rows.sumOf { it.correctAttempts }.toDouble() / total,
-            )
-        }
     }
 
     /**

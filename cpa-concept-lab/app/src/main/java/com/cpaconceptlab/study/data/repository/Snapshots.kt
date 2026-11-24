@@ -39,6 +39,7 @@ data class ContentSnapshot(
     val caseNotes: List<CaseNoteEntity> = emptyList(),
     val examAreas: List<ExamAreaEntity> = emptyList(),
     val lawVersions: List<LawVersionEntity> = emptyList(),
+    val curriculumItems: List<com.cpaconceptlab.study.data.local.CurriculumItemEntity> = emptyList(),
 ) {
     val lawArticleById: Map<String, LawArticleEntity> = lawArticles.associateBy { it.id }
 

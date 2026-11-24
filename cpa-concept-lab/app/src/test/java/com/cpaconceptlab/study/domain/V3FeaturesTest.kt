@@ -101,10 +101,13 @@ class V3FeaturesTest {
         assertTrue(concepts.none { it.verificationStatus == "VERIFIED" })
         val sources = packs.flatMap { it.problemSources }
         assertEquals((1..42).map { "NEW-INV-%03d".format(it) }, sources.map { it.sourceId })
-        // 원본 이미지가 제공되지 않았으므로 모두 미검증·검토 필요 상태여야 한다
-        assertTrue(sources.all { it.verificationStatus != "VERIFIED" && it.reviewRequired && it.readingConfidence == "NONE" })
-        // 38~42 는 농림어업 단원과 연결
-        sources.filter { it.originalNumber!!.toInt() >= 38 }.forEach { s -> assertTrue(s.conceptIds.all { it.startsWith("R") } && s.conceptIds.isNotEmpty()) }
+        // 사용자가 반영 여부를 확인했지만 앱 작성자가 원본을 판독하지 않았으므로 VERIFIED 로 표시하지 않는다
+        assertTrue(sources.all { it.verificationStatus == "USER_CONFIRMED_COVERED" && it.readingConfidence == "NONE" })
+        // 01~37 은 재고자산(L·M·N), 38~42 는 농림어업(R) 단원과 연결
+        sources.forEach { s ->
+            val agri = s.originalNumber!!.toInt() >= 38
+            assertTrue(s.sourceId, s.conceptIds.isNotEmpty() && s.conceptIds.all { if (agri) it.startsWith("R") else it[0] in "LMN" })
+        }
         val scope = packs.flatMap { it.scopeItems }
         assertTrue(scope.size >= 700)
         assertTrue("미반영 학습범위: ${scope.filter { !it.covered }.map { it.item }}", scope.all { it.covered && it.conceptId != null })

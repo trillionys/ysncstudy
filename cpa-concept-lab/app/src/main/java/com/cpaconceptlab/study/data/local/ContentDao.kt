@@ -18,6 +18,8 @@ interface ContentDao {
     @Upsert suspend fun upsertProblemSources(items: List<ProblemSourceEntity>)
     @Upsert suspend fun upsertScopeItems(items: List<ScopeItemEntity>)
 
+    @Upsert suspend fun upsertCurriculumItems(items: List<CurriculumItemEntity>)
+    @Query("SELECT * FROM curriculum_items ORDER BY sortOrder") suspend fun curriculumItems(): List<CurriculumItemEntity>
     @Upsert suspend fun upsertLawArticles(items: List<LawArticleEntity>)
     @Upsert suspend fun upsertNumericRules(items: List<NumericRuleEntity>)
     @Upsert suspend fun upsertCaseNotes(items: List<CaseNoteEntity>)

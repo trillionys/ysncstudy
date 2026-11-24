@@ -11,7 +11,6 @@ import com.cpaconceptlab.study.data.importer.ContentCoverageValidator
 import com.cpaconceptlab.study.data.repository.ContentSnapshot
 import com.cpaconceptlab.study.data.repository.UserSettings
 import com.cpaconceptlab.study.data.repository.UserSnapshot
-import com.cpaconceptlab.study.domain.usecase.ExamScopeStat
 import com.cpaconceptlab.study.domain.usecase.Overview
 import com.cpaconceptlab.study.domain.usecase.StatsCalculator
 import kotlinx.coroutines.Dispatchers
@@ -33,7 +32,6 @@ data class DashboardState(
     val content: ContentSnapshot,
     val user: UserSnapshot,
     val overview: Overview,
-    val examScopes: List<ExamScopeStat>,
     val now: Long,
 )
 
@@ -66,7 +64,7 @@ class MainViewModel(val container: AppContainer) : ViewModel() {
         contentRepo.snapshot.filterNotNull(), studyRepo.userSnapshot, clock,
     ) { c, u, now ->
         val ov = StatsCalculator.overview(c, u, now)
-        DashboardState(c, u, ov, StatsCalculator.examScopes(c, u, ov.masteryByConcept), now)
+        DashboardState(c, u, ov, now)
     }.flowOn(Dispatchers.Default).stateIn(viewModelScope, SharingStarted.Eagerly, null)
 
     val contentVersions = contentRepo.versions.stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
