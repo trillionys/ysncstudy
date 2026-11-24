@@ -37,6 +37,7 @@ object TestContent {
             caseNotes = packs.flatMap { it.caseNotes }.map { it.toEntity() },
             examAreas = packs.flatMap { it.examAreas }.map { it.toEntity() },
             lawVersions = packs.flatMap { it.lawVersions }.map { it.toEntity() },
+            curriculumItems = packs.flatMap { it.curriculumItems }.map { it.toEntity() },
         )
     }
 

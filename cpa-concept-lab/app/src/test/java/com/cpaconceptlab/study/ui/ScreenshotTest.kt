@@ -12,6 +12,7 @@ import com.cpaconceptlab.study.MainActivity
 import com.cpaconceptlab.study.TestContent
 import androidx.compose.ui.test.performScrollToNode
 import org.junit.Rule
+import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
@@ -45,6 +46,10 @@ class ScreenshotTest {
 
     @Test fun captureMainScreens() {
         waitText("오늘의 학습")
+        // v5: 홈에는 공식 시험과목별 '전체 학습현황'이 있고 '기출범위별 학습현황'은 없다
+        waitText("전체 학습현황")
+        listOf("회계학", "경영학", "경제원론", "기업법", "세법개론").forEach { waitText(it) }
+        assertTrue(rule.onAllNodesWithText("기출범위별", substring = true).fetchSemanticsNodes().isEmpty())
         shot("01_home")
         rule.onNodeWithText("기본 문제").performScrollTo().performClick()
         // 전체 범위에는 빈칸·4지선다·매칭형이 섞여 있다(v4: 기업법 포함). 문항 형식과 무관하게 진행한다.
@@ -85,7 +90,8 @@ class ScreenshotTest {
         shot("07_wrong_notes")
         // v4: 기업법 과목 화면(학습 모드 2종·조문 커버리지)
         tab("과목")
-        waitText("기업법")
+        waitText("재무회계")
+        rule.onNode(androidx.compose.ui.test.hasScrollToNodeAction()).performScrollToNode(androidx.compose.ui.test.hasText("기업법"))
         rule.onNodeWithText("기업법").performClick()
         waitText("학습 모드")
         shot("08_law_subject")

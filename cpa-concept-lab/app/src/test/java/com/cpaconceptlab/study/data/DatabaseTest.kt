@@ -450,6 +450,56 @@ class DatabaseTest {
         ctx.deleteDatabase(name)
     }
 
+    // DB 마이그레이션 4 → 5 + v5 번들(전 과목 팩) 동기화: 1.0.3 사용자의 학습기록이 모두 보존되는지
+    @Test fun migration4To5KeepsLearningRecordsAndAddsPacks() = runBlocking<Unit> {
+        val name = "migration45-test.db"
+        val (helper, v4) = createDbFromSchema(name, 4)
+        helper.writableDatabase.apply {
+            execSQL(insertSql(v4, "subjects", mapOf("id" to "FA", "name" to "재무회계", "description" to "", "sortOrder" to 1, "isActive" to 1)))
+            execSQL(insertSql(v4, "subjects", mapOf("id" to "CPA-LAW", "name" to "기업법", "description" to "", "sortOrder" to 7, "isActive" to 1)))
+            execSQL(insertSql(v4, "content_versions", mapOf("version" to 4, "source" to "bundled", "packId" to "fa", "importedAt" to 1,
+                "conceptCount" to 758, "questionCount" to 2282)))
+            execSQL(insertSql(v4, "concept_progress", mapOf("conceptId" to "LD045", "firstStudiedAt" to 1, "lastStudiedAt" to 2, "viewCount" to 2,
+                "basicAttemptCount" to 3, "basicCorrectCount" to 2, "advancedAttemptCount" to 1, "advancedCorrectCount" to 1,
+                "masteryLevel" to "ADVANCED_MASTERED", "nextReviewAt" to 55, "isBookmarked" to 1, "memo" to "특별결의 2/3·1/3")))
+            execSQL("INSERT INTO question_progress VALUES ('LD045-Q01','BASIC',1,3,2,1,1,5,1,4000,2,777,0.5)")
+            execSQL("INSERT INTO wrong_notes VALUES ('LD045-Q01','BASIC','과반수',1,1,3,0,NULL)")
+            execSQL("INSERT INTO study_days VALUES (20500, 7, 5, 21000)")
+            close()
+        }
+        val migrated = Room.databaseBuilder(ctx, AppDatabase::class.java, name)
+            .addMigrations(*AppDatabase.MIGRATIONS).allowMainThreadQueries().build()
+        assertEquals(setOf("FA", "CPA-LAW"), migrated.contentDao().subjects().map { it.id }.toSet())
+        assertTrue(migrated.contentDao().subjects().all { it.examSubject == "" })
+        assertTrue(migrated.contentDao().curriculumItems().isEmpty())
+
+        val repo = ContentRepository(migrated, BundledAssetContentSource(ctx.assets))
+        val r = repo.syncBundled()
+        assertNotNull(r); assertTrue(r!!.message, r.success)
+        val snap = repo.snapshot.value!!
+        assertEquals(TestContent.manifest.conceptCount, snap.concepts.size)
+        assertEquals(listOf("FA", "IA", "AA", "CM", "GA", "FM", "HR", "EC", "CPA-LAW", "TX"), snap.subjects.sortedBy { it.sortOrder }.map { it.id })
+        assertEquals("ACC", snap.subjects.single { it.id == "CM" }.examSubject)
+        assertTrue(snap.subjects.single { it.id == "FM" }.isActive)
+        assertFalse(snap.subjects.single { it.id == "TX" }.isActive)
+        assertTrue(snap.curriculumItems.size > 1000)
+
+        val pd = migrated.progressDao()
+        val cp = pd.conceptProgress("LD045")!!
+        assertEquals("ADVANCED_MASTERED", cp.masteryLevel); assertEquals("특별결의 2/3·1/3", cp.memo); assertTrue(cp.isBookmarked); assertEquals(55L, cp.nextReviewAt)
+        assertEquals(777L, pd.questionProgress("LD045-Q01", "BASIC")!!.nextReviewAt)
+        assertEquals(1, pd.allWrongNotes().size)
+        assertEquals(7, pd.allStudyDays().single().solvedCount)
+        assertEquals("NOT_STARTED", pd.conceptProgress("FM020")!!.masteryLevel)
+        // 다시 동기화해도 중복 없음
+        migrated.openHelper.writableDatabase.execSQL("UPDATE content_versions SET version = 4")
+        repo.syncBundled()
+        assertEquals(TestContent.manifest.questionCount, migrated.contentDao().questions().size)
+        assertEquals(snap.curriculumItems.size, migrated.contentDao().curriculumItems().size)
+        migrated.close()
+        ctx.deleteDatabase(name)
+    }
+
     // 앱 업데이트(콘텐츠 버전 상승) 시뮬레이션: 같은 DB 파일을 다시 열어 동기화해도 학습진도 유지
     @Test fun progressSurvivesAppRestartAndResync() = runBlocking<Unit> {
         val name = "update-test.db"
