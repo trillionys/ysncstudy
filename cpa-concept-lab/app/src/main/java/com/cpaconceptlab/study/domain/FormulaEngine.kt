@@ -137,6 +137,16 @@ object FormulaEngine {
 
         // ── 재무관리 ──
         fun pc(x: Double) = x / 100.0
+
+        // ── 세법(세율은 TaxRuleEngine 데이터) ──
+        amount("prog_tax") { r0(TaxRuleEngine.compute(it["table"].toInt(), it["base"])) }
+        amount("corp_income") { r0(it["ni"] + it["add"] + it["disallow"] - it["exclude"] - it["deduct"]) }
+        amount("rate_of") { r0(it["amount"] * it["rate"] / 100.0) }
+        amount("ent_base_limit") { r0((if (it["sme"] != 0.0) 36_000_000.0 else 12_000_000.0) * it["months"] / 12.0) }
+        amount("donation_limit") { r0(max(0.0, it["base"] - it["loss"]) * it["rate"] / 100.0) }
+        amount("vat_payable") { r0(it["sales"] * it["rate"] / 100.0 - it["input_tax"]) }
+        amount("common_input_tax") { r0(it["common"] * it["exempt"] / it["total"]) }
+        amount("minus") { r0(it["a"] - it["b"]) }
         amount("fv") { r0(it["pv"] * (1 + pc(it["r"])).pow(it["n"])) }
         amount("pv") { r0(it["fv"] / (1 + pc(it["r"])).pow(it["n"])) }
         amount("annuity_pv") { val i = pc(it["r"]); r0(it["c"] * (1 - (1 + i).pow(-it["n"])) / i) }

@@ -68,7 +68,7 @@ data class ContentSnapshot(
     fun conceptsOfChapter(chapterId: String) = concepts.filter { it.chapterId == chapterId }.sortedBy { it.sortOrder }
 
     companion object {
-        private val REF = Regex("^(상법|공인회계사법|외부감사법) (제\\d+조(?:의\\d+)?)")
+        private val REF = Regex("^(상법|공인회계사법|외부감사법|국세기본법|법인세법|소득세법|부가가치세법|상증법|지방세법|조특법) (제\\d+조(?:의\\d+)?)")
 
         /** '상법 제368조 제1항' → '상법|제368조' */
         fun articleKey(ref: String): String? = REF.find(ref)?.let { "${it.groupValues[1]}|${it.groupValues[2]}" }

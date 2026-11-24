@@ -421,7 +421,8 @@ class DatabaseTest {
         assertTrue(snap.subjects.any { it.id == "CPA-LAW" && it.name == "기업법" && it.isActive })
         assertTrue(snap.subjects.none { it.id == "BL" })
         assertEquals(TestContent.packs.sumOf { it.lawArticles.size }, snap.lawArticles.size)
-        assertEquals(4, snap.examAreas.size)
+        assertEquals(4, snap.examAreas.count { it.subjectId == "CPA-LAW" })
+        assertEquals(5, snap.examAreas.count { it.subjectId == "TX" })   // v6: 세법개론 실전 비중 영역
         assertTrue(snap.numericRules.size >= 150)
         assertTrue(snap.concepts.count { it.subjectId == "CPA-LAW" } >= 250)
         // 기기에 있는 개념의 revision 이 번들보다 같거나 높으면 덮어쓰지 않는다
@@ -481,7 +482,7 @@ class DatabaseTest {
         assertEquals(listOf("FA", "IA", "AA", "CM", "GA", "FM", "HR", "EC", "CPA-LAW", "TX"), snap.subjects.sortedBy { it.sortOrder }.map { it.id })
         assertEquals("ACC", snap.subjects.single { it.id == "CM" }.examSubject)
         assertTrue(snap.subjects.single { it.id == "FM" }.isActive)
-        assertFalse(snap.subjects.single { it.id == "TX" }.isActive)
+        assertTrue(snap.subjects.single { it.id == "TX" }.isActive)   // v6: 세법개론 활성
         assertTrue(snap.curriculumItems.size > 1000)
 
         val pd = migrated.progressDao()

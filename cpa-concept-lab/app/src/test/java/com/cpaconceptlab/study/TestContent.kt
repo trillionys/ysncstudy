@@ -16,7 +16,11 @@ object TestContent {
         f
     }
 
-    val manifest: ContentManifest by lazy { ContentParser.parseManifest(File(dir, "manifest.json").readText()) }
+    val manifest: ContentManifest by lazy {
+        // 세율표 데이터(앱은 AppContainer 에서 자산으로 읽는다)
+        com.cpaconceptlab.study.domain.TaxRuleEngine.install(File(dir, "tax_rules.json").readText())
+        ContentParser.parseManifest(File(dir, "manifest.json").readText())
+    }
 
     val packs: List<ContentPack> by lazy { manifest.files.map { ContentParser.parsePack(File(dir, it).readText()) } }
 

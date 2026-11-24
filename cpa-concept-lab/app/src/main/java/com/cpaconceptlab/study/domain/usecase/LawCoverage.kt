@@ -27,7 +27,16 @@ object LawCoverage {
         Triple("공인회계사법", "공인회계사법", null), Triple("외부감사법", "외부감사법", null),
     )
 
-    fun rows(articles: List<LawArticleEntity>): List<Row> = GROUPS.map { (name, law, part) ->
+    /** 세법개론(TX): 법률별 그룹. 지방세법은 취득세·등록면허세·재산세 장과 총칙만 시험범위(나머지는 OUT_OF_SCOPE) */
+    val TAX_GROUPS = listOf(
+        Triple("국세기본법", "국세기본법", null), Triple("법인세법", "법인세법", null), Triple("소득세법", "소득세법", null),
+        Triple("부가가치세법", "부가가치세법", null), Triple("상속세 및 증여세법", "상증법", null),
+        Triple("지방세법(취득·등록면허·재산세)", "지방세법", null), Triple("조세특례제한법", "조특법", null),
+    )
+
+    fun groupsOf(subjectId: String) = if (subjectId == "TX") TAX_GROUPS else GROUPS
+
+    fun rows(articles: List<LawArticleEntity>, subjectId: String = "CPA-LAW"): List<Row> = groupsOf(subjectId).map { (name, law, part) ->
         val a = articles.filter { it.lawShortName == law && (part == null || it.part.startsWith(part)) }
         Row(
             group = name, total = a.size, live = a.count { !it.deleted },

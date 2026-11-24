@@ -126,10 +126,14 @@ object StandardStatusResolver {
 
 /**
  * 기업법 조문·개념의 시험 적용 구분.
- *  APPLIES_2027 [2027년 적용 기준] / PAST [과거 기출 기준] / NOT_IN_FORCE [미시행 개정] / CHECK_DATE [시행일 확인 필요]
+ *  APPLIES_2027 [2027년 적용 기준] / CURRENT_LAW [현재 기준] / ANSWER_CHANGED [개정으로 정답 변경] / PAST [과거 기출 기준] / NOT_IN_FORCE [미시행 개정] / CHECK_DATE [시행일 확인 필요]
  */
 enum class LawApplicability(val label: String) {
     APPLIES_2027("[2027년 적용 기준]"),
+    /** 조회일 현행 법률 기준. 2027 시험 적용 기준일이 확정되지 않은 세법 개념에 쓴다 */
+    CURRENT_LAW("[현재 기준]"),
+    /** 개정으로 정답이 바뀐 이전 문항·개념 */
+    ANSWER_CHANGED("[개정으로 정답 변경]"),
     PAST("[과거 기출 기준]"),
     NOT_IN_FORCE("[미시행 개정]"),
     CHECK_DATE("[시행일 확인 필요]");

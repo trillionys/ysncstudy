@@ -17,8 +17,16 @@ HEAD_RE = re.compile(r"^제(\d+)(편|장|절|관)\s*(.*)$")
 ART_RE = re.compile(r"^제(\d+)조(?:의(\d+))?\s*\(([^)]*)\)")
 
 
+def _alt(m):
+    """표·수식 이미지의 대체텍스트(세율표 등)를 본문으로 살린다."""
+    a = html.unescape(m.group(1))
+    a = a.replace("@@LATEX@@", " ").replace("@@/LATEX@@", " ").replace("\\left(", "(").replace("\\right)", ")")
+    return " " + a + " "
+
+
 def clean(fragment):
-    t = re.sub(r"<[^>]+>", " ", fragment)
+    t = re.sub(r'<img[^>]*alt="([^"]*)"[^>]*>', _alt, fragment)
+    t = re.sub(r"<[^>]+>", " ", t)
     t = html.unescape(t)
     return re.sub(r"\s+", " ", t).strip()
 

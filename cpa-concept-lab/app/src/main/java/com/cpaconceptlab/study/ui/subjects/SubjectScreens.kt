@@ -1,5 +1,6 @@
 package com.cpaconceptlab.study.ui.subjects
 
+import com.cpaconceptlab.study.ui.quiz.QuizViewModel
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -134,7 +135,7 @@ fun LawSubjectHeader(dash: DashboardState, subjectId: String, onStartQuiz: (Quiz
         Text("① 전체 개념 균등학습: 모든 개념을 한 번씩 출제한 뒤에 반복합니다.", style = MaterialTheme.typography.bodySmall)
         Text(
             "② CPA 실전 비중 모드: 공고 출제비중(" + c.examAreas.filter { it.subjectId == subjectId }
-                .sortedBy { listOf("GENERAL", "COMPANY", "CPA_ACT", "AUDIT_ACT").indexOf(it.id) }
+                .sortedBy { QuizViewModel.AREA_ORDER.indexOf(it.id) }
                 .joinToString(" · ") { "${it.name} ${it.minPercent}~${it.maxPercent}%" } + ")에 맞춘 40문항·100점 모의고사입니다.",
             style = MaterialTheme.typography.bodySmall,
         )
@@ -149,7 +150,7 @@ fun LawSubjectHeader(dash: DashboardState, subjectId: String, onStartQuiz: (Quiz
         }
         TextButton(onClick = { showCoverage = !showCoverage }) { Text(if (showCoverage) "조문 커버리지 접기" else "조문 커버리지 보기") }
         if (showCoverage) {
-            LawCoverage.rows(c.lawArticles).forEach { r ->
+            LawCoverage.rows(c.lawArticles, subjectId).forEach { r ->
                 VSpace(6)
                 Text(r.group, style = MaterialTheme.typography.titleSmall)
                 ProgressLine("개념 연결 조문", r.linked, r.live)
@@ -158,10 +159,16 @@ fun LawSubjectHeader(dash: DashboardState, subjectId: String, onStartQuiz: (Quiz
                     style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
-            val outOfScope = c.lawArticles.count { it.status == "OUT_OF_SCOPE" }
+            val laws = LawCoverage.groupsOf(subjectId).map { it.second }.toSet()
+            val mine = c.lawArticles.filter { it.lawShortName in laws }
+            val outOfScope = mine.count { it.status == "OUT_OF_SCOPE" }
             VSpace(6)
-            Text("시험범위 밖 조문(상법 보험·해상·항공운송편): ${outOfScope}개", style = MaterialTheme.typography.bodySmall)
-            c.lawArticles.filter { it.status == "REVIEW_NEEDED" }.forEach {
+            Text(
+                if (subjectId == "TX") "시험범위 밖 조문(지방세법 중 취득세·등록면허세·재산세 외): ${outOfScope}개 · 시행령·시행규칙은 원문 미대조"
+                else "시험범위 밖 조문(상법 보험·해상·항공운송편): ${outOfScope}개",
+                style = MaterialTheme.typography.bodySmall,
+            )
+            mine.filter { it.status == "REVIEW_NEEDED" }.forEach {
                 Text("검토 필요: ${it.lawShortName} ${it.articleId}(${it.title}) — ${it.note.orEmpty()}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
             }
         }

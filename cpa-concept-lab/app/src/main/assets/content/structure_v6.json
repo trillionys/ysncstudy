@@ -1,6 +1,6 @@
 {
  "formatVersion": 1,
- "contentVersion": 5,
+ "contentVersion": 6,
  "packId": "fa-structure",
  "generatedAt": "2026-11-24",
  "subjects": [
@@ -81,7 +81,7 @@
    "name": "세법개론",
    "description": "국세기본법·법인세법·소득세법·부가가치세법·상속세및증여세법·지방세법·조세특례제한법",
    "sortOrder": 10,
-   "isActive": false,
+   "isActive": true,
    "examSubject": "TAX"
   }
  ],
@@ -445,6 +445,78 @@
    "title": "조직행동",
    "englishTitle": "Organizational behavior",
    "sortOrder": 40
+  },
+  {
+   "partTitle": "국세기본법",
+   "id": "TX-A",
+   "code": "A",
+   "subjectId": "TX",
+   "title": "조세총론·국세기본법",
+   "englishTitle": "General tax principles and Framework Act on National Taxes",
+   "sortOrder": 41
+  },
+  {
+   "partTitle": "법인세법",
+   "id": "TX-B",
+   "code": "B",
+   "subjectId": "TX",
+   "title": "법인세법",
+   "englishTitle": "Corporate Income Tax Act",
+   "sortOrder": 42
+  },
+  {
+   "partTitle": "소득세법",
+   "id": "TX-C",
+   "code": "C",
+   "subjectId": "TX",
+   "title": "소득세법",
+   "englishTitle": "Income Tax Act",
+   "sortOrder": 43
+  },
+  {
+   "partTitle": "부가가치세법",
+   "id": "TX-D",
+   "code": "D",
+   "subjectId": "TX",
+   "title": "부가가치세법",
+   "englishTitle": "Value-Added Tax Act",
+   "sortOrder": 44
+  },
+  {
+   "partTitle": "상속세 및 증여세법",
+   "id": "TX-E",
+   "code": "E",
+   "subjectId": "TX",
+   "title": "상속세 및 증여세법",
+   "englishTitle": "Inheritance and Gift Tax Act",
+   "sortOrder": 45
+  },
+  {
+   "partTitle": "지방세법",
+   "id": "TX-F",
+   "code": "F",
+   "subjectId": "TX",
+   "title": "지방세법(취득세·등록면허세·재산세)",
+   "englishTitle": "Local Tax Act (acquisition, registration and property taxes)",
+   "sortOrder": 46
+  },
+  {
+   "partTitle": "조세특례제한법",
+   "id": "TX-G",
+   "code": "G",
+   "subjectId": "TX",
+   "title": "조세특례제한법",
+   "englishTitle": "Restriction of Special Taxation Act",
+   "sortOrder": 47
+  },
+  {
+   "partTitle": "종합 계산·비교·응용",
+   "id": "TX-H",
+   "code": "H",
+   "subjectId": "TX",
+   "title": "종합 계산·비교·응용",
+   "englishTitle": "Integrated computation and comparison",
+   "sortOrder": 48
   }
  ],
  "sections": [
@@ -1581,6 +1653,192 @@
    "chapterId": "HR-B",
    "title": "집단·리더십·조직",
    "sortOrder": 3
+  },
+  {
+   "id": "TX-A-S01",
+   "chapterId": "TX-A",
+   "title": "총칙과 과세의 기본원칙",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-A-S02",
+   "chapterId": "TX-A",
+   "title": "납세의무의 성립·확정·소멸",
+   "sortOrder": 2
+  },
+  {
+   "id": "TX-A-S03",
+   "chapterId": "TX-A",
+   "title": "신고·청구와 가산세",
+   "sortOrder": 3
+  },
+  {
+   "id": "TX-A-S04",
+   "chapterId": "TX-A",
+   "title": "조세불복",
+   "sortOrder": 4
+  },
+  {
+   "id": "TX-B-S01",
+   "chapterId": "TX-B",
+   "title": "납세의무와 과세소득",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-B-S02",
+   "chapterId": "TX-B",
+   "title": "익금과 익금불산입",
+   "sortOrder": 2
+  },
+  {
+   "id": "TX-B-S03",
+   "chapterId": "TX-B",
+   "title": "손금과 손금불산입",
+   "sortOrder": 3
+  },
+  {
+   "id": "TX-B-S04",
+   "chapterId": "TX-B",
+   "title": "충당금·준비금·손익귀속·평가",
+   "sortOrder": 4
+  },
+  {
+   "id": "TX-B-S05",
+   "chapterId": "TX-B",
+   "title": "부당행위계산부인·합병·결손금",
+   "sortOrder": 5
+  },
+  {
+   "id": "TX-B-S06",
+   "chapterId": "TX-B",
+   "title": "과세표준·세액·신고납부",
+   "sortOrder": 6
+  },
+  {
+   "id": "TX-C-S01",
+   "chapterId": "TX-C",
+   "title": "납세의무자와 소득의 구분",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-C-S02",
+   "chapterId": "TX-C",
+   "title": "소득 종류별 과세",
+   "sortOrder": 2
+  },
+  {
+   "id": "TX-C-S03",
+   "chapterId": "TX-C",
+   "title": "종합소득공제·세율·세액공제",
+   "sortOrder": 3
+  },
+  {
+   "id": "TX-C-S04",
+   "chapterId": "TX-C",
+   "title": "퇴직소득과 양도소득",
+   "sortOrder": 4
+  },
+  {
+   "id": "TX-D-S01",
+   "chapterId": "TX-D",
+   "title": "과세대상과 납세의무자",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-D-S02",
+   "chapterId": "TX-D",
+   "title": "공급의 범위·시기·장소",
+   "sortOrder": 2
+  },
+  {
+   "id": "TX-D-S03",
+   "chapterId": "TX-D",
+   "title": "영세율·면세",
+   "sortOrder": 3
+  },
+  {
+   "id": "TX-D-S04",
+   "chapterId": "TX-D",
+   "title": "과세표준과 세액",
+   "sortOrder": 4
+  },
+  {
+   "id": "TX-D-S05",
+   "chapterId": "TX-D",
+   "title": "간이과세와 신고·납부",
+   "sortOrder": 5
+  },
+  {
+   "id": "TX-E-S01",
+   "chapterId": "TX-E",
+   "title": "상속세",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-E-S02",
+   "chapterId": "TX-E",
+   "title": "증여세",
+   "sortOrder": 2
+  },
+  {
+   "id": "TX-E-S03",
+   "chapterId": "TX-E",
+   "title": "신고·납부",
+   "sortOrder": 3
+  },
+  {
+   "id": "TX-F-S01",
+   "chapterId": "TX-F",
+   "title": "취득세",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-F-S02",
+   "chapterId": "TX-F",
+   "title": "등록면허세",
+   "sortOrder": 2
+  },
+  {
+   "id": "TX-F-S03",
+   "chapterId": "TX-F",
+   "title": "재산세",
+   "sortOrder": 3
+  },
+  {
+   "id": "TX-G-S01",
+   "chapterId": "TX-G",
+   "title": "조세특례 총칙",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-G-S02",
+   "chapterId": "TX-G",
+   "title": "법인세·소득세 관련 특례",
+   "sortOrder": 2
+  },
+  {
+   "id": "TX-G-S03",
+   "chapterId": "TX-G",
+   "title": "감면의 제한과 최저한세",
+   "sortOrder": 3
+  },
+  {
+   "id": "TX-G-S04",
+   "chapterId": "TX-G",
+   "title": "소득세·부가가치세·상증세 관련 특례",
+   "sortOrder": 4
+  },
+  {
+   "id": "TX-H-S01",
+   "chapterId": "TX-H",
+   "title": "세목 간 비교",
+   "sortOrder": 1
+  },
+  {
+   "id": "TX-H-S02",
+   "chapterId": "TX-H",
+   "title": "계산 흐름 종합",
+   "sortOrder": 2
   }
  ],
  "examScopes": [
@@ -13445,8 +13703,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "국세기본법 목적",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA001"
+   ],
+   "covered": true,
    "sortOrder": 1102
   },
   {
@@ -13454,8 +13714,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "국세와 지방세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA001"
+   ],
+   "covered": true,
    "sortOrder": 1103
   },
   {
@@ -13463,8 +13725,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "실질과세원칙",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA002"
+   ],
+   "covered": true,
    "sortOrder": 1104
   },
   {
@@ -13472,8 +13736,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "신의성실원칙",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA003"
+   ],
+   "covered": true,
    "sortOrder": 1105
   },
   {
@@ -13481,8 +13747,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "근거과세원칙",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA004"
+   ],
+   "covered": true,
    "sortOrder": 1106
   },
   {
@@ -13490,8 +13758,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "세법해석 원칙",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA005"
+   ],
+   "covered": true,
    "sortOrder": 1107
   },
   {
@@ -13499,8 +13769,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "과세기간",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA006"
+   ],
+   "covered": true,
    "sortOrder": 1108
   },
   {
@@ -13508,8 +13780,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "납세의무 성립",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA007"
+   ],
+   "covered": true,
    "sortOrder": 1109
   },
   {
@@ -13517,8 +13791,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "납세의무 확정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA008"
+   ],
+   "covered": true,
    "sortOrder": 1110
   },
   {
@@ -13526,8 +13802,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "납세의무 소멸",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA009"
+   ],
+   "covered": true,
    "sortOrder": 1111
   },
   {
@@ -13535,8 +13813,11 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "제2차 납세의무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA014",
+    "TA015"
+   ],
+   "covered": true,
    "sortOrder": 1112
   },
   {
@@ -13544,8 +13825,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "연대납세의무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA013"
+   ],
+   "covered": true,
    "sortOrder": 1113
   },
   {
@@ -13553,8 +13836,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "납세의무 승계",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA012"
+   ],
+   "covered": true,
    "sortOrder": 1114
   },
   {
@@ -13562,8 +13847,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "국세부과 제척기간",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA010"
+   ],
+   "covered": true,
    "sortOrder": 1115
   },
   {
@@ -13571,8 +13858,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "소멸시효",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA011"
+   ],
+   "covered": true,
    "sortOrder": 1116
   },
   {
@@ -13580,8 +13869,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "수정신고",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA017"
+   ],
+   "covered": true,
    "sortOrder": 1117
   },
   {
@@ -13589,8 +13880,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "경정청구",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA018"
+   ],
+   "covered": true,
    "sortOrder": 1118
   },
   {
@@ -13598,8 +13891,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "기한후신고",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA019"
+   ],
+   "covered": true,
    "sortOrder": 1119
   },
   {
@@ -13607,8 +13902,11 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "가산세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA020",
+    "TA021"
+   ],
+   "covered": true,
    "sortOrder": 1120
   },
   {
@@ -13616,8 +13914,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "국세환급금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA022"
+   ],
+   "covered": true,
    "sortOrder": 1121
   },
   {
@@ -13625,8 +13925,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "국세우선권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA016"
+   ],
+   "covered": true,
    "sortOrder": 1122
   },
   {
@@ -13634,8 +13936,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "조세불복",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA023"
+   ],
+   "covered": true,
    "sortOrder": 1123
   },
   {
@@ -13643,8 +13947,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "이의신청",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA024"
+   ],
+   "covered": true,
    "sortOrder": 1124
   },
   {
@@ -13652,8 +13958,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "심사청구",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA025"
+   ],
+   "covered": true,
    "sortOrder": 1125
   },
   {
@@ -13661,8 +13969,10 @@
    "subjectId": "TX",
    "unit": "국세기본법",
    "item": "심판청구",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TA026"
+   ],
+   "covered": true,
    "sortOrder": 1126
   },
   {
@@ -13670,8 +13980,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "법인세 납세의무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB001"
+   ],
+   "covered": true,
    "sortOrder": 1127
   },
   {
@@ -13679,8 +13991,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "내국법인",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB002"
+   ],
+   "covered": true,
    "sortOrder": 1128
   },
   {
@@ -13688,8 +14002,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "외국법인",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB002"
+   ],
+   "covered": true,
    "sortOrder": 1129
   },
   {
@@ -13697,8 +14013,12 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "사업연도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB003",
+    "TB004",
+    "TB022"
+   ],
+   "covered": true,
    "sortOrder": 1130
   },
   {
@@ -13706,8 +14026,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "각 사업연도 소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB004"
+   ],
+   "covered": true,
    "sortOrder": 1131
   },
   {
@@ -13715,8 +14037,11 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "익금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB005",
+    "TB006"
+   ],
+   "covered": true,
    "sortOrder": 1132
   },
   {
@@ -13724,8 +14049,11 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "익금불산입",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB006",
+    "TB007"
+   ],
+   "covered": true,
    "sortOrder": 1133
   },
   {
@@ -13733,8 +14061,11 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "손금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB009",
+    "TB010"
+   ],
+   "covered": true,
    "sortOrder": 1134
   },
   {
@@ -13742,8 +14073,11 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "손금불산입",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB010",
+    "TB017"
+   ],
+   "covered": true,
    "sortOrder": 1135
   },
   {
@@ -13751,8 +14085,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "결산조정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB011"
+   ],
+   "covered": true,
    "sortOrder": 1136
   },
   {
@@ -13760,8 +14096,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "신고조정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB011"
+   ],
+   "covered": true,
    "sortOrder": 1137
   },
   {
@@ -13769,8 +14107,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "세무조정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB011"
+   ],
+   "covered": true,
    "sortOrder": 1138
   },
   {
@@ -13778,8 +14118,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "소득처분",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB012"
+   ],
+   "covered": true,
    "sortOrder": 1139
   },
   {
@@ -13787,8 +14129,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "유보",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB012"
+   ],
+   "covered": true,
    "sortOrder": 1140
   },
   {
@@ -13796,8 +14140,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "사외유출",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB012"
+   ],
+   "covered": true,
    "sortOrder": 1141
   },
   {
@@ -13805,8 +14151,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "기타",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB012"
+   ],
+   "covered": true,
    "sortOrder": 1142
   },
   {
@@ -13814,8 +14162,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "기업업무추진비",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB013"
+   ],
+   "covered": true,
    "sortOrder": 1143
   },
   {
@@ -13823,8 +14173,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "기부금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB014"
+   ],
+   "covered": true,
    "sortOrder": 1144
   },
   {
@@ -13832,8 +14184,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "감가상각",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB015"
+   ],
+   "covered": true,
    "sortOrder": 1145
   },
   {
@@ -13841,8 +14195,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "업무용승용차",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB016"
+   ],
+   "covered": true,
    "sortOrder": 1146
   },
   {
@@ -13850,8 +14206,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "지급이자 손금불산입",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB017"
+   ],
+   "covered": true,
    "sortOrder": 1147
   },
   {
@@ -13859,8 +14217,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "충당금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB019"
+   ],
+   "covered": true,
    "sortOrder": 1148
   },
   {
@@ -13868,8 +14228,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "준비금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB021"
+   ],
+   "covered": true,
    "sortOrder": 1149
   },
   {
@@ -13877,8 +14239,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "자산·부채 평가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB023"
+   ],
+   "covered": true,
    "sortOrder": 1150
   },
   {
@@ -13886,8 +14250,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "부당행위계산부인",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB024"
+   ],
+   "covered": true,
    "sortOrder": 1151
   },
   {
@@ -13895,8 +14261,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "특수관계인",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB024"
+   ],
+   "covered": true,
    "sortOrder": 1152
   },
   {
@@ -13904,8 +14272,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "합병·분할",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB025"
+   ],
+   "covered": true,
    "sortOrder": 1153
   },
   {
@@ -13913,8 +14283,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "결손금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB026"
+   ],
+   "covered": true,
    "sortOrder": 1154
   },
   {
@@ -13922,8 +14294,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "과세표준",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB027"
+   ],
+   "covered": true,
    "sortOrder": 1155
   },
   {
@@ -13931,8 +14305,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "산출세액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB027"
+   ],
+   "covered": true,
    "sortOrder": 1156
   },
   {
@@ -13940,8 +14316,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "세액공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB028"
+   ],
+   "covered": true,
    "sortOrder": 1157
   },
   {
@@ -13949,8 +14327,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "세액감면",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG003"
+   ],
+   "covered": true,
    "sortOrder": 1158
   },
   {
@@ -13958,8 +14338,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "최저한세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG006"
+   ],
+   "covered": true,
    "sortOrder": 1159
   },
   {
@@ -13967,8 +14349,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "중간예납",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB029"
+   ],
+   "covered": true,
    "sortOrder": 1160
   },
   {
@@ -13976,8 +14360,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "원천징수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB030"
+   ],
+   "covered": true,
    "sortOrder": 1161
   },
   {
@@ -13985,8 +14371,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "신고 및 납부",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB031"
+   ],
+   "covered": true,
    "sortOrder": 1162
   },
   {
@@ -13994,8 +14382,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "청산소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB032"
+   ],
+   "covered": true,
    "sortOrder": 1163
   },
   {
@@ -14003,8 +14393,10 @@
    "subjectId": "TX",
    "unit": "법인세법",
    "item": "비영리법인 관련 과세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TB001"
+   ],
+   "covered": true,
    "sortOrder": 1164
   },
   {
@@ -14012,8 +14404,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "거주자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC001"
+   ],
+   "covered": true,
    "sortOrder": 1165
   },
   {
@@ -14021,8 +14415,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "비거주자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC001"
+   ],
+   "covered": true,
    "sortOrder": 1166
   },
   {
@@ -14030,8 +14426,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "종합소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC002"
+   ],
+   "covered": true,
    "sortOrder": 1167
   },
   {
@@ -14039,8 +14437,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "분류과세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC002"
+   ],
+   "covered": true,
    "sortOrder": 1168
   },
   {
@@ -14048,8 +14448,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "분리과세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC002"
+   ],
+   "covered": true,
    "sortOrder": 1169
   },
   {
@@ -14057,8 +14459,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "이자소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC004"
+   ],
+   "covered": true,
    "sortOrder": 1170
   },
   {
@@ -14066,8 +14470,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "배당소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC005"
+   ],
+   "covered": true,
    "sortOrder": 1171
   },
   {
@@ -14075,8 +14481,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "금융소득종합과세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC006"
+   ],
+   "covered": true,
    "sortOrder": 1172
   },
   {
@@ -14084,8 +14492,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "사업소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC007"
+   ],
+   "covered": true,
    "sortOrder": 1173
   },
   {
@@ -14093,8 +14503,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "근로소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC008"
+   ],
+   "covered": true,
    "sortOrder": 1174
   },
   {
@@ -14102,8 +14514,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "연금소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC009"
+   ],
+   "covered": true,
    "sortOrder": 1175
   },
   {
@@ -14111,8 +14525,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "기타소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC010"
+   ],
+   "covered": true,
    "sortOrder": 1176
   },
   {
@@ -14120,8 +14536,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "소득금액 계산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC011"
+   ],
+   "covered": true,
    "sortOrder": 1177
   },
   {
@@ -14129,8 +14547,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "필요경비",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC011"
+   ],
+   "covered": true,
    "sortOrder": 1178
   },
   {
@@ -14138,8 +14558,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "원천징수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC012"
+   ],
+   "covered": true,
    "sortOrder": 1179
   },
   {
@@ -14147,8 +14569,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "종합소득공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC013"
+   ],
+   "covered": true,
    "sortOrder": 1180
   },
   {
@@ -14156,8 +14580,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "인적공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC013"
+   ],
+   "covered": true,
    "sortOrder": 1181
   },
   {
@@ -14165,8 +14591,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "특별소득공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC014"
+   ],
+   "covered": true,
    "sortOrder": 1182
   },
   {
@@ -14174,8 +14602,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "세액공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC016"
+   ],
+   "covered": true,
    "sortOrder": 1183
   },
   {
@@ -14183,8 +14613,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "세액감면",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG003"
+   ],
+   "covered": true,
    "sortOrder": 1184
   },
   {
@@ -14192,8 +14624,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "종합소득 과세표준",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC015"
+   ],
+   "covered": true,
    "sortOrder": 1185
   },
   {
@@ -14201,8 +14635,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "세율",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC015"
+   ],
+   "covered": true,
    "sortOrder": 1186
   },
   {
@@ -14210,8 +14646,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "산출세액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC015"
+   ],
+   "covered": true,
    "sortOrder": 1187
   },
   {
@@ -14228,8 +14666,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "연말정산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC018"
+   ],
+   "covered": true,
    "sortOrder": 1189
   },
   {
@@ -14237,8 +14677,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "퇴직소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC019"
+   ],
+   "covered": true,
    "sortOrder": 1190
   },
   {
@@ -14246,8 +14688,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "양도소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC020"
+   ],
+   "covered": true,
    "sortOrder": 1191
   },
   {
@@ -14255,8 +14699,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "양도차익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC021"
+   ],
+   "covered": true,
    "sortOrder": 1192
   },
   {
@@ -14264,8 +14710,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "장기보유특별공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC021"
+   ],
+   "covered": true,
    "sortOrder": 1193
   },
   {
@@ -14273,8 +14721,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "양도소득 기본공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC022"
+   ],
+   "covered": true,
    "sortOrder": 1194
   },
   {
@@ -14282,8 +14732,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "신고·납부",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC023"
+   ],
+   "covered": true,
    "sortOrder": 1195
   },
   {
@@ -14291,8 +14743,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "부가가치세 개념",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD001"
+   ],
+   "covered": true,
    "sortOrder": 1196
   },
   {
@@ -14300,8 +14754,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "과세대상",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD001"
+   ],
+   "covered": true,
    "sortOrder": 1197
   },
   {
@@ -14309,8 +14765,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "사업자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD002"
+   ],
+   "covered": true,
    "sortOrder": 1198
   },
   {
@@ -14318,8 +14776,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "사업장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD004"
+   ],
+   "covered": true,
    "sortOrder": 1199
   },
   {
@@ -14327,8 +14787,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "과세기간",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD003"
+   ],
+   "covered": true,
    "sortOrder": 1200
   },
   {
@@ -14336,8 +14798,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "납세지",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD004"
+   ],
+   "covered": true,
    "sortOrder": 1201
   },
   {
@@ -14345,8 +14809,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "재화의 공급",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD005"
+   ],
+   "covered": true,
    "sortOrder": 1202
   },
   {
@@ -14354,8 +14820,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "용역의 공급",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD007"
+   ],
+   "covered": true,
    "sortOrder": 1203
   },
   {
@@ -14363,8 +14831,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "재화의 수입",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD008"
+   ],
+   "covered": true,
    "sortOrder": 1204
   },
   {
@@ -14372,8 +14842,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "공급시기",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD009"
+   ],
+   "covered": true,
    "sortOrder": 1205
   },
   {
@@ -14381,8 +14853,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "공급장소",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD010"
+   ],
+   "covered": true,
    "sortOrder": 1206
   },
   {
@@ -14390,8 +14864,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "간주공급",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD006"
+   ],
+   "covered": true,
    "sortOrder": 1207
   },
   {
@@ -14399,8 +14875,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "과세표준",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD014"
+   ],
+   "covered": true,
    "sortOrder": 1208
   },
   {
@@ -14408,8 +14886,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "매출세액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD015"
+   ],
+   "covered": true,
    "sortOrder": 1209
   },
   {
@@ -14417,8 +14897,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "매입세액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD016"
+   ],
+   "covered": true,
    "sortOrder": 1210
   },
   {
@@ -14426,8 +14908,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "매입세액 불공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD017"
+   ],
+   "covered": true,
    "sortOrder": 1211
   },
   {
@@ -14435,8 +14919,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "공통매입세액 안분",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD018"
+   ],
+   "covered": true,
    "sortOrder": 1212
   },
   {
@@ -14444,8 +14930,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "의제매입세액공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD019"
+   ],
+   "covered": true,
    "sortOrder": 1213
   },
   {
@@ -14453,8 +14941,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "세금계산서",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD020"
+   ],
+   "covered": true,
    "sortOrder": 1214
   },
   {
@@ -14462,8 +14952,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "전자세금계산서",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD020"
+   ],
+   "covered": true,
    "sortOrder": 1215
   },
   {
@@ -14471,8 +14963,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "영세율",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD011"
+   ],
+   "covered": true,
    "sortOrder": 1216
   },
   {
@@ -14480,8 +14974,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "면세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD012"
+   ],
+   "covered": true,
    "sortOrder": 1217
   },
   {
@@ -14489,8 +14985,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "면세포기",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD013"
+   ],
+   "covered": true,
    "sortOrder": 1218
   },
   {
@@ -14498,8 +14996,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "대손세액공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD021"
+   ],
+   "covered": true,
    "sortOrder": 1219
   },
   {
@@ -14507,8 +15007,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "간이과세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD022"
+   ],
+   "covered": true,
    "sortOrder": 1220
   },
   {
@@ -14516,8 +15018,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "예정신고",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD023"
+   ],
+   "covered": true,
    "sortOrder": 1221
   },
   {
@@ -14525,8 +15029,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "확정신고",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD023"
+   ],
+   "covered": true,
    "sortOrder": 1222
   },
   {
@@ -14534,8 +15040,10 @@
    "subjectId": "TX",
    "unit": "부가가치세법",
    "item": "가산세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TD024"
+   ],
+   "covered": true,
    "sortOrder": 1223
   },
   {
@@ -14543,8 +15051,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "상속세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE001"
+   ],
+   "covered": true,
    "sortOrder": 1224
   },
   {
@@ -14552,8 +15062,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "상속재산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE002"
+   ],
+   "covered": true,
    "sortOrder": 1225
   },
   {
@@ -14561,8 +15073,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "상속재산 평가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE011"
+   ],
+   "covered": true,
    "sortOrder": 1226
   },
   {
@@ -14570,8 +15084,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "간주상속재산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE002"
+   ],
+   "covered": true,
    "sortOrder": 1227
   },
   {
@@ -14579,8 +15095,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "추정상속재산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE003"
+   ],
+   "covered": true,
    "sortOrder": 1228
   },
   {
@@ -14588,8 +15106,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "공과금·장례비·채무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE004"
+   ],
+   "covered": true,
    "sortOrder": 1229
   },
   {
@@ -14597,8 +15117,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "상속공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE005"
+   ],
+   "covered": true,
    "sortOrder": 1230
   },
   {
@@ -14606,8 +15128,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "과세표준",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE006"
+   ],
+   "covered": true,
    "sortOrder": 1231
   },
   {
@@ -14615,8 +15139,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "세율",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE006"
+   ],
+   "covered": true,
    "sortOrder": 1232
   },
   {
@@ -14624,8 +15150,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "증여세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE007"
+   ],
+   "covered": true,
    "sortOrder": 1233
   },
   {
@@ -14633,8 +15161,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "증여재산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE007"
+   ],
+   "covered": true,
    "sortOrder": 1234
   },
   {
@@ -14642,8 +15172,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "증여재산 평가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE011"
+   ],
+   "covered": true,
    "sortOrder": 1235
   },
   {
@@ -14651,8 +15183,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "증여재산공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE008"
+   ],
+   "covered": true,
    "sortOrder": 1236
   },
   {
@@ -14660,8 +15194,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "증여추정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE010"
+   ],
+   "covered": true,
    "sortOrder": 1237
   },
   {
@@ -14669,8 +15205,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "증여의제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE010"
+   ],
+   "covered": true,
    "sortOrder": 1238
   },
   {
@@ -14678,8 +15216,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "특수관계거래",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE012"
+   ],
+   "covered": true,
    "sortOrder": 1239
   },
   {
@@ -14687,8 +15227,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "비상장주식 평가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE011"
+   ],
+   "covered": true,
    "sortOrder": 1240
   },
   {
@@ -14696,8 +15238,10 @@
    "subjectId": "TX",
    "unit": "상속세 및 증여세법",
    "item": "신고·납부",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TE013"
+   ],
+   "covered": true,
    "sortOrder": 1241
   },
   {
@@ -14705,8 +15249,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "취득세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF001"
+   ],
+   "covered": true,
    "sortOrder": 1242
   },
   {
@@ -14714,8 +15260,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "과세대상",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF001"
+   ],
+   "covered": true,
    "sortOrder": 1243
   },
   {
@@ -14723,8 +15271,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "취득시기",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF002"
+   ],
+   "covered": true,
    "sortOrder": 1244
   },
   {
@@ -14732,8 +15282,11 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "과세표준",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF002",
+    "TF007"
+   ],
+   "covered": true,
    "sortOrder": 1245
   },
   {
@@ -14741,8 +15294,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "세율",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF003"
+   ],
+   "covered": true,
    "sortOrder": 1246
   },
   {
@@ -14750,8 +15305,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "중과세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF003"
+   ],
+   "covered": true,
    "sortOrder": 1247
   },
   {
@@ -14759,8 +15316,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "등록면허세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF005"
+   ],
+   "covered": true,
    "sortOrder": 1248
   },
   {
@@ -14768,8 +15327,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "재산세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF006"
+   ],
+   "covered": true,
    "sortOrder": 1249
   },
   {
@@ -14777,8 +15338,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "납세의무자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF006"
+   ],
+   "covered": true,
    "sortOrder": 1250
   },
   {
@@ -14786,8 +15349,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "과세기준일",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF007"
+   ],
+   "covered": true,
    "sortOrder": 1251
   },
   {
@@ -14795,8 +15360,10 @@
    "subjectId": "TX",
    "unit": "지방세법",
    "item": "신고 및 납부",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TF004"
+   ],
+   "covered": true,
    "sortOrder": 1252
   },
   {
@@ -14804,8 +15371,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "법인세 관련 조세특례",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG002"
+   ],
+   "covered": true,
    "sortOrder": 1253
   },
   {
@@ -14813,8 +15382,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "소득세 관련 조세특례",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG008"
+   ],
+   "covered": true,
    "sortOrder": 1254
   },
   {
@@ -14822,8 +15393,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "부가가치세 관련 조세특례",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG009"
+   ],
+   "covered": true,
    "sortOrder": 1255
   },
   {
@@ -14831,8 +15404,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "상속세·증여세 관련 조세특례",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG010"
+   ],
+   "covered": true,
    "sortOrder": 1256
   },
   {
@@ -14840,8 +15415,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "조세감면",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG001"
+   ],
+   "covered": true,
    "sortOrder": 1257
   },
   {
@@ -14849,8 +15426,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "세액공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG004"
+   ],
+   "covered": true,
    "sortOrder": 1258
   },
   {
@@ -14858,8 +15437,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "투자세액공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG005"
+   ],
+   "covered": true,
    "sortOrder": 1259
   },
   {
@@ -14867,8 +15448,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "중소기업 관련 특례",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG002"
+   ],
+   "covered": true,
    "sortOrder": 1260
   },
   {
@@ -14885,8 +15468,10 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "최저한세와 세액공제 관계",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG006"
+   ],
+   "covered": true,
    "sortOrder": 1262
   }
  ],

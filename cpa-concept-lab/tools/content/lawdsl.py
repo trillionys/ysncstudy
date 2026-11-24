@@ -29,7 +29,23 @@ LAWS = {
     "외부감사법": dict(file="audit_act.json", version="법률 제20896호", promulgated="2025-04-01", effective="2025-04-01",
                   url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=270309",
                   full="주식회사 등의 외부감사에 관한 법률"),
+    # 세법개론(TX): 2026. 11. 24. 국가법령정보센터 조회 현행 법률
+    "국세기본법": dict(file="tax_basic.json", version="법률 제21987호", promulgated="2026-09-29", effective="2026-10-02",
+                  url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=289999", verified="2026-11-24"),
+    "법인세법": dict(file="corp_tax.json", version="법률 제21217호", promulgated="2025-12-23", effective="2026-01-01",
+                 url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280349", verified="2026-11-24"),
+    "소득세법": dict(file="income_tax.json", version="법률 제21221호", promulgated="2025-12-23", effective="2026-01-01",
+                 url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405", verified="2026-11-24"),
+    "부가가치세법": dict(file="vat.json", version="법률 제21065호", promulgated="2025-10-01", effective="2026-01-02",
+                   url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276117", verified="2026-11-24"),
+    "상증법": dict(file="inherit_gift.json", version="법률 제21065호", promulgated="2025-10-01", effective="2025-10-01",
+                url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276123", verified="2026-11-24", full="상속세 및 증여세법"),
+    "지방세법": dict(file="local_tax.json", version="법률 제21308호", promulgated="2025-12-31", effective="2026-01-01",
+                 url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282559", verified="2026-11-24"),
+    "조특법": dict(file="tax_special.json", version="법률 제21467호", promulgated="2026-03-17", effective="2026-09-18",
+                url="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=284389", verified="2026-11-24", full="조세특례제한법"),
 }
+TAX_LAWS = {"국세기본법", "법인세법", "소득세법", "부가가치세법", "상증법", "지방세법", "조특법"}
 ARTICLES = {}
 for law, meta in LAWS.items():
     d = json.load(open(os.path.join(DATA, meta["file"]), encoding="utf-8"))
@@ -40,7 +56,7 @@ CASE_NOTES = []
 QUESTION_ARTICLES = {}   # questionId -> [(law, articleId)]
 QUESTION_VERIFY = {}     # questionId -> True(조문 대조 대상) / False(해석 문항)
 
-_ART_RE = re.compile(r"(?:(상법|공인회계사법|외부감사법)\s*)?제(\d+)조(?:의(\d+))?\s*([①-⑳]?)")
+_ART_RE = re.compile(r"(?:(상법|공인회계사법|외부감사법|국세기본법|법인세법|소득세법|부가가치세법|상증법|지방세법|조특법)\s*)?제(\d+)조(?:의(\d+))?\s*([①-⑳]?)")
 CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳"
 
 
@@ -75,10 +91,10 @@ def article_text(refs):
 _state = {"law": "상법"}
 
 
-def lchapter(code, title, english, part, law="상법"):
+def lchapter(code, title, english, part, law="상법", subject=None, prefix="LAW"):
     _state["law"] = law
     meta = LAWS[law]
-    return dsl.chapter(code, title, english, part=part, subject=SUBJECT, chapter_id=f"LAW-{code}",
+    return dsl.chapter(code, title, english, part=part, subject=subject or SUBJECT, chapter_id=f"{prefix}-{code}",
                        std=f"{meta.get('full', law)} ({meta['version']}, {meta['promulgated']} 공포, {meta['effective']} 시행)",
                        eff=meta["effective"])
 
@@ -88,7 +104,7 @@ def lc(cid, ko, en, art, easy, legal, req, eff, cmp, ex, tip, trap, exc=None, nu
     """기업법 개념 등록.
     easy: 쉬운 설명 / legal: 법률상 정확한 의미 / req: 성립요건·적용요건 / eff: 법률효과 / exc: 예외
     cmp: 비교 개념 / ex: 간단한 사례 / tip: 출제 포인트 / trap: 함정 / nums: 숫자·기간·정족수 / case: 판례 법리
-    applic: APPLIES_2027(2027년 적용 기준) | PAST(과거 기출 기준) | NOT_IN_FORCE(미시행 개정) | CHECK_DATE(시행일 확인 필요)
+    applic: APPLIES_2027(2027년 적용 기준) | CURRENT_LAW(현재 기준: 조회일 현행 법률) | PAST(과거 기출 기준) | NOT_IN_FORCE(미시행 개정) | CHECK_DATE(시행일 확인 필요)
     """
     law = law or _state["law"]
     refs = parse_refs(art, law)
@@ -111,7 +127,7 @@ def lc(cid, ko, en, art, easy, legal, req, eff, cmp, ex, tip, trap, exc=None, nu
         examYear=EXAM_YEAR,
         examApplicability=applic,
         sourceUrl=meta["url"],
-        verifiedAt=VERIFIED_AT,
+        verifiedAt=meta.get("verified", VERIFIED_AT),
         caseLaw=case,
     )
     return c
@@ -120,7 +136,7 @@ def lc(cid, ko, en, art, easy, legal, req, eff, cmp, ex, tip, trap, exc=None, nu
 def _register(qq, art, verify):
     cid = qq["primaryConceptId"]
     concept = next(c for c in dsl.CONCEPTS if c["id"] == cid)
-    default_law = re.match(r"(상법|공인회계사법|외부감사법)", concept["articleRefs"][0]).group(1)
+    default_law = re.match(r"(상법|공인회계사법|외부감사법|국세기본법|법인세법|소득세법|부가가치세법|상증법|지방세법|조특법)", concept["articleRefs"][0]).group(1)
     refs = parse_refs(art, default_law) if art else parse_refs(" ".join(concept["articleRefs"]), default_law)
     QUESTION_ARTICLES[qq["id"]] = refs
     QUESTION_VERIFY[qq["id"]] = verify

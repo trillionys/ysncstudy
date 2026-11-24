@@ -55,7 +55,7 @@ class LawContentTest {
 
     // ── 시험범위 제외(상법 보험·해상·항공운송편, 어음·수표법) ──
     @Test fun outOfScopeArticlesAreExcludedAndNeverTaught() {
-        val out = content.lawArticles.filter { it.status == "OUT_OF_SCOPE" }
+        val out = content.lawArticles.filter { it.status == "OUT_OF_SCOPE" && it.lawShortName in setOf("상법", "공인회계사법", "외부감사법") }
         assertTrue(out.isNotEmpty())
         assertTrue(out.all { it.lawShortName == "상법" && (it.part.startsWith("제4편") || it.part.startsWith("제5편") || it.part.startsWith("제6편")) })
         assertTrue(out.all { it.text.isEmpty() && it.conceptIds.isEmpty() && it.questionCount == 0 })

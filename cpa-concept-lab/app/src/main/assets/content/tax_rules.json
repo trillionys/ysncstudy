@@ -1,0 +1,184 @@
+{
+ "formatVersion": 1,
+ "tables": [
+  {
+   "id": "CIT",
+   "code": 1,
+   "taxType": "법인세",
+   "lawName": "법인세법",
+   "article": "제55조①1호",
+   "effectiveFrom": "2026-01-01",
+   "effectiveTo": null,
+   "taxYearFrom": 2026,
+   "taxpayerType": "내국법인(성실신고확인 대상 소규모 법인 제외)",
+   "cap": null,
+   "evidence": [
+    "2억원 이하 과세표준의 100분의 10",
+    "2억원을 초과하는 금액의 100분의 20",
+    "200억원을 초과하는 금액의 100분의 22",
+    "3천억원을 초과하는 금액의 100분의 25"
+   ],
+   "brackets": [
+    {
+     "upTo": 200000000,
+     "rate": 10
+    },
+    {
+     "upTo": 20000000000,
+     "rate": 20
+    },
+    {
+     "upTo": 300000000000,
+     "rate": 22
+    },
+    {
+     "upTo": null,
+     "rate": 25
+    }
+   ],
+   "verificationStatus": "STATUTE_TEXT_MATCHED"
+  },
+  {
+   "id": "PIT",
+   "code": 2,
+   "taxType": "소득세",
+   "lawName": "소득세법",
+   "article": "제55조①",
+   "effectiveFrom": "2023-01-01",
+   "effectiveTo": null,
+   "taxYearFrom": 2023,
+   "taxpayerType": "거주자 종합소득",
+   "cap": null,
+   "evidence": [
+    "1,400만원 이하 과세표준의 6퍼센트",
+    "1,400만원을초과하는금액의15퍼센트",
+    "5,000만원을초과하는금액의24퍼센트",
+    "8,800만원을초과하는금액의35퍼센트",
+    "1억5천만원을초과하는금액의38퍼센트",
+    "3억원을초과하는금액의40퍼센트",
+    "5억원을초과하는금액의42퍼센트",
+    "10억원을 초과하는 금액의 45퍼센트"
+   ],
+   "brackets": [
+    {
+     "upTo": 14000000,
+     "rate": 6
+    },
+    {
+     "upTo": 50000000,
+     "rate": 15
+    },
+    {
+     "upTo": 88000000,
+     "rate": 24
+    },
+    {
+     "upTo": 150000000,
+     "rate": 35
+    },
+    {
+     "upTo": 300000000,
+     "rate": 38
+    },
+    {
+     "upTo": 500000000,
+     "rate": 40
+    },
+    {
+     "upTo": 1000000000,
+     "rate": 42
+    },
+    {
+     "upTo": null,
+     "rate": 45
+    }
+   ],
+   "verificationStatus": "STATUTE_TEXT_MATCHED"
+  },
+  {
+   "id": "INH",
+   "code": 3,
+   "taxType": "상속세·증여세",
+   "lawName": "상증법",
+   "article": "제26조",
+   "effectiveFrom": "2010-01-01",
+   "effectiveTo": null,
+   "taxYearFrom": 2010,
+   "taxpayerType": "상속세·증여세(제56조 준용)",
+   "cap": null,
+   "evidence": [
+    "1억원 이하 과세표준의 100분의 10",
+    "1억원을초과하는금액의100분의20",
+    "5억원을초과하는금액의100분의30",
+    "10억원을초과하는금액의100분의40",
+    "30억원을초과하는금액의100분의50"
+   ],
+   "brackets": [
+    {
+     "upTo": 100000000,
+     "rate": 10
+    },
+    {
+     "upTo": 500000000,
+     "rate": 20
+    },
+    {
+     "upTo": 1000000000,
+     "rate": 30
+    },
+    {
+     "upTo": 3000000000,
+     "rate": 40
+    },
+    {
+     "upTo": null,
+     "rate": 50
+    }
+   ],
+   "verificationStatus": "STATUTE_TEXT_MATCHED"
+  },
+  {
+   "id": "EID",
+   "code": 4,
+   "taxType": "근로소득공제",
+   "lawName": "소득세법",
+   "article": "제47조①",
+   "effectiveFrom": "2020-01-01",
+   "effectiveTo": null,
+   "taxYearFrom": 2020,
+   "taxpayerType": "근로소득이 있는 거주자(일용근로자 제외)",
+   "cap": 20000000,
+   "evidence": [
+    "500만원 이하 총 급여액의 100분의 70",
+    "500만원을초과하는금액의100분의40",
+    "1천500만원을초과하는금액의100분의15",
+    "4천500만원을초과하는금액의100분의5",
+    "1억원을초과하는금액의100분의2",
+    "2천만원을 초과하는 경우에는 2천만원"
+   ],
+   "brackets": [
+    {
+     "upTo": 5000000,
+     "rate": 70
+    },
+    {
+     "upTo": 15000000,
+     "rate": 40
+    },
+    {
+     "upTo": 45000000,
+     "rate": 15
+    },
+    {
+     "upTo": 100000000,
+     "rate": 5
+    },
+    {
+     "upTo": null,
+     "rate": 2
+    }
+   ],
+   "verificationStatus": "STATUTE_TEXT_MATCHED"
+  }
+ ]
+}

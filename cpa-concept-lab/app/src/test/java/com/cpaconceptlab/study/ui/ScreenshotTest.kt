@@ -44,6 +44,19 @@ class ScreenshotTest {
     private fun tab(label: String) =
         rule.onNode(androidx.compose.ui.test.hasText(label) and androidx.compose.ui.test.hasClickAction()).performClick()
 
+    // v6: 홈 → 세법개론 상세(세율표 데이터 카드, 법률 단원별 진도, 기본·심화·계산 정답률)
+    @Test fun captureTaxSubject() {
+        waitText("전체 학습현황")
+        rule.onNode(androidx.compose.ui.test.hasText("세법개론") and androidx.compose.ui.test.hasClickAction()).performScrollTo().performClick()
+        waitText("세율표", sub = true)
+        waitText("법인세 — 법인세법 제55조①1호", sub = true)
+        shot("10_tax_subject")
+        rule.onNode(androidx.compose.ui.test.hasScrollToNodeAction())
+            .performScrollToNode(androidx.compose.ui.test.hasText("계산", substring = true))
+        waitText("오답 개념", sub = true)
+        shot("11_tax_subject_stats")
+    }
+
     @Test fun captureMainScreens() {
         waitText("오늘의 학습")
         // v5: 홈에는 공식 시험과목별 '전체 학습현황'이 있고 '기출범위별 학습현황'은 없다

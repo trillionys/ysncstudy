@@ -93,6 +93,8 @@ def build(concepts, questions, errors, warnings):
 
     articles = []
     for law, table in lawdsl.ARTICLES.items():
+        if law in lawdsl.TAX_LAWS:
+            continue   # 세법개론 조문은 tax_coverage 가 처리
         meta = lawdsl.LAWS[law]
         for aid, a in table.items():
             key = (law, aid)
@@ -149,7 +151,7 @@ def build(concepts, questions, errors, warnings):
     law_versions = [dict(lawName=m.get("full", law), lawShortName=law, lawVersion=m["version"],
                          promulgationDate=m["promulgated"], effectiveDate=m["effective"], sourceUrl=m["url"],
                          verifiedAt=lawdsl.VERIFIED_AT, examYear=lawdsl.EXAM_YEAR)
-                    for law, m in lawdsl.LAWS.items()]
+                    for law, m in lawdsl.LAWS.items() if law not in lawdsl.TAX_LAWS]
 
     lines = ["", "## 기업법 조문 커버리지", "",
              "| 구분 | 조문 수(삭제 포함) | 현행 조문 | 학습 완료 | 관련 개념에 통합 | 작성 중 | 검토 필요 | 시험범위 밖 | 삭제 | 개념 연결률 |",

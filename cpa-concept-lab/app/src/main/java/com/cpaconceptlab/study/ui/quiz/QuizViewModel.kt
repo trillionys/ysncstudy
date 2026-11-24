@@ -229,12 +229,12 @@ class QuizViewModel(
         const val LAW_SUBJECT = "CPA-LAW"
         val NOT_STUDYABLE = setOf("DRAFT", "NEEDS_REVIEW")
 
-        /** 실전 비중 모의의 영역별 배정 문항 수(공고 비중 기준, 기업법 40문항) */
+        /** 실전 비중 모의의 영역별 배정 문항 수(공고 비중 기준 40문항: 기업법·세법개론) */
         fun weightedQuota(content: ContentSnapshot, subjectId: String?): Map<String, Int> =
             content.examAreas.filter { it.subjectId == (subjectId ?: LAW_SUBJECT) }.sortedBy { AREA_ORDER.indexOf(it.id) }
                 .associate { it.id to it.mockQuestions }
 
-        private val AREA_ORDER = listOf("GENERAL", "COMPANY", "CPA_ACT", "AUDIT_ACT")
+        val AREA_ORDER = listOf("GENERAL", "COMPANY", "CPA_ACT", "AUDIT_ACT", "TAX_BASIC", "CORP", "INCOME", "VAT", "INH_LOCAL")
 
         /** 취약 개념: 두 모드 합산 시도 3회 이상이면서 정답률 60% 미만이거나, 미해결 오답이 2개 이상인 개념 */
         fun weakConcepts(content: ContentSnapshot, user: UserSnapshot): Set<String> {

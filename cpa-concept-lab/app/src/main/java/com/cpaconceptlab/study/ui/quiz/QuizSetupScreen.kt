@@ -92,10 +92,15 @@ fun QuizSetupScreen(
                     }
                 }
                 ScopeType.WEIGHTED -> {
-                    val areas = content.examAreas.filter { it.subjectId == QuizViewModel.LAW_SUBJECT }
-                        .sortedBy { listOf("GENERAL", "COMPANY", "CPA_ACT", "AUDIT_ACT").indexOf(it.id) }
+                    val weightedSubjects = content.examAreas.map { it.subjectId }.distinct()
+                    val chosen = targetId?.takeIf { it in weightedSubjects } ?: QuizViewModel.LAW_SUBJECT
+                    weightedSubjects.forEach { sid ->
+                        ChoiceRow(content.subjects.firstOrNull { it.id == sid }?.name ?: sid, chosen == sid) { targetId = sid }
+                    }
+                    val areas = content.examAreas.filter { it.subjectId == chosen }
+                        .sortedBy { QuizViewModel.AREA_ORDER.indexOf(it.id) }
                     Hint(
-                        "기업법 1차 시험(금융위원회 공고 출제비중)에 맞춘 ${areas.sumOf { it.mockQuestions }}문항 모의고사입니다. " +
+                        "${content.subjects.firstOrNull { it.id == chosen }?.name ?: chosen} 1차 시험(금융위원회 공고 출제비중)에 맞춘 ${areas.sumOf { it.mockQuestions }}문항 모의고사입니다. " +
                             "문항당 2.5점, 100점 만점으로 채점합니다. 아래 난이도·형식 필터와 문항 수 설정은 적용되지 않습니다.",
                     )
                     areas.forEach { a -> Text("· ${a.name}: ${a.mockQuestions}문항 (공고 ${a.minPercent}~${a.maxPercent}%)", style = MaterialTheme.typography.bodySmall) }
@@ -104,7 +109,7 @@ fun QuizSetupScreen(
                     ChoiceRow(part, targetId == part) { targetId = part }
                 }
                 ScopeType.WEAK -> Hint("정답률 60% 미만(시도 3회 이상)이거나 미해결 오답이 2개 이상인 개념을 모아 출제합니다.")
-                ScopeType.RECENT -> Hint("가장 최근 콘텐츠 업데이트(v4: 기업법 — 상법 총칙·상행위·회사편, 공인회계사법, 외부감사법)에서 추가된 개념을 출제합니다.")
+                ScopeType.RECENT -> Hint("가장 최근 콘텐츠 업데이트(v6: 세법개론 — 국세기본법·법인세법·소득세법·부가가치세법·상증법·지방세법·조특법)에서 추가된 개념을 출제합니다.")
                 ScopeType.CHAPTER -> content.chapters.forEach { ch ->
                     ChoiceRow("${ch.code}. ${ch.title}", targetId == ch.id) { targetId = ch.id }
                 }
@@ -150,7 +155,8 @@ fun QuizSetupScreen(
         val needsTarget = type in setOf(ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.EXAM, ScopeType.SUBJECT)
         Button(
             onClick = {
-                val scope = if (type == ScopeType.WEIGHTED) QuizScope(ScopeType.WEIGHTED, QuizViewModel.LAW_SUBJECT) else QuizScope(
+                val weighted = targetId?.takeIf { id -> content.examAreas.any { it.subjectId == id } } ?: QuizViewModel.LAW_SUBJECT
+                val scope = if (type == ScopeType.WEIGHTED) QuizScope(ScopeType.WEIGHTED, weighted) else QuizScope(
                     type, if (needsTarget) targetId else null,
                     levels.start.toInt(), levels.endInclusive.toInt(), kind,
                 )

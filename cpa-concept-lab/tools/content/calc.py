@@ -815,6 +815,58 @@ def irp_fwd(s, id_, if_):
     return v, f"선물환율 = 현물환율 {s} × (1 + 자국이자율 {id_}%) ÷ (1 + 외국이자율 {if_}%) = {v}"
 
 
+
+# ───────── 세법(TaxRuleEngine) ─────────
+@formula()
+def prog_tax(base, table):
+    import tax_rules
+    v = r0(tax_rules.progressive(int(table), base))
+    name = next(t for t in tax_rules.TABLES if t["code"] == int(table))
+    return v, f"{name['lawName']} {name['article']} 세율표(시행 {name['effectiveFrom']})를 과세표준 {fmt(base)}원에 구간별 적용 = {fmt(v)}"
+
+
+@formula()
+def corp_income(ni, add, disallow, exclude, deduct):
+    v = r0(ni + add + disallow - exclude - deduct)
+    return v, f"각 사업연도 소득 = 당기순이익 {fmt(ni)} + 익금산입 {fmt(add)} + 손금불산입 {fmt(disallow)} − 익금불산입 {fmt(exclude)} − 손금산입 {fmt(deduct)} = {fmt(v)}"
+
+
+@formula()
+def rate_of(amount, rate):
+    v = r0(amount * rate / 100.0)
+    return v, f"{fmt(amount)} × {rate}% = {fmt(v)}"
+
+
+@formula()
+def ent_base_limit(months, sme):
+    v = r0((36000000 if sme else 12000000) * months / 12)
+    return v, f"기본한도 = {'3천600만원' if sme else '1천200만원'} × {int(months)}/12 = {fmt(v)}"
+
+
+@formula()
+def donation_limit(base, loss, rate):
+    v = r0(max(0, base - loss) * rate / 100.0)
+    return v, f"손금산입한도 = (기준소득금액 {fmt(base)} − 이월결손금 {fmt(loss)}) × {rate}% = {fmt(v)}"
+
+
+@formula()
+def vat_payable(sales, rate, input_tax):
+    v = r0(sales * rate / 100.0 - input_tax)
+    return v, f"납부세액 = 매출세액({fmt(sales)} × {rate}%) − 매입세액 {fmt(input_tax)} = {fmt(v)}"
+
+
+@formula()
+def common_input_tax(common, exempt, total):
+    v = r0(common * exempt / total)
+    return v, f"면세사업분 불공제 = 공통매입세액 {fmt(common)} × 면세공급가액 {fmt(exempt)} ÷ 총공급가액 {fmt(total)} = {fmt(v)}"
+
+
+@formula()
+def minus(a, b):
+    v = r0(a - b)
+    return v, f"{fmt(a)} − {fmt(b)} = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

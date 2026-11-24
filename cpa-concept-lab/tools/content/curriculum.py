@@ -174,6 +174,14 @@ import os as _os
 FULL = _json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "curriculum_full.json"), encoding="utf-8"))
 
 
+def _unit_ok(pack, unit, c):
+    """세법개론은 목차 단원이 법률명이다. 같은 항목명(예: 가산세·세율·과세표준)이 여러 법률에 있으므로
+    그 단원의 법률을 근거로 한 개념만 연결을 인정한다."""
+    if pack != "TX":
+        return True
+    return (c.get("lawName") or "") == unit
+
+
 def build(concepts, questions, errors):
     """반환: (curriculumItems, subjects 메타, 팩별 통계)"""
     qcount = {}
@@ -191,8 +199,10 @@ def build(concepts, questions, errors):
             pool = normed if not (pack == "IA" and unit not in FA_COVERED_IA_UNITS) else [t for t in normed if t[0]["subjectId"] == "IA"]
             for it in [w.strip() for w in text.split(", ") if w.strip()]:
                 n += 1
-                linked = [cid for cid in LINKS.get((pack, it), []) if cid in ready]
-                for cid in LINKS.get((pack, it), []):
+                # '단원|항목' 형태의 명시 연결은 단원을 넘어 인정(예: 조특법 최저한세 → 법인세법 목차의 최저한세)
+                linked = [cid for cid in LINKS.get((pack, f"{unit}|{it}"), []) if cid in ready]
+                linked += [cid for cid in LINKS.get((pack, it), []) if cid in ready and _unit_ok(pack, unit, by_id[cid]) and cid not in linked]
+                for cid in LINKS.get((pack, it), []) + LINKS.get((pack, f"{unit}|{it}"), []):
                     if cid not in by_id:
                         errors.append(f"[CUR] {pack} '{it}' 연결 개념 {cid} 없음")
                 if not linked:
@@ -200,7 +210,7 @@ def build(concepts, questions, errors):
                     # 1순위: 개념명에 항목명이 들어 있음, 2순위: 개념명+정의에 들어 있음
                     # 개념명 기준 일치만 인정(정의 본문 검색은 과대 연결이 생겨 쓰지 않는다).
                     # 3자 이하 짧은 항목은 개념명이 그 항목으로 시작하는 경우만 인정한다.
-                    hit = [c["id"] for c, nm, _ in pool if key and (nm.startswith(key) or (len(key) >= 4 and key in nm))]
+                    hit = [c["id"] for c, nm, _ in pool if key and _unit_ok(pack, unit, c) and (nm.startswith(key) or (len(key) >= 4 and key in nm))]
                     linked = hit[:3]
                 items.append(dict(id=f"CUR-{pack}-{n:04d}", subjectId=pack, unit=unit, item=it, conceptIds=linked,
                                   covered=bool(linked), sortOrder=n))

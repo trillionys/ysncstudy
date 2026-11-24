@@ -50,7 +50,18 @@ object ExamSubjectProgress {
         val reviewNeeded: Int,
         val curriculumCovered: Int,
         val curriculumTotal: Int,
+        val basicCorrect: Int = 0,
+        val basicAttempts: Int = 0,
+        val advancedCorrect: Int = 0,
+        val advancedAttempts: Int = 0,
+        val calcCorrect: Int = 0,
+        val calcAttempts: Int = 0,
+        /** 가장 최근 풀이가 오답인 문항이 하나라도 있는 개념 수 */
+        val wrongConcepts: Int = 0,
     ) {
+        val basicAccuracy: Double? get() = if (basicAttempts == 0) null else basicCorrect.toDouble() / basicAttempts
+        val advancedAccuracy: Double? get() = if (advancedAttempts == 0) null else advancedCorrect.toDouble() / advancedAttempts
+        val calcAccuracy: Double? get() = if (calcAttempts == 0) null else calcCorrect.toDouble() / calcAttempts
         val conceptRatio: Double? get() = if (totalConcepts == 0) null else completedConcepts.toDouble() / totalConcepts
         val accuracy: Double? get() = if (attempts == 0) null else correct.toDouble() / attempts
         val questionRatio: Double? get() = if (totalQuestions == 0) null else solvedQuestions.toDouble() / totalQuestions
@@ -81,6 +92,14 @@ object ExamSubjectProgress {
         val qs = content.questions.filter { q -> q.primaryConceptId in conceptIds }
         val rows = qs.flatMap { q -> listOfNotNull(user.progressMap[q.id to "BASIC"], user.progressMap[q.id to "ADVANCED"]) }
         val solved = qs.count { q -> user.progressMap[q.id to "BASIC"] != null || user.progressMap[q.id to "ADVANCED"] != null }
+        val basic = qs.mapNotNull { user.progressMap[it.id to "BASIC"] }
+        val adv = qs.mapNotNull { user.progressMap[it.id to "ADVANCED"] }
+        val calc = qs.filter { it.calcFormulaId != null }
+            .flatMap { q -> listOfNotNull(user.progressMap[q.id to "BASIC"], user.progressMap[q.id to "ADVANCED"]) }
+        val wrong = qs.filter { q ->
+            listOfNotNull(user.progressMap[q.id to "BASIC"], user.progressMap[q.id to "ADVANCED"])
+                .maxByOrNull { it.lastAnsweredAt }?.lastCorrect == false
+        }.map { it.primaryConceptId }.toSet()
         return Stat(
             id = id, name = name,
             completedConcepts = concepts.count { isCompleted(user.conceptProgressMap[it]) },
@@ -89,6 +108,10 @@ object ExamSubjectProgress {
             correct = rows.sumOf { it.correctAttempts }, attempts = rows.sumOf { it.totalAttempts },
             reviewNeeded = concepts.count { user.conceptProgressMap[it]?.masteryLevel == MasteryLevel.REVIEW_NEEDED.name },
             curriculumCovered = curriculum.first, curriculumTotal = curriculum.second,
+            basicCorrect = basic.sumOf { it.correctAttempts }, basicAttempts = basic.sumOf { it.totalAttempts },
+            advancedCorrect = adv.sumOf { it.correctAttempts }, advancedAttempts = adv.sumOf { it.totalAttempts },
+            calcCorrect = calc.sumOf { it.correctAttempts }, calcAttempts = calc.sumOf { it.totalAttempts },
+            wrongConcepts = concepts.count { it in wrong },
         )
     }
 

@@ -219,6 +219,8 @@ private fun LawInfoCard(c: ConceptEntity, content: ContentSnapshot) {
                 LawApplicability.PAST -> Pill(LawApplicability.PAST.label, cs.surfaceContainerHighest, cs.onSurfaceVariant)
                 LawApplicability.NOT_IN_FORCE -> Pill(LawApplicability.NOT_IN_FORCE.label, cs.secondaryContainer, cs.onSecondaryContainer)
                 LawApplicability.CHECK_DATE -> Pill(LawApplicability.CHECK_DATE.label, s.warnContainer, s.warn)
+                LawApplicability.CURRENT_LAW -> Pill(LawApplicability.CURRENT_LAW.label, cs.primaryContainer, cs.onPrimaryContainer)
+                LawApplicability.ANSWER_CHANGED -> Pill(LawApplicability.ANSWER_CHANGED.label, cs.errorContainer, cs.onErrorContainer)
                 null -> {}
             }
         }

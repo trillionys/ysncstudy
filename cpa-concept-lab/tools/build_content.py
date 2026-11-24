@@ -38,10 +38,14 @@ import curriculum  # noqa: E402
 import curriculum_links  # noqa: E402,F401
 import pack_fm, pack_cm, pack_ec, pack_hr  # noqa: E402,F401
 import law_coverage  # noqa: E402
+# v6: 2027 공인회계사 1차 세법개론(TX) 전 범위
+import tax_a, tax_b, tax_c, tax_d, tax_e, tax_f, tax_g, tax_h  # noqa: E402,F401
+import tax_coverage, tax_rules  # noqa: E402
 
-CONTENT_VERSION = 5
+CONTENT_VERSION = 6
 NEW_CHAPTERS = {"FA-L", "FA-M", "FA-N", "FA-P", "FA-Q", "FA-R"}
 LAW_SUBJECT = "CPA-LAW"
+TAX_SUBJECT = "TX"
 PREV_CONCEPT_COUNT = 285
 SELECTION_FORMULAS = {"recoverable", "bc_general"}
 PREV_QUESTION_COUNT = 600
@@ -283,6 +287,29 @@ def main():
     law_ok, law_interp, law_err = lawdsl.verify_answers(law_q)
     errors.extend(law_err)
     law = law_coverage.build(concepts, questions, errors, warnings)
+    # 22. 세법개론: 정답-조문 원문 대조, 세율표 원문 대조, 조문 커버리지, 실전 비중
+    tax_q = [x for x in active_q if x["subjectId"] == TAX_SUBJECT]
+    tax_ok, tax_interp, tax_err = lawdsl.verify_answers(tax_q)
+    errors.extend(tax_err)
+    tax = tax_coverage.build(concepts, questions, errors, warnings)
+    for t in tax_rules.TABLES:
+        body = lawdsl._n(lawdsl.article_text(lawdsl.parse_refs(t["article"], t["lawName"])))
+        for ev in t["evidence"]:
+            if lawdsl._n(ev) not in body:
+                errors.append(f"[TX] 세율표 {t['id']} 근거 문구 '{ev}' 가 {t['lawName']} {t['article']} 원문에 없음")
+    # 세법: 개념당 3문항 이상, 분류·매칭 보기 3개 이상(사실상 OX 금지), 세율표 데이터 수치 = 조문
+    tx_cnt = {}
+    for x in tax_q:
+        tx_cnt[x["primaryConceptId"]] = tx_cnt.get(x["primaryConceptId"], 0) + 1
+        if x["inputType"] == "slots" and len(x["choices"]) < 3:
+            errors.append(f"[TX] {x['id']} 분류·매칭 보기가 {len(x['choices'])}개(3개 이상 필요 — 사실상 OX 금지)")
+    for c in concepts:
+        if c["subjectId"] == TAX_SUBJECT and tx_cnt.get(c["id"], 0) < 3:
+            errors.append(f"[TX] {c['id']} 문항 {tx_cnt.get(c['id'], 0)}개 < 3")
+    law["articles"] += tax["articles"]
+    law["examAreas"] += tax["examAreas"]
+    law["lawVersions"] += tax["lawVersions"]
+    law["reportLines"] += tax["reportLines"]
     # 21. 출제범위 마스터 목차와 팩 활성화(실제 개념·문항이 있는 팩만 학습 가능)
     cur_items, cur_stats = curriculum.build(concepts, questions, errors)
     for sub in SUBJECTS:
@@ -302,12 +329,12 @@ def main():
     # 신규 개념의 검증 상태: 원문 대조 전이므로 verified 로 표시하지 않는다
     for c in concepts:
         c["verificationStatus"] = "NEEDS_REVIEW" if c["requiresReview"] else "AUTHOR_REVIEWED"
-        c["contentVersion"] = 5 if c["subjectId"] in PACK_SUBJECTS else 4 if c["subjectId"] == LAW_SUBJECT else 3 if c["chapterId"] in NEW_CHAPTERS else 2
-        if c["subjectId"] == LAW_SUBJECT and not c["requiresReview"]:
+        c["contentVersion"] = 6 if c["subjectId"] == TAX_SUBJECT else 5 if c["subjectId"] in PACK_SUBJECTS else 4 if c["subjectId"] == LAW_SUBJECT else 3 if c["chapterId"] in NEW_CHAPTERS else 2
+        if c["subjectId"] in (LAW_SUBJECT, TAX_SUBJECT) and not c["requiresReview"]:
             c["verificationStatus"] = "STATUTE_CHECKED"
     for x in questions:
         x["mode"] = "BOTH" if x["inputType"] == "text" else "OPTIONS"
-        x["contentVersion"] = 5 if x["subjectId"] in PACK_SUBJECTS else 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
+        x["contentVersion"] = 6 if x["subjectId"] == TAX_SUBJECT else 5 if x["subjectId"] in PACK_SUBJECTS else 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
 
     # ID 레지스트리: 이미 발급한 ID 의 정답이 바뀌면 오류(새 ID 발급 필요)
     registry = {}
@@ -358,6 +385,7 @@ def main():
     lines.append(f"| 원본 출처(NEW-INV) | {len(src_ids)}개 등록, 미검증 {unverified_sources}개 |")
     lines.append(f"| v4 기업법 개념 | {len(law_concepts)}개 |")
     lines.append(f"| v4 기업법 문항 | {len(law_q)}개 (조문 원문 대조 일치 {law_ok}, 해석·선택형 {law_interp}) |")
+    lines.append(f"| v6 세법개론 문항 | {len(tax_q)}개 (조문 원문 대조 일치 {tax_ok}, 해석·선택형·계산 {tax_interp}) |")
     lines.append(f"| 기업법 구조화 자동 생성 문항 | 조문 연결 {len(law_auto.AUTO_COMPARISON)}개 · 법률효과 연결 {len(law_auto.AUTO_EFFECT)}개 (작성자 검토 개념 데이터로 정답 확정, 해석 문항으로 집계) |")
     lines.append(f"| 기업법 숫자 규칙 | {len(lawdsl.NUMERIC_RULES)}개 |")
     lines.append(f"| 기업법 판례 법리 노트 | {len(lawdsl.CASE_NOTES)}개 (사건번호 미기재·원문 미대조) |")
@@ -459,6 +487,9 @@ def main():
     for name, data in files.items():
         with open(os.path.join(ASSET_DIR, name), "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=1)
+    # 세율표(TaxRuleEngine 데이터): 학습기록과 무관한 정적 데이터라 DB 에 넣지 않고 앱이 자산에서 직접 읽는다
+    with open(os.path.join(ASSET_DIR, "tax_rules.json"), "w", encoding="utf-8") as f:
+        json.dump(tax_rules.export(), f, ensure_ascii=False, indent=1)
     manifest = {
         "formatVersion": FORMAT_VERSION,
         "contentVersion": CONTENT_VERSION,
