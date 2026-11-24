@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.material3.FilterChip
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
@@ -34,6 +35,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -107,8 +110,14 @@ fun QuizScreen(
     val scroll = rememberScrollState()
     val focus = remember { FocusRequester() }
     LaunchedEffect(q.id) { scroll.scrollTo(0); runCatching { focus.requestFocus() } }
+    // 문제마다 새 화이트보드·계산기
+    val ink = remember(q.id) { InkState() }
+    val calc = remember(q.id) { CalculatorState() }
+    var showCalc by remember(q.id) { mutableStateOf(false) }
+    val isCalcQuestion = q.calcFormulaId != null || q.questionType == "calculation" || q.questionType == "number" || q.unit == "원"
 
-    Column(Modifier.fillMaxSize().imePadding().verticalScroll(scroll).padding(16.dp)) {
+    Box(Modifier.fillMaxSize().imePadding()) {
+    Column(Modifier.fillMaxSize().verticalScroll(scroll, enabled = !ink.enabled).inkLayer(ink).padding(16.dp)) {
         // 진행 표시
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text("${s.index + 1} / ${s.questions.size}", style = MaterialTheme.typography.titleSmall)
@@ -135,6 +144,8 @@ fun QuizScreen(
             if (q.examReferenceNumbers.isNotEmpty()) {
                 Pill("출제범위 ${q.examReferenceNumbers.take(3).joinToString(",")}", MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.colorScheme.onSurfaceVariant)
             }
+            androidx.compose.foundation.layout.Spacer(Modifier.weight(1f))
+            StudyToolButtons(ink, isCalcQuestion, { showCalc = true })
         }
         VSpace(10)
         Surface(
@@ -214,7 +225,19 @@ fun QuizScreen(
                 Text(if (s.index + 1 >= s.questions.size) "결과 보기" else "다음 문제")
             }
         }
-        VSpace(24)
+        VSpace(if (ink.enabled) 180 else 24)   // 필기 막대에 가리지 않도록 여백
+    }
+    if (ink.enabled) {
+        InkToolbar(ink, Modifier.align(Alignment.BottomCenter).fillMaxWidth().padding(8.dp))
+    }
+    }
+    if (showCalc) {
+        CalculatorDialog(
+            calc,
+            canInsert = s.result == null && q.inputType == INPUT_TEXT,
+            onInsert = vm::onInput,
+            onDismiss = { showCalc = false },
+        )
     }
 }
 

@@ -8,6 +8,11 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
+import androidx.compose.ui.test.performTouchInput
+import androidx.compose.ui.test.assert
+import androidx.compose.ui.test.swipe
+import androidx.compose.ui.test.onRoot
+import androidx.compose.ui.geometry.Offset
 import com.cpaconceptlab.study.MainActivity
 import com.cpaconceptlab.study.TestContent
 import androidx.compose.ui.test.performScrollToNode
@@ -55,6 +60,37 @@ class ScreenshotTest {
             .performScrollToNode(androidx.compose.ui.test.hasText("계산", substring = true))
         waitText("오답 개념", sub = true)
         shot("11_tax_subject_stats")
+    }
+
+    // 문제 풀이 도구: 계산문제의 계산기(답에 넣기)와 모든 문제의 투명 필기
+    @Test fun calculatorAndInkOnQuestions() {
+        waitText("전체 학습현황")
+        rule.onNode(androidx.compose.ui.test.hasText("세법개론") and androidx.compose.ui.test.hasClickAction()).performScrollTo().performClick()
+        waitText("세율표", sub = true)
+        rule.onNode(androidx.compose.ui.test.hasText("학습 가능", substring = true) and androidx.compose.ui.test.hasClickAction())
+            .performScrollTo().performClick()
+        waitText("학습 모드")
+        rule.onNode(androidx.compose.ui.test.hasScrollToNodeAction())
+            .performScrollToNode(androidx.compose.ui.test.hasText("계산", substring = false))
+        rule.onAllNodes(androidx.compose.ui.test.hasText("계산") and androidx.compose.ui.test.hasClickAction())[0].performClick()
+        rule.waitUntil(60_000) { rule.onAllNodes(androidx.compose.ui.test.hasTestTag("ink-button")).fetchSemanticsNodes().isNotEmpty() }
+        // 계산기
+        rule.onNode(androidx.compose.ui.test.hasTestTag("calculator-button")).performClick()
+        listOf("2", "0", "0", "×", "1", "5", "%").forEach { k ->
+            rule.onNode(androidx.compose.ui.test.hasText(k) and androidx.compose.ui.test.hasClickAction()).performClick()
+        }
+        rule.onNode(androidx.compose.ui.test.hasTestTag("calculator-equals")).performClick()
+        rule.onNode(androidx.compose.ui.test.hasTestTag("calculator-display")).assert(androidx.compose.ui.test.hasText("30"))
+        shot("12_calculator")
+        rule.onNodeWithText("답에 넣기").performClick()
+        rule.onNode(hasSetTextAction()).assert(androidx.compose.ui.test.hasText("30"))
+        // 필기: 켜고 문제 위에 밑줄 한 획
+        rule.onNode(androidx.compose.ui.test.hasTestTag("ink-button")).performClick()
+        waitText("필기 끄기")
+        rule.onRoot().performTouchInput { swipe(Offset(80f, 420f), Offset(900f, 430f), 300) }
+        shot("13_ink")
+        rule.onNodeWithText("필기 끄기").performClick()
+        waitText("필기 (1)")
     }
 
     @Test fun captureMainScreens() {
