@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+*.log
+firebase-debug*.log
+firestore-debug.log
+ui-debug.log
+test-results/
+.firebase/
+# 서비스 계정 키 등 비밀 파일은 절대 커밋하지 않음
+*service-account*.json
+*-adminsdk-*.json
+dist-e2e/

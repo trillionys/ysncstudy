@@ -1,0 +1,248 @@
+---
+import Base from '../layouts/Base.astro';
+import QuizPreview from '../components/QuizPreview.astro';
+import { site, isReleased } from '../config/site';
+
+const released = isReleased();
+
+const moments = [
+  { icon: '🚇', title: '지하철이나 버스로 이동할 때', text: '두세 정거장이면 한 단원. 손잡이 잡고도 한 손으로 빈칸 하나씩 채워요.' },
+  { icon: '☕', title: '강의·수업 사이 쉬는 시간', text: '방금 들은 내용이 사라지기 전에, 10분 동안 핵심 개념만 다시 떠올려요.' },
+  { icon: '🌙', title: '잠들기 전 가벼운 복습', text: '책을 다시 펴긴 부담스러울 때, 오늘 틀린 문제만 가볍게 훑어보세요.' },
+];
+
+// 실제 Android 앱(개발 버전 1.0.8)에 구현된 기능만 '제공 중'으로 표시
+const features = [
+  { title: '초성 빈칸 퀴즈', text: 'ㅈㅂ → 자본. 초성 힌트로 부담 없이 핵심 용어를 떠올립니다.', ready: true },
+  { title: '일반 빈칸 문제', text: '힌트 없는 심화 모드로 정확히 기억하는지 확인합니다.', ready: true },
+  { title: '간단한 계산문제', text: '감가상각·세액 계산 등. 문제 옆 계산기와 필기 기능을 함께 씁니다.', ready: true },
+  { title: '과목별·단원별 학습', text: '회계학·경영학·경제원론·기업법·세법개론을 단원 단위로 나눠 학습합니다.', ready: true },
+  { title: '난이도별 문제풀이', text: '쉬움부터 실전까지, 단원마다 난이도와 문제 유형을 골라 풉니다.', ready: true },
+  { title: '간단 요약과 상세 개념학습', text: '먼저 요약으로 감을 잡고, 필요하면 예제·분개가 있는 상세 학습으로.', ready: true },
+  { title: '오답노트', text: '틀린 문제는 자동으로 모아 두고, 세션 후반에 다시 출제합니다.', ready: true },
+  { title: '반복 복습', text: '집중·표준·여유 복습 주기 중에서 고르고, 복습 날짜를 미리 확인합니다.', ready: true },
+  { title: '학습현황 및 진도 관리', text: '과목별 진도와 정답률, 오늘의 목표 달성 현황을 한눈에 봅니다.', ready: true },
+];
+
+const audiences = [
+  { tag: 'CPA 수험생', quote: '책 펴긴 싫고, 감은 잃기 싫을 때.', text: '이미 공부한 개념을 이동 중이나 쉬는 시간에 짧게 다시 꺼내 봅니다. 기출문제집과 강의를 대신하는 것이 아니라, 그 사이를 이어 주는 복습 도구예요.' },
+  { tag: '관련 학과 대학생', quote: '전공 공부도, 짬날 때 가볍게.', text: '회계학·세무학·경영학·경제학 수업에서 배운 개념을 예습하거나, 시험 전에 빠르게 확인합니다.' },
+  { tag: 'CPA 입문 고민 중', quote: '회계사 공부, 일단 맛만 볼까?', text: '본격적으로 시작하기 전에 어떤 과목에서 어떤 개념을 배우는지 가볍게 경험해 보세요.' },
+];
+
+const subjects = [
+  { name: '회계학', parts: '중급회계 · 고급회계 · 원가관리회계 · 정부회계' },
+  { name: '경영학', parts: '재무관리 · 인사·조직' },
+  { name: '경제원론', parts: '미시·거시경제학' },
+  { name: '기업법', parts: '상법(총칙·상행위·회사) · 공인회계사법 · 외부감사법' },
+  { name: '세법개론', parts: '국세기본법 · 법인세법 · 소득세법 · 부가가치세법 등' },
+];
+---
+<Base>
+  <!-- HERO -->
+  <section class="hero" id="about" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">공인회계사 1차 · 회계·세무·재무·경제·기업법</span>
+        <h1 id="hero-title">어려운 공부도,<br />가볍게 한 문제씩.</h1>
+        <p class="lead">
+          지하철에서도, 수업 사이에도,<br class="br-md" /> 공부하다 잠깐 쉬는 시간에도.<br />
+          회계·세무·재무·경제 개념을<br class="br-md" /> 짧은 퀴즈로 익혀보세요.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#features">주요 기능 알아보기</a>
+          {released ? (
+            <a class="btn btn-secondary" href={site.googlePlayUrl} rel="noopener">Google Play에서 받기</a>
+          ) : (
+            <span class="btn btn-secondary" aria-disabled="true" role="note">Google Play 출시 준비 중</span>
+          )}
+        </div>
+        <p class="small muted hero-note">Android 전용 · 회원가입 없이 바로 학습 · 인터넷 없이도 사용</p>
+      </div>
+      <figure class="hero-visual">
+        <div class="phone">
+          <img src="/images/screens/01_home.webp" width="540" height="960" alt="CPA Concept Lab 앱 홈 화면: 5개 시험과목별 학습현황과 오늘의 학습 목표" fetchpriority="high" />
+        </div>
+        <div class="phone phone-back" aria-hidden="true">
+          <img src="/images/screens/05_quiz.webp" width="540" height="960" alt="" loading="lazy" />
+        </div>
+        <figcaption class="small muted">실제 앱 화면(출시 전 개발 버전, 예시 학습기록)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 짬나는 시간 -->
+  <section class="section alt" aria-labelledby="moments-title">
+    <div class="container">
+      <span class="eyebrow">자투리 시간 학습</span>
+      <h2 id="moments-title">이럴 때, 한 문제만.</h2>
+      <div class="grid grid-3 moments">
+        {moments.map((m) => (
+          <article class="card">
+            <div class="emoji" aria-hidden="true">{m.icon}</div>
+            <h3>{m.title}</h3>
+            <p class="muted">{m.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 주요 기능 -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="container">
+      <span class="eyebrow">주요 기능</span>
+      <h2 id="features-title">간단하게 풀고,<br />필요하면 깊게 공부하세요.</h2>
+      <div class="grid grid-3 features">
+        {features.map((f, i) => (
+          <article class="card feature">
+            <div class="feature-head">
+              <span class="num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <span class={f.ready ? 'badge' : 'badge soon'}>{f.ready ? '제공 중' : '준비 중'}</span>
+            </div>
+            <h3>{f.title}</h3>
+            <p class="muted">{f.text}</p>
+          </article>
+        ))}
+      </div>
+      <div class="shots" role="list" aria-label="앱 화면 미리보기">
+        {[
+          ['03_concept_summary', '개념 간단 요약 화면'],
+          ['06_feedback', '정답 확인과 해설 화면'],
+          ['07_calc_ink', '계산문제 위에 필기하는 화면'],
+          ['08_review_settings', '복습 주기 설정 화면'],
+        ].map(([f, a]) => (
+          <figure role="listitem">
+            <img src={`/images/screens/${f}.webp`} width="540" height="960" alt={a} loading="lazy" />
+            <figcaption>{a}</figcaption>
+          </figure>
+        ))}
+      </div>
+      <p class="small muted">위 화면은 출시 전 개발 버전의 실제 화면이며, 출시 버전에서 달라질 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- 학습 대상 -->
+  <section class="section alt" id="audience" aria-labelledby="audience-title">
+    <div class="container">
+      <span class="eyebrow">학습 대상</span>
+      <h2 id="audience-title">시작하기 전에도,<br />공부하는 중에도.</h2>
+      <div class="grid grid-3">
+        {audiences.map((a) => (
+          <article class="card audience">
+            <span class="badge">{a.tag}</span>
+            <p class="quote">“{a.quote}”</p>
+            <p class="muted">{a.text}</p>
+          </article>
+        ))}
+      </div>
+      <h3 class="subjects-title">수록 과목</h3>
+      <ul class="subjects">
+        {subjects.map((s) => (
+          <li><strong>{s.name}</strong><span>{s.parts}</span></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- 퀴즈 미리보기 -->
+  <section class="section" id="try" aria-labelledby="try-title">
+    <div class="container narrow">
+      <span class="eyebrow">로그인 없이 체험</span>
+      <h2 id="try-title">지금 한 문제, 풀어볼까요?</h2>
+      <p class="muted">앱과 같은 방식의 빈칸 문제입니다. 답을 입력하고 확인을 누르세요. 막히면 초성 힌트를 보세요.</p>
+      <QuizPreview />
+    </div>
+  </section>
+
+  <!-- 이용 구조 -->
+  <section class="section alt" id="download" aria-labelledby="plan-title">
+    <div class="container">
+      <span class="eyebrow">이용 안내</span>
+      <h2 id="plan-title">무료로 시작하세요.</h2>
+      <div class="grid grid-2 plans">
+        <article class="card plan">
+          <h3>지금은 모든 기능 무료</h3>
+          <p class="muted">출시 준비 중인 현재 버전은 결제·인앱 구매·광고 없이 모든 기능을 제공합니다.</p>
+          {released ? (
+            <a class="btn btn-primary" href={site.googlePlayUrl} rel="noopener">Google Play에서 받기</a>
+          ) : (
+            <span class="btn btn-primary" aria-disabled="true" role="note">Google Play 출시 준비 중</span>
+          )}
+        </article>
+        <article class="card plan">
+          {site.premiumEnabled ? (
+            <>
+              <h3>영구 이용권 {site.premiumPriceKRW.toLocaleString('ko-KR')}원</h3>
+              <p class="muted">문제 수 제한 없이 학습할 수 있습니다. 구매는 Android 앱 안에서 Google Play 결제로만 진행됩니다.</p>
+            </>
+          ) : (
+            <>
+              <div class="plan-head"><h3>향후 이용 구조</h3><span class="badge soon">검토 중 · 확정 아님</span></div>
+              <ul class="plan-list">
+                <li>무료: 하루 최대 {site.freeDailyLimitPlanned}문제 학습(예정)</li>
+                <li>영구 이용권: 문제 수 제한 없이 학습(예정가 {site.premiumPriceKRW.toLocaleString('ko-KR')}원)</li>
+              </ul>
+              <p class="small muted">가격과 이용권 기능은 아직 확정되지 않았고 앱에 구현되어 있지 않습니다. 확정되면 업데이트 내역과 이 페이지에서 먼저 알려 드립니다. 이 홈페이지에서는 결제를 받지 않으며, 도입 시 Android 앱의 Google Play 결제를 이용합니다.</p>
+              <span class="btn btn-ghost btn-sm" aria-disabled="true" role="note">구매 불가(출시 전)</span>
+            </>
+          )}
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 콘텐츠 안내 -->
+  <section class="section" aria-labelledby="content-title">
+    <div class="container narrow">
+      <div class="card disclaimer">
+        <h2 id="content-title" class="h3">학습 콘텐츠 안내</h2>
+        <p>
+          {site.appName}은 공인회계사 시험 및 관련 학문 분야의 학습을 돕기 위한 독립적인 교육용 애플리케이션입니다.
+        </p>
+        <p>
+          앱의 문제, 해설, 개념 설명은 학습 보조 자료이며 관련 법령·회계기준서 및 공식 시험 출제기준을 대체하지 않습니다.
+          공식 기관의 인증을 받은 자료가 아니며 시험 합격을 보장하지 않습니다. 오류를 발견하시면 <a href="/support">고객지원</a>으로 알려 주세요.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding: 48px 0 64px; overflow: hidden; }
+  .hero-grid { display: grid; gap: 40px; align-items: center; }
+  @media (min-width: 900px) { .hero { padding: 80px 0 96px; } .hero-grid { grid-template-columns: 1.1fr 0.9fr; } }
+  .hero-copy .lead { margin: 20px 0 28px; }
+  .hero-note { margin-top: 16px; }
+  .hero-visual { position: relative; margin: 0 auto; width: min(300px, 78vw); padding-right: 40px; }
+  .phone { position: relative; z-index: 2; border-radius: 34px; padding: 10px; background: var(--navy-dark); box-shadow: 0 24px 60px rgba(19, 35, 61, 0.22); }
+  .phone img { border-radius: 26px; width: 100%; }
+  .phone-back { position: absolute; z-index: 1; top: 40px; right: -10px; width: 78%; opacity: 0.55; transform: rotate(6deg); box-shadow: none; }
+  .hero-visual figcaption { position: relative; z-index: 3; text-align: center; margin-top: 14px; padding-right: 0; }
+  .emoji { font-size: 1.8rem; margin-bottom: 10px; }
+  .moments, .features { margin-top: 28px; }
+  .feature-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .num { font-weight: 800; color: var(--blue); font-size: 0.95rem; }
+  .feature p, .moments p { margin: 0; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 28px 2px 12px; scroll-snap-type: x mandatory; }
+  .shots figure { margin: 0; flex: 0 0 min(200px, 46vw); scroll-snap-align: start; }
+  .shots img { border-radius: 18px; border: 1px solid var(--border); box-shadow: var(--shadow); }
+  .shots figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 8px; text-align: center; }
+  .audience .quote { font-size: 1.2rem; font-weight: 800; color: var(--navy-dark); margin: 14px 0 8px; line-height: 1.45; }
+  .audience p:last-child { margin: 0; }
+  .subjects-title { margin-top: 40px; }
+  .subjects { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  @media (min-width: 760px) { .subjects { grid-template-columns: repeat(2, 1fr); } }
+  .subjects li { display: grid; gap: 2px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 16px; }
+  .subjects span { color: var(--muted); font-size: 0.92rem; }
+  .plans { margin-top: 24px; }
+  .plan { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+  .plan .btn { margin-top: auto; }
+  .plan-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; width: 100%; }
+  .plan-head h3 { margin: 0; }
+  .plan-list { padding-left: 1.2em; margin: 12px 0; }
+  .disclaimer { background: var(--white); }
+  .disclaimer .h3 { font-size: 1.2rem; }
+  .disclaimer p:last-child { margin: 0; }
+</style>

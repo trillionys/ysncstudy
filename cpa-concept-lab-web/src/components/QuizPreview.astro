@@ -1,0 +1,117 @@
+---
+/**
+ * 홈페이지 퀴즈 미리보기 — 로그인·Firebase 없음, Android 앱 학습기록과 연동하지 않음.
+ * 정답 판정은 브라우저에서만 합니다(아무 데이터도 전송하지 않음).
+ */
+const questions = [
+  {
+    id: 'q1',
+    prompt: '자산 = 부채 + ______',
+    hint: 'ㅈㅂ',
+    answers: ['자본'],
+    unit: '',
+    explain: '회계등식입니다. 기업이 가진 자산은 남에게서 빌린 부채와 소유주의 몫인 자본으로 조달됩니다.',
+  },
+  {
+    id: 'q2',
+    prompt: '재고자산은 원가와 순실현가능가치 중 ______ 금액으로 측정한다.',
+    hint: 'ㄴㅇ',
+    answers: ['낮은', '낮은금액', '작은', '작은금액', '저가'],
+    unit: '',
+    explain: '저가법입니다. 순실현가능가치가 원가보다 낮아지면 그 차이만큼 평가손실을 인식해 재고자산을 낮춰 적습니다(K-IFRS 제1002호).',
+  },
+  {
+    id: 'q3',
+    prompt: '취득원가 100만원, 잔존가치 10만원, 내용연수 3년인 유형자산의 정액법 연간 감가상각비는?',
+    hint: '(취득원가 − 잔존가치) ÷ 내용연수',
+    answers: ['30만원', '30만', '300000', '300000원', '30'],
+    unit: '만원 단위 또는 원 단위로 입력',
+    explain: '(100만원 − 10만원) ÷ 3년 = 30만원. 정액법은 감가상각대상금액을 내용연수 동안 매년 같은 금액으로 나눕니다.',
+  },
+];
+---
+<div class="quiz" data-quiz>
+  <p class="quiz-progress small muted" aria-live="polite"><span data-score>0</span> / {questions.length} 정답</p>
+  {questions.map((q, i) => (
+    <form class="card q" data-q={q.id} data-answers={JSON.stringify(q.answers)} novalidate>
+      <p class="q-num">문제 {i + 1}</p>
+      <label for={`${q.id}-input`} class="q-prompt">{q.prompt}</label>
+      {q.unit && <p class="small muted q-unit">{q.unit}</p>}
+      <div class="q-row">
+        <input id={`${q.id}-input`} type="text" inputmode={q.id === 'q3' ? 'text' : 'text'} autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="정답 입력" />
+        <button class="btn btn-primary" type="submit">확인</button>
+      </div>
+      <div class="q-tools">
+        <button class="linklike" type="button" data-hint aria-expanded="false">{q.id === 'q3' ? '공식 힌트' : '초성 힌트'}</button>
+        <span class="hint" hidden>{q.hint}</span>
+        <button class="linklike" type="button" data-reveal>정답 보기</button>
+      </div>
+      <div class="result" role="status" aria-live="polite" hidden>
+        <p class="verdict"></p>
+        <p class="explain">{q.explain}</p>
+      </div>
+    </form>
+  ))}
+  <p class="small muted">이 미리보기는 브라우저 안에서만 동작하며, 입력한 답은 어디에도 저장·전송되지 않습니다. 앱의 학습기록과도 연결되지 않습니다.</p>
+</div>
+
+<style>
+  .quiz { display: grid; gap: 16px; margin-top: 20px; }
+  .quiz-progress { margin: 0; }
+  .q-num { font-size: 0.85rem; font-weight: 700; color: var(--blue); margin: 0 0 6px; }
+  .q-prompt { display: block; font-size: 1.12rem; font-weight: 700; color: var(--navy-dark); line-height: 1.55; margin-bottom: 12px; }
+  .q-unit { margin: -6px 0 10px; }
+  .q-row { display: flex; gap: 8px; }
+  .q-row input { flex: 1; min-width: 0; }
+  .q-row .btn { flex: none; padding: 12px 20px; }
+  .q-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; margin-top: 8px; }
+  .linklike { background: none; border: 0; padding: 0; min-height: 44px; font: inherit; font-size: 0.92rem; color: var(--blue); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .hint { font-weight: 800; color: var(--navy); letter-spacing: 0.08em; }
+  .result { margin-top: 12px; border-radius: var(--radius-sm); padding: 12px 14px; }
+  .result.ok { background: var(--ok-soft); }
+  .result.no { background: var(--err-soft); }
+  .result p { margin: 0; }
+  .verdict { font-weight: 800; margin-bottom: 4px !important; }
+  .result.ok .verdict { color: var(--ok); }
+  .result.no .verdict { color: var(--err); }
+  .explain { color: var(--text); }
+</style>
+
+<script>
+  /** 비교용 정규화: 공백·쉼표·마침표 제거 */
+  const norm = (s: string) => s.normalize('NFC').replace(/[\s,.·]/g, '').toLowerCase();
+
+  const root = document.querySelector<HTMLElement>('[data-quiz]');
+  if (root) {
+    const solved = new Set<string>();
+    const score = root.querySelector('[data-score]')!;
+    root.querySelectorAll<HTMLFormElement>('form[data-q]').forEach((form) => {
+      const answers: string[] = JSON.parse(form.dataset.answers || '[]');
+      const input = form.querySelector('input')!;
+      const result = form.querySelector<HTMLElement>('.result')!;
+      const verdict = result.querySelector('.verdict')!;
+      const show = (ok: boolean, text: string) => {
+        result.hidden = false;
+        result.classList.toggle('ok', ok);
+        result.classList.toggle('no', !ok);
+        verdict.textContent = text;
+      };
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const v = norm(input.value);
+        if (!v) { show(false, '답을 입력해 주세요.'); input.focus(); return; }
+        const ok = answers.some((a) => norm(a) === v);
+        input.setAttribute('aria-invalid', String(!ok));
+        if (ok) { solved.add(form.dataset.q!); score.textContent = String(solved.size); }
+        show(ok, ok ? `정답입니다! (${answers[0]})` : '아쉬워요. 힌트를 보고 다시 풀어 보세요.');
+      });
+      const hintBtn = form.querySelector<HTMLButtonElement>('[data-hint]')!;
+      const hint = form.querySelector<HTMLElement>('.hint')!;
+      hintBtn.addEventListener('click', () => {
+        hint.hidden = !hint.hidden;
+        hintBtn.setAttribute('aria-expanded', String(!hint.hidden));
+      });
+      form.querySelector('[data-reveal]')!.addEventListener('click', () => show(false, `정답: ${answers[0]}`));
+    });
+  }
+</script>

@@ -1,0 +1,87 @@
+rules_version = '2';
+
+// CPA Concept Lab — Cloud Firestore 보안 규칙
+//
+// 데이터 구조
+//   feedback/{userId}                     제출 간격 기록(본인만): { lastSubmittedAt, lastItemId }
+//   feedback/{userId}/items/{feedbackId}  고객지원 의견(본인만)
+//
+// 원칙
+//   - 로그인하지 않으면 읽기·쓰기 모두 불가
+//   - 자기 UID 경로만 읽기·생성·삭제 가능(경로의 userId 를 바꿔도 타인 데이터에 접근 불가)
+//   - 일반 이용자는 의견을 수정할 수 없음(status 변경 포함). 운영자는 Firebase Console(관리자 권한)에서 관리
+//   - 같은 계정의 연속 제출은 30초 간격(서버 시간 기준)
+//   - 위에 적힌 경로 외 모든 문서는 접근 불가(아래에 match 가 없으면 기본 거부)
+//
+// ⚠️ 이 프로젝트에 이미 다른 컬렉션 규칙이 게시되어 있다면, 이 파일로 덮어쓰지 말고
+//    아래 match /feedback/... 블록을 기존 규칙 안에 합쳐서 게시하세요.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    // 문자열 s 가 min~max 글자인지(앞뒤 공백 제외 1자 이상)
+    function textOk(s, min, max) {
+      return s is string && s.size() <= max && s.trim().size() >= min;
+    }
+
+    // ── 제출 간격 기록 ─────────────────────────────────────────
+    match /feedback/{userId} {
+      function metaValid() {
+        let d = request.resource.data;
+        return d.keys().hasOnly(['lastSubmittedAt', 'lastItemId'])
+          && d.keys().hasAll(['lastSubmittedAt', 'lastItemId'])
+          && d.lastSubmittedAt == request.time
+          && d.lastItemId is string && d.lastItemId.size() > 0 && d.lastItemId.size() <= 128;
+      }
+      function intervalPassed() {
+        return resource.data.lastSubmittedAt < request.time - duration.value(30, 's');
+      }
+
+      allow get: if isOwner(userId);
+      allow create: if isOwner(userId) && metaValid();
+      allow update: if isOwner(userId) && metaValid() && intervalPassed();
+      // 계정 삭제 시 정리용. 마지막 제출 후 30초가 지나야 삭제 가능(삭제로 간격 제한을 우회하지 못하게)
+      allow delete: if isOwner(userId) && intervalPassed();
+      allow list: if false;
+
+      // ── 고객지원 의견 ───────────────────────────────────────
+      match /items/{feedbackId} {
+        function metaAfter() {
+          return getAfter(/databases/$(database)/documents/feedback/$(userId)).data;
+        }
+        function itemValid() {
+          let d = request.resource.data;
+          return d.keys().hasOnly(['userId', 'category', 'title', 'message', 'relatedQuestionId', 'appVersion', 'status', 'createdAt'])
+            && d.keys().hasAll(['userId', 'category', 'title', 'message', 'relatedQuestionId', 'appVersion', 'status', 'createdAt'])
+            && d.userId == request.auth.uid
+            && d.category in ['feature', 'content_request', 'content_error', 'app_bug', 'usability', 'other']
+            && textOk(d.title, 1, 100)
+            && textOk(d.message, 1, 3000)
+            && textOk(d.relatedQuestionId, 0, 100)
+            && textOk(d.appVersion, 0, 50)
+            && d.status == 'new'
+            && d.createdAt == request.time;
+        }
+        // 같은 일괄 쓰기(batch)에서 제출 간격 기록이 이 문서 ID 와 현재 시각으로 갱신되어야 함
+        // → 간격 기록의 30초 제한이 곧 의견 제출 간격 제한이 되고, 한 번에 여러 건을 넣을 수 없음
+        function throttled() {
+          let m = metaAfter();
+          return m.lastItemId == feedbackId && m.lastSubmittedAt == request.time;
+        }
+
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && itemValid() && throttled();
+        allow update: if false;
+        allow delete: if isOwner(userId);
+      }
+    }
+  }
+}

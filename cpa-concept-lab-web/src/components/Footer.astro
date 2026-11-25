@@ -1,0 +1,51 @@
+---
+import { site, contactEmail, operatorName } from '../config/site';
+const year = new Date().getFullYear();
+const email = contactEmail();
+const op = operatorName();
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="top">
+      <div>
+        <p class="name">{site.appName}</p>
+        <p class="slogan">어려운 공부도, 가볍게 한 문제씩.</p>
+      </div>
+      <nav aria-label="하단 메뉴">
+        <ul>
+          <li><a href="/privacy"><strong>개인정보 처리방침</strong></a></li>
+          <li><a href="/terms">이용약관</a></li>
+          <li><a href="/support">고객지원</a></li>
+          <li><a href="/updates">업데이트 내역</a></li>
+          <li><a href="/data-deletion">데이터 삭제 안내</a></li>
+        </ul>
+      </nav>
+    </div>
+    <dl class="info">
+      <div><dt>운영자</dt><dd>{op || '운영자 정보 준비 중'}</dd></div>
+      <div><dt>고객지원</dt><dd>{email ? <a href={`mailto:${email}`}>{email}</a> : '이메일 준비 중 · 고객지원 페이지를 이용해 주세요'}</dd></div>
+    </dl>
+    <p class="legal">
+      {site.appName}은 공인회계사 시험 및 관련 학문의 학습을 돕는 독립적인 교육용 앱이며, 금융위원회·금융감독원·한국공인회계사회 등 공식 기관과 관련이 없습니다.
+    </p>
+    <p class="copy">© {year} {op || site.appName}. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer { background: var(--navy-dark); color: #c9d3e2; padding: 48px 0 40px; margin-top: 0; font-size: 0.92rem; }
+  .site-footer a { color: #fff; }
+  .top { display: grid; gap: 20px; }
+  @media (min-width: 760px) { .top { grid-template-columns: 1fr auto; align-items: start; } }
+  .name { color: #fff; font-weight: 800; font-size: 1.1rem; margin: 0; }
+  .slogan { margin: 2px 0 0; color: #9fb0c8; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  ul a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+  ul a:hover { text-decoration: underline; color: #fff; }
+  .info { margin: 24px 0 0; display: grid; gap: 6px; }
+  .info div { display: flex; gap: 12px; }
+  .info dt { color: #9fb0c8; min-width: 64px; }
+  .info dd { margin: 0; }
+  .legal { color: #9fb0c8; margin: 20px 0 6px; font-size: 0.85rem; }
+  .copy { color: #9fb0c8; margin: 0; font-size: 0.85rem; }
+</style>

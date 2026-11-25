@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/updates.json';
+import { formatDate } from '../config/site';
+
+type Entry = { version: string; date: string; stage: string; added: string[]; improved: string[]; fixed: string[]; content: string[] };
+const entries = data.entries as Entry[];
+const groups: [keyof Entry, string][] = [
+  ['added', '추가 기능'],
+  ['improved', '개선사항'],
+  ['fixed', '오류 수정'],
+  ['content', '콘텐츠 변경'],
+];
+const anyRelease = entries.some((e) => e.stage === 'release');
+---
+<Base title="업데이트 내역" description="CPA Concept Lab Android 앱의 버전별 업데이트 내역입니다.">
+  <section class="page-head">
+    <div class="container narrow">
+      <h1>업데이트 내역</h1>
+      <p>버전별로 추가·개선된 기능과 콘텐츠 변경사항입니다.</p>
+      {!anyRelease && (
+        <p class="notice small">아직 Google Play에 출시하기 전입니다. 아래는 출시 전 개발 버전의 변경 내역입니다.</p>
+      )}
+    </div>
+  </section>
+  <section class="container narrow list">
+    {entries.map((e) => (
+      <article class="card entry" id={`v${e.version}`}>
+        <header>
+          <h2>버전 {e.version}</h2>
+          <span class={e.stage === 'release' ? 'badge' : 'badge soon'}>{e.stage === 'release' ? 'Google Play 출시' : '출시 전 개발 버전'}</span>
+          <time datetime={e.date} class="small muted">{formatDate(e.date)}</time>
+        </header>
+        {groups.map(([k, label]) => (e[k] as string[]).length > 0 && (
+          <div class="group">
+            <h3>{label}</h3>
+            <ul>{(e[k] as string[]).map((t) => <li>{t}</li>)}</ul>
+          </div>
+        ))}
+      </article>
+    ))}
+  </section>
+  <div class="spacer"></div>
+</Base>
+
+<style>
+  .list { display: grid; gap: 16px; }
+  .entry header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 8px; }
+  .entry h2 { font-size: 1.25rem; margin: 0; }
+  .entry time { margin-left: auto; }
+  .group h3 { font-size: 0.95rem; color: var(--blue); margin: 14px 0 4px; }
+  .group ul { margin: 0; padding-left: 1.2em; }
+  .spacer { height: 72px; }
+</style>

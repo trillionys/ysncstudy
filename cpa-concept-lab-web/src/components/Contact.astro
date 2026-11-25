@@ -1,0 +1,12 @@
+---
+/** 공개 연락처 블록 — 로그인 없이 보이는 곳(개인정보 처리방침·데이터 삭제 안내·고객지원)에서 사용 */
+import { privacyEmail, contactEmail, site } from '../config/site';
+interface Props { kind?: 'support' | 'privacy' }
+const { kind = 'support' } = Astro.props;
+const email = kind === 'privacy' ? privacyEmail() : contactEmail();
+---
+{email ? (
+  <p>이메일: <a href={`mailto:${email}`}><strong>{email}</strong></a>{site.developerDisplayName && <> (운영자: {site.developerDisplayName})</>}</p>
+) : (
+  <p class="notice warn small">운영자 이메일을 준비하고 있습니다. 그 전에는 <a href="/support">고객지원 페이지</a>에서 Google 로그인 후 의견을 남겨 주세요.</p>
+)}

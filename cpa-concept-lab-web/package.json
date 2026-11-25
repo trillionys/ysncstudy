@@ -1,0 +1,32 @@
+{
+  "name": "cpa-concept-lab-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CPA Concept Lab 공식 홈페이지 (Astro 정적 사이트 + Firebase 고객지원)",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:config": "node scripts/check-config.mjs",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-cpa-concept-lab \"vitest run tests/rules\"",
+    "test:unit": "vitest run tests/unit",
+    "test:e2e": "node scripts/e2e.mjs",
+    "test": "npm run test:unit && npm run test:rules && npm run test:e2e"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "astro": "^7.4.13",
+    "firebase": "^13.4.0",
+    "pretendard": "^1.3.9"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@firebase/rules-unit-testing": "^6.0.0",
+    "firebase-tools": "^15.37.0",
+    "typescript": "^6.0.3",
+    "vitest": "^5.1.1"
+  }
+}
