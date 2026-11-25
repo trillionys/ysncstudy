@@ -953,6 +953,13 @@ def poc_rev(contract, cum, total, prior):
     return v, f"{fmt(contract)} × {fmt(cum)} ÷ {fmt(total)} − 전기 누적수익 {fmt(prior)} = {fmt(v)}"
 
 
+@formula()
+def cum_alloc(total, elapsed, period, prior):
+    """기간 배분 누적액 − 전기 누적액: 총액 × 경과기간 ÷ 전체기간 − 전기까지 인식액"""
+    v = r0(total * elapsed / period - prior)
+    return v, f"총액 {fmt(total)} × {fmt(elapsed)} ÷ {fmt(period)} − 전기 누적 {fmt(prior)} = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

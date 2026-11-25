@@ -168044,37 +168044,28 @@
    ],
    "subjectId": "IA",
    "chapterId": "IA-IN",
-   "questionType": "matching",
-   "questionText": "무형자산 인식기준 두 가지를 고르시오.",
-   "blankAnswer": "기준① → 미래경제적효익 유입 가능성이 높음 / 기준② → 원가를 신뢰성 있게 측정 가능",
+   "questionType": "choice",
+   "questionText": "무형자산의 인식기준에 해당하는 것은?",
+   "blankAnswer": "원가를 신뢰성 있게 측정할 수 있을 것",
    "acceptedAnswers": [
-    "기준① → 미래경제적효익 유입 가능성이 높음 / 기준② → 원가를 신뢰성 있게 측정 가능"
+    "원가를 신뢰성 있게 측정할 수 있을 것"
    ],
    "relatedConceptIds": [
     "IA070",
     "IA074"
    ],
    "unit": null,
-   "inputType": "slots",
+   "inputType": "choice",
    "choices": [
-    "미래경제적효익 유입 가능성이 높음",
-    "원가를 신뢰성 있게 측정 가능",
-    "물리적 실체 존재",
-    "법적 소유권 등기"
+    "원가를 신뢰성 있게 측정할 수 있을 것",
+    "물리적 실체가 있을 것",
+    "법적 소유권이 등기되어 있을 것",
+    "활성시장이 있을 것"
    ],
-   "slots": [
-    {
-     "label": "기준①",
-     "answer": "미래경제적효익 유입 가능성이 높음"
-    },
-    {
-     "label": "기준②",
-     "answer": "원가를 신뢰성 있게 측정 가능"
-    }
-   ],
+   "slots": [],
    "calcSpec": null,
    "sourceProblemIds": [],
-   "explanation": "정의 충족 후 적용하는 인식기준.",
+   "explanation": "인식기준: 효익 유입 가능성이 높고 원가를 신뢰성 있게 측정 가능.",
    "confusion": null,
    "calculation": null,
    "difficulty": 2,
@@ -172624,37 +172615,28 @@
    ],
    "subjectId": "IA",
    "chapterId": "IA-FL",
-   "questionType": "matching",
-   "questionText": "상계 요건 두 가지를 고르시오.",
-   "blankAnswer": "요건① → 법적으로 집행 가능한 상계권리 현재 보유 / 요건② → 차액 결제 또는 동시 실행 의도",
+   "questionType": "choice",
+   "questionText": "금융자산과 금융부채의 상계 요건이 아닌 것은?",
+   "blankAnswer": "두 항목의 만기가 같을 것",
    "acceptedAnswers": [
-    "요건① → 법적으로 집행 가능한 상계권리 현재 보유 / 요건② → 차액 결제 또는 동시 실행 의도"
+    "두 항목의 만기가 같을 것"
    ],
    "relatedConceptIds": [
     "IA090",
     "IA091"
    ],
    "unit": null,
-   "inputType": "slots",
+   "inputType": "choice",
    "choices": [
-    "법적으로 집행 가능한 상계권리 현재 보유",
-    "차액 결제 또는 동시 실행 의도",
-    "같은 통화로 표시",
-    "같은 만기"
+    "두 항목의 만기가 같을 것",
+    "법적으로 집행 가능한 상계권리를 현재 보유할 것",
+    "차액으로 결제할 의도가 있을 것",
+    "자산 실현과 부채 결제를 동시에 할 의도가 있을 것"
    ],
-   "slots": [
-    {
-     "label": "요건①",
-     "answer": "법적으로 집행 가능한 상계권리 현재 보유"
-    },
-    {
-     "label": "요건②",
-     "answer": "차액 결제 또는 동시 실행 의도"
-    }
-   ],
+   "slots": [],
    "calcSpec": null,
    "sourceProblemIds": [],
-   "explanation": "둘 다 충족해야 한다.",
+   "explanation": "요건은 집행 가능한 현재 상계권리와 순액(동시) 결제 의도.",
    "confusion": null,
    "calculation": null,
    "difficulty": 2,
@@ -181931,37 +181913,28 @@
    ],
    "subjectId": "IA",
    "chapterId": "IA-LS",
-   "questionType": "matching",
-   "questionText": "사용통제권의 두 요건을 고르시오.",
-   "blankAnswer": "요건① → 경제적 효익의 대부분을 얻을 권리 / 요건② → 사용 방법과 목적을 지시할 권리",
+   "questionType": "choice",
+   "questionText": "사용통제권의 요건에 해당하는 것은?",
+   "blankAnswer": "사용 방법과 목적을 지시할 권리",
    "acceptedAnswers": [
-    "요건① → 경제적 효익의 대부분을 얻을 권리 / 요건② → 사용 방법과 목적을 지시할 권리"
+    "사용 방법과 목적을 지시할 권리"
    ],
    "relatedConceptIds": [
     "IA200",
     "IA201"
    ],
    "unit": null,
-   "inputType": "slots",
+   "inputType": "choice",
    "choices": [
-    "경제적 효익의 대부분을 얻을 권리",
     "사용 방법과 목적을 지시할 권리",
-    "법적 소유권",
-    "유지보수 책임"
+    "기초자산의 법적 소유권",
+    "유지보수 책임",
+    "보험 가입 의무"
    ],
-   "slots": [
-    {
-     "label": "요건①",
-     "answer": "경제적 효익의 대부분을 얻을 권리"
-    },
-    {
-     "label": "요건②",
-     "answer": "사용 방법과 목적을 지시할 권리"
-    }
-   ],
+   "slots": [],
    "calcSpec": null,
    "sourceProblemIds": [],
-   "explanation": "둘 다 필요.",
+   "explanation": "요건: 경제적 효익의 대부분을 얻을 권리 + 사용을 지시할 권리.",
    "confusion": null,
    "calculation": null,
    "difficulty": 2,
@@ -184372,6 +184345,3856 @@
    "isActive": true,
    "revision": 2,
    "sortOrder": 3787,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA230-Q01",
+   "primaryConceptId": "IA230",
+   "conceptIds": [
+    "IA230"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "단기종업원급여는 (______)하지 않은 금액으로 측정한다.",
+   "blankAnswer": "할인",
+   "acceptedAnswers": [
+    "할인"
+   ],
+   "relatedConceptIds": [
+    "IA231",
+    "IA242"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "12개월 내 결제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3788,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA230-Q02",
+   "primaryConceptId": "IA230",
+   "conceptIds": [
+    "IA230"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "comparison",
+   "questionText": "유급휴가 유형별 인식 시점을 연결하시오.",
+   "blankAnswer": "누적 유급휴가 → 권리를 늘리는 근무를 제공할 때 / 비누적 유급휴가 → 실제로 휴가를 사용할 때",
+   "acceptedAnswers": [
+    "누적 유급휴가 → 권리를 늘리는 근무를 제공할 때 / 비누적 유급휴가 → 실제로 휴가를 사용할 때"
+   ],
+   "relatedConceptIds": [
+    "IA231",
+    "IA242"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "권리를 늘리는 근무를 제공할 때",
+    "실제로 휴가를 사용할 때",
+    "퇴직할 때"
+   ],
+   "slots": [
+    {
+     "label": "누적 유급휴가",
+     "answer": "권리를 늘리는 근무를 제공할 때"
+    },
+    {
+     "label": "비누적 유급휴가",
+     "answer": "실제로 휴가를 사용할 때"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이월 가능 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3789,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA230-Q03",
+   "primaryConceptId": "IA230",
+   "conceptIds": [
+    "IA230"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "choice",
+   "questionText": "상여금 지급 의무를 부채로 인식하는 요건으로 옳은 것은?",
+   "blankAnswer": "과거 사건으로 현재의 지급의무가 있고 신뢰성 있게 추정 가능",
+   "acceptedAnswers": [
+    "과거 사건으로 현재의 지급의무가 있고 신뢰성 있게 추정 가능"
+   ],
+   "relatedConceptIds": [
+    "IA231",
+    "IA242"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "과거 사건으로 현재의 지급의무가 있고 신뢰성 있게 추정 가능",
+    "이사회가 지급을 검토 중",
+    "지급일이 도래",
+    "종업원이 요청"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법적·의제의무.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3790,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA231-Q01",
+   "primaryConceptId": "IA231",
+   "conceptIds": [
+    "IA231"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "comparison",
+   "questionText": "퇴직급여 제도별 위험 부담 주체를 연결하시오.",
+   "blankAnswer": "확정기여제도 → 종업원 / 확정급여제도 → 기업",
+   "acceptedAnswers": [
+    "확정기여제도 → 종업원 / 확정급여제도 → 기업"
+   ],
+   "relatedConceptIds": [
+    "IA232",
+    "IA233"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "종업원",
+    "기업",
+    "정부"
+   ],
+   "slots": [
+    {
+     "label": "확정기여제도",
+     "answer": "종업원"
+    },
+    {
+     "label": "확정급여제도",
+     "answer": "기업"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보험수리적·투자위험 부담.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3791,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA231-Q02",
+   "primaryConceptId": "IA231",
+   "conceptIds": [
+    "IA231"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "고용이 끝난 뒤에 연금이나 일시금으로 지급하는 종업원급여를 (______)급여라 한다.",
+   "blankAnswer": "퇴직",
+   "acceptedAnswers": [
+    "퇴직"
+   ],
+   "relatedConceptIds": [
+    "IA232",
+    "IA233"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3792,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA231-Q03",
+   "primaryConceptId": "IA231",
+   "conceptIds": [
+    "IA231"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "situation",
+   "questionText": "외부 연금기관에 적립하지만 기업이 약정한 연금액을 보장해야 하는 제도는?",
+   "blankAnswer": "확정급여제도",
+   "acceptedAnswers": [
+    "확정급여제도"
+   ],
+   "relatedConceptIds": [
+    "IA232",
+    "IA233"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "확정급여제도",
+    "확정기여제도",
+    "단기종업원급여",
+    "해고급여"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "적립 여부가 아니라 급여 보장 여부로 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3793,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA232-Q01",
+   "primaryConceptId": "IA232",
+   "conceptIds": [
+    "IA232"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "당기 근무용역에 대해 납부할 기여금이 12,000,000원이고 이미 10,000,000원을 납부했다. 보고기간 말 인식할 부채는 (______)원이다.",
+   "blankAnswer": "2,000,000",
+   "acceptedAnswers": [
+    "2,000,000",
+    "2,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA231"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 12000000.0,
+     "b": 10000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "납부할 기여금 − 기납부액.",
+   "confusion": null,
+   "calculation": "12,000,000 − 10,000,000 = 2,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3794,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA232-Q02",
+   "primaryConceptId": "IA232",
+   "conceptIds": [
+    "IA232"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "확정기여제도에서 기업은 기금이 부족해도 추가로 (______)할 의무가 없다.",
+   "blankAnswer": "납부",
+   "acceptedAnswers": [
+    "납부",
+    "기여"
+   ],
+   "relatedConceptIds": [
+    "IA231"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "의무의 한계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3795,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA232-Q03",
+   "primaryConceptId": "IA232",
+   "conceptIds": [
+    "IA232"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "situation",
+   "questionText": "확정기여제도의 기금 투자 손실의 회계처리는?",
+   "blankAnswer": "기업은 처리할 것이 없다",
+   "acceptedAnswers": [
+    "기업은 처리할 것이 없다"
+   ],
+   "relatedConceptIds": [
+    "IA231"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "기업은 처리할 것이 없다",
+    "기업의 퇴직급여 비용",
+    "기타포괄손익",
+    "충당부채"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "투자위험은 종업원이 부담.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3796,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA233-Q01",
+   "primaryConceptId": "IA233",
+   "conceptIds": [
+    "IA233"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "classification",
+   "questionText": "확정급여원가 구성요소의 인식 위치를 연결하시오.",
+   "blankAnswer": "당기근무원가 → 당기손익 / 순이자 → 당기손익 / 보험수리적손익 → 기타포괄손익",
+   "acceptedAnswers": [
+    "당기근무원가 → 당기손익 / 순이자 → 당기손익 / 보험수리적손익 → 기타포괄손익"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "IA235",
+    "IA236",
+    "IA237",
+    "I44"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "당기손익",
+    "기타포괄손익",
+    "이익잉여금"
+   ],
+   "slots": [
+    {
+     "label": "당기근무원가",
+     "answer": "당기손익"
+    },
+    {
+     "label": "순이자",
+     "answer": "당기손익"
+    },
+    {
+     "label": "보험수리적손익",
+     "answer": "기타포괄손익"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재측정요소만 OCI.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3797,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA233-Q02",
+   "primaryConceptId": "IA233",
+   "conceptIds": [
+    "IA233"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "당기근무원가 5,000,000원, 순확정급여부채의 순이자 400,000원일 때 당기손익으로 인식할 확정급여원가는 (______)원이다(과거근무원가 없음).",
+   "blankAnswer": "5,400,000",
+   "acceptedAnswers": [
+    "5,400,000",
+    "5,400,000원"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "IA235",
+    "IA236",
+    "IA237",
+    "I44"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 5000000.0,
+     "b": 400000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "근무원가 + 순이자.",
+   "confusion": null,
+   "calculation": "5,000,000 + 400,000 = 5,400,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3798,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA233-Q03",
+   "primaryConceptId": "IA233",
+   "conceptIds": [
+    "IA233"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "확정급여제도에서 보험수리적위험과 투자위험은 실질적으로 (______)이 부담한다.",
+   "blankAnswer": "기업",
+   "acceptedAnswers": [
+    "기업"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "IA235",
+    "IA236",
+    "IA237",
+    "I44"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제도 성격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3799,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA234-Q01",
+   "primaryConceptId": "IA234",
+   "conceptIds": [
+    "IA234"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "확정급여채무의 할인율은 보고기간 말 (______)회사채의 시장수익률로 정한다.",
+   "blankAnswer": "우량",
+   "acceptedAnswers": [
+    "우량"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA239"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "없으면 국공채.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3800,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA234-Q02",
+   "primaryConceptId": "IA234",
+   "conceptIds": [
+    "IA234"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "기초 확정급여채무 10,000,000원에 당기근무원가와 이자원가 합계 2,800,000원을 더하고 퇴직급여 지급액 1,500,000원을 뺀 금액(재측정 전)은 (______)원이다.",
+   "blankAnswer": "11,300,000",
+   "acceptedAnswers": [
+    "11,300,000",
+    "11,300,000원"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA239"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 10000000.0,
+     "b": 2800000.0,
+     "c": 1500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 + 근무·이자원가 − 지급.",
+   "confusion": null,
+   "calculation": "10,000,000 + 2,800,000 − 1,500,000 = 11,300,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3801,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA234-Q03",
+   "primaryConceptId": "IA234",
+   "conceptIds": [
+    "IA234"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "확정급여채무는 근무 기간마다 급여 1단위가 생긴다고 보는 (______)적립방식으로 측정한다.",
+   "blankAnswer": "예측단위",
+   "acceptedAnswers": [
+    "예측단위"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA239"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정 방법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3802,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA235-Q01",
+   "primaryConceptId": "IA235",
+   "conceptIds": [
+    "IA235"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "사외적립자산 실제 수익이 900,000원이고 할인율로 계산한 이자수익이 640,000원이다. 재측정요소(OCI)로 인식할 금액은 (______)원이다.",
+   "blankAnswer": "260,000",
+   "acceptedAnswers": [
+    "260,000",
+    "260,000원"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA237"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 900000.0,
+     "b": 640000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "실제 수익 − 이자수익.",
+   "confusion": null,
+   "calculation": "900,000 − 640,000 = 260,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3803,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA235-Q02",
+   "primaryConceptId": "IA235",
+   "conceptIds": [
+    "IA235"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "사외적립자산은 보고기간 말 (______)로 측정한다.",
+   "blankAnswer": "공정가치",
+   "acceptedAnswers": [
+    "공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA237"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3804,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA235-Q03",
+   "primaryConceptId": "IA235",
+   "conceptIds": [
+    "IA235"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "exception",
+   "questionText": "사외적립자산으로 보기 어려운 것은?",
+   "blankAnswer": "기업 채권자가 압류할 수 있는 퇴직급여 적립 예금",
+   "acceptedAnswers": [
+    "기업 채권자가 압류할 수 있는 퇴직급여 적립 예금"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA237"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "기업 채권자가 압류할 수 있는 퇴직급여 적립 예금",
+    "독립된 연금기금이 보유한 자산",
+    "적격보험계약",
+    "종업원 급여 지급에만 쓰이는 기금 자산"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "채권자 접근 차단이 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3805,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA236-Q01",
+   "primaryConceptId": "IA236",
+   "conceptIds": [
+    "IA236"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "확정급여채무 현재가치가 12,000,000원, 사외적립자산 공정가치가 9,000,000원이다. 순확정급여부채는 (______)원이다.",
+   "blankAnswer": "3,000,000",
+   "acceptedAnswers": [
+    "3,000,000",
+    "3,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "IA235",
+    "IA237"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 12000000.0,
+     "b": 9000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "DBO − 사외적립자산.",
+   "confusion": null,
+   "calculation": "12,000,000 − 9,000,000 = 3,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3806,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA236-Q02",
+   "primaryConceptId": "IA236",
+   "conceptIds": [
+    "IA236"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "순확정급여자산은 환급이나 기여금 절감으로 얻을 경제적 효익의 현재가치인 자산인식(______)을 한도로 인식한다.",
+   "blankAnswer": "상한",
+   "acceptedAnswers": [
+    "상한"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "IA235",
+    "IA237"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "한도.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3807,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA236-Q03",
+   "primaryConceptId": "IA236",
+   "conceptIds": [
+    "IA236"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "확정급여채무에서 사외적립자산을 뺀 금액을 순확정급여(______)라 한다.",
+   "blankAnswer": "부채",
+   "acceptedAnswers": [
+    "부채",
+    "부채(자산)"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "IA235",
+    "IA237"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "순액.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3808,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA237-Q01",
+   "primaryConceptId": "IA237",
+   "conceptIds": [
+    "IA237"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "기초 확정급여채무 10,000,000원, 기초 사외적립자산 8,000,000원, 할인율 8%(기중 변동 없음)일 때 순이자 비용은 (______)원이다.",
+   "blankAnswer": "160,000",
+   "acceptedAnswers": [
+    "160,000",
+    "160,000원"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA235"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "diff_pct",
+    "params": {
+     "a": 10000000.0,
+     "b": 8000000.0,
+     "r": 8.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(DBO − 사외적립자산) × 할인율.",
+   "confusion": null,
+   "calculation": "(10,000,000 − 8,000,000) × 8% = 160,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3809,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA237-Q02",
+   "primaryConceptId": "IA237",
+   "conceptIds": [
+    "IA237"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "순이자는 순확정급여부채(자산)에 (______)을 곱해 계산한다.",
+   "blankAnswer": "할인율",
+   "acceptedAnswers": [
+    "할인율"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA235"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "DBO와 같은 할인율.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3810,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA237-Q03",
+   "primaryConceptId": "IA237",
+   "conceptIds": [
+    "IA237"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "choice",
+   "questionText": "순확정급여부채의 순이자를 인식하는 곳은?",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익"
+   ],
+   "relatedConceptIds": [
+    "IA236",
+    "IA235"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "당기손익",
+    "기타포괄손익",
+    "이익잉여금 직접",
+    "부채 직접 조정만"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "근무원가와 함께 당기손익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3811,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA238-Q01",
+   "primaryConceptId": "IA238",
+   "conceptIds": [
+    "IA238"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "choice",
+   "questionText": "확정급여제도의 근무원가에 포함되지 않는 것은?",
+   "blankAnswer": "보험수리적손익",
+   "acceptedAnswers": [
+    "보험수리적손익"
+   ],
+   "relatedConceptIds": [
+    "IA240",
+    "IA233"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "보험수리적손익",
+    "당기근무원가",
+    "과거근무원가",
+    "정산손익"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보험수리적손익은 재측정요소(OCI).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3812,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA238-Q02",
+   "primaryConceptId": "IA238",
+   "conceptIds": [
+    "IA238"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "당기근무원가 2,000,000원, 과거근무원가 500,000원일 때 근무원가 합계는 (______)원이다(정산 없음).",
+   "blankAnswer": "2,500,000",
+   "acceptedAnswers": [
+    "2,500,000",
+    "2,500,000원"
+   ],
+   "relatedConceptIds": [
+    "IA240",
+    "IA233"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 2000000.0,
+     "b": 500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "근무원가 = 당기 + 과거.",
+   "confusion": null,
+   "calculation": "2,000,000 + 500,000 = 2,500,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3813,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA238-Q03",
+   "primaryConceptId": "IA238",
+   "conceptIds": [
+    "IA238"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "근무원가는 모두 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익"
+   ],
+   "relatedConceptIds": [
+    "IA240",
+    "IA233"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "OCI 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3814,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA238-Q04",
+   "primaryConceptId": "IA238",
+   "conceptIds": [
+    "IA238"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "choice",
+   "questionText": "확정급여제도의 정산손익 계산으로 옳은 것은?",
+   "blankAnswer": "정산일 확정급여채무 − 정산 가격",
+   "acceptedAnswers": [
+    "정산일 확정급여채무 − 정산 가격"
+   ],
+   "relatedConceptIds": [
+    "IA240",
+    "IA233"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "정산일 확정급여채무 − 정산 가격",
+    "사외적립자산 실제수익 − 이자수익",
+    "당기근무원가 × 할인율",
+    "기초 DBO − 기말 DBO"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정산손익 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3815,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA239-Q01",
+   "primaryConceptId": "IA239",
+   "conceptIds": [
+    "IA239"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "보험수리적 평가 결과 기말 확정급여채무가 12,000,000원이고, 재측정 전 기말 확정급여채무(기초 + 근무원가 + 이자원가 − 지급액)가 11,300,000원이다. 보험수리적손실은 (______)원이다.",
+   "blankAnswer": "700,000",
+   "acceptedAnswers": [
+    "700,000",
+    "700,000원"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "I44"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 12000000.0,
+     "b": 11300000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "실제 기말 − 재측정 전 기말.",
+   "confusion": null,
+   "calculation": "12,000,000 − 11,300,000 = 700,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3816,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA239-Q02",
+   "primaryConceptId": "IA239",
+   "conceptIds": [
+    "IA239"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "보험수리적손익은 (______)으로 인식하고 당기손익으로 재분류하지 않는다.",
+   "blankAnswer": "기타포괄손익",
+   "acceptedAnswers": [
+    "기타포괄손익"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "I44"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재측정요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3817,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA239-Q03",
+   "primaryConceptId": "IA239",
+   "conceptIds": [
+    "IA239"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "choice",
+   "questionText": "보험수리적손익의 원인이 아닌 것은?",
+   "blankAnswer": "당기 근무용역 제공",
+   "acceptedAnswers": [
+    "당기 근무용역 제공"
+   ],
+   "relatedConceptIds": [
+    "IA234",
+    "I44"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "당기 근무용역 제공",
+    "할인율 변경",
+    "임금상승률 가정 변경",
+    "실제 이직률과 가정의 차이"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "당기 근무용역은 근무원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3818,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA240-Q01",
+   "primaryConceptId": "IA240",
+   "conceptIds": [
+    "IA240"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "과거근무원가는 제도 개정이나 축소가 일어날 때 (______) 당기손익으로 인식한다.",
+   "blankAnswer": "즉시",
+   "acceptedAnswers": [
+    "즉시"
+   ],
+   "relatedConceptIds": [
+    "IA238",
+    "IA241"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가득 여부 무관.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3819,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA240-Q02",
+   "primaryConceptId": "IA240",
+   "conceptIds": [
+    "IA240"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "situation",
+   "questionText": "급여를 줄이는 제도 개정으로 DBO 가 감소했다. 처리로 옳은 것은?",
+   "blankAnswer": "음의 과거근무원가로 당기이익",
+   "acceptedAnswers": [
+    "음의 과거근무원가로 당기이익"
+   ],
+   "relatedConceptIds": [
+    "IA238",
+    "IA241"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "음의 과거근무원가로 당기이익",
+    "기타포괄이익",
+    "이익잉여금 직접 증가",
+    "처리하지 않음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "과거근무원가는 양·음 모두 당기손익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3820,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA240-Q03",
+   "primaryConceptId": "IA240",
+   "conceptIds": [
+    "IA240"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "comparison",
+   "questionText": "확정급여채무 변동 원인별 인식 위치를 연결하시오.",
+   "blankAnswer": "제도 개정(과거 근무분) → 당기손익 / 할인율 변경 → 기타포괄손익",
+   "acceptedAnswers": [
+    "제도 개정(과거 근무분) → 당기손익 / 할인율 변경 → 기타포괄손익"
+   ],
+   "relatedConceptIds": [
+    "IA238",
+    "IA241"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "당기손익",
+    "기타포괄손익"
+   ],
+   "slots": [
+    {
+     "label": "제도 개정(과거 근무분)",
+     "answer": "당기손익"
+    },
+    {
+     "label": "할인율 변경",
+     "answer": "기타포괄손익"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제도 변경 vs 가정 변경.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3821,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA241-Q01",
+   "primaryConceptId": "IA241",
+   "conceptIds": [
+    "IA241"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "해고급여는 기업이 해고급여 제안을 더는 (______)할 수 없을 때와 구조조정원가 인식 시점 중 이른 날에 인식한다.",
+   "blankAnswer": "철회",
+   "acceptedAnswers": [
+    "철회"
+   ],
+   "relatedConceptIds": [
+    "IA128"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인식 시점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3822,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA241-Q02",
+   "primaryConceptId": "IA241",
+   "conceptIds": [
+    "IA241"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "calculation",
+   "questionText": "철회할 수 없는 희망퇴직 제안에 100명이 수락할 것으로 예상되고 1인당 해고급여가 30,000,000원이다(1년 이내 지급). 해고급여 부채는 (______)원이다.",
+   "blankAnswer": "3,000,000,000",
+   "acceptedAnswers": [
+    "3,000,000,000",
+    "3,000,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA128"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 100.0,
+     "b": 30000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "예상 인원 × 1인당 급여.",
+   "confusion": null,
+   "calculation": "100 × 30,000,000 = 3,000,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3823,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA241-Q03",
+   "primaryConceptId": "IA241",
+   "conceptIds": [
+    "IA241"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "choice",
+   "questionText": "해고급여에 해당하지 않는 것은?",
+   "blankAnswer": "정년퇴직 시 지급하는 퇴직금",
+   "acceptedAnswers": [
+    "정년퇴직 시 지급하는 퇴직금"
+   ],
+   "relatedConceptIds": [
+    "IA128"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "정년퇴직 시 지급하는 퇴직금",
+    "희망퇴직 제안 수락에 따른 위로금",
+    "구조조정에 따른 해고 보상금",
+    "조기퇴직 유도 특별수당"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정년퇴직금은 근무 대가인 퇴직급여.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3824,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA242-Q01",
+   "primaryConceptId": "IA242",
+   "conceptIds": [
+    "IA242"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "comparison",
+   "questionText": "재측정요소의 인식 위치를 급여 유형별로 연결하시오.",
+   "blankAnswer": "확정급여 퇴직급여 → 기타포괄손익 / 장기근속휴가 → 당기손익",
+   "acceptedAnswers": [
+    "확정급여 퇴직급여 → 기타포괄손익 / 장기근속휴가 → 당기손익"
+   ],
+   "relatedConceptIds": [
+    "IA230",
+    "IA239"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기타포괄손익",
+    "당기손익"
+   ],
+   "slots": [
+    {
+     "label": "확정급여 퇴직급여",
+     "answer": "기타포괄손익"
+    },
+    {
+     "label": "장기근속휴가",
+     "answer": "당기손익"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기타장기급여는 모두 당기손익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3825,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA242-Q02",
+   "primaryConceptId": "IA242",
+   "conceptIds": [
+    "IA242"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "definition",
+   "questionText": "장기근속휴가처럼 12개월 이후 결제되는 기타장기종업원급여의 재측정요소는 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익"
+   ],
+   "relatedConceptIds": [
+    "IA230",
+    "IA239"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "OCI 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3826,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA242-Q03",
+   "primaryConceptId": "IA242",
+   "conceptIds": [
+    "IA242"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EB",
+   "questionType": "choice",
+   "questionText": "기타장기종업원급여의 예는?",
+   "blankAnswer": "장기근속 포상금",
+   "acceptedAnswers": [
+    "장기근속 포상금"
+   ],
+   "relatedConceptIds": [
+    "IA230",
+    "IA239"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "장기근속 포상금",
+    "월 급여",
+    "정년 퇴직금",
+    "희망퇴직 위로금"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "단기·퇴직·해고급여가 아닌 급여.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1019호 '종업원급여'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3827,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA250-Q01",
+   "primaryConceptId": "IA250",
+   "conceptIds": [
+    "IA250"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "종업원에게 부여한 주식결제형 보상은 (______)의 지분상품 공정가치로 측정한다.",
+   "blankAnswer": "부여일",
+   "acceptedAnswers": [
+    "부여일"
+   ],
+   "relatedConceptIds": [
+    "IA251",
+    "IA258",
+    "IA263"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재측정 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3828,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA250-Q02",
+   "primaryConceptId": "IA250",
+   "conceptIds": [
+    "IA250"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "comparison",
+   "questionText": "주식기준보상 유형별 상대계정을 연결하시오.",
+   "blankAnswer": "주식결제형 → 자본(주식선택권) / 현금결제형 → 부채(장기미지급비용)",
+   "acceptedAnswers": [
+    "주식결제형 → 자본(주식선택권) / 현금결제형 → 부채(장기미지급비용)"
+   ],
+   "relatedConceptIds": [
+    "IA251",
+    "IA258",
+    "IA263"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "자본(주식선택권)",
+    "부채(장기미지급비용)",
+    "기타포괄손익"
+   ],
+   "slots": [
+    {
+     "label": "주식결제형",
+     "answer": "자본(주식선택권)"
+    },
+    {
+     "label": "현금결제형",
+     "answer": "부채(장기미지급비용)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "결제 수단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3829,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA250-Q03",
+   "primaryConceptId": "IA250",
+   "conceptIds": [
+    "IA250"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "situation",
+   "questionText": "가득된 주식선택권이 행사되지 않고 소멸했다. 처리로 옳은 것은?",
+   "blankAnswer": "인식한 보상원가를 되돌리지 않는다(자본 내 대체 가능)",
+   "acceptedAnswers": [
+    "인식한 보상원가를 되돌리지 않는다(자본 내 대체 가능)"
+   ],
+   "relatedConceptIds": [
+    "IA251",
+    "IA258",
+    "IA263"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "인식한 보상원가를 되돌리지 않는다(자본 내 대체 가능)",
+    "보상원가를 환입한다",
+    "당기이익으로 인식한다",
+    "부채로 대체한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가득 후 미행사는 환입 사유가 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3830,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA251-Q01",
+   "primaryConceptId": "IA251",
+   "conceptIds": [
+    "IA251"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "현금결제형 주식기준보상은 결제될 때까지 매 보고기간 말 (______)로 재측정한다.",
+   "blankAnswer": "공정가치",
+   "acceptedAnswers": [
+    "공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA262",
+    "IA250"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "부채 재측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3831,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA251-Q02",
+   "primaryConceptId": "IA251",
+   "conceptIds": [
+    "IA251"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "주가차액보상권 100개의 기말 공정가치 합계가 1,200,000원이고 가득기간 3년 중 1년이 지났다(전기 인식액 0원). 당기 보상원가는 (______)원이다.",
+   "blankAnswer": "400,000",
+   "acceptedAnswers": [
+    "400,000",
+    "400,000원"
+   ],
+   "relatedConceptIds": [
+    "IA262",
+    "IA250"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cum_alloc",
+    "params": {
+     "total": 1200000.0,
+     "elapsed": 1.0,
+     "period": 3.0,
+     "prior": 0.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공정가치 × 경과 비율 − 전기 누적.",
+   "confusion": null,
+   "calculation": "총액 1,200,000 × 1 ÷ 3 − 전기 누적 0 = 400,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3832,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA251-Q03",
+   "primaryConceptId": "IA251",
+   "conceptIds": [
+    "IA251"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "choice",
+   "questionText": "다음 중 현금결제형 주식기준보상의 예는?",
+   "blankAnswer": "주가차액보상권",
+   "acceptedAnswers": [
+    "주가차액보상권"
+   ],
+   "relatedConceptIds": [
+    "IA262",
+    "IA250"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "주가차액보상권",
+    "주식선택권",
+    "무상주 부여",
+    "신주인수권"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주가 기초 현금 지급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3833,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA252-Q01",
+   "primaryConceptId": "IA252",
+   "conceptIds": [
+    "IA252"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "classification",
+   "questionText": "조건 유형별 반영 방법을 연결하시오.",
+   "blankAnswer": "근무조건 → 가득 예상 수량 추정 / 시장조건 → 부여일 공정가치 / 비시장 성과조건 → 가득 예상 수량 추정 / 비가득조건 → 부여일 공정가치",
+   "acceptedAnswers": [
+    "근무조건 → 가득 예상 수량 추정 / 시장조건 → 부여일 공정가치 / 비시장 성과조건 → 가득 예상 수량 추정 / 비가득조건 → 부여일 공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA253",
+    "IA254",
+    "IA255",
+    "IA256"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "가득 예상 수량 추정",
+    "부여일 공정가치"
+   ],
+   "slots": [
+    {
+     "label": "근무조건",
+     "answer": "가득 예상 수량 추정"
+    },
+    {
+     "label": "시장조건",
+     "answer": "부여일 공정가치"
+    },
+    {
+     "label": "비시장 성과조건",
+     "answer": "가득 예상 수량 추정"
+    },
+    {
+     "label": "비가득조건",
+     "answer": "부여일 공정가치"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "시장·비가득조건은 공정가치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3834,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA252-Q02",
+   "primaryConceptId": "IA252",
+   "conceptIds": [
+    "IA252"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "가득조건은 근무조건과 (______)조건으로 나뉜다.",
+   "blankAnswer": "성과",
+   "acceptedAnswers": [
+    "성과"
+   ],
+   "relatedConceptIds": [
+    "IA253",
+    "IA254",
+    "IA255",
+    "IA256"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가득조건 종류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3835,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA252-Q03",
+   "primaryConceptId": "IA252",
+   "conceptIds": [
+    "IA252"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "treatment",
+   "questionText": "가득조건이 아닌 조건(비가득조건)의 회계처리는?",
+   "blankAnswer": "부여일 공정가치 측정에 반영",
+   "acceptedAnswers": [
+    "부여일 공정가치 측정에 반영"
+   ],
+   "relatedConceptIds": [
+    "IA253",
+    "IA254",
+    "IA255",
+    "IA256"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "부여일 공정가치 측정에 반영",
+    "가득 예상 수량에 반영",
+    "무시",
+    "가득기간에 반영"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비가득조건은 공정가치에.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3836,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA253-Q01",
+   "primaryConceptId": "IA253",
+   "conceptIds": [
+    "IA253"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "근무조건 주식선택권 1,000개 중 예상 가득 비율이 90%이다(기준 100%). 가득 예상 수량은 (______)개이다.",
+   "blankAnswer": "900",
+   "acceptedAnswers": [
+    "900",
+    "900개"
+   ],
+   "relatedConceptIds": [
+    "IA252",
+    "IA257",
+    "IA258"
+   ],
+   "unit": "개",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1000.0,
+     "b": 90.0,
+     "c": 100.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "부여 수량 × 예상 가득 비율.",
+   "confusion": null,
+   "calculation": "1,000 × 90 ÷ 100 = 900",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3837,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA253-Q02",
+   "primaryConceptId": "IA253",
+   "conceptIds": [
+    "IA253"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "근무조건이 없는 즉시 가득 보상은 (______)일에 전액 비용으로 인식한다.",
+   "blankAnswer": "부여",
+   "acceptedAnswers": [
+    "부여"
+   ],
+   "relatedConceptIds": [
+    "IA252",
+    "IA257",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가득기간 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3838,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA253-Q03",
+   "primaryConceptId": "IA253",
+   "conceptIds": [
+    "IA253"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "근무조건을 충족하지 못해 가득되지 않은 수량에 대해 이미 인식한 보상원가는 (______)한다.",
+   "blankAnswer": "환입",
+   "acceptedAnswers": [
+    "환입"
+   ],
+   "relatedConceptIds": [
+    "IA252",
+    "IA257",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "근무조건 미충족.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3839,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA254-Q01",
+   "primaryConceptId": "IA254",
+   "conceptIds": [
+    "IA254"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "classification",
+   "questionText": "다음 성과목표를 분류하시오.",
+   "blankAnswer": "주가가 50,000원 이상 → 시장조건 / 매출 성장률 10% → 비시장조건 / EPS 1,000원 달성 → 비시장조건",
+   "acceptedAnswers": [
+    "주가가 50,000원 이상 → 시장조건 / 매출 성장률 10% → 비시장조건 / EPS 1,000원 달성 → 비시장조건"
+   ],
+   "relatedConceptIds": [
+    "IA255",
+    "IA256",
+    "IA252"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "시장조건",
+    "비시장조건"
+   ],
+   "slots": [
+    {
+     "label": "주가가 50,000원 이상",
+     "answer": "시장조건"
+    },
+    {
+     "label": "매출 성장률 10%",
+     "answer": "비시장조건"
+    },
+    {
+     "label": "EPS 1,000원 달성",
+     "answer": "비시장조건"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주가 연동 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3840,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA254-Q02",
+   "primaryConceptId": "IA254",
+   "conceptIds": [
+    "IA254"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "성과조건은 특정 기간 근무하면서 특정 성과(______)를 달성해야 하는 조건이다.",
+   "blankAnswer": "목표",
+   "acceptedAnswers": [
+    "목표"
+   ],
+   "relatedConceptIds": [
+    "IA255",
+    "IA256",
+    "IA252"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3841,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA254-Q03",
+   "primaryConceptId": "IA254",
+   "conceptIds": [
+    "IA254"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "exception",
+   "questionText": "근무 기간이 끝난 뒤에도 성과 측정 기간이 계속되는 조건의 성격은?",
+   "blankAnswer": "비가득조건",
+   "acceptedAnswers": [
+    "비가득조건"
+   ],
+   "relatedConceptIds": [
+    "IA255",
+    "IA256",
+    "IA252"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "비가득조건",
+    "시장조건",
+    "근무조건",
+    "비시장 성과조건"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "성과 기간이 근무 기간을 넘으면 가득조건이 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3842,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA255-Q01",
+   "primaryConceptId": "IA255",
+   "conceptIds": [
+    "IA255"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "근무조건을 충족했다면 시장조건을 달성하지 못해도 보상원가를 (______)하지 않는다.",
+   "blankAnswer": "환입",
+   "acceptedAnswers": [
+    "환입"
+   ],
+   "relatedConceptIds": [
+    "IA256",
+    "IA259"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공정가치에 이미 반영.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3843,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA255-Q02",
+   "primaryConceptId": "IA255",
+   "conceptIds": [
+    "IA255"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "choice",
+   "questionText": "시장조건을 반영하는 곳은?",
+   "blankAnswer": "부여일 지분상품 공정가치",
+   "acceptedAnswers": [
+    "부여일 지분상품 공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA256",
+    "IA259"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "부여일 지분상품 공정가치",
+    "가득 예상 수량",
+    "가득기간 추정만",
+    "반영하지 않음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "옵션가격결정모형에 반영.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3844,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA255-Q03",
+   "primaryConceptId": "IA255",
+   "conceptIds": [
+    "IA255"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "목표 주가 달성처럼 자기 지분상품 가격과 관련된 성과 가득조건을 (______)조건이라 한다.",
+   "blankAnswer": "시장",
+   "acceptedAnswers": [
+    "시장"
+   ],
+   "relatedConceptIds": [
+    "IA256",
+    "IA259"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3845,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA256-Q01",
+   "primaryConceptId": "IA256",
+   "conceptIds": [
+    "IA256"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "비시장조건은 부여일 공정가치가 아니라 가득 예상 (______) 추정에 반영한다.",
+   "blankAnswer": "수량",
+   "acceptedAnswers": [
+    "수량"
+   ],
+   "relatedConceptIds": [
+    "IA255",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재추정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3846,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA256-Q02",
+   "primaryConceptId": "IA256",
+   "conceptIds": [
+    "IA256"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "전기 말 누적 보상원가가 600,000원이었는데 당기 말 비시장 성과목표 달성 수준이 낮아질 것으로 예상되어 누적 보상원가를 150,000원으로 조정한다. 당기에 되돌릴(환입할) 보상원가는 (______)원이다.",
+   "blankAnswer": "450,000",
+   "acceptedAnswers": [
+    "450,000",
+    "450,000원"
+   ],
+   "relatedConceptIds": [
+    "IA255",
+    "IA258"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 600000.0,
+     "b": 150000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "전기 누적 − 당기 누적(감소분 환입).",
+   "confusion": null,
+   "calculation": "600,000 − 150,000 = 450,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3847,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA256-Q03",
+   "primaryConceptId": "IA256",
+   "conceptIds": [
+    "IA256"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "choice",
+   "questionText": "다음 중 비시장 성과조건은?",
+   "blankAnswer": "3년 누적 영업이익 100억원 달성",
+   "acceptedAnswers": [
+    "3년 누적 영업이익 100억원 달성"
+   ],
+   "relatedConceptIds": [
+    "IA255",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "3년 누적 영업이익 100억원 달성",
+    "주가 3만원 이상 유지",
+    "동종업계 대비 주주수익률 상위 30%",
+    "시가총액 1조원 달성"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주가와 무관한 회계 지표.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3848,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA257-Q01",
+   "primaryConceptId": "IA257",
+   "conceptIds": [
+    "IA257"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "보상원가는 근무·성과 조건이 모두 충족되어 권리가 확정될 때까지의 (______)기간에 걸쳐 배분한다.",
+   "blankAnswer": "가득",
+   "acceptedAnswers": [
+    "가득"
+   ],
+   "relatedConceptIds": [
+    "IA253",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배분 기간.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3849,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA257-Q02",
+   "primaryConceptId": "IA257",
+   "conceptIds": [
+    "IA257"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "총보상원가가 3,600,000원이고 기대 가득기간이 3년이다. 2년차까지 누적으로 인식할 보상원가에서 전기 누적 1,100,000원을 뺀 당기 보상원가는 (______)원이다.",
+   "blankAnswer": "1,300,000",
+   "acceptedAnswers": [
+    "1,300,000",
+    "1,300,000원"
+   ],
+   "relatedConceptIds": [
+    "IA253",
+    "IA258"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cum_alloc",
+    "params": {
+     "total": 3600000.0,
+     "elapsed": 2.0,
+     "period": 3.0,
+     "prior": 1100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "총보상원가 × 경과 ÷ 가득기간 − 전기 누적.",
+   "confusion": null,
+   "calculation": "총액 3,600,000 × 2 ÷ 3 − 전기 누적 1,100,000 = 1,300,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3850,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA257-Q03",
+   "primaryConceptId": "IA257",
+   "conceptIds": [
+    "IA257"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "comparison",
+   "questionText": "기대 가득기간을 수정하는지 연결하시오.",
+   "blankAnswer": "비시장 성과조건에 따라 가득기간이 달라짐 → 새 정보로 수정 / 시장조건에 따라 가득기간이 달라짐 → 부여일 추정 유지",
+   "acceptedAnswers": [
+    "비시장 성과조건에 따라 가득기간이 달라짐 → 새 정보로 수정 / 시장조건에 따라 가득기간이 달라짐 → 부여일 추정 유지"
+   ],
+   "relatedConceptIds": [
+    "IA253",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "새 정보로 수정",
+    "부여일 추정 유지"
+   ],
+   "slots": [
+    {
+     "label": "비시장 성과조건에 따라 가득기간이 달라짐",
+     "answer": "새 정보로 수정"
+    },
+    {
+     "label": "시장조건에 따라 가득기간이 달라짐",
+     "answer": "부여일 추정 유지"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조건 유형별 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3851,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA258-Q01",
+   "primaryConceptId": "IA258",
+   "conceptIds": [
+    "IA258"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "총보상원가(단위 공정가치 × 예상 가득 수량)가 3,240,000원, 가득기간 3년 중 2년 경과, 전기 누적 보상원가 1,200,000원이다. 당기 주식보상비용은 (______)원이다.",
+   "blankAnswer": "960,000",
+   "acceptedAnswers": [
+    "960,000",
+    "960,000원"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA253",
+    "IA257"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cum_alloc",
+    "params": {
+     "total": 3240000.0,
+     "elapsed": 2.0,
+     "period": 3.0,
+     "prior": 1200000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "누적 − 전기 누적.",
+   "confusion": null,
+   "calculation": "총액 3,240,000 × 2 ÷ 3 − 전기 누적 1,200,000 = 960,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3852,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA258-Q02",
+   "primaryConceptId": "IA258",
+   "conceptIds": [
+    "IA258"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "주식결제형 보상원가의 상대계정은 자본의 주식(______)이다.",
+   "blankAnswer": "선택권",
+   "acceptedAnswers": [
+    "선택권"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA253",
+    "IA257"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 항목.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3853,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA258-Q03",
+   "primaryConceptId": "IA258",
+   "conceptIds": [
+    "IA258"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "treatment",
+   "questionText": "2년차에 가득 예상 수량이 줄었을 때의 처리로 옳은 것은?",
+   "blankAnswer": "누적 보상원가를 다시 계산해 차이를 당기에 반영",
+   "acceptedAnswers": [
+    "누적 보상원가를 다시 계산해 차이를 당기에 반영"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA253",
+    "IA257"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "누적 보상원가를 다시 계산해 차이를 당기에 반영",
+    "1년차 재무제표를 재작성",
+    "변경을 무시",
+    "가득일에 일괄 반영"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "추정 변경의 누적 조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3854,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA259-Q01",
+   "primaryConceptId": "IA259",
+   "conceptIds": [
+    "IA259"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "comparison",
+   "questionText": "거래상대방별 측정 기준을 연결하시오.",
+   "blankAnswer": "종업원 → 부여일 지분상품 공정가치 / 원재료 공급자 → 받은 재화의 공정가치",
+   "acceptedAnswers": [
+    "종업원 → 부여일 지분상품 공정가치 / 원재료 공급자 → 받은 재화의 공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA255"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "부여일 지분상품 공정가치",
+    "받은 재화의 공정가치",
+    "내재가치"
+   ],
+   "slots": [
+    {
+     "label": "종업원",
+     "answer": "부여일 지분상품 공정가치"
+    },
+    {
+     "label": "원재료 공급자",
+     "answer": "받은 재화의 공정가치"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직접 측정 가능 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3855,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA259-Q02",
+   "primaryConceptId": "IA259",
+   "conceptIds": [
+    "IA259"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "지분상품 공정가치를 신뢰성 있게 추정할 수 없는 극히 드문 경우에는 (______)가치로 측정하고 매기 재측정한다.",
+   "blankAnswer": "내재",
+   "acceptedAnswers": [
+    "내재"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA255"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3856,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA259-Q03",
+   "primaryConceptId": "IA259",
+   "conceptIds": [
+    "IA259"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "주식선택권의 시장가격이 없으면 (______)가격결정모형으로 공정가치를 추정한다.",
+   "blankAnswer": "옵션",
+   "acceptedAnswers": [
+    "옵션"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA255"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "평가기법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3857,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA260-Q01",
+   "primaryConceptId": "IA260",
+   "conceptIds": [
+    "IA260"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "조건변경으로 단위당 공정가치가 1,000원 증가했고 가득 예상 수량이 900개다(증분공정가치 총액 900,000원). 남은 가득기간 2년 중 1년이 지난 시점의 당기 추가 보상원가는 (______)원이다(전기 추가분 0원).",
+   "blankAnswer": "450,000",
+   "acceptedAnswers": [
+    "450,000",
+    "450,000원"
+   ],
+   "relatedConceptIds": [
+    "IA258",
+    "IA261"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cum_alloc",
+    "params": {
+     "total": 900000.0,
+     "elapsed": 1.0,
+     "period": 2.0,
+     "prior": 0.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "증분공정가치 × 경과 ÷ 남은 기간.",
+   "confusion": null,
+   "calculation": "총액 900,000 × 1 ÷ 2 − 전기 누적 0 = 450,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3858,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA260-Q02",
+   "primaryConceptId": "IA260",
+   "conceptIds": [
+    "IA260"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "종업원에게 불리한 조건변경은 (______) 것처럼 원래대로 보상원가를 인식한다.",
+   "blankAnswer": "없었던",
+   "acceptedAnswers": [
+    "없었던"
+   ],
+   "relatedConceptIds": [
+    "IA258",
+    "IA261"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비용 감소 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3859,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA260-Q03",
+   "primaryConceptId": "IA260",
+   "conceptIds": [
+    "IA260"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "조건변경으로 늘어난 공정가치를 (______)공정가치라 한다.",
+   "blankAnswer": "증분",
+   "acceptedAnswers": [
+    "증분"
+   ],
+   "relatedConceptIds": [
+    "IA258",
+    "IA261"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "추가 인식 대상.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3860,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA261-Q01",
+   "primaryConceptId": "IA261",
+   "conceptIds": [
+    "IA261"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "총보상원가 3,600,000원 중 전기까지 1,200,000원을 인식한 상태에서 기업이 약정을 취소했다. 취소 시 즉시 인식할 보상원가는 (______)원이다.",
+   "blankAnswer": "2,400,000",
+   "acceptedAnswers": [
+    "2,400,000",
+    "2,400,000원"
+   ],
+   "relatedConceptIds": [
+    "IA260",
+    "IA258"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 3600000.0,
+     "b": 1200000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "남은 보상원가 전액.",
+   "confusion": null,
+   "calculation": "3,600,000 − 1,200,000 = 2,400,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3861,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA261-Q02",
+   "primaryConceptId": "IA261",
+   "conceptIds": [
+    "IA261"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "가득기간 중 기업이 주식기준보상을 취소하면 가득이 (______)된 것으로 본다.",
+   "blankAnswer": "가속",
+   "acceptedAnswers": [
+    "가속",
+    "앞당겨진",
+    "가속화"
+   ],
+   "relatedConceptIds": [
+    "IA260",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "즉시 비용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3862,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA261-Q03",
+   "primaryConceptId": "IA261",
+   "conceptIds": [
+    "IA261"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "treatment",
+   "questionText": "중도청산 지급액이 재매입일 지분상품 공정가치를 초과하는 부분의 처리는?",
+   "blankAnswer": "비용",
+   "acceptedAnswers": [
+    "비용"
+   ],
+   "relatedConceptIds": [
+    "IA260",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "비용",
+    "자본 차감",
+    "자산",
+    "기타포괄손익"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공정가치까지는 자본 차감, 초과분은 비용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3863,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA262-Q01",
+   "primaryConceptId": "IA262",
+   "conceptIds": [
+    "IA262"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "보상권 공정가치 총액이 1,500,000원(기말 단위 공정가치 × 수량)이고 가득기간 3년 중 2년이 지났다. 전기 말 부채가 400,000원이면 당기 보상원가는 (______)원이다(당기 현금 지급 없음).",
+   "blankAnswer": "600,000",
+   "acceptedAnswers": [
+    "600,000",
+    "600,000원"
+   ],
+   "relatedConceptIds": [
+    "IA251"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cum_alloc",
+    "params": {
+     "total": 1500000.0,
+     "elapsed": 2.0,
+     "period": 3.0,
+     "prior": 400000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "당기 말 부채 − 전기 말 부채.",
+   "confusion": null,
+   "calculation": "총액 1,500,000 × 2 ÷ 3 − 전기 누적 400,000 = 600,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3864,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA262-Q02",
+   "primaryConceptId": "IA262",
+   "conceptIds": [
+    "IA262"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "현금결제형 보상권을 결제할 때는 그 시점의 (______)가치로 현금을 지급한다.",
+   "blankAnswer": "내재",
+   "acceptedAnswers": [
+    "내재"
+   ],
+   "relatedConceptIds": [
+    "IA251"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주가 − 행사가격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3865,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA262-Q03",
+   "primaryConceptId": "IA262",
+   "conceptIds": [
+    "IA262"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "현금결제형 부채의 공정가치 변동은 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익"
+   ],
+   "relatedConceptIds": [
+    "IA251"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보상원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3866,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA263-Q01",
+   "primaryConceptId": "IA263",
+   "conceptIds": [
+    "IA263"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "calculation",
+   "questionText": "주식매수선택권 행사로 현금 200,000원을 받고 관련 주식선택권 36,000원을 대체해 액면총액 50,000원의 신주를 발행했다. 주식발행초과금 증가액은 (______)원이다.",
+   "blankAnswer": "186,000",
+   "acceptedAnswers": [
+    "186,000",
+    "186,000원"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA258"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 200000.0,
+     "b": 36000.0,
+     "c": 50000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "현금 + 주식선택권 − 자본금.",
+   "confusion": null,
+   "calculation": "200,000 + 36,000 − 50,000 = 186,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3867,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA263-Q02",
+   "primaryConceptId": "IA263",
+   "conceptIds": [
+    "IA263"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "definition",
+   "questionText": "가득된 주식매수선택권이 행사되지 않고 소멸하면 주식선택권을 다른 (______) 항목으로 대체할 수 있다.",
+   "blankAnswer": "자본",
+   "acceptedAnswers": [
+    "자본"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손익 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3868,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA263-Q03",
+   "primaryConceptId": "IA263",
+   "conceptIds": [
+    "IA263"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-SB",
+   "questionType": "effect",
+   "questionText": "종업원 주식매수선택권 행사 시 손익에 미치는 영향은?",
+   "blankAnswer": "없다",
+   "acceptedAnswers": [
+    "없다"
+   ],
+   "relatedConceptIds": [
+    "IA250",
+    "IA258"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "없다",
+    "주가와 행사가격 차이만큼 손실",
+    "행사가격만큼 이익",
+    "주식선택권만큼 이익"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본거래.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1102호 '주식기준보상'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3869,
    "legacyPackId": null,
    "examReferenceNumbers": [],
    "examArea": null,

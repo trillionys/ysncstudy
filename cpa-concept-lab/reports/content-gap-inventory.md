@@ -4,12 +4,12 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 
 | 시험과목 | 구축 | 전체 | 미구축 | 구축률 |
 |---|---:|---:|---:|---:|
-| 회계학 | 384 | 577 | 193 | 66.6% |
+| 회계학 | 411 | 577 | 166 | 71.2% |
 | 경영학 | 21 | 232 | 211 | 9.1% |
 | 경제원론 | 27 | 132 | 105 | 20.5% |
 | 기업법 | 127 | 131 | 4 | 96.9% |
 | 세법개론 | 159 | 161 | 2 | 98.8% |
-| **전체** | 718 | 1233 | 515 | 58.2% |
+| **전체** | 745 | 1233 | 488 | 60.4% |
 
 무결성 오류: 0건
 
@@ -29,43 +29,6 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0078 | 비화폐성자산 교환 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0087 | 구성요소별 감가상각 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0092 | 재평가잉여금 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-
-## 회계학 · 중급회계 · 종업원급여
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0253 | 단기종업원급여 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0254 | 퇴직급여 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0255 | 확정기여제도 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0256 | 확정급여제도 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0257 | 확정급여채무 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0258 | 사외적립자산 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0259 | 순확정급여부채 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0260 | 순이자 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0261 | 근무원가 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0262 | 보험수리적손익 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0264 | 과거근무원가 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0265 | 해고급여 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0266 | 기타장기종업원급여 | A | NOT_STARTED | 개념·문항 없음 |
-
-## 회계학 · 중급회계 · 주식기준보상
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0267 | 주식결제형 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0268 | 현금결제형 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0269 | 가득조건 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0270 | 근무조건 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0271 | 성과조건 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0272 | 시장조건 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0273 | 비시장조건 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0274 | 가득기간 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0275 | 보상원가 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0276 | 공정가치 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0277 | 조건변경 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0278 | 취소 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0279 | 현금결제형 재측정 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0280 | 종업원 주식매수선택권 | A | NOT_STARTED | 개념·문항 없음 |
 
 ## 회계학 · 중급회계 · 법인세회계
 
@@ -101,7 +64,7 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0303 | 희석주당이익 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0304 | 잠재적보통주 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0305 | 전환사채 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0306 | 주식매수선택권 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0306 | 주식매수선택권 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0307 | 희석효과와 반희석효과 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0308 | 계속영업손익 주당이익 | A | NOT_STARTED | 개념·문항 없음 |
 

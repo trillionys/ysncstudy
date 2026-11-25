@@ -159,6 +159,7 @@ object FormulaEngine {
         percent("pct_ratio") { r2(it["a"] / it["b"] * 100) }
         percent("mult_ratio") { r2(it["a"] / it["b"]) }
         amount("poc_rev") { r0(it["contract"] * it["cum"] / it["total"] - it["prior"]) }
+        amount("cum_alloc") { r0(it["total"] * it["elapsed"] / it["period"] - it["prior"]) }
         amount("mul2") { r0(it["a"] * it["b"]) }
         amount("ev2") { r0(it["a"] * it["ra"] / 100.0 + it["b"] * it["rb"] / 100.0) }
         amount("fv") { r0(it["pv"] * (1 + pc(it["r"])).pow(it["n"])) }

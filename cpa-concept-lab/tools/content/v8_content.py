@@ -21,6 +21,7 @@ ORDER = [
     "ia_equity",
     "ia_revenue",
     "ia_leases",
+    "ia_employee_share",
 ]
 
 for name in ORDER:

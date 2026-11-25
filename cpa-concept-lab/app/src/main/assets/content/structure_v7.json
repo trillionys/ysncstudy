@@ -714,6 +714,24 @@
    "title": "리스",
    "englishTitle": "Leases",
    "sortOrder": 68
+  },
+  {
+   "partTitle": "종업원급여",
+   "id": "IA-EB",
+   "code": "EB",
+   "subjectId": "IA",
+   "title": "종업원급여",
+   "englishTitle": "Employee benefits",
+   "sortOrder": 69
+  },
+  {
+   "partTitle": "주식기준보상",
+   "id": "IA-SB",
+   "code": "SB",
+   "subjectId": "IA",
+   "title": "주식기준보상",
+   "englishTitle": "Share-based payment",
+   "sortOrder": 70
   }
  ],
  "sections": [
@@ -2270,6 +2288,18 @@
    "chapterId": "IA-LS",
    "title": "리스제공자 회계",
    "sortOrder": 3
+  },
+  {
+   "id": "IA-EB-S01",
+   "chapterId": "IA-EB",
+   "title": "종업원급여의 분류",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-SB-S01",
+   "chapterId": "IA-SB",
+   "title": "주식기준보상의 유형과 측정",
+   "sortOrder": 1
   },
   {
    "id": "AA-A-S90",
@@ -5743,8 +5773,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "단기종업원급여",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA230"
+   ],
+   "covered": true,
    "sortOrder": 253
   },
   {
@@ -5752,8 +5784,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "퇴직급여",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA231"
+   ],
+   "covered": true,
    "sortOrder": 254
   },
   {
@@ -5761,8 +5795,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "확정기여제도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA232"
+   ],
+   "covered": true,
    "sortOrder": 255
   },
   {
@@ -5770,8 +5806,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "확정급여제도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA233"
+   ],
+   "covered": true,
    "sortOrder": 256
   },
   {
@@ -5779,8 +5817,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "확정급여채무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA234"
+   ],
+   "covered": true,
    "sortOrder": 257
   },
   {
@@ -5788,8 +5828,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "사외적립자산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA235"
+   ],
+   "covered": true,
    "sortOrder": 258
   },
   {
@@ -5797,8 +5839,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "순확정급여부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA236"
+   ],
+   "covered": true,
    "sortOrder": 259
   },
   {
@@ -5806,8 +5850,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "순이자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA237"
+   ],
+   "covered": true,
    "sortOrder": 260
   },
   {
@@ -5815,8 +5861,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "근무원가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA238"
+   ],
+   "covered": true,
    "sortOrder": 261
   },
   {
@@ -5824,8 +5872,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "보험수리적손익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA239"
+   ],
+   "covered": true,
    "sortOrder": 262
   },
   {
@@ -5844,8 +5894,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "과거근무원가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA240"
+   ],
+   "covered": true,
    "sortOrder": 264
   },
   {
@@ -5853,8 +5905,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "해고급여",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA241"
+   ],
+   "covered": true,
    "sortOrder": 265
   },
   {
@@ -5862,8 +5916,10 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "기타장기종업원급여",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA242"
+   ],
+   "covered": true,
    "sortOrder": 266
   },
   {
@@ -5871,8 +5927,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "주식결제형",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA250"
+   ],
+   "covered": true,
    "sortOrder": 267
   },
   {
@@ -5880,8 +5938,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "현금결제형",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA251"
+   ],
+   "covered": true,
    "sortOrder": 268
   },
   {
@@ -5889,8 +5949,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "가득조건",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA252"
+   ],
+   "covered": true,
    "sortOrder": 269
   },
   {
@@ -5898,8 +5960,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "근무조건",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA253"
+   ],
+   "covered": true,
    "sortOrder": 270
   },
   {
@@ -5907,8 +5971,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "성과조건",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA254"
+   ],
+   "covered": true,
    "sortOrder": 271
   },
   {
@@ -5916,8 +5982,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "시장조건",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA255"
+   ],
+   "covered": true,
    "sortOrder": 272
   },
   {
@@ -5925,8 +5993,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "비시장조건",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA256"
+   ],
+   "covered": true,
    "sortOrder": 273
   },
   {
@@ -5934,8 +6004,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "가득기간",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA257"
+   ],
+   "covered": true,
    "sortOrder": 274
   },
   {
@@ -5943,8 +6015,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "보상원가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA258"
+   ],
+   "covered": true,
    "sortOrder": 275
   },
   {
@@ -5952,8 +6026,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "공정가치",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA259"
+   ],
+   "covered": true,
    "sortOrder": 276
   },
   {
@@ -5961,8 +6037,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "조건변경",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA260"
+   ],
+   "covered": true,
    "sortOrder": 277
   },
   {
@@ -5970,8 +6048,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "취소",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA261"
+   ],
+   "covered": true,
    "sortOrder": 278
   },
   {
@@ -5979,8 +6059,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "현금결제형 재측정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA262"
+   ],
+   "covered": true,
    "sortOrder": 279
   },
   {
@@ -5988,8 +6070,10 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "종업원 주식매수선택권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA263"
+   ],
+   "covered": true,
    "sortOrder": 280
   },
   {
