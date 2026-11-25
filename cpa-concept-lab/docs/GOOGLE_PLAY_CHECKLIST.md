@@ -6,9 +6,9 @@
 | 항목 | 상태 | 비고 |
 |---|---|---|
 | Debug APK | ✅ | 공유 디버그 키(SHA-256 fa7d77c6…fce8) — 기존 설치본 위에 업데이트 가능 |
-| Release APK | ✅(서명 안 됨) | `./gradlew assembleRelease` → `app-release-unsigned.apk` (R8 축소, 약 3.7MB) |
-| Release AAB | ✅(서명 안 됨) | `./gradlew bundleRelease` → `app-release.aab` (약 6.1MB) |
-| 업로드 키 | ⬜ | 실제 업로드 키스토어 없음. `keystore.properties`(커밋 금지, .gitignore)에 storeFile·storePassword·keyAlias·keyPassword 를 넣으면 release 빌드가 자동 서명된다. **Play App Signing 사용 권장** |
+| Release APK | ✅(업로드 키 서명) | `./gradlew assembleRelease` → `app-release.apk` (R8 축소, 약 3.7MB) |
+| Release AAB | ✅(업로드 키 서명) | `./gradlew bundleRelease` → `dist/CPAConceptLab-1.0.8-release.aab` (약 6.1MB) |
+| 업로드 키 | ✅ | `upload-keystore.jks`(PKCS12 RSA 4096, alias `upload`, 2054년까지) 생성 — Git 에 없음, 개발자가 별도 보관. SHA-256 `F2:73:78:57:…:85:01:A6`. `keystore.properties`(커밋 금지)로 자동 서명. **Play App Signing 사용** |
 | 디버그 설치본 → Play 설치본 | ⚠️ | 서명 키가 달라 같은 기기에서 덮어쓰기 설치가 안 된다. 사용자에게 '앱 내 전체 백업 → 삭제 → Play 설치 → 복원' 절차 안내 필요 |
 | 키스토어·비밀번호 커밋 | ✅ 없음 | |
 
@@ -60,6 +60,7 @@
 | 실기기·에뮬레이터 테스트 | ⬜ **이번 세션에서 수행하지 못함**(Robolectric 화면 테스트만 수행) |
 
 ## 6. 배포 절차(권장)
+자세한 단계·폼 답변·스토어 그래픽: [`play-store/UPLOAD_GUIDE.md`](../play-store/UPLOAD_GUIDE.md)
 1. `keystore.properties` 준비 → `./gradlew bundleRelease`
 2. Play Console 앱 생성 → Play App Signing 등록 → **내부 테스트** 트랙 업로드(최대 100명)
 3. 실기기 점검(위 ⚠️ 항목) → **비공개 테스트**(개인 개발자 계정은 공개 전 비공개 테스트 요건이 있을 수 있으니 Play Console 안내 확인)

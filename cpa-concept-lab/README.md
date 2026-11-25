@@ -2,9 +2,10 @@
 
 CPA 재무회계 개념을 **개념 학습 → 초성 힌트 빈칸(기본) → 무힌트 빈칸(심화) → 오답·간격 복습** 순서로 장기기억에 남기기 위한 네이티브 Android 앱입니다. 모든 기능은 오프라인에서 동작합니다.
 
-- 패키지: `com.cpaconceptlab.study` · 버전 1.0.7 (versionCode 8) · 콘텐츠 v7 · DB 스키마 v6 · minSdk 26(Android 8.0) / targetSdk 36
+- 패키지: `com.cpaconceptlab.study` · 버전 1.0.8 (versionCode 9) · 콘텐츠 v7 · DB 스키마 v6 · minSdk 26(Android 8.0) / targetSdk 36
 - 기술: Kotlin 2.0, Jetpack Compose + Material 3, MVVM, Room(스키마 v3, 명시적 마이그레이션 1→2→3), Coroutines/Flow, DataStore, Navigation Compose, kotlinx.serialization, Storage Access Framework
-- 설치 파일: [`dist/CPAConceptLab-1.0.7-debug.apk`](dist/CPAConceptLab-1.0.7-debug.apk) (1.0.0~1.0.2와 같은 공유 디버그 키로 서명 → 기존 앱 위에 업데이트 설치 가능)
+- Google Play 업로드용: [`dist/CPAConceptLab-1.0.8-release.aab`](dist/CPAConceptLab-1.0.8-release.aab) (업로드 키 서명) · 스토어 등록 자료와 절차: [`play-store/UPLOAD_GUIDE.md`](play-store/UPLOAD_GUIDE.md)
+- 직접 설치용(이전): [`dist/CPAConceptLab-1.0.7-debug.apk`](dist/CPAConceptLab-1.0.7-debug.apk) (공유 디버그 키 서명 — Play 설치본과 서명이 달라 덮어쓰기 불가)
 
 ## 1. 설치
 
@@ -46,6 +47,7 @@ CPA 재무회계 개념을 **개념 학습 → 초성 힌트 빈칸(기본) → 
 - 검증 결과: [docs/CONTENT_VALIDATION_REPORT.md](docs/CONTENT_VALIDATION_REPORT.md), [docs/content-validation.txt](docs/content-validation.txt)
 
 ### 변경 이력
+- **1.0.8 (versionCode 9, 콘텐츠 v7, DB 스키마 v6)**: Google Play 출시용. 업로드 키로 서명한 AAB, 무료 앱(결제·인앱 구매·광고 없음) 명시한 개인정보 처리방침, 스토어 그래픽(아이콘 512·그래픽 이미지 1024×500·휴대전화 8장·태블릿 7/10인치 스크린샷, `tools/store/make_store_assets.py` + `StoreScreenshotTest`), 등록정보 문구와 Play Console 입력 가이드(`play-store/`). 학습 기능 변경 없음.
 - **1.0.7 (versionCode 8, 콘텐츠 v7, DB 스키마 v6)**: 회계학 구조 재편 — 독립 '재무회계' 팩을 없애고 기존 개념 462개를 ID 그대로 중급회계 459(제1부 재무회계의 기초·재고자산·유형자산·차입원가)·고급회계 3으로 재분류, 고급회계 16·정부회계 10개념 신규. 모든 개념에 [간단 요약](기존 설명 보존)·[상세 학습](섹션 접기·공식 복사·분개 표, 핵심 20개념은 계산 예제·분개 직접 작성) 탭. 단원·중단원·파트에서 난이도(쉬움·보통·어려움·실전)와 유형(초성 빈칸·일반 빈칸·단답·계산·4지선다·매칭·분류·순서) 선택. 오늘의 문제 목표 150 상한 제거(빠른 선택·직접 입력·무제한, 고유 문항 기준 집계). 복습 주기 프리셋(집중·표준·여유)·직접 설정·날짜 미리보기·예정 일정 재계산. 오답은 세션 후반 재출제. 이용 안내·공식 출처·오류 신고(사용자가 고른 앱으로 공유)·개인정보 처리방침·학습데이터 삭제. targetSdk 36, Release APK·AAB 빌드 구성(서명 키는 keystore.properties). 보고서: `docs/migration/MIGRATION_REPORT_v7.md`, `docs/GOOGLE_PLAY_CHECKLIST.md`, `docs/PRIVACY_POLICY.md`.
 - **1.0.6 (versionCode 7, 콘텐츠 v6)**: 문제 풀이 도구 추가. 계산문제(계산·숫자형·원 단위)에는 문제 머리 오른쪽에 **계산기** 버튼(사칙연산·괄호·%, 정확한 십진 계산, 결과를 '답에 넣기'). 모든 문제에 **필기** 버튼: 문제 위 투명 화이트보드에 펜(빨강·파랑·검정)·형광펜·지우개로 밑줄·메모, 되돌리기·모두 지우기. 필기는 문제 내용에 붙어 스크롤과 함께 움직이고, 다음 문제로 넘어가면 새 화이트보드가 됩니다.
 - **1.0.5 (versionCode 6, 콘텐츠 v6, DB 스키마 v5 — 스키마 변경 없음)**: 세법개론 전 범위 콘텐츠를 추가했습니다. 8개 단원(국세기본법 26·법인세법 33·소득세법 23·부가가치세법 24·상증법 13·지방세법 7·조특법 10·종합 계산 6) 142개념·444문항(계산 54문항). 모든 단답 정답은 2026. 11. 24. 국가법령정보센터 현행 법률 원문과 자동 대조하고(일치 281문항, 나머지는 선택·분류·계산형), 세율표는 코드가 아니라 `assets/content/tax_rules.json` 데이터로 관리해 앱의 TaxRuleEngine이 독립 계산합니다. 세법 개념은 2027 시험 기준일 미확정이라 [현재 기준]으로 표시합니다. 시행령·시행규칙 원문은 대조하지 않았습니다. 세법개론 실전 비중 모의(40문항: 국기 5·법인 14·소득 10·부가 8·상증·지방 3)와 과목 상세의 기본·심화·계산 정답률, 오답 개념 수를 추가했습니다.

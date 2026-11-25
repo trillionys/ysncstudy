@@ -25,8 +25,8 @@ android {
         minSdk = 26
         targetSdk = 36
         // 새 APK 를 배포할 때마다 versionCode 를 반드시 증가시킨다.
-        versionCode = 8
-        versionName = "1.0.7"
+        versionCode = 9
+        versionName = "1.0.8"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
