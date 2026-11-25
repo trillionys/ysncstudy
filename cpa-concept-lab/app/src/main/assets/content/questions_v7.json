@@ -173746,6 +173746,2099 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "IA120-Q01",
+   "primaryConceptId": "IA120",
+   "conceptIds": [
+    "IA120"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "지출하는 시기 또는 금액이 불확실한 부채를 (______)라 한다.",
+   "blankAnswer": "충당부채",
+   "acceptedAnswers": [
+    "충당부채"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA124",
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1037호 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3565,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA120-Q02",
+   "primaryConceptId": "IA120",
+   "conceptIds": [
+    "IA120"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "choice",
+   "questionText": "다음 중 충당부채가 아닌 것은?",
+   "blankAnswer": "매출채권 손실충당금",
+   "acceptedAnswers": [
+    "매출채권 손실충당금"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA124",
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "매출채권 손실충당금",
+    "제품보증충당부채",
+    "복구충당부채",
+    "소송충당부채"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손실충당금은 자산의 차감 계정이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3566,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA120-Q03",
+   "primaryConceptId": "IA120",
+   "conceptIds": [
+    "IA120"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "comparison",
+   "questionText": "다음 항목의 재무제표 처리를 연결하시오.",
+   "blankAnswer": "충당부채 → 부채로 인식 / 우발부채 → 인식하지 않고 공시",
+   "acceptedAnswers": [
+    "충당부채 → 부채로 인식 / 우발부채 → 인식하지 않고 공시"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA124",
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "부채로 인식",
+    "인식하지 않고 공시",
+    "자산에서 차감"
+   ],
+   "slots": [
+    {
+     "label": "충당부채",
+     "answer": "부채로 인식"
+    },
+    {
+     "label": "우발부채",
+     "answer": "인식하지 않고 공시"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인식 여부가 핵심 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3567,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA121-Q01",
+   "primaryConceptId": "IA121",
+   "conceptIds": [
+    "IA121"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "충당부채는 (______)사건의 결과로 현재의무가 있을 때 인식한다.",
+   "blankAnswer": "과거",
+   "acceptedAnswers": [
+    "과거"
+   ],
+   "relatedConceptIds": [
+    "IA122",
+    "IA123",
+    "IA124"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "의무발생사건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3568,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA121-Q02",
+   "primaryConceptId": "IA121",
+   "conceptIds": [
+    "IA121"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "choice",
+   "questionText": "다음 중 보고기간 말 현재의무가 있는 것은?",
+   "blankAnswer": "이미 발생한 토양오염을 법률에 따라 정화할 의무",
+   "acceptedAnswers": [
+    "이미 발생한 토양오염을 법률에 따라 정화할 의무"
+   ],
+   "relatedConceptIds": [
+    "IA122",
+    "IA123",
+    "IA124"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "이미 발생한 토양오염을 법률에 따라 정화할 의무",
+    "내년에 수선할 예정인 설비의 수선비",
+    "미래 영업손실",
+    "다음 해 직원 교육 계획"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "과거사건(오염)으로 피할 수 없는 의무.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3569,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA121-Q03",
+   "primaryConceptId": "IA121",
+   "conceptIds": [
+    "IA121"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "situation",
+   "questionText": "미래 영업을 위해 발생할 원가는 기업이 미래 행동으로 (______)할 수 있으므로 충당부채가 아니다.",
+   "blankAnswer": "회피",
+   "acceptedAnswers": [
+    "회피"
+   ],
+   "relatedConceptIds": [
+    "IA122",
+    "IA123",
+    "IA124"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현재의무 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3570,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA122-Q01",
+   "primaryConceptId": "IA122",
+   "conceptIds": [
+    "IA122"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "계약이나 법률에 근거해 법원이 이행을 강제할 수 있는 의무를 (______)의무라 한다.",
+   "blankAnswer": "법적",
+   "acceptedAnswers": [
+    "법적"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA123"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "의제의무와 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3571,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA122-Q02",
+   "primaryConceptId": "IA122",
+   "conceptIds": [
+    "IA122"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "choice",
+   "questionText": "임차 계약상 계약 종료 시 원상복구 의무의 성격은?",
+   "blankAnswer": "법적의무",
+   "acceptedAnswers": [
+    "법적의무"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA123"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "법적의무",
+    "의제의무",
+    "우발자산",
+    "미래 영업원가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약에서 생긴 의무.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3572,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA122-Q03",
+   "primaryConceptId": "IA122",
+   "conceptIds": [
+    "IA122"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "exception",
+   "questionText": "아직 입법 예고 단계인 법률은 제정이 거의 (______)할 때에만 의무로 본다.",
+   "blankAnswer": "확실",
+   "acceptedAnswers": [
+    "확실"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA123"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "새 법률의 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3573,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA123-Q01",
+   "primaryConceptId": "IA123",
+   "conceptIds": [
+    "IA123"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "과거 실무관행이나 공표된 방침으로 상대방에게 정당한 기대를 갖게 해서 생기는 의무를 (______)의무라 한다.",
+   "blankAnswer": "의제",
+   "acceptedAnswers": [
+    "의제"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA122",
+    "IA128"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법적 의무와 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3574,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA123-Q02",
+   "primaryConceptId": "IA123",
+   "conceptIds": [
+    "IA123"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "situation",
+   "questionText": "의제의무가 생기는 경우는?",
+   "blankAnswer": "오염 정화 방침을 공표하고 이행해 온 기업에서 오염이 발생",
+   "acceptedAnswers": [
+    "오염 정화 방침을 공표하고 이행해 온 기업에서 오염이 발생"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA122",
+    "IA128"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "오염 정화 방침을 공표하고 이행해 온 기업에서 오염이 발생",
+    "이사회가 내부적으로 환불 정책을 검토",
+    "경영진이 미래 구조조정을 고민",
+    "법률 개정이 논의 중"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "외부에 표명된 책임과 정당한 기대.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3575,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA123-Q03",
+   "primaryConceptId": "IA123",
+   "conceptIds": [
+    "IA123"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "classification",
+   "questionText": "의무의 원천을 연결하시오.",
+   "blankAnswer": "계약상 원상복구 → 법적의무 / 공표된 환불 관행 → 의제의무",
+   "acceptedAnswers": [
+    "계약상 원상복구 → 법적의무 / 공표된 환불 관행 → 의제의무"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA122",
+    "IA128"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "법적의무",
+    "의제의무",
+    "의무 아님"
+   ],
+   "slots": [
+    {
+     "label": "계약상 원상복구",
+     "answer": "법적의무"
+    },
+    {
+     "label": "공표된 환불 관행",
+     "answer": "의제의무"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법적 효력 vs 정당한 기대.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3576,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA124-Q01",
+   "primaryConceptId": "IA124",
+   "conceptIds": [
+    "IA124"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "order",
+   "questionText": "충당부채 인식 판단을 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 과거사건으로 인한 현재의무 존재 / 2단계 → 자원 유출 가능성이 높음 / 3단계 → 금액의 신뢰성 있는 추정",
+   "acceptedAnswers": [
+    "1단계 → 과거사건으로 인한 현재의무 존재 / 2단계 → 자원 유출 가능성이 높음 / 3단계 → 금액의 신뢰성 있는 추정"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA125",
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "과거사건으로 인한 현재의무 존재",
+    "금액의 신뢰성 있는 추정",
+    "자원 유출 가능성이 높음"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "과거사건으로 인한 현재의무 존재"
+    },
+    {
+     "label": "2단계",
+     "answer": "자원 유출 가능성이 높음"
+    },
+    {
+     "label": "3단계",
+     "answer": "금액의 신뢰성 있는 추정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세 요건을 차례로 검토한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3577,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA124-Q02",
+   "primaryConceptId": "IA124",
+   "conceptIds": [
+    "IA124"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "충당부채 인식요건의 자원 유출 가능성은 발생할 가능성이 발생하지 않을 가능성보다 (______) 경우를 말한다.",
+   "blankAnswer": "높은",
+   "acceptedAnswers": [
+    "높은",
+    "높다",
+    "크다",
+    "큰"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA125",
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "more likely than not.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3578,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA124-Q03",
+   "primaryConceptId": "IA124",
+   "conceptIds": [
+    "IA124"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "treatment",
+   "questionText": "현재의무는 있지만 자원 유출 가능성이 높지 않은 경우의 처리는?",
+   "blankAnswer": "우발부채로 공시",
+   "acceptedAnswers": [
+    "우발부채로 공시"
+   ],
+   "relatedConceptIds": [
+    "IA121",
+    "IA125",
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "우발부채로 공시",
+    "충당부채로 인식",
+    "아무 처리도 하지 않음(항상)",
+    "자산에서 차감"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유출 가능성이 아주 낮지 않으면 공시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3579,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA125-Q01",
+   "primaryConceptId": "IA125",
+   "conceptIds": [
+    "IA125"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "제품보증 결과가 경미한 결함(전체 수리비 1,000,000원) 확률 20%, 중대한 결함(전체 수리비 4,000,000원) 확률 5%, 나머지는 결함 없음일 때 충당부채(기댓값)는 (______)원이다.",
+   "blankAnswer": "400,000",
+   "acceptedAnswers": [
+    "400,000",
+    "400,000원"
+   ],
+   "relatedConceptIds": [
+    "IA126",
+    "IA129"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ev2",
+    "params": {
+     "a": 1000000.0,
+     "ra": 20.0,
+     "b": 4000000.0,
+     "rb": 5.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "결과별 금액 × 확률의 합.",
+   "confusion": null,
+   "calculation": "1,000,000 × 20% + 4,000,000 × 5% = 400,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3580,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA125-Q02",
+   "primaryConceptId": "IA125",
+   "conceptIds": [
+    "IA125"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "다수 항목이 관련된 충당부채는 가능한 결과별 지출에 발생확률을 곱한 (______)으로 측정한다.",
+   "blankAnswer": "기댓값",
+   "acceptedAnswers": [
+    "기댓값",
+    "기대값"
+   ],
+   "relatedConceptIds": [
+    "IA126",
+    "IA129"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제품보증처럼 모집단이 큰 경우.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3581,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA125-Q03",
+   "primaryConceptId": "IA125",
+   "conceptIds": [
+    "IA125"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "classification",
+   "questionText": "의무 유형별 최선의 추정치 측정 방법을 연결하시오.",
+   "blankAnswer": "다수 항목(제품보증) → 기댓값 / 단일 의무(소송 1건) → 가능성이 가장 높은 결과(다른 결과도 고려) / 가능성이 같은 연속 범위 → 범위의 중간값",
+   "acceptedAnswers": [
+    "다수 항목(제품보증) → 기댓값 / 단일 의무(소송 1건) → 가능성이 가장 높은 결과(다른 결과도 고려) / 가능성이 같은 연속 범위 → 범위의 중간값"
+   ],
+   "relatedConceptIds": [
+    "IA126",
+    "IA129"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기댓값",
+    "가능성이 가장 높은 결과(다른 결과도 고려)",
+    "범위의 중간값",
+    "가장 큰 금액"
+   ],
+   "slots": [
+    {
+     "label": "다수 항목(제품보증)",
+     "answer": "기댓값"
+    },
+    {
+     "label": "단일 의무(소송 1건)",
+     "answer": "가능성이 가장 높은 결과(다른 결과도 고려)"
+    },
+    {
+     "label": "가능성이 같은 연속 범위",
+     "answer": "범위의 중간값"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "의무 유형별 측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3582,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA125-Q04",
+   "primaryConceptId": "IA125",
+   "conceptIds": [
+    "IA125"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "exception",
+   "questionText": "충당부채를 측정할 때 예상되는 자산 (______)이익은 고려하지 않는다.",
+   "blankAnswer": "처분",
+   "acceptedAnswers": [
+    "처분"
+   ],
+   "relatedConceptIds": [
+    "IA126",
+    "IA129"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "따로 인식.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3583,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA126-Q01",
+   "primaryConceptId": "IA126",
+   "conceptIds": [
+    "IA126"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "3년 후 1,331,000원 지출이 예상되는 충당부채(세전 할인율 10%)의 현재가치는 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA125",
+    "IA120"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pv",
+    "params": {
+     "fv": 1331000.0,
+     "r": 10.0,
+     "n": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "예상 지출 ÷ (1+r)^n.",
+   "confusion": null,
+   "calculation": "PV = 1,331,000 ÷ (1 + 10%)^3 = 1,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3584,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA126-Q02",
+   "primaryConceptId": "IA126",
+   "conceptIds": [
+    "IA126"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "기초 충당부채 장부금액이 1,000,000원, 할인율이 10%이다. 시간 경과로 인식할 이자비용은 (______)원이다.",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000원"
+   ],
+   "relatedConceptIds": [
+    "IA125",
+    "IA120"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1000000.0,
+     "r": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 장부금액 × 할인율.",
+   "confusion": null,
+   "calculation": "1,000,000 × 10% = 100,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3585,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA126-Q03",
+   "primaryConceptId": "IA126",
+   "conceptIds": [
+    "IA126"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "충당부채 할인율은 화폐의 시간가치와 부채 특유의 위험을 반영한 (______) 이율이다.",
+   "blankAnswer": "세전",
+   "acceptedAnswers": [
+    "세전"
+   ],
+   "relatedConceptIds": [
+    "IA125",
+    "IA120"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세후 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3586,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA127-Q01",
+   "primaryConceptId": "IA127",
+   "conceptIds": [
+    "IA127"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "손실부담계약의 충당부채를 인식하기 전에 그 계약에 쓰이는 자산의 (______)을 먼저 인식한다.",
+   "blankAnswer": "손상차손",
+   "acceptedAnswers": [
+    "손상차손"
+   ],
+   "relatedConceptIds": [
+    "IA125"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "순서.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3587,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA127-Q02",
+   "primaryConceptId": "IA127",
+   "conceptIds": [
+    "IA127"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "계약 이행 원가가 1,200,000원, 계약에서 받을 대가가 1,000,000원이다(해지 위약금 300,000원보다 이행 손실이 작음). 손실부담계약 충당부채는 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA125"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1200000.0,
+     "b": 1000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "이행 시 손실 = 이행 원가 − 기대 효익.",
+   "confusion": null,
+   "calculation": "1,200,000 − 1,000,000 = 200,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3588,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA127-Q03",
+   "primaryConceptId": "IA127",
+   "conceptIds": [
+    "IA127"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "choice",
+   "questionText": "계약 이행 원가에 포함하는 것은?",
+   "blankAnswer": "계약 이행에 쓰는 설비 감가상각비 배분액",
+   "acceptedAnswers": [
+    "계약 이행에 쓰는 설비 감가상각비 배분액"
+   ],
+   "relatedConceptIds": [
+    "IA125"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약 이행에 쓰는 설비 감가상각비 배분액",
+    "회사 전체 본사 관리비",
+    "미래 영업손실",
+    "광고비"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "증분원가와 직접 관련된 다른 원가 배분액.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3589,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA128-Q01",
+   "primaryConceptId": "IA128",
+   "conceptIds": [
+    "IA128"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "classification",
+   "questionText": "구조조정 관련 지출의 충당부채 포함 여부를 연결하시오.",
+   "blankAnswer": "해고 직원 해고급여 → 포함 / 계속 근무 직원 재교육비 → 제외 / 새 물류시스템 투자 → 제외",
+   "acceptedAnswers": [
+    "해고 직원 해고급여 → 포함 / 계속 근무 직원 재교육비 → 제외 / 새 물류시스템 투자 → 제외"
+   ],
+   "relatedConceptIds": [
+    "IA123",
+    "IA125"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "포함",
+    "제외"
+   ],
+   "slots": [
+    {
+     "label": "해고 직원 해고급여",
+     "answer": "포함"
+    },
+    {
+     "label": "계속 근무 직원 재교육비",
+     "answer": "제외"
+    },
+    {
+     "label": "새 물류시스템 투자",
+     "answer": "제외"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직접 필요하고 계속 활동과 무관한 지출만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3590,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA128-Q02",
+   "primaryConceptId": "IA128",
+   "conceptIds": [
+    "IA128"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "구조조정 의제의무는 공식 계획이 있고 실행 착수나 주요 내용 (______)로 정당한 기대가 생겼을 때 발생한다.",
+   "blankAnswer": "공표",
+   "acceptedAnswers": [
+    "공표"
+   ],
+   "relatedConceptIds": [
+    "IA123",
+    "IA125"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "내부 결정만으로는 불가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3591,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA128-Q03",
+   "primaryConceptId": "IA128",
+   "conceptIds": [
+    "IA128"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "구조조정 직접 지출로 해고급여 300,000,000원, 임차계약 해지 위약금 50,000,000원이 예상되고, 계속 근무 직원 재배치비 20,000,000원도 예상된다. 구조조정충당부채는 (______)원이다.",
+   "blankAnswer": "350,000,000",
+   "acceptedAnswers": [
+    "350,000,000",
+    "350,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA123",
+    "IA125"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 300000000.0,
+     "b": 50000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "재배치비는 제외하고 직접 지출만 합산.",
+   "confusion": null,
+   "calculation": "300,000,000 + 50,000,000 = 350,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3592,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA129-Q01",
+   "primaryConceptId": "IA129",
+   "conceptIds": [
+    "IA129"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "당기 매출 100,000,000원의 3%가 보증비로 지출될 것으로 예상된다. 당기 인식할 제품보증비는 (______)원이다.",
+   "blankAnswer": "3,000,000",
+   "acceptedAnswers": [
+    "3,000,000",
+    "3,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA125"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 100000000.0,
+     "r": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출 × 예상 보증비율.",
+   "confusion": null,
+   "calculation": "100,000,000 × 3% = 3,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3593,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA129-Q02",
+   "primaryConceptId": "IA129",
+   "conceptIds": [
+    "IA129"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "당기 판매분 예상 보증비가 3,000,000원이고 당기 중 실제 보증 지출이 1,200,000원이다(전기 판매분 없음). 기말 제품보증충당부채는 (______)원이다.",
+   "blankAnswer": "1,800,000",
+   "acceptedAnswers": [
+    "1,800,000",
+    "1,800,000원"
+   ],
+   "relatedConceptIds": [
+    "IA125"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 3000000.0,
+     "b": 1200000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "예상 보증비 − 실제 지출.",
+   "confusion": null,
+   "calculation": "3,000,000 − 1,200,000 = 1,800,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3594,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA129-Q03",
+   "primaryConceptId": "IA129",
+   "conceptIds": [
+    "IA129"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "comparison",
+   "questionText": "보증 유형별 회계처리를 연결하시오.",
+   "blankAnswer": "확신 유형 보증 → 충당부채 인식 / 용역 유형 보증 → 별도 수행의무로 수익 이연",
+   "acceptedAnswers": [
+    "확신 유형 보증 → 충당부채 인식 / 용역 유형 보증 → 별도 수행의무로 수익 이연"
+   ],
+   "relatedConceptIds": [
+    "IA125"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "충당부채 인식",
+    "별도 수행의무로 수익 이연",
+    "공시만"
+   ],
+   "slots": [
+    {
+     "label": "확신 유형 보증",
+     "answer": "충당부채 인식"
+    },
+    {
+     "label": "용역 유형 보증",
+     "answer": "별도 수행의무로 수익 이연"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "추가 용역 여부로 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3595,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA130-Q01",
+   "primaryConceptId": "IA130",
+   "conceptIds": [
+    "IA130"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "classification",
+   "questionText": "패소 가능성에 따른 소송의 처리를 연결하시오.",
+   "blankAnswer": "높음 → 충당부채 인식 / 높지 않지만 아주 낮지도 않음 → 우발부채 공시 / 아주 낮음 → 공시 생략",
+   "acceptedAnswers": [
+    "높음 → 충당부채 인식 / 높지 않지만 아주 낮지도 않음 → 우발부채 공시 / 아주 낮음 → 공시 생략"
+   ],
+   "relatedConceptIds": [
+    "IA124",
+    "IA131",
+    "IA050"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "충당부채 인식",
+    "우발부채 공시",
+    "공시 생략"
+   ],
+   "slots": [
+    {
+     "label": "높음",
+     "answer": "충당부채 인식"
+    },
+    {
+     "label": "높지 않지만 아주 낮지도 않음",
+     "answer": "우발부채 공시"
+    },
+    {
+     "label": "아주 낮음",
+     "answer": "공시 생략"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가능성 단계별 처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3596,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA130-Q02",
+   "primaryConceptId": "IA130",
+   "conceptIds": [
+    "IA130"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "situation",
+   "questionText": "보고기간 말 현재 진행 중인 소송의 판결이 재무제표 발행승인 전에 패소로 확정되었다. 처리는?",
+   "blankAnswer": "판결액으로 충당부채를 수정한다",
+   "acceptedAnswers": [
+    "판결액으로 충당부채를 수정한다"
+   ],
+   "relatedConceptIds": [
+    "IA124",
+    "IA131",
+    "IA050"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "판결액으로 충당부채를 수정한다",
+    "다음 연도에 반영한다",
+    "주석 공시만 한다",
+    "우발자산으로 처리한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수정을 요하는 보고기간후사건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3597,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA130-Q03",
+   "primaryConceptId": "IA130",
+   "conceptIds": [
+    "IA130"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "소송의 현재의무 존재 여부는 (______) 전문가의 의견 등 모든 증거를 고려해 판단한다.",
+   "blankAnswer": "법률",
+   "acceptedAnswers": [
+    "법률"
+   ],
+   "relatedConceptIds": [
+    "IA124",
+    "IA131",
+    "IA050"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판단 근거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3598,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA131-Q01",
+   "primaryConceptId": "IA131",
+   "conceptIds": [
+    "IA131"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "우발부채는 재무상태표에 인식하지 않고 (______)에 공시한다.",
+   "blankAnswer": "주석",
+   "acceptedAnswers": [
+    "주석"
+   ],
+   "relatedConceptIds": [
+    "IA124",
+    "IA132",
+    "IA130"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가능성 아주 낮으면 생략.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3599,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA131-Q02",
+   "primaryConceptId": "IA131",
+   "conceptIds": [
+    "IA131"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "choice",
+   "questionText": "우발부채에 해당하는 것은?",
+   "blankAnswer": "재무상태가 양호한 거래처의 차입금에 대한 지급보증",
+   "acceptedAnswers": [
+    "재무상태가 양호한 거래처의 차입금에 대한 지급보증"
+   ],
+   "relatedConceptIds": [
+    "IA124",
+    "IA132",
+    "IA130"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재무상태가 양호한 거래처의 차입금에 대한 지급보증",
+    "패소가 확실시되는 소송의 배상의무",
+    "판매 제품 보증 의무",
+    "확정된 미지급 임차료"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유출 가능성이 높지 않은 의무.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3600,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA131-Q03",
+   "primaryConceptId": "IA131",
+   "conceptIds": [
+    "IA131"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "situation",
+   "questionText": "우발부채도 계속 재평가해 자원 유출 가능성이 (______)지면 충당부채로 인식한다.",
+   "blankAnswer": "높아",
+   "acceptedAnswers": [
+    "높아"
+   ],
+   "relatedConceptIds": [
+    "IA124",
+    "IA132",
+    "IA130"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상황 변화 반영.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3601,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA132-Q01",
+   "primaryConceptId": "IA132",
+   "conceptIds": [
+    "IA132"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "우발자산은 수익 실현이 거의 (______)해질 때까지 자산으로 인식하지 않는다.",
+   "blankAnswer": "확실",
+   "acceptedAnswers": [
+    "확실"
+   ],
+   "relatedConceptIds": [
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보수적 인식.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3602,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA132-Q02",
+   "primaryConceptId": "IA132",
+   "conceptIds": [
+    "IA132"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "comparison",
+   "questionText": "공시 기준을 연결하시오.",
+   "blankAnswer": "우발자산 → 유입 가능성이 높으면 공시 / 우발부채 → 유출 가능성이 아주 낮지 않으면 공시",
+   "acceptedAnswers": [
+    "우발자산 → 유입 가능성이 높으면 공시 / 우발부채 → 유출 가능성이 아주 낮지 않으면 공시"
+   ],
+   "relatedConceptIds": [
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "유입 가능성이 높으면 공시",
+    "유출 가능성이 아주 낮지 않으면 공시",
+    "항상 인식"
+   ],
+   "slots": [
+    {
+     "label": "우발자산",
+     "answer": "유입 가능성이 높으면 공시"
+    },
+    {
+     "label": "우발부채",
+     "answer": "유출 가능성이 아주 낮지 않으면 공시"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비대칭 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3603,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA132-Q03",
+   "primaryConceptId": "IA132",
+   "conceptIds": [
+    "IA132"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "situation",
+   "questionText": "회사가 원고인 소송에서 승소 가능성이 높지만 판결은 확정되지 않았다. 처리는?",
+   "blankAnswer": "주석 공시",
+   "acceptedAnswers": [
+    "주석 공시"
+   ],
+   "relatedConceptIds": [
+    "IA131"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "주석 공시",
+    "미수금 인식",
+    "수익 인식",
+    "처리하지 않음(공시도 안 함)"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유입 가능성이 높은 우발자산은 공시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3604,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA133-Q01",
+   "primaryConceptId": "IA133",
+   "conceptIds": [
+    "IA133"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "calculation",
+   "questionText": "기초 충당부채 2,000,000원에 당기 전입액 3,000,000원을 더하고 사용액 2,500,000원과 환입액 300,000원(합계 2,800,000원)을 뺀 기말 잔액은 (______)원이다.",
+   "blankAnswer": "2,200,000",
+   "acceptedAnswers": [
+    "2,200,000",
+    "2,200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA120",
+    "IA125"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 2000000.0,
+     "b": 3000000.0,
+     "c": 2800000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 + 전입 − 사용 − 환입.",
+   "confusion": null,
+   "calculation": "2,000,000 + 3,000,000 − 2,800,000 = 2,200,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3605,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA133-Q02",
+   "primaryConceptId": "IA133",
+   "conceptIds": [
+    "IA133"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "definition",
+   "questionText": "충당부채는 최초 인식할 때 목적으로 한 지출에만 (______)한다.",
+   "blankAnswer": "사용",
+   "acceptedAnswers": [
+    "사용"
+   ],
+   "relatedConceptIds": [
+    "IA120",
+    "IA125"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "목적 외 사용 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3606,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA133-Q03",
+   "primaryConceptId": "IA133",
+   "conceptIds": [
+    "IA133"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-PR",
+   "questionType": "exception",
+   "questionText": "공시가 분쟁 상대방과의 관계에서 심각하게 불리할 것으로 예상되는 극히 드문 경우의 처리는?",
+   "blankAnswer": "분쟁의 일반적 성격과 그 사유만 공시",
+   "acceptedAnswers": [
+    "분쟁의 일반적 성격과 그 사유만 공시"
+   ],
+   "relatedConceptIds": [
+    "IA120",
+    "IA125"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "분쟁의 일반적 성격과 그 사유만 공시",
+    "충당부채를 인식하지 않음",
+    "모든 정보를 공시",
+    "재무제표에서 제외"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외적 공시 생략.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1037호 '충당부채, 우발부채, 우발자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3607,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "I29-Q03",
+   "primaryConceptId": "I29",
+   "conceptIds": [
+    "I29"
+   ],
+   "subjectId": "IA",
+   "chapterId": "FA-I",
+   "questionType": "exception",
+   "questionText": "충당부채 관련 지출을 제3자가 보전해 줄 것이 거의 (______)한 경우에만 보전액을 별도 자산으로 인식한다.",
+   "blankAnswer": "확실",
+   "acceptedAnswers": [
+    "확실"
+   ],
+   "relatedConceptIds": [
+    "I22",
+    "I21"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보전 자산의 인식 요건(인식액은 충당부채 금액을 넘지 못함).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1001호/제1118호, 제1037호",
+   "effectiveFrom": "2011-01-01",
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 3,
+   "sortOrder": 3608,
+   "legacyPackId": "FA",
+   "examReferenceNumbers": [
+    "37"
+   ],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 2
   }
  ]
 }

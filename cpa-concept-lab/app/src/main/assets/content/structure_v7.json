@@ -678,6 +678,15 @@
    "title": "금융부채와 지분상품",
    "englishTitle": "Financial liabilities and equity",
    "sortOrder": 64
+  },
+  {
+   "partTitle": "충당부채 및 우발사항",
+   "id": "IA-PR",
+   "code": "PR",
+   "subjectId": "IA",
+   "title": "충당부채 및 우발사항",
+   "englishTitle": "Provisions and contingencies",
+   "sortOrder": 65
   }
  ],
  "sections": [
@@ -2156,6 +2165,30 @@
    "chapterId": "IA-FL",
    "title": "복합금융상품과 지분상품 분류",
    "sortOrder": 2
+  },
+  {
+   "id": "IA-PR-S01",
+   "chapterId": "IA-PR",
+   "title": "충당부채의 인식",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-PR-S02",
+   "chapterId": "IA-PR",
+   "title": "충당부채의 측정",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-PR-S03",
+   "chapterId": "IA-PR",
+   "title": "충당부채의 유형",
+   "sortOrder": 3
+  },
+  {
+   "id": "IA-PR-S04",
+   "chapterId": "IA-PR",
+   "title": "우발부채·우발자산과 공시",
+   "sortOrder": 4
   },
   {
    "id": "AA-A-S90",
@@ -4781,8 +4814,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "충당부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA120"
+   ],
+   "covered": true,
    "sortOrder": 176
   },
   {
@@ -4790,8 +4825,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "현재의무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA121"
+   ],
+   "covered": true,
    "sortOrder": 177
   },
   {
@@ -4799,8 +4836,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "법적의무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA122"
+   ],
+   "covered": true,
    "sortOrder": 178
   },
   {
@@ -4808,8 +4847,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "의제의무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA123"
+   ],
+   "covered": true,
    "sortOrder": 179
   },
   {
@@ -4817,8 +4858,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "인식요건",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA124"
+   ],
+   "covered": true,
    "sortOrder": 180
   },
   {
@@ -4826,8 +4869,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "최선의 추정치",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA125"
+   ],
+   "covered": true,
    "sortOrder": 181
   },
   {
@@ -4835,8 +4880,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "현재가치",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA126"
+   ],
+   "covered": true,
    "sortOrder": 182
   },
   {
@@ -4855,8 +4902,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "손실부담계약",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA127"
+   ],
+   "covered": true,
    "sortOrder": 184
   },
   {
@@ -4864,8 +4913,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "구조조정충당부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA128"
+   ],
+   "covered": true,
    "sortOrder": 185
   },
   {
@@ -4873,8 +4924,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "제품보증충당부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA129"
+   ],
+   "covered": true,
    "sortOrder": 186
   },
   {
@@ -4882,8 +4935,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "소송충당부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA130"
+   ],
+   "covered": true,
    "sortOrder": 187
   },
   {
@@ -4891,8 +4946,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "우발부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA131"
+   ],
+   "covered": true,
    "sortOrder": 188
   },
   {
@@ -4900,8 +4957,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "우발자산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA132"
+   ],
+   "covered": true,
    "sortOrder": 189
   },
   {
@@ -4909,8 +4968,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "공시",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA133"
+   ],
+   "covered": true,
    "sortOrder": 190
   },
   {

@@ -933,6 +933,13 @@ def mult_ratio(a, b):
     return v, f"{fmt(a)} ÷ {fmt(b)} = {fmt(v)}"
 
 
+@formula()
+def ev2(a, ra, b, rb):
+    """두 결과의 기대값: a × ra% + b × rb% (나머지 결과는 0)"""
+    v = r0(a * ra / 100 + b * rb / 100)
+    return v, f"{fmt(a)} × {fmt(ra)}% + {fmt(b)} × {fmt(rb)}% = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

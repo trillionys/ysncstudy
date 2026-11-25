@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 309,
+    "complete": 324,
     "total": 577,
-    "missing": 268,
+    "missing": 253,
     "needsReview": 12,
-    "storedFlagCovered": 380
+    "storedFlagCovered": 394
    },
    "경영학": {
     "complete": 21,
@@ -40,7 +40,7 @@
   },
   "packs": {
    "IA": {
-    "complete": 182,
+    "complete": 197,
     "total": 332
    },
    "AA": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 643,
+   "complete": 658,
    "total": 1233,
-   "missing": 590
+   "missing": 575
   }
  },
  "items": [
@@ -4017,21 +4017,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "충당부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA120"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "I29",
-    "P064",
-    "P065",
-    "P066",
-    "P067"
+   "existingQuestionIds": [
+    "IA120-Q01",
+    "IA120-Q02",
+    "IA120-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0177",
@@ -4040,19 +4038,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "현재의무",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA121"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "E13",
-    "E16",
-    "F14"
+   "existingQuestionIds": [
+    "IA121-Q01",
+    "IA121-Q02",
+    "IA121-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0178",
@@ -4061,15 +4059,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "법적의무",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA122"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA122-Q01",
+    "IA122-Q02",
+    "IA122-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0179",
@@ -4078,15 +4080,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "의제의무",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA123"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA123-Q01",
+    "IA123-Q02",
+    "IA123-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0180",
@@ -4095,17 +4101,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "인식요건",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA124"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P025"
+   "existingQuestionIds": [
+    "IA124-Q01",
+    "IA124-Q02",
+    "IA124-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0181",
@@ -4114,15 +4122,20 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "최선의 추정치",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA125"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA125-Q01",
+    "IA125-Q02",
+    "IA125-Q03",
+    "IA125-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0182",
@@ -4131,17 +4144,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "현재가치",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA126"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "IA032"
+   "existingQuestionIds": [
+    "IA126-Q01",
+    "IA126-Q02",
+    "IA126-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0183",
@@ -4155,13 +4170,12 @@
    ],
    "existingQuestionIds": [
     "I29-Q01",
-    "I29-Q02"
+    "I29-Q02",
+    "I29-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -4172,15 +4186,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "손실부담계약",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA127"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA127-Q01",
+    "IA127-Q02",
+    "IA127-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0185",
@@ -4189,15 +4207,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "구조조정충당부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA128"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA128-Q01",
+    "IA128-Q02",
+    "IA128-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0186",
@@ -4206,15 +4228,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "제품보증충당부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA129"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA129-Q01",
+    "IA129-Q02",
+    "IA129-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0187",
@@ -4223,15 +4249,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "소송충당부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA130"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA130-Q01",
+    "IA130-Q02",
+    "IA130-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0188",
@@ -4240,15 +4270,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "우발부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA131"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA131-Q01",
+    "IA131-Q02",
+    "IA131-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0189",
@@ -4257,15 +4291,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "우발자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA132"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA132-Q01",
+    "IA132-Q02",
+    "IA132-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0190",
@@ -4274,21 +4312,19 @@
    "packId": "IA",
    "parentChapter": "충당부채 및 우발사항",
    "scopeTitle": "공시",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA133"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "I15",
-    "I30",
-    "K20",
-    "K25",
-    "K26"
+   "existingQuestionIds": [
+    "IA133-Q01",
+    "IA133-Q02",
+    "IA133-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0191",
@@ -4841,8 +4877,10 @@
     "개념·문항 없음"
    ],
    "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
+   "gapType": "E",
+   "linkCandidates": [
+    "IA129"
+   ],
    "storedCoveredFlag": false
   },
   {
