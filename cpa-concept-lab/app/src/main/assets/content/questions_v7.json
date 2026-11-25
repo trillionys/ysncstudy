@@ -161202,6 +161202,1808 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 7
+  },
+  {
+   "id": "IA001-Q01",
+   "primaryConceptId": "IA001",
+   "conceptIds": [
+    "IA001"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "거래처가 발행한 당좌수표나 자기앞수표처럼 즉시 현금으로 바꿀 수 있는 증서를 (______)증권이라 하며 현금으로 분류한다.",
+   "blankAnswer": "통화대용",
+   "acceptedAnswers": [
+    "통화대용"
+   ],
+   "relatedConceptIds": [
+    "IA002",
+    "IA003",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "통화와 같은 지급수단으로 쓸 수 있어 현금에 포함한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3302,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA001-Q02",
+   "primaryConceptId": "IA001",
+   "conceptIds": [
+    "IA001"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "choice",
+   "questionText": "다음 중 재무상태표의 현금에 포함되지 않는 것은?",
+   "blankAnswer": "선일자수표",
+   "acceptedAnswers": [
+    "선일자수표"
+   ],
+   "relatedConceptIds": [
+    "IA002",
+    "IA003",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "선일자수표",
+    "자기앞수표",
+    "송금수표",
+    "배당금지급통지표"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선일자수표는 기재일 전에는 지급되지 않으므로 수취채권으로 분류한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3303,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA001-Q03",
+   "primaryConceptId": "IA001",
+   "conceptIds": [
+    "IA001"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "classification",
+   "questionText": "금고에서 발견된 항목의 계정 분류를 연결하시오.",
+   "blankAnswer": "거래처발행 당좌수표 → 현금 / 수입인지 → 선급비용 / 직원 가불금 → 단기대여금 / 선일자수표 → 매출채권",
+   "acceptedAnswers": [
+    "거래처발행 당좌수표 → 현금 / 수입인지 → 선급비용 / 직원 가불금 → 단기대여금 / 선일자수표 → 매출채권"
+   ],
+   "relatedConceptIds": [
+    "IA002",
+    "IA003",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "현금",
+    "선급비용",
+    "단기대여금",
+    "매출채권"
+   ],
+   "slots": [
+    {
+     "label": "거래처발행 당좌수표",
+     "answer": "현금"
+    },
+    {
+     "label": "수입인지",
+     "answer": "선급비용"
+    },
+    {
+     "label": "직원 가불금",
+     "answer": "단기대여금"
+    },
+    {
+     "label": "선일자수표",
+     "answer": "매출채권"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "즉시 지급수단인지로 판단한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3304,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA001-Q04",
+   "primaryConceptId": "IA001",
+   "conceptIds": [
+    "IA001"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "calculation",
+   "questionText": "기말 보유 항목: 지폐·주화 420,000원, 타인발행 당좌수표 180,000원, 우편환증서 50,000원(선일자수표·우표는 제외). 재무상태표상 현금은 (______)원이다.",
+   "blankAnswer": "650,000",
+   "acceptedAnswers": [
+    "650,000",
+    "650,000원"
+   ],
+   "relatedConceptIds": [
+    "IA002",
+    "IA003",
+    "IA012"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add3",
+    "params": {
+     "a": 420000.0,
+     "b": 180000.0,
+     "c": 50000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "통화와 통화대용증권만 합산한다.",
+   "confusion": null,
+   "calculation": "420,000 + 180,000 + 50,000 = 650,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3305,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA002-Q01",
+   "primaryConceptId": "IA002",
+   "conceptIds": [
+    "IA002"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "보통예금처럼 언제든 제한 없이 인출할 수 있는 예금을 (______)예금이라 한다.",
+   "blankAnswer": "요구불",
+   "acceptedAnswers": [
+    "요구불"
+   ],
+   "relatedConceptIds": [
+    "IA001",
+    "IA003",
+    "IA005"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금및현금성자산에 포함한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3306,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA002-Q02",
+   "primaryConceptId": "IA002",
+   "conceptIds": [
+    "IA002"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "choice",
+   "questionText": "다음 중 요구불예금에 해당하는 것은?",
+   "blankAnswer": "당좌예금",
+   "acceptedAnswers": [
+    "당좌예금"
+   ],
+   "relatedConceptIds": [
+    "IA001",
+    "IA003",
+    "IA005"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "당좌예금",
+    "만기 1년 정기예금",
+    "만기 2년 정기적금",
+    "양도성예금증서(만기 6개월)"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "당좌예금은 수표로 언제든 인출할 수 있는 요구불예금이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3307,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA002-Q03",
+   "primaryConceptId": "IA002",
+   "conceptIds": [
+    "IA002"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "classification",
+   "questionText": "취득 시점 기준으로 다음 예금을 분류하시오.",
+   "blankAnswer": "보통예금 → 현금및현금성자산 / 취득일 기준 만기 2개월 정기예금 → 현금및현금성자산 / 취득일 기준 만기 8개월 정기예금 → 단기금융상품",
+   "acceptedAnswers": [
+    "보통예금 → 현금및현금성자산 / 취득일 기준 만기 2개월 정기예금 → 현금및현금성자산 / 취득일 기준 만기 8개월 정기예금 → 단기금융상품"
+   ],
+   "relatedConceptIds": [
+    "IA001",
+    "IA003",
+    "IA005"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "현금및현금성자산",
+    "단기금융상품",
+    "장기금융상품"
+   ],
+   "slots": [
+    {
+     "label": "보통예금",
+     "answer": "현금및현금성자산"
+    },
+    {
+     "label": "취득일 기준 만기 2개월 정기예금",
+     "answer": "현금및현금성자산"
+    },
+    {
+     "label": "취득일 기준 만기 8개월 정기예금",
+     "answer": "단기금융상품"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "요구불예금은 현금, 정기예금은 취득일부터 만기 3개월 이내면 현금성자산이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3308,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA003-Q01",
+   "primaryConceptId": "IA003",
+   "conceptIds": [
+    "IA003"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "현금성자산은 일반적으로 (______)부터 만기가 3개월 이내인 단기 투자자산이다.",
+   "blankAnswer": "취득일",
+   "acceptedAnswers": [
+    "취득일"
+   ],
+   "relatedConceptIds": [
+    "IA002",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보고기간 말이 아니라 취득일 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3309,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA003-Q02",
+   "primaryConceptId": "IA003",
+   "conceptIds": [
+    "IA003"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "exception",
+   "questionText": "다음 중 현금성자산으로 분류할 수 있는 것은?",
+   "blankAnswer": "취득 시 상환일까지 2개월 남은 상환우선주",
+   "acceptedAnswers": [
+    "취득 시 상환일까지 2개월 남은 상환우선주"
+   ],
+   "relatedConceptIds": [
+    "IA002",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "취득 시 상환일까지 2개월 남은 상환우선주",
+    "상장기업 보통주",
+    "취득 시 만기 6개월, 기말 잔여 1개월 국채",
+    "취득 시 만기 1년 정기예금"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상환일이 정해지고 취득일부터 3개월 이내인 우선주는 예외적으로 포함한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3310,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA003-Q03",
+   "primaryConceptId": "IA003",
+   "conceptIds": [
+    "IA003"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "현금성자산은 큰 거래원가 없이 현금으로 바꿀 수 있고 (______) 위험이 경미해야 한다.",
+   "blankAnswer": "가치변동",
+   "acceptedAnswers": [
+    "가치변동"
+   ],
+   "relatedConceptIds": [
+    "IA002",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "요건 ②.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3311,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA004-Q01",
+   "primaryConceptId": "IA004",
+   "conceptIds": [
+    "IA004"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "당좌거래 개설을 위해 은행에 예치해 인출이 제한된 금액을 당좌개설(______)이라 하며 현금에서 제외한다.",
+   "blankAnswer": "보증금",
+   "acceptedAnswers": [
+    "보증금"
+   ],
+   "relatedConceptIds": [
+    "IA012",
+    "IA003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사용 제한 예금.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3312,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA004-Q02",
+   "primaryConceptId": "IA004",
+   "conceptIds": [
+    "IA004"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "situation",
+   "questionText": "보고기간 말 현재 차입 담보로 18개월간 인출이 제한된 예금의 분류는?",
+   "blankAnswer": "장기금융상품",
+   "acceptedAnswers": [
+    "장기금융상품"
+   ],
+   "relatedConceptIds": [
+    "IA012",
+    "IA003"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "장기금융상품",
+    "현금및현금성자산",
+    "단기금융상품",
+    "매출채권"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제한이 보고기간 후 1년을 넘게 계속되므로 비유동(장기금융상품)이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3313,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA004-Q03",
+   "primaryConceptId": "IA004",
+   "conceptIds": [
+    "IA004"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "classification",
+   "questionText": "사용 제한 기간에 따라 예금을 분류하시오.",
+   "blankAnswer": "제한이 보고기간 후 6개월에 해제 → 단기금융상품 / 제한이 보고기간 후 3년에 해제 → 장기금융상품",
+   "acceptedAnswers": [
+    "제한이 보고기간 후 6개월에 해제 → 단기금융상품 / 제한이 보고기간 후 3년에 해제 → 장기금융상품"
+   ],
+   "relatedConceptIds": [
+    "IA012",
+    "IA003"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "현금및현금성자산",
+    "단기금융상품",
+    "장기금융상품"
+   ],
+   "slots": [
+    {
+     "label": "제한이 보고기간 후 6개월에 해제",
+     "answer": "단기금융상품"
+    },
+    {
+     "label": "제한이 보고기간 후 3년에 해제",
+     "answer": "장기금융상품"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "1년 기준으로 유동·비유동을 나눈다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3314,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA005-Q01",
+   "primaryConceptId": "IA005",
+   "conceptIds": [
+    "IA005"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "회사가 당좌수표를 발행하면 은행에서 인출되기 전이라도 회사 장부에서 (______)을 감소시킨다.",
+   "blankAnswer": "당좌예금",
+   "acceptedAnswers": [
+    "당좌예금"
+   ],
+   "relatedConceptIds": [
+    "IA006",
+    "IA007",
+    "IA002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "발행 시점에 기록.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3315,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA005-Q02",
+   "primaryConceptId": "IA005",
+   "conceptIds": [
+    "IA005"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "situation",
+   "questionText": "거래처에 대금으로 지급했던 자사 발행 당좌수표 300,000원을 외상대금으로 다시 받았다. 올바른 차변 계정은?",
+   "blankAnswer": "당좌예금",
+   "acceptedAnswers": [
+    "당좌예금"
+   ],
+   "relatedConceptIds": [
+    "IA006",
+    "IA007",
+    "IA002"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "당좌예금",
+    "현금",
+    "받을어음",
+    "단기대여금"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자기발행 수표는 은행이 지급하면 당좌예금에서 빠지므로, 회수하면 당좌예금이 늘어난 것으로 본다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3316,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA005-Q03",
+   "primaryConceptId": "IA005",
+   "conceptIds": [
+    "IA005"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "journal",
+   "questionText": "외상매입금 500,000원을 당좌수표로 지급한 거래의 분개를 완성하시오.",
+   "blankAnswer": "차변 → 매입채무 / 대변 → 당좌예금",
+   "acceptedAnswers": [
+    "차변 → 매입채무 / 대변 → 당좌예금"
+   ],
+   "relatedConceptIds": [
+    "IA006",
+    "IA007",
+    "IA002"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "매입채무",
+    "당좌예금",
+    "현금",
+    "미지급금"
+   ],
+   "slots": [
+    {
+     "label": "차변",
+     "answer": "매입채무"
+    },
+    {
+     "label": "대변",
+     "answer": "당좌예금"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수표 발행 즉시 당좌예금 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3317,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA006-Q01",
+   "primaryConceptId": "IA006",
+   "conceptIds": [
+    "IA006"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "당좌예금 잔액을 초과해 발행한 수표 금액(당좌차월)은 재무상태표에 (______)으로 표시한다.",
+   "blankAnswer": "단기차입금",
+   "acceptedAnswers": [
+    "단기차입금"
+   ],
+   "relatedConceptIds": [
+    "IA005",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유동부채.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3318,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA006-Q02",
+   "primaryConceptId": "IA006",
+   "conceptIds": [
+    "IA006"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "situation",
+   "questionText": "A은행 당좌차월 200,000원과 B은행 보통예금 900,000원이 있다. 재무상태표 표시로 옳은 것은?",
+   "blankAnswer": "현금및현금성자산 900,000원, 단기차입금 200,000원",
+   "acceptedAnswers": [
+    "현금및현금성자산 900,000원, 단기차입금 200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA005",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "현금및현금성자산 900,000원, 단기차입금 200,000원",
+    "현금및현금성자산 700,000원",
+    "현금및현금성자산 900,000원, 매입채무 200,000원",
+    "단기차입금 없이 주석으로만 공시"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상계하지 않고 총액으로 표시한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3319,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA006-Q03",
+   "primaryConceptId": "IA006",
+   "conceptIds": [
+    "IA006"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "exception",
+   "questionText": "현금흐름표에서는 요구 즉시 상환해야 하고 기업의 (______)의 일부를 이루는 당좌차월을 현금및현금성자산의 구성요소에 포함할 수 있다.",
+   "blankAnswer": "현금관리",
+   "acceptedAnswers": [
+    "현금관리"
+   ],
+   "relatedConceptIds": [
+    "IA005",
+    "IA012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1007호의 예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3320,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA007-Q01",
+   "primaryConceptId": "IA007",
+   "conceptIds": [
+    "IA007"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "회사 장부 잔액과 은행 잔액증명서 잔액의 차이를 조정해 올바른 잔액을 구하는 표를 (______)이라 한다.",
+   "blankAnswer": "은행계정조정표",
+   "acceptedAnswers": [
+    "은행계정조정표"
+   ],
+   "relatedConceptIds": [
+    "IA008",
+    "IA009",
+    "IA010",
+    "IA011"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "차이 원인 분석.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3321,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA007-Q02",
+   "primaryConceptId": "IA007",
+   "conceptIds": [
+    "IA007"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "calculation",
+   "questionText": "은행 잔액 1,150,000원, 은행미기입예금 80,000원, 기발행미인출수표 250,000원일 때 올바른 당좌예금 잔액은 (______)원이다.",
+   "blankAnswer": "980,000",
+   "acceptedAnswers": [
+    "980,000",
+    "980,000원"
+   ],
+   "relatedConceptIds": [
+    "IA008",
+    "IA009",
+    "IA010",
+    "IA011"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 1150000.0,
+     "b": 80000.0,
+     "c": 250000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "은행 잔액 + 미기입예금 − 미인출수표.",
+   "confusion": null,
+   "calculation": "1,150,000 + 80,000 − 250,000 = 980,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3322,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA007-Q03",
+   "primaryConceptId": "IA007",
+   "conceptIds": [
+    "IA007"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "order",
+   "questionText": "은행계정조정 절차를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 회사·은행 잔액 비교 / 2단계 → 차이 원인을 회사 측·은행 측으로 구분 / 3단계 → 양쪽 조정 후 올바른 잔액 일치 확인 / 4단계 → 회사 측 조정 항목만 수정 분개",
+   "acceptedAnswers": [
+    "1단계 → 회사·은행 잔액 비교 / 2단계 → 차이 원인을 회사 측·은행 측으로 구분 / 3단계 → 양쪽 조정 후 올바른 잔액 일치 확인 / 4단계 → 회사 측 조정 항목만 수정 분개"
+   ],
+   "relatedConceptIds": [
+    "IA008",
+    "IA009",
+    "IA010",
+    "IA011"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "양쪽 조정 후 올바른 잔액 일치 확인",
+    "차이 원인을 회사 측·은행 측으로 구분",
+    "회사 측 조정 항목만 수정 분개",
+    "회사·은행 잔액 비교"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "회사·은행 잔액 비교"
+    },
+    {
+     "label": "2단계",
+     "answer": "차이 원인을 회사 측·은행 측으로 구분"
+    },
+    {
+     "label": "3단계",
+     "answer": "양쪽 조정 후 올바른 잔액 일치 확인"
+    },
+    {
+     "label": "4단계",
+     "answer": "회사 측 조정 항목만 수정 분개"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회사 장부 수정은 마지막에 회사 측 항목만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3323,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA008-Q01",
+   "primaryConceptId": "IA008",
+   "conceptIds": [
+    "IA008"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "장부에는 입금으로 기록했지만 예금 계좌에 아직 반영되지 않은 미기록예금은 (______) 측 잔액에 가산해 조정한다.",
+   "blankAnswer": "은행",
+   "acceptedAnswers": [
+    "은행"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA009"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "은행 측 조정 항목이며 회사 장부는 고치지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3324,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA008-Q02",
+   "primaryConceptId": "IA008",
+   "conceptIds": [
+    "IA008"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "classification",
+   "questionText": "다음 조정 항목이 어느 잔액에 가감되는지 연결하시오.",
+   "blankAnswer": "은행미기입예금 → 은행 잔액에 가산 / 은행이 추심한 받을어음 대금 → 회사 잔액에 가산",
+   "acceptedAnswers": [
+    "은행미기입예금 → 은행 잔액에 가산 / 은행이 추심한 받을어음 대금 → 회사 잔액에 가산"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA009"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "은행 잔액에 가산",
+    "회사 잔액에 가산",
+    "은행 잔액에서 차감",
+    "회사 잔액에서 차감"
+   ],
+   "slots": [
+    {
+     "label": "은행미기입예금",
+     "answer": "은행 잔액에 가산"
+    },
+    {
+     "label": "은행이 추심한 받을어음 대금",
+     "answer": "회사 잔액에 가산"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기록하지 않은 쪽 잔액을 고친다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3325,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA008-Q03",
+   "primaryConceptId": "IA008",
+   "conceptIds": [
+    "IA008"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "calculation",
+   "questionText": "회사 장부 잔액 760,000원, 은행이 추심해 입금한 어음대금 200,000원(회사 미기록), 은행수수료 15,000원(회사 미기록)일 때 올바른 잔액은 (______)원이다.",
+   "blankAnswer": "945,000",
+   "acceptedAnswers": [
+    "945,000",
+    "945,000원"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA009"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 760000.0,
+     "b": 200000.0,
+     "c": 15000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "회사 측 조정: 미기록 입금 가산, 미기록 출금 차감.",
+   "confusion": null,
+   "calculation": "760,000 + 200,000 − 15,000 = 945,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3326,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA009-Q01",
+   "primaryConceptId": "IA009",
+   "conceptIds": [
+    "IA009"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "회사가 발행했지만 아직 은행에서 결제되지 않은 수표를 기발행(______)수표라 한다.",
+   "blankAnswer": "미인출",
+   "acceptedAnswers": [
+    "미인출"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA008"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "은행 잔액에서 차감.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3327,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA009-Q02",
+   "primaryConceptId": "IA009",
+   "conceptIds": [
+    "IA009"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "calculation",
+   "questionText": "12월 말 은행 잔액증명서 금액 2,300,000원, 은행미기입예금 120,000원, 기발행미인출수표 640,000원일 때 올바른 당좌예금 잔액은 (______)원이다.",
+   "blankAnswer": "1,780,000",
+   "acceptedAnswers": [
+    "1,780,000",
+    "1,780,000원"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA008"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 2300000.0,
+     "b": 120000.0,
+     "c": 640000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "은행 잔액 + 은행미기입예금 − 기발행미인출수표.",
+   "confusion": null,
+   "calculation": "2,300,000 + 120,000 − 640,000 = 1,780,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3328,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA009-Q03",
+   "primaryConceptId": "IA009",
+   "conceptIds": [
+    "IA009"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "treatment",
+   "questionText": "기발행미인출수표에 대한 회사의 수정 분개로 옳은 것은?",
+   "blankAnswer": "수정 분개가 필요 없다",
+   "acceptedAnswers": [
+    "수정 분개가 필요 없다"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA008"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "수정 분개가 필요 없다",
+    "(차) 당좌예금 (대) 매입채무",
+    "(차) 매입채무 (대) 당좌예금",
+    "(차) 현금 (대) 당좌예금"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회사는 발행 시 이미 기록했으므로 은행 측에서만 조정한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3329,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA010-Q01",
+   "primaryConceptId": "IA010",
+   "conceptIds": [
+    "IA010"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "계좌에서 이미 빠져나갔지만 장부에 기록되지 않은 은행수수료는 (______) 측 잔액에서 차감하고 수정 분개한다.",
+   "blankAnswer": "회사",
+   "acceptedAnswers": [
+    "회사"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA011"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회사 측 조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3330,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA010-Q02",
+   "primaryConceptId": "IA010",
+   "conceptIds": [
+    "IA010"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "journal",
+   "questionText": "통지받은 부도수표 150,000원의 수정 분개를 완성하시오.",
+   "blankAnswer": "차변 → 매출채권 / 대변 → 당좌예금",
+   "acceptedAnswers": [
+    "차변 → 매출채권 / 대변 → 당좌예금"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA011"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "매출채권",
+    "당좌예금",
+    "대손상각비",
+    "지급수수료"
+   ],
+   "slots": [
+    {
+     "label": "차변",
+     "answer": "매출채권"
+    },
+    {
+     "label": "대변",
+     "answer": "당좌예금"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지급 거절로 받을 권리가 다시 생긴다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3331,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA010-Q03",
+   "primaryConceptId": "IA010",
+   "conceptIds": [
+    "IA010"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "calculation",
+   "questionText": "회사 장부 잔액 1,200,000원, 은행수수료 12,000원, 부도수표 150,000원(모두 회사 미기록)일 때 올바른 잔액은 (______)원이다.",
+   "blankAnswer": "1,038,000",
+   "acceptedAnswers": [
+    "1,038,000",
+    "1,038,000원"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA011"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "sub3",
+    "params": {
+     "a": 1200000.0,
+     "b": 12000.0,
+     "c": 150000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "회사 측 차감 항목을 모두 뺀다.",
+   "confusion": null,
+   "calculation": "1,200,000 − 12,000 − 150,000 = 1,038,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3332,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA011-Q01",
+   "primaryConceptId": "IA011",
+   "conceptIds": [
+    "IA011"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "장부 담당자가 수표 금액을 잘못 기장했다면 은행계정조정표에서 (______) 측 잔액을 조정하고 수정 분개한다.",
+   "blankAnswer": "회사",
+   "acceptedAnswers": [
+    "회사"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "오류를 낸 쪽에서 정정한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3333,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA011-Q02",
+   "primaryConceptId": "IA011",
+   "conceptIds": [
+    "IA011"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "calculation",
+   "questionText": "지급수표 72,000원을 회사가 27,000원으로 잘못 기록했다. 회사 잔액에서 추가로 차감할 금액은 (______)원이다.",
+   "blankAnswer": "45,000",
+   "acceptedAnswers": [
+    "45,000",
+    "45,000원"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA010"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 72000.0,
+     "b": 27000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "실제 − 기록액만큼 더 줄인다.",
+   "confusion": null,
+   "calculation": "72,000 − 27,000 = 45,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3334,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA011-Q03",
+   "primaryConceptId": "IA011",
+   "conceptIds": [
+    "IA011"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "correction",
+   "questionText": "은행이 다른 회사의 수표 50,000원을 우리 계좌에서 잘못 출금했다. 조정 방법은?",
+   "blankAnswer": "은행 잔액에 50,000원 가산",
+   "acceptedAnswers": [
+    "은행 잔액에 50,000원 가산"
+   ],
+   "relatedConceptIds": [
+    "IA007",
+    "IA010"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "은행 잔액에 50,000원 가산",
+    "회사 잔액에서 50,000원 차감",
+    "회사 잔액에 50,000원 가산",
+    "은행 잔액에서 50,000원 차감"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "은행 오류로 줄어든 은행 잔액을 원래대로 되돌린다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3335,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA012-Q01",
+   "primaryConceptId": "IA012",
+   "conceptIds": [
+    "IA012"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "definition",
+   "questionText": "만기가 3개월을 초과하고 보고기간 후 1년 이내에 도래하는 정기예금은 (______)으로 분류한다.",
+   "blankAnswer": "단기금융상품",
+   "acceptedAnswers": [
+    "단기금융상품"
+   ],
+   "relatedConceptIds": [
+    "IA003",
+    "IA004",
+    "IA001"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금성자산 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3336,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA012-Q02",
+   "primaryConceptId": "IA012",
+   "conceptIds": [
+    "IA012"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "calculation",
+   "questionText": "보통예금 2,000,000원, 취득 시 만기 2개월 양도성예금증서 1,000,000원, 지폐 150,000원(만기 6개월 정기예금·상장주식은 제외)일 때 현금및현금성자산은 (______)원이다.",
+   "blankAnswer": "3,150,000",
+   "acceptedAnswers": [
+    "3,150,000",
+    "3,150,000원"
+   ],
+   "relatedConceptIds": [
+    "IA003",
+    "IA004",
+    "IA001"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add3",
+    "params": {
+     "a": 2000000.0,
+     "b": 1000000.0,
+     "c": 150000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "현금 + 요구불예금 + 현금성자산만 합산.",
+   "confusion": null,
+   "calculation": "2,000,000 + 1,000,000 + 150,000 = 3,150,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3337,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA012-Q03",
+   "primaryConceptId": "IA012",
+   "conceptIds": [
+    "IA012"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CA",
+   "questionType": "classification",
+   "questionText": "다음 항목을 재무상태표 계정으로 분류하시오.",
+   "blankAnswer": "보통예금 → 현금및현금성자산 / 만기 6개월 정기예금 → 단기금융상품 / 단기매매 목적 상장주식 → 당기손익-공정가치측정금융자산",
+   "acceptedAnswers": [
+    "보통예금 → 현금및현금성자산 / 만기 6개월 정기예금 → 단기금융상품 / 단기매매 목적 상장주식 → 당기손익-공정가치측정금융자산"
+   ],
+   "relatedConceptIds": [
+    "IA003",
+    "IA004",
+    "IA001"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "현금및현금성자산",
+    "단기금융상품",
+    "당기손익-공정가치측정금융자산",
+    "장기금융상품"
+   ],
+   "slots": [
+    {
+     "label": "보통예금",
+     "answer": "현금및현금성자산"
+    },
+    {
+     "label": "만기 6개월 정기예금",
+     "answer": "단기금융상품"
+    },
+    {
+     "label": "단기매매 목적 상장주식",
+     "answer": "당기손익-공정가치측정금융자산"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "만기와 상품 성격으로 분류한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'·제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3338,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

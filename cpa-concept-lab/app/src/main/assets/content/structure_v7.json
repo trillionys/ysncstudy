@@ -606,6 +606,15 @@
    "title": "지방자치단체 회계",
    "englishTitle": "Local government accounting",
    "sortOrder": 56
+  },
+  {
+   "partTitle": "현금 및 현금성자산",
+   "id": "IA-CA",
+   "code": "CA",
+   "subjectId": "IA",
+   "title": "현금 및 현금성자산",
+   "englishTitle": "Cash and cash equivalents",
+   "sortOrder": 57
   }
  ],
  "sections": [
@@ -1978,6 +1987,18 @@
    "sortOrder": 1
   },
   {
+   "id": "IA-CA-S01",
+   "chapterId": "IA-CA",
+   "title": "현금과 현금성자산의 범위",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-CA-S02",
+   "chapterId": "IA-CA",
+   "title": "당좌예금·당좌차월과 은행계정조정",
+   "sortOrder": 2
+  },
+  {
    "id": "AA-A-S90",
    "chapterId": "AA-A",
    "title": "지배력과 연결범위(기존 재무회계에서 이동)",
@@ -2645,8 +2666,12 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "재무정보의 질적특성",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "D01",
+    "D02",
+    "D33"
+   ],
+   "covered": true,
    "sortOrder": 3
   },
   {
@@ -2666,8 +2691,12 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "인식·측정·제거",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "F01",
+    "H01",
+    "F12"
+   ],
+   "covered": true,
    "sortOrder": 5
   },
   {
@@ -2675,8 +2704,12 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "재무제표 표시",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "I01",
+    "I02",
+    "I08"
+   ],
+   "covered": true,
    "sortOrder": 6
   },
   {
@@ -2684,8 +2717,11 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "포괄손익계산서",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "I04",
+    "I38"
+   ],
+   "covered": true,
    "sortOrder": 7
   },
   {
@@ -2726,8 +2762,11 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "주석 및 공시",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "I07",
+    "I15"
+   ],
+   "covered": true,
    "sortOrder": 11
   },
   {
@@ -2769,9 +2808,8 @@
    "unit": "재무보고",
    "item": "회계추정",
    "conceptIds": [
-    "D14",
-    "D15",
-    "P075"
+    "P075",
+    "P042"
    ],
    "covered": true,
    "sortOrder": 15
@@ -2781,10 +2819,8 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "오류수정",
-   "conceptIds": [
-    "L040"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 16
   },
   {
@@ -2793,9 +2829,7 @@
    "unit": "현금 및 현금성자산",
    "item": "현금",
    "conceptIds": [
-    "C18",
-    "C19",
-    "E11"
+    "IA001"
    ],
    "covered": true,
    "sortOrder": 17
@@ -2805,8 +2839,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "요구불예금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA002"
+   ],
+   "covered": true,
    "sortOrder": 18
   },
   {
@@ -2815,7 +2851,7 @@
    "unit": "현금 및 현금성자산",
    "item": "현금성자산",
    "conceptIds": [
-    "J08"
+    "IA003"
    ],
    "covered": true,
    "sortOrder": 19
@@ -2825,8 +2861,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "제한성 예금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA004"
+   ],
+   "covered": true,
    "sortOrder": 20
   },
   {
@@ -2834,8 +2872,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "당좌예금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA005"
+   ],
+   "covered": true,
    "sortOrder": 21
   },
   {
@@ -2843,8 +2883,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "당좌차월",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA006"
+   ],
+   "covered": true,
    "sortOrder": 22
   },
   {
@@ -2852,8 +2894,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "은행계정조정표",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA007"
+   ],
+   "covered": true,
    "sortOrder": 23
   },
   {
@@ -2861,8 +2905,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "미기록예금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA008"
+   ],
+   "covered": true,
    "sortOrder": 24
   },
   {
@@ -2870,8 +2916,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "미기록수표",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA009"
+   ],
+   "covered": true,
    "sortOrder": 25
   },
   {
@@ -2879,8 +2927,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "은행수수료",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA010"
+   ],
+   "covered": true,
    "sortOrder": 26
   },
   {
@@ -2888,8 +2938,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "예금 관련 오류",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA011"
+   ],
+   "covered": true,
    "sortOrder": 27
   },
   {
@@ -2897,8 +2949,10 @@
    "subjectId": "IA",
    "unit": "현금 및 현금성자산",
    "item": "현금과 금융상품 구분",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA012"
+   ],
+   "covered": true,
    "sortOrder": 28
   },
   {
@@ -2906,10 +2960,8 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "매출채권",
-   "conceptIds": [
-    "I24"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 29
   },
   {
@@ -2935,11 +2987,8 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "최초 측정",
-   "conceptIds": [
-    "P007",
-    "R006"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 32
   },
   {
@@ -3012,10 +3061,8 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "상환청구권",
-   "conceptIds": [
-    "J18"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 40
   },
   {
@@ -3041,8 +3088,10 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "재고자산 정의",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "L001"
+   ],
+   "covered": true,
    "sortOrder": 43
   },
   {
@@ -3051,9 +3100,8 @@
    "unit": "재고자산",
    "item": "취득원가",
    "conceptIds": [
-    "H06",
     "L005",
-    "P013"
+    "L013"
    ],
    "covered": true,
    "sortOrder": 44
@@ -3063,8 +3111,11 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "매입환출·에누리·할인",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "L006",
+    "L007"
+   ],
+   "covered": true,
    "sortOrder": 45
   },
   {
@@ -3072,8 +3123,11 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "매입운임",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "L005",
+    "L017"
+   ],
+   "covered": true,
    "sortOrder": 46
   },
   {
@@ -3081,8 +3135,10 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "미착품",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "L015"
+   ],
+   "covered": true,
    "sortOrder": 47
   },
   {
@@ -3090,8 +3146,10 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "적송품",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "L020"
+   ],
+   "covered": true,
    "sortOrder": 48
   },
   {
@@ -3122,8 +3180,10 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "실사재고",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "L025"
+   ],
+   "covered": true,
    "sortOrder": 51
   },
   {
@@ -3222,9 +3282,8 @@
    "unit": "재고자산",
    "item": "평가손실",
    "conceptIds": [
-    "K29",
     "M011",
-    "M012"
+    "M013"
    ],
    "covered": true,
    "sortOrder": 60
@@ -3256,8 +3315,12 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "재고자산 오류",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "L037",
+    "L038",
+    "L039"
+   ],
+   "covered": true,
    "sortOrder": 63
   },
   {
@@ -3289,8 +3352,10 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "정상·비정상파손",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "N012"
+   ],
+   "covered": true,
    "sortOrder": 66
   },
   {
@@ -3298,8 +3363,11 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "종업원할인",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "N011",
+    "N013"
+   ],
+   "covered": true,
    "sortOrder": 67
   },
   {
@@ -3307,8 +3375,10 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "가격인상·가격인하",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "N006"
+   ],
+   "covered": true,
    "sortOrder": 68
   },
   {
@@ -3316,8 +3386,11 @@
    "subjectId": "IA",
    "unit": "재고자산",
    "item": "원가율 계산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "N005",
+    "N007"
+   ],
+   "covered": true,
    "sortOrder": 69
   },
   {
@@ -3337,7 +3410,8 @@
    "unit": "유형자산",
    "item": "최초 취득원가",
    "conceptIds": [
-    "H06"
+    "P007",
+    "P013"
    ],
    "covered": true,
    "sortOrder": 71
@@ -3369,8 +3443,11 @@
    "subjectId": "IA",
    "unit": "유형자산",
    "item": "토지 취득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "P018",
+    "P020"
+   ],
+   "covered": true,
    "sortOrder": 74
   },
   {
@@ -3378,8 +3455,11 @@
    "subjectId": "IA",
    "unit": "유형자산",
    "item": "건물 취득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "P019",
+    "P021"
+   ],
+   "covered": true,
    "sortOrder": 75
   },
   {
@@ -3389,8 +3469,7 @@
    "item": "정부보조금",
    "conceptIds": [
     "P025",
-    "P028",
-    "R007"
+    "P026"
    ],
    "covered": true,
    "sortOrder": 76
@@ -3433,8 +3512,11 @@
    "subjectId": "IA",
    "unit": "유형자산",
    "item": "취득 이후 지출",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "P035",
+    "P036"
+   ],
+   "covered": true,
    "sortOrder": 80
   },
   {
@@ -3443,9 +3525,8 @@
    "unit": "유형자산",
    "item": "감가상각",
    "conceptIds": [
-    "H07",
-    "K25",
-    "P021"
+    "P037",
+    "P044"
    ],
    "covered": true,
    "sortOrder": 81
@@ -3521,8 +3602,10 @@
    "subjectId": "IA",
    "unit": "유형자산",
    "item": "내용연수 변경",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "P042"
+   ],
+   "covered": true,
    "sortOrder": 88
   },
   {
@@ -3530,8 +3613,10 @@
    "subjectId": "IA",
    "unit": "유형자산",
    "item": "잔존가치 변경",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "P042"
+   ],
+   "covered": true,
    "sortOrder": 89
   },
   {
@@ -3575,8 +3660,7 @@
    "unit": "유형자산",
    "item": "손상차손",
    "conceptIds": [
-    "H08",
-    "K28",
+    "P058",
     "P059"
    ],
    "covered": true,
@@ -3612,7 +3696,6 @@
    "unit": "유형자산",
    "item": "처분손익",
    "conceptIds": [
-    "I26",
     "P068"
    ],
    "covered": true,
@@ -3623,8 +3706,11 @@
    "subjectId": "IA",
    "unit": "유형자산",
    "item": "매각예정비유동자산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "P069",
+    "P070"
+   ],
+   "covered": true,
    "sortOrder": 97
   },
   {
@@ -3694,8 +3780,10 @@
    "subjectId": "IA",
    "unit": "차입원가",
    "item": "가중평균 누적지출액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "Q008"
+   ],
+   "covered": true,
    "sortOrder": 103
   },
   {
@@ -3703,8 +3791,10 @@
    "subjectId": "IA",
    "unit": "차입원가",
    "item": "일시운용수익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "Q006"
+   ],
+   "covered": true,
    "sortOrder": 104
   },
   {
@@ -3758,8 +3848,11 @@
    "subjectId": "IA",
    "unit": "차입원가",
    "item": "기간별 자본화 계산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "Q010",
+    "Q017"
+   ],
+   "covered": true,
    "sortOrder": 109
   },
   {
@@ -3794,11 +3887,8 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "원가모형",
-   "conceptIds": [
-    "P022",
-    "P049"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 113
   },
   {
@@ -3833,10 +3923,8 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "평가손익",
-   "conceptIds": [
-    "R005"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 117
   },
   {
@@ -3844,10 +3932,8 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "처분",
-   "conceptIds": [
-    "I27"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 118
   },
   {
@@ -3890,8 +3976,10 @@
    "subjectId": "IA",
    "unit": "생물자산",
    "item": "생물적 변환",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "R001"
+   ],
+   "covered": true,
    "sortOrder": 122
   },
   {
@@ -3911,8 +3999,11 @@
    "subjectId": "IA",
    "unit": "생물자산",
    "item": "수확시점",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "R002",
+    "R006"
+   ],
+   "covered": true,
    "sortOrder": 124
   },
   {
@@ -3920,8 +4011,10 @@
    "subjectId": "IA",
    "unit": "생물자산",
    "item": "공정가치에서 처분부대원가 차감",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "R004"
+   ],
+   "covered": true,
    "sortOrder": 125
   },
   {
@@ -3940,8 +4033,10 @@
    "subjectId": "IA",
    "unit": "생물자산",
    "item": "수확물의 재고자산 전환",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "R006"
+   ],
+   "covered": true,
    "sortOrder": 127
   },
   {
@@ -4084,12 +4179,8 @@
    "subjectId": "IA",
    "unit": "무형자산",
    "item": "손상",
-   "conceptIds": [
-    "P057",
-    "P059",
-    "P061"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 143
   },
   {
@@ -4097,11 +4188,8 @@
    "subjectId": "IA",
    "unit": "무형자산",
    "item": "재평가모형",
-   "conceptIds": [
-    "P050",
-    "P062"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 144
   },
   {
@@ -4127,11 +4215,8 @@
    "subjectId": "IA",
    "unit": "금융상품",
    "item": "금융자산",
-   "conceptIds": [
-    "J09",
-    "K28"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 147
   },
   {
@@ -4168,11 +4253,8 @@
    "subjectId": "IA",
    "unit": "금융상품",
    "item": "최초 측정",
-   "conceptIds": [
-    "P007",
-    "R006"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 151
   },
   {
@@ -4286,10 +4368,8 @@
    "subjectId": "IA",
    "unit": "금융상품",
    "item": "금융자산 손상",
-   "conceptIds": [
-    "K28"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 163
   },
   {
@@ -4405,12 +4485,8 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "충당부채",
-   "conceptIds": [
-    "I29",
-    "P064",
-    "P065"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 176
   },
   {
@@ -4418,12 +4494,8 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "현재의무",
-   "conceptIds": [
-    "E13",
-    "E16",
-    "F14"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 177
   },
   {
@@ -4449,10 +4521,8 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "인식요건",
-   "conceptIds": [
-    "P025"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 180
   },
   {
@@ -4478,8 +4548,10 @@
    "subjectId": "IA",
    "unit": "충당부채 및 우발사항",
    "item": "보전",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "I29"
+   ],
+   "covered": true,
    "sortOrder": 183
   },
   {
@@ -4568,10 +4640,8 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "이익잉여금",
-   "conceptIds": [
-    "P055"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 193
   },
   {
@@ -4844,10 +4914,8 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "본인과 대리인",
-   "conceptIds": [
-    "A05"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 223
   },
   {
@@ -4963,10 +5031,8 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "사용권자산",
-   "conceptIds": [
-    "P073"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 236
   },
   {
@@ -4983,11 +5049,8 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "최초 측정",
-   "conceptIds": [
-    "P007",
-    "R006"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 238
   },
   {
@@ -5148,10 +5211,8 @@
    "subjectId": "IA",
    "unit": "종업원급여",
    "item": "확정급여제도",
-   "conceptIds": [
-    "I44"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 256
   },
   {
@@ -5332,12 +5393,8 @@
    "subjectId": "IA",
    "unit": "주식기준보상",
    "item": "공정가치",
-   "conceptIds": [
-    "H11",
-    "H15",
-    "H27"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 276
   },
   {
@@ -5435,10 +5492,8 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "이연법인세자산",
-   "conceptIds": [
-    "J10"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 287
   },
   {
@@ -5446,10 +5501,8 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "이연법인세부채",
-   "conceptIds": [
-    "J26"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 288
   },
   {
@@ -5775,7 +5828,8 @@
    "unit": "회계변경과 오류수정",
    "item": "회계추정 변경",
    "conceptIds": [
-    "P075"
+    "P075",
+    "P042"
    ],
    "covered": true,
    "sortOrder": 324
@@ -5785,10 +5839,8 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "전기오류",
-   "conceptIds": [
-    "L040"
-   ],
-   "covered": true,
+   "conceptIds": [],
+   "covered": false,
    "sortOrder": 325
   },
   {
@@ -5834,7 +5886,6 @@
    "item": "비교정보",
    "conceptIds": [
     "I09",
-    "I10",
     "I13"
    ],
    "covered": true,

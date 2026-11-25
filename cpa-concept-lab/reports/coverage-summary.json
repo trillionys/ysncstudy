@@ -1,0 +1,84 @@
+{
+ "contentVersion": 7,
+ "exams": {
+  "회계학": {
+   "complete": 234,
+   "total": 577,
+   "missing": 343,
+   "needsReview": 12,
+   "storedFlagCovered": 305
+  },
+  "경영학": {
+   "complete": 21,
+   "total": 232,
+   "missing": 211,
+   "needsReview": 0,
+   "storedFlagCovered": 173
+  },
+  "경제원론": {
+   "complete": 27,
+   "total": 132,
+   "missing": 105,
+   "needsReview": 0,
+   "storedFlagCovered": 90
+  },
+  "기업법": {
+   "complete": 127,
+   "total": 131,
+   "missing": 4,
+   "needsReview": 7,
+   "storedFlagCovered": 131
+  },
+  "세법개론": {
+   "complete": 159,
+   "total": 161,
+   "missing": 2,
+   "needsReview": 0,
+   "storedFlagCovered": 159
+  }
+ },
+ "packs": {
+  "IA": {
+   "complete": 107,
+   "total": 332
+  },
+  "AA": {
+   "complete": 61,
+   "total": 94
+  },
+  "CM": {
+   "complete": 31,
+   "total": 116
+  },
+  "GA": {
+   "complete": 35,
+   "total": 35
+  },
+  "FM": {
+   "complete": 20,
+   "total": 151
+  },
+  "HR": {
+   "complete": 1,
+   "total": 81
+  },
+  "EC": {
+   "complete": 27,
+   "total": 132
+  },
+  "CPA-LAW": {
+   "complete": 127,
+   "total": 131
+  },
+  "TX": {
+   "complete": 159,
+   "total": 161
+  }
+ },
+ "integrityErrors": 0,
+ "overall": {
+  "complete": 568,
+  "total": 1233,
+  "missing": 665
+ }
+}

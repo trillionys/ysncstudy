@@ -174,9 +174,38 @@ import os as _os
 FULL = _json.load(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "curriculum_full.json"), encoding="utf-8"))
 
 
+# v8: 중급회계(IA)는 옛 재무회계 대단원(FA-*)과 새 대단원(IA-*)이 섞여 있어, 이름 자동 일치가 다른 단원의 개념을
+#     잘못 연결했다(예: 투자부동산 '원가모형' → 유형자산 원가모형, 수취채권 '최초 측정' → 유형자산 최초 측정).
+#     자동 일치는 그 목차 단원을 실제로 다루는 대단원의 개념으로만 허용한다(명시 연결 link() 는 작성자가 내용을 확인한 것).
+IA_UNIT_CHAPTERS = {
+    "재무보고": {f"FA-{c}" for c in "ABCDEFGHIJK"} | {"IA-RB"},
+    "현금 및 현금성자산": {"IA-CA"},
+    "수취채권": {"IA-RC"},
+    "재고자산": {"FA-L", "FA-M", "FA-N", "IA-IV"},
+    "유형자산": {"FA-P"},
+    "차입원가": {"FA-Q"},
+    "투자부동산": {"IA-IP"},
+    "생물자산": {"FA-R"},
+    "무형자산": {"IA-IN"},
+    "금융상품": {"IA-FI", "IA-FL"},
+    "충당부채 및 우발사항": {"IA-PR"},
+    "자본": {"IA-EQ"},
+    "고객과의 계약에서 생기는 수익": {"IA-RV"},
+    "리스": {"IA-LS"},
+    "종업원급여": {"IA-EB"},
+    "주식기준보상": {"IA-SB"},
+    "법인세회계": {"IA-TX"},
+    "주당이익": {"IA-EP"},
+    "현금흐름표": {"IA-CF"},
+    "회계변경과 오류수정": {"IA-AC"},
+}
+
+
 def _unit_ok(pack, unit, c):
     """세법개론은 목차 단원이 법률명이다. 같은 항목명(예: 가산세·세율·과세표준)이 여러 법률에 있으므로
     그 단원의 법률을 근거로 한 개념만 연결을 인정한다."""
+    if pack == "IA":
+        return c.get("chapterId") in IA_UNIT_CHAPTERS.get(unit, set())
     if pack != "TX":
         return True
     return (c.get("lawName") or "") == unit
@@ -201,7 +230,7 @@ def build(concepts, questions, errors):
                 n += 1
                 # '단원|항목' 형태의 명시 연결은 단원을 넘어 인정(예: 조특법 최저한세 → 법인세법 목차의 최저한세)
                 linked = [cid for cid in LINKS.get((pack, f"{unit}|{it}"), []) if cid in ready]
-                linked += [cid for cid in LINKS.get((pack, it), []) if cid in ready and _unit_ok(pack, unit, by_id[cid]) and cid not in linked]
+                linked += [cid for cid in LINKS.get((pack, it), []) if cid in ready and (pack == "IA" or _unit_ok(pack, unit, by_id[cid])) and cid not in linked]
                 for cid in LINKS.get((pack, it), []) + LINKS.get((pack, f"{unit}|{it}"), []):
                     if cid not in by_id:
                         errors.append(f"[CUR] {pack} '{it}' 연결 개념 {cid} 없음")

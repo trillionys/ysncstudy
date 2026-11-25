@@ -867,6 +867,72 @@ def minus(a, b):
     return v, f"{fmt(a)} − {fmt(b)} = {fmt(v)}"
 
 
+# ───────── v8 범용 계산(목차 보강 문항용 — 앱 FormulaEngine 이 같은 식으로 독립 검산) ─────────
+@formula()
+def add2(a, b):
+    v = r0(a + b)
+    return v, f"{fmt(a)} + {fmt(b)} = {fmt(v)}"
+
+
+@formula()
+def add3(a, b, c):
+    v = r0(a + b + c)
+    return v, f"{fmt(a)} + {fmt(b)} + {fmt(c)} = {fmt(v)}"
+
+
+@formula()
+def sub3(a, b, c):
+    v = r0(a - b - c)
+    return v, f"{fmt(a)} − {fmt(b)} − {fmt(c)} = {fmt(v)}"
+
+
+@formula()
+def adj(a, b, c):
+    """a + b − c"""
+    v = r0(a + b - c)
+    return v, f"{fmt(a)} + {fmt(b)} − {fmt(c)} = {fmt(v)}"
+
+
+@formula()
+def pct_of(a, r):
+    v = r0(a * r / 100)
+    return v, f"{fmt(a)} × {fmt(r)}% = {fmt(v)}"
+
+
+@formula()
+def prorate(a, b, c):
+    """a × b ÷ c"""
+    v = r0(a * b / c)
+    return v, f"{fmt(a)} × {fmt(b)} ÷ {fmt(c)} = {fmt(v)}"
+
+
+@formula()
+def diff_pct(a, b, r):
+    """(a − b) × r%"""
+    v = r0((a - b) * r / 100)
+    return v, f"({fmt(a)} − {fmt(b)}) × {fmt(r)}% = {fmt(v)}"
+
+
+@formula()
+def eps(ni, pref, shares):
+    v = r0((ni - pref) / shares)
+    return v, f"(당기순이익 {fmt(ni)} − 우선주배당 {fmt(pref)}) ÷ 가중평균유통보통주식수 {fmt(shares)} = {fmt(v)}"
+
+
+@formula(kind="percent")
+def pct_ratio(a, b):
+    """a ÷ b × 100 (%)"""
+    v = r2(a / b * 100)
+    return v, f"{fmt(a)} ÷ {fmt(b)} × 100 = {fmt(v)}%"
+
+
+@formula(kind="percent")
+def mult_ratio(a, b):
+    """a ÷ b (배수, 소수 둘째 자리)"""
+    v = r2(a / b)
+    return v, f"{fmt(a)} ÷ {fmt(b)} = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

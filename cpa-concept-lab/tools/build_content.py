@@ -36,6 +36,7 @@ import law_auto  # noqa: E402,F401  (기업법 문항을 모두 읽은 뒤 생�
 # v5: CPA 1차 전 과목 팩
 import curriculum  # noqa: E402
 import curriculum_links  # noqa: E402,F401
+import curriculum_links_v8  # noqa: E402,F401  (v8 연결 누락 수정)
 import pack_fm, pack_cm, pack_ec, pack_hr  # noqa: E402,F401
 import law_coverage  # noqa: E402
 # v6: 2027 공인회계사 1차 세법개론(TX) 전 범위
@@ -44,6 +45,7 @@ import tax_coverage, tax_rules  # noqa: E402
 # v7: 재무회계 팩 해체(중급·고급·정부회계 재분류), 고급·정부회계 신규, 간단 요약·상세 학습
 import pack_aa, pack_ga  # noqa: E402,F401
 import fa_auto  # noqa: E402  (재무회계 기초 개념의 개념 구별 문항 보강 — 모든 저작 문항 이후)
+import v8_content  # noqa: E402,F401  (v8 출제범위 목차 보강 콘텐츠 — tools/content/v8/)
 import reclassify, detail  # noqa: E402
 
 CONTENT_VERSION = 7

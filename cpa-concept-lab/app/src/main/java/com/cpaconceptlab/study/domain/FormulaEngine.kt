@@ -147,6 +147,17 @@ object FormulaEngine {
         amount("vat_payable") { r0(it["sales"] * it["rate"] / 100.0 - it["input_tax"]) }
         amount("common_input_tax") { r0(it["common"] * it["exempt"] / it["total"]) }
         amount("minus") { r0(it["a"] - it["b"]) }
+        // v8 범용 계산(목차 보강 문항)
+        amount("add2") { r0(it["a"] + it["b"]) }
+        amount("add3") { r0(it["a"] + it["b"] + it["c"]) }
+        amount("sub3") { r0(it["a"] - it["b"] - it["c"]) }
+        amount("adj") { r0(it["a"] + it["b"] - it["c"]) }
+        amount("pct_of") { r0(it["a"] * it["r"] / 100.0) }
+        amount("prorate") { r0(it["a"] * it["b"] / it["c"]) }
+        amount("diff_pct") { r0((it["a"] - it["b"]) * it["r"] / 100.0) }
+        amount("eps") { r0((it["ni"] - it["pref"]) / it["shares"]) }
+        percent("pct_ratio") { r2(it["a"] / it["b"] * 100) }
+        percent("mult_ratio") { r2(it["a"] / it["b"]) }
         amount("fv") { r0(it["pv"] * (1 + pc(it["r"])).pow(it["n"])) }
         amount("pv") { r0(it["fv"] / (1 + pc(it["r"])).pow(it["n"])) }
         amount("annuity_pv") { val i = pc(it["r"]); r0(it["c"] * (1 - (1 + i).pow(-it["n"])) / i) }

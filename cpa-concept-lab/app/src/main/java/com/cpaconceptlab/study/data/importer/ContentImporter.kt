@@ -66,7 +66,16 @@ class ContentImporter(private val db: AppDatabase) {
                 if (p.problemSources.isNotEmpty()) dao.upsertProblemSources(p.problemSources.map { it.toEntity() })
                 if (p.scopeItems.isNotEmpty()) dao.upsertScopeItems(p.scopeItems.map { it.toEntity() })
                 // v4 기업법 참조 데이터: 법령 개정·커버리지 변화가 반영되도록 항상 최신 값으로 upsert
-                if (p.curriculumItems.isNotEmpty()) dao.upsertCurriculumItems(p.curriculumItems.map { it.toEntity() })
+                if (p.curriculumItems.isNotEmpty()) {
+                    // 목차는 학습기록이 아닌 참조 데이터다. 새 목차 목록에 없는 같은 팩의 옛 행을 지운다.
+                    // (1.0.7 에서 재무회계 팩이 빠지며 목차 ID 가 29칸씩 밀려, 업데이트한 기기에 옛 행이 남아
+                    //  구축률 분모가 팩마다 29개씩 부풀었던 문제 수정)
+                    val newIds = p.curriculumItems.map { it.id }.toSet()
+                    val packIds = p.curriculumItems.map { it.subjectId }.toSet()
+                    val stale = dao.curriculumItems().filter { it.subjectId in packIds && it.id !in newIds }.map { it.id }
+                    stale.chunked(500).forEach { dao.deleteCurriculumItems(it) }
+                    dao.upsertCurriculumItems(p.curriculumItems.map { it.toEntity() })
+                }
                 if (p.lawArticles.isNotEmpty()) dao.upsertLawArticles(p.lawArticles.map { it.toEntity() })
                 if (p.numericRules.isNotEmpty()) dao.upsertNumericRules(p.numericRules.map { it.toEntity() })
                 if (p.caseNotes.isNotEmpty()) dao.upsertCaseNotes(p.caseNotes.map { it.toEntity() })
