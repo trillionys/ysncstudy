@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 234,
+    "complete": 265,
     "total": 577,
-    "missing": 343,
+    "missing": 312,
     "needsReview": 12,
-    "storedFlagCovered": 305
+    "storedFlagCovered": 336
    },
    "경영학": {
     "complete": 21,
@@ -40,7 +40,7 @@
   },
   "packs": {
    "IA": {
-    "complete": 107,
+    "complete": 138,
     "total": 332
    },
    "AA": {
@@ -78,276 +78,12 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 568,
+   "complete": 599,
    "total": 1233,
-   "missing": 665
+   "missing": 634
   }
  },
  "gaps": [
-  {
-   "scopeNodeId": "CUR-IA-0012",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "재무보고",
-   "scopeTitle": "보고기간후사건",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0016",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "재무보고",
-   "scopeTitle": "오류수정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "L040"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0029",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "매출채권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "I24"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0030",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "받을어음",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0031",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "기타수취채권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0032",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "최초 측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P007",
-    "R006"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0033",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "후속 측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0034",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "유효이자율법",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0036",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "기대신용손실",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0037",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "대손상각",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0038",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "채권양도",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0039",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "팩토링",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0040",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "상환청구권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "J18"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0041",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "채권의 제거",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0042",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "수취채권",
-   "scopeTitle": "채권의 현재가치",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
   {
    "scopeNodeId": "CUR-IA-0049",
    "officialSubject": "회계학",
@@ -479,176 +215,6 @@
    "gapType": "B",
    "linkCandidates": [],
    "storedCoveredFlag": true
-  },
-  {
-   "scopeNodeId": "CUR-IA-0110",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "투자부동산 정의",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0111",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "자가사용부동산과의 차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0112",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "최초 원가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0113",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "원가모형",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P022",
-    "P049"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0114",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "공정가치모형",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0115",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "용도변경",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0116",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "대체",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "J09",
-    "K01",
-    "P024",
-    "P036",
-    "P055"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0117",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "평가손익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "R005"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0118",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "투자부동산",
-   "scopeTitle": "처분",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "H22",
-    "H25",
-    "I26",
-    "I27",
-    "P030"
-   ],
-   "storedCoveredFlag": false
   },
   {
    "scopeNodeId": "CUR-IA-0128",
@@ -1009,7 +575,8 @@
    "gapType": "E",
    "linkCandidates": [
     "J09",
-    "K28"
+    "K28",
+    "IA029"
    ],
    "storedCoveredFlag": false
   },
@@ -1063,7 +630,8 @@
    "gapType": "E",
    "linkCandidates": [
     "P007",
-    "R006"
+    "R006",
+    "IA023"
    ],
    "storedCoveredFlag": false
   },
@@ -1131,8 +699,10 @@
     "개념·문항 없음"
    ],
    "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
+   "gapType": "E",
+   "linkCandidates": [
+    "IA024"
+   ],
    "storedCoveredFlag": false
   },
   {
@@ -1182,8 +752,10 @@
     "개념·문항 없음"
    ],
    "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
+   "gapType": "E",
+   "linkCandidates": [
+    "IA025"
+   ],
    "storedCoveredFlag": false
   },
   {
@@ -1199,8 +771,10 @@
     "개념·문항 없음"
    ],
    "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
+   "gapType": "E",
+   "linkCandidates": [
+    "IA026"
+   ],
    "storedCoveredFlag": false
   },
   {
@@ -1553,8 +1127,10 @@
     "개념·문항 없음"
    ],
    "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
+   "gapType": "E",
+   "linkCandidates": [
+    "IA032"
+   ],
    "storedCoveredFlag": false
   },
   {
@@ -1753,7 +1329,8 @@
    "currentCoverageStatus": "NOT_STARTED",
    "gapType": "E",
    "linkCandidates": [
-    "P055"
+    "P055",
+    "IA065"
    ],
    "storedCoveredFlag": false
   },
@@ -2491,7 +2068,8 @@
    "gapType": "E",
    "linkCandidates": [
     "P007",
-    "R006"
+    "R006",
+    "IA023"
    ],
    "storedCoveredFlag": false
   },
@@ -3921,127 +3499,6 @@
    "storedCoveredFlag": false
   },
   {
-   "scopeNodeId": "CUR-IA-0325",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "회계변경과 오류수정",
-   "scopeTitle": "전기오류",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "L040"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0326",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "회계변경과 오류수정",
-   "scopeTitle": "소급적용",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0327",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "회계변경과 오류수정",
-   "scopeTitle": "전진적용",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0328",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "회계변경과 오류수정",
-   "scopeTitle": "소급재작성",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0329",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "회계변경과 오류수정",
-   "scopeTitle": "실무적으로 적용 불가능한 경우",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0331",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "회계변경과 오류수정",
-   "scopeTitle": "기초이익잉여금 조정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0332",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "회계변경과 오류수정",
-   "scopeTitle": "회계정책·추정·오류의 구별",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
    "scopeNodeId": "CUR-AA-0338",
    "officialSubject": "회계학",
    "contentPack": "고급회계",
@@ -4346,7 +3803,8 @@
    "gapType": "E",
    "linkCandidates": [
     "P007",
-    "R006"
+    "R006",
+    "IA023"
    ],
    "storedCoveredFlag": false
   },

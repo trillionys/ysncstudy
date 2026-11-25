@@ -615,6 +615,42 @@
    "title": "현금 및 현금성자산",
    "englishTitle": "Cash and cash equivalents",
    "sortOrder": 57
+  },
+  {
+   "partTitle": "수취채권",
+   "id": "IA-RC",
+   "code": "RC",
+   "subjectId": "IA",
+   "title": "수취채권",
+   "englishTitle": "Receivables",
+   "sortOrder": 58
+  },
+  {
+   "partTitle": "투자부동산",
+   "id": "IA-IP",
+   "code": "IP",
+   "subjectId": "IA",
+   "title": "투자부동산",
+   "englishTitle": "Investment property",
+   "sortOrder": 59
+  },
+  {
+   "partTitle": "제1부 재무회계의 기초",
+   "id": "IA-RB",
+   "code": "RB",
+   "subjectId": "IA",
+   "title": "보고기간후사건",
+   "englishTitle": "Events after the reporting period",
+   "sortOrder": 60
+  },
+  {
+   "partTitle": "회계변경과 오류수정",
+   "id": "IA-AC",
+   "code": "AC",
+   "subjectId": "IA",
+   "title": "회계변경과 오류수정",
+   "englishTitle": "Accounting changes and errors",
+   "sortOrder": 61
   }
  ],
  "sections": [
@@ -1999,6 +2035,48 @@
    "sortOrder": 2
   },
   {
+   "id": "IA-RC-S01",
+   "chapterId": "IA-RC",
+   "title": "수취채권의 종류와 측정",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-RC-S02",
+   "chapterId": "IA-RC",
+   "title": "손상과 대손",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-RC-S03",
+   "chapterId": "IA-RC",
+   "title": "채권의 양도와 제거",
+   "sortOrder": 3
+  },
+  {
+   "id": "IA-IP-S01",
+   "chapterId": "IA-IP",
+   "title": "투자부동산의 정의와 측정",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-IP-S02",
+   "chapterId": "IA-IP",
+   "title": "투자부동산의 대체와 처분",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-RB-S01",
+   "chapterId": "IA-RB",
+   "title": "수정을 요하는 사건과 수정을 요하지 않는 사건",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-AC-S01",
+   "chapterId": "IA-AC",
+   "title": "오류수정과 적용 방법",
+   "sortOrder": 1
+  },
+  {
    "id": "AA-A-S90",
    "chapterId": "AA-A",
    "title": "지배력과 연결범위(기존 재무회계에서 이동)",
@@ -2774,8 +2852,11 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "보고기간후사건",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA050",
+    "IA051"
+   ],
+   "covered": true,
    "sortOrder": 12
   },
   {
@@ -2819,8 +2900,10 @@
    "subjectId": "IA",
    "unit": "재무보고",
    "item": "오류수정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA060"
+   ],
+   "covered": true,
    "sortOrder": 16
   },
   {
@@ -2960,8 +3043,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "매출채권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA020"
+   ],
+   "covered": true,
    "sortOrder": 29
   },
   {
@@ -2969,8 +3054,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "받을어음",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA021"
+   ],
+   "covered": true,
    "sortOrder": 30
   },
   {
@@ -2978,8 +3065,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "기타수취채권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA022"
+   ],
+   "covered": true,
    "sortOrder": 31
   },
   {
@@ -2987,8 +3076,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "최초 측정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA023"
+   ],
+   "covered": true,
    "sortOrder": 32
   },
   {
@@ -2996,8 +3087,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "후속 측정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA024"
+   ],
+   "covered": true,
    "sortOrder": 33
   },
   {
@@ -3005,8 +3098,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "유효이자율법",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA025"
+   ],
+   "covered": true,
    "sortOrder": 34
   },
   {
@@ -3025,8 +3120,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "기대신용손실",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA026"
+   ],
+   "covered": true,
    "sortOrder": 36
   },
   {
@@ -3034,8 +3131,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "대손상각",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA027"
+   ],
+   "covered": true,
    "sortOrder": 37
   },
   {
@@ -3043,8 +3142,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "채권양도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA028"
+   ],
+   "covered": true,
    "sortOrder": 38
   },
   {
@@ -3052,8 +3153,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "팩토링",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA030"
+   ],
+   "covered": true,
    "sortOrder": 39
   },
   {
@@ -3061,8 +3164,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "상환청구권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA031"
+   ],
+   "covered": true,
    "sortOrder": 40
   },
   {
@@ -3070,8 +3175,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "채권의 제거",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA029"
+   ],
+   "covered": true,
    "sortOrder": 41
   },
   {
@@ -3079,8 +3186,10 @@
    "subjectId": "IA",
    "unit": "수취채권",
    "item": "채권의 현재가치",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA032"
+   ],
+   "covered": true,
    "sortOrder": 42
   },
   {
@@ -3860,8 +3969,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "투자부동산 정의",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA040"
+   ],
+   "covered": true,
    "sortOrder": 110
   },
   {
@@ -3869,8 +3980,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "자가사용부동산과의 차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA041"
+   ],
+   "covered": true,
    "sortOrder": 111
   },
   {
@@ -3878,8 +3991,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "최초 원가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA042"
+   ],
+   "covered": true,
    "sortOrder": 112
   },
   {
@@ -3887,8 +4002,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "원가모형",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA043"
+   ],
+   "covered": true,
    "sortOrder": 113
   },
   {
@@ -3896,8 +4013,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "공정가치모형",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA044"
+   ],
+   "covered": true,
    "sortOrder": 114
   },
   {
@@ -3905,8 +4024,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "용도변경",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA046"
+   ],
+   "covered": true,
    "sortOrder": 115
   },
   {
@@ -3914,8 +4035,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "대체",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA047"
+   ],
+   "covered": true,
    "sortOrder": 116
   },
   {
@@ -3923,8 +4046,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "평가손익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA045"
+   ],
+   "covered": true,
    "sortOrder": 117
   },
   {
@@ -3932,8 +4057,10 @@
    "subjectId": "IA",
    "unit": "투자부동산",
    "item": "처분",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA048"
+   ],
+   "covered": true,
    "sortOrder": 118
   },
   {
@@ -5839,8 +5966,10 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "전기오류",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA060"
+   ],
+   "covered": true,
    "sortOrder": 325
   },
   {
@@ -5848,8 +5977,10 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "소급적용",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA061"
+   ],
+   "covered": true,
    "sortOrder": 326
   },
   {
@@ -5857,8 +5988,10 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "전진적용",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA062"
+   ],
+   "covered": true,
    "sortOrder": 327
   },
   {
@@ -5866,8 +5999,10 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "소급재작성",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA063"
+   ],
+   "covered": true,
    "sortOrder": 328
   },
   {
@@ -5875,8 +6010,10 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "실무적으로 적용 불가능한 경우",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA064"
+   ],
+   "covered": true,
    "sortOrder": 329
   },
   {
@@ -5896,8 +6033,10 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "기초이익잉여금 조정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA065"
+   ],
+   "covered": true,
    "sortOrder": 331
   },
   {
@@ -5905,8 +6044,10 @@
    "subjectId": "IA",
    "unit": "회계변경과 오류수정",
    "item": "회계정책·추정·오류의 구별",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA066"
+   ],
+   "covered": true,
    "sortOrder": 332
   },
   {

@@ -4,40 +4,15 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 
 | 시험과목 | 구축 | 전체 | 미구축 | 구축률 |
 |---|---:|---:|---:|---:|
-| 회계학 | 234 | 577 | 343 | 40.6% |
+| 회계학 | 265 | 577 | 312 | 45.9% |
 | 경영학 | 21 | 232 | 211 | 9.1% |
 | 경제원론 | 27 | 132 | 105 | 20.5% |
 | 기업법 | 127 | 131 | 4 | 96.9% |
 | 세법개론 | 159 | 161 | 2 | 98.8% |
-| **전체** | 568 | 1233 | 665 | 46.1% |
+| **전체** | 599 | 1233 | 634 | 48.6% |
 
 무결성 오류: 0건
 
-
-## 회계학 · 중급회계 · 재무보고
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0012 | 보고기간후사건 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0016 | 오류수정 | E | NOT_STARTED | 개념·문항 없음 |
-
-## 회계학 · 중급회계 · 수취채권
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0029 | 매출채권 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0030 | 받을어음 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0031 | 기타수취채권 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0032 | 최초 측정 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0033 | 후속 측정 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0034 | 유효이자율법 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0036 | 기대신용손실 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0037 | 대손상각 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0038 | 채권양도 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0039 | 팩토링 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0040 | 상환청구권 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0041 | 채권의 제거 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0042 | 채권의 현재가치 | A | NOT_STARTED | 개념·문항 없음 |
 
 ## 회계학 · 중급회계 · 재고자산
 
@@ -54,20 +29,6 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0078 | 비화폐성자산 교환 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0087 | 구성요소별 감가상각 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0092 | 재평가잉여금 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-
-## 회계학 · 중급회계 · 투자부동산
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0110 | 투자부동산 정의 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0111 | 자가사용부동산과의 차이 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0112 | 최초 원가 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0113 | 원가모형 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0114 | 공정가치모형 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0115 | 용도변경 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0116 | 대체 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0117 | 평가손익 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0118 | 처분 | E | NOT_STARTED | 개념·문항 없음 |
 
 ## 회계학 · 중급회계 · 무형자산
 
@@ -104,11 +65,11 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0152 | 사업모형 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0153 | 계약상 현금흐름 특성 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0154 | SPPI | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0155 | 상각후원가 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0155 | 상각후원가 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0157 | FVTPL | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0160 | 금융자산 재분류 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0161 | 유효이자율 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0162 | 기대신용손실 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0161 | 유효이자율 | E | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0162 | 기대신용손실 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0163 | 금융자산 손상 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0164 | 금융자산 제거 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0165 | 금융부채 후속측정 | A | NOT_STARTED | 개념·문항 없음 |
@@ -133,7 +94,7 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0179 | 의제의무 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0180 | 인식요건 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0181 | 최선의 추정치 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0182 | 현재가치 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0182 | 현재가치 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0183 | 보전 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0184 | 손실부담계약 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0185 | 구조조정충당부채 | A | NOT_STARTED | 개념·문항 없음 |
@@ -311,18 +272,6 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0320 | 외화현금흐름 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0321 | 비현금거래 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0322 | 현금및현금성자산 변동 | A | NOT_STARTED | 개념·문항 없음 |
-
-## 회계학 · 중급회계 · 회계변경과 오류수정
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0325 | 전기오류 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0326 | 소급적용 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0327 | 전진적용 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0328 | 소급재작성 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0329 | 실무적으로 적용 불가능한 경우 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0331 | 기초이익잉여금 조정 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0332 | 회계정책·추정·오류의 구별 | A | NOT_STARTED | 개념·문항 없음 |
 
 ## 회계학 · 고급회계 · 사업결합
 

@@ -12,6 +12,9 @@ sys.path.insert(0, HERE)
 
 ORDER = [
     "ia_cash",
+    "ia_receivables",
+    "ia_investment_property",
+    "ia_changes",
 ]
 
 for name in ORDER:
