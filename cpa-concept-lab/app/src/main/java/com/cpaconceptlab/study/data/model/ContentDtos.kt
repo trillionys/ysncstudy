@@ -271,6 +271,13 @@ data class ConceptDto(
     val verifiedAt: String? = null,
     val caseLaw: String? = null,
     val examArea: String? = null,
+    val primaryPackId: String? = null,
+    val relatedPackIds: List<String> = emptyList(),
+    val classificationStatus: String? = null,
+    val legacyPackId: String? = null,
+    val shortSummary: String? = null,
+    val detailSections: List<DetailSectionDto> = emptyList(),
+    val detailLevel: String? = null,
 )
 
 @Serializable
@@ -331,3 +338,21 @@ val ContentJson: Json = Json {
 
 /** 빈칸 표기. 모든 문항은 정확히 1개의 빈칸을 가진다. */
 const val BLANK_TOKEN = "(______)"
+
+
+/** v7 상세 학습 섹션 */
+@Serializable
+data class DetailSectionDto(
+    val sectionId: String,
+    val type: String,
+    val title: String,
+    val body: String,
+    val order: Int = 0,
+    val formulas: List<String> = emptyList(),
+    val journal: List<JournalLineDto> = emptyList(),
+    /** EXISTING(기존 필드에서 옮김) · AUTHORED_V7(v7 직접 작성) */
+    val source: String = "EXISTING",
+)
+
+@Serializable
+data class JournalLineDto(val dr: String, val cr: String, val amount: String)

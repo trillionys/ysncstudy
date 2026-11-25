@@ -57,8 +57,11 @@ data class Overview(
     val unresolvedWrong: Int,
     val studyDays: Int,
     val streak: Int,
+    /** 오늘 제출 횟수(같은 문항 반복 포함) */
     val todaySolved: Int,
     val todayCorrect: Int,
+    /** v1.0.7: 오늘 실제로 제출한 고유 문항 수(오늘의 목표 집계 기준 — 같은 문항 반복 제출로 부풀지 않는다) */
+    val todayUniqueSolved: Int = 0,
     val last7: List<DayCount>,
     val last7Total: Int,
     val last30Total: Int,
@@ -85,6 +88,7 @@ object StatsCalculator {
     fun overview(content: ContentSnapshot, user: UserSnapshot, now: Long, zone: ZoneId = ZoneId.systemDefault()): Overview {
         val today = java.time.Instant.ofEpochMilli(now).atZone(zone).toLocalDate()
         val endOfToday = today.plusDays(1).atStartOfDay(zone).toInstant().toEpochMilli()
+        val startOfToday = today.atStartOfDay(zone).toInstant().toEpochMilli()
         val activeIds = content.questions.map { it.id }.toSet()
         val rows = user.questionProgress.filter { it.questionId in activeIds }
         val basicRows = rows.filter { it.mode == QuizMode.BASIC.name }
@@ -162,6 +166,8 @@ object StatsCalculator {
             streak = streak,
             todaySolved = todayRow?.solvedCount ?: 0,
             todayCorrect = todayRow?.correctCount ?: 0,
+            todayUniqueSolved = user.questionProgress.filter { it.lastAnsweredAt >= startOfToday && it.lastAnsweredAt < endOfToday }
+                .map { it.questionId }.distinct().size,
             last7 = last7,
             last7Total = last7.sumOf { it.solved },
             last30Total = last30,

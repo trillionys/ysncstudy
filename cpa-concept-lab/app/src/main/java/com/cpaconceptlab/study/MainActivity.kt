@@ -40,6 +40,9 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -100,7 +103,8 @@ private val TABS = listOf(
 private val TITLES = mapOf(
     "home" to "CPA Concept Lab", "subjects" to "과목", "wrong" to "오답노트", "stats" to "학습 통계", "settings" to "설정",
     "subject" to "개념 목록", "concept" to "개념 학습", "setup" to "문제 풀이 설정", "quiz" to "학습 문제", "examSubject" to "과목별 학습현황",
-    "report" to "개념 누락 검증 리포트",
+    "report" to "개념 누락 검증 리포트", "reviewSettings" to "복습 주기", "notice" to "이용 안내", "privacy" to "개인정보 처리방침",
+    "goalSettings" to "오늘의 문제 목표", "appInfo" to "앱 정보",
 )
 
 fun NavHostController.startQuiz(mode: QuizMode, scope: QuizScope, size: Int) {
@@ -118,7 +122,10 @@ private fun AppRoot(vm: MainViewModel) {
     val content by vm.content.collectAsState()
     val settings by vm.settings.collectAsState()
     val message by vm.message.collectAsState()
+    val settingsReady by vm.settingsReady.collectAsState()
     val isTab = TABS.any { it.route == route }
+    // 단원 문제 풀기 시트(범위, 제목)
+    var unitSheet by remember { mutableStateOf<Pair<QuizScope, String>?>(null) }
 
     Scaffold(
         topBar = {
@@ -163,13 +170,15 @@ private fun AppRoot(vm: MainViewModel) {
             else -> NavHost(nav, startDestination = "home", modifier = Modifier.padding(padding)) {
                 val quiz: (QuizMode, QuizScope) -> Unit = { m, s -> nav.startQuiz(m, s, settings.sessionSize) }
                 val openConcept: (String) -> Unit = { nav.navigate("concept/$it") }
+                val unitQuiz: (QuizScope, String) -> Unit = { s, title -> unitSheet = s to title }
                 composable("home") {
-                    dash?.let { HomeScreen(it, settings, quiz, { nav.navigate("setup") }, { id -> nav.navigate("examSubject/$id") }) }
+                    dash?.let { HomeScreen(it, settings, quiz, { nav.navigate("setup") }, { id -> nav.navigate("examSubject/$id") }, { nav.navigate("goalSettings") }) }
                 }
                 composable("subjects") {
                     dash?.let { ds ->
                         LazyColumn(contentPadding = PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                            items(ds.content.subjects.sortedBy { it.sortOrder }) { s ->
+                            // v1.0.7: 레거시 '재무회계' 팩(중급·고급회계로 재분류됨)은 표시하지 않는다
+                            items(ds.content.subjects.filter { it.examSubject != "LEGACY" }.sortedBy { it.sortOrder }) { s ->
                                 val concepts = ds.content.concepts.filter { it.subjectId == s.id }
                                 val enabled = s.isActive && concepts.isNotEmpty()
                                 SectionCard(title = s.name, modifier = Modifier.clickable(enabled = enabled) { nav.navigate("subject/${s.id}") }) {
@@ -183,11 +192,20 @@ private fun AppRoot(vm: MainViewModel) {
                     }
                 }
                 composable("subject/{id}", arguments = listOf(navArgument("id") { type = NavType.StringType })) { e ->
-                    dash?.let { SubjectScreen(it, e.arguments?.getString("id") ?: "FA", openConcept, quiz) }
+                    dash?.let { SubjectScreen(it, e.arguments?.getString("id") ?: "IA", openConcept, quiz, unitQuiz) }
                 }
                 composable("concept/{id}", arguments = listOf(navArgument("id") { type = NavType.StringType })) { e ->
                     dash?.let {
-                        ConceptScreen(it, e.arguments?.getString("id") ?: "", vm::markViewed, vm::toggleBookmark, vm::saveMemo, openConcept, quiz)
+                        // 문제풀이에서 들어왔으면 '문제로 돌아가기'로 같은 세션(뒤 화면의 ViewModel)으로 복귀한다
+                        val fromQuiz = nav.previousBackStackEntry?.destination?.route?.startsWith("quiz") == true
+                        ConceptScreen(
+                            it, e.arguments?.getString("id") ?: "", vm::markViewed, vm::toggleBookmark, vm::saveMemo, openConcept, quiz,
+                            initialTab = settings.lastConceptTab,
+                            onTabChange = { t -> vm.updateSettings { s -> s.copy(lastConceptTab = t) } },
+                            onBackToQuiz = if (fromQuiz) ({ nav.popBackStack() }) else null,
+                            appVersion = vm.appVersion,
+                            onStartUnitQuiz = unitQuiz,
+                        )
                     }
                 }
                 composable("examSubject/{id}", arguments = listOf(navArgument("id") { type = NavType.StringType })) { e ->
@@ -195,7 +213,12 @@ private fun AppRoot(vm: MainViewModel) {
                 }
                 composable("wrong") { dash?.let { WrongNotesScreen(it, openConcept, quiz) } }
                 composable("stats") { dash?.let { StatsScreen(it, openConcept) } }
-                composable("settings") { SettingsScreen(vm) { nav.navigate("report") } }
+                composable("settings") { SettingsScreen(vm, onOpenReport = { nav.navigate("report") }, onNavigate = { r -> nav.navigate(r) }) }
+                composable("reviewSettings") { com.cpaconceptlab.study.ui.settings.ReviewSettingsScreen(vm) }
+                composable("goalSettings") { com.cpaconceptlab.study.ui.settings.GoalSettingsScreen(vm) }
+                composable("notice") { com.cpaconceptlab.study.ui.settings.NoticeScreen() }
+                composable("privacy") { com.cpaconceptlab.study.ui.settings.PrivacyScreen() }
+                composable("appInfo") { com.cpaconceptlab.study.ui.settings.AppInfoScreen(vm) }
                 composable("report") { ValidationReportScreen(vm) }
                 composable("setup") {
                     QuizSetupScreen(content, QuizMode.of(settings.lastMode), QuizScope.decode(settings.lastScope), settings.sessionSize) { m, s, size ->
@@ -226,10 +249,32 @@ private fun AppRoot(vm: MainViewModel) {
                         onFinish = { nav.popBackStack("home", inclusive = false) },
                         onRestart = { nav.popBackStack(); nav.startQuiz(mode, scope, size) },
                         onAdvance = { nav.popBackStack(); nav.startQuiz(QuizMode.ADVANCED, scope, size) },
+                        onRetryAllLevels = { nav.popBackStack(); nav.startQuiz(mode, scope.copy(minLevel = 1, maxLevel = 5), size) },
+                        appVersion = vm.appVersion,
                     )
                 }
             }
         }
+    }
+
+    unitSheet?.let { (scope, title) ->
+        content?.let { cs ->
+            com.cpaconceptlab.study.ui.quiz.StartQuizSheet(
+                title = title, baseScope = scope, content = cs,
+                initialMode = QuizMode.of(settings.lastMode),
+                initialDifficulty = com.cpaconceptlab.study.domain.model.Difficulty.of(settings.lastDifficulty),
+                initialKind = com.cpaconceptlab.study.domain.model.QuestionKind.of(settings.lastKind),
+                onDismiss = { unitSheet = null },
+                onStart = { m, s, d, k ->
+                    vm.updateSettings { it.copy(lastDifficulty = d.name, lastKind = k.name) }
+                    unitSheet = null
+                    nav.startQuiz(m, s, settings.sessionSize)
+                },
+            )
+        }
+    }
+    if (settingsReady && !settings.noticeAcknowledged) {
+        com.cpaconceptlab.study.ui.common.FirstRunNoticeDialog { vm.updateSettings { it.copy(noticeAcknowledged = true) } }
     }
 
     message?.let { m ->

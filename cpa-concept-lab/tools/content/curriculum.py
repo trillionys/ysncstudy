@@ -9,8 +9,8 @@ import unicodedata
 
 PACKS = [
     # id, 이름, 공식 시험과목, 설명
-    ("FA", "재무회계", "ACC", "재무보고 개념체계·재무제표 표시·재고자산·유형자산·차입원가·농림어업"),
-    ("IA", "중급회계", "ACC", "현금·수취채권·투자부동산·무형자산·금융상품·충당부채·자본·수익·리스·종업원급여·법인세 등"),
+    # v7: '재무회계' 독립 팩 해체 — 재무회계의 기초·재고자산·유형자산·차입원가·농림어업은 중급회계로 통합
+    ("IA", "중급회계", "ACC", "재무회계의 기초(개념체계·재무제표 표시)·재고자산·유형자산·차입원가·금융상품·충당부채·자본·수익·리스·종업원급여·법인세 등"),
     ("AA", "고급회계", "ACC", "사업결합·연결·관계기업·외화환산·파생상품과 위험회피"),
     ("CM", "원가관리회계", "ACC", "원가개념·원가계산·CVP·관련원가·예산·성과평가"),
     ("GA", "정부회계", "ACC", "국가회계·지방자치단체 회계"),
@@ -163,7 +163,7 @@ def link(pack, item, *cids):
 
 
 # 목차 항목을 볼 때 함께 검색할 과목(중급회계 목차는 재무회계 기존 개념으로도 충족될 수 있다)
-SEARCH = {"IA": ["IA", "FA"], "FA": ["FA"]}
+SEARCH = {}   # v7: 재무회계 개념이 중급회계(IA)로 이동해 별도 교차 검색이 필요 없다
 # 재무회계 팩이 실제로 다루는 중급회계 단원만 재무회계 개념으로 충족을 인정한다
 FA_COVERED_IA_UNITS = {"재무보고", "재고자산", "유형자산", "차입원가", "생물자산", "투자부동산"}
 
@@ -196,7 +196,7 @@ def build(concepts, questions, errors):
         cands = [c for c in concepts if c["subjectId"] in SEARCH.get(pack, [pack]) and c["id"] in ready]
         normed = [(c, _norm(c["koreanName"]), _norm(c["koreanName"] + c["definition"])) for c in cands]
         for unit, text in FULL.get(pack, {}).items():
-            pool = normed if not (pack == "IA" and unit not in FA_COVERED_IA_UNITS) else [t for t in normed if t[0]["subjectId"] == "IA"]
+            pool = normed
             for it in [w.strip() for w in text.split(", ") if w.strip()]:
                 n += 1
                 # '단원|항목' 형태의 명시 연결은 단원을 넘어 인정(예: 조특법 최저한세 → 법인세법 목차의 최저한세)

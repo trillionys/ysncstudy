@@ -41,8 +41,15 @@ import law_coverage  # noqa: E402
 # v6: 2027 공인회계사 1차 세법개론(TX) 전 범위
 import tax_a, tax_b, tax_c, tax_d, tax_e, tax_f, tax_g, tax_h  # noqa: E402,F401
 import tax_coverage, tax_rules  # noqa: E402
+# v7: 재무회계 팩 해체(중급·고급·정부회계 재분류), 고급·정부회계 신규, 간단 요약·상세 학습
+import pack_aa, pack_ga  # noqa: E402,F401
+import fa_auto  # noqa: E402  (재무회계 기초 개념의 개념 구별 문항 보강 — 모든 저작 문항 이후)
+import reclassify, detail  # noqa: E402
 
-CONTENT_VERSION = 6
+CONTENT_VERSION = 7
+# v7: 기존 개념은 간단 요약·상세 학습 필드가 추가되어, 기기에 이미 있는 행도 갱신되도록 revision 을 올린다
+#     (가져오기는 revision 이 더 클 때만 콘텐츠 필드를 덮어쓴다. 학습기록 테이블은 건드리지 않는다).
+V7_REVISION_BUMP = 1
 NEW_CHAPTERS = {"FA-L", "FA-M", "FA-N", "FA-P", "FA-Q", "FA-R"}
 LAW_SUBJECT = "CPA-LAW"
 TAX_SUBJECT = "TX"
@@ -58,6 +65,10 @@ BLANK = "(______)"
 SUBJECTS = [
     {"id": pid, "name": name, "description": desc, "sortOrder": i + 1, "isActive": False, "examSubject": ex}
     for i, (pid, name, ex, desc) in enumerate(curriculum.PACKS)
+] + [
+    # v7: 레거시 '재무회계' 팩. 사용자 화면에는 표시하지 않고(examSubject=LEGACY, 비활성), 예전 백업·참조 호환을 위해 ID 만 남긴다.
+    {"id": "FA", "name": "재무회계(이전됨)", "description": "v7에서 중급회계·고급회계로 재분류된 레거시 팩", "sortOrder": 99,
+     "isActive": False, "examSubject": "LEGACY"},
 ]
 PACK_SUBJECTS = {"IA", "AA", "CM", "GA", "FM", "HR", "EC", "TX"}
 
@@ -73,6 +84,8 @@ def norm(s):
 def main():
     check_only = "--check" in sys.argv
     errors, warnings = [], []
+    # v7 재분류: ID 를 바꾸지 않고 소속 과목·대단원만 바꾼다
+    reclassify.ensure_moved_sections(reclassify.apply())
     concepts = dsl.CONCEPTS
     questions = dsl.QUESTIONS
     scopes = dsl.EXAM_SCOPES
@@ -94,7 +107,7 @@ def main():
     for rid, rname in REQUIRED:
         if rid not in cmap:
             errors.append(f"[1] 필수 개념 누락: {rid} {rname}")
-    extra = [c["id"] for c in concepts if c["id"] not in dict(REQUIRED) and c["subjectId"] == "FA"]
+    extra = [c["id"] for c in concepts if c["id"] not in dict(REQUIRED) and c.get("legacyPackId") == "FA"]
     if extra:
         warnings.append(f"필수 목록 외 추가 개념: {', '.join(extra)}")
 
@@ -214,7 +227,9 @@ def main():
     new_concepts = [c for c in concepts if c["chapterId"] in NEW_CHAPTERS]
     new_q = [x for x in active_q if x["chapterId"] in NEW_CHAPTERS]
     law_concepts = [c for c in concepts if c["subjectId"] == LAW_SUBJECT]
-    pack_concepts = [c for c in concepts if c["subjectId"] in PACK_SUBJECTS]
+    # v7: 재무회계에서 옮겨 온 v1·v2 기초 개념(제1부)은 당시 규칙(기본 + 해설 중심)으로 작성되어 [14] 대상이 아니었다.
+    #     오류로 숨기지 않고 '문항 보강 필요' 목록으로 따로 집계한다(아래 legacy_gaps).
+    pack_concepts = [c for c in concepts if c["subjectId"] in PACK_SUBJECTS and not (c.get("legacyPackId") == "FA" and c["chapterId"] not in NEW_CHAPTERS)]
     law_q = [x for x in active_q if x["subjectId"] == LAW_SUBJECT]
     # 13. OX·참거짓·예아니요 금지
     ox_words = re.compile(r"(O\s*/\s*X|\bOX\b|참\s*/\s*거짓|참·거짓|참 또는 거짓|맞음\s*/\s*틀림|맞으면|틀리면|옳으면|예\s*/\s*아니요|예·아니요|옳은지 판단|사실인지)")
@@ -265,6 +280,14 @@ def main():
             errors.append(f"[14] {c['id']} 심화문제(난이도 3~5) 없음")
         if not any(x["questionType"] in application_types for x in mine):
             errors.append(f"[14] {c['id']} 개념 구별·응용 문제 없음")
+    legacy_gaps = []
+    for c in concepts:
+        if c.get("legacyPackId") == "FA" and c["chapterId"] not in NEW_CHAPTERS and c["subjectId"] == "IA":
+            mine = [x for x in active_q if x["primaryConceptId"] == c["id"]]
+            miss = [k for k, ok in (("심화", any(x["difficulty"] >= 3 for x in mine)),
+                                    ("응용", any(x["questionType"] in application_types for x in mine))) if not ok]
+            if miss:
+                legacy_gaps.append((c["id"], "·".join(miss)))
     # 17. 지정 학습범위 체크리스트 반영
     scope_list, scope_miss = scope_items.build(concepts, questions)
     for area, item in scope_miss:
@@ -329,12 +352,18 @@ def main():
     # 신규 개념의 검증 상태: 원문 대조 전이므로 verified 로 표시하지 않는다
     for c in concepts:
         c["verificationStatus"] = "NEEDS_REVIEW" if c["requiresReview"] else "AUTHOR_REVIEWED"
-        c["contentVersion"] = 6 if c["subjectId"] == TAX_SUBJECT else 5 if c["subjectId"] in PACK_SUBJECTS else 4 if c["subjectId"] == LAW_SUBJECT else 3 if c["chapterId"] in NEW_CHAPTERS else 2
+        c["contentVersion"] = (3 if c["chapterId"] in NEW_CHAPTERS or c["id"] in reclassify.CONCEPT_RULES else 2) if c.get("legacyPackId") == "FA" else 7 if c["subjectId"] in ("AA", "GA") else 6 if c["subjectId"] == TAX_SUBJECT else 5 if c["subjectId"] in PACK_SUBJECTS else 4 if c["subjectId"] == LAW_SUBJECT else 3 if c["chapterId"] in NEW_CHAPTERS else 2
         if c["subjectId"] in (LAW_SUBJECT, TAX_SUBJECT) and not c["requiresReview"]:
             c["verificationStatus"] = "STATUTE_CHECKED"
+        c["revision"] = c["revision"] + V7_REVISION_BUMP
+    for x in questions:
+        if x.get("legacyPackId") == "FA" and not x.get("generatedBy"):
+            x["revision"] = x["revision"] + V7_REVISION_BUMP   # 소속 과목 변경을 기기에 반영
+    # v7 간단 요약·상세 학습
+    detail_stats, detail_basic = detail.apply(concepts, errors)
     for x in questions:
         x["mode"] = "BOTH" if x["inputType"] == "text" else "OPTIONS"
-        x["contentVersion"] = 6 if x["subjectId"] == TAX_SUBJECT else 5 if x["subjectId"] in PACK_SUBJECTS else 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
+        x["contentVersion"] = 7 if x.get("generatedBy") == "FA_AUTO_V7" else (3 if x["chapterId"] in NEW_CHAPTERS or x["primaryConceptId"] in reclassify.CONCEPT_RULES else 2) if x.get("legacyPackId") == "FA" else 7 if x["subjectId"] in ("AA", "GA") else 6 if x["subjectId"] == TAX_SUBJECT else 5 if x["subjectId"] in PACK_SUBJECTS else 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
 
     # ID 레지스트리: 이미 발급한 ID 의 정답이 바뀌면 오류(새 ID 발급 필요)
     registry = {}
@@ -435,9 +464,21 @@ def main():
         lines.append(f"| {p['sourceId']} | {p['topic']} | {p['readingConfidence']} | {p['verificationStatus']} | {len(p['conceptIds'])} | {len(p['linkedQuestionIds'])} |")
     lines.append("")
     lines += law["reportLines"]
+    lines += reclassify.report_lines(concepts, questions)
+    lines += ["", "## v7 간단 요약·상세 학습", "",
+              f"- 간단 요약 보존: {sum(1 for c in concepts if c['definition'].strip() in c['shortSummary'])}/{len(concepts)} (기존 정의 전문 포함)",
+              f"- 상세 학습 섹션 보유: {sum(1 for c in concepts if c['detailSections'])}/{len(concepts)}",
+              f"- 충실도: RICH(직접 작성 계산 예제·분개 보강) {detail_stats['RICH']} · FULL(핵심 6개 섹션 + 적용 섹션, 450자 이상) {detail_stats['FULL']} · BASIC(보완 필요) {detail_stats['BASIC']}",
+              "- 상세 학습은 기존 구조화 필드를 섹션으로 옮긴 것과 v7 직접 작성 섹션으로 구성된다. BASIC 개념은 추가 작성 대상이다.",
+              "", "### 보완 필요(BASIC) 개념 ID", "", ", ".join(detail_basic) or "없음",
+              "", "### 중급회계 제1부(기존 재무회계 v1·v2 개념) 문항 보강", "",
+              f"- 개념 구별 매칭형(난이도 3) 자동 생성 {len(fa_auto.GENERATED)}개 — 작성자 검토 정의로 정답 확정, 개념명은 ○○로 가림",
+              f"- {len(legacy_gaps)}개 개념에 심화(난이도 3 이상) 또는 응용형 문항이 없다: " + ", ".join(f"{i}({m})" for i, m in legacy_gaps)]
     lines += ["", "## 과목 팩별 콘텐츠 구축 현황(2027 CPA 1차 출제범위 마스터 목차 기준)", "",
               "| 팩 | 개념 | 문항 | 목차 구축 | 구축률 | 학습 가능 |", "|---|---|---|---|---|---|"]
     for sub in SUBJECTS:
+        if sub["id"] not in cur_stats:
+            continue   # 레거시 팩(FA)은 목차 통계에서 제외
         name, cov, tot = cur_stats[sub["id"]]
         nc = sum(1 for c in concepts if c["subjectId"] == sub["id"])
         nq = sum(1 for x in active_q if x["subjectId"] == sub["id"])

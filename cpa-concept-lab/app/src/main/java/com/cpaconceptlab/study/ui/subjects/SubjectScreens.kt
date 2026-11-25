@@ -14,6 +14,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -51,6 +52,8 @@ fun SubjectScreen(
     subjectId: String,
     onOpenConcept: (String) -> Unit,
     onStartQuiz: (QuizMode, QuizScope) -> Unit,
+    /** 단원 문제 풀기: 난이도·유형 선택 시트를 연다(범위, 화면 제목) */
+    onUnitQuiz: (QuizScope, String) -> Unit = { s, _ -> onStartQuiz(QuizMode.BASIC, s) },
 ) {
     val c = dash.content
     var expanded by rememberSaveable { mutableStateOf(setOf<String>()) }
@@ -68,7 +71,7 @@ fun SubjectScreen(
         if (query.isBlank()) {
             val parts = StatsCalculator.partStats(c, dash.user, dash.overview.masteryByConcept)
                 .filter { p -> p.chapterIds.any { id -> c.chapterById[id]?.subjectId == subjectId } }
-            items(parts, key = { "part-" + it.partTitle }) { p -> PartCard(p, onStartQuiz) }
+            items(parts, key = { "part-" + it.partTitle }) { p -> PartCard(p, onStartQuiz, onUnitQuiz) }
         }
         if (query.isNotBlank()) {
             val found = c.concepts.filter {
@@ -94,14 +97,17 @@ fun SubjectScreen(
                 }
                 if (ch.id in expanded) {
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        OutlinedButton(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.CHAPTER, ch.id)) }, modifier = Modifier.weight(1f)) { Text("단원 기본") }
-                        OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.CHAPTER, ch.id)) }, modifier = Modifier.weight(1f)) { Text("단원 심화") }
+                        Button(onClick = { onUnitQuiz(QuizScope(ScopeType.CHAPTER, ch.id), "${ch.code}. ${ch.title}") }, modifier = Modifier.weight(1f)) { Text("문제 풀기") }
+                        OutlinedButton(
+                            onClick = { c.conceptsOfChapter(ch.id).firstOrNull()?.let { onOpenConcept(it.id) } },
+                            modifier = Modifier.weight(1f),
+                        ) { Text("개념 학습") }
                     }
                     c.sectionsOf(ch.id).forEach { sec ->
                         VSpace(10)
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Text(sec.title, style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.secondary, modifier = Modifier.weight(1f))
-                            TextButton(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.SECTION, sec.id)) }) { Text("중단원 풀기") }
+                            TextButton(onClick = { onUnitQuiz(QuizScope(ScopeType.SECTION, sec.id), sec.title) }) { Text("중단원 문제 풀기") }
                         }
                         c.conceptsOfSection(sec.id).forEach { con ->
                             ConceptRow(con.id, con.koreanName, dash.overview.masteryByConcept[con.id] ?: MasteryLevel.NOT_STARTED, indent = con.parentConceptId != null) { onOpenConcept(con.id) }
@@ -177,7 +183,7 @@ fun LawSubjectHeader(dash: DashboardState, subjectId: String, onStartQuiz: (Quiz
 
 /** 파트 카드: 개념 수·학습 개념·문제 수·정답률·오답 수·숙달률 */
 @Composable
-fun PartCard(p: PartStat, onStartQuiz: (QuizMode, QuizScope) -> Unit) {
+fun PartCard(p: PartStat, onStartQuiz: (QuizMode, QuizScope) -> Unit, onUnitQuiz: (QuizScope, String) -> Unit = { s, _ -> onStartQuiz(QuizMode.BASIC, s) }) {
     SectionCard(title = p.partTitle) {
         ProgressLine("개념 ${p.conceptCount} · 학습 ${p.studiedConcepts}", p.studiedConcepts, p.conceptCount)
         Text(
@@ -186,8 +192,7 @@ fun PartCard(p: PartStat, onStartQuiz: (QuizMode, QuizScope) -> Unit) {
         )
         VSpace(6)
         Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-            OutlinedButton(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.PART, p.partTitle)) }, modifier = Modifier.weight(1f)) { Text("기본") }
-            OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.PART, p.partTitle)) }, modifier = Modifier.weight(1f)) { Text("심화") }
+            Button(onClick = { onUnitQuiz(QuizScope(ScopeType.PART, p.partTitle), p.partTitle) }, modifier = Modifier.weight(2f)) { Text("문제 풀기") }
             OutlinedButton(
                 onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.PART, p.partTitle, kind = QuestionKind.CALC)) },
                 modifier = Modifier.weight(1f),

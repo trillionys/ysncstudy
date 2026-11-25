@@ -17,16 +17,16 @@ val releaseKeyProps = Properties().apply {
 
 android {
     namespace = "com.cpaconceptlab.study"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         // applicationId 는 절대 변경하지 않는다. 변경하면 기존 설치본과 다른 앱이 되어 학습기록이 이어지지 않는다.
         applicationId = "com.cpaconceptlab.study"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 36
         // 새 APK 를 배포할 때마다 versionCode 를 반드시 증가시킨다.
-        versionCode = 7
-        versionName = "1.0.6"
+        versionCode = 8
+        versionName = "1.0.7"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

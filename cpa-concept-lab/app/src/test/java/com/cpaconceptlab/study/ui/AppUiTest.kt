@@ -34,6 +34,18 @@ import org.robolectric.annotation.Config
 class AppUiTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
 
+    /** v1.0.7: 최초 실행 시 '학습 콘텐츠 이용 안내'가 뜬다. 확인하면 다시 뜨지 않는다. */
+    private fun acknowledgeNotice() {
+        rule.waitUntil(60_000) {
+            rule.onAllNodesWithText("확인했습니다").fetchSemanticsNodes().isNotEmpty() ||
+                rule.onAllNodesWithText("오늘의 학습").fetchSemanticsNodes().isNotEmpty()
+        }
+        if (rule.onAllNodesWithText("확인했습니다").fetchSemanticsNodes().isNotEmpty()) {
+            rule.onNodeWithText("확인했습니다").performClick()
+            rule.waitUntil(10_000) { rule.onAllNodesWithText("확인했습니다").fetchSemanticsNodes().isEmpty() }
+        }
+    }
+
     private val app get() = ApplicationProvider.getApplicationContext<CpaApplication>()
 
     private fun waitText(text: String, substring: Boolean = false, timeout: Long = 60_000) =
@@ -45,6 +57,7 @@ class AppUiTest {
     }
 
     @Test fun launchLoadContentAnswerAndPersist() {
+        acknowledgeNotice()
         // 1) 앱 실행 및 콘텐츠 로딩
         waitText("오늘의 학습")
         rule.onNodeWithText("전체 학습현황").assertExists()

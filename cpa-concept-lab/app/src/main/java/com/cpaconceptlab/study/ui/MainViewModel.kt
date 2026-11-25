@@ -58,6 +58,23 @@ class MainViewModel(val container: AppContainer) : ViewModel() {
     val settings: StateFlow<UserSettings> = settingsRepo.settings
         .stateIn(viewModelScope, SharingStarted.Eagerly, UserSettings())
 
+    /** 저장된 설정을 한 번이라도 읽었는지(최초 실행 안내가 기본값 때문에 잠깐 뜨지 않게) */
+    val settingsReady: StateFlow<Boolean> = settingsRepo.settings.map { true }
+        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
+
+    /** 복습 주기 변경 후 사용자가 선택한 경우에만 예정 일정을 다시 계산(기록·숙달도 유지) */
+    fun rescheduleReviews(intervals: List<Int>) = viewModelScope.launch {
+        val n = container.studyRepository.rescheduleUpcoming(intervals, System.currentTimeMillis())
+        showMessage("예정된 복습 ${n}건의 날짜를 새 주기로 다시 계산했습니다. 풀이기록과 숙달도는 그대로입니다.")
+    }
+
+    /** 학습데이터 삭제(확인 절차 후 호출). 콘텐츠·설정은 유지된다. */
+    fun clearLearningData() = viewModelScope.launch {
+        val ids = content.value?.concepts?.map { it.id }.orEmpty()
+        container.studyRepository.clearAllLearningData(ids)
+        showMessage("학습기록을 삭제했습니다. 개념·문제 콘텐츠와 설정은 그대로입니다.")
+    }
+
     val content: StateFlow<ContentSnapshot?> = contentRepo.snapshot
 
     val dashboard: StateFlow<DashboardState?> = combine(

@@ -142,6 +142,30 @@ class StudyRepository(private val db: AppDatabase, private val zone: ZoneId = Zo
 
     suspend fun attemptsFor(questionId: String) = dao.attemptsFor(questionId)
 
+    /**
+     * 복습 주기 변경 후 '기존 예정 일정 다시 계산'(사용자가 선택한 경우에만).
+     *  - 풀이 횟수·정답 수·단계(stage)·숙달도·오답노트는 바꾸지 않는다. nextReviewAt 만 다시 계산한다.
+     *  - 이미 복습일이 지난(도래한) 문항은 그대로 두어 누락되지 않게 한다.
+     *  - 새 일정 = 마지막 풀이 시각 + 현재 단계의 새 간격(오답 단계 0 은 첫 간격). 계산 결과가 과거면 지금으로 맞춘다.
+     * 반환: 다시 계산한 문항 수
+     */
+    suspend fun rescheduleUpcoming(intervals: List<Int>, now: Long): Int = db.withTransaction {
+        val all = dao.allQuestionProgress()
+        val changed = all.filter { it.nextReviewAt > now }.map { p ->
+            val days = intervals[(p.stage - 1).coerceIn(0, intervals.lastIndex)]
+            val next = maxOf(now, p.lastAnsweredAt + java.util.concurrent.TimeUnit.DAYS.toMillis(days.toLong()))
+            p.copy(nextReviewAt = next)
+        }
+        if (changed.isNotEmpty()) dao.upsertQuestionProgress(changed)
+        changed.size
+    }
+
+    /** 학습데이터 삭제(설정 → 학습기록 관리). 콘텐츠는 남기고 사용자 기록만 지운 뒤 개념 진도를 초기 상태로 되돌린다. */
+    suspend fun clearAllLearningData(conceptIds: List<String>) = db.withTransaction {
+        dao.clearAttempts(); dao.clearQuestionProgress(); dao.clearWrongNotes(); dao.clearStudyDays(); dao.clearConceptProgress()
+        dao.insertConceptProgressIfAbsent(conceptIds.map { emptyConceptProgress(it) })
+    }
+
     /** 최근 N분 이내에 푼 문항(반복 출제 억제용) */
     suspend fun recentlyAnswered(withinMs: Long, now: Long): Set<String> =
         dao.allQuestionProgress().filter { now - it.lastAnsweredAt < withinMs }.map { it.questionId }.toSet()

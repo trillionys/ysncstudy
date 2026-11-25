@@ -26,7 +26,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun progressDao(): ProgressDao
 
     companion object {
-        const val VERSION = 5
+        const val VERSION = 6
         const val NAME = "cpa_concept_lab.db"
 
         /**
@@ -137,7 +137,37 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
-        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5)
+        /**
+         * v5 → v6 (앱 1.0.7): '재무회계(FA)' 독립 팩 해체 + 간단 요약·상세 학습.
+         *  - 학습기록 테이블(question_attempts·question_progress·concept_progress·wrong_notes·study_days)은 읽지도 쓰지도 않는다.
+         *  - 개념·문항·대단원의 ID 는 그대로 두고 소속 과목(subjectId)만 FA → IA 로 바꾼다.
+         *    (개별 개념의 고급회계 이동·새 대단원·상세 학습 내용은 직후 번들 동기화가 revision 상승분으로 반영한다.)
+         *  - 레거시 FA 과목 행은 삭제하지 않고 비활성·LEGACY 로 표시한다(외래키·백업 호환).
+         *  - 모든 문장은 같은 데이터에 다시 실행해도 결과가 같다(멱등).
+         */
+        val MIGRATION_5_6 = object : Migration(5, 6) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                listOf(
+                    "ALTER TABLE concepts ADD COLUMN `primaryPackId` TEXT",
+                    "ALTER TABLE concepts ADD COLUMN `relatedPackIds` TEXT NOT NULL DEFAULT '[]'",
+                    "ALTER TABLE concepts ADD COLUMN `classificationStatus` TEXT",
+                    "ALTER TABLE concepts ADD COLUMN `legacyPackId` TEXT",
+                    "ALTER TABLE concepts ADD COLUMN `shortSummary` TEXT",
+                    "ALTER TABLE concepts ADD COLUMN `detailSections` TEXT",
+                    "ALTER TABLE concepts ADD COLUMN `detailLevel` TEXT",
+                ).forEach { db.execSQL(it) }
+                // 재분류: 기존 재무회계 개념·문항·대단원을 중급회계 소속으로(ID 유지)
+                db.execSQL("UPDATE concepts SET legacyPackId = 'FA', primaryPackId = 'IA', subjectId = 'IA', classificationStatus = 'CLASSIFIED' WHERE subjectId = 'FA'")
+                db.execSQL("UPDATE concepts SET primaryPackId = subjectId WHERE primaryPackId IS NULL")
+                db.execSQL("UPDATE questions SET subjectId = 'IA' WHERE subjectId = 'FA'")
+                db.execSQL("UPDATE chapters SET subjectId = 'IA' WHERE subjectId = 'FA'")
+                db.execSQL("UPDATE subjects SET isActive = 0, examSubject = 'LEGACY', name = '재무회계(이전됨)' WHERE id = 'FA'")
+                // 목차 메타데이터(콘텐츠 데이터)만 정리: 재무회계 팩 목차는 중급회계 목차로 대체된다
+                db.execSQL("DELETE FROM curriculum_items WHERE subjectId = 'FA'")
+            }
+        }
+
+        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6)
 
         fun build(context: Context): AppDatabase =
             Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, NAME)

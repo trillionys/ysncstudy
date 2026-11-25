@@ -32,6 +32,18 @@ import java.io.File
 class ScreenshotTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
 
+    /** v1.0.7: 최초 실행 시 '학습 콘텐츠 이용 안내'가 뜬다. 확인하면 다시 뜨지 않는다. */
+    private fun acknowledgeNotice() {
+        rule.waitUntil(60_000) {
+            rule.onAllNodesWithText("확인했습니다").fetchSemanticsNodes().isNotEmpty() ||
+                rule.onAllNodesWithText("오늘의 학습").fetchSemanticsNodes().isNotEmpty()
+        }
+        if (rule.onAllNodesWithText("확인했습니다").fetchSemanticsNodes().isNotEmpty()) {
+            rule.onNodeWithText("확인했습니다").performClick()
+            rule.waitUntil(10_000) { rule.onAllNodesWithText("확인했습니다").fetchSemanticsNodes().isEmpty() }
+        }
+    }
+
     private fun waitText(t: String, sub: Boolean = false) =
         rule.waitUntil(60_000) { rule.onAllNodesWithText(t, substring = sub).fetchSemanticsNodes().isNotEmpty() }
 
@@ -51,6 +63,7 @@ class ScreenshotTest {
 
     // v6: 홈 → 세법개론 상세(세율표 데이터 카드, 법률 단원별 진도, 기본·심화·계산 정답률)
     @Test fun captureTaxSubject() {
+        acknowledgeNotice()
         waitText("전체 학습현황")
         rule.onNode(androidx.compose.ui.test.hasText("세법개론") and androidx.compose.ui.test.hasClickAction()).performScrollTo().performClick()
         waitText("세율표", sub = true)
@@ -64,6 +77,7 @@ class ScreenshotTest {
 
     // 문제 풀이 도구: 계산문제의 계산기(답에 넣기)와 모든 문제의 투명 필기
     @Test fun calculatorAndInkOnQuestions() {
+        acknowledgeNotice()
         waitText("전체 학습현황")
         rule.onNode(androidx.compose.ui.test.hasText("세법개론") and androidx.compose.ui.test.hasClickAction()).performScrollTo().performClick()
         waitText("세율표", sub = true)
@@ -93,7 +107,33 @@ class ScreenshotTest {
         waitText("필기 (1)")
     }
 
+    // v1.0.7 시나리오: 중급회계 → 유형자산 단원 문제 풀기(난이도·유형 선택) / 감가상각 상세 학습(공식·분개)
+    @Test fun unitDifficultyAndDepreciationDetail() {
+        acknowledgeNotice()
+        tab("과목")
+        waitText("중급회계")
+        rule.onNodeWithText("중급회계").performClick()
+        waitText("유형자산")
+        rule.onNode(androidx.compose.ui.test.hasScrollToNodeAction()).performScrollToNode(androidx.compose.ui.test.hasText("유형자산"))
+        // 유형자산 파트 카드의 '문제 풀기' → 난이도·유형 시트
+        val partButtons = rule.onAllNodes(androidx.compose.ui.test.hasText("문제 풀기") and androidx.compose.ui.test.hasClickAction())
+        val idx = (0 until partButtons.fetchSemanticsNodes().size).first { i ->
+            runCatching { partButtons[i].assertExists(); true }.getOrDefault(false)
+        }
+        partButtons[idx].performScrollTo().performClick()
+        rule.waitUntil(30_000) { rule.onAllNodes(androidx.compose.ui.test.hasTestTag("start-quiz-sheet")).fetchSemanticsNodes().isNotEmpty() }
+        rule.onNode(androidx.compose.ui.test.hasText("어려움") and androidx.compose.ui.test.hasClickAction()).performClick()
+        rule.onNode(androidx.compose.ui.test.hasTestTag("start-quiz-count")).assert(androidx.compose.ui.test.hasText("출제 가능한 문제", substring = true))
+        shot("09_unit_sheet")
+        rule.onNode(androidx.compose.ui.test.hasTestTag("start-quiz-button")).performClick()
+        waitText("어려움")
+        shot("09b_unit_quiz_hard")
+        rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
+        waitText("문제 풀기")
+    }
+
     @Test fun captureMainScreens() {
+        acknowledgeNotice()
         waitText("오늘의 학습")
         // v5: 홈에는 공식 시험과목별 '전체 학습현황'이 있고 '기출범위별 학습현황'은 없다
         waitText("전체 학습현황")
@@ -116,8 +156,10 @@ class ScreenshotTest {
         rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
         waitText("오늘의 학습")
         tab("과목")
-        waitText("재무회계")
-        rule.onNodeWithText("재무회계").performClick()
+        // v7: '재무회계' 독립 팩은 없고 중급회계로 통합되었다
+        waitText("중급회계")
+        assertTrue(rule.onAllNodesWithText("재무회계").fetchSemanticsNodes().isEmpty())
+        rule.onNodeWithText("중급회계").performClick()
         waitText("유형자산")
         shot("04a_part_cards")
         rule.onNode(androidx.compose.ui.test.hasScrollToNodeAction())
@@ -126,8 +168,12 @@ class ScreenshotTest {
         waitText("목적적합성")
         shot("04_subject_tree")
         rule.onNode(androidx.compose.ui.test.hasText("목적적합성") and androidx.compose.ui.test.hasClickAction()).performScrollTo().performClick()
-        waitText("① 정확한 정의")
-        shot("05_concept")
+        waitText("간단 요약")
+        waitText("상세 학습", sub = true)
+        shot("05_concept_summary")
+        rule.onNode(androidx.compose.ui.test.hasText("상세 학습", substring = true) and androidx.compose.ui.test.hasClickAction()).performClick()
+        waitText("개념의 정의")
+        shot("05b_concept_detail")
         rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
         rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
         waitText("통계")
@@ -139,7 +185,7 @@ class ScreenshotTest {
         shot("07_wrong_notes")
         // v4: 기업법 과목 화면(학습 모드 2종·조문 커버리지)
         tab("과목")
-        waitText("재무회계")
+        waitText("중급회계")
         rule.onNode(androidx.compose.ui.test.hasScrollToNodeAction()).performScrollToNode(androidx.compose.ui.test.hasText("기업법"))
         rule.onNodeWithText("기업법").performClick()
         waitText("학습 모드")

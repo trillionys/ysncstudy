@@ -10,6 +10,7 @@ import com.cpaconceptlab.study.data.backup.BackupKind
 import com.cpaconceptlab.study.data.backup.BackupManager
 import com.cpaconceptlab.study.data.backup.RestoreMode
 import com.cpaconceptlab.study.data.importer.ContentImporter
+import com.cpaconceptlab.study.data.importer.detailSectionList
 import com.cpaconceptlab.study.data.local.AppDatabase
 import com.cpaconceptlab.study.data.model.BLANK_TOKEN
 import com.cpaconceptlab.study.data.model.ContentJson
@@ -351,7 +352,9 @@ class DatabaseTest {
         assertEquals(42, snap.problemSources.size)
         assertTrue(snap.scopeItems.size >= 700)
         assertEquals("재고자산", snap.chapterById["FA-L"]!!.partTitle)
-        assertEquals("개념체계와 재무제표 표시", snap.chapterById["FA-D"]!!.partTitle)
+        // v7: 기존 재무회계 대단원은 중급회계 '제1부 재무회계의 기초'로 재분류(대단원 ID 유지)
+        assertEquals("제1부 재무회계의 기초", snap.chapterById["FA-D"]!!.partTitle)
+        assertEquals("IA", snap.chapterById["FA-D"]!!.subjectId)
         assertTrue(snap.questions.any { it.inputType == "choice" } && snap.questions.any { it.inputType == "slots" })
         assertTrue(snap.questions.any { it.calcFormulaId != null })
 
@@ -471,7 +474,9 @@ class DatabaseTest {
         val migrated = Room.databaseBuilder(ctx, AppDatabase::class.java, name)
             .addMigrations(*AppDatabase.MIGRATIONS).allowMainThreadQueries().build()
         assertEquals(setOf("FA", "CPA-LAW"), migrated.contentDao().subjects().map { it.id }.toSet())
-        assertTrue(migrated.contentDao().subjects().all { it.examSubject == "" })
+        // 4→5→6: FA 행은 삭제되지 않고 레거시(비활성)로 남는다
+        assertEquals("LEGACY", migrated.contentDao().subjects().single { it.id == "FA" }.examSubject)
+        assertEquals("", migrated.contentDao().subjects().single { it.id == "CPA-LAW" }.examSubject)
         assertTrue(migrated.contentDao().curriculumItems().isEmpty())
 
         val repo = ContentRepository(migrated, BundledAssetContentSource(ctx.assets))
@@ -479,7 +484,11 @@ class DatabaseTest {
         assertNotNull(r); assertTrue(r!!.message, r.success)
         val snap = repo.snapshot.value!!
         assertEquals(TestContent.manifest.conceptCount, snap.concepts.size)
-        assertEquals(listOf("FA", "IA", "AA", "CM", "GA", "FM", "HR", "EC", "CPA-LAW", "TX"), snap.subjects.sortedBy { it.sortOrder }.map { it.id })
+        // v7: 재무회계(FA)는 레거시(비활성·LEGACY)로 맨 뒤, 사용자 화면에는 표시하지 않는다
+        assertEquals(listOf("IA", "AA", "CM", "GA", "FM", "HR", "EC", "CPA-LAW", "TX", "FA"), snap.subjects.sortedBy { it.sortOrder }.map { it.id })
+        val fa = snap.subjects.single { it.id == "FA" }
+        assertFalse(fa.isActive); assertEquals("LEGACY", fa.examSubject)
+        assertTrue(snap.concepts.none { it.subjectId == "FA" })
         assertEquals("ACC", snap.subjects.single { it.id == "CM" }.examSubject)
         assertTrue(snap.subjects.single { it.id == "FM" }.isActive)
         assertTrue(snap.subjects.single { it.id == "TX" }.isActive)   // v6: 세법개론 활성
@@ -497,6 +506,118 @@ class DatabaseTest {
         repo.syncBundled()
         assertEquals(TestContent.manifest.questionCount, migrated.contentDao().questions().size)
         assertEquals(snap.curriculumItems.size, migrated.contentDao().curriculumItems().size)
+        migrated.close()
+        ctx.deleteDatabase(name)
+    }
+
+    /**
+     * v1.0.7 핵심 검증: DB 5 → 6 + 콘텐츠 v7 동기화에서 '재무회계(FA)' 팩 해체.
+     * 픽스처 = 1.0.6(git HEAD) 실제 재무회계 콘텐츠(대단원 17·중단원 96·개념 462·문항 1,127, revision 2).
+     * 모든 FA 문항에 풀이기록을 만들고 352개 개념을 학습 완료 상태로 둔 뒤, 업데이트 후 기록이 1건도 바뀌지 않았는지 확인한다.
+     */
+    @Test fun migration5To6ReclassifiesFinancialAccountingWithoutLosingRecords() = runBlocking<Unit> {
+        val fixture = Json.parseToJsonElement(File("src/test/resources/pre_v7_fa_fixture.json").readText()).jsonObject
+        fun arr(k: String) = fixture[k]!!.jsonArray.map { it.jsonObject }
+        fun JsonObject.str(k: String) = this[k]!!.jsonPrimitive.content
+        val chapters = arr("chapters"); val sections = arr("sections"); val concepts = arr("concepts"); val questions = arr("questions")
+        assertEquals(listOf(17, 96, 462, 1127), listOf(chapters.size, sections.size, concepts.size, questions.size))
+
+        val name = "migration56-test.db"
+        val (helper, v5) = createDbFromSchema(name, 5)
+        helper.writableDatabase.apply {
+            beginTransaction()
+            execSQL(insertSql(v5, "subjects", mapOf("id" to "FA", "name" to "재무회계", "description" to "", "sortOrder" to 1, "isActive" to 1, "examSubject" to "ACC")))
+            execSQL(insertSql(v5, "content_versions", mapOf("version" to 6, "source" to "bundled", "packId" to "fa", "importedAt" to 1,
+                "conceptCount" to 1005, "questionCount" to 2956)))
+            chapters.forEach { c -> execSQL(insertSql(v5, "chapters", mapOf("id" to c.str("id"), "code" to c.str("code"), "subjectId" to "FA",
+                "title" to c.str("title"), "englishTitle" to c.str("englishTitle"), "sortOrder" to c.str("sortOrder").toInt(), "partTitle" to c.str("partTitle")))) }
+            sections.forEach { x -> execSQL(insertSql(v5, "sections", mapOf("id" to x.str("id"), "chapterId" to x.str("chapterId"), "title" to x.str("title"), "sortOrder" to x.str("sortOrder").toInt()))) }
+            concepts.forEachIndexed { i, x ->
+                execSQL(insertSql(v5, "concepts", mapOf("id" to x.str("id"), "subjectId" to "FA", "chapterId" to x.str("chapterId"), "sectionId" to x.str("sectionId"),
+                    "koreanName" to x.str("koreanName"), "definition" to x.str("definition"), "reviewStatus" to "REVIEWED", "isRequired" to 1, "isActive" to 1,
+                    "revision" to x.str("revision").toInt(), "sortOrder" to x.str("sortOrder").toInt(), "contentVersion" to 2, "verificationStatus" to "AUTHOR_REVIEWED")))
+                // 352개 개념 학습 완료(열람 + 기본 정답 + 심화 정답), 나머지는 진행 중, 일부는 북마크·메모
+                val done = i < 352
+                execSQL(insertSql(v5, "concept_progress", mapOf("conceptId" to x.str("id"), "firstStudiedAt" to 1000 + i, "lastStudiedAt" to 2000 + i,
+                    "viewCount" to if (done) 2 else 1, "basicAttemptCount" to 3, "basicCorrectCount" to 2, "advancedAttemptCount" to if (done) 2 else 1,
+                    "advancedCorrectCount" to if (done) 1 else 0, "masteryLevel" to if (done) "ADVANCED_MASTERED" else "BASIC_PRACTICING",
+                    "nextReviewAt" to 9_000_000L + i, "isBookmarked" to (i % 10 == 0), "memo" to if (i % 25 == 0) "메모 $i" else "")))
+            }
+            questions.forEachIndexed { i, x ->
+                val qid = x.str("id")
+                execSQL(insertSql(v5, "questions", mapOf("id" to qid, "primaryConceptId" to x.str("primaryConceptId"), "conceptIds" to "[\"${x.str("primaryConceptId")}\"]",
+                    "subjectId" to "FA", "chapterId" to x.str("chapterId"), "questionType" to x.str("questionType"), "questionText" to "(______)",
+                    "blankAnswer" to x.str("blankAnswer"), "acceptedAnswers" to "[]", "difficulty" to x.str("difficulty").toInt(), "reviewStatus" to "REVIEWED",
+                    "isActive" to 1, "revision" to x.str("revision").toInt(), "sortOrder" to x.str("sortOrder").toInt(), "contentVersion" to 2,
+                    "inputType" to x.str("inputType"), "choices" to "[]", "slotLabels" to "[]", "slotAnswers" to "[]", "sourceProblemIds" to "[]")))
+                // 모든 FA 문항에 풀이기록: 시도 3회(정답 2·오답 1) + 심화 1회
+                val ok = i % 3 != 0
+                execSQL("INSERT INTO question_attempts (questionId, mode, userAnswer, isCorrect, attemptedAt, responseTimeMs) VALUES ('$qid','BASIC','a',1,${10_000 + i},3000)")
+                execSQL("INSERT INTO question_attempts (questionId, mode, userAnswer, isCorrect, attemptedAt, responseTimeMs) VALUES ('$qid','BASIC','b',0,${20_000 + i},4000)")
+                execSQL("INSERT INTO question_attempts (questionId, mode, userAnswer, isCorrect, attemptedAt, responseTimeMs) VALUES ('$qid','BASIC','c',1,${30_000 + i},5000)")
+                execSQL("INSERT INTO question_progress VALUES ('$qid','BASIC',10000,3,2,1,1,${30_000 + i},1,12000,2,${50_000_000L + i},0.6)")
+                execSQL("INSERT INTO question_attempts (questionId, mode, userAnswer, isCorrect, attemptedAt, responseTimeMs) VALUES ('$qid','ADVANCED','d',${if (ok) 1 else 0},${40_000 + i},6000)")
+                execSQL("INSERT INTO question_progress VALUES ('$qid','ADVANCED',40000,1,${if (ok) 1 else 0},${if (ok) 0 else 1},${if (ok) 1 else 0},${40_000 + i},${if (ok) 1 else 0},6000,${if (ok) 1 else 0},${60_000_000L + i},0.5)")
+                if (!ok) execSQL("INSERT INTO wrong_notes VALUES ('$qid','ADVANCED','d',1,${40_000 + i},${40_000 + i},0,NULL)")
+            }
+            execSQL("INSERT INTO study_days VALUES (20500, 4508, 3005, 9999)")
+            setTransactionSuccessful(); endTransaction()
+            close()
+        }
+
+        val migrated = Room.databaseBuilder(ctx, AppDatabase::class.java, name).addMigrations(*AppDatabase.MIGRATIONS).allowMainThreadQueries().build()
+        val pd = migrated.progressDao()
+        val beforeAttempts = pd.allAttempts(); val beforeQp = pd.allQuestionProgress().toSet(); val beforeCp = pd.allConceptProgress().toSet()
+        val beforeWrong = pd.allWrongNotes().toSet(); val beforeDays = pd.allStudyDays()
+        assertEquals(1127 * 4, beforeAttempts.size)
+        // 마이그레이션 직후(동기화 전): ID 유지, 소속만 IA, FA 행은 레거시로 남음
+        assertTrue(migrated.contentDao().concepts().none { it.subjectId == "FA" })
+        assertEquals(462, migrated.contentDao().concepts().count { it.legacyPackId == "FA" })
+        assertEquals("LEGACY", migrated.contentDao().subjects().single { it.id == "FA" }.examSubject)
+
+        // 새 APK 첫 실행 동기화(v7)
+        val repo = ContentRepository(migrated, BundledAssetContentSource(ctx.assets))
+        val r = repo.syncBundled()
+        assertNotNull(r); assertTrue(r!!.message, r.success)
+        val snap = repo.snapshot.value!!
+        val faIds = concepts.map { it.str("id") }.toSet()
+        val faQ = questions.map { it.str("id") }.toSet()
+        // 모든 기존 개념·문항이 그대로 존재(ID 유지) — 유실 0
+        assertEquals(faIds, snap.allConcepts.filter { it.id in faIds }.map { it.id }.toSet())
+        assertEquals(faQ, snap.allQuestions.filter { it.id in faQ && it.isActive }.map { it.id }.toSet())
+        // 새 소속: 중급회계 459 · 고급회계 3(B13~B15, AA-A) · 정부회계 0 · 재무회계 0
+        val bySubject = snap.allConcepts.filter { it.id in faIds }.groupingBy { it.subjectId }.eachCount()
+        assertEquals(mapOf("IA" to 459, "AA" to 3), bySubject)
+        listOf("B13", "B14", "B15").forEach { assertEquals("AA-A", snap.conceptById[it]!!.chapterId) }
+        assertTrue(snap.allQuestions.filter { it.id in faQ }.none { it.subjectId == "FA" })
+        assertEquals("제1부 재무회계의 기초", snap.chapterById["FA-A"]!!.partTitle)
+        // 간단 요약(기존 정의 보존) + 상세 학습
+        val p037 = snap.conceptById["P037"]!!
+        assertTrue(p037.shortSummary!!.contains(concepts.first { it.str("id") == "P037" }.str("definition")))
+        assertTrue(p037.detailSectionList().any { it.source == "AUTHORED_V7" && it.journal.isNotEmpty() })
+
+        // 학습기록: 1건도 바뀌지 않음(풀이·정답·오답 횟수, 복습일, 오답노트, 북마크·메모, 학습일)
+        assertEquals(beforeAttempts, pd.allAttempts())
+        assertEquals(beforeQp, pd.allQuestionProgress().filter { it.questionId in faQ }.toSet())
+        assertEquals(beforeCp, pd.allConceptProgress().filter { it.conceptId in faIds }.toSet())
+        assertEquals(beforeWrong, pd.allWrongNotes().toSet())
+        assertEquals(beforeDays, pd.allStudyDays())
+        assertEquals(1127 * 4, pd.attemptCount())
+        assertEquals(beforeAttempts.count { it.isCorrect }, pd.allAttempts().count { it.isCorrect })
+        // 진도: 기존 학습 완료 352개가 새 구조(중급·고급회계)에서도 그대로 집계되고 중복 없음
+        val user = StudyRepository(migrated).currentSnapshot()
+        val acc = com.cpaconceptlab.study.domain.usecase.ExamSubjectProgress.summary(snap, user).single { it.id == "ACC" }
+        assertEquals(352, acc.completedConcepts)
+        val packs = com.cpaconceptlab.study.domain.usecase.ExamSubjectProgress.detail("ACC", snap, user).packs
+        assertEquals(352, packs.sumOf { it.stat.completedConcepts })
+        assertTrue(packs.none { it.stat.id == "FA" })
+
+        // 반복 동기화해도 중복·변경 없음(멱등)
+        migrated.openHelper.writableDatabase.execSQL("UPDATE content_versions SET version = 6")
+        repo.syncBundled()
+        assertEquals(TestContent.manifest.questionCount, migrated.contentDao().questions().count { it.isActive })
+        assertEquals(beforeAttempts, pd.allAttempts())
+        assertEquals(beforeCp, pd.allConceptProgress().filter { it.conceptId in faIds }.toSet())
         migrated.close()
         ctx.deleteDatabase(name)
     }

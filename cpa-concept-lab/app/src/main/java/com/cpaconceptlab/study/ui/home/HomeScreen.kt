@@ -1,5 +1,6 @@
 package com.cpaconceptlab.study.ui.home
 
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.clip
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.LinearProgressIndicator
@@ -45,10 +46,10 @@ fun HomeScreen(
     onStartQuiz: (QuizMode, QuizScope) -> Unit,
     onOpenSetup: () -> Unit,
     onOpenExamSubject: (String) -> Unit,
+    onOpenGoal: () -> Unit = {},
 ) {
     val ov = dash.overview
     val status = LocalStatusColors.current
-    val recommended = maxOf(settings.dailyGoal, ov.dueQuestions.coerceAtMost(settings.dailyGoal * 2))
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         OverallProgressCard(dash, onOpenExamSubject)
         VSpace(12)
@@ -60,11 +61,11 @@ fun HomeScreen(
             }
             VSpace(8)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                StatTile("오늘 푼 문제", "${ov.todaySolved}", Modifier.weight(1f), sub = "권장 ${recommended}문항")
+                StatTile("오늘 푼 문제", "${ov.todayUniqueSolved}", Modifier.weight(1f), sub = "제출 ${ov.todaySolved}회")
                 StatTile("연속 학습일", "${ov.streak}일", Modifier.weight(1f))
             }
             VSpace(10)
-            ProgressLine("오늘 목표 달성", ov.todaySolved.coerceAtMost(recommended), recommended)
+            DailyGoalLine(settings, ov.todayUniqueSolved, onOpenGoal)
         }
         VSpace(12)
 
@@ -143,5 +144,31 @@ fun ExamSubjectRow(st: ExamSubjectProgress.Stat, onClick: (() -> Unit)?) {
                     style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
+    }
+}
+
+
+/** 오늘의 문제 목표 진행률. 목표를 넘겨도 계속 풀 수 있고(초과 % 표시), 무제한이면 푼 문제 수만 표시한다. */
+@Composable
+fun DailyGoalLine(settings: UserSettings, solved: Int, onOpenGoal: () -> Unit) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Column(Modifier.weight(1f).testTag("daily-goal")) {
+            if (settings.goalUnlimited) {
+                Text("오늘 학습: ${"%,d".format(solved)}문제", style = MaterialTheme.typography.titleSmall)
+                Text("자유 학습 중", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            } else {
+                val goal = settings.dailyGoal.coerceAtLeast(1)
+                val rate = solved * 100.0 / goal
+                Text("오늘 목표 ${"%,d".format(goal)}문제 · 푼 문제 ${"%,d".format(solved)}문제", style = MaterialTheme.typography.titleSmall)
+                Text(if (solved >= goal) "목표 달성: ${"%.1f".format(rate)}%" else "달성률: ${"%.1f".format(rate)}%",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = if (solved >= goal) LocalStatusColors.current.correct else MaterialTheme.colorScheme.onSurfaceVariant)
+                VSpace(4)
+                androidx.compose.material3.LinearProgressIndicator(
+                    progress = { (solved.toFloat() / goal).coerceIn(0f, 1f) }, modifier = Modifier.fillMaxWidth(), drawStopIndicator = {},
+                )
+            }
+        }
+        androidx.compose.material3.TextButton(onClick = onOpenGoal) { Text("목표 변경") }
     }
 }

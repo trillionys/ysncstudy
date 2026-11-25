@@ -47,7 +47,11 @@ data class QuizUiState(
     val finished: Boolean = false,
     val history: List<Pair<QuestionEntity, AnswerResult>> = emptyList(),
     val emptyReason: String? = null,
+    /** 세션 후반에 다시 출제하도록 뒤에 붙인 오답 문항 ID */
+    val requeued: Set<String> = emptySet(),
 ) {
+    /** 이 문항이 세션 후반 재출제분인지 */
+    val isRetry: Boolean get() = current?.id in requeued && questions.indexOfFirst { it.id == current?.id } != index
     val current: QuestionEntity? get() = questions.getOrNull(index)
     val accuracy: Double? get() = if (answeredCount == 0) null else correctCount.toDouble() / answeredCount
     /** 기본 모드 세션을 80% 이상 맞히면 같은 범위의 심화 모드로 넘어가도록 제안한다. */
@@ -98,7 +102,7 @@ class QuizViewModel(
                 it.copy(
                     loading = false,
                     questions = picked,
-                    emptyReason = if (picked.isEmpty()) emptyMessage(scope.type) else null,
+                    emptyReason = if (picked.isEmpty()) emptyMessage(scope) else null,
                 )
             }
         }
@@ -141,6 +145,11 @@ class QuizViewModel(
                 correctCount = it.correctCount + if (res.isCorrect) 1 else 0,
                 answeredCount = it.answeredCount + 1,
                 history = it.history + (q to res),
+                // 오답은 세션 후반에 한 번 더 출제(같은 문항은 1회만, 최대 MAX_REQUEUE개). 학습기록은 그대로 누적된다.
+                questions = if (!res.isCorrect && it.requeued.size < MAX_REQUEUE && q.id !in it.requeued && it.scope.type != ScopeType.WEIGHTED)
+                    it.questions + q else it.questions,
+                requeued = if (!res.isCorrect && it.requeued.size < MAX_REQUEUE && q.id !in it.requeued && it.scope.type != ScopeType.WEIGHTED)
+                    it.requeued + q.id else it.requeued,
             )
         }
         viewModelScope.launch(Dispatchers.IO) {
@@ -166,7 +175,9 @@ class QuizViewModel(
         questionShownAt = System.currentTimeMillis()
     }
 
-    private fun emptyMessage(type: ScopeType) = when (type) {
+    private fun emptyMessage(scope: QuizScope) = when (scope.type) {
+        ScopeType.PART, ScopeType.CHAPTER, ScopeType.SECTION, ScopeType.CONCEPT, ScopeType.SUBJECT ->
+            if (scope.hasFilter) UNIT_EMPTY else "이 단원에는 아직 학습할 문제가 없습니다."
         ScopeType.WRONG -> "현재 모드에서 미해결 오답이 없습니다."
         ScopeType.DUE -> "오늘 복습할 문항이 없습니다."
         ScopeType.UNSTUDIED -> "모든 개념을 학습했습니다."
@@ -222,11 +233,20 @@ class QuizViewModel(
                     QuestionKind.BLANK -> q.inputType == INPUT_TEXT && q.questionType != "calculation"
                     QuestionKind.CALC -> q.questionType == "calculation"
                     QuestionKind.OPTIONS -> q.inputType != INPUT_TEXT
+                    QuestionKind.CHOSUNG, QuestionKind.PLAIN -> q.inputType == INPUT_TEXT && q.questionType !in setOf("calculation", "number")
+                    QuestionKind.SHORT -> q.inputType == INPUT_TEXT && q.questionType == "number"
+                    QuestionKind.CHOICE -> q.inputType == INPUT_CHOICE
+                    QuestionKind.MATCHING -> q.inputType == INPUT_SLOTS && q.questionType !in setOf("classification", "order")
+                    QuestionKind.CLASSIFY -> q.inputType == INPUT_SLOTS && q.questionType == "classification"
+                    QuestionKind.ORDER -> q.inputType == INPUT_SLOTS && q.questionType == "order"
                 }
             }
         }
 
         const val LAW_SUBJECT = "CPA-LAW"
+        const val UNIT_EMPTY = "이 단원에는 선택한 난이도의 문제가 아직 없습니다."
+        /** 오답 문항을 같은 세션 후반에 한 번 더 내는 최대 개수(세션이 지나치게 길어지지 않게) */
+        const val MAX_REQUEUE = 5
         val NOT_STUDYABLE = setOf("DRAFT", "NEEDS_REVIEW")
 
         /** 실전 비중 모의의 영역별 배정 문항 수(공고 비중 기준 40문항: 기업법·세법개론) */

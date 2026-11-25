@@ -31,7 +31,7 @@ object ExamSubjectProgress {
 
     /** examSubject 컬럼이 비어 있는 이전 데이터용 기본 매핑 */
     private val FALLBACK = mapOf(
-        "FA" to "ACC", "IA" to "ACC", "AA" to "ACC", "CM" to "ACC", "GA" to "ACC",
+        "IA" to "ACC", "AA" to "ACC", "CM" to "ACC", "GA" to "ACC",
         "FM" to "BUS", "HR" to "BUS", "EC" to "ECO", "CPA-LAW" to "LAW", "TX" to "TAX",
     )
 

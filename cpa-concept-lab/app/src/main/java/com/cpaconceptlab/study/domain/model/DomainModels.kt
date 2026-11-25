@@ -36,15 +36,43 @@ enum class ScopeType(val label: String) {
     }
 }
 
-/** 문항 형식 필터 */
+/** 문항 형식 필터. v1.0.7: 단원별 학습에서 고를 수 있도록 세분화(OX 형식은 없다). */
 enum class QuestionKind(val label: String) {
     ALL("모든 유형"),
     BLANK("빈칸만"),
-    CALC("계산만"),
-    OPTIONS("선택·매칭·분류");
+    CALC("계산형"),
+    OPTIONS("선택·매칭·분류"),
+    /** 초성 힌트가 있는 빈칸 — 기본 모드로 출제 */
+    CHOSUNG("초성 빈칸"),
+    /** 힌트 없는 빈칸 — 심화 모드로 출제 */
+    PLAIN("일반 빈칸"),
+    /** 숫자·기간 등 짧게 답하는 단답형 */
+    SHORT("단답형"),
+    CHOICE("4지선다"),
+    MATCHING("매칭형"),
+    CLASSIFY("분류형"),
+    ORDER("순서 배열형");
 
     companion object {
         fun of(name: String?): QuestionKind = entries.firstOrNull { it.name == name } ?: ALL
+    }
+}
+
+/**
+ * 난이도 묶음(문항 difficulty 1~5 와 연결). 초성 힌트 여부(모드)와는 별개다.
+ *  쉬움 = Level 1(정의·핵심 용어·기본 공식) / 보통 = Level 2(비교·간단 사례·기본 계산)
+ *  어려움 = Level 3(여러 개념 연결·예외 판단·응용) / 실전 = Level 4~5(복합 조건·다단계 계산, 문항별 시간 표시)
+ */
+enum class Difficulty(val label: String, val min: Int, val max: Int, val description: String) {
+    ALL("전체 난이도", 1, 5, "선택한 범위의 모든 난이도를 골고루"),
+    EASY("쉬움", 1, 1, "정의·핵심 용어·기본 공식·단일 개념"),
+    MEDIUM("보통", 2, 2, "유사 개념 비교·간단한 사례·기본 계산"),
+    HARD("어려움", 3, 3, "여러 개념 연결·예외 판단·회계처리 응용"),
+    EXAM("실전", 4, 5, "CPA 객관식 수준의 복합 조건·계산 응용(시간 측정)");
+
+    companion object {
+        fun of(name: String?): Difficulty = entries.firstOrNull { it.name == name } ?: ALL
+        fun ofRange(min: Int, max: Int): Difficulty? = entries.firstOrNull { it.min == min && it.max == max }
     }
 }
 

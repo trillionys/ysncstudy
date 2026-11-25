@@ -48,6 +48,11 @@ import com.cpaconceptlab.study.ui.components.VSpace
 import com.cpaconceptlab.study.ui.components.pct
 import java.time.LocalDate
 import com.cpaconceptlab.study.data.local.ConceptEntity
+import com.cpaconceptlab.study.data.importer.detailSectionList
+import com.cpaconceptlab.study.ui.common.ContentNotice
+import com.cpaconceptlab.study.ui.common.ErrorReportDialog
+import androidx.compose.material3.Tab
+import androidx.compose.material3.TabRow
 import com.cpaconceptlab.study.data.repository.ContentSnapshot
 import com.cpaconceptlab.study.domain.model.LawApplicability
 import com.cpaconceptlab.study.ui.components.Pill
@@ -64,6 +69,12 @@ fun ConceptScreen(
     onSaveMemo: (String, String) -> Unit,
     onOpenConcept: (String) -> Unit,
     onStartQuiz: (QuizMode, QuizScope) -> Unit,
+    initialTab: String = "SUMMARY",
+    onTabChange: (String) -> Unit = {},
+    /** 문제풀이 화면에서 들어온 경우 '문제로 돌아가기'(세션은 뒤 화면에 그대로 남아 있다) */
+    onBackToQuiz: (() -> Unit)? = null,
+    appVersion: String = "",
+    onStartUnitQuiz: ((QuizScope, String) -> Unit)? = null,
 ) {
     val c = dash.content.conceptById[conceptId]
     if (c == null) { EmptyState("개념을 찾을 수 없습니다: $conceptId"); return }
@@ -83,7 +94,13 @@ fun ConceptScreen(
     val unresolvedWrong = dash.user.wrongNotes.count { !it.isResolved && it.questionId in linkedIds }
 
     Column(Modifier.fillMaxSize().verticalScroll(scroll).padding(16.dp)) {
-        Text("${chapter?.code}. ${chapter?.title} › ${section?.title}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        val subjectName = dash.content.subjects.firstOrNull { it.id == c.subjectId }?.name ?: c.subjectId
+        Text("$subjectName › ${chapter?.partTitle?.ifBlank { null }?.let { "$it › " }.orEmpty()}${chapter?.code}. ${chapter?.title} › ${section?.title}",
+            style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        if (onBackToQuiz != null) {
+            VSpace(4)
+            Button(onClick = onBackToQuiz, modifier = Modifier.fillMaxWidth()) { Text("← 문제로 돌아가기") }
+        }
         VSpace(4)
         // 1. 개념명(국문·영문)
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -134,35 +151,20 @@ fun ConceptScreen(
             LawInfoCard(c, dash.content)
             VSpace(12)
         }
-        SectionCard(modifier = Modifier.onGloballyPositioned { explanationY = it.positionInParent().y.toInt() }) {
-            if (isLaw) {
-                InfoBlock("① 법률상 정확한 의미", c.definition, emphasize = true)
-                InfoBlock("② 쉬운 설명", c.whyItMatters)
-                c.recognitionRules?.let { InfoBlock("③ 요건", it) }
-                c.measurementRules?.let { InfoBlock("④ 법률효과", it) }
-                c.exceptions?.let { InfoBlock("⑤ 예외", it) }
-                c.caseLaw?.let { InfoBlock("⑥ 판례 법리 (사건번호 미기재 · 판례 원문 미대조)", it) }
-                InfoBlock("⑦ 비교 개념", c.comparison)
-                InfoBlock("⑧ 간단한 사례", c.example)
-                c.formula?.let { InfoBlock("⑨ 숫자·기간·정족수", it) }
-                InfoBlock("⑩ 출제 포인트", c.examTips)
-                InfoBlock("⑪ 함정", c.commonMistakes)
-            } else {
-                InfoBlock("① 정확한 정의", c.definition, emphasize = true)
-                InfoBlock("② 개념이 필요한 이유", c.whyItMatters)
-                InfoBlock("③ 핵심 원리", c.detailedExplanation)
-                InfoBlock("④ 유사 개념과의 차이", c.comparison)
-                InfoBlock("⑤ 실제 회계 사례", c.example)
-                InfoBlock("⑥ 공식과 계산과정", c.formula ?: "해당 없음 — 계산이 필요한 개념이 아닙니다.")
-                InfoBlock("⑦ CPA 출제 포인트", c.examTips)
-                InfoBlock("⑧ 자주 틀리는 함정", c.commonMistakes)
-                c.recognitionRules?.let { InfoBlock("인식 요건", it) }
-                c.measurementRules?.let { InfoBlock("측정 기준", it) }
-                c.exceptions?.let { InfoBlock("예외", it) }
-                c.journalEntries?.let { InfoBlock("분개", it) }
-            }
+        // 간단 요약 / 상세 학습 탭(마지막으로 본 탭을 기억)
+        var tab by remember(conceptId) { mutableStateOf(if (initialTab == "DETAIL") 1 else 0) }
+        val sections = remember(c.id, c.detailSections) { c.detailSectionList() }
+        TabRow(selectedTabIndex = tab, modifier = Modifier.onGloballyPositioned { explanationY = it.positionInParent().y.toInt() }) {
+            Tab(selected = tab == 0, onClick = { tab = 0; onTabChange("SUMMARY") }, text = { Text("간단 요약") })
+            Tab(selected = tab == 1, onClick = { tab = 1; onTabChange("DETAIL") }, text = { Text("상세 학습 (${sections.size})") })
+        }
+        VSpace(8)
+        SectionCard {
+            if (tab == 0) SummaryTab(c) else DetailTab(c, sections)
             if (c.sourceProblemIds.isNotEmpty()) InfoBlock("연결된 원본 문제", c.sourceProblemIds.joinToString(", "))
         }
+        VSpace(12)
+        SourceCard(c)
         VSpace(12)
 
         // 관련 개념
@@ -194,6 +196,23 @@ fun ConceptScreen(
                 Button(onClick = { onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.CONCEPT, c.id)) }, modifier = Modifier.weight(1f)) { Text("기본 문제 (초성)") }
                 OutlinedButton(onClick = { onStartQuiz(QuizMode.ADVANCED, QuizScope(ScopeType.CONCEPT, c.id)) }, modifier = Modifier.weight(1f)) { Text("심화 문제") }
             }
+        }
+        VSpace(12)
+        // 하단 동작: 관련 문제 풀기 · 다음 개념 · 북마크 · 오류 신고
+        val siblings = dash.content.concepts.filter { it.chapterId == c.chapterId }.sortedBy { it.sortOrder }
+        val next = siblings.getOrNull(siblings.indexOfFirst { it.id == c.id } + 1)
+        var reporting by remember { mutableStateOf(false) }
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Button(onClick = {
+                if (onStartUnitQuiz != null) onStartUnitQuiz(QuizScope(ScopeType.CONCEPT, c.id), c.koreanName)
+                else onStartQuiz(QuizMode.BASIC, QuizScope(ScopeType.CONCEPT, c.id))
+            }) { Text("관련 문제 풀기") }
+            OutlinedButton(onClick = { next?.let { onOpenConcept(it.id) } }, enabled = next != null) { Text("다음 개념 ›") }
+            OutlinedButton(onClick = { onToggleBookmark(conceptId) }) { Text(if (cp?.isBookmarked == true) "★ 북마크됨" else "☆ 북마크") }
+            OutlinedButton(onClick = { reporting = true }) { Text("오류 신고") }
+        }
+        if (reporting) {
+            ErrorReportDialog(c.id, c.koreanName, null, dash.content.bundledVersion, appVersion, onDismiss = { reporting = false })
         }
         VSpace(12)
         SectionCard(title = "⑪ 나의 메모") {
@@ -259,4 +278,33 @@ fun verificationLabel(status: String): String = when (status) {
     "AUTHOR_REVIEWED" -> "작성자 검토 완료 · 기준서 원문 대조 전"
     "STATUTE_CHECKED" -> "법령 원문(국가법령정보센터) 대조 · 정답 자동 대조"
     else -> status
+}
+
+
+/** 공식 출처 확인 영역: 기준서·법령, 적용 기준일, 검증일, 검증 상태, 공식 링크, 짧은 안내문 */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun SourceCard(c: ConceptEntity) {
+    val ctx = androidx.compose.ui.platform.LocalContext.current
+    SectionCard(title = "공식 출처 확인") {
+        Text(ContentNotice.SHORT, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        VSpace(6)
+        KeyValue("기준서·법령", c.lawName ?: c.standardReference.ifBlank { "—" })
+        if (c.articleRefs.isNotEmpty()) KeyValue("조문", c.articleRefs.joinToString(", "))
+        KeyValue("적용 기준일", c.effectiveFrom ?: "확인 필요")
+        KeyValue("마지막 검증일", c.verifiedAt ?: "—")
+        KeyValue("검증 상태", verificationLabel(c.verificationStatus))
+        Text("앱의 설명은 기준서·법령 원문이 아니라 자체 작성한 학습용 해설입니다.", style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant)
+        val links = buildList {
+            c.sourceUrl?.let { add("이 개념의 법령 원문" to it) }
+            val std = c.standardReference + " " + (c.lawName ?: "")
+            if (c.articleRefs.isEmpty() && (std.contains("K-IFRS") || std.contains("개념체계"))) add("한국회계기준원(K-IFRS)" to "https://www.kasb.or.kr")
+            if (std.contains("국가회계") || std.contains("지방")) add("국가법령정보센터" to "https://www.law.go.kr")
+            if (c.subjectId == "TX") add("국세청" to "https://www.nts.go.kr")
+        }
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            links.forEach { (label, url) -> AssistChip(onClick = { ContentNotice.open(ctx, url) }, label = { Text("$label ↗") }) }
+        }
+    }
 }

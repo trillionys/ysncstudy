@@ -1,5 +1,9 @@
 package com.cpaconceptlab.study.ui.settings
 
+import com.cpaconceptlab.study.data.repository.ReviewPreset
+import com.cpaconceptlab.study.domain.model.Difficulty
+import androidx.compose.material3.FilterChip
+import androidx.compose.foundation.clickable
 import android.content.Context
 import android.net.Uri
 import android.provider.OpenableColumns
@@ -62,8 +66,9 @@ private fun displayName(ctx: Context, uri: Uri): String = runCatching {
 
 private const val MAX_FILE_CHARS = 20_000_000
 
+@OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
 @Composable
-fun SettingsScreen(vm: MainViewModel, onOpenReport: () -> Unit) {
+fun SettingsScreen(vm: MainViewModel, onOpenReport: () -> Unit, onNavigate: (String) -> Unit = {}) {
     val ctx = LocalContext.current
     val scope = rememberCoroutineScope()
     val settings by vm.settings.collectAsState()
@@ -134,20 +139,29 @@ fun SettingsScreen(vm: MainViewModel, onOpenReport: () -> Unit) {
             }
         }
         VSpace(12)
-        SectionCard(title = "학습") {
-            Text("오늘의 권장 문제 수: ${settings.dailyGoal}", style = MaterialTheme.typography.bodyMedium)
-            Slider(settings.dailyGoal.toFloat(), { v -> vm.updateSettings { it.copy(dailyGoal = v.toInt()) } }, valueRange = 10f..150f, steps = 13)
+        SectionCard(title = "학습 설정") {
+            SettingRow("오늘의 문제 목표", if (settings.goalUnlimited) "무제한 학습" else "${"%,d".format(settings.dailyGoal)}문제") { onNavigate("goalSettings") }
+            SettingRow("복습 주기", ReviewPreset.of(settings.reviewPreset).label + " · " + settings.intervals.joinToString("→") + "일") { onNavigate("reviewSettings") }
+            VSpace(6)
+            Text("기본 난이도(단원 문제 풀기)", style = MaterialTheme.typography.bodyMedium)
+            androidx.compose.foundation.layout.FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                Difficulty.entries.forEach { d ->
+                    FilterChip(selected = settings.lastDifficulty == d.name, onClick = { vm.updateSettings { it.copy(lastDifficulty = d.name) } }, label = { Text(d.label) })
+                }
+            }
+            Text("기본 문제 유형", style = MaterialTheme.typography.bodyMedium)
+            androidx.compose.foundation.layout.FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                com.cpaconceptlab.study.ui.quiz.UNIT_KINDS.forEach { k ->
+                    FilterChip(selected = settings.lastKind == k.name, onClick = { vm.updateSettings { it.copy(lastKind = k.name) } }, label = { Text(k.label) })
+                }
+            }
             Text("한 세트 기본 문항 수: ${settings.sessionSize}", style = MaterialTheme.typography.bodyMedium)
             Slider(settings.sessionSize.toFloat(), { v -> vm.updateSettings { it.copy(sessionSize = v.toInt()) } }, valueRange = 5f..50f, steps = 8)
-            OutlinedTextField(intervals, { intervals = it }, label = { Text("복습 간격(일, 쉼표 구분)") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-            Row {
-                TextButton(onClick = { vm.updateSettings { it.copy(reviewIntervals = intervals) }; vm.showMessage("복습 간격을 저장했습니다. 다음 풀이부터 적용됩니다.") }) { Text("간격 저장") }
-                TextButton(onClick = { intervals = DEFAULT_INTERVALS; vm.updateSettings { it.copy(reviewIntervals = DEFAULT_INTERVALS) } }) { Text("기본값(1·3·7·14·30·60)") }
-            }
-            Text("정답이면 다음 간격으로, 오답이면 첫 간격부터 다시 시작합니다. 응답이 매우 느리면 단계를 올리지 않고, 정답률이 낮은 문항은 간격을 줄입니다.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Text("한 세트를 다 풀면 같은 범위로 이어서 다음 세트를 풀 수 있습니다(문항을 한꺼번에 불러오지 않아 메모리를 아낍니다).",
+                style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
         VSpace(12)
-        SectionCard(title = "백업·복원") {
+        SectionCard(title = "학습 데이터 · 백업·복원") {
             Text("앱을 삭제하면 기기 안의 학습기록도 삭제됩니다. 정기적으로 백업 파일을 원하는 위치(Google Drive, 다운로드 폴더 등)에 저장하세요.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             VSpace(8)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -174,16 +188,35 @@ fun SettingsScreen(vm: MainViewModel, onOpenReport: () -> Unit) {
             }
         }
         VSpace(12)
-        SectionCard(title = "회계기준 안내") {
-            Text(
-                "• [현재 기준] [시행 예정 기준] [과거 기준] [개정사항 확인 필요] 표시로 기준 적용 시점을 구분합니다.\n" +
-                    "• K-IFRS 제1118호는 2027년 1월 1일 이후 시작하는 회계연도부터 적용되며 제1001호를 대체합니다.\n" +
-                    "• 2027년 CPA 1차 시험의 실제 출제기준은 금융감독원 공인회계사시험 공고(cpa.fss.or.kr)에서 확인하세요.\n" +
-                    "• 기준서 원문은 한국회계기준원(kasb.or.kr), IFRS 재단(ifrs.org)에서 확인할 수 있습니다. 앱의 설명은 자체 작성한 학습용 해설입니다.",
-                style = MaterialTheme.typography.bodySmall,
+        var confirmDelete by remember { mutableStateOf(0) }
+        SectionCard(title = "학습기록 관리") {
+            Text("학습기록은 이 기기 안에만 저장됩니다. 삭제하면 풀이기록·오답노트·복습 일정·개념 진도가 지워지며 되돌릴 수 없습니다(콘텐츠와 설정은 유지).",
+                style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            OutlinedButton(onClick = { confirmDelete = 1 }, modifier = Modifier.fillMaxWidth()) { Text("학습데이터 삭제") }
+        }
+        if (confirmDelete > 0) {
+            AlertDialog(
+                onDismissRequest = { confirmDelete = 0 },
+                title = { Text(if (confirmDelete == 1) "학습데이터를 삭제할까요?" else "정말 삭제합니다") },
+                text = { Text(if (confirmDelete == 1) "삭제 전에 '전체 데이터 백업'을 해 두기를 권장합니다." else "모든 풀이기록·오답노트·복습 일정이 삭제됩니다. 이 작업은 되돌릴 수 없습니다.") },
+                confirmButton = {
+                    TextButton(onClick = { if (confirmDelete == 1) confirmDelete = 2 else { vm.clearLearningData(); confirmDelete = 0 } }) {
+                        Text(if (confirmDelete == 1) "계속" else "삭제", color = MaterialTheme.colorScheme.error)
+                    }
+                },
+                dismissButton = { TextButton(onClick = { confirmDelete = 0 }) { Text("취소") } },
             )
-            HorizontalDivider(Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.outlineVariant)
-            KeyValue("앱 버전", vm.appVersion)
+        }
+        VSpace(12)
+        var reporting by remember { mutableStateOf(false) }
+        SectionCard(title = "앱 정보") {
+            SettingRow("이용 안내", "학습 콘텐츠의 정확성·최신성 안내") { onNavigate("notice") }
+            SettingRow("개인정보 처리방침", "기기 내 저장 · 수집·전송 없음") { onNavigate("privacy") }
+            SettingRow("공식 출처 · 버전 정보", vm.appVersion) { onNavigate("appInfo") }
+            SettingRow("콘텐츠 오류 신고", "메일·메신저 등 직접 고른 앱으로 보내기") { reporting = true }
+        }
+        if (reporting) {
+            com.cpaconceptlab.study.ui.common.ErrorReportDialog(null, null, null, versions.firstOrNull()?.version ?: 0, vm.appVersion, onDismiss = { reporting = false })
         }
         VSpace(24)
     }
@@ -224,5 +257,17 @@ fun ValidationReportScreen(vm: MainViewModel) {
         SectionCard(title = if (report?.passed == true) "검증 통과" else "검증 결과") {
             Text(report?.toText() ?: "콘텐츠를 불러오는 중입니다.", style = MaterialTheme.typography.bodyMedium)
         }
+    }
+}
+
+
+@Composable
+fun SettingRow(title: String, value: String, onClick: () -> Unit) {
+    Row(Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = 10.dp), verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
+        Column(Modifier.weight(1f)) {
+            Text(title, style = MaterialTheme.typography.bodyLarge)
+            Text(value, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        Text("›", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }

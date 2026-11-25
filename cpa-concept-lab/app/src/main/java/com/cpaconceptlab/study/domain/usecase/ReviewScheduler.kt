@@ -44,8 +44,25 @@ class ReviewScheduler(
     companion object {
         val DEFAULT_INTERVALS = listOf(1, 3, 7, 14, 30)
 
+        const val MAX_INTERVAL_DAYS = 3650
+        const val MAX_STEPS = 12
+
         fun parse(text: String?): List<Int> =
-            text.orEmpty().split(",", " ", "→").mapNotNull { it.trim().toIntOrNull() }.filter { it in 1..365 }
+            text.orEmpty().split(",", " ", "→").mapNotNull { it.trim().toIntOrNull() }.filter { it in 1..MAX_INTERVAL_DAYS }
                 .ifEmpty { DEFAULT_INTERVALS }
+
+        /** 직접 설정 검증: 저장하지 않을 값이면 이유를 돌려준다 */
+        fun validate(steps: List<Int?>): String? = when {
+            steps.isEmpty() -> "복습 단계를 1개 이상 두세요."
+            steps.size > MAX_STEPS -> "복습 단계는 최대 ${MAX_STEPS}개입니다."
+            steps.any { it == null } -> "모든 단계에 일(day) 수를 숫자로 입력하세요."
+            steps.any { it!! < 1 } -> "복습 간격은 1일 이상이어야 합니다."
+            steps.any { it!! > MAX_INTERVAL_DAYS } -> "복습 간격은 ${MAX_INTERVAL_DAYS}일 이하로 입력하세요."
+            steps.zipWithNext().any { (a, b) -> b!! <= a!! } -> "각 단계는 이전 단계보다 길어야 합니다. 간격이 점점 늘어나야 오래 기억하는 데 도움이 됩니다."
+            else -> null
+        }
+
+        /** 미리보기: 오늘 새 개념을 학습하고 매번 정답을 맞힌다고 가정한 누적 복습일(오늘 기준 며칠 뒤) */
+        fun previewOffsets(intervals: List<Int>): List<Int> = intervals.runningReduce { acc, d -> acc + d }
     }
 }

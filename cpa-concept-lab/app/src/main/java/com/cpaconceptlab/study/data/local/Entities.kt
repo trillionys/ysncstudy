@@ -111,6 +111,20 @@ data class ConceptEntity(
     val verifiedAt: String? = null,
     val caseLaw: String? = null,
     val examArea: String? = null,
+    // 스키마 v6 추가 컬럼(v1.0.7): 과목 재분류 + 간단 요약·상세 학습
+    /** 기본 소속 콘텐츠팩(진도 집계 기준). 재무회계에서 옮겨 온 개념은 IA/AA */
+    val primaryPackId: String? = null,
+    @ColumnInfo(defaultValue = "[]") val relatedPackIds: List<String> = emptyList(),
+    /** CLASSIFIED · ORIGINAL · NEEDS_CLASSIFICATION_REVIEW */
+    val classificationStatus: String? = null,
+    /** 이전 소속 팩(예: 'FA'). 레거시 참조용 */
+    val legacyPackId: String? = null,
+    /** 간단 요약(기존 정의 전문 보존) */
+    val shortSummary: String? = null,
+    /** 상세 학습 섹션 JSON 배열(DetailSectionDto) */
+    val detailSections: String? = null,
+    /** RICH · FULL · BASIC */
+    val detailLevel: String? = null,
 )
 
 @Entity(tableName = "questions", indices = [Index("primaryConceptId"), Index("chapterId")])

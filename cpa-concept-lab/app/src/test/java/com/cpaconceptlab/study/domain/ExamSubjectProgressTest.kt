@@ -37,21 +37,21 @@ class ExamSubjectProgressTest {
         assertTrue(tax.curriculumTotal == 161 && tax.curriculumCovered in 150 until 161)
         // 상위 과목 분모 = 하위 팩 개념의 합집합(중복 제거): 중급회계 목차가 재무회계 개념을 연결해도 두 번 세지 않는다
         val acc = s.single { it.id == "ACC" }
-        val accIds = content.concepts.filter { it.subjectId in setOf("FA", "IA", "AA", "CM", "GA") }.map { it.id }.toSet() +
-            content.curriculumItems.filter { it.subjectId in setOf("FA", "IA", "AA", "CM", "GA") }.flatMap { it.conceptIds }
+        val accIds = content.concepts.filter { it.subjectId in setOf("IA", "AA", "CM", "GA") }.map { it.id }.toSet() +
+            content.curriculumItems.filter { it.subjectId in setOf("IA", "AA", "CM", "GA") }.flatMap { it.conceptIds }
         assertEquals(accIds.toSet().size, acc.totalConcepts)
-        assertEquals(content.concepts.count { it.subjectId in setOf("FA", "CM") }, acc.totalConcepts)
+        assertEquals(content.concepts.count { it.subjectId in setOf("IA", "AA", "CM", "GA") }, acc.totalConcepts)
         val d = ExamSubjectProgress.detail("ACC", content, UserSnapshot.EMPTY)
-        assertEquals(listOf("재무회계", "중급회계", "고급회계", "원가관리회계", "정부회계"), d.packs.map { it.stat.name })
-        assertTrue(d.packs.single { it.stat.id == "IA" }.stat.totalConcepts > 0)   // 재무회계 개념 연결분
-        assertFalse(d.packs.single { it.stat.id == "IA" }.active)                 // 중급회계 고유 콘텐츠는 아직 없다
+        // v7: 재무회계 독립 팩 없음 — 회계학 = 중급·고급·원가관리·정부회계
+        assertEquals(listOf("중급회계", "고급회계", "원가관리회계", "정부회계"), d.packs.map { it.stat.name })
+        assertTrue(d.packs.all { it.active && it.stat.totalConcepts > 0 })
         val law = ExamSubjectProgress.detail("LAW", content, UserSnapshot.EMPTY)
         // 기업법은 파트(상법총칙·상행위 / 회사법 / 공인회계사법 / 외부감사법 / 종합)별 세부 진도를 보여준다
         assertTrue(law.packs.single().parts.map { it.name }.containsAll(listOf("회사법", "공인회계사법", "외부감사법")))
     }
 
     @Test fun completionRuleAndAccuracy() {
-        val fa = content.concepts.filter { it.subjectId == "FA" }.take(3).map { it.id }
+        val fa = content.concepts.filter { it.legacyPackId == "FA" }.take(3).map { it.id }
         val q = content.questionsByPrimary[fa[0]]!!.first()
         val user = UserSnapshot(
             questionProgress = listOf(

@@ -1,8 +1,8 @@
 {
  "formatVersion": 1,
- "contentVersion": 6,
+ "contentVersion": 7,
  "packId": "law-data",
- "generatedAt": "2026-11-24",
+ "generatedAt": "2026-11-25",
  "lawArticles": [
   {
    "id": "상법|제1조",

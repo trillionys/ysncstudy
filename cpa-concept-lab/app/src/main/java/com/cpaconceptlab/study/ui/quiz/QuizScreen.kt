@@ -86,6 +86,9 @@ fun QuizScreen(
     onFinish: () -> Unit,
     onRestart: () -> Unit,
     onAdvance: () -> Unit = {},
+    /** 단원 + 난이도 조건에 문제가 없을 때 '전체 난이도로 풀기' */
+    onRetryAllLevels: (() -> Unit)? = null,
+    appVersion: String = "",
 ) {
     val s by vm.state.collectAsState()
     if (s.loading || content == null) {
@@ -97,7 +100,13 @@ fun QuizScreen(
     if (s.questions.isEmpty()) {
         Column(Modifier.fillMaxSize().padding(16.dp)) {
             EmptyState(s.emptyReason ?: "출제할 문항이 없습니다.")
-            Button(onClick = onFinish, modifier = Modifier.fillMaxWidth()) { Text("돌아가기") }
+            if (s.emptyReason == QuizViewModel.UNIT_EMPTY && onRetryAllLevels != null) {
+                Button(onClick = onRetryAllLevels, modifier = Modifier.fillMaxWidth()) { Text("전체 난이도로 풀기") }
+                VSpace(6)
+                OutlinedButton(onClick = onFinish, modifier = Modifier.fillMaxWidth()) { Text("다른 난이도 선택(돌아가기)") }
+            } else {
+                Button(onClick = onFinish, modifier = Modifier.fillMaxWidth()) { Text("돌아가기") }
+            }
         }
         return
     }
@@ -140,7 +149,12 @@ fun QuizScreen(
         val concept = content.conceptById[q.primaryConceptId]
         Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
             Pill(TYPE_LABEL[q.questionType] ?: q.questionType, MaterialTheme.colorScheme.secondaryContainer, MaterialTheme.colorScheme.onSecondaryContainer)
-            Pill("Level ${q.difficulty.coerceIn(1, 5)}", MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.colorScheme.onSurfaceVariant)
+            Pill(
+                com.cpaconceptlab.study.domain.model.Difficulty.entries.drop(1).firstOrNull { q.difficulty in it.min..it.max }?.label ?: "Level ${q.difficulty}",
+                MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            if (s.isRetry) Pill("다시 풀기", MaterialTheme.colorScheme.errorContainer, MaterialTheme.colorScheme.onErrorContainer)
+            if (s.scope.minLevel >= 4 && s.result == null) ElapsedTimer(q.id)
             if (q.examReferenceNumbers.isNotEmpty()) {
                 Pill("출제범위 ${q.examReferenceNumbers.take(3).joinToString(",")}", MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.colorScheme.onSurfaceVariant)
             }
@@ -220,6 +234,18 @@ fun QuizScreen(
             }
             VSpace(12)
             Explanation(q, content, onOpenConcept)
+            VSpace(6)
+            var reporting by remember(q.id) { mutableStateOf(false) }
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                OutlinedButton(onClick = { onOpenConcept(q.primaryConceptId) }, modifier = Modifier.weight(1f)) { Text("관련 개념 자세히 보기") }
+                TextButton(onClick = { reporting = true }) { Text("오류 신고") }
+            }
+            if (reporting) {
+                com.cpaconceptlab.study.ui.common.ErrorReportDialog(
+                    q.primaryConceptId, content.conceptById[q.primaryConceptId]?.koreanName, q.id, content.bundledVersion, appVersion,
+                    onDismiss = { reporting = false },
+                )
+            }
             VSpace(12)
             Button(onClick = vm::next, modifier = Modifier.fillMaxWidth()) {
                 Text(if (s.index + 1 >= s.questions.size) "결과 보기" else "다음 문제")
@@ -433,4 +459,13 @@ private fun SlotInput(labels: List<String>, options: List<String>, picks: List<S
             }
         }
     }
+}
+
+
+/** 실전 난이도: 문제별 경과 시간 표시(측정만 하고 제한하지 않는다) */
+@Composable
+private fun ElapsedTimer(key: String) {
+    var sec by remember(key) { mutableStateOf(0) }
+    LaunchedEffect(key) { while (true) { kotlinx.coroutines.delay(1000); sec++ } }
+    Pill("⏱ ${sec / 60}:${"%02d".format(sec % 60)}", MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.colorScheme.onSurfaceVariant)
 }

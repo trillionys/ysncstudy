@@ -63,7 +63,17 @@ fun ConceptDto.toEntity(packVersion: Int) = ConceptEntity(
     lawName = lawName, articleRefs = articleRefs, lawVersion = lawVersion, promulgationDate = promulgationDate,
     transitionRule = transitionRule, examYear = examYear, examApplicability = examApplicability, sourceUrl = sourceUrl,
     verifiedAt = verifiedAt, caseLaw = caseLaw, examArea = examArea,
+    primaryPackId = primaryPackId ?: subjectId, relatedPackIds = relatedPackIds, classificationStatus = classificationStatus,
+    legacyPackId = legacyPackId, shortSummary = shortSummary,
+    detailSections = if (detailSections.isEmpty()) null else ContentJson.encodeToString(DETAIL_SER, detailSections),
+    detailLevel = detailLevel,
 )
+
+private val DETAIL_SER = kotlinx.serialization.builtins.ListSerializer(com.cpaconceptlab.study.data.model.DetailSectionDto.serializer())
+
+/** 상세 학습 섹션(없으면 빈 목록 — 화면은 기존 필드로 대체 표시) */
+fun ConceptEntity.detailSectionList(): List<com.cpaconceptlab.study.data.model.DetailSectionDto> =
+    detailSections.let { raw -> if (raw.isNullOrBlank()) emptyList() else runCatching { ContentJson.decodeFromString(DETAIL_SER, raw) }.getOrElse { emptyList() } }
 
 fun QuestionDto.toEntity(packVersion: Int) = QuestionEntity(
     id = id, primaryConceptId = primaryConceptId,
@@ -88,7 +98,8 @@ fun ConceptEntity.toDto() = ConceptDto(
     requiresReview, revisionNote, originalExamYear, reviewStatus, isRequired, isActive, sortOrder, revision, contentVersion,
     recognitionRules, measurementRules, exceptions, journalEntries, sourceProblemIds, verificationStatus,
     lawName, articleRefs, lawVersion, promulgationDate, transitionRule, examYear, examApplicability, sourceUrl,
-    verifiedAt, caseLaw, examArea,
+    verifiedAt, caseLaw, examArea, primaryPackId, relatedPackIds, classificationStatus, legacyPackId, shortSummary,
+    detailSectionList(), detailLevel,
 )
 
 fun QuestionEntity.toDto() = QuestionDto(
