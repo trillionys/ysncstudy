@@ -2485,6 +2485,78 @@
    "sortOrder": 4
   },
   {
+   "id": "EC-A-S06",
+   "chapterId": "EC-A",
+   "title": "v8 보강: 공급탄력성·잉여 정책·소비자이론",
+   "sortOrder": 6
+  },
+  {
+   "id": "EC-A-S07",
+   "chapterId": "EC-A",
+   "title": "v8 보강: 생산이론·시장구조",
+   "sortOrder": 7
+  },
+  {
+   "id": "EC-A-S08",
+   "chapterId": "EC-A",
+   "title": "v8 보강: 생산요소시장과 소득분배",
+   "sortOrder": 8
+  },
+  {
+   "id": "EC-A-S09",
+   "chapterId": "EC-A",
+   "title": "v8 보강: 정보경제학·행동경제학",
+   "sortOrder": 9
+  },
+  {
+   "id": "EC-B-S04",
+   "chapterId": "EC-B",
+   "title": "v8 보강: 국민소득·물가",
+   "sortOrder": 4
+  },
+  {
+   "id": "EC-B-S05",
+   "chapterId": "EC-B",
+   "title": "v8 보강: 소비·저축·투자",
+   "sortOrder": 5
+  },
+  {
+   "id": "EC-B-S06",
+   "chapterId": "EC-B",
+   "title": "v8 보강: 화폐수요·화폐공급",
+   "sortOrder": 6
+  },
+  {
+   "id": "EC-B-S07",
+   "chapterId": "EC-B",
+   "title": "v8 보강: 경기변동과 거시경제학파",
+   "sortOrder": 7
+  },
+  {
+   "id": "EC-B-S08",
+   "chapterId": "EC-B",
+   "title": "v8 보강: 경제성장·개방경제",
+   "sortOrder": 8
+  },
+  {
+   "id": "EC-B-S09",
+   "chapterId": "EC-B",
+   "title": "v8 보강: 거시경제의 미시적 기초",
+   "sortOrder": 9
+  },
+  {
+   "id": "EC-C-S03",
+   "chapterId": "EC-C",
+   "title": "v8 보강: 무역의 이익과 무역정책",
+   "sortOrder": 3
+  },
+  {
+   "id": "EC-C-S04",
+   "chapterId": "EC-C",
+   "title": "v8 보강: 환율제도·국제금융·안정화정책",
+   "sortOrder": 4
+  },
+  {
    "id": "AA-A-S90",
    "chapterId": "AA-A",
    "title": "지배력과 연결범위(기존 재무회계에서 이동)",
@@ -12136,8 +12208,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "공급탄력성",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC070"
+   ],
+   "covered": true,
    "sortOrder": 814
   },
   {
@@ -12167,8 +12241,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "조세와 보조금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC071"
+   ],
+   "covered": true,
    "sortOrder": 817
   },
   {
@@ -12198,8 +12274,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "소비자 효용",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC072"
+   ],
+   "covered": true,
    "sortOrder": 820
   },
   {
@@ -12207,8 +12285,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "선호관계",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC072"
+   ],
+   "covered": true,
    "sortOrder": 821
   },
   {
@@ -12216,8 +12296,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "효용함수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC072"
+   ],
+   "covered": true,
    "sortOrder": 822
   },
   {
@@ -12335,8 +12417,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "현시선호",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC073"
+   ],
+   "covered": true,
    "sortOrder": 833
   },
   {
@@ -12399,8 +12483,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "평균생산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC074"
+   ],
+   "covered": true,
    "sortOrder": 839
   },
   {
@@ -12419,8 +12505,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "등량곡선",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC075"
+   ],
+   "covered": true,
    "sortOrder": 841
   },
   {
@@ -12506,8 +12594,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "독점적 경쟁시장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC076"
+   ],
+   "covered": true,
    "sortOrder": 849
   },
   {
@@ -12614,8 +12704,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "생산요소시장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC077"
+   ],
+   "covered": true,
    "sortOrder": 859
   },
   {
@@ -12623,8 +12715,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "노동시장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC078"
+   ],
+   "covered": true,
    "sortOrder": 860
   },
   {
@@ -12632,8 +12726,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "자본시장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC079"
+   ],
+   "covered": true,
    "sortOrder": 861
   },
   {
@@ -12641,8 +12737,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "소득분배",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC080"
+   ],
+   "covered": true,
    "sortOrder": 862
   },
   {
@@ -12650,8 +12748,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "일반균형",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC081"
+   ],
+   "covered": true,
    "sortOrder": 863
   },
   {
@@ -12758,8 +12858,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "주인·대리인 문제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC082"
+   ],
+   "covered": true,
    "sortOrder": 873
   },
   {
@@ -12767,8 +12869,10 @@
    "subjectId": "EC",
    "unit": "미시경제학",
    "item": "행동경제학",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC083"
+   ],
+   "covered": true,
    "sortOrder": 874
   },
   {
@@ -12798,8 +12902,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "국민소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC084"
+   ],
+   "covered": true,
    "sortOrder": 877
   },
   {
@@ -12884,8 +12990,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "인플레이션",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC085"
+   ],
+   "covered": true,
    "sortOrder": 885
   },
   {
@@ -12893,8 +13001,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "디플레이션",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC086"
+   ],
+   "covered": true,
    "sortOrder": 886
   },
   {
@@ -12902,8 +13012,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "소비함수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC087"
+   ],
+   "covered": true,
    "sortOrder": 887
   },
   {
@@ -12911,8 +13023,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "저축함수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC088"
+   ],
+   "covered": true,
    "sortOrder": 888
   },
   {
@@ -12920,8 +13034,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "투자함수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC089"
+   ],
+   "covered": true,
    "sortOrder": 889
   },
   {
@@ -12962,8 +13078,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "화폐수요",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC090"
+   ],
+   "covered": true,
    "sortOrder": 893
   },
   {
@@ -12971,8 +13089,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "화폐공급",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC091"
+   ],
+   "covered": true,
    "sortOrder": 894
   },
   {
@@ -13080,8 +13200,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "경기변동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC092"
+   ],
+   "covered": true,
    "sortOrder": 904
   },
   {
@@ -13089,8 +13211,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "실물경기변동이론",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC093"
+   ],
+   "covered": true,
    "sortOrder": 905
   },
   {
@@ -13098,8 +13222,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "케인즈학파",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC094"
+   ],
+   "covered": true,
    "sortOrder": 906
   },
   {
@@ -13107,8 +13233,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "새고전학파",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC095"
+   ],
+   "covered": true,
    "sortOrder": 907
   },
   {
@@ -13116,8 +13244,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "새케인즈학파",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC096"
+   ],
+   "covered": true,
    "sortOrder": 908
   },
   {
@@ -13125,8 +13255,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "경제성장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC097"
+   ],
+   "covered": true,
    "sortOrder": 909
   },
   {
@@ -13167,8 +13299,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "개방경제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC098"
+   ],
+   "covered": true,
    "sortOrder": 913
   },
   {
@@ -13187,8 +13321,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "국제자본이동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC099"
+   ],
+   "covered": true,
    "sortOrder": 915
   },
   {
@@ -13207,8 +13343,11 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "거시경제의 미시적 기초",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC100",
+    "EC101"
+   ],
+   "covered": true,
    "sortOrder": 917
   },
   {
@@ -13216,8 +13355,10 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "기간 간 소비선택",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC100"
+   ],
+   "covered": true,
    "sortOrder": 918
   },
   {
@@ -13225,8 +13366,11 @@
    "subjectId": "EC",
    "unit": "거시경제학",
    "item": "소비·투자의 최적화",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC100",
+    "EC101"
+   ],
+   "covered": true,
    "sortOrder": 919
   },
   {
@@ -13300,8 +13444,10 @@
    "subjectId": "EC",
    "unit": "국제경제학",
    "item": "국제무역의 이익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC102"
+   ],
+   "covered": true,
    "sortOrder": 926
   },
   {
@@ -13331,8 +13477,10 @@
    "subjectId": "EC",
    "unit": "국제경제학",
    "item": "수출보조금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC103"
+   ],
+   "covered": true,
    "sortOrder": 929
   },
   {
@@ -13351,8 +13499,10 @@
    "subjectId": "EC",
    "unit": "국제경제학",
    "item": "무역정책",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC104"
+   ],
+   "covered": true,
    "sortOrder": 931
   },
   {
@@ -13360,8 +13510,10 @@
    "subjectId": "EC",
    "unit": "국제경제학",
    "item": "전략적 무역정책",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC105"
+   ],
+   "covered": true,
    "sortOrder": 932
   },
   {
@@ -13435,8 +13587,10 @@
    "subjectId": "EC",
    "unit": "국제경제학",
    "item": "환율제도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC106"
+   ],
+   "covered": true,
    "sortOrder": 939
   },
   {
@@ -13444,8 +13598,10 @@
    "subjectId": "EC",
    "unit": "국제경제학",
    "item": "국제금융시장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC107"
+   ],
+   "covered": true,
    "sortOrder": 940
   },
   {
@@ -13453,8 +13609,10 @@
    "subjectId": "EC",
    "unit": "국제경제학",
    "item": "개방경제 안정화정책",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "EC108"
+   ],
+   "covered": true,
    "sortOrder": 941
   },
   {

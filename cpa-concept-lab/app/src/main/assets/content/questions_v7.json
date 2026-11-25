@@ -215431,6 +215431,6981 @@
    "examArea": null,
    "mode": "BOTH",
    "contentVersion": 5
+  },
+  {
+   "id": "EC001-Q03",
+   "primaryConceptId": "EC001",
+   "conceptIds": [
+    "EC001"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "다른 조건이 일정할 때 공급곡선을 오른쪽으로 이동시키는 요인은?",
+   "blankAnswer": "생산기술 향상",
+   "acceptedAnswers": [
+    "생산기술 향상"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "생산기술 향상",
+    "해당 재화 가격 상승",
+    "소비자 소득 증가",
+    "대체재 가격 상승"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기술 향상은 생산비를 낮춰 공급 증가(곡선 이동). 재화 자체 가격 상승은 공급곡선 위의 이동, 소득·대체재 가격은 수요 요인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4449,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC001-Q04",
+   "primaryConceptId": "EC001",
+   "conceptIds": [
+    "EC001"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "수요가 증가하고 동시에 공급이 감소하면 새로운 시장균형에서 균형가격은 반드시 (______)한다.",
+   "blankAnswer": "상승",
+   "acceptedAnswers": [
+    "상승",
+    "오른다",
+    "올라간다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 변화 모두 가격 상승 요인이다. 거래량은 두 변화의 상대적 크기에 따라 달라 불확정이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4450,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC003-Q03",
+   "primaryConceptId": "EC003",
+   "conceptIds": [
+    "EC003"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "생산자잉여는 시장가격과 (______)곡선 사이의 면적으로 측정한다.",
+   "blankAnswer": "공급",
+   "acceptedAnswers": [
+    "공급"
+   ],
+   "relatedConceptIds": [
+    "EC002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "생산자가 받은 가격과 최소 수용가격(공급곡선 높이)의 차이를 합한 값이다. 소비자잉여는 수요곡선과 가격 사이 면적.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4451,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC003-Q04",
+   "primaryConceptId": "EC003",
+   "conceptIds": [
+    "EC003"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "시장수요가 P = 100 − Q이고 시장가격이 60일 때 소비자잉여는 (______)이다.",
+   "blankAnswer": "800",
+   "acceptedAnswers": [
+    "800"
+   ],
+   "relatedConceptIds": [
+    "EC002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격 60에서 Q = 40. 소비자잉여 = (100 − 60) × 40 ÷ 2 = 800(수요곡선 아래·가격 위 삼각형).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4452,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC004-Q03",
+   "primaryConceptId": "EC004",
+   "conceptIds": [
+    "EC004"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "균형가격보다 낮은 구속력 있는 가격상한제가 시행될 때 나타나기 쉬운 현상은?",
+   "blankAnswer": "암시장 발생",
+   "acceptedAnswers": [
+    "암시장 발생"
+   ],
+   "relatedConceptIds": [
+    "EC001"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "암시장 발생",
+    "초과공급과 재고 누적",
+    "거래량 증가",
+    "생산자잉여 증가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격상한 → 초과수요 → 배급·줄서기·암시장. 거래량은 공급량 수준으로 줄고 생산자잉여는 감소한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4453,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC004-Q04",
+   "primaryConceptId": "EC004",
+   "conceptIds": [
+    "EC004"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "가격하한제가 시장에 아무 영향을 주지 않는 경우는?",
+   "blankAnswer": "가격하한이 균형가격보다 낮게 설정된 경우",
+   "acceptedAnswers": [
+    "가격하한이 균형가격보다 낮게 설정된 경우"
+   ],
+   "relatedConceptIds": [
+    "EC001"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "가격하한이 균형가격보다 낮게 설정된 경우",
+    "가격하한이 균형가격보다 높게 설정된 경우",
+    "수요가 완전탄력적인 경우",
+    "공급이 완전비탄력적인 경우"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "하한이 균형보다 낮으면 구속력이 없어 시장가격이 그대로 균형에 머문다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4454,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC010-Q03",
+   "primaryConceptId": "EC010",
+   "conceptIds": [
+    "EC010"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "소득 120원으로 가격 4원인 X재와 가격 6원인 Y재를 살 때 X재만 산다면 최대 (______)개를 살 수 있다.",
+   "blankAnswer": "30",
+   "acceptedAnswers": [
+    "30"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예산선의 X절편 = 소득 ÷ Px = 120 ÷ 4 = 30. 예산선 기울기는 −Px/Py = −2/3.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4455,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC010-Q04",
+   "primaryConceptId": "EC010",
+   "conceptIds": [
+    "EC010"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "choice",
+   "questionText": "일반적인(단조성·볼록성을 만족하는) 무차별곡선의 성질이 아닌 것은?",
+   "blankAnswer": "서로 교차할 수 있다",
+   "acceptedAnswers": [
+    "서로 교차할 수 있다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "서로 교차할 수 있다",
+    "우하향한다",
+    "원점에 대해 볼록하다",
+    "원점에서 멀수록 효용 수준이 높다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "교차하면 이행성에 모순된다. 볼록성은 한계대체율 체감을 뜻한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4456,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC012-Q03",
+   "primaryConceptId": "EC012",
+   "conceptIds": [
+    "EC012"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "확률 0.4로 100만원, 확률 0.6으로 0원을 받는 복권의 기대값은 (______)만원이다.",
+   "blankAnswer": "40",
+   "acceptedAnswers": [
+    "40"
+   ],
+   "relatedConceptIds": [
+    "FM036"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기대값 = 0.4 × 100 + 0.6 × 0 = 40만원.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4457,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC012-Q04",
+   "primaryConceptId": "EC012",
+   "conceptIds": [
+    "EC012"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "위험회피자에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "확실성등가가 기대값보다 작다",
+   "acceptedAnswers": [
+    "확실성등가가 기대값보다 작다"
+   ],
+   "relatedConceptIds": [
+    "FM036"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "확실성등가가 기대값보다 작다",
+    "확실성등가가 기대값보다 크다",
+    "위험프리미엄이 음수다",
+    "효용함수가 볼록하다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "오목한 효용함수 → 기대효용 < 기대값의 효용 → 확실성등가 < 기대값, 위험프리미엄 > 0.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4458,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC020-Q03",
+   "primaryConceptId": "EC020",
+   "conceptIds": [
+    "EC020"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "노동 4명일 때 총생산이 100, 5명일 때 120이면 다섯 번째 노동자의 한계생산은 (______)이다.",
+   "blankAnswer": "20",
+   "acceptedAnswers": [
+    "20"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "한계생산 = 총생산 증가분 ÷ 노동 증가분 = (120 − 100) ÷ 1 = 20.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4459,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC020-Q04",
+   "primaryConceptId": "EC020",
+   "conceptIds": [
+    "EC020"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "생산함수 Q = K^0.5 × L^0.5의 규모수익은?",
+   "blankAnswer": "규모수익 불변",
+   "acceptedAnswers": [
+    "규모수익 불변"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "규모수익 불변",
+    "규모수익 체증",
+    "규모수익 체감",
+    "판단할 수 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "콥-더글러스 생산함수에서 지수의 합이 1이면 모든 요소를 t배 할 때 산출도 t배가 된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4460,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC021-Q03",
+   "primaryConceptId": "EC021",
+   "conceptIds": [
+    "EC021"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "장기평균비용곡선은 여러 단기평균비용곡선을 아래에서 감싸는 (______)이다.",
+   "blankAnswer": "포락선",
+   "acceptedAnswers": [
+    "포락선",
+    "포락곡선"
+   ],
+   "relatedConceptIds": [
+    "EC020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "장기에는 모든 요소를 조정할 수 있어 각 산출량에서 가장 낮은 단기평균비용을 고른다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4461,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC021-Q04",
+   "primaryConceptId": "EC021",
+   "conceptIds": [
+    "EC021"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "단기에만 존재하고 장기에는 존재하지 않는 비용은?",
+   "blankAnswer": "고정비용",
+   "acceptedAnswers": [
+    "고정비용"
+   ],
+   "relatedConceptIds": [
+    "EC020"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "고정비용",
+    "가변비용",
+    "한계비용",
+    "기회비용"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "장기에는 모든 생산요소가 가변이므로 고정비용이 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4462,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC030-Q03",
+   "primaryConceptId": "EC030",
+   "conceptIds": [
+    "EC030"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "choice",
+   "questionText": "완전경쟁시장의 특징이 아닌 것은?",
+   "blankAnswer": "개별 기업이 가격설정자이다",
+   "acceptedAnswers": [
+    "개별 기업이 가격설정자이다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "개별 기업이 가격설정자이다",
+    "다수의 공급자와 수요자가 있다",
+    "상품이 동질적이다",
+    "진입과 퇴출이 자유롭다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "완전경쟁 기업은 시장가격을 주어진 것으로 받아들이는 가격수용자다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4463,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC032-Q03",
+   "primaryConceptId": "EC032",
+   "conceptIds": [
+    "EC032"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "슈타켈버그 모형에서 먼저 산출량을 결정하는 기업을 (______)기업이라 한다.",
+   "blankAnswer": "선도",
+   "acceptedAnswers": [
+    "선도",
+    "리더",
+    "선도자"
+   ],
+   "relatedConceptIds": [
+    "EC031",
+    "EC033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선도기업은 추종기업의 반응함수를 고려해 산출량을 정한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4464,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC032-Q04",
+   "primaryConceptId": "EC032",
+   "conceptIds": [
+    "EC032"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "선형 시장수요와 동일한 한계비용을 가정할 때, 슈타켈버그 모형의 선도기업 산출량을 쿠르노 균형의 기업별 산출량과 비교하면?",
+   "blankAnswer": "더 많다",
+   "acceptedAnswers": [
+    "더 많다"
+   ],
+   "relatedConceptIds": [
+    "EC031",
+    "EC033"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "더 많다",
+    "더 적다",
+    "같다",
+    "알 수 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선도기업 (a − c)/2b > 쿠르노 기업별 (a − c)/3b. 추종기업은 (a − c)/4b로 더 적다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4465,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC033-Q03",
+   "primaryConceptId": "EC033",
+   "conceptIds": [
+    "EC033"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "choice",
+   "questionText": "카르텔(담합)이 불안정한 주된 이유는?",
+   "blankAnswer": "각 참여기업에 합의보다 더 많이 생산할 유인이 있다",
+   "acceptedAnswers": [
+    "각 참여기업에 합의보다 더 많이 생산할 유인이 있다"
+   ],
+   "relatedConceptIds": [
+    "EC032"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "각 참여기업에 합의보다 더 많이 생산할 유인이 있다",
+    "담합하면 모든 기업이 손실을 본다",
+    "담합 가격이 한계비용과 같아진다",
+    "참여기업의 산출량이 늘어난다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "담합 가격이 한계비용보다 높아 이탈하면 이윤이 늘어난다(죄수의 딜레마 구조).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4466,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC033-Q04",
+   "primaryConceptId": "EC033",
+   "conceptIds": [
+    "EC033"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "무한반복게임에서 방아쇠전략으로 협조가 유지될 가능성이 높아지는 경우는?",
+   "blankAnswer": "경기자가 미래 보수를 크게 중시할 때",
+   "acceptedAnswers": [
+    "경기자가 미래 보수를 크게 중시할 때"
+   ],
+   "relatedConceptIds": [
+    "EC032"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "경기자가 미래 보수를 크게 중시할 때",
+    "게임이 한 번만 진행될 때",
+    "배신의 일회성 이득이 매우 클 때",
+    "상대의 배신을 관찰할 수 없을 때"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "할인인자가 클수록 배신 후 영구 처벌의 손실이 커서 협조가 균형이 될 수 있다(포크 정리).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4467,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC041-Q03",
+   "primaryConceptId": "EC041",
+   "conceptIds": [
+    "EC041"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "공공재는 소비의 비경합성과 비(______)성을 가진 재화이다.",
+   "blankAnswer": "배제",
+   "acceptedAnswers": [
+    "배제"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공유자원은 경합적이지만 배제 불가능, 클럽재는 비경합적이지만 배제 가능.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4468,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC041-Q04",
+   "primaryConceptId": "EC041",
+   "conceptIds": [
+    "EC041"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "'공유지의 비극'이 발생하는 이유로 옳은 것은?",
+   "blankAnswer": "경합적이지만 배제가 불가능해 과다 사용된다",
+   "acceptedAnswers": [
+    "경합적이지만 배제가 불가능해 과다 사용된다"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "경합적이지만 배제가 불가능해 과다 사용된다",
+    "비경합적이어서 과소 사용된다",
+    "배제 가능해 무임승차가 없다",
+    "긍정적 외부효과로 과소 생산된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "각자 사용의 사회적 비용(타인의 몫 감소)을 고려하지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4469,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC042-Q03",
+   "primaryConceptId": "EC042",
+   "conceptIds": [
+    "EC042"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "classification",
+   "questionText": "역선택 문제를 완화하는 수단으로 가장 적절한 것은?",
+   "blankAnswer": "신호발송(학력·보증 제공)",
+   "acceptedAnswers": [
+    "신호발송(학력·보증 제공)"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "신호발송(학력·보증 제공)",
+    "보험의 공동부담(공동보험)",
+    "성과급 지급",
+    "사후 감시 강화"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "역선택은 계약 전 감춰진 특성의 문제로 신호발송·선별이 해결책이다. 공동보험·성과급·감시는 도덕적 해이 대책.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4470,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC053-Q03",
+   "primaryConceptId": "EC053",
+   "conceptIds": [
+    "EC053"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "폐쇄경제 IS-LM 모형에서 확장적 재정정책의 단기 효과는?",
+   "blankAnswer": "IS곡선 우측 이동, 이자율 상승, 국민소득 증가",
+   "acceptedAnswers": [
+    "IS곡선 우측 이동, 이자율 상승, 국민소득 증가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "IS곡선 우측 이동, 이자율 상승, 국민소득 증가",
+    "LM곡선 우측 이동, 이자율 하락",
+    "IS곡선 좌측 이동, 국민소득 감소",
+    "변화 없음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정부지출 증가 → IS 우측 이동 → 이자율 상승(일부 구축) → 소득은 증가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4471,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC053-Q04",
+   "primaryConceptId": "EC053",
+   "conceptIds": [
+    "EC053"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "LM곡선이 수직이면 정부지출 증가분만큼 민간투자가 감소하는 (______) 구축이 일어난다.",
+   "blankAnswer": "완전",
+   "acceptedAnswers": [
+    "완전",
+    "100%"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "화폐수요의 이자율탄력성이 0이면 소득이 변할 수 없어 재정정책이 무력하다(고전학파 경우).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4472,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC055-Q03",
+   "primaryConceptId": "EC055",
+   "conceptIds": [
+    "EC055"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "과거의 실제 인플레이션을 바탕으로 기대 인플레이션을 점진적으로 수정하는 기대 형성 방식을 (______) 기대라 한다.",
+   "blankAnswer": "적응적",
+   "acceptedAnswers": [
+    "적응적",
+    "적응"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "적응적 기대 하에서는 단기 필립스곡선이 우하향하고 장기에는 자연실업률에서 수직.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4473,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC055-Q04",
+   "primaryConceptId": "EC055",
+   "conceptIds": [
+    "EC055"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "합리적 기대와 신축적 가격을 가정할 때 미리 예상된 통화량 증가의 효과는?",
+   "blankAnswer": "물가만 오르고 산출·실업은 변하지 않는다",
+   "acceptedAnswers": [
+    "물가만 오르고 산출·실업은 변하지 않는다"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "물가만 오르고 산출·실업은 변하지 않는다",
+    "실업률이 영구적으로 하락한다",
+    "산출이 일시적으로 크게 증가한다",
+    "물가가 하락한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정책무력성 명제(새고전학파): 예상된 정책은 기대에 즉시 반영된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4474,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC056-Q03",
+   "primaryConceptId": "EC056",
+   "conceptIds": [
+    "EC056"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "황금률 정상상태에서 자본의 한계생산은 인구증가율과 (______)의 합과 같다(기술진보 없음).",
+   "blankAnswer": "감가상각률",
+   "acceptedAnswers": [
+    "감가상각률",
+    "자본의 감가상각률"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MPK = n + δ에서 1인당 소비가 극대화된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4475,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC056-Q04",
+   "primaryConceptId": "EC056",
+   "conceptIds": [
+    "EC056"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "내생적 성장이론의 특징으로 옳은 것은?",
+   "blankAnswer": "인적자본·연구개발 등 경제 내부 요인이 장기 성장률을 결정한다",
+   "acceptedAnswers": [
+    "인적자본·연구개발 등 경제 내부 요인이 장기 성장률을 결정한다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "인적자본·연구개발 등 경제 내부 요인이 장기 성장률을 결정한다",
+    "장기 성장률은 외생적 기술진보율로만 결정된다",
+    "자본의 한계생산은 반드시 체감해 0으로 수렴한다",
+    "저축률은 장기 성장률에 영향이 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "AK모형 등은 자본(넓은 의미)의 수확체감이 없어 저축률이 성장률에 영향을 준다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4476,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC060-Q03",
+   "primaryConceptId": "EC060",
+   "conceptIds": [
+    "EC060"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "comparison",
+   "questionText": "갑국이 을국보다 두 재화 모두를 더 적은 노동으로 생산할 때 갑국이 가진 것은?",
+   "blankAnswer": "두 재화 모두의 절대우위",
+   "acceptedAnswers": [
+    "두 재화 모두의 절대우위"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "두 재화 모두의 절대우위",
+    "두 재화 모두의 비교우위",
+    "어느 재화에도 우위 없음",
+    "교역조건의 개선"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "절대우위는 생산성 자체의 비교다. 비교우위는 기회비용 비교라 두 재화 모두에 가질 수는 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4477,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC060-Q04",
+   "primaryConceptId": "EC060",
+   "conceptIds": [
+    "EC060"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "number",
+   "questionText": "갑국 근로자 1명이 하루에 쌀 6kg 또는 옷 3벌을 생산할 수 있다면 옷 1벌 생산의 기회비용은 쌀 (______)kg이다.",
+   "blankAnswer": "2",
+   "acceptedAnswers": [
+    "2"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "옷 3벌 = 쌀 6kg 포기 → 옷 1벌 = 6 ÷ 3 = 쌀 2kg.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4478,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC061-Q03",
+   "primaryConceptId": "EC061",
+   "conceptIds": [
+    "EC061"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "헥셔-올린 모형에서 노동풍부국이 자유무역을 시작할 때 노동의 실질보수 변화는?",
+   "blankAnswer": "상승한다",
+   "acceptedAnswers": [
+    "상승한다"
+   ],
+   "relatedConceptIds": [
+    "EC060"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "상승한다",
+    "하락한다",
+    "변하지 않는다",
+    "자본의 실질보수와 같이 상승한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "노동집약재 수출 → 그 상대가격 상승 → 스톨퍼-사무엘슨 정리에 따라 풍부한 요소(노동)의 실질보수 상승, 희소한 요소(자본)는 하락.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4479,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC062-Q03",
+   "primaryConceptId": "EC062",
+   "conceptIds": [
+    "EC062"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "수입량을 일정 수량 이하로 직접 제한하는 비관세 장벽을 수입(______)라 한다.",
+   "blankAnswer": "할당",
+   "acceptedAnswers": [
+    "할당",
+    "쿼터",
+    "할당제"
+   ],
+   "relatedConceptIds": [
+    "EC003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수입쿼터(quota).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4480,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC062-Q04",
+   "primaryConceptId": "EC062",
+   "conceptIds": [
+    "EC062"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "comparison",
+   "questionText": "같은 수입량을 실현하는 관세와 수입할당을 비교할 때, 관세의 정부 관세수입에 해당하는 부분이 수입할당에서 귀속되는 곳은?",
+   "blankAnswer": "수입 면허를 받은 자(할당지대)",
+   "acceptedAnswers": [
+    "수입 면허를 받은 자(할당지대)"
+   ],
+   "relatedConceptIds": [
+    "EC003"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "수입 면허를 받은 자(할당지대)",
+    "국내 소비자",
+    "외국 소비자",
+    "소멸한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "면허를 무상 배분하면 국내가격과 국제가격 차이(쿼터 렌트)가 면허 보유자에게 간다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4481,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC063-Q03",
+   "primaryConceptId": "EC063",
+   "conceptIds": [
+    "EC063"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "classification",
+   "questionText": "경상수지를 구성하는 항목이 아닌 것은?",
+   "blankAnswer": "직접투자",
+   "acceptedAnswers": [
+    "직접투자"
+   ],
+   "relatedConceptIds": [
+    "FM063"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "직접투자",
+    "상품수지",
+    "서비스수지",
+    "본원소득수지"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "경상수지 = 상품·서비스·본원소득·이전소득수지. 직접투자는 금융계정 항목.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4482,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC063-Q04",
+   "primaryConceptId": "EC063",
+   "conceptIds": [
+    "EC063"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "원/달러 환율 상승(원화 가치 하락)의 일반적인 단기 효과는?",
+   "blankAnswer": "수출품의 달러 표시 가격 하락으로 수출 증가 요인",
+   "acceptedAnswers": [
+    "수출품의 달러 표시 가격 하락으로 수출 증가 요인"
+   ],
+   "relatedConceptIds": [
+    "FM063"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "수출품의 달러 표시 가격 하락으로 수출 증가 요인",
+    "수입품의 원화 가격 하락",
+    "외채의 원화 상환 부담 감소",
+    "해외여행 비용 감소"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원화 절하 → 수출가격 경쟁력↑, 수입품 원화 가격↑, 외화부채 원화부담↑.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4483,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC063-Q05",
+   "primaryConceptId": "EC063",
+   "conceptIds": [
+    "EC063"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "number",
+   "questionText": "햄버거 가격이 한국 5,000원, 미국 4달러일 때 절대적 구매력평가설에 따른 원/달러 환율은 (______)원이다.",
+   "blankAnswer": "1250",
+   "acceptedAnswers": [
+    "1250",
+    "1,250",
+    "1,250원",
+    "1250원"
+   ],
+   "relatedConceptIds": [
+    "FM063"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "일물일가: 환율 = 국내가격 ÷ 해외가격 = 5,000 ÷ 4 = 1,250원/$.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4484,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC070-Q01",
+   "primaryConceptId": "EC070",
+   "conceptIds": [
+    "EC070"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "공급곡선이 수직이면 공급의 가격탄력성은 (______)이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "영"
+   ],
+   "relatedConceptIds": [
+    "EC002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격이 변해도 공급량이 변하지 않는다(완전비탄력).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4485,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC070-Q02",
+   "primaryConceptId": "EC070",
+   "conceptIds": [
+    "EC070"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "calculation",
+   "questionText": "가격이 10원에서 14원으로 오르자 공급량이 100개에서 130개로 늘었다. 중간점 방식 공급의 가격탄력성은 (______)이다.",
+   "blankAnswer": "0.78",
+   "acceptedAnswers": [
+    "0.78"
+   ],
+   "relatedConceptIds": [
+    "EC002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "elast_mid",
+    "params": {
+     "q1": 100.0,
+     "q2": 130.0,
+     "p1": 10.0,
+     "p2": 14.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(30 ÷ 115) ÷ (4 ÷ 12).",
+   "confusion": null,
+   "calculation": "중간점 가격탄력성 = |(ΔQ/평균Q) ÷ (ΔP/평균P)| = 0.78",
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4486,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC070-Q03",
+   "primaryConceptId": "EC070",
+   "conceptIds": [
+    "EC070"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "다른 조건이 같을 때 공급이 더 탄력적인 경우는?",
+   "blankAnswer": "분석 기간이 길 때",
+   "acceptedAnswers": [
+    "분석 기간이 길 때"
+   ],
+   "relatedConceptIds": [
+    "EC002"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "분석 기간이 길 때",
+    "생산설비를 늘리기 어려울 때",
+    "재고 보관이 불가능할 때",
+    "생산에 특수한 원료가 필요할 때"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "장기에는 설비·진입 조정이 가능해 공급량이 가격에 더 크게 반응한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4487,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC071-Q01",
+   "primaryConceptId": "EC071",
+   "conceptIds": [
+    "EC071"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "단위당 10원의 물품세 부과 후 소비자 지불가격이 6원 상승했다면 단위당 생산자 부담은 (______)원이다.",
+   "blankAnswer": "4",
+   "acceptedAnswers": [
+    "4",
+    "4원"
+   ],
+   "relatedConceptIds": [
+    "EC003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조세 쐐기 10 = 소비자 부담 6 + 생산자 부담 4.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4488,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC071-Q02",
+   "primaryConceptId": "EC071",
+   "conceptIds": [
+    "EC071"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "완전경쟁시장에서 단위당 보조금을 지급할 때의 효과로 옳은 것은?",
+   "blankAnswer": "거래량이 효율 수준보다 많아져 자중손실이 생긴다",
+   "acceptedAnswers": [
+    "거래량이 효율 수준보다 많아져 자중손실이 생긴다"
+   ],
+   "relatedConceptIds": [
+    "EC003"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "거래량이 효율 수준보다 많아져 자중손실이 생긴다",
+    "자중손실 없이 사회후생이 증가한다",
+    "거래량이 감소한다",
+    "소비자 지불가격이 상승한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정부 지출이 소비자·생산자 잉여 증가분보다 커 그 차이가 자중손실이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4489,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC071-Q03",
+   "primaryConceptId": "EC071",
+   "conceptIds": [
+    "EC071"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "같은 물품세를 소비자에게 부과하는 경우와 생산자에게 부과하는 경우를 비교하면?",
+   "blankAnswer": "경제적 귀착은 같다",
+   "acceptedAnswers": [
+    "경제적 귀착은 같다"
+   ],
+   "relatedConceptIds": [
+    "EC003"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "경제적 귀착은 같다",
+    "소비자 부과 시 소비자가 전액 부담한다",
+    "생산자 부과 시 생산자가 전액 부담한다",
+    "소비자 부과 시 자중손실이 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "귀착은 법적 의무자가 아니라 수요·공급의 상대적 탄력성이 결정한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4490,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC072-Q01",
+   "primaryConceptId": "EC072",
+   "conceptIds": [
+    "EC072"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "A를 B보다 약하게 선호하고 B를 C보다 약하게 선호하면 A를 C보다 약하게 선호한다는 선호 공리를 (______)성이라 한다.",
+   "blankAnswer": "이행",
+   "acceptedAnswers": [
+    "이행"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Transitivity. 이행성이 깨지면 무차별곡선이 교차한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4491,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC072-Q02",
+   "primaryConceptId": "EC072",
+   "conceptIds": [
+    "EC072"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "서수적 효용함수 U(X, Y)를 단조증가변환한 V = 2U + 10에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "U와 같은 선호를 나타낸다",
+   "acceptedAnswers": [
+    "U와 같은 선호를 나타낸다"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "U와 같은 선호를 나타낸다",
+    "선호의 강도가 2배가 된다",
+    "무차별곡선의 모양이 달라진다",
+    "한계대체율이 2배가 된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "순서가 보존되므로 무차별곡선 지도와 한계대체율이 같다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4492,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC072-Q03",
+   "primaryConceptId": "EC072",
+   "conceptIds": [
+    "EC072"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "사과 1개 소비 시 총효용 10, 2개 18, 3개 24라면 세 번째 사과의 한계효용은 (______)이다.",
+   "blankAnswer": "6",
+   "acceptedAnswers": [
+    "6"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "한계효용 = 24 − 18 = 6. 10 → 8 → 6으로 한계효용이 체감한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4493,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC073-Q01",
+   "primaryConceptId": "EC073",
+   "conceptIds": [
+    "EC073"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "소비자가 묶음 B를 살 수 있었는데도 묶음 A를 선택했다면 A가 B보다 (______)되었다고 한다.",
+   "blankAnswer": "현시선호",
+   "acceptedAnswers": [
+    "현시선호",
+    "직접 현시선호"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Revealed preferred. 선택 당시 B가 예산 집합 안에 있어야 한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4494,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC073-Q02",
+   "primaryConceptId": "EC073",
+   "conceptIds": [
+    "EC073"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "현시선호 약공리 위반에 해당하는 것은?",
+   "blankAnswer": "1기에 B도 살 수 있었는데 A를 사고, 2기에 A도 살 수 있었는데 B를 샀다",
+   "acceptedAnswers": [
+    "1기에 B도 살 수 있었는데 A를 사고, 2기에 A도 살 수 있었는데 B를 샀다"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "1기에 B도 살 수 있었는데 A를 사고, 2기에 A도 살 수 있었는데 B를 샀다",
+    "1기에 A를 사고 2기에 소득이 늘어 B를 샀으며 1기에 B는 예산 밖이었다",
+    "두 기간 모두 A를 샀다",
+    "2기에 A가 예산 밖이어서 B를 샀다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "A가 B보다, B가 A보다 동시에 직접 현시선호되어 약공리에 어긋난다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4495,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC073-Q03",
+   "primaryConceptId": "EC073",
+   "conceptIds": [
+    "EC073"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "choice",
+   "questionText": "현시선호이론의 특징으로 옳은 것은?",
+   "blankAnswer": "효용함수를 가정하지 않고 관찰된 선택으로 선호를 추론한다",
+   "acceptedAnswers": [
+    "효용함수를 가정하지 않고 관찰된 선택으로 선호를 추론한다"
+   ],
+   "relatedConceptIds": [
+    "EC010"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "효용함수를 가정하지 않고 관찰된 선택으로 선호를 추론한다",
+    "기수적 효용을 측정한다",
+    "무차별곡선의 교차를 허용한다",
+    "가격 자료 없이 분석한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "새뮤얼슨이 제시한 접근이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4496,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC074-Q01",
+   "primaryConceptId": "EC074",
+   "conceptIds": [
+    "EC074"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "노동 5명이 총 120단위를 생산할 때 노동의 평균생산은 (______)이다.",
+   "blankAnswer": "24",
+   "acceptedAnswers": [
+    "24"
+   ],
+   "relatedConceptIds": [
+    "EC020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "AP = Q ÷ L = 120 ÷ 5 = 24.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4497,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC074-Q02",
+   "primaryConceptId": "EC074",
+   "conceptIds": [
+    "EC074"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "노동의 한계생산이 평균생산보다 크면 평균생산은 (______)한다.",
+   "blankAnswer": "증가",
+   "acceptedAnswers": [
+    "증가",
+    "상승"
+   ],
+   "relatedConceptIds": [
+    "EC020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "평균보다 큰 값이 추가되면 평균이 오른다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4498,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC074-Q03",
+   "primaryConceptId": "EC074",
+   "conceptIds": [
+    "EC074"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "choice",
+   "questionText": "합리적인 기업이 생산하는 구간(생산의 제2단계)은?",
+   "blankAnswer": "평균생산 최대점부터 한계생산이 0이 되는 점까지",
+   "acceptedAnswers": [
+    "평균생산 최대점부터 한계생산이 0이 되는 점까지"
+   ],
+   "relatedConceptIds": [
+    "EC020"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "평균생산 최대점부터 한계생산이 0이 되는 점까지",
+    "평균생산이 증가하는 구간",
+    "한계생산이 음(−)인 구간",
+    "한계생산이 최대가 되는 점까지"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "1단계는 투입을 늘릴 여지가 있고, 3단계는 투입을 줄여야 산출이 늘어난다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4499,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC075-Q01",
+   "primaryConceptId": "EC075",
+   "conceptIds": [
+    "EC075"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "number",
+   "questionText": "노동의 한계생산이 10, 자본의 한계생산이 5일 때 노동의 자본에 대한 한계기술대체율은 (______)이다.",
+   "blankAnswer": "2",
+   "acceptedAnswers": [
+    "2"
+   ],
+   "relatedConceptIds": [
+    "EC021"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MRTS_LK = MP_L ÷ MP_K = 10 ÷ 5 = 2.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4500,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC075-Q02",
+   "primaryConceptId": "EC075",
+   "conceptIds": [
+    "EC075"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "matching",
+   "questionText": "생산함수와 등량곡선의 모양을 연결하시오.",
+   "blankAnswer": "Q = 2L + K → 우하향 직선 / Q = min(L, K) → L자형 / Q = L^0.5K^0.5 → 원점에 볼록한 곡선",
+   "acceptedAnswers": [
+    "Q = 2L + K → 우하향 직선 / Q = min(L, K) → L자형 / Q = L^0.5K^0.5 → 원점에 볼록한 곡선"
+   ],
+   "relatedConceptIds": [
+    "EC021"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "우하향 직선",
+    "L자형",
+    "원점에 볼록한 곡선"
+   ],
+   "slots": [
+    {
+     "label": "Q = 2L + K",
+     "answer": "우하향 직선"
+    },
+    {
+     "label": "Q = min(L, K)",
+     "answer": "L자형"
+    },
+    {
+     "label": "Q = L^0.5K^0.5",
+     "answer": "원점에 볼록한 곡선"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "완전대체 → 직선, 완전보완 → L자, 콥-더글러스 → 볼록.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4501,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC075-Q03",
+   "primaryConceptId": "EC075",
+   "conceptIds": [
+    "EC075"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "같은 양의 산출을 생산할 수 있는 노동과 자본의 조합을 이은 곡선을 (______)이라 한다.",
+   "blankAnswer": "등량곡선",
+   "acceptedAnswers": [
+    "등량곡선",
+    "등생산량곡선"
+   ],
+   "relatedConceptIds": [
+    "EC021"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Isoquant.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4502,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC076-Q01",
+   "primaryConceptId": "EC076",
+   "conceptIds": [
+    "EC076"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "독점적 경쟁시장의 장기균형에서 기업의 경제적 이윤은 (______)이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "영"
+   ],
+   "relatedConceptIds": [
+    "EC030"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자유로운 진입으로 수요곡선이 AC에 접한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4503,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC076-Q02",
+   "primaryConceptId": "EC076",
+   "conceptIds": [
+    "EC076"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "독점적 경쟁시장의 장기균형에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "가격이 한계비용보다 높고 초과설비가 존재한다",
+   "acceptedAnswers": [
+    "가격이 한계비용보다 높고 초과설비가 존재한다"
+   ],
+   "relatedConceptIds": [
+    "EC030"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "가격이 한계비용보다 높고 초과설비가 존재한다",
+    "가격이 한계비용과 같다",
+    "평균비용 최저점에서 생산한다",
+    "진입장벽으로 초과이윤이 유지된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "우하향 수요곡선이 AC에 접하는 점은 AC 최저점의 왼쪽이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4504,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC076-Q03",
+   "primaryConceptId": "EC076",
+   "conceptIds": [
+    "EC076"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "classification",
+   "questionText": "시장구조와 특징을 연결하시오.",
+   "blankAnswer": "독점적 경쟁 → 차별화된 상품·진입 자유 / 완전경쟁 → 동질적 상품·가격수용자 / 과점 → 소수 기업·전략적 상호의존",
+   "acceptedAnswers": [
+    "독점적 경쟁 → 차별화된 상품·진입 자유 / 완전경쟁 → 동질적 상품·가격수용자 / 과점 → 소수 기업·전략적 상호의존"
+   ],
+   "relatedConceptIds": [
+    "EC030"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "차별화된 상품·진입 자유",
+    "동질적 상품·가격수용자",
+    "소수 기업·전략적 상호의존"
+   ],
+   "slots": [
+    {
+     "label": "독점적 경쟁",
+     "answer": "차별화된 상품·진입 자유"
+    },
+    {
+     "label": "완전경쟁",
+     "answer": "동질적 상품·가격수용자"
+    },
+    {
+     "label": "과점",
+     "answer": "소수 기업·전략적 상호의존"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "시장구조 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4505,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC077-Q01",
+   "primaryConceptId": "EC077",
+   "conceptIds": [
+    "EC077"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "calculation",
+   "questionText": "생산물 가격이 5,000원이고 노동의 한계생산이 4단위일 때 노동의 한계생산가치는 (______)원이다.",
+   "blankAnswer": "20,000",
+   "acceptedAnswers": [
+    "20,000",
+    "20,000원"
+   ],
+   "relatedConceptIds": [
+    "EC021"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 5000.0,
+     "b": 4.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "VMP = P × MP.",
+   "confusion": null,
+   "calculation": "5,000 × 4 = 20,000",
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4506,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC077-Q02",
+   "primaryConceptId": "EC077",
+   "conceptIds": [
+    "EC077"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "생산요소에 대한 수요는 그 요소로 생산한 재화의 수요에서 비롯되므로 (______)수요라 한다.",
+   "blankAnswer": "파생",
+   "acceptedAnswers": [
+    "파생",
+    "유발"
+   ],
+   "relatedConceptIds": [
+    "EC021"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Derived demand.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4507,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC077-Q03",
+   "primaryConceptId": "EC077",
+   "conceptIds": [
+    "EC077"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "생산물시장이 독점이고 노동시장이 완전경쟁일 때 기업의 노동 고용 조건은?",
+   "blankAnswer": "한계수입생산 = 임금",
+   "acceptedAnswers": [
+    "한계수입생산 = 임금"
+   ],
+   "relatedConceptIds": [
+    "EC021"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "한계수입생산 = 임금",
+    "한계생산가치 = 임금",
+    "평균생산 = 임금",
+    "한계생산 = 임금"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "독점기업은 추가 생산물의 한계수입(MR < P)을 기준으로 노동의 가치를 평가한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4508,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC078-Q01",
+   "primaryConceptId": "EC078",
+   "conceptIds": [
+    "EC078"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "임금 상승 시 소득효과가 대체효과보다 커서 노동공급이 감소하는 구간이 있는 노동공급곡선을 (______) 노동공급곡선이라 한다.",
+   "blankAnswer": "후방굴절",
+   "acceptedAnswers": [
+    "후방굴절",
+    "후방굴절하는"
+   ],
+   "relatedConceptIds": [
+    "EC077"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "여가가 정상재일 때 고임금 구간에서 나타날 수 있다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4509,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC078-Q02",
+   "primaryConceptId": "EC078",
+   "conceptIds": [
+    "EC078"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "여가가 정상재일 때 임금 상승의 대체효과가 노동공급에 미치는 영향은?",
+   "blankAnswer": "증가시킨다",
+   "acceptedAnswers": [
+    "증가시킨다"
+   ],
+   "relatedConceptIds": [
+    "EC077"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "증가시킨다",
+    "감소시킨다",
+    "영향이 없다",
+    "소득효과와 항상 같은 방향이다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "여가의 기회비용(임금)이 올라 여가를 줄이고 노동을 늘린다. 소득효과는 반대 방향.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4510,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC078-Q03",
+   "primaryConceptId": "EC078",
+   "conceptIds": [
+    "EC078"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "노동시장의 수요독점 기업에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "경쟁시장보다 낮은 임금을 지급하고 고용량도 적다",
+   "acceptedAnswers": [
+    "경쟁시장보다 낮은 임금을 지급하고 고용량도 적다"
+   ],
+   "relatedConceptIds": [
+    "EC077"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "경쟁시장보다 낮은 임금을 지급하고 고용량도 적다",
+    "경쟁시장보다 높은 임금을 지급한다",
+    "한계생산가치와 같은 임금을 지급한다",
+    "고용량이 경쟁시장보다 많다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "한계요소비용이 임금보다 높아 고용을 줄인다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4511,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC079-Q01",
+   "primaryConceptId": "EC079",
+   "conceptIds": [
+    "EC079"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "공급량이 고정된 토지 같은 생산요소에 지급되는 대가를 (______)라 한다.",
+   "blankAnswer": "지대",
+   "acceptedAnswers": [
+    "지대"
+   ],
+   "relatedConceptIds": [
+    "EC077"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공급이 완전비탄력적이므로 가격은 수요가 결정한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4512,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC079-Q02",
+   "primaryConceptId": "EC079",
+   "conceptIds": [
+    "EC079"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "situation",
+   "questionText": "대부자금시장에서 정부의 재정적자가 커질 때의 효과로 옳은 것은?",
+   "blankAnswer": "실질이자율이 상승하고 민간투자가 감소한다",
+   "acceptedAnswers": [
+    "실질이자율이 상승하고 민간투자가 감소한다"
+   ],
+   "relatedConceptIds": [
+    "EC077"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "실질이자율이 상승하고 민간투자가 감소한다",
+    "실질이자율이 하락한다",
+    "민간투자가 증가한다",
+    "저축이 감소하고 이자율이 하락한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "국민저축 감소(또는 자금수요 증가) → 이자율 상승 → 투자 구축.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4513,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC079-Q03",
+   "primaryConceptId": "EC079",
+   "conceptIds": [
+    "EC079"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "기업은 자본의 한계생산가치가 자본의 (______)와 같아질 때까지 자본을 사용한다.",
+   "blankAnswer": "임대료",
+   "acceptedAnswers": [
+    "임대료",
+    "사용자비용",
+    "임대가격"
+   ],
+   "relatedConceptIds": [
+    "EC077"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 서비스 사용의 한계비용과 한계편익이 같아지는 조건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4514,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC080-Q01",
+   "primaryConceptId": "EC080",
+   "conceptIds": [
+    "EC080"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "calculation",
+   "questionText": "하위 40% 계층의 소득 점유율이 18%, 상위 20% 계층의 소득 점유율이 45%일 때 십분위분배율은 (______)이다.",
+   "blankAnswer": "0.4",
+   "acceptedAnswers": [
+    "0.4"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 18.0,
+     "b": 45.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "하위 40% 점유율 ÷ 상위 20% 점유율.",
+   "confusion": null,
+   "calculation": "18 ÷ 45 = 0.4",
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4515,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC080-Q02",
+   "primaryConceptId": "EC080",
+   "conceptIds": [
+    "EC080"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "완전히 평등한 사회의 지니계수는 (______)이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "영"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "로렌츠곡선이 대각선과 일치한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4516,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC080-Q03",
+   "primaryConceptId": "EC080",
+   "conceptIds": [
+    "EC080"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "classification",
+   "questionText": "불평등 지표와 해석을 연결하시오.",
+   "blankAnswer": "지니계수 → 클수록 불평등 / 십분위분배율 → 클수록 평등 / 5분위배율 → 클수록 불평등",
+   "acceptedAnswers": [
+    "지니계수 → 클수록 불평등 / 십분위분배율 → 클수록 평등 / 5분위배율 → 클수록 불평등"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "클수록 불평등",
+    "클수록 평등"
+   ],
+   "slots": [
+    {
+     "label": "지니계수",
+     "answer": "클수록 불평등"
+    },
+    {
+     "label": "십분위분배율",
+     "answer": "클수록 평등"
+    },
+    {
+     "label": "5분위배율",
+     "answer": "클수록 불평등"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지표별 방향.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4517,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC081-Q01",
+   "primaryConceptId": "EC081",
+   "conceptIds": [
+    "EC081"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "n개 시장 중 n − 1개 시장이 균형이면 나머지 하나의 시장도 균형이라는 법칙을 (______) 법칙이라 한다.",
+   "blankAnswer": "왈라스",
+   "acceptedAnswers": [
+    "왈라스",
+    "발라스"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Walras's law: 모든 시장 초과수요 가치의 합은 0.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4518,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC081-Q02",
+   "primaryConceptId": "EC081",
+   "conceptIds": [
+    "EC081"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "choice",
+   "questionText": "에지워스 상자에서 교환의 파레토효율이 달성된 점들을 이은 곡선은?",
+   "blankAnswer": "계약곡선",
+   "acceptedAnswers": [
+    "계약곡선"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약곡선",
+    "효용가능경계",
+    "생산가능곡선",
+    "가격소비곡선"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약곡선 위에서는 두 소비자의 무차별곡선이 접해 MRS가 같다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4519,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC081-Q03",
+   "primaryConceptId": "EC081",
+   "conceptIds": [
+    "EC081"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "생산과 교환을 모두 고려한 종합적 파레토효율 조건은?",
+   "blankAnswer": "한계대체율 = 한계변환율",
+   "acceptedAnswers": [
+    "한계대체율 = 한계변환율"
+   ],
+   "relatedConceptIds": [
+    "EC040"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "한계대체율 = 한계변환율",
+    "한계대체율 = 한계기술대체율",
+    "가격 = 평균비용",
+    "한계변환율 = 0"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "소비자가 평가하는 교환비율과 경제가 생산에서 바꿀 수 있는 비율이 같아야 한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4520,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC082-Q01",
+   "primaryConceptId": "EC082",
+   "conceptIds": [
+    "EC082"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "대리인이 주인이 원하는 행동을 택하는 것이 대리인 자신에게도 가장 유리하도록 하는 계약 조건을 (______)제약이라 한다.",
+   "blankAnswer": "유인양립",
+   "acceptedAnswers": [
+    "유인양립"
+   ],
+   "relatedConceptIds": [
+    "EC042"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Incentive compatibility. 참여제약은 계약 수락 조건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4521,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC082-Q02",
+   "primaryConceptId": "EC082",
+   "conceptIds": [
+    "EC082"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "choice",
+   "questionText": "기업이 시장 균형임금보다 높은 임금을 지급해 근로자의 태만을 줄이려는 이론은?",
+   "blankAnswer": "효율임금이론",
+   "acceptedAnswers": [
+    "효율임금이론"
+   ],
+   "relatedConceptIds": [
+    "EC042"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "효율임금이론",
+    "인적자본이론",
+    "탐색이론",
+    "보상적 임금격차이론"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "높은 임금은 해고 시 잃는 것을 키워 태만을 억제한다(주인·대리인 문제의 해결책).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4522,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC082-Q03",
+   "primaryConceptId": "EC082",
+   "conceptIds": [
+    "EC082"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "classification",
+   "questionText": "주인·대리인 문제와 가장 가까운 정보비대칭 유형은?",
+   "blankAnswer": "계약 후 감춰진 행동으로 인한 도덕적 해이",
+   "acceptedAnswers": [
+    "계약 후 감춰진 행동으로 인한 도덕적 해이"
+   ],
+   "relatedConceptIds": [
+    "EC042"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약 후 감춰진 행동으로 인한 도덕적 해이",
+    "계약 전 감춰진 특성으로 인한 역선택",
+    "공공재의 무임승차",
+    "독점의 가격결정력"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대리인의 노력은 계약 후 관찰이 어렵다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4523,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC083-Q01",
+   "primaryConceptId": "EC083",
+   "conceptIds": [
+    "EC083"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "definition",
+   "questionText": "같은 크기라도 손실을 이득보다 더 크게 느끼는 성향을 (______)라 한다.",
+   "blankAnswer": "손실회피",
+   "acceptedAnswers": [
+    "손실회피",
+    "손실기피"
+   ],
+   "relatedConceptIds": [
+    "EC012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전망이론의 핵심 특징.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4524,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC083-Q02",
+   "primaryConceptId": "EC083",
+   "conceptIds": [
+    "EC083"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "matching",
+   "questionText": "사례와 행동경제학 개념을 연결하시오.",
+   "blankAnswer": "자기 머그컵을 산 가격보다 훨씬 비싸게만 팔려 함 → 부존효과 / '생존율 90%'와 '사망률 10%'에 다르게 반응함 → 프레이밍 효과 / 오늘은 다이어트를 미루고 내일부터 하겠다고 반복함 → 현재편향",
+   "acceptedAnswers": [
+    "자기 머그컵을 산 가격보다 훨씬 비싸게만 팔려 함 → 부존효과 / '생존율 90%'와 '사망률 10%'에 다르게 반응함 → 프레이밍 효과 / 오늘은 다이어트를 미루고 내일부터 하겠다고 반복함 → 현재편향"
+   ],
+   "relatedConceptIds": [
+    "EC012"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "부존효과",
+    "프레이밍 효과",
+    "현재편향",
+    "기준점 효과"
+   ],
+   "slots": [
+    {
+     "label": "자기 머그컵을 산 가격보다 훨씬 비싸게만 팔려 함",
+     "answer": "부존효과"
+    },
+    {
+     "label": "'생존율 90%'와 '사망률 10%'에 다르게 반응함",
+     "answer": "프레이밍 효과"
+    },
+    {
+     "label": "오늘은 다이어트를 미루고 내일부터 하겠다고 반복함",
+     "answer": "현재편향"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "편향의 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4525,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC083-Q03",
+   "primaryConceptId": "EC083",
+   "conceptIds": [
+    "EC083"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-A",
+   "questionType": "comparison",
+   "questionText": "전망이론에서 손실 영역에서의 일반적인 위험 태도는?",
+   "blankAnswer": "위험추구적",
+   "acceptedAnswers": [
+    "위험추구적"
+   ],
+   "relatedConceptIds": [
+    "EC012"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "위험추구적",
+    "위험회피적",
+    "위험중립적",
+    "항상 확실한 손실을 선택"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가치함수가 이득 영역에서 오목, 손실 영역에서 볼록하다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4526,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC084-Q01",
+   "primaryConceptId": "EC084",
+   "conceptIds": [
+    "EC084"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "명목GDP가 2,000조원, 국외순수취요소소득이 30조원일 때 명목GNI는 (______)조원이다.",
+   "blankAnswer": "2,030",
+   "acceptedAnswers": [
+    "2,030",
+    "2,030조원"
+   ],
+   "relatedConceptIds": [
+    "EC050"
+   ],
+   "unit": "조원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 2000.0,
+     "b": 30.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "GNI = GDP + 국외순수취요소소득.",
+   "confusion": null,
+   "calculation": "2,000 + 30 = 2,030",
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4527,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC084-Q02",
+   "primaryConceptId": "EC084",
+   "conceptIds": [
+    "EC084"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "classification",
+   "questionText": "한국 GDP에는 포함되지만 한국 GNI에는 포함되지 않는 것은?",
+   "blankAnswer": "외국인 근로자가 한국에서 받은 임금",
+   "acceptedAnswers": [
+    "외국인 근로자가 한국에서 받은 임금"
+   ],
+   "relatedConceptIds": [
+    "EC050"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "외국인 근로자가 한국에서 받은 임금",
+    "한국인이 해외 공장에서 받은 임금",
+    "한국 기업의 국내 생산",
+    "한국인 가계의 국내 근로소득"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "국내 생산이므로 GDP에 포함되지만 국외지급요소소득이라 GNI에서는 빠진다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4528,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC084-Q03",
+   "primaryConceptId": "EC084",
+   "conceptIds": [
+    "EC084"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "생산국민소득, 분배국민소득, 지출국민소득이 사후적으로 같다는 원칙을 국민소득 (______)의 원칙이라 한다.",
+   "blankAnswer": "3면 등가",
+   "acceptedAnswers": [
+    "3면 등가",
+    "삼면등가"
+   ],
+   "relatedConceptIds": [
+    "EC050"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "생산 = 분배 = 지출.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4529,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC085-Q01",
+   "primaryConceptId": "EC085",
+   "conceptIds": [
+    "EC085"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "명목이자율이 7%이고 기대 인플레이션율이 3%이면 피셔 방정식에 따른 실질이자율은 약 (______)%이다.",
+   "blankAnswer": "4",
+   "acceptedAnswers": [
+    "4",
+    "4%"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실질이자율 ≈ 명목이자율 − 기대 인플레이션율 = 7 − 3 = 4%.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4530,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC085-Q02",
+   "primaryConceptId": "EC085",
+   "conceptIds": [
+    "EC085"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "예상하지 못한 인플레이션이 발생했을 때 이득을 보는 경제주체는?",
+   "blankAnswer": "고정금리로 돈을 빌린 채무자",
+   "acceptedAnswers": [
+    "고정금리로 돈을 빌린 채무자"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "고정금리로 돈을 빌린 채무자",
+    "고정금리로 돈을 빌려준 채권자",
+    "고정 연금 수령자",
+    "현금을 많이 보유한 가계"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "갚을 돈의 실질가치가 줄어 부가 채권자에서 채무자로 이전된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4531,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC085-Q03",
+   "primaryConceptId": "EC085",
+   "conceptIds": [
+    "EC085"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "원유 가격 급등으로 발생하는 인플레이션의 유형과 동반 현상은?",
+   "blankAnswer": "비용인상 인플레이션 — 산출 감소",
+   "acceptedAnswers": [
+    "비용인상 인플레이션 — 산출 감소"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "비용인상 인플레이션 — 산출 감소",
+    "수요견인 인플레이션 — 산출 증가",
+    "비용인상 인플레이션 — 실업 감소",
+    "수요견인 인플레이션 — 실업 증가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "총공급곡선이 왼쪽으로 이동해 물가 상승과 경기 침체가 함께 나타난다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4532,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC086-Q01",
+   "primaryConceptId": "EC086",
+   "conceptIds": [
+    "EC086"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "물가 상승률이 낮아지지만 물가 수준 자체는 계속 오르는 현상을 (______)이라 한다.",
+   "blankAnswer": "디스인플레이션",
+   "acceptedAnswers": [
+    "디스인플레이션"
+   ],
+   "relatedConceptIds": [
+    "EC085"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "디플레이션은 물가 수준 자체의 하락.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4533,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC086-Q02",
+   "primaryConceptId": "EC086",
+   "conceptIds": [
+    "EC086"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "피셔의 부채디플레이션 이론에 따른 물가 하락의 효과는?",
+   "blankAnswer": "부채의 실질부담이 커져 채무자 지출이 줄어든다",
+   "acceptedAnswers": [
+    "부채의 실질부담이 커져 채무자 지출이 줄어든다"
+   ],
+   "relatedConceptIds": [
+    "EC085"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "부채의 실질부담이 커져 채무자 지출이 줄어든다",
+    "부채의 실질부담이 줄어든다",
+    "실질이자율이 하락한다",
+    "채권자의 실질자산이 감소한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "명목 부채는 고정되어 있는데 물가가 내려가면 실질 상환 부담이 늘어난다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4534,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC086-Q03",
+   "primaryConceptId": "EC086",
+   "conceptIds": [
+    "EC086"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "명목이자율이 1%이고 기대 인플레이션율이 −2%(물가 하락 예상)이면 실질이자율은 약 (______)%이다.",
+   "blankAnswer": "3",
+   "acceptedAnswers": [
+    "3",
+    "3%"
+   ],
+   "relatedConceptIds": [
+    "EC085"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실질이자율 ≈ 명목 1 − 기대 인플레이션(−2) = 3%. 명목금리가 낮아도 실질금리는 높다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4535,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC087-Q01",
+   "primaryConceptId": "EC087",
+   "conceptIds": [
+    "EC087"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "소비함수가 C = 100 + 0.8Y일 때 가처분소득 Y가 1,000이면 소비는 (______)이다.",
+   "blankAnswer": "900",
+   "acceptedAnswers": [
+    "900"
+   ],
+   "relatedConceptIds": [
+    "EC052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "lin",
+    "params": {
+     "f": 100.0,
+     "v": 0.8,
+     "x": 1000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "C = 100 + 0.8 × 1,000.",
+   "confusion": null,
+   "calculation": "100 + 0.8 × 1,000 = 900",
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4536,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC087-Q02",
+   "primaryConceptId": "EC087",
+   "conceptIds": [
+    "EC087"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "항상소득가설에 따를 때 일회성 보너스(일시소득)를 받은 가계의 소비 변화는?",
+   "blankAnswer": "소비가 소폭만 증가한다",
+   "acceptedAnswers": [
+    "소비가 소폭만 증가한다"
+   ],
+   "relatedConceptIds": [
+    "EC052"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "소비가 소폭만 증가한다",
+    "보너스 전액만큼 소비가 증가한다",
+    "소비가 감소한다",
+    "저축이 감소한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "일시소득은 항상소득을 조금만 높이므로 대부분 저축된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4537,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC087-Q03",
+   "primaryConceptId": "EC087",
+   "conceptIds": [
+    "EC087"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "케인즈 절대소득가설의 소비함수 C = a + bY(a > 0)에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "평균소비성향이 한계소비성향보다 크다",
+   "acceptedAnswers": [
+    "평균소비성향이 한계소비성향보다 크다"
+   ],
+   "relatedConceptIds": [
+    "EC052"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "평균소비성향이 한계소비성향보다 크다",
+    "평균소비성향이 한계소비성향보다 작다",
+    "평균소비성향이 소득과 관계없이 일정하다",
+    "한계소비성향이 1보다 크다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "APC = a/Y + b > b. 소득이 늘면 APC는 b에 가까워진다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4538,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC088-Q01",
+   "primaryConceptId": "EC088",
+   "conceptIds": [
+    "EC088"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "한계소비성향이 0.75이면 한계저축성향은 (______)이다.",
+   "blankAnswer": "0.25",
+   "acceptedAnswers": [
+    "0.25"
+   ],
+   "relatedConceptIds": [
+    "EC087"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MPC + MPS = 1.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4539,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC088-Q02",
+   "primaryConceptId": "EC088",
+   "conceptIds": [
+    "EC088"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "소비함수가 C = 100 + 0.8Y일 때 저축함수는 S = -100 + 0.2Y이다. 가처분소득이 1,500이면 저축은 (______)이다.",
+   "blankAnswer": "200",
+   "acceptedAnswers": [
+    "200"
+   ],
+   "relatedConceptIds": [
+    "EC087"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "lin",
+    "params": {
+     "f": -100.0,
+     "v": 0.2,
+     "x": 1500.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "S = −100 + 0.2 × 1,500.",
+   "confusion": null,
+   "calculation": "-100 + 0.2 × 1,500 = 200",
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4540,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC088-Q03",
+   "primaryConceptId": "EC088",
+   "conceptIds": [
+    "EC088"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "케인즈 단순모형에서 모든 가계가 동시에 저축을 늘리려 할 때의 결과로 옳은 것은?",
+   "blankAnswer": "국민소득이 감소하고 총저축은 늘지 않을 수 있다",
+   "acceptedAnswers": [
+    "국민소득이 감소하고 총저축은 늘지 않을 수 있다"
+   ],
+   "relatedConceptIds": [
+    "EC087"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "국민소득이 감소하고 총저축은 늘지 않을 수 있다",
+    "총저축이 반드시 증가한다",
+    "국민소득이 증가한다",
+    "투자가 반드시 증가한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "절약의 역설(구성의 오류).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4541,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC089-Q01",
+   "primaryConceptId": "EC089",
+   "conceptIds": [
+    "EC089"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "기업의 주식시장 가치가 150억원이고 보유 자본의 대체비용이 120억원일 때 토빈의 q는 (______)이다.",
+   "blankAnswer": "1.25",
+   "acceptedAnswers": [
+    "1.25"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 150.0,
+     "b": 120.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "q = 시장가치 ÷ 대체비용.",
+   "confusion": null,
+   "calculation": "150 ÷ 120 = 1.25",
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4542,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC089-Q02",
+   "primaryConceptId": "EC089",
+   "conceptIds": [
+    "EC089"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "토빈의 q가 1보다 클 때 기업의 행동으로 옳은 것은?",
+   "blankAnswer": "새로운 자본재 투자를 늘린다",
+   "acceptedAnswers": [
+    "새로운 자본재 투자를 늘린다"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "새로운 자본재 투자를 늘린다",
+    "보유 자본을 매각한다",
+    "투자를 줄인다",
+    "투자와 무관하다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 1원 추가가 시장가치를 1원보다 크게 높이므로 투자가 유리하다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4543,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC089-Q03",
+   "primaryConceptId": "EC089",
+   "conceptIds": [
+    "EC089"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "투자가 산출 수준이 아니라 산출의 변화분에 비례한다는 이론을 (______)원리라 한다.",
+   "blankAnswer": "가속도",
+   "acceptedAnswers": [
+    "가속도",
+    "가속"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Accelerator principle.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4544,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC090-Q01",
+   "primaryConceptId": "EC090",
+   "conceptIds": [
+    "EC090"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "실질GDP가 1,000, 물가수준이 2, 화폐유통속도가 4일 때 교환방정식 MV = PY에 따른 통화량은 (______)이다.",
+   "blankAnswer": "500",
+   "acceptedAnswers": [
+    "500"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1000.0,
+     "b": 2.0,
+     "c": 4.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "M = P × Y ÷ V.",
+   "confusion": null,
+   "calculation": "1,000 × 2 ÷ 4 = 500",
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4545,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC090-Q02",
+   "primaryConceptId": "EC090",
+   "conceptIds": [
+    "EC090"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "케인즈의 투기적 동기에 의한 화폐수요에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "이자율이 하락하면 증가한다",
+   "acceptedAnswers": [
+    "이자율이 하락하면 증가한다"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "이자율이 하락하면 증가한다",
+    "이자율이 상승하면 증가한다",
+    "소득에만 의존한다",
+    "이자율과 무관하다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이자율이 낮으면(채권가격 높음) 채권가격 하락을 예상해 화폐 보유를 늘린다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4546,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC090-Q03",
+   "primaryConceptId": "EC090",
+   "conceptIds": [
+    "EC090"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "classification",
+   "questionText": "화폐 보유 동기와 결정요인을 연결하시오.",
+   "blankAnswer": "거래적 동기 → 소득 / 예비적 동기 → 소득 / 투기적 동기 → 이자율",
+   "acceptedAnswers": [
+    "거래적 동기 → 소득 / 예비적 동기 → 소득 / 투기적 동기 → 이자율"
+   ],
+   "relatedConceptIds": [
+    "EC053"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "소득",
+    "이자율"
+   ],
+   "slots": [
+    {
+     "label": "거래적 동기",
+     "answer": "소득"
+    },
+    {
+     "label": "예비적 동기",
+     "answer": "소득"
+    },
+    {
+     "label": "투기적 동기",
+     "answer": "이자율"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "케인즈 유동성선호설.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4547,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC091-Q01",
+   "primaryConceptId": "EC091",
+   "conceptIds": [
+    "EC091"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "민간보유 현금이 50조원, 은행 지급준비금이 30조원일 때 본원통화는 (______)조원이다.",
+   "blankAnswer": "80",
+   "acceptedAnswers": [
+    "80",
+    "80조원"
+   ],
+   "relatedConceptIds": [
+    "EC054"
+   ],
+   "unit": "조원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 50.0,
+     "b": 30.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "본원통화 = 현금통화 + 지급준비금.",
+   "confusion": null,
+   "calculation": "50 + 30 = 80",
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4548,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC091-Q02",
+   "primaryConceptId": "EC091",
+   "conceptIds": [
+    "EC091"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "현금-예금비율이 0.2, 지급준비율이 0.1일 때 통화승수는 (______)이다.",
+   "blankAnswer": "4",
+   "acceptedAnswers": [
+    "4"
+   ],
+   "relatedConceptIds": [
+    "EC054"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "m = (c + 1) ÷ (c + z) = 1.2 ÷ 0.3 = 4.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4549,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC091-Q03",
+   "primaryConceptId": "EC091",
+   "conceptIds": [
+    "EC091"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "다른 조건이 같을 때 통화승수를 작게 만드는 변화는?",
+   "blankAnswer": "민간의 현금보유비율 상승",
+   "acceptedAnswers": [
+    "민간의 현금보유비율 상승"
+   ],
+   "relatedConceptIds": [
+    "EC054"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "민간의 현금보유비율 상승",
+    "법정지급준비율 인하",
+    "초과지급준비금 감소",
+    "예금 증가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금으로 빠져나가는 비율이 커질수록 예금을 통한 신용창조가 줄어든다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4550,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC092-Q01",
+   "primaryConceptId": "EC092",
+   "conceptIds": [
+    "EC092"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "order",
+   "questionText": "경기변동의 국면을 저점 직후부터 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 회복 / 2단계 → 호황 / 3단계 → 후퇴 / 4단계 → 불황",
+   "acceptedAnswers": [
+    "1단계 → 회복 / 2단계 → 호황 / 3단계 → 후퇴 / 4단계 → 불황"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "불황",
+    "호황",
+    "회복",
+    "후퇴"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "회복"
+    },
+    {
+     "label": "2단계",
+     "answer": "호황"
+    },
+    {
+     "label": "3단계",
+     "answer": "후퇴"
+    },
+    {
+     "label": "4단계",
+     "answer": "불황"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회복 → 호황(정점) → 후퇴 → 불황(저점).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4551,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC092-Q02",
+   "primaryConceptId": "EC092",
+   "conceptIds": [
+    "EC092"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "classification",
+   "questionText": "경기역행적(counter-cyclical)으로 움직이는 대표적 변수는?",
+   "blankAnswer": "실업률",
+   "acceptedAnswers": [
+    "실업률"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "실업률",
+    "투자",
+    "소비",
+    "고용"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "경기가 좋아지면 실업률은 내려간다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4552,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC092-Q03",
+   "primaryConceptId": "EC092",
+   "conceptIds": [
+    "EC092"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "GDP보다 경기변동 폭이 일반적으로 더 큰 구성요소는?",
+   "blankAnswer": "투자",
+   "acceptedAnswers": [
+    "투자"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "투자",
+    "비내구재 소비",
+    "서비스 소비",
+    "정부 인건비"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "투자와 내구재 소비는 미래 기대에 민감해 변동성이 크다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4553,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC093-Q01",
+   "primaryConceptId": "EC093",
+   "conceptIds": [
+    "EC093"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "실물경기변동이론에서 경기변동을 일으키는 주된 충격은 (______) 충격이다.",
+   "blankAnswer": "기술",
+   "acceptedAnswers": [
+    "기술",
+    "생산성",
+    "기술(생산성)"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "총요소생산성(기술) 변화.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4554,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC093-Q02",
+   "primaryConceptId": "EC093",
+   "conceptIds": [
+    "EC093"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "실물경기변동이론의 주장으로 옳은 것은?",
+   "blankAnswer": "경기변동은 최적화의 결과인 균형 현상이므로 안정화정책이 불필요하다",
+   "acceptedAnswers": [
+    "경기변동은 최적화의 결과인 균형 현상이므로 안정화정책이 불필요하다"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "경기변동은 최적화의 결과인 균형 현상이므로 안정화정책이 불필요하다",
+    "가격경직성이 경기변동의 핵심 원인이다",
+    "통화량 변화가 경기변동의 주된 원인이다",
+    "비자발적 실업이 경기변동의 본질이다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "새고전학파의 균형경기변동론.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4555,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC093-Q03",
+   "primaryConceptId": "EC093",
+   "conceptIds": [
+    "EC093"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "실물경기변동이론에서 일시적 생산성 향상기에 고용이 늘어나는 이유는?",
+   "blankAnswer": "노동의 기간 간 대체로 임금이 높은 지금 더 일하기 때문",
+   "acceptedAnswers": [
+    "노동의 기간 간 대체로 임금이 높은 지금 더 일하기 때문"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "노동의 기간 간 대체로 임금이 높은 지금 더 일하기 때문",
+    "명목임금이 경직적이기 때문",
+    "정부지출이 늘기 때문",
+    "화폐환상 때문"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "일시적 고임금 시 여가를 미래로 미룬다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4556,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC094-Q01",
+   "primaryConceptId": "EC094",
+   "conceptIds": [
+    "EC094"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "케인즈학파는 국민소득이 총공급이 아니라 (______)수요에 의해 결정된다고 본다.",
+   "blankAnswer": "유효",
+   "acceptedAnswers": [
+    "유효"
+   ],
+   "relatedConceptIds": [
+    "EC052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유효수요의 원리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4557,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC094-Q02",
+   "primaryConceptId": "EC094",
+   "conceptIds": [
+    "EC094"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "케인즈학파의 견해로 옳은 것은?",
+   "blankAnswer": "명목임금의 하방경직성으로 비자발적 실업이 존재할 수 있다",
+   "acceptedAnswers": [
+    "명목임금의 하방경직성으로 비자발적 실업이 존재할 수 있다"
+   ],
+   "relatedConceptIds": [
+    "EC052"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "명목임금의 하방경직성으로 비자발적 실업이 존재할 수 있다",
+    "공급은 스스로 수요를 창출한다",
+    "화폐는 단기에도 중립적이다",
+    "재량적 정책은 항상 무력하다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세이의 법칙과 화폐중립성은 고전학파의 견해.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4558,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC094-Q03",
+   "primaryConceptId": "EC094",
+   "conceptIds": [
+    "EC094"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "classification",
+   "questionText": "주장과 학파를 연결하시오.",
+   "blankAnswer": "공급은 스스로 수요를 창출한다 → 고전학파 / 유효수요가 산출을 결정한다 → 케인즈학파 / 통화량 준칙(k% 준칙)을 따라야 한다 → 통화주의",
+   "acceptedAnswers": [
+    "공급은 스스로 수요를 창출한다 → 고전학파 / 유효수요가 산출을 결정한다 → 케인즈학파 / 통화량 준칙(k% 준칙)을 따라야 한다 → 통화주의"
+   ],
+   "relatedConceptIds": [
+    "EC052"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "고전학파",
+    "케인즈학파",
+    "통화주의"
+   ],
+   "slots": [
+    {
+     "label": "공급은 스스로 수요를 창출한다",
+     "answer": "고전학파"
+    },
+    {
+     "label": "유효수요가 산출을 결정한다",
+     "answer": "케인즈학파"
+    },
+    {
+     "label": "통화량 준칙(k% 준칙)을 따라야 한다",
+     "answer": "통화주의"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "학파 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4559,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC095-Q01",
+   "primaryConceptId": "EC095",
+   "conceptIds": [
+    "EC095"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "정책 변화가 경제주체의 행동방식을 바꾸므로 과거 자료로 추정한 계량모형으로 새 정책의 효과를 평가하면 안 된다는 주장을 (______) 비판이라 한다.",
+   "blankAnswer": "루카스",
+   "acceptedAnswers": [
+    "루카스"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Lucas critique.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4560,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC095-Q02",
+   "primaryConceptId": "EC095",
+   "conceptIds": [
+    "EC095"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "새고전학파의 정책무력성 명제에 따를 때 실물변수에 영향을 줄 수 있는 것은?",
+   "blankAnswer": "예상하지 못한 통화정책",
+   "acceptedAnswers": [
+    "예상하지 못한 통화정책"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "예상하지 못한 통화정책",
+    "미리 발표된 통화정책",
+    "예상된 재정정책",
+    "체계적인 통화량 준칙"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "합리적 기대 하에서도 예측 불가능한 충격은 일시적으로 물가 착각을 일으킨다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4561,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC095-Q03",
+   "primaryConceptId": "EC095",
+   "conceptIds": [
+    "EC095"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "새고전학파 모형의 기본 가정으로 옳은 것은?",
+   "blankAnswer": "합리적 기대와 신축적인 가격·임금",
+   "acceptedAnswers": [
+    "합리적 기대와 신축적인 가격·임금"
+   ],
+   "relatedConceptIds": [
+    "EC055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "합리적 기대와 신축적인 가격·임금",
+    "적응적 기대와 경직적 가격",
+    "합리적 기대와 경직적 가격",
+    "화폐환상과 유동성함정"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "합리적 기대 + 경직적 가격은 새케인즈학파.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4562,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC096-Q01",
+   "primaryConceptId": "EC096",
+   "conceptIds": [
+    "EC096"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "가격표 교체처럼 가격을 바꾸는 데 드는 작은 비용이 명목가격 경직성을 낳는다는 이론을 (______)비용 이론이라 한다.",
+   "blankAnswer": "메뉴",
+   "acceptedAnswers": [
+    "메뉴"
+   ],
+   "relatedConceptIds": [
+    "EC094"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Menu cost.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4563,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC096-Q02",
+   "primaryConceptId": "EC096",
+   "conceptIds": [
+    "EC096"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "classification",
+   "questionText": "경직성의 원인과 유형을 연결하시오.",
+   "blankAnswer": "메뉴비용 → 명목 경직성 / 중첩 임금계약 → 명목 경직성 / 효율임금 → 실질 경직성",
+   "acceptedAnswers": [
+    "메뉴비용 → 명목 경직성 / 중첩 임금계약 → 명목 경직성 / 효율임금 → 실질 경직성"
+   ],
+   "relatedConceptIds": [
+    "EC094"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "명목 경직성",
+    "실질 경직성"
+   ],
+   "slots": [
+    {
+     "label": "메뉴비용",
+     "answer": "명목 경직성"
+    },
+    {
+     "label": "중첩 임금계약",
+     "answer": "명목 경직성"
+    },
+    {
+     "label": "효율임금",
+     "answer": "실질 경직성"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "명목 vs 실질 경직성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4564,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC096-Q03",
+   "primaryConceptId": "EC096",
+   "conceptIds": [
+    "EC096"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "새케인즈학파에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "합리적 기대를 받아들이되 가격경직성을 미시적으로 설명한다",
+   "acceptedAnswers": [
+    "합리적 기대를 받아들이되 가격경직성을 미시적으로 설명한다"
+   ],
+   "relatedConceptIds": [
+    "EC094"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "합리적 기대를 받아들이되 가격경직성을 미시적으로 설명한다",
+    "가격이 완전히 신축적이라고 가정한다",
+    "예상된 통화정책은 언제나 무력하다고 본다",
+    "경기변동의 주원인을 기술충격으로 본다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격 신축·정책무력성·기술충격은 새고전학파·RBC.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4565,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC097-Q01",
+   "primaryConceptId": "EC097",
+   "conceptIds": [
+    "EC097"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "산출증가율 5%, 자본소득분배율 0.3, 자본증가율 4%, 노동증가율 2%일 때 총요소생산성 증가율은 (______)%이다.",
+   "blankAnswer": "2.4",
+   "acceptedAnswers": [
+    "2.4",
+    "2.4%"
+   ],
+   "relatedConceptIds": [
+    "EC056"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "5 − 0.3 × 4 − 0.7 × 2 = 5 − 1.2 − 1.4 = 2.4%.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4566,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC097-Q02",
+   "primaryConceptId": "EC097",
+   "conceptIds": [
+    "EC097"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "실질GDP가 매년 7%씩 성장하면 70의 법칙에 따라 약 (______)년 뒤 두 배가 된다.",
+   "blankAnswer": "10",
+   "acceptedAnswers": [
+    "10",
+    "10년"
+   ],
+   "relatedConceptIds": [
+    "EC056"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "70 ÷ 7 = 10년.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4567,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC097-Q03",
+   "primaryConceptId": "EC097",
+   "conceptIds": [
+    "EC097"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "choice",
+   "questionText": "성장회계에서 투입 증가로 설명되지 않는 산출 증가분을 무엇이라 하는가?",
+   "blankAnswer": "솔로우 잔차(총요소생산성 증가)",
+   "acceptedAnswers": [
+    "솔로우 잔차(총요소생산성 증가)"
+   ],
+   "relatedConceptIds": [
+    "EC056"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "솔로우 잔차(총요소생산성 증가)",
+    "자본심화",
+    "황금률",
+    "자연실업률"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기술 진보·효율성 개선을 반영한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4568,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC098-Q01",
+   "primaryConceptId": "EC098",
+   "conceptIds": [
+    "EC098"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "국민저축이 500조원, 국내투자가 420조원일 때 개방경제 항등식에 따른 순수출은 (______)조원이다.",
+   "blankAnswer": "80",
+   "acceptedAnswers": [
+    "80",
+    "80조원"
+   ],
+   "relatedConceptIds": [
+    "EC063"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "NX = S − I = 500 − 420 = 80조원(경상수지 흑자, 같은 금액의 순자본유출).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4569,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC098-Q02",
+   "primaryConceptId": "EC098",
+   "conceptIds": [
+    "EC098"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "다른 조건이 같을 때 정부 재정적자 확대가 개방경제에 미치는 효과로 옳은 것은?",
+   "blankAnswer": "국민저축이 줄어 경상수지가 악화된다",
+   "acceptedAnswers": [
+    "국민저축이 줄어 경상수지가 악화된다"
+   ],
+   "relatedConceptIds": [
+    "EC063"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "국민저축이 줄어 경상수지가 악화된다",
+    "국민저축이 늘어 경상수지가 개선된다",
+    "순자본유출이 증가한다",
+    "국내투자가 반드시 증가한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "쌍둥이 적자 가설.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4570,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC098-Q03",
+   "primaryConceptId": "EC098",
+   "conceptIds": [
+    "EC098"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "개방경제에서 국민저축에서 국내투자를 뺀 값은 순수출 및 순(______)과 같다.",
+   "blankAnswer": "자본유출",
+   "acceptedAnswers": [
+    "자본유출",
+    "해외투자",
+    "대외투자"
+   ],
+   "relatedConceptIds": [
+    "EC063"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "S − I = NX = 순해외투자.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4571,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC099-Q01",
+   "primaryConceptId": "EC099",
+   "conceptIds": [
+    "EC099"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "변동환율제를 채택한 국가의 국내 이자율이 해외보다 높아질 때 일반적인 효과는?",
+   "blankAnswer": "자본이 유입되어 자국 통화가 절상된다",
+   "acceptedAnswers": [
+    "자본이 유입되어 자국 통화가 절상된다"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "자본이 유입되어 자국 통화가 절상된다",
+    "자본이 유출되어 자국 통화가 절하된다",
+    "환율에 영향이 없다",
+    "경상수지가 반드시 개선된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "높은 수익률을 좇아 외화가 들어와 자국 통화 수요가 늘어난다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4572,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC099-Q02",
+   "primaryConceptId": "EC099",
+   "conceptIds": [
+    "EC099"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "자본이동이 완전한 소규모 개방경제에서 국내 이자율은 (______)이자율과 같아진다.",
+   "blankAnswer": "세계",
+   "acceptedAnswers": [
+    "세계",
+    "해외",
+    "국제"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "i = i*. 차이가 있으면 차익거래 자본이동이 이를 없앤다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4573,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC099-Q03",
+   "primaryConceptId": "EC099",
+   "conceptIds": [
+    "EC099"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "classification",
+   "questionText": "국제투자 형태와 특징을 연결하시오.",
+   "blankAnswer": "외국인직접투자 → 경영 참여 목적, 상대적으로 안정적 / 포트폴리오 투자 → 증권 수익 목적, 단기 변동성 큼",
+   "acceptedAnswers": [
+    "외국인직접투자 → 경영 참여 목적, 상대적으로 안정적 / 포트폴리오 투자 → 증권 수익 목적, 단기 변동성 큼"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "경영 참여 목적, 상대적으로 안정적",
+    "증권 수익 목적, 단기 변동성 큼",
+    "중앙은행 외환보유"
+   ],
+   "slots": [
+    {
+     "label": "외국인직접투자",
+     "answer": "경영 참여 목적, 상대적으로 안정적"
+    },
+    {
+     "label": "포트폴리오 투자",
+     "answer": "증권 수익 목적, 단기 변동성 큼"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "투자 형태 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4574,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC100-Q01",
+   "primaryConceptId": "EC100",
+   "conceptIds": [
+    "EC100"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "number",
+   "questionText": "현재소득 100, 미래소득 110, 이자율 10%일 때 2기간 모형에서 생애소득의 현재가치는 (______)이다.",
+   "blankAnswer": "200",
+   "acceptedAnswers": [
+    "200"
+   ],
+   "relatedConceptIds": [
+    "EC087"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Y1 + Y2/(1 + r) = 100 + 110 ÷ 1.1 = 100 + 100 = 200.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4575,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC100-Q02",
+   "primaryConceptId": "EC100",
+   "conceptIds": [
+    "EC100"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "리카도 동등성 정리가 성립할 때 정부지출을 그대로 두고 국채를 발행해 감세하면?",
+   "blankAnswer": "가계가 미래 증세에 대비해 저축을 늘려 소비가 변하지 않는다",
+   "acceptedAnswers": [
+    "가계가 미래 증세에 대비해 저축을 늘려 소비가 변하지 않는다"
+   ],
+   "relatedConceptIds": [
+    "EC087"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "가계가 미래 증세에 대비해 저축을 늘려 소비가 변하지 않는다",
+    "소비가 감세액만큼 증가한다",
+    "이자율이 크게 상승한다",
+    "국민저축이 감소한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "생애 조세의 현재가치가 같으므로 기간 간 예산제약이 변하지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4576,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC100-Q03",
+   "primaryConceptId": "EC100",
+   "conceptIds": [
+    "EC100"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "comparison",
+   "questionText": "2기간 모형에서 차입제약에 걸린 소비자의 특징은?",
+   "blankAnswer": "현재소비가 현재소득에 크게 의존한다",
+   "acceptedAnswers": [
+    "현재소비가 현재소득에 크게 의존한다"
+   ],
+   "relatedConceptIds": [
+    "EC087"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "현재소비가 현재소득에 크게 의존한다",
+    "이자율 변화에만 반응한다",
+    "미래소득 증가 소식에 현재소비를 크게 늘린다",
+    "저축을 하지 않는다는 이유로 효용이 최대이다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원하는 만큼 빌릴 수 없어 C1 ≤ Y1이 구속된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4577,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC100-Q04",
+   "primaryConceptId": "EC100",
+   "conceptIds": [
+    "EC100"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "2기간 모형의 최적 소비 조건에서 현재소비와 미래소비 사이의 한계대체율은 1 + (______)과 같다.",
+   "blankAnswer": "이자율",
+   "acceptedAnswers": [
+    "이자율",
+    "실질이자율",
+    "r"
+   ],
+   "relatedConceptIds": [
+    "EC087"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기간 간 상대가격 = 1 + r.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4578,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC101-Q01",
+   "primaryConceptId": "EC101",
+   "conceptIds": [
+    "EC101"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "calculation",
+   "questionText": "자본재 가격이 1,000원이고 실질이자율과 감가상각률의 합이 15%일 때 자본 1단위의 연간 사용자비용은 (______)원이다.",
+   "blankAnswer": "150",
+   "acceptedAnswers": [
+    "150",
+    "150원"
+   ],
+   "relatedConceptIds": [
+    "EC089"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1000.0,
+     "r": 15.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "사용자비용 = PK × (r + δ).",
+   "confusion": null,
+   "calculation": "1,000 × 15% = 150",
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4579,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC101-Q02",
+   "primaryConceptId": "EC101",
+   "conceptIds": [
+    "EC101"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "situation",
+   "questionText": "신고전학파 투자이론에서 적정 자본량을 줄이는 요인은?",
+   "blankAnswer": "실질이자율 상승",
+   "acceptedAnswers": [
+    "실질이자율 상승"
+   ],
+   "relatedConceptIds": [
+    "EC089"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "실질이자율 상승",
+    "투자세액공제 확대",
+    "자본의 한계생산 증가",
+    "감가상각률 하락"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사용자비용이 높아져 MPK = 사용자비용을 만족하는 자본량이 줄어든다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4580,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC101-Q03",
+   "primaryConceptId": "EC101",
+   "conceptIds": [
+    "EC101"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-B",
+   "questionType": "definition",
+   "questionText": "기업은 자본의 한계생산이 자본의 (______)비용과 같아질 때까지 자본을 늘린다.",
+   "blankAnswer": "사용자",
+   "acceptedAnswers": [
+    "사용자"
+   ],
+   "relatedConceptIds": [
+    "EC089"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "User cost of capital.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4581,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC102-Q01",
+   "primaryConceptId": "EC102",
+   "conceptIds": [
+    "EC102"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "소국이 자유무역으로 어떤 재화를 수입하기 시작할 때 국내 잉여의 변화로 옳은 것은?",
+   "blankAnswer": "소비자잉여 증가분이 생산자잉여 감소분보다 커 총잉여가 증가한다",
+   "acceptedAnswers": [
+    "소비자잉여 증가분이 생산자잉여 감소분보다 커 총잉여가 증가한다"
+   ],
+   "relatedConceptIds": [
+    "EC060"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "소비자잉여 증가분이 생산자잉여 감소분보다 커 총잉여가 증가한다",
+    "총잉여가 감소한다",
+    "생산자잉여가 증가한다",
+    "소비자잉여가 감소한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "국내가격이 세계가격으로 낮아진다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4582,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC102-Q02",
+   "primaryConceptId": "EC102",
+   "conceptIds": [
+    "EC102"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "무역을 하면 한 나라의 소비가능영역이 자국의 (______)곡선 밖으로 확장될 수 있다.",
+   "blankAnswer": "생산가능",
+   "acceptedAnswers": [
+    "생산가능",
+    "생산가능성"
+   ],
+   "relatedConceptIds": [
+    "EC060"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "특화와 교환의 이익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4583,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC102-Q03",
+   "primaryConceptId": "EC102",
+   "conceptIds": [
+    "EC102"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "choice",
+   "questionText": "국제무역의 동태적 이익에 해당하는 것은?",
+   "blankAnswer": "규모의 경제와 경쟁 촉진",
+   "acceptedAnswers": [
+    "규모의 경제와 경쟁 촉진"
+   ],
+   "relatedConceptIds": [
+    "EC060"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "규모의 경제와 경쟁 촉진",
+    "국내 생산자잉여의 증가만",
+    "관세 수입 증가",
+    "교역조건 악화"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기술 확산·상품 다양성 증가도 동태적 이익이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4584,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC103-Q01",
+   "primaryConceptId": "EC103",
+   "conceptIds": [
+    "EC103"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "number",
+   "questionText": "세계가격 100원인 재화에 단위당 10원의 수출보조금을 지급하면 소국의 국내가격은 (______)원이 된다.",
+   "blankAnswer": "110",
+   "acceptedAnswers": [
+    "110",
+    "110원"
+   ],
+   "relatedConceptIds": [
+    "EC062"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "국내 판매가격이 수출 시 받는 가격(100 + 10)보다 낮으면 모두 수출하므로 국내가격도 110원.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4585,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC103-Q02",
+   "primaryConceptId": "EC103",
+   "conceptIds": [
+    "EC103"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "소국의 수출보조금 지급 효과로 옳은 것은?",
+   "blankAnswer": "생산자잉여는 늘지만 소비자잉여 감소와 보조금 지출로 순후생손실이 생긴다",
+   "acceptedAnswers": [
+    "생산자잉여는 늘지만 소비자잉여 감소와 보조금 지출로 순후생손실이 생긴다"
+   ],
+   "relatedConceptIds": [
+    "EC062"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "생산자잉여는 늘지만 소비자잉여 감소와 보조금 지출로 순후생손실이 생긴다",
+    "모든 경제주체의 후생이 증가한다",
+    "국내가격이 하락한다",
+    "정부 수입이 증가한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "생산왜곡과 소비왜곡 두 삼각형이 손실.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4586,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC103-Q03",
+   "primaryConceptId": "EC103",
+   "conceptIds": [
+    "EC103"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "comparison",
+   "questionText": "대국이 수출보조금을 지급할 때 추가로 발생하는 효과는?",
+   "blankAnswer": "교역조건 악화",
+   "acceptedAnswers": [
+    "교역조건 악화"
+   ],
+   "relatedConceptIds": [
+    "EC062"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "교역조건 악화",
+    "교역조건 개선",
+    "세계가격 상승",
+    "수출 감소"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수출 공급 증가로 세계가격(수출가격)이 하락한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4587,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC104-Q01",
+   "primaryConceptId": "EC104",
+   "conceptIds": [
+    "EC104"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "comparison",
+   "questionText": "같은 수입량을 제한할 때 수입국의 후생손실이 가장 큰 수단은?",
+   "blankAnswer": "수출자율규제",
+   "acceptedAnswers": [
+    "수출자율규제"
+   ],
+   "relatedConceptIds": [
+    "EC062"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "수출자율규제",
+    "관세",
+    "경매로 면허를 판매하는 수입할당",
+    "수입국 정부가 직접 거두는 수입부과금"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "할당지대가 외국 수출업자에게 넘어가 수입국 입장에서 그만큼 추가 손실이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4588,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC104-Q02",
+   "primaryConceptId": "EC104",
+   "conceptIds": [
+    "EC104"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "신생 산업이 학습효과로 경쟁력을 갖출 때까지 일시적으로 보호해야 한다는 주장을 (______)보호론이라 한다.",
+   "blankAnswer": "유치산업",
+   "acceptedAnswers": [
+    "유치산업"
+   ],
+   "relatedConceptIds": [
+    "EC062"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Infant industry argument(리스트).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4589,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC104-Q03",
+   "primaryConceptId": "EC104",
+   "conceptIds": [
+    "EC104"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "matching",
+   "questionText": "자유무역협정(FTA)의 효과와 설명을 연결하시오.",
+   "blankAnswer": "무역창출 → 고비용 국내생산을 저비용 회원국 수입으로 대체 / 무역전환 → 저비용 비회원국 수입을 고비용 회원국 수입으로 대체",
+   "acceptedAnswers": [
+    "무역창출 → 고비용 국내생산을 저비용 회원국 수입으로 대체 / 무역전환 → 저비용 비회원국 수입을 고비용 회원국 수입으로 대체"
+   ],
+   "relatedConceptIds": [
+    "EC062"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "고비용 국내생산을 저비용 회원국 수입으로 대체",
+    "저비용 비회원국 수입을 고비용 회원국 수입으로 대체",
+    "관세 수입의 증가"
+   ],
+   "slots": [
+    {
+     "label": "무역창출",
+     "answer": "고비용 국내생산을 저비용 회원국 수입으로 대체"
+    },
+    {
+     "label": "무역전환",
+     "answer": "저비용 비회원국 수입을 고비용 회원국 수입으로 대체"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "바이너의 관세동맹 이론.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4590,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC105-Q01",
+   "primaryConceptId": "EC105",
+   "conceptIds": [
+    "EC105"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "choice",
+   "questionText": "전략적 무역정책이 성립하기 위한 시장 조건은?",
+   "blankAnswer": "소수 기업이 초과이윤을 얻는 불완전경쟁 시장",
+   "acceptedAnswers": [
+    "소수 기업이 초과이윤을 얻는 불완전경쟁 시장"
+   ],
+   "relatedConceptIds": [
+    "EC033"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "소수 기업이 초과이윤을 얻는 불완전경쟁 시장",
+    "다수 기업의 완전경쟁 시장",
+    "초과이윤이 없는 독점적 경쟁 장기균형",
+    "정부가 가격을 고정한 시장"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이전할 초과이윤이 있어야 보조금이 자국 후생을 높일 수 있다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4591,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC105-Q02",
+   "primaryConceptId": "EC105",
+   "conceptIds": [
+    "EC105"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "브랜더-스펜서 모형에서 자국 정부의 보조금 약속이 효과를 갖는 이유는?",
+   "blankAnswer": "자국 기업의 진입이 우월전략이 되어 외국 기업이 진입을 포기하기 때문",
+   "acceptedAnswers": [
+    "자국 기업의 진입이 우월전략이 되어 외국 기업이 진입을 포기하기 때문"
+   ],
+   "relatedConceptIds": [
+    "EC033"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "자국 기업의 진입이 우월전략이 되어 외국 기업이 진입을 포기하기 때문",
+    "외국 정부가 반드시 보조금을 주지 않기 때문",
+    "세계가격이 상승하기 때문",
+    "관세 수입이 생기기 때문"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보조금이 게임의 보수를 바꿔 균형을 자국에 유리하게 이동시킨다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4592,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC105-Q03",
+   "primaryConceptId": "EC105",
+   "conceptIds": [
+    "EC105"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "exception",
+   "questionText": "전략적 무역정책의 한계로 옳지 않은 것은?",
+   "blankAnswer": "세계 전체의 후생을 반드시 높인다",
+   "acceptedAnswers": [
+    "세계 전체의 후생을 반드시 높인다"
+   ],
+   "relatedConceptIds": [
+    "EC033"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "세계 전체의 후생을 반드시 높인다",
+    "상대국 보복으로 보조금 전쟁이 생길 수 있다",
+    "정부가 기업의 보수를 정확히 알기 어렵다",
+    "지대추구 행위를 유발할 수 있다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이윤을 이전할 뿐 세계 후생을 높이지 않으며 보조금 경쟁은 후생을 낮출 수 있다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4593,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC106-Q01",
+   "primaryConceptId": "EC106",
+   "conceptIds": [
+    "EC106"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "situation",
+   "questionText": "삼불원칙에 따를 때 자본이동이 자유롭고 고정환율제를 택한 국가가 포기해야 하는 것은?",
+   "blankAnswer": "통화정책의 독립성",
+   "acceptedAnswers": [
+    "통화정책의 독립성"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "통화정책의 독립성",
+    "환율 안정",
+    "자유로운 자본이동",
+    "재정정책"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세 목표 중 두 가지만 동시에 달성 가능.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4594,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC106-Q02",
+   "primaryConceptId": "EC106",
+   "conceptIds": [
+    "EC106"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "자유로운 자본이동, 환율 안정, 통화정책 독립성을 동시에 달성할 수 없다는 원칙을 (______)원칙이라 한다.",
+   "blankAnswer": "삼불",
+   "acceptedAnswers": [
+    "삼불",
+    "삼불 원칙",
+    "트릴레마"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "불가능한 삼위일체(trilemma).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4595,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC106-Q03",
+   "primaryConceptId": "EC106",
+   "conceptIds": [
+    "EC106"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "comparison",
+   "questionText": "변동환율제와 비교한 고정환율제의 특징으로 옳은 것은?",
+   "blankAnswer": "환위험이 줄어들지만 외환보유액이 필요하다",
+   "acceptedAnswers": [
+    "환위험이 줄어들지만 외환보유액이 필요하다"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "환위험이 줄어들지만 외환보유액이 필요하다",
+    "대외충격을 환율로 자동 흡수한다",
+    "통화정책의 독립성이 높다",
+    "투기적 공격의 위험이 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "환율 유지를 위해 외환시장 개입이 필요하다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4596,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC107-Q01",
+   "primaryConceptId": "EC107",
+   "conceptIds": [
+    "EC107"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "classification",
+   "questionText": "채권과 유형을 연결하시오.",
+   "blankAnswer": "외국 기관이 한국에서 발행한 원화표시 채권 → 외국채 / 한국 기업이 런던에서 발행한 달러표시 채권 → 유로채 / 한국 기업이 미국에서 발행한 달러표시 채권 → 외국채",
+   "acceptedAnswers": [
+    "외국 기관이 한국에서 발행한 원화표시 채권 → 외국채 / 한국 기업이 런던에서 발행한 달러표시 채권 → 유로채 / 한국 기업이 미국에서 발행한 달러표시 채권 → 외국채"
+   ],
+   "relatedConceptIds": [
+    "EC063"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "외국채",
+    "유로채"
+   ],
+   "slots": [
+    {
+     "label": "외국 기관이 한국에서 발행한 원화표시 채권",
+     "answer": "외국채"
+    },
+    {
+     "label": "한국 기업이 런던에서 발행한 달러표시 채권",
+     "answer": "유로채"
+    },
+    {
+     "label": "한국 기업이 미국에서 발행한 달러표시 채권",
+     "answer": "외국채"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "발행지와 표시통화 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4597,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC107-Q02",
+   "primaryConceptId": "EC107",
+   "conceptIds": [
+    "EC107"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "채권 표시통화를 발행한 나라 밖에서 발행되는 국제채를 (______)채라 한다.",
+   "blankAnswer": "유로",
+   "acceptedAnswers": [
+    "유로",
+    "Euro"
+   ],
+   "relatedConceptIds": [
+    "EC063"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유로화와 무관하게 '역외'를 뜻한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4598,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC107-Q03",
+   "primaryConceptId": "EC107",
+   "conceptIds": [
+    "EC107"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "choice",
+   "questionText": "외국 기관이 한국 시장에서 원화로 발행하는 외국채의 명칭은?",
+   "blankAnswer": "아리랑본드",
+   "acceptedAnswers": [
+    "아리랑본드"
+   ],
+   "relatedConceptIds": [
+    "EC063"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "아리랑본드",
+    "양키본드",
+    "사무라이본드",
+    "김치본드"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "양키(미국·달러), 사무라이(일본·엔). 김치본드는 한국에서 발행되는 외화표시 채권.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4599,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC108-Q01",
+   "primaryConceptId": "EC108",
+   "conceptIds": [
+    "EC108"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "definition",
+   "questionText": "평가절하가 경상수지를 개선하려면 수출·수입 수요의 가격탄력성 합이 1보다 커야 한다는 조건을 (______) 조건이라 한다.",
+   "blankAnswer": "마셜-러너",
+   "acceptedAnswers": [
+    "마셜-러너",
+    "마샬-러너",
+    "마셜러너",
+    "마샬러너"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Marshall-Lerner condition.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4600,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC108-Q02",
+   "primaryConceptId": "EC108",
+   "conceptIds": [
+    "EC108"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "choice",
+   "questionText": "평가절하 직후 경상수지가 일시적으로 악화되었다가 점차 개선되는 현상은?",
+   "blankAnswer": "J커브 효과",
+   "acceptedAnswers": [
+    "J커브 효과"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "J커브 효과",
+    "피구효과",
+    "구축효과",
+    "발라사-사무엘슨 효과"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "단기에는 수출입 물량이 가격 변화에 늦게 반응하기 때문이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4601,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "EC108-Q03",
+   "primaryConceptId": "EC108",
+   "conceptIds": [
+    "EC108"
+   ],
+   "subjectId": "EC",
+   "chapterId": "EC-C",
+   "questionType": "classification",
+   "questionText": "정책과 유형을 연결하시오.",
+   "blankAnswer": "정부지출 확대 → 지출변경정책 / 통화량 축소 → 지출변경정책 / 평가절하 → 지출전환정책",
+   "acceptedAnswers": [
+    "정부지출 확대 → 지출변경정책 / 통화량 축소 → 지출변경정책 / 평가절하 → 지출전환정책"
+   ],
+   "relatedConceptIds": [
+    "EC057"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "지출변경정책",
+    "지출전환정책"
+   ],
+   "slots": [
+    {
+     "label": "정부지출 확대",
+     "answer": "지출변경정책"
+    },
+    {
+     "label": "통화량 축소",
+     "answer": "지출변경정책"
+    },
+    {
+     "label": "평가절하",
+     "answer": "지출전환정책"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지출변경 vs 지출전환.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "경제원론 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4602,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

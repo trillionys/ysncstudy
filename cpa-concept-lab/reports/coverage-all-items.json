@@ -17,11 +17,11 @@
     "storedFlagCovered": 232
    },
    "경제원론": {
-    "complete": 27,
+    "complete": 132,
     "total": 132,
-    "missing": 105,
+    "missing": 0,
     "needsReview": 0,
-    "storedFlagCovered": 90
+    "storedFlagCovered": 132
    },
    "기업법": {
     "complete": 127,
@@ -64,7 +64,7 @@
     "total": 81
    },
    "EC": {
-    "complete": 27,
+    "complete": 132,
     "total": 132
    },
    "CPA-LAW": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 1122,
+   "complete": 1227,
    "total": 1233,
-   "missing": 111
+   "missing": 6
   }
  },
  "items": [
@@ -17580,6 +17580,8 @@
    "existingQuestionIds": [
     "EC001-Q01",
     "EC001-Q02",
+    "EC001-Q03",
+    "EC001-Q04",
     "EC002-Q01",
     "EC002-Q02",
     "EC002-Q03"
@@ -17602,13 +17604,13 @@
    ],
    "existingQuestionIds": [
     "EC001-Q01",
-    "EC001-Q02"
+    "EC001-Q02",
+    "EC001-Q03",
+    "EC001-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17624,13 +17626,13 @@
    ],
    "existingQuestionIds": [
     "EC001-Q01",
-    "EC001-Q02"
+    "EC001-Q02",
+    "EC001-Q03",
+    "EC001-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17662,15 +17664,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "공급탄력성",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC070"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC070-Q01",
+    "EC070-Q02",
+    "EC070-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0815",
@@ -17684,13 +17690,13 @@
    ],
    "existingQuestionIds": [
     "EC003-Q01",
-    "EC003-Q02"
+    "EC003-Q02",
+    "EC003-Q03",
+    "EC003-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17706,13 +17712,13 @@
    ],
    "existingQuestionIds": [
     "EC003-Q01",
-    "EC003-Q02"
+    "EC003-Q02",
+    "EC003-Q03",
+    "EC003-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17723,15 +17729,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "조세와 보조금",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC071"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC071-Q01",
+    "EC071-Q02",
+    "EC071-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0818",
@@ -17745,13 +17755,13 @@
    ],
    "existingQuestionIds": [
     "EC004-Q01",
-    "EC004-Q02"
+    "EC004-Q02",
+    "EC004-Q03",
+    "EC004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17767,13 +17777,13 @@
    ],
    "existingQuestionIds": [
     "EC004-Q01",
-    "EC004-Q02"
+    "EC004-Q02",
+    "EC004-Q03",
+    "EC004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17784,15 +17794,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "소비자 효용",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC072"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC072-Q01",
+    "EC072-Q02",
+    "EC072-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0821",
@@ -17801,15 +17815,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "선호관계",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC072"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC072-Q01",
+    "EC072-Q02",
+    "EC072-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0822",
@@ -17818,15 +17836,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "효용함수",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC072"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC072-Q01",
+    "EC072-Q02",
+    "EC072-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0823",
@@ -17840,13 +17862,13 @@
    ],
    "existingQuestionIds": [
     "EC010-Q01",
-    "EC010-Q02"
+    "EC010-Q02",
+    "EC010-Q03",
+    "EC010-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17862,13 +17884,13 @@
    ],
    "existingQuestionIds": [
     "EC010-Q01",
-    "EC010-Q02"
+    "EC010-Q02",
+    "EC010-Q03",
+    "EC010-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17884,13 +17906,13 @@
    ],
    "existingQuestionIds": [
     "EC010-Q01",
-    "EC010-Q02"
+    "EC010-Q02",
+    "EC010-Q03",
+    "EC010-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -17906,13 +17928,13 @@
    ],
    "existingQuestionIds": [
     "EC010-Q01",
-    "EC010-Q02"
+    "EC010-Q02",
+    "EC010-Q03",
+    "EC010-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18049,15 +18071,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "현시선호",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC073"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC073-Q01",
+    "EC073-Q02",
+    "EC073-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0834",
@@ -18071,13 +18097,13 @@
    ],
    "existingQuestionIds": [
     "EC012-Q01",
-    "EC012-Q02"
+    "EC012-Q02",
+    "EC012-Q03",
+    "EC012-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18093,13 +18119,13 @@
    ],
    "existingQuestionIds": [
     "EC012-Q01",
-    "EC012-Q02"
+    "EC012-Q02",
+    "EC012-Q03",
+    "EC012-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18115,13 +18141,13 @@
    ],
    "existingQuestionIds": [
     "EC012-Q01",
-    "EC012-Q02"
+    "EC012-Q02",
+    "EC012-Q03",
+    "EC012-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18137,13 +18163,13 @@
    ],
    "existingQuestionIds": [
     "EC020-Q01",
-    "EC020-Q02"
+    "EC020-Q02",
+    "EC020-Q03",
+    "EC020-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18159,13 +18185,13 @@
    ],
    "existingQuestionIds": [
     "EC020-Q01",
-    "EC020-Q02"
+    "EC020-Q02",
+    "EC020-Q03",
+    "EC020-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18176,15 +18202,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "평균생산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC074"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC074-Q01",
+    "EC074-Q02",
+    "EC074-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0840",
@@ -18198,13 +18228,13 @@
    ],
    "existingQuestionIds": [
     "EC020-Q01",
-    "EC020-Q02"
+    "EC020-Q02",
+    "EC020-Q03",
+    "EC020-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18215,15 +18245,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "등량곡선",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC075"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC075-Q01",
+    "EC075-Q02",
+    "EC075-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0842",
@@ -18237,13 +18271,13 @@
    ],
    "existingQuestionIds": [
     "EC021-Q01",
-    "EC021-Q02"
+    "EC021-Q02",
+    "EC021-Q03",
+    "EC021-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18259,13 +18293,13 @@
    ],
    "existingQuestionIds": [
     "EC021-Q01",
-    "EC021-Q02"
+    "EC021-Q02",
+    "EC021-Q03",
+    "EC021-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18281,13 +18315,13 @@
    ],
    "existingQuestionIds": [
     "EC021-Q01",
-    "EC021-Q02"
+    "EC021-Q02",
+    "EC021-Q03",
+    "EC021-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18305,6 +18339,7 @@
    "existingQuestionIds": [
     "EC030-Q01",
     "EC030-Q02",
+    "EC030-Q03",
     "EC031-Q01",
     "EC031-Q02",
     "EC031-Q03"
@@ -18327,13 +18362,12 @@
    ],
    "existingQuestionIds": [
     "EC030-Q01",
-    "EC030-Q02"
+    "EC030-Q02",
+    "EC030-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18386,15 +18420,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "독점적 경쟁시장",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC076"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC076-Q01",
+    "EC076-Q02",
+    "EC076-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0850",
@@ -18408,13 +18446,13 @@
    ],
    "existingQuestionIds": [
     "EC032-Q01",
-    "EC032-Q02"
+    "EC032-Q02",
+    "EC032-Q03",
+    "EC032-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18430,13 +18468,13 @@
    ],
    "existingQuestionIds": [
     "EC032-Q01",
-    "EC032-Q02"
+    "EC032-Q02",
+    "EC032-Q03",
+    "EC032-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18452,13 +18490,13 @@
    ],
    "existingQuestionIds": [
     "EC032-Q01",
-    "EC032-Q02"
+    "EC032-Q02",
+    "EC032-Q03",
+    "EC032-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18474,13 +18512,13 @@
    ],
    "existingQuestionIds": [
     "EC032-Q01",
-    "EC032-Q02"
+    "EC032-Q02",
+    "EC032-Q03",
+    "EC032-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18496,13 +18534,13 @@
    ],
    "existingQuestionIds": [
     "EC033-Q01",
-    "EC033-Q02"
+    "EC033-Q02",
+    "EC033-Q03",
+    "EC033-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18518,13 +18556,13 @@
    ],
    "existingQuestionIds": [
     "EC033-Q01",
-    "EC033-Q02"
+    "EC033-Q02",
+    "EC033-Q03",
+    "EC033-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18540,13 +18578,13 @@
    ],
    "existingQuestionIds": [
     "EC033-Q01",
-    "EC033-Q02"
+    "EC033-Q02",
+    "EC033-Q03",
+    "EC033-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18562,13 +18600,13 @@
    ],
    "existingQuestionIds": [
     "EC033-Q01",
-    "EC033-Q02"
+    "EC033-Q02",
+    "EC033-Q03",
+    "EC033-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18584,13 +18622,13 @@
    ],
    "existingQuestionIds": [
     "EC033-Q01",
-    "EC033-Q02"
+    "EC033-Q02",
+    "EC033-Q03",
+    "EC033-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18601,15 +18639,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "생산요소시장",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC077"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC077-Q01",
+    "EC077-Q02",
+    "EC077-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0860",
@@ -18618,15 +18660,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "노동시장",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC078"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC078-Q01",
+    "EC078-Q02",
+    "EC078-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0861",
@@ -18635,15 +18681,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "자본시장",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC079"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC079-Q01",
+    "EC079-Q02",
+    "EC079-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0862",
@@ -18652,15 +18702,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "소득분배",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC080"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC080-Q01",
+    "EC080-Q02",
+    "EC080-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0863",
@@ -18669,15 +18723,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "일반균형",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC081"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC081-Q01",
+    "EC081-Q02",
+    "EC081-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0864",
@@ -18733,13 +18791,13 @@
    ],
    "existingQuestionIds": [
     "EC041-Q01",
-    "EC041-Q02"
+    "EC041-Q02",
+    "EC041-Q03",
+    "EC041-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18755,13 +18813,13 @@
    ],
    "existingQuestionIds": [
     "EC041-Q01",
-    "EC041-Q02"
+    "EC041-Q02",
+    "EC041-Q03",
+    "EC041-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18777,13 +18835,13 @@
    ],
    "existingQuestionIds": [
     "EC041-Q01",
-    "EC041-Q02"
+    "EC041-Q02",
+    "EC041-Q03",
+    "EC041-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18799,13 +18857,13 @@
    ],
    "existingQuestionIds": [
     "EC041-Q01",
-    "EC041-Q02"
+    "EC041-Q02",
+    "EC041-Q03",
+    "EC041-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18821,13 +18879,12 @@
    ],
    "existingQuestionIds": [
     "EC042-Q01",
-    "EC042-Q02"
+    "EC042-Q02",
+    "EC042-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18843,13 +18900,12 @@
    ],
    "existingQuestionIds": [
     "EC042-Q01",
-    "EC042-Q02"
+    "EC042-Q02",
+    "EC042-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18865,13 +18921,12 @@
    ],
    "existingQuestionIds": [
     "EC042-Q01",
-    "EC042-Q02"
+    "EC042-Q02",
+    "EC042-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -18882,15 +18937,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "주인·대리인 문제",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC082"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC082-Q01",
+    "EC082-Q02",
+    "EC082-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0874",
@@ -18899,15 +18958,19 @@
    "packId": "EC",
    "parentChapter": "미시경제학",
    "scopeTitle": "행동경제학",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC083"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC083-Q01",
+    "EC083-Q02",
+    "EC083-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0875",
@@ -18958,15 +19021,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "국민소득",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC084"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC084-Q01",
+    "EC084-Q02",
+    "EC084-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0878",
@@ -19122,15 +19189,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "인플레이션",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC085"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC085-Q01",
+    "EC085-Q02",
+    "EC085-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0886",
@@ -19139,15 +19210,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "디플레이션",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC086"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC086-Q01",
+    "EC086-Q02",
+    "EC086-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0887",
@@ -19156,15 +19231,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "소비함수",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC087"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC087-Q01",
+    "EC087-Q02",
+    "EC087-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0888",
@@ -19173,15 +19252,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "저축함수",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC088"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC088-Q01",
+    "EC088-Q02",
+    "EC088-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0889",
@@ -19190,15 +19273,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "투자함수",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC089"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC089-Q01",
+    "EC089-Q02",
+    "EC089-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0890",
@@ -19233,13 +19320,13 @@
    ],
    "existingQuestionIds": [
     "EC053-Q01",
-    "EC053-Q02"
+    "EC053-Q02",
+    "EC053-Q03",
+    "EC053-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19255,13 +19342,13 @@
    ],
    "existingQuestionIds": [
     "EC055-Q01",
-    "EC055-Q02"
+    "EC055-Q02",
+    "EC055-Q03",
+    "EC055-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19272,15 +19359,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "화폐수요",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC090"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC090-Q01",
+    "EC090-Q02",
+    "EC090-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0894",
@@ -19289,15 +19380,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "화폐공급",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC091"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC091-Q01",
+    "EC091-Q02",
+    "EC091-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0895",
@@ -19355,6 +19450,8 @@
    "existingQuestionIds": [
     "EC053-Q01",
     "EC053-Q02",
+    "EC053-Q03",
+    "EC053-Q04",
     "EC054-Q01",
     "EC054-Q02",
     "EC054-Q03"
@@ -19377,13 +19474,13 @@
    ],
    "existingQuestionIds": [
     "EC053-Q01",
-    "EC053-Q02"
+    "EC053-Q02",
+    "EC053-Q03",
+    "EC053-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19399,13 +19496,13 @@
    ],
    "existingQuestionIds": [
     "EC053-Q01",
-    "EC053-Q02"
+    "EC053-Q02",
+    "EC053-Q03",
+    "EC053-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19421,13 +19518,13 @@
    ],
    "existingQuestionIds": [
     "EC053-Q01",
-    "EC053-Q02"
+    "EC053-Q02",
+    "EC053-Q03",
+    "EC053-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19443,13 +19540,13 @@
    ],
    "existingQuestionIds": [
     "EC055-Q01",
-    "EC055-Q02"
+    "EC055-Q02",
+    "EC055-Q03",
+    "EC055-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19465,13 +19562,13 @@
    ],
    "existingQuestionIds": [
     "EC055-Q01",
-    "EC055-Q02"
+    "EC055-Q02",
+    "EC055-Q03",
+    "EC055-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19487,13 +19584,13 @@
    ],
    "existingQuestionIds": [
     "EC055-Q01",
-    "EC055-Q02"
+    "EC055-Q02",
+    "EC055-Q03",
+    "EC055-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19504,15 +19601,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "경기변동",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC092"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC092-Q01",
+    "EC092-Q02",
+    "EC092-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0905",
@@ -19521,15 +19622,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "실물경기변동이론",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC093"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC093-Q01",
+    "EC093-Q02",
+    "EC093-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0906",
@@ -19538,15 +19643,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "케인즈학파",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC094"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC094-Q01",
+    "EC094-Q02",
+    "EC094-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0907",
@@ -19555,15 +19664,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "새고전학파",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC095"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC095-Q01",
+    "EC095-Q02",
+    "EC095-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0908",
@@ -19572,15 +19685,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "새케인즈학파",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC096"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC096-Q01",
+    "EC096-Q02",
+    "EC096-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0909",
@@ -19589,15 +19706,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "경제성장",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC097"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC097-Q01",
+    "EC097-Q02",
+    "EC097-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0910",
@@ -19611,13 +19732,13 @@
    ],
    "existingQuestionIds": [
     "EC056-Q01",
-    "EC056-Q02"
+    "EC056-Q02",
+    "EC056-Q03",
+    "EC056-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19633,13 +19754,13 @@
    ],
    "existingQuestionIds": [
     "EC056-Q01",
-    "EC056-Q02"
+    "EC056-Q02",
+    "EC056-Q03",
+    "EC056-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19655,13 +19776,13 @@
    ],
    "existingQuestionIds": [
     "EC056-Q01",
-    "EC056-Q02"
+    "EC056-Q02",
+    "EC056-Q03",
+    "EC056-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19672,15 +19793,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "개방경제",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC098"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC098-Q01",
+    "EC098-Q02",
+    "EC098-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0914",
@@ -19694,13 +19819,14 @@
    ],
    "existingQuestionIds": [
     "EC063-Q01",
-    "EC063-Q02"
+    "EC063-Q02",
+    "EC063-Q03",
+    "EC063-Q04",
+    "EC063-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19711,15 +19837,19 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "국제자본이동",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC099"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC099-Q01",
+    "EC099-Q02",
+    "EC099-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0916",
@@ -19749,15 +19879,24 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "거시경제의 미시적 기초",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC100",
+    "EC101"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC100-Q01",
+    "EC100-Q02",
+    "EC100-Q03",
+    "EC100-Q04",
+    "EC101-Q01",
+    "EC101-Q02",
+    "EC101-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0918",
@@ -19766,15 +19905,20 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "기간 간 소비선택",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC100"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC100-Q01",
+    "EC100-Q02",
+    "EC100-Q03",
+    "EC100-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0919",
@@ -19783,15 +19927,24 @@
    "packId": "EC",
    "parentChapter": "거시경제학",
    "scopeTitle": "소비·투자의 최적화",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC100",
+    "EC101"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC100-Q01",
+    "EC100-Q02",
+    "EC100-Q03",
+    "EC100-Q04",
+    "EC101-Q01",
+    "EC101-Q02",
+    "EC101-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0920",
@@ -19805,13 +19958,13 @@
    ],
    "existingQuestionIds": [
     "EC060-Q01",
-    "EC060-Q02"
+    "EC060-Q02",
+    "EC060-Q03",
+    "EC060-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19827,13 +19980,13 @@
    ],
    "existingQuestionIds": [
     "EC060-Q01",
-    "EC060-Q02"
+    "EC060-Q02",
+    "EC060-Q03",
+    "EC060-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19849,13 +20002,13 @@
    ],
    "existingQuestionIds": [
     "EC060-Q01",
-    "EC060-Q02"
+    "EC060-Q02",
+    "EC060-Q03",
+    "EC060-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19871,13 +20024,13 @@
    ],
    "existingQuestionIds": [
     "EC060-Q01",
-    "EC060-Q02"
+    "EC060-Q02",
+    "EC060-Q03",
+    "EC060-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19893,13 +20046,12 @@
    ],
    "existingQuestionIds": [
     "EC061-Q01",
-    "EC061-Q02"
+    "EC061-Q02",
+    "EC061-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19915,13 +20067,12 @@
    ],
    "existingQuestionIds": [
     "EC061-Q01",
-    "EC061-Q02"
+    "EC061-Q02",
+    "EC061-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19932,15 +20083,19 @@
    "packId": "EC",
    "parentChapter": "국제경제학",
    "scopeTitle": "국제무역의 이익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC102"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC102-Q01",
+    "EC102-Q02",
+    "EC102-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0927",
@@ -19954,13 +20109,13 @@
    ],
    "existingQuestionIds": [
     "EC062-Q01",
-    "EC062-Q02"
+    "EC062-Q02",
+    "EC062-Q03",
+    "EC062-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19976,13 +20131,13 @@
    ],
    "existingQuestionIds": [
     "EC062-Q01",
-    "EC062-Q02"
+    "EC062-Q02",
+    "EC062-Q03",
+    "EC062-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -19993,15 +20148,19 @@
    "packId": "EC",
    "parentChapter": "국제경제학",
    "scopeTitle": "수출보조금",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC103"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC103-Q01",
+    "EC103-Q02",
+    "EC103-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0930",
@@ -20015,13 +20174,13 @@
    ],
    "existingQuestionIds": [
     "EC060-Q01",
-    "EC060-Q02"
+    "EC060-Q02",
+    "EC060-Q03",
+    "EC060-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -20032,15 +20191,19 @@
    "packId": "EC",
    "parentChapter": "국제경제학",
    "scopeTitle": "무역정책",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC104"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC104-Q01",
+    "EC104-Q02",
+    "EC104-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0932",
@@ -20049,15 +20212,19 @@
    "packId": "EC",
    "parentChapter": "국제경제학",
    "scopeTitle": "전략적 무역정책",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC105"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC105-Q01",
+    "EC105-Q02",
+    "EC105-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0933",
@@ -20071,13 +20238,14 @@
    ],
    "existingQuestionIds": [
     "EC063-Q01",
-    "EC063-Q02"
+    "EC063-Q02",
+    "EC063-Q03",
+    "EC063-Q04",
+    "EC063-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -20093,13 +20261,14 @@
    ],
    "existingQuestionIds": [
     "EC063-Q01",
-    "EC063-Q02"
+    "EC063-Q02",
+    "EC063-Q03",
+    "EC063-Q04",
+    "EC063-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -20115,13 +20284,14 @@
    ],
    "existingQuestionIds": [
     "EC063-Q01",
-    "EC063-Q02"
+    "EC063-Q02",
+    "EC063-Q03",
+    "EC063-Q04",
+    "EC063-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -20137,13 +20307,14 @@
    ],
    "existingQuestionIds": [
     "EC063-Q01",
-    "EC063-Q02"
+    "EC063-Q02",
+    "EC063-Q03",
+    "EC063-Q04",
+    "EC063-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -20159,13 +20330,14 @@
    ],
    "existingQuestionIds": [
     "EC063-Q01",
-    "EC063-Q02"
+    "EC063-Q02",
+    "EC063-Q03",
+    "EC063-Q04",
+    "EC063-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -20181,13 +20353,14 @@
    ],
    "existingQuestionIds": [
     "EC063-Q01",
-    "EC063-Q02"
+    "EC063-Q02",
+    "EC063-Q03",
+    "EC063-Q04",
+    "EC063-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -20198,15 +20371,19 @@
    "packId": "EC",
    "parentChapter": "국제경제학",
    "scopeTitle": "환율제도",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC106"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC106-Q01",
+    "EC106-Q02",
+    "EC106-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0940",
@@ -20215,15 +20392,19 @@
    "packId": "EC",
    "parentChapter": "국제경제학",
    "scopeTitle": "국제금융시장",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC107"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC107-Q01",
+    "EC107-Q02",
+    "EC107-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-EC-0941",
@@ -20232,15 +20413,19 @@
    "packId": "EC",
    "parentChapter": "국제경제학",
    "scopeTitle": "개방경제 안정화정책",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "EC108"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "EC108-Q01",
+    "EC108-Q02",
+    "EC108-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CPA-LAW-0942",
