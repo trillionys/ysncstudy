@@ -180,4 +180,38 @@ class FormulaVerificationTest {
         assertEquals("68.5", FormulaEngine.format(68.50))
         assertEquals("8", FormulaEngine.format(8.0))
     }
+
+    /* ── v8 신규 공식: 손계산 기대값(빌드 도구 calc.py 와 앱 FormulaEngine 이 함께 틀리는 경우를 막는다) ── */
+    @Test fun v8GeneralFormulas() {
+        assertEquals(7_690_000.0, v("adj", "a" to 8_640_000, "b" to 200_000, "c" to 1_150_000), 0.0)   // 산출 − 공제 + 가산세
+        assertEquals(250_000_000.0, v("dmul", "a" to 35_000, "b" to 10_000, "n" to 10_000), 0.0)     // (시가 − 행사가) × 주식수
+        assertEquals(900.0, v("lin", "f" to 100, "v" to 0.8, "x" to 1_000), 0.0)                       // C = 100 + 0.8Y
+        assertEquals(500.0, v("prorate", "a" to 1_000, "b" to 2, "c" to 4), 0.0)                       // M = PY ÷ V
+        assertEquals(150.0, v("pct_of", "a" to 1_000, "r" to 15), 0.0)
+        assertEquals(60.0, v("diff_pct", "a" to 1_000, "b" to 400, "r" to 10), 0.0)
+        assertEquals(6.0, v("add3", "a" to 1, "b" to 2, "c" to 3), 0.0)
+        assertEquals(5.0, v("sub3", "a" to 10, "b" to 2, "c" to 3), 0.0)
+        assertEquals(20_000.0, v("mul2", "a" to 5_000, "b" to 4), 0.0)
+        assertEquals(12.5, v("pct_ratio", "a" to 25, "b" to 200), 1e-9)
+        assertEquals(0.4, v("mult_ratio", "a" to 18, "b" to 45), 1e-9)                               // 십분위분배율
+    }
+
+    @Test fun v8AccountingFormulas() {
+        assertEquals(300_000.0, v("poc_rev", "contract" to 1_000_000, "cum" to 300_000, "total" to 600_000, "prior" to 200_000), 0.0)
+        assertEquals(400.0, v("cum_alloc", "total" to 1_200, "elapsed" to 2, "period" to 3, "prior" to 400), 0.0)
+        assertEquals(400.0, v("ev2", "a" to 1_000, "ra" to 30, "b" to 500, "rb" to 20), 0.0)
+        assertEquals(100.0, v("eps", "ni" to 1_100_000, "pref" to 100_000, "shares" to 10_000), 0.0)
+        assertEquals(10_600.0, v("wavg_sh", "base" to 10_000, "add" to 1_200, "months" to 6), 0.0)
+        assertEquals(200.0, v("tsm", "n" to 1_000, "ex" to 8_000, "avg" to 10_000), 0.0)
+    }
+
+    @Test fun v8FinanceFormulas() {
+        // g = 0 이면 성장연금 = 일반연금: 1,000 × (1 − 1.1⁻²) ÷ 0.1 = 1,735.5 → 1,736
+        assertEquals(1_736.0, v("grow_annuity", "c1" to 1_000, "r" to 10, "g" to 0, "n" to 2), 0.0)
+        assertEquals(10.0, v("mirr", "fv_in" to 121, "pv_out" to 100, "n" to 2), 1e-9)                 // √1.21 − 1
+        assertEquals(460.0, v("ats", "sale" to 500, "book" to 300, "t" to 20), 0.0)
+        assertEquals(2.0, v("mv_util", "e" to 10, "a" to 4, "s" to 20), 1e-9)                          // 10 − ½·4·0.04
+        assertEquals(11_400.0, v("ex_rights", "n" to 100, "p" to 12_000, "m" to 25, "s" to 9_000), 0.0)
+        assertEquals(37.24, v("cd_cost", "d" to 2, "credit" to 30, "disc" to 10), 1e-9)                // 2/98 × 365/20
+    }
 }

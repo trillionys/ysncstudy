@@ -154,4 +154,38 @@ class ContentCoverageTest {
         assertTrue(plan.errors.any { "NEW-Q04" in it && "빈칸" in it })
         assertTrue(plan.errors.any { "중복" in it && "NEW-Q04" in it })
     }
+
+    /**
+     * v8 구축률 100% 검증(tools/content/coverage_validator.py 와 같은 기준을 앱 데이터로 독립 계산).
+     * 목차 항목마다: 연결 개념 존재·활성·같은 시험과목, 개념마다 정의·간단 요약·DEFINITION 외 상세 섹션 2개 이상,
+     * 연결 개념들의 활성 문항 합계 3개 이상(OX 없음, 정답·해설 있음). 저장된 covered 값은 판정에 쓰지 않는다.
+     */
+    @Test fun everyCurriculumItemComplete() {
+        val subjects = packs.flatMap { it.subjects }.associateBy { it.id }
+        val byId = concepts.associateBy { it.id }
+        val activeQ = questions.filter { it.isActive }.groupBy { it.primaryConceptId }
+        val items = packs.flatMap { it.curriculumItems }
+        val failures = mutableListOf<String>()
+        items.forEach { it ->
+            val exam = subjects[it.subjectId]?.examSubject
+            if (it.conceptIds.isEmpty()) { failures += "${it.id} ${it.item}: 연결 개념 없음"; return@forEach }
+            val cons = it.conceptIds.map { cid -> byId[cid] }
+            if (cons.any { c -> c == null || !c.isActive || subjects[c.subjectId]?.examSubject != exam }) failures += "${it.id} ${it.item}: 연결 개념 오류"
+            val ok = cons.filterNotNull().filter { c -> c.isActive }
+            ok.forEach { c ->
+                val details = c.detailSections.count { d -> d.type != "DEFINITION" && d.body.isNotBlank() }
+                if (c.definition.isBlank() || c.shortSummary.isNullOrBlank() || details < 2) failures += "${it.id}: ${c.id} 설명 부족"
+            }
+            val qs = ok.flatMap { c -> activeQ[c.id].orEmpty() }
+            if (qs.size < 3) failures += "${it.id} ${it.item}: 활성 문항 ${qs.size}개"
+            qs.forEach { q -> if (q.blankAnswer.isBlank() || q.explanation.isBlank()) failures += "${q.id}: 정답·해설 없음" }
+        }
+        val byExam = items.groupBy { subjects[it.subjectId]?.examSubject }.mapValues { it.value.size }
+        File(TestContent.reportDir(), "curriculum-coverage.txt").writeText(
+            "목차 ${items.size}개 · 과목별 $byExam · 미충족 ${failures.size}건\n" + failures.joinToString("\n"),
+        )
+        assertEquals(1233, items.size)
+        assertTrue("미충족 목차: ${failures.take(20)}", failures.isEmpty())
+        assertTrue("저장된 covered 값과 판정 일치", items.all { it.covered })
+    }
 }

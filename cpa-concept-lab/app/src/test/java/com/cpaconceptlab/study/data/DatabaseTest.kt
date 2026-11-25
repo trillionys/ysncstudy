@@ -12,6 +12,8 @@ import com.cpaconceptlab.study.data.backup.RestoreMode
 import com.cpaconceptlab.study.data.importer.ContentImporter
 import com.cpaconceptlab.study.data.importer.detailSectionList
 import com.cpaconceptlab.study.data.local.AppDatabase
+import com.cpaconceptlab.study.data.local.ConceptProgressEntity
+import com.cpaconceptlab.study.data.local.CurriculumItemEntity
 import com.cpaconceptlab.study.data.model.BLANK_TOKEN
 import com.cpaconceptlab.study.data.model.ContentJson
 import com.cpaconceptlab.study.data.model.ContentPack
@@ -647,5 +649,37 @@ class DatabaseTest {
         assertEquals(TestContent.manifest.conceptCount, repo.snapshot.value!!.concepts.size)
         fileDb.close()
         ctx.deleteDatabase(name)
+    }
+
+    /**
+     * v8 콘텐츠 동기화: 이전 버전 콘텐츠가 남긴 출제범위 목차 행(현재 번들에 없는 ID)은 같은 과목 안에서 삭제되어
+     * 목차 수가 번들과 정확히 같아지고, 학습기록(concept_progress)은 그대로 남는다.
+     */
+    @Test fun v8SyncRemovesStaleCurriculumRowsAndKeepsProgress() = runBlocking<Unit> {
+        assertTrue(content.syncBundled()!!.success)
+        val dao = db.contentDao()
+        val bundled = TestContent.packs.flatMap { it.curriculumItems }
+        dao.upsertCurriculumItems(listOf(
+            CurriculumItemEntity("CUR-EC-STALE-1", "EC", "미시경제학", "옛 목차 항목", listOf("EC001"), true, 99_001),
+            CurriculumItemEntity("CUR-TX-STALE-1", "TX", "소득세법", "옛 목차 항목", emptyList(), false, 99_002),
+        ))
+        db.progressDao().upsertConceptProgress(ConceptProgressEntity(
+            conceptId = "EC001", firstStudiedAt = 1, lastStudiedAt = 2, viewCount = 4, basicAttemptCount = 3, basicCorrectCount = 2,
+            advancedAttemptCount = 1, advancedCorrectCount = 1, masteryLevel = "ADVANCED_MASTERED", nextReviewAt = 99, isBookmarked = true, memo = "수요·공급",
+        ))
+        assertEquals(bundled.size + 2, dao.curriculumItems().size)
+        // 기기에 v7 이 저장된 상태에서 새 APK(v8) 첫 실행
+        db.openHelper.writableDatabase.execSQL("UPDATE content_versions SET version = 7")
+        assertTrue(content.syncBundled()!!.success)
+        val items = dao.curriculumItems()
+        assertEquals(bundled.size, items.size)
+        assertTrue(items.none { it.id.contains("STALE") })
+        assertEquals(1233, items.size)
+        assertEquals(mapOf("EC" to 132), items.filter { it.subjectId == "EC" }.groupingBy { it.subjectId }.eachCount())
+        assertEquals(161, items.count { it.subjectId == "TX" })
+        val cp = db.progressDao().conceptProgress("EC001")!!
+        assertEquals("ADVANCED_MASTERED", cp.masteryLevel); assertEquals("수요·공급", cp.memo); assertEquals(4, cp.viewCount)
+        // v8 신규 개념은 미학습 초기 상태로 추가된다
+        assertEquals("NOT_STARTED", db.progressDao().conceptProgress("EC070")!!.masteryLevel)
     }
 }

@@ -48,7 +48,7 @@ import fa_auto  # noqa: E402  (재무회계 기초 개념의 개념 구별 문�
 import v8_content  # noqa: E402,F401  (v8 출제범위 목차 보강 콘텐츠 — tools/content/v8/)
 import reclassify, detail  # noqa: E402
 
-CONTENT_VERSION = 7
+CONTENT_VERSION = 8
 # v7: 기존 개념은 간단 요약·상세 학습 필드가 추가되어, 기기에 이미 있는 행도 갱신되도록 revision 을 올린다
 #     (가져오기는 revision 이 더 클 때만 콘텐츠 필드를 덮어쓴다. 학습기록 테이블은 건드리지 않는다).
 V7_REVISION_BUMP = 1
@@ -367,6 +367,20 @@ def main():
         x["mode"] = "BOTH" if x["inputType"] == "text" else "OPTIONS"
         x["contentVersion"] = 7 if x.get("generatedBy") == "FA_AUTO_V7" else (3 if x["chapterId"] in NEW_CHAPTERS or x["primaryConceptId"] in reclassify.CONCEPT_RULES else 2) if x.get("legacyPackId") == "FA" else 7 if x["subjectId"] in ("AA", "GA") else 6 if x["subjectId"] == TAX_SUBJECT else 5 if x["subjectId"] in PACK_SUBJECTS else 4 if x["subjectId"] == LAW_SUBJECT else 3 if x["chapterId"] in NEW_CHAPTERS else 2
 
+    # v8: 1.0.8 출시본(콘텐츠 v7)에 없던 개념·문항은 contentVersion 8. 출시본에 있던 행은 정렬 순서가
+    #     바뀐 경우에만 revision 을 올려 기기에서도 새 순서로 갱신한다(내용·정답은 그대로, 학습기록 무관).
+    with open(os.path.join(ROOT, "tools", "content", "released_v7_snapshot.json"), encoding="utf-8") as f:
+        released = json.load(f)
+    v8_reorder = 0
+    for rows, key in ((concepts, "concepts"), (questions, "questions")):
+        shipped = released[key]
+        for x in rows:
+            if x["id"] not in shipped:
+                x["contentVersion"] = 8
+            elif shipped[x["id"]] != x["sortOrder"]:
+                x["revision"] += 1
+                v8_reorder += 1
+
     # ID 레지스트리: 이미 발급한 ID 의 정답이 바뀌면 오류(새 ID 발급 필요)
     registry = {}
     if os.path.exists(REGISTRY):
@@ -394,6 +408,7 @@ def main():
     lines.append("")
     lines.append(f"- 생성 시각: {datetime.datetime.now().isoformat(timespec='seconds')}")
     lines.append(f"- 콘텐츠 버전: {CONTENT_VERSION}")
+    lines.append(f"- v8 정렬 순서 갱신(revision +1): {v8_reorder}행")
     lines.append("")
     lines.append("| 항목 | 결과 |")
     lines.append("|---|---|")

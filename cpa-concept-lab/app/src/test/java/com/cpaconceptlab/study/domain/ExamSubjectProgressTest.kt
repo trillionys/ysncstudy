@@ -34,7 +34,8 @@ class ExamSubjectProgressTest {
         val tax = s.single { it.id == "TAX" }
         // v6: 세법개론 콘텐츠 구축(출제범위 목차 161개 중 개념이 실제로 연결된 항목만 반영)
         assertTrue("세법개론 콘텐츠", tax.hasContent && tax.totalConcepts >= 140)
-        assertTrue(tax.curriculumTotal == 161 && tax.curriculumCovered in 150 until 161)
+        // v8: 출제범위 목차 전 항목 구축(검증 기준은 ContentCoverageTest.everyCurriculumItemComplete)
+        assertTrue(tax.curriculumTotal == 161 && tax.curriculumCovered == 161)
         // 상위 과목 분모 = 하위 팩 개념의 합집합(중복 제거): 중급회계 목차가 재무회계 개념을 연결해도 두 번 세지 않는다
         val acc = s.single { it.id == "ACC" }
         val accIds = content.concepts.filter { it.subjectId in setOf("IA", "AA", "CM", "GA") }.map { it.id }.toSet() +
