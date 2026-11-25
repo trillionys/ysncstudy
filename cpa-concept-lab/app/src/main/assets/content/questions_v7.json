@@ -188200,6 +188200,2166 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "IA270-Q01",
+   "primaryConceptId": "IA270",
+   "conceptIds": [
+    "IA270"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "과세소득 1,000,000,000원, 세율 20%일 때 당기법인세는 (______)원이다(누진세율 무시).",
+   "blankAnswer": "200,000,000",
+   "acceptedAnswers": [
+    "200,000,000",
+    "200,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA271",
+    "IA272"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1000000000.0,
+     "r": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "과세소득 × 세율.",
+   "confusion": null,
+   "calculation": "1,000,000,000 × 20% = 200,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3870,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA270-Q02",
+   "primaryConceptId": "IA270",
+   "conceptIds": [
+    "IA270"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "당기법인세가 200,000,000원이고 중간예납·원천징수로 80,000,000원을 이미 냈다. 미지급법인세는 (______)원이다.",
+   "blankAnswer": "120,000,000",
+   "acceptedAnswers": [
+    "120,000,000",
+    "120,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA271",
+    "IA272"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 200000000.0,
+     "b": 80000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "당기법인세 − 기납부세액.",
+   "confusion": null,
+   "calculation": "200,000,000 − 80,000,000 = 120,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3871,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA270-Q03",
+   "primaryConceptId": "IA270",
+   "conceptIds": [
+    "IA270"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "당기법인세는 회계이익이 아니라 (______)에 세율을 적용해 계산한다.",
+   "blankAnswer": "과세소득",
+   "acceptedAnswers": [
+    "과세소득"
+   ],
+   "relatedConceptIds": [
+    "IA271",
+    "IA272"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세무상 소득.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3872,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA270-Q04",
+   "primaryConceptId": "IA270",
+   "conceptIds": [
+    "IA270"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "choice",
+   "questionText": "당기법인세 측정에 적용하는 세율은?",
+   "blankAnswer": "보고기간 말까지 제정되었거나 실질적으로 제정된 세율",
+   "acceptedAnswers": [
+    "보고기간 말까지 제정되었거나 실질적으로 제정된 세율"
+   ],
+   "relatedConceptIds": [
+    "IA271",
+    "IA272"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "보고기간 말까지 제정되었거나 실질적으로 제정된 세율",
+    "다음 연도 예상 세율",
+    "과거 평균 세율",
+    "경영진이 정한 세율"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3873,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA271-Q01",
+   "primaryConceptId": "IA271",
+   "conceptIds": [
+    "IA271"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "당기법인세 200,000,000원, 이연법인세부채 증가 30,000,000원, 이연법인세자산 증가 10,000,000원일 때 법인세비용은 (______)원이다(OCI 관련 없음).",
+   "blankAnswer": "220,000,000",
+   "acceptedAnswers": [
+    "220,000,000",
+    "220,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA270",
+    "IA276",
+    "IA277"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 200000000.0,
+     "b": 30000000.0,
+     "c": 10000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "당기법인세 + DTL 증가 − DTA 증가.",
+   "confusion": null,
+   "calculation": "200,000,000 + 30,000,000 − 10,000,000 = 220,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3874,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA271-Q02",
+   "primaryConceptId": "IA271",
+   "conceptIds": [
+    "IA271"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "법인세비용이 220,000,000원, 법인세비용차감전순이익이 1,000,000,000원일 때 평균유효세율은 (______)%이다.",
+   "blankAnswer": "22",
+   "acceptedAnswers": [
+    "22",
+    "22%"
+   ],
+   "relatedConceptIds": [
+    "IA270",
+    "IA276",
+    "IA277"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 220000000.0,
+     "b": 1000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "법인세비용 ÷ 법인세비용차감전순이익.",
+   "confusion": null,
+   "calculation": "220,000,000 ÷ 1,000,000,000 × 100 = 22%",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3875,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA271-Q03",
+   "primaryConceptId": "IA271",
+   "conceptIds": [
+    "IA271"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "법인세비용은 당기법인세와 (______)법인세의 합계다.",
+   "blankAnswer": "이연",
+   "acceptedAnswers": [
+    "이연"
+   ],
+   "relatedConceptIds": [
+    "IA270",
+    "IA276",
+    "IA277"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3876,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA272-Q01",
+   "primaryConceptId": "IA272",
+   "conceptIds": [
+    "IA272"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "classification",
+   "questionText": "다음 세무조정 항목을 차이 유형별로 분류하시오.",
+   "blankAnswer": "벌금·과태료 손금불산입 → 영구적 차이 / 제품보증충당부채 손금불산입 → 일시적차이 / 세법보다 빠른 회계상 감가상각 → 일시적차이",
+   "acceptedAnswers": [
+    "벌금·과태료 손금불산입 → 영구적 차이 / 제품보증충당부채 손금불산입 → 일시적차이 / 세법보다 빠른 회계상 감가상각 → 일시적차이"
+   ],
+   "relatedConceptIds": [
+    "IA273",
+    "IA270"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "영구적 차이",
+    "일시적차이"
+   ],
+   "slots": [
+    {
+     "label": "벌금·과태료 손금불산입",
+     "answer": "영구적 차이"
+    },
+    {
+     "label": "제품보증충당부채 손금불산입",
+     "answer": "일시적차이"
+    },
+    {
+     "label": "세법보다 빠른 회계상 감가상각",
+     "answer": "일시적차이"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "미래 해소 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3877,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA272-Q02",
+   "primaryConceptId": "IA272",
+   "conceptIds": [
+    "IA272"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "회계이익 1,000,000원에 손금불산입 벌금 50,000원과 제품보증충당부채 전입액(지출 시 손금) 100,000원을 가산한 과세소득은 (______)원이다.",
+   "blankAnswer": "1,150,000",
+   "acceptedAnswers": [
+    "1,150,000",
+    "1,150,000원"
+   ],
+   "relatedConceptIds": [
+    "IA273",
+    "IA270"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add3",
+    "params": {
+     "a": 1000000.0,
+     "b": 50000.0,
+     "c": 100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "회계이익 + 가산조정.",
+   "confusion": null,
+   "calculation": "1,000,000 + 50,000 + 100,000 = 1,150,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3878,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA272-Q03",
+   "primaryConceptId": "IA272",
+   "conceptIds": [
+    "IA272"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "미래에 해소되지 않는 회계이익과 과세소득의 차이를 (______)적 차이라 한다.",
+   "blankAnswer": "영구",
+   "acceptedAnswers": [
+    "영구"
+   ],
+   "relatedConceptIds": [
+    "IA273",
+    "IA270"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이연법인세 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3879,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA273-Q01",
+   "primaryConceptId": "IA273",
+   "conceptIds": [
+    "IA273"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "classification",
+   "questionText": "장부금액과 세무기준액 비교로 차이 유형을 연결하시오.",
+   "blankAnswer": "자산 장부금액 > 세무기준액 → 가산할 일시적차이 / 부채 장부금액 > 세무기준액 → 차감할 일시적차이",
+   "acceptedAnswers": [
+    "자산 장부금액 > 세무기준액 → 가산할 일시적차이 / 부채 장부금액 > 세무기준액 → 차감할 일시적차이"
+   ],
+   "relatedConceptIds": [
+    "IA274",
+    "IA275",
+    "IA278"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "가산할 일시적차이",
+    "차감할 일시적차이"
+   ],
+   "slots": [
+    {
+     "label": "자산 장부금액 > 세무기준액",
+     "answer": "가산할 일시적차이"
+    },
+    {
+     "label": "부채 장부금액 > 세무기준액",
+     "answer": "차감할 일시적차이"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자산과 부채의 방향이 반대.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3880,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA273-Q02",
+   "primaryConceptId": "IA273",
+   "conceptIds": [
+    "IA273"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "기계장치 장부금액이 800,000원, 세무기준액이 600,000원이다. 일시적차이는 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA274",
+    "IA275",
+    "IA278"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 800000.0,
+     "b": 600000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "장부금액 − 세무기준액.",
+   "confusion": null,
+   "calculation": "800,000 − 600,000 = 200,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3881,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA273-Q03",
+   "primaryConceptId": "IA273",
+   "conceptIds": [
+    "IA273"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "일시적차이는 자산·부채의 장부금액과 (______)의 차이다.",
+   "blankAnswer": "세무기준액",
+   "acceptedAnswers": [
+    "세무기준액"
+   ],
+   "relatedConceptIds": [
+    "IA274",
+    "IA275",
+    "IA278"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재무상태표 접근법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3882,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA274-Q01",
+   "primaryConceptId": "IA274",
+   "conceptIds": [
+    "IA274"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "가산할 일시적차이 100,000원이 소멸될 기간의 예상 세율이 20%이다. 이연법인세부채는 (______)원이다.",
+   "blankAnswer": "20,000",
+   "acceptedAnswers": [
+    "20,000",
+    "20,000원"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA273"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 100000.0,
+     "r": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "차이 × 예상 세율.",
+   "confusion": null,
+   "calculation": "100,000 × 20% = 20,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3883,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA274-Q02",
+   "primaryConceptId": "IA274",
+   "conceptIds": [
+    "IA274"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "choice",
+   "questionText": "가산할 일시적차이가 생기는 경우는?",
+   "blankAnswer": "미수이자(수령 시 과세)",
+   "acceptedAnswers": [
+    "미수이자(수령 시 과세)"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA273"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "미수이자(수령 시 과세)",
+    "제품보증충당부채(지출 시 손금)",
+    "손실충당금 한도초과",
+    "벌금 손금불산입"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "미래 과세소득 증가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3884,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA274-Q03",
+   "primaryConceptId": "IA274",
+   "conceptIds": [
+    "IA274"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "가산할 일시적차이는 미래 과세소득을 (______)시킨다.",
+   "blankAnswer": "증가",
+   "acceptedAnswers": [
+    "증가",
+    "늘",
+    "증가시킨다"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA273"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "DTL.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3885,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA275-Q01",
+   "primaryConceptId": "IA275",
+   "conceptIds": [
+    "IA275"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "차감할 일시적차이 300,000원(미래 과세소득 충분), 예상 세율 20%일 때 이연법인세자산은 (______)원이다.",
+   "blankAnswer": "60,000",
+   "acceptedAnswers": [
+    "60,000",
+    "60,000원"
+   ],
+   "relatedConceptIds": [
+    "IA276",
+    "IA273"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 300000.0,
+     "r": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "차이 × 세율.",
+   "confusion": null,
+   "calculation": "300,000 × 20% = 60,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3886,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA275-Q02",
+   "primaryConceptId": "IA275",
+   "conceptIds": [
+    "IA275"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "choice",
+   "questionText": "차감할 일시적차이가 생기는 경우는?",
+   "blankAnswer": "제품보증충당부채(지출 시 손금)",
+   "acceptedAnswers": [
+    "제품보증충당부채(지출 시 손금)"
+   ],
+   "relatedConceptIds": [
+    "IA276",
+    "IA273"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "제품보증충당부채(지출 시 손금)",
+    "세무상 가속상각",
+    "공정가치 평가이익",
+    "미수이자"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "미래 과세소득 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3887,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA275-Q03",
+   "primaryConceptId": "IA275",
+   "conceptIds": [
+    "IA275"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "차감할 일시적차이는 사용할 수 있는 미래 과세소득이 생길 (______)이 높은 범위에서만 자산으로 인식한다.",
+   "blankAnswer": "가능성",
+   "acceptedAnswers": [
+    "가능성"
+   ],
+   "relatedConceptIds": [
+    "IA276",
+    "IA273"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실현가능성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3888,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA276-Q01",
+   "primaryConceptId": "IA276",
+   "conceptIds": [
+    "IA276"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "차감할 일시적차이 1,000,000원 중 사용 가능할 것으로 예상되는 금액이 600,000원이고 세율이 20%이다. 인식할 이연법인세자산은 (______)원이다.",
+   "blankAnswer": "120,000",
+   "acceptedAnswers": [
+    "120,000",
+    "120,000원"
+   ],
+   "relatedConceptIds": [
+    "IA275",
+    "IA279",
+    "IA280"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 600000.0,
+     "r": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "사용 가능 금액 × 세율.",
+   "confusion": null,
+   "calculation": "600,000 × 20% = 120,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3889,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA276-Q02",
+   "primaryConceptId": "IA276",
+   "conceptIds": [
+    "IA276"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "이연법인세자산과 이연법인세부채는 현재가치로 (______)하지 않는다.",
+   "blankAnswer": "할인",
+   "acceptedAnswers": [
+    "할인"
+   ],
+   "relatedConceptIds": [
+    "IA275",
+    "IA279",
+    "IA280"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정 원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3890,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA276-Q03",
+   "primaryConceptId": "IA276",
+   "conceptIds": [
+    "IA276"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "이연법인세자산의 장부금액은 매 보고기간 말 (______)해 실현 가능성이 낮아진 만큼 감액한다.",
+   "blankAnswer": "검토",
+   "acceptedAnswers": [
+    "검토",
+    "재검토"
+   ],
+   "relatedConceptIds": [
+    "IA275",
+    "IA279",
+    "IA280"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재검토.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3891,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA277-Q01",
+   "primaryConceptId": "IA277",
+   "conceptIds": [
+    "IA277"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "가산할 일시적차이 500,000원 중 300,000원은 세율 20%가 적용되는 내년에(이연법인세 60,000원), 200,000원은 세율 22%가 확정된 그 후에(이연법인세 44,000원) 소멸한다. 이연법인세부채 합계는 (______)원이다.",
+   "blankAnswer": "104,000",
+   "acceptedAnswers": [
+    "104,000",
+    "104,000원"
+   ],
+   "relatedConceptIds": [
+    "IA274",
+    "IA282",
+    "IA281"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 60000.0,
+     "b": 44000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "소멸 연도별 세율로 계산한 금액의 합.",
+   "confusion": null,
+   "calculation": "60,000 + 44,000 = 104,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3892,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA277-Q02",
+   "primaryConceptId": "IA277",
+   "conceptIds": [
+    "IA277"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "이연법인세부채는 일시적차이가 (______)할 기간의 예상 세율로 측정한다.",
+   "blankAnswer": "소멸",
+   "acceptedAnswers": [
+    "소멸",
+    "해소"
+   ],
+   "relatedConceptIds": [
+    "IA274",
+    "IA282",
+    "IA281"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3893,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA277-Q03",
+   "primaryConceptId": "IA277",
+   "conceptIds": [
+    "IA277"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "choice",
+   "questionText": "이연법인세자산과 부채를 상계 표시하는 요건은?",
+   "blankAnswer": "같은 과세당국·같은 납세자에 대한 것이고 상계권리가 있음",
+   "acceptedAnswers": [
+    "같은 과세당국·같은 납세자에 대한 것이고 상계권리가 있음"
+   ],
+   "relatedConceptIds": [
+    "IA274",
+    "IA282",
+    "IA281"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "같은 과세당국·같은 납세자에 대한 것이고 상계권리가 있음",
+    "금액이 같음",
+    "만기가 같음",
+    "항상 상계"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상계 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3894,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA278-Q01",
+   "primaryConceptId": "IA278",
+   "conceptIds": [
+    "IA278"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "기계장치 취득원가가 1,000,000원이고 세무상 감가상각누계액이 400,000원이다. 세무기준액은 (______)원이다.",
+   "blankAnswer": "600,000",
+   "acceptedAnswers": [
+    "600,000",
+    "600,000원"
+   ],
+   "relatedConceptIds": [
+    "IA273"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1000000.0,
+     "b": 400000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "세무상 미래 차감 가능액.",
+   "confusion": null,
+   "calculation": "1,000,000 − 400,000 = 600,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3895,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA278-Q02",
+   "primaryConceptId": "IA278",
+   "conceptIds": [
+    "IA278"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "장부금액 300,000원인 충당부채 중 미래에 세무상 차감될 금액이 300,000원이다. 부채의 세무기준액은 (______)원이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "0원"
+   ],
+   "relatedConceptIds": [
+    "IA273"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 300000.0,
+     "b": 300000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "장부금액 − 미래 차감액.",
+   "confusion": null,
+   "calculation": "300,000 − 300,000 = 0",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3896,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA278-Q03",
+   "primaryConceptId": "IA278",
+   "conceptIds": [
+    "IA278"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "자산의 세무기준액은 그 자산을 회수할 때 과세소득에서 (______)될 금액이다.",
+   "blankAnswer": "차감",
+   "acceptedAnswers": [
+    "차감"
+   ],
+   "relatedConceptIds": [
+    "IA273"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3897,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA279-Q01",
+   "primaryConceptId": "IA279",
+   "conceptIds": [
+    "IA279"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "이월 세무상결손금 2,000,000원 중 공제 기한 안에 사용 가능한 금액이 1,500,000원이고 세율이 20%이다. 이연법인세자산은 (______)원이다.",
+   "blankAnswer": "300,000",
+   "acceptedAnswers": [
+    "300,000",
+    "300,000원"
+   ],
+   "relatedConceptIds": [
+    "IA276",
+    "IA280"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1500000.0,
+     "r": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "사용 가능액 × 세율.",
+   "confusion": null,
+   "calculation": "1,500,000 × 20% = 300,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3898,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA279-Q02",
+   "primaryConceptId": "IA279",
+   "conceptIds": [
+    "IA279"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "최근 결손금 이력이 있으면 미래 과세소득에 대한 (______)력 있는 증거가 있는 범위에서만 이연법인세자산을 인식한다.",
+   "blankAnswer": "설득",
+   "acceptedAnswers": [
+    "설득"
+   ],
+   "relatedConceptIds": [
+    "IA276",
+    "IA280"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "엄격한 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3899,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA279-Q03",
+   "primaryConceptId": "IA279",
+   "conceptIds": [
+    "IA279"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "comparison",
+   "questionText": "결손금 공제 방식별 자산을 연결하시오.",
+   "blankAnswer": "소급공제 환급 → 당기법인세자산 / 이월공제 예상 → 이연법인세자산",
+   "acceptedAnswers": [
+    "소급공제 환급 → 당기법인세자산 / 이월공제 예상 → 이연법인세자산"
+   ],
+   "relatedConceptIds": [
+    "IA276",
+    "IA280"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "당기법인세자산",
+    "이연법인세자산",
+    "미수금"
+   ],
+   "slots": [
+    {
+     "label": "소급공제 환급",
+     "answer": "당기법인세자산"
+    },
+    {
+     "label": "이월공제 예상",
+     "answer": "이연법인세자산"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "환급은 당기, 이월은 이연.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3900,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA280-Q01",
+   "primaryConceptId": "IA280",
+   "conceptIds": [
+    "IA280"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "이월 세액공제는 세액에서 직접 빼므로 이연법인세자산 계산 시 (______)을 곱하지 않는다.",
+   "blankAnswer": "세율",
+   "acceptedAnswers": [
+    "세율"
+   ],
+   "relatedConceptIds": [
+    "IA279",
+    "IA276"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공제액 = DTA.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3901,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA280-Q02",
+   "primaryConceptId": "IA280",
+   "conceptIds": [
+    "IA280"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "comparison",
+   "questionText": "이연법인세자산 계산 방법을 연결하시오.",
+   "blankAnswer": "이월 세무상결손금 → 결손금 × 세율 / 이월 세액공제 → 세액공제 금액 그대로",
+   "acceptedAnswers": [
+    "이월 세무상결손금 → 결손금 × 세율 / 이월 세액공제 → 세액공제 금액 그대로"
+   ],
+   "relatedConceptIds": [
+    "IA279",
+    "IA276"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "결손금 × 세율",
+    "세액공제 금액 그대로",
+    "세액공제 × 세율"
+   ],
+   "slots": [
+    {
+     "label": "이월 세무상결손금",
+     "answer": "결손금 × 세율"
+    },
+    {
+     "label": "이월 세액공제",
+     "answer": "세액공제 금액 그대로"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "과세소득 공제 vs 세액 공제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3902,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA280-Q03",
+   "primaryConceptId": "IA280",
+   "conceptIds": [
+    "IA280"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "당기에 공제하지 못하고 이월되는 투자세액공제는 사용 가능성이 높은 범위에서 이연법인세(______)으로 인식한다.",
+   "blankAnswer": "자산",
+   "acceptedAnswers": [
+    "자산"
+   ],
+   "relatedConceptIds": [
+    "IA279",
+    "IA276"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인식.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3903,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA281-Q01",
+   "primaryConceptId": "IA281",
+   "conceptIds": [
+    "IA281"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "classification",
+   "questionText": "최초 인식 시 이연법인세 인식 여부를 연결하시오.",
+   "blankAnswer": "영업권 최초 인식 → 인식하지 않음 / 리스 개시(사용권자산·리스부채) → 이연법인세자산·부채 모두 인식",
+   "acceptedAnswers": [
+    "영업권 최초 인식 → 인식하지 않음 / 리스 개시(사용권자산·리스부채) → 이연법인세자산·부채 모두 인식"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA276"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "인식하지 않음",
+    "이연법인세자산·부채 모두 인식"
+   ],
+   "slots": [
+    {
+     "label": "영업권 최초 인식",
+     "answer": "인식하지 않음"
+    },
+    {
+     "label": "리스 개시(사용권자산·리스부채)",
+     "answer": "이연법인세자산·부채 모두 인식"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "2023 개정 반영.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3904,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA281-Q02",
+   "primaryConceptId": "IA281",
+   "conceptIds": [
+    "IA281"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "영업권의 최초 인식에서 생긴 가산할 일시적차이에는 이연법인세(______)를 인식하지 않는다.",
+   "blankAnswer": "부채",
+   "acceptedAnswers": [
+    "부채"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA276"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3905,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA281-Q03",
+   "primaryConceptId": "IA281",
+   "conceptIds": [
+    "IA281"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "exception",
+   "questionText": "최초 인식 예외가 적용되지 않는 거래는?",
+   "blankAnswer": "같은 금액의 가산할·차감할 일시적차이가 생기는 리스 거래",
+   "acceptedAnswers": [
+    "같은 금액의 가산할·차감할 일시적차이가 생기는 리스 거래"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA276"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "같은 금액의 가산할·차감할 일시적차이가 생기는 리스 거래",
+    "영업권 최초 인식",
+    "회계이익·과세소득에 영향 없는 비사업결합 자산 취득",
+    "세무상 상각되지 않는 자산의 비사업결합 취득"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "2023 개정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3906,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA282-Q01",
+   "primaryConceptId": "IA282",
+   "conceptIds": [
+    "IA282"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "가산할 일시적차이 1,000,000원에 대해 세율이 20%에서 22%로 확정되었다. 이연법인세부채 증가액은 (______)원이다(차이 1,000,000원 × 세율 변동 2%p).",
+   "blankAnswer": "20,000",
+   "acceptedAnswers": [
+    "20,000",
+    "20,000원"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA284"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1000000.0,
+     "r": 2.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "차이 × 세율 변동분.",
+   "confusion": null,
+   "calculation": "1,000,000 × 2% = 20,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3907,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA282-Q02",
+   "primaryConceptId": "IA282",
+   "conceptIds": [
+    "IA282"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "세율 변경 효과는 원래 그 항목을 인식했던 곳에 따라 당기손익·기타포괄손익·(______)에 배분한다.",
+   "blankAnswer": "자본",
+   "acceptedAnswers": [
+    "자본"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA284"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3908,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA282-Q03",
+   "primaryConceptId": "IA282",
+   "conceptIds": [
+    "IA282"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "입법 예고 단계의 세율이 아니라 보고기간 말까지 법률로 확정되었거나 실질적으로 (______)된 세율을 적용한다.",
+   "blankAnswer": "제정",
+   "acceptedAnswers": [
+    "제정"
+   ],
+   "relatedConceptIds": [
+    "IA277",
+    "IA284"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정 세율.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3909,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA283-Q01",
+   "primaryConceptId": "IA283",
+   "conceptIds": [
+    "IA283"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "세무상 익금인 자기주식처분이익 1,000,000원에 세율 20%의 법인세가 부과된다. 자본에 직접 차감할 법인세는 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA284",
+    "IA271"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1000000.0,
+     "r": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "처분이익 × 세율.",
+   "confusion": null,
+   "calculation": "1,000,000 × 20% = 200,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3910,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA283-Q02",
+   "primaryConceptId": "IA283",
+   "conceptIds": [
+    "IA283"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "choice",
+   "questionText": "자본에 직접 인식하는 법인세의 대상이 아닌 것은?",
+   "blankAnswer": "매출총이익",
+   "acceptedAnswers": [
+    "매출총이익"
+   ],
+   "relatedConceptIds": [
+    "IA284",
+    "IA271"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "매출총이익",
+    "자기주식처분이익",
+    "신주발행비",
+    "중요한 전기오류 수정의 기초이익잉여금 조정"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "매출총이익은 당기손익 항목.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3911,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA283-Q03",
+   "primaryConceptId": "IA283",
+   "conceptIds": [
+    "IA283"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "자기주식처분이익처럼 손익을 거치지 않는 항목과 관련된 법인세는 (______)에 직접 인식한다.",
+   "blankAnswer": "자본",
+   "acceptedAnswers": [
+    "자본"
+   ],
+   "relatedConceptIds": [
+    "IA284",
+    "IA271"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "같은 곳에 배분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3912,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA284-Q01",
+   "primaryConceptId": "IA284",
+   "conceptIds": [
+    "IA284"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "calculation",
+   "questionText": "재평가잉여금(세전) 500,000원에 대한 법인세효과(세율 20%)가 100,000원이다. 기타포괄손익에 표시할 세후 재평가잉여금은 (______)원이다.",
+   "blankAnswer": "400,000",
+   "acceptedAnswers": [
+    "400,000",
+    "400,000원"
+   ],
+   "relatedConceptIds": [
+    "IA283",
+    "IA143"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 500000.0,
+     "b": 100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "세전 금액 − 법인세효과.",
+   "confusion": null,
+   "calculation": "500,000 − 100,000 = 400,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3913,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA284-Q02",
+   "primaryConceptId": "IA284",
+   "conceptIds": [
+    "IA284"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "definition",
+   "questionText": "재평가잉여금·FVOCI 평가손익 같은 항목과 관련된 법인세는 (______)으로 인식한다.",
+   "blankAnswer": "기타포괄손익",
+   "acceptedAnswers": [
+    "기타포괄손익"
+   ],
+   "relatedConceptIds": [
+    "IA283",
+    "IA143"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "같은 곳에 배분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3914,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA284-Q03",
+   "primaryConceptId": "IA284",
+   "conceptIds": [
+    "IA284"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-TX",
+   "questionType": "choice",
+   "questionText": "포괄손익계산서에서 기타포괄손익 항목의 표시 방법으로 옳은 것은?",
+   "blankAnswer": "세후 금액으로 표시하거나, 세전 금액과 법인세효과를 한 줄로 표시",
+   "acceptedAnswers": [
+    "세후 금액으로 표시하거나, 세전 금액과 법인세효과를 한 줄로 표시"
+   ],
+   "relatedConceptIds": [
+    "IA283",
+    "IA143"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "세후 금액으로 표시하거나, 세전 금액과 법인세효과를 한 줄로 표시",
+    "항상 세전 금액만 표시",
+    "법인세비용에 합산",
+    "주석에만 표시"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 방법 중 선택.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1012호 '법인세'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3915,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

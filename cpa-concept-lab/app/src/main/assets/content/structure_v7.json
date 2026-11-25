@@ -732,6 +732,15 @@
    "title": "주식기준보상",
    "englishTitle": "Share-based payment",
    "sortOrder": 70
+  },
+  {
+   "partTitle": "법인세회계",
+   "id": "IA-TX",
+   "code": "TX",
+   "subjectId": "IA",
+   "title": "법인세회계",
+   "englishTitle": "Income taxes",
+   "sortOrder": 71
   }
  ],
  "sections": [
@@ -2300,6 +2309,18 @@
    "chapterId": "IA-SB",
    "title": "주식기준보상의 유형과 측정",
    "sortOrder": 1
+  },
+  {
+   "id": "IA-TX-S01",
+   "chapterId": "IA-TX",
+   "title": "당기법인세와 일시적차이",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-TX-S02",
+   "chapterId": "IA-TX",
+   "title": "이연법인세의 예외와 배분",
+   "sortOrder": 2
   },
   {
    "id": "AA-A-S90",
@@ -6081,8 +6102,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "당기법인세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA270"
+   ],
+   "covered": true,
    "sortOrder": 281
   },
   {
@@ -6090,8 +6113,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "법인세비용",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA271"
+   ],
+   "covered": true,
    "sortOrder": 282
   },
   {
@@ -6099,8 +6124,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "회계이익과 과세소득",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA272"
+   ],
+   "covered": true,
    "sortOrder": 283
   },
   {
@@ -6108,8 +6135,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "일시적차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA273"
+   ],
+   "covered": true,
    "sortOrder": 284
   },
   {
@@ -6117,8 +6146,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "가산할 일시적차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA274"
+   ],
+   "covered": true,
    "sortOrder": 285
   },
   {
@@ -6126,8 +6157,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "차감할 일시적차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA275"
+   ],
+   "covered": true,
    "sortOrder": 286
   },
   {
@@ -6135,8 +6168,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "이연법인세자산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA276"
+   ],
+   "covered": true,
    "sortOrder": 287
   },
   {
@@ -6144,8 +6179,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "이연법인세부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA277"
+   ],
+   "covered": true,
    "sortOrder": 288
   },
   {
@@ -6153,8 +6190,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "세무기준액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA278"
+   ],
+   "covered": true,
    "sortOrder": 289
   },
   {
@@ -6162,8 +6201,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "미사용 세무상결손금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA279"
+   ],
+   "covered": true,
    "sortOrder": 290
   },
   {
@@ -6171,8 +6212,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "미사용 세액공제",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA280"
+   ],
+   "covered": true,
    "sortOrder": 291
   },
   {
@@ -6180,8 +6223,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "이연법인세 인식 예외",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA281"
+   ],
+   "covered": true,
    "sortOrder": 292
   },
   {
@@ -6189,8 +6234,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "법인세율 변경",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA282"
+   ],
+   "covered": true,
    "sortOrder": 293
   },
   {
@@ -6198,8 +6245,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "자본에 직접 인식한 법인세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA283"
+   ],
+   "covered": true,
    "sortOrder": 294
   },
   {
@@ -6207,8 +6256,10 @@
    "subjectId": "IA",
    "unit": "법인세회계",
    "item": "기타포괄손익 관련 법인세",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA284"
+   ],
+   "covered": true,
    "sortOrder": 295
   },
   {

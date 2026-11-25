@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 411,
+    "complete": 426,
     "total": 577,
-    "missing": 166,
+    "missing": 151,
     "needsReview": 12,
-    "storedFlagCovered": 481
+    "storedFlagCovered": 496
    },
    "경영학": {
     "complete": 21,
@@ -40,7 +40,7 @@
   },
   "packs": {
    "IA": {
-    "complete": 284,
+    "complete": 299,
     "total": 332
    },
    "AA": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 745,
+   "complete": 760,
    "total": 1233,
-   "missing": 488
+   "missing": 473
   }
  },
  "items": [
@@ -6231,15 +6231,20 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "당기법인세",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA270"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA270-Q01",
+    "IA270-Q02",
+    "IA270-Q03",
+    "IA270-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0282",
@@ -6248,15 +6253,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "법인세비용",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA271"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA271-Q01",
+    "IA271-Q02",
+    "IA271-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0283",
@@ -6265,15 +6274,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "회계이익과 과세소득",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA272"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA272-Q01",
+    "IA272-Q02",
+    "IA272-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0284",
@@ -6282,15 +6295,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "일시적차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA273"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA273-Q01",
+    "IA273-Q02",
+    "IA273-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0285",
@@ -6299,15 +6316,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "가산할 일시적차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA274"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA274-Q01",
+    "IA274-Q02",
+    "IA274-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0286",
@@ -6316,15 +6337,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "차감할 일시적차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA275"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA275-Q01",
+    "IA275-Q02",
+    "IA275-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0287",
@@ -6333,17 +6358,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "이연법인세자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA276"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "J10"
+   "existingQuestionIds": [
+    "IA276-Q01",
+    "IA276-Q02",
+    "IA276-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0288",
@@ -6352,17 +6379,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "이연법인세부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA277"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "J26"
+   "existingQuestionIds": [
+    "IA277-Q01",
+    "IA277-Q02",
+    "IA277-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0289",
@@ -6371,15 +6400,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "세무기준액",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA278"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA278-Q01",
+    "IA278-Q02",
+    "IA278-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0290",
@@ -6388,15 +6421,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "미사용 세무상결손금",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA279"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA279-Q01",
+    "IA279-Q02",
+    "IA279-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0291",
@@ -6405,15 +6442,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "미사용 세액공제",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA280"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA280-Q01",
+    "IA280-Q02",
+    "IA280-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0292",
@@ -6422,15 +6463,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "이연법인세 인식 예외",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA281"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA281-Q01",
+    "IA281-Q02",
+    "IA281-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0293",
@@ -6439,15 +6484,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "법인세율 변경",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA282"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA282-Q01",
+    "IA282-Q02",
+    "IA282-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0294",
@@ -6456,15 +6505,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "자본에 직접 인식한 법인세",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA283"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA283-Q01",
+    "IA283-Q02",
+    "IA283-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0295",
@@ -6473,15 +6526,19 @@
    "packId": "IA",
    "parentChapter": "법인세회계",
    "scopeTitle": "기타포괄손익 관련 법인세",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA284"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA284-Q01",
+    "IA284-Q02",
+    "IA284-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0296",
@@ -8982,7 +9039,8 @@
    "linkCandidates": [
     "I04",
     "I38",
-    "IA143"
+    "IA143",
+    "IA284"
    ],
    "storedCoveredFlag": false
   },

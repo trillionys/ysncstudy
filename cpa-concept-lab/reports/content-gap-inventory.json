@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 411,
+    "complete": 426,
     "total": 577,
-    "missing": 166,
+    "missing": 151,
     "needsReview": 12,
-    "storedFlagCovered": 481
+    "storedFlagCovered": 496
    },
    "경영학": {
     "complete": 21,
@@ -40,7 +40,7 @@
   },
   "packs": {
    "IA": {
-    "complete": 284,
+    "complete": 299,
     "total": 332
    },
    "AA": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 745,
+   "complete": 760,
    "total": 1233,
-   "missing": 488
+   "missing": 473
   }
  },
  "gaps": [
@@ -215,265 +215,6 @@
    "gapType": "B",
    "linkCandidates": [],
    "storedCoveredFlag": true
-  },
-  {
-   "scopeNodeId": "CUR-IA-0281",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "당기법인세",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0282",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "법인세비용",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0283",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "회계이익과 과세소득",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0284",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "일시적차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0285",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "가산할 일시적차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0286",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "차감할 일시적차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0287",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "이연법인세자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "J10"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0288",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "이연법인세부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "J26"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0289",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "세무기준액",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0290",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "미사용 세무상결손금",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0291",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "미사용 세액공제",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0292",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "이연법인세 인식 예외",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0293",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "법인세율 변경",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0294",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "자본에 직접 인식한 법인세",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0295",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "법인세회계",
-   "scopeTitle": "기타포괄손익 관련 법인세",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
   },
   {
    "scopeNodeId": "CUR-IA-0296",
@@ -1509,7 +1250,8 @@
    "linkCandidates": [
     "I04",
     "I38",
-    "IA143"
+    "IA143",
+    "IA284"
    ],
    "storedCoveredFlag": false
   },
