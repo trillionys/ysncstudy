@@ -24,6 +24,8 @@ ORDER = [
     "ia_employee_share",
     "ia_income_tax",
     "ia_eps_cf",
+    "ia_supplement",
+    "aa_advanced",
 ]
 
 for name in ORDER:

@@ -194192,6 +194192,5047 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "L019-Q03",
+   "primaryConceptId": "L019",
+   "conceptIds": [
+    "L019"
+   ],
+   "subjectId": "IA",
+   "chapterId": "FA-L",
+   "questionType": "situation",
+   "questionText": "12월 20일 시송품(원가 300,000원, 판매가 400,000원)을 고객에게 보냈고 기말까지 구입 의사 표시가 없으며 승인기간도 남아 있다. 판매자의 기말 처리로 옳은 것은?",
+   "blankAnswer": "기말재고에 포함하고 수익을 인식하지 않는다",
+   "acceptedAnswers": [
+    "기말재고에 포함하고 수익을 인식하지 않는다"
+   ],
+   "relatedConceptIds": [
+    "L014",
+    "L020",
+    "L026"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "기말재고에 포함하고 수익을 인식하지 않는다",
+    "매출 400,000원을 인식한다",
+    "매출원가 300,000원을 인식한다",
+    "계약부채 400,000원을 인식한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "고객 승인 전에는 통제가 이전되지 않아 시송품은 판매자 재고다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호, 제1002호",
+   "effectiveFrom": "2011-01-01",
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 3,
+   "sortOrder": 3997,
+   "legacyPackId": "FA",
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 3
+  },
+  {
+   "id": "L030-Q03",
+   "primaryConceptId": "L030",
+   "conceptIds": [
+    "L030"
+   ],
+   "subjectId": "IA",
+   "chapterId": "FA-L",
+   "questionType": "classification",
+   "questionText": "다음 재고자산에 적합한 원가결정방법을 연결하시오.",
+   "blankAnswer": "주문 제작한 선박 → 개별법 / 대량으로 쌓아 둔 동일 규격 볼트 → 선입선출법 또는 가중평균법",
+   "acceptedAnswers": [
+    "주문 제작한 선박 → 개별법 / 대량으로 쌓아 둔 동일 규격 볼트 → 선입선출법 또는 가중평균법"
+   ],
+   "relatedConceptIds": [
+    "L031",
+    "L032",
+    "L034",
+    "N014"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "개별법",
+    "선입선출법 또는 가중평균법",
+    "후입선출법"
+   ],
+   "slots": [
+    {
+     "label": "주문 제작한 선박",
+     "answer": "개별법"
+    },
+    {
+     "label": "대량으로 쌓아 둔 동일 규격 볼트",
+     "answer": "선입선출법 또는 가중평균법"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상호 교환 불가능 항목은 개별법, 교환 가능한 대량 항목은 원가흐름 가정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1002호 '재고자산'",
+   "effectiveFrom": "2011-01-01",
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 3,
+   "sortOrder": 3998,
+   "legacyPackId": "FA",
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 3
+  },
+  {
+   "id": "P009-Q03",
+   "primaryConceptId": "P009",
+   "conceptIds": [
+    "P009"
+   ],
+   "subjectId": "IA",
+   "chapterId": "FA-P",
+   "questionType": "exception",
+   "questionText": "현물출자로 받은 자산의 공정가치를 신뢰성 있게 측정할 수 없을 때 취득원가 측정 기준은?",
+   "blankAnswer": "발행한 지분상품의 공정가치",
+   "acceptedAnswers": [
+    "발행한 지분상품의 공정가치"
+   ],
+   "relatedConceptIds": [
+    "P007",
+    "E21"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "발행한 지분상품의 공정가치",
+    "발행 주식의 액면금액",
+    "출자자의 장부금액",
+    "감정평가액의 50%"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "받은 재화의 공정가치를 측정할 수 없으면 발행한 지분상품의 공정가치로 측정한다(제1102호).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1016호, 제1102호",
+   "effectiveFrom": "2011-01-01",
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 3,
+   "sortOrder": 3999,
+   "legacyPackId": "FA",
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 3
+  },
+  {
+   "id": "P031-Q03",
+   "primaryConceptId": "P031",
+   "conceptIds": [
+    "P031"
+   ],
+   "subjectId": "IA",
+   "chapterId": "FA-P",
+   "questionType": "calculation",
+   "questionText": "장부금액 700,000원, 공정가치 900,000원인 기계를 다른 기계와 교환했다(상업적 실질 있음, 현금 수수 없음). 인식할 교환이익은 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "P032",
+    "P033",
+    "P034"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 900000.0,
+     "b": 700000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "제공자산 공정가치 − 제공자산 장부금액.",
+   "confusion": null,
+   "calculation": "900,000 − 700,000 = 200,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1016호 '유형자산'",
+   "effectiveFrom": "2011-01-01",
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 3,
+   "sortOrder": 4000,
+   "legacyPackId": "FA",
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 3
+  },
+  {
+   "id": "P041-Q03",
+   "primaryConceptId": "P041",
+   "conceptIds": [
+    "P041"
+   ],
+   "subjectId": "IA",
+   "chapterId": "FA-P",
+   "questionType": "choice",
+   "questionText": "구성요소별 감가상각에 관한 설명으로 옳은 것은?",
+   "blankAnswer": "내용연수와 감가상각방법이 같은 유의적 부분은 묶어서 상각할 수 있다",
+   "acceptedAnswers": [
+    "내용연수와 감가상각방법이 같은 유의적 부분은 묶어서 상각할 수 있다"
+   ],
+   "relatedConceptIds": [
+    "P005",
+    "P036"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "내용연수와 감가상각방법이 같은 유의적 부분은 묶어서 상각할 수 있다",
+    "모든 부품을 각각 별도로 상각해야 한다",
+    "토지와 건물은 하나로 묶어 상각한다",
+    "유의적인 부분도 전체 내용연수로만 상각한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유의적 부분은 분리하되 같은 조건이면 묶을 수 있다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1016호 '유형자산'",
+   "effectiveFrom": "2011-01-01",
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 3,
+   "sortOrder": 4001,
+   "legacyPackId": "FA",
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 3
+  },
+  {
+   "id": "P055-Q03",
+   "primaryConceptId": "P055",
+   "conceptIds": [
+    "P055"
+   ],
+   "subjectId": "IA",
+   "chapterId": "FA-P",
+   "questionType": "exception",
+   "questionText": "재평가잉여금을 이익잉여금으로 대체할 수 있는 경우가 아닌 것은?",
+   "blankAnswer": "재평가할 때마다 즉시 전액",
+   "acceptedAnswers": [
+    "재평가할 때마다 즉시 전액"
+   ],
+   "relatedConceptIds": [
+    "P054",
+    "I40",
+    "I41",
+    "P068"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재평가할 때마다 즉시 전액",
+    "자산을 처분할 때",
+    "자산을 폐기할 때",
+    "사용하는 동안 재평가 기준 상각비와 원가 기준 상각비의 차이만큼"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대체는 제거 시점이나 사용 중 상각비 차이만큼만 가능하다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1016호 '유형자산'",
+   "effectiveFrom": "2011-01-01",
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 3,
+   "sortOrder": 4002,
+   "legacyPackId": "FA",
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 3
+  },
+  {
+   "id": "AA020-Q01",
+   "primaryConceptId": "AA020",
+   "conceptIds": [
+    "AA020"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-A",
+   "questionType": "definition",
+   "questionText": "피투자자의 이익에 유의적 영향을 미치는 활동을 (______)활동이라 하며, 이를 지시하는 능력이 힘이다.",
+   "blankAnswer": "관련",
+   "acceptedAnswers": [
+    "관련"
+   ],
+   "relatedConceptIds": [
+    "AA021",
+    "B14",
+    "B15"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "힘의 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4003,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA020-Q02",
+   "primaryConceptId": "AA020",
+   "conceptIds": [
+    "AA020"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-A",
+   "questionType": "exception",
+   "questionText": "힘을 판단할 때 고려하지 않는 권리는?",
+   "blankAnswer": "채권자의 담보 관련 거부권(방어권)",
+   "acceptedAnswers": [
+    "채권자의 담보 관련 거부권(방어권)"
+   ],
+   "relatedConceptIds": [
+    "AA021",
+    "B14",
+    "B15"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "채권자의 담보 관련 거부권(방어권)",
+    "의결권 과반수",
+    "실질적인 잠재적 의결권",
+    "이사 선임 계약상 권리"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "방어권은 힘을 주지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4004,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA020-Q03",
+   "primaryConceptId": "AA020",
+   "conceptIds": [
+    "AA020"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-A",
+   "questionType": "classification",
+   "questionText": "다음 권리를 힘 판단에 포함하는지 연결하시오.",
+   "blankAnswer": "즉시 행사 가능한 내가격 전환권 → 포함(실질적 권리) / 피투자자 정관 변경 거부권 → 제외(방어권)",
+   "acceptedAnswers": [
+    "즉시 행사 가능한 내가격 전환권 → 포함(실질적 권리) / 피투자자 정관 변경 거부권 → 제외(방어권)"
+   ],
+   "relatedConceptIds": [
+    "AA021",
+    "B14",
+    "B15"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "포함(실질적 권리)",
+    "제외(방어권)"
+   ],
+   "slots": [
+    {
+     "label": "즉시 행사 가능한 내가격 전환권",
+     "answer": "포함(실질적 권리)"
+    },
+    {
+     "label": "피투자자 정관 변경 거부권",
+     "answer": "제외(방어권)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실질성 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4005,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA021-Q01",
+   "primaryConceptId": "AA021",
+   "conceptIds": [
+    "AA021"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-A",
+   "questionType": "order",
+   "questionText": "지배력 판단 3요소를 정의 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 피투자자에 대한 힘 / 2단계 → 변동이익에 대한 노출 또는 권리 / 3단계 → 힘을 사용해 이익에 영향을 미치는 능력",
+   "acceptedAnswers": [
+    "1단계 → 피투자자에 대한 힘 / 2단계 → 변동이익에 대한 노출 또는 권리 / 3단계 → 힘을 사용해 이익에 영향을 미치는 능력"
+   ],
+   "relatedConceptIds": [
+    "AA020",
+    "B14"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "변동이익에 대한 노출 또는 권리",
+    "피투자자에 대한 힘",
+    "힘을 사용해 이익에 영향을 미치는 능력"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "피투자자에 대한 힘"
+    },
+    {
+     "label": "2단계",
+     "answer": "변동이익에 대한 노출 또는 권리"
+    },
+    {
+     "label": "3단계",
+     "answer": "힘을 사용해 이익에 영향을 미치는 능력"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세 요소 모두 충족해야 지배.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4006,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA021-Q02",
+   "primaryConceptId": "AA021",
+   "conceptIds": [
+    "AA021"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-A",
+   "questionType": "definition",
+   "questionText": "다른 당사자를 위해 위임받아 의사결정을 하는 자는 (______)으로 보아 지배력이 없다.",
+   "blankAnswer": "대리인",
+   "acceptedAnswers": [
+    "대리인"
+   ],
+   "relatedConceptIds": [
+    "AA020",
+    "B14"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "본인·대리인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4007,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA021-Q03",
+   "primaryConceptId": "AA021",
+   "conceptIds": [
+    "AA021"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-A",
+   "questionType": "definition",
+   "questionText": "피투자자의 성과에 따라 달라지는 이익을 (______)이익이라 한다.",
+   "blankAnswer": "변동",
+   "acceptedAnswers": [
+    "변동"
+   ],
+   "relatedConceptIds": [
+    "AA020",
+    "B14"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지배력 요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4008,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA030-Q01",
+   "primaryConceptId": "AA030",
+   "conceptIds": [
+    "AA030"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "definition",
+   "questionText": "조건부대가는 취득일의 (______)로 측정해 이전대가에 포함한다.",
+   "blankAnswer": "공정가치",
+   "acceptedAnswers": [
+    "공정가치"
+   ],
+   "relatedConceptIds": [
+    "AA002",
+    "AA003",
+    "AA033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4009,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA030-Q02",
+   "primaryConceptId": "AA030",
+   "conceptIds": [
+    "AA030"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "comparison",
+   "questionText": "조건부대가 유형별 후속 측정을 연결하시오.",
+   "blankAnswer": "지분으로 분류한 조건부대가 → 재측정하지 않음 / 부채로 분류한 조건부대가 → 공정가치 재측정, 변동은 당기손익",
+   "acceptedAnswers": [
+    "지분으로 분류한 조건부대가 → 재측정하지 않음 / 부채로 분류한 조건부대가 → 공정가치 재측정, 변동은 당기손익"
+   ],
+   "relatedConceptIds": [
+    "AA002",
+    "AA003",
+    "AA033"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "재측정하지 않음",
+    "공정가치 재측정, 변동은 당기손익",
+    "영업권에서 조정"
+   ],
+   "slots": [
+    {
+     "label": "지분으로 분류한 조건부대가",
+     "answer": "재측정하지 않음"
+    },
+    {
+     "label": "부채로 분류한 조건부대가",
+     "answer": "공정가치 재측정, 변동은 당기손익"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분류별 처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4010,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA030-Q03",
+   "primaryConceptId": "AA030",
+   "conceptIds": [
+    "AA030"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "calculation",
+   "questionText": "부채로 분류한 조건부대가의 취득일 공정가치가 400,000,000원이고 기말 공정가치(목표 달성 가능성 상승)가 550,000,000원이다. 당기손실로 인식할 금액은 (______)원이다.",
+   "blankAnswer": "150,000,000",
+   "acceptedAnswers": [
+    "150,000,000",
+    "150,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA002",
+    "AA003",
+    "AA033"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 550000000.0,
+     "b": 400000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기말 공정가치 − 직전 장부금액.",
+   "confusion": null,
+   "calculation": "550,000,000 − 400,000,000 = 150,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4011,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA031-Q01",
+   "primaryConceptId": "AA031",
+   "conceptIds": [
+    "AA031"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "definition",
+   "questionText": "피취득자의 식별가능한 취득 자산은 원칙적으로 취득일의 (______)로 측정한다.",
+   "blankAnswer": "공정가치",
+   "acceptedAnswers": [
+    "공정가치"
+   ],
+   "relatedConceptIds": [
+    "AA003",
+    "AA032"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4012,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA031-Q02",
+   "primaryConceptId": "AA031",
+   "conceptIds": [
+    "AA031"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "exception",
+   "questionText": "사업결합에서 공정가치 측정의 예외로 다른 기준서를 적용하는 항목은?",
+   "blankAnswer": "이연법인세자산·부채",
+   "acceptedAnswers": [
+    "이연법인세자산·부채"
+   ],
+   "relatedConceptIds": [
+    "AA003",
+    "AA032"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "이연법인세자산·부채",
+    "토지",
+    "재고자산",
+    "특허권"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1012호에 따라 측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4013,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA031-Q03",
+   "primaryConceptId": "AA031",
+   "conceptIds": [
+    "AA031"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "situation",
+   "questionText": "조직화된 인력(숙련된 종업원 집단)은 식별가능하지 않아 별도 자산이 아니라 (______)에 포함된다.",
+   "blankAnswer": "영업권",
+   "acceptedAnswers": [
+    "영업권"
+   ],
+   "relatedConceptIds": [
+    "AA003",
+    "AA032"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "식별 불가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4014,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA032-Q01",
+   "primaryConceptId": "AA032",
+   "conceptIds": [
+    "AA032"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "definition",
+   "questionText": "사업결합에서 피취득자의 우발부채는 현재의무이고 공정가치를 신뢰성 있게 측정할 수 있으면 유출 가능성이 높지 않아도 (______)한다.",
+   "blankAnswer": "인식",
+   "acceptedAnswers": [
+    "인식"
+   ],
+   "relatedConceptIds": [
+    "AA031",
+    "AA003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "특례.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4015,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA032-Q02",
+   "primaryConceptId": "AA032",
+   "conceptIds": [
+    "AA032"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "comparison",
+   "questionText": "우발부채의 처리를 상황별로 연결하시오.",
+   "blankAnswer": "사업결합으로 인수한 현재의무(유출 가능성 30%) → 부채 인식(공정가치) / 일반 상황의 현재의무(유출 가능성 30%) → 주석 공시",
+   "acceptedAnswers": [
+    "사업결합으로 인수한 현재의무(유출 가능성 30%) → 부채 인식(공정가치) / 일반 상황의 현재의무(유출 가능성 30%) → 주석 공시"
+   ],
+   "relatedConceptIds": [
+    "AA031",
+    "AA003"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "부채 인식(공정가치)",
+    "주석 공시",
+    "처리하지 않음"
+   ],
+   "slots": [
+    {
+     "label": "사업결합으로 인수한 현재의무(유출 가능성 30%)",
+     "answer": "부채 인식(공정가치)"
+    },
+    {
+     "label": "일반 상황의 현재의무(유출 가능성 30%)",
+     "answer": "주석 공시"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사업결합 특례.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4016,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA032-Q03",
+   "primaryConceptId": "AA032",
+   "conceptIds": [
+    "AA032"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "choice",
+   "questionText": "취득일에 인수한 부채로 인식할 수 없는 것은?",
+   "blankAnswer": "취득자가 계획한 구조조정 예정 원가",
+   "acceptedAnswers": [
+    "취득자가 계획한 구조조정 예정 원가"
+   ],
+   "relatedConceptIds": [
+    "AA031",
+    "AA003"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "취득자가 계획한 구조조정 예정 원가",
+    "피취득자의 차입금",
+    "피취득자의 매입채무",
+    "공정가치 측정 가능한 피취득자 소송 현재의무"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "취득일에 존재하는 의무가 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4017,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA033-Q01",
+   "primaryConceptId": "AA033",
+   "conceptIds": [
+    "AA033"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "definition",
+   "questionText": "사업결합의 측정기간은 취득일부터 (______)을 넘을 수 없다.",
+   "blankAnswer": "1년",
+   "acceptedAnswers": [
+    "1년",
+    "12개월",
+    "일년"
+   ],
+   "relatedConceptIds": [
+    "AA030",
+    "AA003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "한도.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4018,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA033-Q02",
+   "primaryConceptId": "AA033",
+   "conceptIds": [
+    "AA033"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "calculation",
+   "questionText": "취득일 건물 공정가치를 잠정 1,000,000,000원으로 보고했다가 측정기간 중 취득일 공정가치가 1,200,000,000원이었음을 확인했다. 영업권 감소액은 (______)원이다.",
+   "blankAnswer": "200,000,000",
+   "acceptedAnswers": [
+    "200,000,000",
+    "200,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA030",
+    "AA003"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1200000000.0,
+     "b": 1000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "건물 증가분만큼 영업권 감소.",
+   "confusion": null,
+   "calculation": "1,200,000,000 − 1,000,000,000 = 200,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4019,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA033-Q03",
+   "primaryConceptId": "AA033",
+   "conceptIds": [
+    "AA033"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "exception",
+   "questionText": "측정기간이 끝난 뒤 사업결합 금액을 수정할 수 있는 경우는?",
+   "blankAnswer": "오류수정에 해당하는 경우",
+   "acceptedAnswers": [
+    "오류수정에 해당하는 경우"
+   ],
+   "relatedConceptIds": [
+    "AA030",
+    "AA003"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "오류수정에 해당하는 경우",
+    "새 감정평가가 나온 경우",
+    "주가가 변동한 경우",
+    "경영진이 원하는 경우"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "측정기간 후에는 오류수정만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4020,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA034-Q01",
+   "primaryConceptId": "AA034",
+   "conceptIds": [
+    "AA034"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "treatment",
+   "questionText": "불리한 기존 계약 관계의 정산손실은 시장 조건 대비 불리한 금액과 계약상 정산(위약금) 금액 중 (______) 금액으로 측정한다.",
+   "blankAnswer": "작은",
+   "acceptedAnswers": [
+    "작은",
+    "적은"
+   ],
+   "relatedConceptIds": [
+    "AA003",
+    "AA002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 금액 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4021,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA034-Q02",
+   "primaryConceptId": "AA034",
+   "conceptIds": [
+    "AA034"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "definition",
+   "questionText": "사업결합 전부터 존재하던 관계의 정산은 이전대가가 아닌 (______) 거래로 회계처리한다.",
+   "blankAnswer": "별도",
+   "acceptedAnswers": [
+    "별도"
+   ],
+   "relatedConceptIds": [
+    "AA003",
+    "AA002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분리 회계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4022,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA034-Q03",
+   "primaryConceptId": "AA034",
+   "conceptIds": [
+    "AA034"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "definition",
+   "questionText": "기존 관계 정산 대가는 (______) 계산에 쓰는 이전대가에서 제외한다.",
+   "blankAnswer": "영업권",
+   "acceptedAnswers": [
+    "영업권"
+   ],
+   "relatedConceptIds": [
+    "AA003",
+    "AA002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "영업권 왜곡 방지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4023,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA035-Q01",
+   "primaryConceptId": "AA035",
+   "conceptIds": [
+    "AA035"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "classification",
+   "questionText": "다음 거래에 적용할 회계를 연결하시오.",
+   "blankAnswer": "외부 회사의 사업 인수 → 제1103호 취득법 / 사업이 아닌 토지·건물 묶음 취득 → 자산 취득(원가 배분) / 같은 지배기업 아래 자회사 간 합병 → 제1103호 적용 범위 제외",
+   "acceptedAnswers": [
+    "외부 회사의 사업 인수 → 제1103호 취득법 / 사업이 아닌 토지·건물 묶음 취득 → 자산 취득(원가 배분) / 같은 지배기업 아래 자회사 간 합병 → 제1103호 적용 범위 제외"
+   ],
+   "relatedConceptIds": [
+    "AA002"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "제1103호 취득법",
+    "자산 취득(원가 배분)",
+    "제1103호 적용 범위 제외"
+   ],
+   "slots": [
+    {
+     "label": "외부 회사의 사업 인수",
+     "answer": "제1103호 취득법"
+    },
+    {
+     "label": "사업이 아닌 토지·건물 묶음 취득",
+     "answer": "자산 취득(원가 배분)"
+    },
+    {
+     "label": "같은 지배기업 아래 자회사 간 합병",
+     "answer": "제1103호 적용 범위 제외"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사업 여부와 공통지배 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4024,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA035-Q02",
+   "primaryConceptId": "AA035",
+   "conceptIds": [
+    "AA035"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "definition",
+   "questionText": "결합 전후 같은 당사자가 궁극적으로 지배하는 사업결합을 (______)지배하 거래라 한다.",
+   "blankAnswer": "공통",
+   "acceptedAnswers": [
+    "공통"
+   ],
+   "relatedConceptIds": [
+    "AA002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "적용 범위 제외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4025,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA035-Q03",
+   "primaryConceptId": "AA035",
+   "conceptIds": [
+    "AA035"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-B",
+   "questionType": "situation",
+   "questionText": "사업을 구성하지 않는 자산 집단을 취득한 경우의 처리로 옳은 것은?",
+   "blankAnswer": "원가를 상대적 공정가치로 배분하고 영업권을 인식하지 않는다",
+   "acceptedAnswers": [
+    "원가를 상대적 공정가치로 배분하고 영업권을 인식하지 않는다"
+   ],
+   "relatedConceptIds": [
+    "AA002"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "원가를 상대적 공정가치로 배분하고 영업권을 인식하지 않는다",
+    "취득법으로 영업권을 인식한다",
+    "공통지배하 거래로 본다",
+    "모든 자산을 장부금액으로 승계한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자산 취득.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1103호 '사업결합'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4026,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA036-Q01",
+   "primaryConceptId": "AA036",
+   "conceptIds": [
+    "AA036"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "calculation",
+   "questionText": "종속기업의 내부거래 조정 후 당기순이익이 90,000,000원이고 비지배지분율이 20%이다. 비지배지분순이익은 (______)원이다.",
+   "blankAnswer": "18,000,000",
+   "acceptedAnswers": [
+    "18,000,000",
+    "18,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA004",
+    "AA007",
+    "AA043"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 90000000.0,
+     "r": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "조정 후 순이익 × 비지배지분율.",
+   "confusion": null,
+   "calculation": "90,000,000 × 20% = 18,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4027,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA036-Q02",
+   "primaryConceptId": "AA036",
+   "conceptIds": [
+    "AA036"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "comparison",
+   "questionText": "미실현이익을 제거할 때 부담하는 지분을 연결하시오.",
+   "blankAnswer": "하향거래(지배 → 종속) → 지배기업 소유주 전액 / 상향거래(종속 → 지배) → 지배·비지배 지분율 배분",
+   "acceptedAnswers": [
+    "하향거래(지배 → 종속) → 지배기업 소유주 전액 / 상향거래(종속 → 지배) → 지배·비지배 지분율 배분"
+   ],
+   "relatedConceptIds": [
+    "AA004",
+    "AA007",
+    "AA043"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "지배기업 소유주 전액",
+    "지배·비지배 지분율 배분",
+    "비지배지분 전액"
+   ],
+   "slots": [
+    {
+     "label": "하향거래(지배 → 종속)",
+     "answer": "지배기업 소유주 전액"
+    },
+    {
+     "label": "상향거래(종속 → 지배)",
+     "answer": "지배·비지배 지분율 배분"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판매한 쪽의 이익에서 제거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4028,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA036-Q03",
+   "primaryConceptId": "AA036",
+   "conceptIds": [
+    "AA036"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "연결당기순이익은 지배기업 소유주 귀속분과 (______) 귀속분으로 나누어 표시한다.",
+   "blankAnswer": "비지배지분",
+   "acceptedAnswers": [
+    "비지배지분"
+   ],
+   "relatedConceptIds": [
+    "AA004",
+    "AA007",
+    "AA043"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손익 배분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4029,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA037-Q01",
+   "primaryConceptId": "AA037",
+   "conceptIds": [
+    "AA037"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "calculation",
+   "questionText": "지배기업 이익잉여금 500,000,000원, 종속기업 취득 후 이익잉여금 증가분 중 지배기업 지분(80%) 80,000,000원, 지배기업 귀속 미실현이익 누적액 10,000,000원일 때 연결이익잉여금은 (______)원이다.",
+   "blankAnswer": "570,000,000",
+   "acceptedAnswers": [
+    "570,000,000",
+    "570,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA001",
+    "AA036"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 500000000.0,
+     "b": 80000000.0,
+     "c": 10000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "지배 이익잉여금 + 취득 후 지분 증가 − 미실현이익.",
+   "confusion": null,
+   "calculation": "500,000,000 + 80,000,000 − 10,000,000 = 570,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4030,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA037-Q02",
+   "primaryConceptId": "AA037",
+   "conceptIds": [
+    "AA037"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "종속기업의 취득일 이전 이익잉여금은 투자·자본 (______)으로 제거된다.",
+   "blankAnswer": "상계",
+   "acceptedAnswers": [
+    "상계"
+   ],
+   "relatedConceptIds": [
+    "AA001",
+    "AA036"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "연결 절차.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4031,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA037-Q03",
+   "primaryConceptId": "AA037",
+   "conceptIds": [
+    "AA037"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "종속기업 이익잉여금 중 지배기업이 지배력을 얻은 뒤 늘어난 부분만 연결이익잉여금 계산에 반영하며, 그 기준 시점은 (______)일이다.",
+   "blankAnswer": "취득",
+   "acceptedAnswers": [
+    "취득"
+   ],
+   "relatedConceptIds": [
+    "AA001",
+    "AA036"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "취득일 이후 증가분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4032,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA038-Q01",
+   "primaryConceptId": "AA038",
+   "conceptIds": [
+    "AA038"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "연결실체 내부의 채권·채무는 지분율과 관계없이 (______)% 제거한다.",
+   "blankAnswer": "100",
+   "acceptedAnswers": [
+    "100"
+   ],
+   "relatedConceptIds": [
+    "AA001",
+    "AA042"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전액 제거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4033,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA038-Q02",
+   "primaryConceptId": "AA038",
+   "conceptIds": [
+    "AA038"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "treatment",
+   "questionText": "내부 매출채권에 설정한 손실충당금의 연결 처리는?",
+   "blankAnswer": "제거한다",
+   "acceptedAnswers": [
+    "제거한다"
+   ],
+   "relatedConceptIds": [
+    "AA001",
+    "AA042"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "제거한다",
+    "그대로 둔다",
+    "비지배지분으로 대체한다",
+    "주석 공시만 한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "연결 관점에서 회수 위험이 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4034,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA038-Q03",
+   "primaryConceptId": "AA038",
+   "conceptIds": [
+    "AA038"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "journal",
+   "questionText": "내부 대여 거래 제거 분개의 차변 항목을 고르시오.",
+   "blankAnswer": "차변① → 차입금 / 차변② → 이자수익",
+   "acceptedAnswers": [
+    "차변① → 차입금 / 차변② → 이자수익"
+   ],
+   "relatedConceptIds": [
+    "AA001",
+    "AA042"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "차입금",
+    "이자수익",
+    "대여금",
+    "이자비용"
+   ],
+   "slots": [
+    {
+     "label": "차변①",
+     "answer": "차입금"
+    },
+    {
+     "label": "차변②",
+     "answer": "이자수익"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "채무와 수익을 지운다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4035,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA039-Q01",
+   "primaryConceptId": "AA039",
+   "conceptIds": [
+    "AA039"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "calculation",
+   "questionText": "연결실체 내 기계 처분가액이 1,000,000원, 처분 직전 장부금액이 800,000원이다. 제거할 미실현 처분이익은 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "AA040",
+    "AA007"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1000000.0,
+     "b": 800000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "처분가 − 장부금액.",
+   "confusion": null,
+   "calculation": "1,000,000 − 800,000 = 200,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4036,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA039-Q02",
+   "primaryConceptId": "AA039",
+   "conceptIds": [
+    "AA039"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "유형자산 내부거래 미실현이익은 이후 (______)을 통해 점차 실현된다.",
+   "blankAnswer": "감가상각",
+   "acceptedAnswers": [
+    "감가상각"
+   ],
+   "relatedConceptIds": [
+    "AA040",
+    "AA007"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실현 방법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4037,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA039-Q03",
+   "primaryConceptId": "AA039",
+   "conceptIds": [
+    "AA039"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "situation",
+   "questionText": "유형자산 내부거래 미실현이익이 전부 실현되는 시점은?",
+   "blankAnswer": "외부에 처분하거나 감가상각이 끝날 때",
+   "acceptedAnswers": [
+    "외부에 처분하거나 감가상각이 끝날 때"
+   ],
+   "relatedConceptIds": [
+    "AA040",
+    "AA007"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "외부에 처분하거나 감가상각이 끝날 때",
+    "내부 처분 다음 해 초",
+    "연결재무제표 작성 시",
+    "지배력을 얻을 때"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실현 시점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4038,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA040-Q01",
+   "primaryConceptId": "AA040",
+   "conceptIds": [
+    "AA040"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "calculation",
+   "questionText": "내부거래 미실현 처분이익이 200,000원이고 매입회사의 잔여 내용연수가 5년(정액법)이다. 연간 감가상각비 감소(실현)액은 (______)원이다(1년분).",
+   "blankAnswer": "40,000",
+   "acceptedAnswers": [
+    "40,000",
+    "40,000원"
+   ],
+   "relatedConceptIds": [
+    "AA039"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 200000.0,
+     "b": 1.0,
+     "c": 5.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "미실현이익 ÷ 잔여 내용연수.",
+   "confusion": null,
+   "calculation": "200,000 × 1 ÷ 5 = 40,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4039,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA040-Q02",
+   "primaryConceptId": "AA040",
+   "conceptIds": [
+    "AA040"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "내부거래로 높아진 원가로 계산한 감가상각비는 연결에서 미실현이익 해당분만큼 (______)한다.",
+   "blankAnswer": "감소",
+   "acceptedAnswers": [
+    "감소",
+    "차감"
+   ],
+   "relatedConceptIds": [
+    "AA039"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실현.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4040,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA040-Q03",
+   "primaryConceptId": "AA040",
+   "conceptIds": [
+    "AA040"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "상향거래 유형자산의 감가상각 조정액은 지배·(______) 지분에 지분율로 배분한다.",
+   "blankAnswer": "비지배",
+   "acceptedAnswers": [
+    "비지배"
+   ],
+   "relatedConceptIds": [
+    "AA039"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4041,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA041-Q01",
+   "primaryConceptId": "AA041",
+   "conceptIds": [
+    "AA041"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "calculation",
+   "questionText": "종속기업이 총 50,000,000원을 배당했고 지배기업 지분율이 80%이다. 연결에서 제거할 지배기업의 배당금수익은 (______)원이다.",
+   "blankAnswer": "40,000,000",
+   "acceptedAnswers": [
+    "40,000,000",
+    "40,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA036",
+    "AA044"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 50000000.0,
+     "r": 80.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "총배당 × 지배 지분율.",
+   "confusion": null,
+   "calculation": "50,000,000 × 80% = 40,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4042,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA041-Q02",
+   "primaryConceptId": "AA041",
+   "conceptIds": [
+    "AA041"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "비지배주주에게 지급한 종속기업 배당은 연결재무상태표의 (______)을 감소시킨다.",
+   "blankAnswer": "비지배지분",
+   "acceptedAnswers": [
+    "비지배지분"
+   ],
+   "relatedConceptIds": [
+    "AA036",
+    "AA044"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배당 효과.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4043,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA041-Q03",
+   "primaryConceptId": "AA041",
+   "conceptIds": [
+    "AA041"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "종속기업이 지배기업에 지급한 배당은 연결에서 지배기업의 배당금(______)을 제거한다.",
+   "blankAnswer": "수익",
+   "acceptedAnswers": [
+    "수익"
+   ],
+   "relatedConceptIds": [
+    "AA036",
+    "AA044"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "내부 배당.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4044,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA042-Q01",
+   "primaryConceptId": "AA042",
+   "conceptIds": [
+    "AA042"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "내부거래 손실이 자산 (______)의 증거라면 연결재무제표에서 제거하지 않는다.",
+   "blankAnswer": "손상",
+   "acceptedAnswers": [
+    "손상"
+   ],
+   "relatedConceptIds": [
+    "AA038",
+    "AA007"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4045,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA042-Q02",
+   "primaryConceptId": "AA042",
+   "conceptIds": [
+    "AA042"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "situation",
+   "questionText": "장부금액 1,000,000원 재고를 순실현가능가치 700,000원에 종속기업에 판 경우 연결 처리는?",
+   "blankAnswer": "손실 300,000원을 손상으로 유지",
+   "acceptedAnswers": [
+    "손실 300,000원을 손상으로 유지"
+   ],
+   "relatedConceptIds": [
+    "AA038",
+    "AA007"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "손실 300,000원을 손상으로 유지",
+    "손실 300,000원 전액 제거",
+    "손실을 비지배지분에 배분",
+    "손실을 기타포괄손익으로 대체"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "순실현가능가치 수준 판매는 손상 증거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4046,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA042-Q03",
+   "primaryConceptId": "AA042",
+   "conceptIds": [
+    "AA042"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "손상과 무관하게 이전가격 정책으로 원가보다 싸게 내부 판매해 생긴 차액은 연결에서 (______)한다.",
+   "blankAnswer": "제거",
+   "acceptedAnswers": [
+    "제거"
+   ],
+   "relatedConceptIds": [
+    "AA038",
+    "AA007"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4047,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA043-Q01",
+   "primaryConceptId": "AA043",
+   "conceptIds": [
+    "AA043"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "calculation",
+   "questionText": "조정 후 지배기업 순이익 240,000,000원, 조정 후 종속기업 순이익 90,000,000원, 영업권 손상차손 5,000,000원일 때 연결당기순이익은 (______)원이다.",
+   "blankAnswer": "325,000,000",
+   "acceptedAnswers": [
+    "325,000,000",
+    "325,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA036",
+    "AA041",
+    "AA039",
+    "AA007"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 240000000.0,
+     "b": 90000000.0,
+     "c": 5000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "조정 후 지배 + 조정 후 종속 − 영업권 손상.",
+   "confusion": null,
+   "calculation": "240,000,000 + 90,000,000 − 5,000,000 = 325,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4048,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA043-Q02",
+   "primaryConceptId": "AA043",
+   "conceptIds": [
+    "AA043"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "order",
+   "questionText": "연결당기순이익 계산 절차를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 종속기업 순이익 조정(공정가치 차액·상향 미실현손익) / 2단계 → 지배기업 순이익 조정(내부 배당·하향 미실현손익) / 3단계 → 조정 후 합산 및 영업권 손상 반영 / 4단계 → 지배·비지배 귀속 배분",
+   "acceptedAnswers": [
+    "1단계 → 종속기업 순이익 조정(공정가치 차액·상향 미실현손익) / 2단계 → 지배기업 순이익 조정(내부 배당·하향 미실현손익) / 3단계 → 조정 후 합산 및 영업권 손상 반영 / 4단계 → 지배·비지배 귀속 배분"
+   ],
+   "relatedConceptIds": [
+    "AA036",
+    "AA041",
+    "AA039",
+    "AA007"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "조정 후 합산 및 영업권 손상 반영",
+    "종속기업 순이익 조정(공정가치 차액·상향 미실현손익)",
+    "지배·비지배 귀속 배분",
+    "지배기업 순이익 조정(내부 배당·하향 미실현손익)"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "종속기업 순이익 조정(공정가치 차액·상향 미실현손익)"
+    },
+    {
+     "label": "2단계",
+     "answer": "지배기업 순이익 조정(내부 배당·하향 미실현손익)"
+    },
+    {
+     "label": "3단계",
+     "answer": "조정 후 합산 및 영업권 손상 반영"
+    },
+    {
+     "label": "4단계",
+     "answer": "지배·비지배 귀속 배분"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "종속 → 지배 → 합산 → 배분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4049,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA043-Q03",
+   "primaryConceptId": "AA043",
+   "conceptIds": [
+    "AA043"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "choice",
+   "questionText": "연결당기순이익 계산 시 비지배지분순이익에 영향을 주는 조정은?",
+   "blankAnswer": "종속기업 자산의 공정가치 차액 상각",
+   "acceptedAnswers": [
+    "종속기업 자산의 공정가치 차액 상각"
+   ],
+   "relatedConceptIds": [
+    "AA036",
+    "AA041",
+    "AA039",
+    "AA007"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "종속기업 자산의 공정가치 차액 상각",
+    "하향거래 미실현이익 제거",
+    "지배기업의 배당금수익 제거",
+    "지배기업 본사 비용"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "종속기업 쪽 조정만 비지배지분에 영향.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4050,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA044-Q01",
+   "primaryConceptId": "AA044",
+   "conceptIds": [
+    "AA044"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "calculation",
+   "questionText": "종속기업 취득 대가로 현금 900,000,000원을 지급했고 취득일 종속기업의 현금및현금성자산이 150,000,000원이다. 투자활동 순유출은 (______)원이다.",
+   "blankAnswer": "750,000,000",
+   "acceptedAnswers": [
+    "750,000,000",
+    "750,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA009",
+    "AA041"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 900000000.0,
+     "b": 150000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "지급 현금 − 취득한 현금.",
+   "confusion": null,
+   "calculation": "900,000,000 − 150,000,000 = 750,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4051,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA044-Q02",
+   "primaryConceptId": "AA044",
+   "conceptIds": [
+    "AA044"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "classification",
+   "questionText": "다음 현금흐름의 연결현금흐름표 분류를 연결하시오.",
+   "blankAnswer": "종속기업 지배력 획득 → 투자활동 / 지배력 유지 중 비지배지분 추가 취득 → 재무활동 / 비지배주주 배당 지급 → 재무활동",
+   "acceptedAnswers": [
+    "종속기업 지배력 획득 → 투자활동 / 지배력 유지 중 비지배지분 추가 취득 → 재무활동 / 비지배주주 배당 지급 → 재무활동"
+   ],
+   "relatedConceptIds": [
+    "AA009",
+    "AA041"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "영업활동",
+    "투자활동",
+    "재무활동"
+   ],
+   "slots": [
+    {
+     "label": "종속기업 지배력 획득",
+     "answer": "투자활동"
+    },
+    {
+     "label": "지배력 유지 중 비지배지분 추가 취득",
+     "answer": "재무활동"
+    },
+    {
+     "label": "비지배주주 배당 지급",
+     "answer": "재무활동"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지배력 변동 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4052,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA044-Q03",
+   "primaryConceptId": "AA044",
+   "conceptIds": [
+    "AA044"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-C",
+   "questionType": "definition",
+   "questionText": "연결실체 내부의 현금흐름은 연결현금흐름표에서 (______)한다.",
+   "blankAnswer": "제거",
+   "acceptedAnswers": [
+    "제거"
+   ],
+   "relatedConceptIds": [
+    "AA009",
+    "AA041"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "외부 흐름만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1110호 '연결재무제표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4053,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA045-Q01",
+   "primaryConceptId": "AA045",
+   "conceptIds": [
+    "AA045"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "calculation",
+   "questionText": "관계기업 지분 취득 대가 600,000,000원, 직접 거래원가 6,000,000원일 때 관계기업투자 최초 장부금액은 (______)원이다.",
+   "blankAnswer": "606,000,000",
+   "acceptedAnswers": [
+    "606,000,000",
+    "606,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA011",
+    "AA046"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 600000000.0,
+     "b": 6000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원가 = 대가 + 거래원가.",
+   "confusion": null,
+   "calculation": "600,000,000 + 6,000,000 = 606,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4054,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA045-Q02",
+   "primaryConceptId": "AA045",
+   "conceptIds": [
+    "AA045"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "definition",
+   "questionText": "관계기업 투자는 최초에 (______)로 인식한다.",
+   "blankAnswer": "원가",
+   "acceptedAnswers": [
+    "원가"
+   ],
+   "relatedConceptIds": [
+    "AA011",
+    "AA046"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "최초 측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4055,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA045-Q03",
+   "primaryConceptId": "AA045",
+   "conceptIds": [
+    "AA045"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "comparison",
+   "questionText": "관계기업 투자의 직접 거래원가 처리는?",
+   "blankAnswer": "투자 원가에 포함",
+   "acceptedAnswers": [
+    "투자 원가에 포함"
+   ],
+   "relatedConceptIds": [
+    "AA011",
+    "AA046"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "투자 원가에 포함",
+    "당기비용",
+    "기타포괄손익",
+    "영업권으로 별도 인식"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사업결합(비용)과 다르다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4056,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA046-Q01",
+   "primaryConceptId": "AA046",
+   "conceptIds": [
+    "AA046"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "calculation",
+   "questionText": "관계기업 투자 원가 600,000,000원, 피투자자 순자산 공정가치 중 투자자 몫 540,000,000원일 때 영업권 상당액은 (______)원이다.",
+   "blankAnswer": "60,000,000",
+   "acceptedAnswers": [
+    "60,000,000",
+    "60,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA045",
+    "AA011"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 600000000.0,
+     "b": 540000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원가 − 순자산 공정가치 지분.",
+   "confusion": null,
+   "calculation": "600,000,000 − 540,000,000 = 60,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4057,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA046-Q02",
+   "primaryConceptId": "AA046",
+   "conceptIds": [
+    "AA046"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "calculation",
+   "questionText": "피투자자 건물의 공정가치 차액 10,000,000원(잔여 10년, 정액법)에 투자자 지분율 30%를 곱한 금액의 1년분만큼 지분법이익을 줄인다. 연간 감소액은 (______)원이다(지분 해당 차액 ÷ 10).",
+   "blankAnswer": "3,000,000",
+   "acceptedAnswers": [
+    "3,000,000",
+    "3,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA045",
+    "AA011"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 10000000.0,
+     "r": 30.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공정가치 차액 ÷ 잔여연수 × 지분율 = (100,000,000 ÷ 10) × 30%.",
+   "confusion": null,
+   "calculation": "10,000,000 × 30% = 3,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4058,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA046-Q03",
+   "primaryConceptId": "AA046",
+   "conceptIds": [
+    "AA046"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "definition",
+   "questionText": "관계기업 투자의 염가매수 차액은 취득 기간의 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익",
+    "지분법이익"
+   ],
+   "relatedConceptIds": [
+    "AA045",
+    "AA011"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지분법이익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4059,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA047-Q01",
+   "primaryConceptId": "AA047",
+   "conceptIds": [
+    "AA047"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "calculation",
+   "questionText": "지분법 적용 중단으로 인식하지 않은 손실 누적액이 30,000,000원이다. 다음 해 관계기업 이익 중 투자자 몫이 40,000,000원이면 지분법이익으로 인식할 금액은 (______)원이다.",
+   "blankAnswer": "10,000,000",
+   "acceptedAnswers": [
+    "10,000,000",
+    "10,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA011",
+    "AA048"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 40000000.0,
+     "b": 30000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "미인식 손실을 먼저 상쇄.",
+   "confusion": null,
+   "calculation": "40,000,000 − 30,000,000 = 10,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4060,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA047-Q02",
+   "primaryConceptId": "AA047",
+   "conceptIds": [
+    "AA047"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "definition",
+   "questionText": "관계기업 손실은 투자 장부금액을 0까지 줄인 뒤 실질적 (______)의 일부인 장기 채권을 줄인다.",
+   "blankAnswer": "순투자",
+   "acceptedAnswers": [
+    "순투자"
+   ],
+   "relatedConceptIds": [
+    "AA011",
+    "AA048"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "흡수 순서.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4061,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA047-Q03",
+   "primaryConceptId": "AA047",
+   "conceptIds": [
+    "AA047"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "definition",
+   "questionText": "손실 누적으로 투자지분이 0이 되면 추가 손실 인식을 (______)한다.",
+   "blankAnswer": "중단",
+   "acceptedAnswers": [
+    "중단"
+   ],
+   "relatedConceptIds": [
+    "AA011",
+    "AA048"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4062,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA048-Q01",
+   "primaryConceptId": "AA048",
+   "conceptIds": [
+    "AA048"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "calculation",
+   "questionText": "관계기업 투자 장부금액이 600,000,000원, 회수가능액이 520,000,000원이다. 손상차손은 (______)원이다.",
+   "blankAnswer": "80,000,000",
+   "acceptedAnswers": [
+    "80,000,000",
+    "80,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA047",
+    "AA046"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 600000000.0,
+     "b": 520000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "장부금액 − 회수가능액.",
+   "confusion": null,
+   "calculation": "600,000,000 − 520,000,000 = 80,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4063,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA048-Q02",
+   "primaryConceptId": "AA048",
+   "conceptIds": [
+    "AA048"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "definition",
+   "questionText": "관계기업 투자의 손상차손은 투자 (______)를 하나의 자산으로 보아 인식한다.",
+   "blankAnswer": "전체",
+   "acceptedAnswers": [
+    "전체"
+   ],
+   "relatedConceptIds": [
+    "AA047",
+    "AA046"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손상 단위.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4064,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA048-Q03",
+   "primaryConceptId": "AA048",
+   "conceptIds": [
+    "AA048"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "comparison",
+   "questionText": "관계기업 투자 손상차손의 환입에 관한 설명으로 옳은 것은?",
+   "blankAnswer": "회수가능액이 회복되면 환입할 수 있다",
+   "acceptedAnswers": [
+    "회수가능액이 회복되면 환입할 수 있다"
+   ],
+   "relatedConceptIds": [
+    "AA047",
+    "AA046"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "회수가능액이 회복되면 환입할 수 있다",
+    "영업권 상당액이 있으므로 환입할 수 없다",
+    "환입하면 기타포괄손익",
+    "다음 해에만 환입"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "영업권에 배분하지 않으므로 환입 가능.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4065,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA049-Q01",
+   "primaryConceptId": "AA049",
+   "conceptIds": [
+    "AA049"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "comparison",
+   "questionText": "공동약정 참여자의 재무제표 표시 방법을 약정 유형과 연결하시오.",
+   "blankAnswer": "공동기업 → 지분법 / 공동영업 → 자기 몫의 자산·부채·수익·비용 인식",
+   "acceptedAnswers": [
+    "공동기업 → 지분법 / 공동영업 → 자기 몫의 자산·부채·수익·비용 인식"
+   ],
+   "relatedConceptIds": [
+    "AA012",
+    "AA011"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "지분법",
+    "자기 몫의 자산·부채·수익·비용 인식",
+    "비례연결"
+   ],
+   "slots": [
+    {
+     "label": "공동기업",
+     "answer": "지분법"
+    },
+    {
+     "label": "공동영업",
+     "answer": "자기 몫의 자산·부채·수익·비용 인식"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "권리의 성격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4066,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA049-Q02",
+   "primaryConceptId": "AA049",
+   "conceptIds": [
+    "AA049"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "calculation",
+   "questionText": "공동기업의 당기순이익이 200,000,000원이고 참여자 지분율이 50%이다. 참여자가 인식할 지분법이익은 (______)원이다.",
+   "blankAnswer": "100,000,000",
+   "acceptedAnswers": [
+    "100,000,000",
+    "100,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA012",
+    "AA011"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 200000000.0,
+     "r": 50.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "순이익 × 지분율.",
+   "confusion": null,
+   "calculation": "200,000,000 × 50% = 100,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4067,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA049-Q03",
+   "primaryConceptId": "AA049",
+   "conceptIds": [
+    "AA049"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "situation",
+   "questionText": "공동기업에서 공동지배력을 잃고 유의적인 영향력만 남으면 잔여 지분을 재측정하지 않고 (______)을 계속 적용한다.",
+   "blankAnswer": "지분법",
+   "acceptedAnswers": [
+    "지분법"
+   ],
+   "relatedConceptIds": [
+    "AA012",
+    "AA011"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "관계기업으로 전환.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4068,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA049-Q04",
+   "primaryConceptId": "AA049",
+   "conceptIds": [
+    "AA049"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-D",
+   "questionType": "definition",
+   "questionText": "공동기업은 약정의 (______)에 대한 권리를 갖는 공동약정이다.",
+   "blankAnswer": "순자산",
+   "acceptedAnswers": [
+    "순자산"
+   ],
+   "relatedConceptIds": [
+    "AA012",
+    "AA011"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1028호 '관계기업과 공동기업에 대한 투자'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4069,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA050-Q01",
+   "primaryConceptId": "AA050",
+   "conceptIds": [
+    "AA050"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "calculation",
+   "questionText": "상품 1,000달러를 외상으로 매입했고 거래일 환율이 1,300원/달러이다. 인식할 매입채무는 (______)원이다.",
+   "blankAnswer": "1,300,000",
+   "acceptedAnswers": [
+    "1,300,000",
+    "1,300,000원"
+   ],
+   "relatedConceptIds": [
+    "AA013",
+    "AA051"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 1000.0,
+     "b": 1300.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "외화 × 거래일 환율.",
+   "confusion": null,
+   "calculation": "1,000 × 1,300 = 1,300,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4070,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA050-Q02",
+   "primaryConceptId": "AA050",
+   "conceptIds": [
+    "AA050"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "definition",
+   "questionText": "외화로 상품을 외상 매입하면 최초 인식 시 매입한 (______)일의 현물환율로 환산한다.",
+   "blankAnswer": "거래",
+   "acceptedAnswers": [
+    "거래",
+    "매입"
+   ],
+   "relatedConceptIds": [
+    "AA013",
+    "AA051"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4071,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA050-Q03",
+   "primaryConceptId": "AA050",
+   "conceptIds": [
+    "AA050"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "situation",
+   "questionText": "외화로 선급금을 지급한 뒤 상품을 받았다. 재고자산 인식에 쓰는 환율은?",
+   "blankAnswer": "선급금을 지급한 날의 환율",
+   "acceptedAnswers": [
+    "선급금을 지급한 날의 환율"
+   ],
+   "relatedConceptIds": [
+    "AA013",
+    "AA051"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "선급금을 지급한 날의 환율",
+    "상품을 받은 날의 환율",
+    "보고기간 말 환율",
+    "연평균 환율"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비화폐성 선급금의 거래일.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4072,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA051-Q01",
+   "primaryConceptId": "AA051",
+   "conceptIds": [
+    "AA051"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "calculation",
+   "questionText": "매출채권 1,000달러를 최초 인식액 1,300,000원으로 기록했고 회수 시 받은 원화가 1,250,000원이다. 외환차손은 (______)원이다.",
+   "blankAnswer": "50,000",
+   "acceptedAnswers": [
+    "50,000",
+    "50,000원"
+   ],
+   "relatedConceptIds": [
+    "AA050",
+    "AA052"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1300000.0,
+     "b": 1250000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "장부금액 − 회수액.",
+   "confusion": null,
+   "calculation": "1,300,000 − 1,250,000 = 50,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4073,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA051-Q02",
+   "primaryConceptId": "AA051",
+   "conceptIds": [
+    "AA051"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "definition",
+   "questionText": "외화 화폐성항목을 결제할 때 생긴 환율 차이는 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익"
+   ],
+   "relatedConceptIds": [
+    "AA050",
+    "AA052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "외환차손익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4074,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA051-Q03",
+   "primaryConceptId": "AA051",
+   "conceptIds": [
+    "AA051"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "situation",
+   "questionText": "전기 말 환산한 외화 매입채무를 당기에 결제했다. 당기 외환차손익의 기준 환율은?",
+   "blankAnswer": "전기 말 환율과 결제일 환율",
+   "acceptedAnswers": [
+    "전기 말 환율과 결제일 환율"
+   ],
+   "relatedConceptIds": [
+    "AA050",
+    "AA052"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "전기 말 환율과 결제일 환율",
+    "최초 거래일 환율과 결제일 환율",
+    "당기 평균환율",
+    "당기 말 환율"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직전 환산 금액 대비 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4075,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA052-Q01",
+   "primaryConceptId": "AA052",
+   "conceptIds": [
+    "AA052"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "calculation",
+   "questionText": "외화 차입금 10,000달러의 전기 말 환산액이 12,500,000원, 당기 말 마감환율 환산액이 13,200,000원이다. 외화환산손실은 (______)원이다.",
+   "blankAnswer": "700,000",
+   "acceptedAnswers": [
+    "700,000",
+    "700,000원"
+   ],
+   "relatedConceptIds": [
+    "AA051",
+    "AA013"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 13200000.0,
+     "b": 12500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "당기 말 − 전기 말(부채 증가 = 손실).",
+   "confusion": null,
+   "calculation": "13,200,000 − 12,500,000 = 700,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4076,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA052-Q02",
+   "primaryConceptId": "AA052",
+   "conceptIds": [
+    "AA052"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "classification",
+   "questionText": "다음 외화 항목에 보고기간 말 적용할 환율을 연결하시오.",
+   "blankAnswer": "외화 매출채권 → 마감환율 / 원가로 측정하는 외화 취득 토지 → 거래일 환율 / 공정가치로 측정하는 외화 투자부동산 → 공정가치 측정일 환율",
+   "acceptedAnswers": [
+    "외화 매출채권 → 마감환율 / 원가로 측정하는 외화 취득 토지 → 거래일 환율 / 공정가치로 측정하는 외화 투자부동산 → 공정가치 측정일 환율"
+   ],
+   "relatedConceptIds": [
+    "AA051",
+    "AA013"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "마감환율",
+    "거래일 환율",
+    "공정가치 측정일 환율"
+   ],
+   "slots": [
+    {
+     "label": "외화 매출채권",
+     "answer": "마감환율"
+    },
+    {
+     "label": "원가로 측정하는 외화 취득 토지",
+     "answer": "거래일 환율"
+    },
+    {
+     "label": "공정가치로 측정하는 외화 투자부동산",
+     "answer": "공정가치 측정일 환율"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "화폐성·비화폐성 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4077,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA052-Q03",
+   "primaryConceptId": "AA052",
+   "conceptIds": [
+    "AA052"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "definition",
+   "questionText": "재평가모형으로 측정한 외화 토지의 재평가이익에 포함된 환율 효과는 (______)으로 인식한다.",
+   "blankAnswer": "기타포괄손익",
+   "acceptedAnswers": [
+    "기타포괄손익"
+   ],
+   "relatedConceptIds": [
+    "AA051",
+    "AA013"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손익 위치를 따른다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4078,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA052-Q04",
+   "primaryConceptId": "AA052",
+   "conceptIds": [
+    "AA052"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-E",
+   "questionType": "definition",
+   "questionText": "보고기간 말 외화 화폐성항목은 그날의 (______)환율로 환산한다.",
+   "blankAnswer": "마감",
+   "acceptedAnswers": [
+    "마감"
+   ],
+   "relatedConceptIds": [
+    "AA051",
+    "AA013"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "화폐성항목.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1021호 '환율변동효과'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4079,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA053-Q01",
+   "primaryConceptId": "AA053",
+   "conceptIds": [
+    "AA053"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "위험회피수단으로 지정하지 않은 매매목적 통화선도의 공정가치 변동은 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익"
+   ],
+   "relatedConceptIds": [
+    "AA054",
+    "AA015",
+    "IA113"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "매매목적.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4080,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA053-Q02",
+   "primaryConceptId": "AA053",
+   "conceptIds": [
+    "AA053"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "choice",
+   "questionText": "위험회피회계 적용 요건이 아닌 것은?",
+   "blankAnswer": "파생상품이 거래소에 상장되어 있을 것",
+   "acceptedAnswers": [
+    "파생상품이 거래소에 상장되어 있을 것"
+   ],
+   "relatedConceptIds": [
+    "AA054",
+    "AA015",
+    "IA113"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "파생상품이 거래소에 상장되어 있을 것",
+    "위험회피관계의 공식 지정과 문서화",
+    "위험회피대상과 수단 사이의 경제적 관계",
+    "적절한 위험회피비율"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상장 여부는 요건이 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4081,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA053-Q03",
+   "primaryConceptId": "AA053",
+   "conceptIds": [
+    "AA053"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "calculation",
+   "questionText": "매매목적 통화선도의 기초 공정가치가 1,000,000원이고 기말 공정가치가 3,000,000원이다. 당기 파생상품평가이익은 (______)원이다.",
+   "blankAnswer": "2,000,000",
+   "acceptedAnswers": [
+    "2,000,000",
+    "2,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA054",
+    "AA015",
+    "IA113"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 3000000.0,
+     "b": 1000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기말 − 기초 공정가치.",
+   "confusion": null,
+   "calculation": "3,000,000 − 1,000,000 = 2,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4082,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA054-Q01",
+   "primaryConceptId": "AA054",
+   "conceptIds": [
+    "AA054"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "calculation",
+   "questionText": "1,000달러를 달러당 1,200원에 사기로 한 통화선도(매입)의 기말 잔여만기 선도환율 기준 외화 가치가 1,250,000원, 계약금액이 1,200,000원이다. 파생상품자산은 (______)원이다(할인 무시).",
+   "blankAnswer": "50,000",
+   "acceptedAnswers": [
+    "50,000",
+    "50,000원"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "AA055"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1250000.0,
+     "b": 1200000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(기말 선도환율 − 계약환율) × 외화금액.",
+   "confusion": null,
+   "calculation": "1,250,000 − 1,200,000 = 50,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4083,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA054-Q02",
+   "primaryConceptId": "AA054",
+   "conceptIds": [
+    "AA054"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "선도계약은 체결일의 공정가치가 일반적으로 (______)이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "영"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "AA055"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "최초 인식.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4084,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA054-Q03",
+   "primaryConceptId": "AA054",
+   "conceptIds": [
+    "AA054"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "comparison",
+   "questionText": "선도와 선물의 특징을 연결하시오.",
+   "blankAnswer": "선도 → 장외·맞춤형·만기 정산 / 선물 → 거래소·표준화·일일정산",
+   "acceptedAnswers": [
+    "선도 → 장외·맞춤형·만기 정산 / 선물 → 거래소·표준화·일일정산"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "AA055"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "장외·맞춤형·만기 정산",
+    "거래소·표준화·일일정산"
+   ],
+   "slots": [
+    {
+     "label": "선도",
+     "answer": "장외·맞춤형·만기 정산"
+    },
+    {
+     "label": "선물",
+     "answer": "거래소·표준화·일일정산"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "거래 형태 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4085,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA055-Q01",
+   "primaryConceptId": "AA055",
+   "conceptIds": [
+    "AA055"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "선물계약은 거래소에서 매일 가격 변동분을 정산하는데, 이를 (______)정산이라 한다.",
+   "blankAnswer": "일일",
+   "acceptedAnswers": [
+    "일일"
+   ],
+   "relatedConceptIds": [
+    "AA054",
+    "AA053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "특징.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4086,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA055-Q02",
+   "primaryConceptId": "AA055",
+   "conceptIds": [
+    "AA055"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "treatment",
+   "questionText": "선물거래 개시증거금의 회계처리는?",
+   "blankAnswer": "선물거래예치금(자산)",
+   "acceptedAnswers": [
+    "선물거래예치금(자산)"
+   ],
+   "relatedConceptIds": [
+    "AA054",
+    "AA053"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "선물거래예치금(자산)",
+    "당기비용",
+    "파생상품부채",
+    "기타포괄손익"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "돌려받을 예치금.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4087,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA055-Q03",
+   "primaryConceptId": "AA055",
+   "conceptIds": [
+    "AA055"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "calculation",
+   "questionText": "선물 매입 포지션에서 이틀간 일일정산으로 각각 200,000원 이익, 80,000원 손실이 정산되었다. 이틀간 순평가이익은 (______)원이다.",
+   "blankAnswer": "120,000",
+   "acceptedAnswers": [
+    "120,000",
+    "120,000원"
+   ],
+   "relatedConceptIds": [
+    "AA054",
+    "AA053"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 200000.0,
+     "b": 80000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "이익 − 손실.",
+   "confusion": null,
+   "calculation": "200,000 − 80,000 = 120,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4088,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA056-Q01",
+   "primaryConceptId": "AA056",
+   "conceptIds": [
+    "AA056"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "calculation",
+   "questionText": "달러 콜옵션(1,000달러, 행사가 1,200원)의 기말 공정가치가 70,000원이고 내재가치가 50,000원(현물 1,250원 기준)이다. 시간가치는 (______)원이다.",
+   "blankAnswer": "20,000",
+   "acceptedAnswers": [
+    "20,000",
+    "20,000원"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "AA057"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 70000.0,
+     "b": 50000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공정가치 − 내재가치.",
+   "confusion": null,
+   "calculation": "70,000 − 50,000 = 20,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4089,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA056-Q02",
+   "primaryConceptId": "AA056",
+   "conceptIds": [
+    "AA056"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "옵션 공정가치는 내재가치와 (______)가치로 구성된다.",
+   "blankAnswer": "시간",
+   "acceptedAnswers": [
+    "시간"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "AA057"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4090,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA056-Q03",
+   "primaryConceptId": "AA056",
+   "conceptIds": [
+    "AA056"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "exception",
+   "questionText": "원칙적으로 위험회피수단으로 지정할 수 없는 것은?",
+   "blankAnswer": "매도한 옵션",
+   "acceptedAnswers": [
+    "매도한 옵션"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "AA057"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "매도한 옵션",
+    "매입한 옵션",
+    "통화선도",
+    "이자율스왑"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손실 위험이 크다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4091,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA057-Q01",
+   "primaryConceptId": "AA057",
+   "conceptIds": [
+    "AA057"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "classification",
+   "questionText": "이자율스왑 방향별 위험회피 유형을 연결하시오.",
+   "blankAnswer": "변동금리 차입금 + 변동 수취·고정 지급 스왑 → 현금흐름위험회피 / 고정금리 사채 + 고정 수취·변동 지급 스왑 → 공정가치위험회피",
+   "acceptedAnswers": [
+    "변동금리 차입금 + 변동 수취·고정 지급 스왑 → 현금흐름위험회피 / 고정금리 사채 + 고정 수취·변동 지급 스왑 → 공정가치위험회피"
+   ],
+   "relatedConceptIds": [
+    "AA016",
+    "AA059"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "현금흐름위험회피",
+    "공정가치위험회피",
+    "해외사업장순투자위험회피"
+   ],
+   "slots": [
+    {
+     "label": "변동금리 차입금 + 변동 수취·고정 지급 스왑",
+     "answer": "현금흐름위험회피"
+    },
+    {
+     "label": "고정금리 사채 + 고정 수취·변동 지급 스왑",
+     "answer": "공정가치위험회피"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회피하는 위험의 성격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4092,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA057-Q02",
+   "primaryConceptId": "AA057",
+   "conceptIds": [
+    "AA057"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "calculation",
+   "questionText": "변동금리 차입금 1,000,000,000원의 시장금리가 5%이고, 스왑으로 변동 5%를 받고 고정 4%를 지급한다. 스왑 순수취액은 (______)원이다(금리 차 1%p).",
+   "blankAnswer": "10,000,000",
+   "acceptedAnswers": [
+    "10,000,000",
+    "10,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA016",
+    "AA059"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1000000000.0,
+     "r": 1.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원금 × (변동 − 고정).",
+   "confusion": null,
+   "calculation": "1,000,000,000 × 1% = 10,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4093,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA057-Q03",
+   "primaryConceptId": "AA057",
+   "conceptIds": [
+    "AA057"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "두 당사자가 일정 기간 이자 등 현금흐름을 교환하는 계약을 (______)이라 한다.",
+   "blankAnswer": "스왑",
+   "acceptedAnswers": [
+    "스왑"
+   ],
+   "relatedConceptIds": [
+    "AA016",
+    "AA059"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4094,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA058-Q01",
+   "primaryConceptId": "AA058",
+   "conceptIds": [
+    "AA058"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "classification",
+   "questionText": "다음 파생상품의 공정가치 서열 수준을 연결하시오.",
+   "blankAnswer": "거래소 상장 주가지수선물 → 수준 1 / 시장 금리곡선으로 평가한 이자율스왑 → 수준 2 / 관측 불가능한 변동성 추정치로 평가한 비상장주식 옵션 → 수준 3",
+   "acceptedAnswers": [
+    "거래소 상장 주가지수선물 → 수준 1 / 시장 금리곡선으로 평가한 이자율스왑 → 수준 2 / 관측 불가능한 변동성 추정치로 평가한 비상장주식 옵션 → 수준 3"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "H11"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "수준 1",
+    "수준 2",
+    "수준 3"
+   ],
+   "slots": [
+    {
+     "label": "거래소 상장 주가지수선물",
+     "answer": "수준 1"
+    },
+    {
+     "label": "시장 금리곡선으로 평가한 이자율스왑",
+     "answer": "수준 2"
+    },
+    {
+     "label": "관측 불가능한 변동성 추정치로 평가한 비상장주식 옵션",
+     "answer": "수준 3"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "투입변수의 관측 가능성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4095,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA058-Q02",
+   "primaryConceptId": "AA058",
+   "conceptIds": [
+    "AA058"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "공정가치는 자산을 매도하면서 받을 가격인 (______)가격이다.",
+   "blankAnswer": "유출",
+   "acceptedAnswers": [
+    "유출",
+    "출구"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "H11"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1113호.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4096,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA058-Q03",
+   "primaryConceptId": "AA058",
+   "conceptIds": [
+    "AA058"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "공정가치 측정 시 관측 가능한 투입변수를 (______)한 사용한다.",
+   "blankAnswer": "최대",
+   "acceptedAnswers": [
+    "최대",
+    "최대한"
+   ],
+   "relatedConceptIds": [
+    "AA053",
+    "H11"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4097,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA059-Q01",
+   "primaryConceptId": "AA059",
+   "conceptIds": [
+    "AA059"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "calculation",
+   "questionText": "현금흐름위험회피에서 위험회피수단의 누적 이익이 120,000,000원, 위험회피대상의 누적 공정가치 변동이 100,000,000원이다. 비효과적인 부분(당기손익)은 (______)원이다.",
+   "blankAnswer": "20,000,000",
+   "acceptedAnswers": [
+    "20,000,000",
+    "20,000,000원"
+   ],
+   "relatedConceptIds": [
+    "AA016",
+    "AA057"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 120000000.0,
+     "b": 100000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "수단 누적 손익 − 적립금 한도(적은 금액).",
+   "confusion": null,
+   "calculation": "120,000,000 − 100,000,000 = 20,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4098,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA059-Q02",
+   "primaryConceptId": "AA059",
+   "conceptIds": [
+    "AA059"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "현금흐름위험회피에서 위험회피수단 손익의 효과적인 부분은 (______)으로 인식한다.",
+   "blankAnswer": "기타포괄손익",
+   "acceptedAnswers": [
+    "기타포괄손익"
+   ],
+   "relatedConceptIds": [
+    "AA016",
+    "AA057"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금흐름위험회피적립금.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4099,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA059-Q03",
+   "primaryConceptId": "AA059",
+   "conceptIds": [
+    "AA059"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "treatment",
+   "questionText": "예상 재고 매입을 현금흐름위험회피한 뒤 재고를 인식했다. 적립금의 처리는?",
+   "blankAnswer": "재고자산의 최초 원가에 포함(기본조정)",
+   "acceptedAnswers": [
+    "재고자산의 최초 원가에 포함(기본조정)"
+   ],
+   "relatedConceptIds": [
+    "AA016",
+    "AA057"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재고자산의 최초 원가에 포함(기본조정)",
+    "즉시 당기손익으로 재분류",
+    "이익잉여금으로 대체",
+    "그대로 유지"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비금융항목은 기본조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4100,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA060-Q01",
+   "primaryConceptId": "AA060",
+   "conceptIds": [
+    "AA060"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "comparison",
+   "questionText": "현금흐름위험회피 중단 시 적립금 처리를 연결하시오.",
+   "blankAnswer": "예상거래가 여전히 발생할 것으로 예상 → 적립금 유지 후 거래 발생 시 처리 / 예상거래가 더 이상 발생하지 않을 것으로 예상 → 즉시 당기손익으로 재분류",
+   "acceptedAnswers": [
+    "예상거래가 여전히 발생할 것으로 예상 → 적립금 유지 후 거래 발생 시 처리 / 예상거래가 더 이상 발생하지 않을 것으로 예상 → 즉시 당기손익으로 재분류"
+   ],
+   "relatedConceptIds": [
+    "AA059",
+    "AA015"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "적립금 유지 후 거래 발생 시 처리",
+    "즉시 당기손익으로 재분류",
+    "이익잉여금으로 대체"
+   ],
+   "slots": [
+    {
+     "label": "예상거래가 여전히 발생할 것으로 예상",
+     "answer": "적립금 유지 후 거래 발생 시 처리"
+    },
+    {
+     "label": "예상거래가 더 이상 발생하지 않을 것으로 예상",
+     "answer": "즉시 당기손익으로 재분류"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예상거래 발생 가능성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4101,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA060-Q02",
+   "primaryConceptId": "AA060",
+   "conceptIds": [
+    "AA060"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "위험관리 목적이 그대로인 위험회피관계를 기업이 (______)으로 중단할 수 없다.",
+   "blankAnswer": "자발적",
+   "acceptedAnswers": [
+    "자발적",
+    "임의"
+   ],
+   "relatedConceptIds": [
+    "AA059",
+    "AA015"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "임의 중단 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4102,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
+  },
+  {
+   "id": "AA060-Q03",
+   "primaryConceptId": "AA060",
+   "conceptIds": [
+    "AA060"
+   ],
+   "subjectId": "AA",
+   "chapterId": "AA-F",
+   "questionType": "definition",
+   "questionText": "위험회피비율만 맞지 않게 된 경우에는 중단 전에 (______)으로 관계를 유지할 수 있다.",
+   "blankAnswer": "재조정",
+   "acceptedAnswers": [
+    "재조정"
+   ],
+   "relatedConceptIds": [
+    "AA059",
+    "AA015"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "rebalancing.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'(파생상품·위험회피회계)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4103,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 7
   }
  ]
 }

@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 453,
+    "complete": 492,
     "total": 577,
-    "missing": 124,
+    "missing": 85,
     "needsReview": 12,
-    "storedFlagCovered": 523
+    "storedFlagCovered": 556
    },
    "경영학": {
     "complete": 21,
@@ -40,11 +40,11 @@
   },
   "packs": {
    "IA": {
-    "complete": 326,
+    "complete": 332,
     "total": 332
    },
    "AA": {
-    "complete": 61,
+    "complete": 94,
     "total": 94
    },
    "CM": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 787,
+   "complete": 826,
    "total": 1233,
-   "missing": 446
+   "missing": 407
   }
  },
  "items": [
@@ -1184,13 +1184,12 @@
    ],
    "existingQuestionIds": [
     "L019-Q01",
-    "L019-Q02"
+    "L019-Q02",
+    "L019-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -1362,13 +1361,12 @@
    ],
    "existingQuestionIds": [
     "L030-Q01",
-    "L030-Q02"
+    "L030-Q02",
+    "L030-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -1841,13 +1839,12 @@
    ],
    "existingQuestionIds": [
     "P009-Q01",
-    "P009-Q02"
+    "P009-Q02",
+    "P009-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -1863,13 +1860,12 @@
    ],
    "existingQuestionIds": [
     "P031-Q01",
-    "P031-Q02"
+    "P031-Q02",
+    "P031-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -2060,13 +2056,12 @@
    ],
    "existingQuestionIds": [
     "P041-Q01",
-    "P041-Q02"
+    "P041-Q02",
+    "P041-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -2172,13 +2167,12 @@
    ],
    "existingQuestionIds": [
     "P055-Q01",
-    "P055-Q02"
+    "P055-Q02",
+    "P055-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -7437,15 +7431,19 @@
    "packId": "AA",
    "parentChapter": "사업결합",
    "scopeTitle": "조건부대가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA030"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA030-Q01",
+    "AA030-Q02",
+    "AA030-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0339",
@@ -7454,15 +7452,19 @@
    "packId": "AA",
    "parentChapter": "사업결합",
    "scopeTitle": "식별가능자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA031"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA031-Q01",
+    "AA031-Q02",
+    "AA031-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0340",
@@ -7471,15 +7473,19 @@
    "packId": "AA",
    "parentChapter": "사업결합",
    "scopeTitle": "인수부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA032"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA032-Q01",
+    "AA032-Q02",
+    "AA032-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0341",
@@ -7593,15 +7599,19 @@
    "packId": "AA",
    "parentChapter": "사업결합",
    "scopeTitle": "측정기간",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA033"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA033-Q01",
+    "AA033-Q02",
+    "AA033-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0347",
@@ -7610,15 +7620,19 @@
    "packId": "AA",
    "parentChapter": "사업결합",
    "scopeTitle": "사업결합 이전 관계의 정산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA034"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA034-Q01",
+    "AA034-Q02",
+    "AA034-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0348",
@@ -7648,15 +7662,19 @@
    "packId": "AA",
    "parentChapter": "사업결합",
    "scopeTitle": "공통지배하 거래와 적용기준 구별",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA035"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA035-Q01",
+    "AA035-Q02",
+    "AA035-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0350",
@@ -7694,15 +7712,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "힘",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA020"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA020-Q01",
+    "AA020-Q02",
+    "AA020-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0352",
@@ -7711,15 +7733,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "변동이익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA021"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA021-Q01",
+    "AA021-Q02",
+    "AA021-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0353",
@@ -7791,15 +7817,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "연결손익계산서",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA036"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA036-Q01",
+    "AA036-Q02",
+    "AA036-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0357",
@@ -7892,15 +7922,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "취득 후 이익잉여금",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA037"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA037-Q01",
+    "AA037-Q02",
+    "AA037-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0362",
@@ -7930,15 +7964,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "내부채권·채무 제거",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA038"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA038-Q01",
+    "AA038-Q02",
+    "AA038-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0364",
@@ -7989,15 +8027,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "유형자산 미실현손익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA039"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA039-Q01",
+    "AA039-Q02",
+    "AA039-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0367",
@@ -8006,15 +8048,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "감가상각 조정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA040"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA040-Q01",
+    "AA040-Q02",
+    "AA040-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0368",
@@ -8023,15 +8069,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "내부배당 제거",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA041"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA041-Q01",
+    "AA041-Q02",
+    "AA041-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0369",
@@ -8040,15 +8090,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "내부거래 손상",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA042"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA042-Q01",
+    "AA042-Q02",
+    "AA042-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0370",
@@ -8162,15 +8216,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "복합 연결문제",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA043"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA043-Q01",
+    "AA043-Q02",
+    "AA043-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0376",
@@ -8179,15 +8237,19 @@
    "packId": "AA",
    "parentChapter": "연결재무제표",
    "scopeTitle": "연결현금흐름표",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA044"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA044-Q01",
+    "AA044-Q02",
+    "AA044-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0377",
@@ -8259,21 +8321,19 @@
    "packId": "AA",
    "parentChapter": "관계기업 및 공동약정",
    "scopeTitle": "최초 측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA045"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P007",
-    "R006",
-    "IA023",
-    "IA093",
-    "IA203"
+   "existingQuestionIds": [
+    "AA045-Q01",
+    "AA045-Q02",
+    "AA045-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0381",
@@ -8324,15 +8384,19 @@
    "packId": "AA",
    "parentChapter": "관계기업 및 공동약정",
    "scopeTitle": "취득시 차액",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA046"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA046-Q01",
+    "AA046-Q02",
+    "AA046-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0384",
@@ -8363,12 +8427,16 @@
    "parentChapter": "관계기업 및 공동약정",
    "scopeTitle": "미실현손익",
    "existingConceptIds": [
-    "AA007"
+    "AA007",
+    "AA039"
    ],
    "existingQuestionIds": [
     "AA007-Q01",
     "AA007-Q02",
-    "AA007-Q03"
+    "AA007-Q03",
+    "AA039-Q01",
+    "AA039-Q02",
+    "AA039-Q03"
    ],
    "missingComponents": [],
    "currentCoverageStatus": "COMPLETE",
@@ -8383,15 +8451,19 @@
    "packId": "AA",
    "parentChapter": "관계기업 및 공동약정",
    "scopeTitle": "지분법 적용중단",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA047"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA047-Q01",
+    "AA047-Q02",
+    "AA047-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0387",
@@ -8400,21 +8472,19 @@
    "packId": "AA",
    "parentChapter": "관계기업 및 공동약정",
    "scopeTitle": "손상",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA048"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "H08",
-    "K28",
-    "P057",
-    "P059",
-    "P060"
+   "existingQuestionIds": [
+    "AA048-Q01",
+    "AA048-Q02",
+    "AA048-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0388",
@@ -8528,15 +8598,20 @@
    "packId": "AA",
    "parentChapter": "관계기업 및 공동약정",
    "scopeTitle": "공동기업 지분법",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA049"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA049-Q01",
+    "AA049-Q02",
+    "AA049-Q03",
+    "AA049-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0394",
@@ -8608,15 +8683,19 @@
    "packId": "AA",
    "parentChapter": "외화환산",
    "scopeTitle": "거래일 환율",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA050"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA050-Q01",
+    "AA050-Q02",
+    "AA050-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0398",
@@ -8730,17 +8809,19 @@
    "packId": "AA",
    "parentChapter": "외화환산",
    "scopeTitle": "외환차손익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA051"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "I28"
+   "existingQuestionIds": [
+    "AA051-Q01",
+    "AA051-Q02",
+    "AA051-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0404",
@@ -8749,15 +8830,20 @@
    "packId": "AA",
    "parentChapter": "외화환산",
    "scopeTitle": "환산손익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA052"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA052-Q01",
+    "AA052-Q02",
+    "AA052-Q03",
+    "AA052-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0405",
@@ -8850,17 +8936,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "파생상품",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA053"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "IA113"
+   "existingQuestionIds": [
+    "AA053-Q01",
+    "AA053-Q02",
+    "AA053-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0410",
@@ -8869,15 +8957,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "선도",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA054"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA054-Q01",
+    "AA054-Q02",
+    "AA054-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0411",
@@ -8886,17 +8978,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "선물",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA055"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "B07"
+   "existingQuestionIds": [
+    "AA055-Q01",
+    "AA055-Q02",
+    "AA055-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0412",
@@ -8905,15 +8999,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "옵션",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA056"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA056-Q01",
+    "AA056-Q02",
+    "AA056-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0413",
@@ -8922,15 +9020,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "스왑",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA057"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA057-Q01",
+    "AA057-Q02",
+    "AA057-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0414",
@@ -8939,18 +9041,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "공정가치 측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA058"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "IA097",
-    "IA259"
+   "existingQuestionIds": [
+    "AA058-Q01",
+    "AA058-Q02",
+    "AA058-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0415",
@@ -9127,20 +9230,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "기타포괄손익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA059"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "I04",
-    "I38",
-    "IA143",
-    "IA284"
+   "existingQuestionIds": [
+    "AA059-Q01",
+    "AA059-Q02",
+    "AA059-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0424",
@@ -9170,15 +9272,19 @@
    "packId": "AA",
    "parentChapter": "파생상품과 위험회피회계",
    "scopeTitle": "위험회피관계 중단",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "AA060"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "AA060-Q01",
+    "AA060-Q02",
+    "AA060-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-AA-0426",
