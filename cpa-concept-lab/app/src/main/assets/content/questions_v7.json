@@ -190360,6 +190360,3838 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "IA290-Q01",
+   "primaryConceptId": "IA290",
+   "conceptIds": [
+    "IA290"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "당기순이익 1,200,000,000원, 우선주배당 200,000,000원, 가중평균유통보통주식수 100,000주일 때 기본주당이익은 (______)원이다.",
+   "blankAnswer": "10,000",
+   "acceptedAnswers": [
+    "10,000",
+    "10,000원"
+   ],
+   "relatedConceptIds": [
+    "IA291",
+    "IA292",
+    "IA297"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eps",
+    "params": {
+     "ni": 1200000000.0,
+     "pref": 200000000.0,
+     "shares": 100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(순이익 − 우선주배당) ÷ 주식수.",
+   "confusion": null,
+   "calculation": "(당기순이익 1,200,000,000 − 우선주배당 200,000,000) ÷ 가중평균유통보통주식수 100,000 = 10,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3916,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA290-Q02",
+   "primaryConceptId": "IA290",
+   "conceptIds": [
+    "IA290"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "기본주당이익은 보통주 귀속 손익을 (______)유통보통주식수로 나눈다.",
+   "blankAnswer": "가중평균",
+   "acceptedAnswers": [
+    "가중평균"
+   ],
+   "relatedConceptIds": [
+    "IA291",
+    "IA292",
+    "IA297"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분모.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3917,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA290-Q03",
+   "primaryConceptId": "IA290",
+   "conceptIds": [
+    "IA290"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "choice",
+   "questionText": "연결재무제표의 기본주당이익 분자로 쓰는 금액은?",
+   "blankAnswer": "지배기업 소유주 귀속 당기순이익(우선주배당 차감)",
+   "acceptedAnswers": [
+    "지배기업 소유주 귀속 당기순이익(우선주배당 차감)"
+   ],
+   "relatedConceptIds": [
+    "IA291",
+    "IA292",
+    "IA297"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "지배기업 소유주 귀속 당기순이익(우선주배당 차감)",
+    "연결당기순이익 전체",
+    "비지배지분 순이익",
+    "포괄이익 총액"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지배기업 보통주 귀속분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3918,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA291-Q01",
+   "primaryConceptId": "IA291",
+   "conceptIds": [
+    "IA291"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "classification",
+   "questionText": "당기 배당 결의가 없는 경우 분자에서 차감할 우선주배당을 연결하시오.",
+   "blankAnswer": "누적적 우선주 당기분 → 차감 / 비누적적 우선주 → 차감하지 않음 / 누적적 우선주 과거 연체분 → 차감하지 않음",
+   "acceptedAnswers": [
+    "누적적 우선주 당기분 → 차감 / 비누적적 우선주 → 차감하지 않음 / 누적적 우선주 과거 연체분 → 차감하지 않음"
+   ],
+   "relatedConceptIds": [
+    "IA290"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "차감",
+    "차감하지 않음"
+   ],
+   "slots": [
+    {
+     "label": "누적적 우선주 당기분",
+     "answer": "차감"
+    },
+    {
+     "label": "비누적적 우선주",
+     "answer": "차감하지 않음"
+    },
+    {
+     "label": "누적적 우선주 과거 연체분",
+     "answer": "차감하지 않음"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "누적적은 당기분만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3919,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA291-Q02",
+   "primaryConceptId": "IA291",
+   "conceptIds": [
+    "IA291"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "당기순이익 1,200,000,000원에서 누적적 우선주 당기분 배당 100,000,000원(미결의)을 차감한 보통주 귀속 이익은 (______)원이다.",
+   "blankAnswer": "1,100,000,000",
+   "acceptedAnswers": [
+    "1,100,000,000",
+    "1,100,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA290"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1200000000.0,
+     "b": 100000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "누적적은 결의 무관 차감.",
+   "confusion": null,
+   "calculation": "1,200,000,000 − 100,000,000 = 1,100,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3920,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA291-Q03",
+   "primaryConceptId": "IA291",
+   "conceptIds": [
+    "IA291"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "부채로 분류한 상환우선주의 배당은 이미 (______)으로 순이익에 반영되어 추가로 차감하지 않는다.",
+   "blankAnswer": "이자비용",
+   "acceptedAnswers": [
+    "이자비용"
+   ],
+   "relatedConceptIds": [
+    "IA290"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "금융부채 배당.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3921,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA292-Q01",
+   "primaryConceptId": "IA292",
+   "conceptIds": [
+    "IA292"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "기초 유통보통주식 100,000주, 4월 1일 시가 유상증자 20,000주(유통 9개월)일 때 가중평균유통보통주식수는 (______)주이다.",
+   "blankAnswer": "115,000",
+   "acceptedAnswers": [
+    "115,000",
+    "115,000주"
+   ],
+   "relatedConceptIds": [
+    "IA293",
+    "IA295"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "wavg_sh",
+    "params": {
+     "base": 100000.0,
+     "add": 20000.0,
+     "months": 9.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 + 증자 × 유통월수/12.",
+   "confusion": null,
+   "calculation": "100,000 + 20,000 × 9/12 = 115,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3922,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA292-Q02",
+   "primaryConceptId": "IA292",
+   "conceptIds": [
+    "IA292"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "기초 유통보통주식 100,000주에서 7월 1일 자기주식 4,000주를 취득해 연말까지 보유했다(보유 6개월). 가중평균유통보통주식수는 (______)주이다.",
+   "blankAnswer": "98,000",
+   "acceptedAnswers": [
+    "98,000",
+    "98,000주"
+   ],
+   "relatedConceptIds": [
+    "IA293",
+    "IA295"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "wavg_sh",
+    "params": {
+     "base": 100000.0,
+     "add": -4000.0,
+     "months": 6.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 − 자기주식 × 보유월수/12.",
+   "confusion": null,
+   "calculation": "100,000 + -4,000 × 6/12 = 98,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3923,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA292-Q03",
+   "primaryConceptId": "IA292",
+   "conceptIds": [
+    "IA292"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "기간 중 취득한 자기주식은 취득일부터 처분일까지 유통주식수에서 (______)한다.",
+   "blankAnswer": "제외",
+   "acceptedAnswers": [
+    "제외",
+    "차감"
+   ],
+   "relatedConceptIds": [
+    "IA293",
+    "IA295"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분모 조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3924,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA293-Q01",
+   "primaryConceptId": "IA293",
+   "conceptIds": [
+    "IA293"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "기초 유통보통주식 100,000주에 대해 7월 1일 10% 무상증자로 10,000주를 발행했다. 소급 조정한 가중평균유통보통주식수는 (______)주이다(기초부터 유통 12개월).",
+   "blankAnswer": "110,000",
+   "acceptedAnswers": [
+    "110,000",
+    "110,000주"
+   ],
+   "relatedConceptIds": [
+    "IA292",
+    "IA294"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "wavg_sh",
+    "params": {
+     "base": 100000.0,
+     "add": 10000.0,
+     "months": 12.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "무상증자분을 기초부터 반영.",
+   "confusion": null,
+   "calculation": "100,000 + 10,000 × 12/12 = 110,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3925,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA293-Q02",
+   "primaryConceptId": "IA293",
+   "conceptIds": [
+    "IA293"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "무상증자는 원구주의 발행일(또는 기초)부터 (______)해 주식 수를 조정한다.",
+   "blankAnswer": "소급",
+   "acceptedAnswers": [
+    "소급"
+   ],
+   "relatedConceptIds": [
+    "IA292",
+    "IA294"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비교기간 재작성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3926,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA293-Q03",
+   "primaryConceptId": "IA293",
+   "conceptIds": [
+    "IA293"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "situation",
+   "questionText": "보고기간 후 재무제표 발행 승인 전에 무상증자가 있었다. 처리로 옳은 것은?",
+   "blankAnswer": "당기와 비교기간 주당이익을 소급 조정",
+   "acceptedAnswers": [
+    "당기와 비교기간 주당이익을 소급 조정"
+   ],
+   "relatedConceptIds": [
+    "IA292",
+    "IA294"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "당기와 비교기간 주당이익을 소급 조정",
+    "다음 연도부터 반영",
+    "주석 공시만",
+    "반영하지 않음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보고기간 후 무상증자도 소급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3927,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA294-Q01",
+   "primaryConceptId": "IA294",
+   "conceptIds": [
+    "IA294"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "기초 유통보통주식 100,000주, 7월 1일 1:2 주식분할을 했다. 소급 조정한 가중평균유통보통주식수는 (______)주이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000주"
+   ],
+   "relatedConceptIds": [
+    "IA293"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 100000.0,
+     "b": 2.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초부터 분할 반영.",
+   "confusion": null,
+   "calculation": "100,000 × 2 = 200,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3928,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA294-Q02",
+   "primaryConceptId": "IA294",
+   "conceptIds": [
+    "IA294"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "주식분할이 있으면 비교 표시하는 과거 기간의 주당이익도 (______)한다.",
+   "blankAnswer": "재작성",
+   "acceptedAnswers": [
+    "재작성"
+   ],
+   "relatedConceptIds": [
+    "IA293"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "소급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3929,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA294-Q03",
+   "primaryConceptId": "IA294",
+   "conceptIds": [
+    "IA294"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "exception",
+   "questionText": "특별배당과 함께 이루어져 재매입 효과가 있는 주식병합의 반영 시점은?",
+   "blankAnswer": "병합일부터",
+   "acceptedAnswers": [
+    "병합일부터"
+   ],
+   "relatedConceptIds": [
+    "IA293"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "병합일부터",
+    "기초부터 소급",
+    "다음 연도부터",
+    "반영하지 않음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3930,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA295-Q01",
+   "primaryConceptId": "IA295",
+   "conceptIds": [
+    "IA295"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "기초 유통보통주식 100,000주, 10월 1일 시가 유상증자 12,000주(유통 3개월)일 때 가중평균유통보통주식수는 (______)주이다.",
+   "blankAnswer": "103,000",
+   "acceptedAnswers": [
+    "103,000",
+    "103,000주"
+   ],
+   "relatedConceptIds": [
+    "IA292",
+    "IA296"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "wavg_sh",
+    "params": {
+     "base": 100000.0,
+     "add": 12000.0,
+     "months": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "납입일부터 가중.",
+   "confusion": null,
+   "calculation": "100,000 + 12,000 × 3/12 = 103,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3931,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA295-Q02",
+   "primaryConceptId": "IA295",
+   "conceptIds": [
+    "IA295"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "시가 유상증자 주식은 일반적으로 주금 (______)일부터 유통주식수에 포함한다.",
+   "blankAnswer": "납입",
+   "acceptedAnswers": [
+    "납입"
+   ],
+   "relatedConceptIds": [
+    "IA292",
+    "IA296"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대가 수취 권리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3932,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA295-Q03",
+   "primaryConceptId": "IA295",
+   "conceptIds": [
+    "IA295"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "situation",
+   "questionText": "사업결합의 대가로 발행한 보통주를 가중평균유통보통주식수에 포함하는 시점은?",
+   "blankAnswer": "취득일",
+   "acceptedAnswers": [
+    "취득일"
+   ],
+   "relatedConceptIds": [
+    "IA292",
+    "IA296"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "취득일",
+    "주주총회 결의일",
+    "기초",
+    "등기일"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사업결합 취득일부터.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3933,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA296-Q01",
+   "primaryConceptId": "IA296",
+   "conceptIds": [
+    "IA296"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "권리락 직전 주당 공정가치가 12,000원, 이론적 권리락 주당 공정가치가 10,000원일 때 조정비율은 (______)이다.",
+   "blankAnswer": "1.2",
+   "acceptedAnswers": [
+    "1.2",
+    "1.2배"
+   ],
+   "relatedConceptIds": [
+    "IA295",
+    "IA293"
+   ],
+   "unit": "배",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 12000.0,
+     "b": 10000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "권리락 직전 공정가치 ÷ 이론적 권리락 공정가치.",
+   "confusion": null,
+   "calculation": "12,000 ÷ 10,000 = 1.2",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3934,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA296-Q02",
+   "primaryConceptId": "IA296",
+   "conceptIds": [
+    "IA296"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "공정가치 미만으로 발행하는 권리발행에는 (______)증자 요소가 포함된 것으로 본다.",
+   "blankAnswer": "무상",
+   "acceptedAnswers": [
+    "무상"
+   ],
+   "relatedConceptIds": [
+    "IA295",
+    "IA293"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조정비율로 소급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3935,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA296-Q03",
+   "primaryConceptId": "IA296",
+   "conceptIds": [
+    "IA296"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "권리발행 조정비율의 분모는 (______) 권리락 주당 공정가치다.",
+   "blankAnswer": "이론적",
+   "acceptedAnswers": [
+    "이론적"
+   ],
+   "relatedConceptIds": [
+    "IA295",
+    "IA293"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계산식.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3936,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA297-Q01",
+   "primaryConceptId": "IA297",
+   "conceptIds": [
+    "IA297"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "조정 후 분자(보통주 귀속 이익 + 세후 이자) 1,040,000,000원, 우선주배당 조정 0원, 조정 후 가중평균주식수 110,000주일 때 희석주당이익은 (______)원이다.",
+   "blankAnswer": "9,455",
+   "acceptedAnswers": [
+    "9,455",
+    "9,455원"
+   ],
+   "relatedConceptIds": [
+    "IA298",
+    "IA299",
+    "IA300",
+    "IA301"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eps",
+    "params": {
+     "ni": 1040000000.0,
+     "pref": 0.0,
+     "shares": 110000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "조정 분자 ÷ 조정 분모.",
+   "confusion": null,
+   "calculation": "(당기순이익 1,040,000,000 − 우선주배당 0) ÷ 가중평균유통보통주식수 110,000 = 9,455",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3937,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA297-Q02",
+   "primaryConceptId": "IA297",
+   "conceptIds": [
+    "IA297"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "희석주당이익은 희석효과가 있는 모든 (______)보통주가 전환된 것으로 가정해 계산한다.",
+   "blankAnswer": "잠재적",
+   "acceptedAnswers": [
+    "잠재적"
+   ],
+   "relatedConceptIds": [
+    "IA298",
+    "IA299",
+    "IA300",
+    "IA301"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전환 가정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3938,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA297-Q03",
+   "primaryConceptId": "IA297",
+   "conceptIds": [
+    "IA297"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "order",
+   "questionText": "희석주당이익 계산 절차를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 잠재적보통주별 주당 증분이익 계산 / 2단계 → 희석효과가 큰 순서로 정렬 / 3단계 → 하나씩 포함하며 희석 여부 확인 / 4단계 → 반희석 항목 제외 후 희석EPS 확정",
+   "acceptedAnswers": [
+    "1단계 → 잠재적보통주별 주당 증분이익 계산 / 2단계 → 희석효과가 큰 순서로 정렬 / 3단계 → 하나씩 포함하며 희석 여부 확인 / 4단계 → 반희석 항목 제외 후 희석EPS 확정"
+   ],
+   "relatedConceptIds": [
+    "IA298",
+    "IA299",
+    "IA300",
+    "IA301"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "반희석 항목 제외 후 희석EPS 확정",
+    "잠재적보통주별 주당 증분이익 계산",
+    "하나씩 포함하며 희석 여부 확인",
+    "희석효과가 큰 순서로 정렬"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "잠재적보통주별 주당 증분이익 계산"
+    },
+    {
+     "label": "2단계",
+     "answer": "희석효과가 큰 순서로 정렬"
+    },
+    {
+     "label": "3단계",
+     "answer": "하나씩 포함하며 희석 여부 확인"
+    },
+    {
+     "label": "4단계",
+     "answer": "반희석 항목 제외 후 희석EPS 확정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "희석 순서 결정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3939,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA298-Q01",
+   "primaryConceptId": "IA298",
+   "conceptIds": [
+    "IA298"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "classification",
+   "questionText": "다음 금융상품을 희석주당이익 계산 방법과 연결하시오.",
+   "blankAnswer": "전환우선주 → 분자·분모 조정(전환 가정) / 주식매수선택권 → 분모만 조정(자기주식법) / 전환권 없는 일반 사채 → 조정 없음(잠재적보통주 아님)",
+   "acceptedAnswers": [
+    "전환우선주 → 분자·분모 조정(전환 가정) / 주식매수선택권 → 분모만 조정(자기주식법) / 전환권 없는 일반 사채 → 조정 없음(잠재적보통주 아님)"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA299",
+    "IA300"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "분자·분모 조정(전환 가정)",
+    "분모만 조정(자기주식법)",
+    "조정 없음(잠재적보통주 아님)"
+   ],
+   "slots": [
+    {
+     "label": "전환우선주",
+     "answer": "분자·분모 조정(전환 가정)"
+    },
+    {
+     "label": "주식매수선택권",
+     "answer": "분모만 조정(자기주식법)"
+    },
+    {
+     "label": "전환권 없는 일반 사채",
+     "answer": "조정 없음(잠재적보통주 아님)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "잠재적보통주 유형별 처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3940,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA298-Q02",
+   "primaryConceptId": "IA298",
+   "conceptIds": [
+    "IA298"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "이익 목표 달성 시 추가 발행하기로 한 주식은 보고기간 말에 그 발행 (______)이 충족된 상태일 때만 희석주당이익에 포함한다.",
+   "blankAnswer": "조건",
+   "acceptedAnswers": [
+    "조건"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA299",
+    "IA300"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조건부발행보통주의 포함 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3941,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA298-Q03",
+   "primaryConceptId": "IA298",
+   "conceptIds": [
+    "IA298"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "보유자에게 보통주를 받을 권리를 주는 금융상품을 (______)보통주라 한다.",
+   "blankAnswer": "잠재적",
+   "acceptedAnswers": [
+    "잠재적"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA299",
+    "IA300"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3942,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA299-Q01",
+   "primaryConceptId": "IA299",
+   "conceptIds": [
+    "IA299"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "전환사채 이자비용이 50,000,000원이고 관련 법인세효과(세율 20%)가 10,000,000원이다. 희석주당이익 분자에 가산할 세후 이자는 (______)원이다.",
+   "blankAnswer": "40,000,000",
+   "acceptedAnswers": [
+    "40,000,000",
+    "40,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA301"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 50000000.0,
+     "b": 10000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "이자비용 × (1 − 세율).",
+   "confusion": null,
+   "calculation": "50,000,000 − 10,000,000 = 40,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3943,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA299-Q02",
+   "primaryConceptId": "IA299",
+   "conceptIds": [
+    "IA299"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "분자 증가액 40,000,000원, 전환 가정 증가 주식 수 10,000주일 때 주당 증분이익은 (______)원이다.",
+   "blankAnswer": "4,000",
+   "acceptedAnswers": [
+    "4,000",
+    "4,000원"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA301"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 40000000.0,
+     "b": 1.0,
+     "c": 10000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "분자 증가 ÷ 증가 주식 수.",
+   "confusion": null,
+   "calculation": "40,000,000 × 1 ÷ 10,000 = 4,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3944,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA299-Q03",
+   "primaryConceptId": "IA299",
+   "conceptIds": [
+    "IA299"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "전환우선주는 희석주당이익 계산 시 분자에 그 우선주(______)을 다시 더한다.",
+   "blankAnswer": "배당금",
+   "acceptedAnswers": [
+    "배당금",
+    "배당"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA301"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전환 가정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3945,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA300-Q01",
+   "primaryConceptId": "IA300",
+   "conceptIds": [
+    "IA300"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "주식매수선택권 10,000개(행사가격 6,000원), 보통주 평균시가 10,000원일 때 자기주식법에 따른 증가 주식 수는 (______)주이다.",
+   "blankAnswer": "4,000",
+   "acceptedAnswers": [
+    "4,000",
+    "4,000주"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA301"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "tsm",
+    "params": {
+     "n": 10000.0,
+     "ex": 6000.0,
+     "avg": 10000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "행사 주식 − 행사대금 ÷ 평균시가.",
+   "confusion": null,
+   "calculation": "10,000 − 10,000 × 6,000 ÷ 10,000 = 4,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3946,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA300-Q02",
+   "primaryConceptId": "IA300",
+   "conceptIds": [
+    "IA300"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "주식매수선택권의 행사가격이 보통주 평균시가보다 높으면 (______)효과가 있어 포함하지 않는다.",
+   "blankAnswer": "반희석",
+   "acceptedAnswers": [
+    "반희석"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA301"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "외가격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3947,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA300-Q03",
+   "primaryConceptId": "IA300",
+   "conceptIds": [
+    "IA300"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "choice",
+   "questionText": "자기주식법에서 사용하는 주가는?",
+   "blankAnswer": "기간 평균시가",
+   "acceptedAnswers": [
+    "기간 평균시가"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA301"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "기간 평균시가",
+    "기말 주가",
+    "부여일 주가",
+    "행사가격"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "평균시가로 재매입 가정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3948,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA301-Q01",
+   "primaryConceptId": "IA301",
+   "conceptIds": [
+    "IA301"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "classification",
+   "questionText": "기본주당이익이 10,000원일 때 다음 잠재적보통주의 효과를 연결하시오.",
+   "blankAnswer": "주당 증분이익 4,000원 → 희석효과 / 주당 증분이익 12,000원 → 반희석효과",
+   "acceptedAnswers": [
+    "주당 증분이익 4,000원 → 희석효과 / 주당 증분이익 12,000원 → 반희석효과"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA302"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "희석효과",
+    "반희석효과"
+   ],
+   "slots": [
+    {
+     "label": "주당 증분이익 4,000원",
+     "answer": "희석효과"
+    },
+    {
+     "label": "주당 증분이익 12,000원",
+     "answer": "반희석효과"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기본EPS 보다 작으면 희석.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3949,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA301-Q02",
+   "primaryConceptId": "IA301",
+   "conceptIds": [
+    "IA301"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "희석효과 판단의 기준이 되는 이익은 (______)영업손익이다.",
+   "blankAnswer": "계속",
+   "acceptedAnswers": [
+    "계속"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA302"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "control number.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3950,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA301-Q03",
+   "primaryConceptId": "IA301",
+   "conceptIds": [
+    "IA301"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "situation",
+   "questionText": "계속영업손실이 발생한 연도의 희석주당이익은?",
+   "blankAnswer": "기본주당이익과 같다",
+   "acceptedAnswers": [
+    "기본주당이익과 같다"
+   ],
+   "relatedConceptIds": [
+    "IA297",
+    "IA302"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "기본주당이익과 같다",
+    "기본주당이익보다 작다",
+    "계산하지 않는다",
+    "항상 0이다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "모든 잠재적보통주가 반희석.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3951,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA302-Q01",
+   "primaryConceptId": "IA302",
+   "conceptIds": [
+    "IA302"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "calculation",
+   "questionText": "계속영업이익 800,000,000원, 우선주배당 0원, 가중평균유통보통주식수 100,000주일 때 계속영업 기본주당이익은 (______)원이다.",
+   "blankAnswer": "8,000",
+   "acceptedAnswers": [
+    "8,000",
+    "8,000원"
+   ],
+   "relatedConceptIds": [
+    "IA301",
+    "IA290"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eps",
+    "params": {
+     "ni": 800000000.0,
+     "pref": 0.0,
+     "shares": 100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "계속영업 귀속 이익 ÷ 주식수.",
+   "confusion": null,
+   "calculation": "(당기순이익 800,000,000 − 우선주배당 0) ÷ 가중평균유통보통주식수 100,000 = 8,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3952,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA302-Q02",
+   "primaryConceptId": "IA302",
+   "conceptIds": [
+    "IA302"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "definition",
+   "questionText": "기본주당이익과 희석주당이익은 금액이 음수(주당(______))여도 표시한다.",
+   "blankAnswer": "손실",
+   "acceptedAnswers": [
+    "손실"
+   ],
+   "relatedConceptIds": [
+    "IA301",
+    "IA290"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "표시 의무.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3953,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA302-Q03",
+   "primaryConceptId": "IA302",
+   "conceptIds": [
+    "IA302"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EP",
+   "questionType": "choice",
+   "questionText": "중단영업 주당이익의 공시 위치로 옳은 것은?",
+   "blankAnswer": "포괄손익계산서 또는 주석",
+   "acceptedAnswers": [
+    "포괄손익계산서 또는 주석"
+   ],
+   "relatedConceptIds": [
+    "IA301",
+    "IA290"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "포괄손익계산서 또는 주석",
+    "재무상태표",
+    "현금흐름표",
+    "공시하지 않음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선택 가능.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1033호 '주당이익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3954,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA310-Q01",
+   "primaryConceptId": "IA310",
+   "conceptIds": [
+    "IA310"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "현금흐름표는 현금흐름을 영업·투자·(______)활동으로 구분한다.",
+   "blankAnswer": "재무",
+   "acceptedAnswers": [
+    "재무"
+   ],
+   "relatedConceptIds": [
+    "IA311",
+    "IA312",
+    "IA313",
+    "I06"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3955,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA310-Q02",
+   "primaryConceptId": "IA310",
+   "conceptIds": [
+    "IA310"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "choice",
+   "questionText": "현금흐름표 정보의 유용성으로 옳은 것은?",
+   "blankAnswer": "회계처리 방법 차이의 영향을 덜 받아 비교 가능성이 높다",
+   "acceptedAnswers": [
+    "회계처리 방법 차이의 영향을 덜 받아 비교 가능성이 높다"
+   ],
+   "relatedConceptIds": [
+    "IA311",
+    "IA312",
+    "IA313",
+    "I06"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "회계처리 방법 차이의 영향을 덜 받아 비교 가능성이 높다",
+    "당기순이익을 대신한다",
+    "자산의 공정가치를 보여 준다",
+    "미래 이익을 확정한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금 기준 정보의 장점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3956,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA310-Q03",
+   "primaryConceptId": "IA310",
+   "conceptIds": [
+    "IA310"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "situation",
+   "questionText": "영업이익이 흑자여도 매출채권이 크게 늘면 영업활동 현금흐름은 (______)일 수 있다.",
+   "blankAnswer": "음수",
+   "acceptedAnswers": [
+    "음수",
+    "마이너스",
+    "부(-)"
+   ],
+   "relatedConceptIds": [
+    "IA311",
+    "IA312",
+    "IA313",
+    "I06"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "발생과 현금의 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3957,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA311-Q01",
+   "primaryConceptId": "IA311",
+   "conceptIds": [
+    "IA311"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "classification",
+   "questionText": "다음 현금흐름을 활동별로 분류하시오.",
+   "blankAnswer": "고객으로부터 받은 판매대금 → 영업활동 / 단기매매 목적 주식 매입 → 영업활동 / 공장 기계 구입 → 투자활동 / 장기차입금 상환 → 재무활동",
+   "acceptedAnswers": [
+    "고객으로부터 받은 판매대금 → 영업활동 / 단기매매 목적 주식 매입 → 영업활동 / 공장 기계 구입 → 투자활동 / 장기차입금 상환 → 재무활동"
+   ],
+   "relatedConceptIds": [
+    "IA314",
+    "IA315"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "영업활동",
+    "투자활동",
+    "재무활동"
+   ],
+   "slots": [
+    {
+     "label": "고객으로부터 받은 판매대금",
+     "answer": "영업활동"
+    },
+    {
+     "label": "단기매매 목적 주식 매입",
+     "answer": "영업활동"
+    },
+    {
+     "label": "공장 기계 구입",
+     "answer": "투자활동"
+    },
+    {
+     "label": "장기차입금 상환",
+     "answer": "재무활동"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주요 수익창출활동 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3958,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA311-Q02",
+   "primaryConceptId": "IA311",
+   "conceptIds": [
+    "IA311"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "영업활동은 기업의 주요 (______)창출활동과 투자·재무활동이 아닌 활동이다.",
+   "blankAnswer": "수익",
+   "acceptedAnswers": [
+    "수익"
+   ],
+   "relatedConceptIds": [
+    "IA314",
+    "IA315"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3959,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA311-Q03",
+   "primaryConceptId": "IA311",
+   "conceptIds": [
+    "IA311"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "choice",
+   "questionText": "영업활동 현금흐름에 해당하는 것은?",
+   "blankAnswer": "종업원 급여 지급",
+   "acceptedAnswers": [
+    "종업원 급여 지급"
+   ],
+   "relatedConceptIds": [
+    "IA314",
+    "IA315"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "종업원 급여 지급",
+    "유상증자 납입",
+    "토지 매각",
+    "사채 발행"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "영업 관련 지출.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3960,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA312-Q01",
+   "primaryConceptId": "IA312",
+   "conceptIds": [
+    "IA312"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "재무상태표에 (______)으로 인식하는 지출만 투자활동으로 분류할 수 있다.",
+   "blankAnswer": "자산",
+   "acceptedAnswers": [
+    "자산"
+   ],
+   "relatedConceptIds": [
+    "IA318",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분류 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3961,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA312-Q02",
+   "primaryConceptId": "IA312",
+   "conceptIds": [
+    "IA312"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "exception",
+   "questionText": "투자활동 현금흐름이 아닌 것은?",
+   "blankAnswer": "연구단계 지출(비용 처리)",
+   "acceptedAnswers": [
+    "연구단계 지출(비용 처리)"
+   ],
+   "relatedConceptIds": [
+    "IA318",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "연구단계 지출(비용 처리)",
+    "유형자산 취득",
+    "대여금 회수",
+    "다른 기업 사채 취득(장기 보유)"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비용 지출은 영업활동.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3962,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA312-Q03",
+   "primaryConceptId": "IA312",
+   "conceptIds": [
+    "IA312"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "제3자에게 빌려준 대여금의 지급과 회수는 (______)활동으로 분류한다.",
+   "blankAnswer": "투자",
+   "acceptedAnswers": [
+    "투자"
+   ],
+   "relatedConceptIds": [
+    "IA318",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3963,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA313-Q01",
+   "primaryConceptId": "IA313",
+   "conceptIds": [
+    "IA313"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "classification",
+   "questionText": "리스 관련 현금흐름을 분류하시오.",
+   "blankAnswer": "리스부채 원금 상환 → 재무활동 / 단기리스 리스료 → 영업활동",
+   "acceptedAnswers": [
+    "리스부채 원금 상환 → 재무활동 / 단기리스 리스료 → 영업활동"
+   ],
+   "relatedConceptIds": [
+    "IA319",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "영업활동",
+    "투자활동",
+    "재무활동"
+   ],
+   "slots": [
+    {
+     "label": "리스부채 원금 상환",
+     "answer": "재무활동"
+    },
+    {
+     "label": "단기리스 리스료",
+     "answer": "영업활동"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원금은 재무, 면제 리스료는 영업.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3964,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA313-Q02",
+   "primaryConceptId": "IA313",
+   "conceptIds": [
+    "IA313"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "자기주식을 취득하며 지급한 현금은 (______)활동으로 분류한다.",
+   "blankAnswer": "재무",
+   "acceptedAnswers": [
+    "재무"
+   ],
+   "relatedConceptIds": [
+    "IA319",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 변동.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3965,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA313-Q03",
+   "primaryConceptId": "IA313",
+   "conceptIds": [
+    "IA313"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "choice",
+   "questionText": "재무활동 현금흐름에 해당하는 것은?",
+   "blankAnswer": "사채 발행",
+   "acceptedAnswers": [
+    "사채 발행"
+   ],
+   "relatedConceptIds": [
+    "IA319",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "사채 발행",
+    "기계장치 처분",
+    "매출채권 회수",
+    "관계기업 주식 취득"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "차입금 구성 변동.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3966,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA314-Q01",
+   "primaryConceptId": "IA314",
+   "conceptIds": [
+    "IA314"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "매출액 10,000,000원, 매출채권 증가 1,500,000원(손상 없음)일 때 고객으로부터 유입된 현금은 (______)원이다.",
+   "blankAnswer": "8,500,000",
+   "acceptedAnswers": [
+    "8,500,000",
+    "8,500,000원"
+   ],
+   "relatedConceptIds": [
+    "IA315",
+    "IA316"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 10000000.0,
+     "b": 1500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출 − 매출채권 증가.",
+   "confusion": null,
+   "calculation": "10,000,000 − 1,500,000 = 8,500,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3967,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA314-Q02",
+   "primaryConceptId": "IA314",
+   "conceptIds": [
+    "IA314"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "매출원가 6,000,000원, 재고자산 증가 800,000원, 매입채무 증가 500,000원일 때 공급자에 대한 현금유출은 (______)원이다.",
+   "blankAnswer": "6,300,000",
+   "acceptedAnswers": [
+    "6,300,000",
+    "6,300,000원"
+   ],
+   "relatedConceptIds": [
+    "IA315",
+    "IA316"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 6000000.0,
+     "b": 800000.0,
+     "c": 500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출원가 + 재고 증가 − 매입채무 증가.",
+   "confusion": null,
+   "calculation": "6,000,000 + 800,000 − 500,000 = 6,300,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3968,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA314-Q03",
+   "primaryConceptId": "IA314",
+   "conceptIds": [
+    "IA314"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "K-IFRS 는 영업활동 현금흐름을 (______)법으로 보고할 것을 권장한다.",
+   "blankAnswer": "직접",
+   "acceptedAnswers": [
+    "직접"
+   ],
+   "relatedConceptIds": [
+    "IA315",
+    "IA316"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "권장 방법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3969,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA315-Q01",
+   "primaryConceptId": "IA315",
+   "conceptIds": [
+    "IA315"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "당기순이익 1,000,000원에 감가상각비 200,000원을 더하고 유형자산처분이익 50,000원을 뺀 금액은 (______)원이다(운전자본 변동 반영 전).",
+   "blankAnswer": "1,150,000",
+   "acceptedAnswers": [
+    "1,150,000",
+    "1,150,000원"
+   ],
+   "relatedConceptIds": [
+    "IA316",
+    "IA317"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 1000000.0,
+     "b": 200000.0,
+     "c": 50000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "순이익 + 비현금비용 − 투자관련 이익.",
+   "confusion": null,
+   "calculation": "1,000,000 + 200,000 − 50,000 = 1,150,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3970,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA315-Q02",
+   "primaryConceptId": "IA315",
+   "conceptIds": [
+    "IA315"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "직접법과 간접법은 표시 방법만 다를 뿐 영업활동 현금흐름 (______)은 같다.",
+   "blankAnswer": "금액",
+   "acceptedAnswers": [
+    "금액",
+    "총액"
+   ],
+   "relatedConceptIds": [
+    "IA316",
+    "IA317"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "결과 동일.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3971,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA315-Q03",
+   "primaryConceptId": "IA315",
+   "conceptIds": [
+    "IA315"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "당기순이익에서 출발해 조정하는 영업활동 현금흐름 작성 방법을 (______)법이라 한다.",
+   "blankAnswer": "간접",
+   "acceptedAnswers": [
+    "간접"
+   ],
+   "relatedConceptIds": [
+    "IA316",
+    "IA317"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3972,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA316-Q01",
+   "primaryConceptId": "IA316",
+   "conceptIds": [
+    "IA316"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "classification",
+   "questionText": "간접법에서 다음 변동의 조정 방향을 연결하시오.",
+   "blankAnswer": "매출채권 증가 → 차감 / 매입채무 증가 → 가산 / 재고자산 감소 → 가산 / 미지급비용 감소 → 차감",
+   "acceptedAnswers": [
+    "매출채권 증가 → 차감 / 매입채무 증가 → 가산 / 재고자산 감소 → 가산 / 미지급비용 감소 → 차감"
+   ],
+   "relatedConceptIds": [
+    "IA315",
+    "IA314"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "가산",
+    "차감"
+   ],
+   "slots": [
+    {
+     "label": "매출채권 증가",
+     "answer": "차감"
+    },
+    {
+     "label": "매입채무 증가",
+     "answer": "가산"
+    },
+    {
+     "label": "재고자산 감소",
+     "answer": "가산"
+    },
+    {
+     "label": "미지급비용 감소",
+     "answer": "차감"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자산↑ −, 부채↑ +.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3973,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA316-Q02",
+   "primaryConceptId": "IA316",
+   "conceptIds": [
+    "IA316"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "조정 전 금액 1,150,000원에서 매출채권 증가 120,000원을 빼고 매입채무 증가 70,000원을 더한 영업활동 현금흐름은 (______)원이다.",
+   "blankAnswer": "1,100,000",
+   "acceptedAnswers": [
+    "1,100,000",
+    "1,100,000원"
+   ],
+   "relatedConceptIds": [
+    "IA315",
+    "IA314"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 1150000.0,
+     "b": 70000.0,
+     "c": 120000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "자산 증가 차감, 부채 증가 가산.",
+   "confusion": null,
+   "calculation": "1,150,000 + 70,000 − 120,000 = 1,100,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3974,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA316-Q03",
+   "primaryConceptId": "IA316",
+   "conceptIds": [
+    "IA316"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "간접법에서 영업 관련 자산이 증가하면 그 증가액을 당기순이익에서 (______)한다.",
+   "blankAnswer": "차감",
+   "acceptedAnswers": [
+    "차감"
+   ],
+   "relatedConceptIds": [
+    "IA315",
+    "IA314"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금 덜 유입.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3975,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA317-Q01",
+   "primaryConceptId": "IA317",
+   "conceptIds": [
+    "IA317"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "classification",
+   "questionText": "간접법에서 다음 손익의 조정 방향을 연결하시오.",
+   "blankAnswer": "감가상각비 → 가산 / 지분법이익 → 차감 / 사채상환손실 → 가산 / FVTPL 금융자산 평가이익(영업 외) → 차감",
+   "acceptedAnswers": [
+    "감가상각비 → 가산 / 지분법이익 → 차감 / 사채상환손실 → 가산 / FVTPL 금융자산 평가이익(영업 외) → 차감"
+   ],
+   "relatedConceptIds": [
+    "IA315"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "가산",
+    "차감"
+   ],
+   "slots": [
+    {
+     "label": "감가상각비",
+     "answer": "가산"
+    },
+    {
+     "label": "지분법이익",
+     "answer": "차감"
+    },
+    {
+     "label": "사채상환손실",
+     "answer": "가산"
+    },
+    {
+     "label": "FVTPL 금융자산 평가이익(영업 외)",
+     "answer": "차감"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비현금·투자재무 관련 손익 제거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3976,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA317-Q02",
+   "primaryConceptId": "IA317",
+   "conceptIds": [
+    "IA317"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "감가상각비 200,000원과 손상차손 30,000원을 가산하고 지분법이익 40,000원을 차감하면 순조정액은 (______)원이다.",
+   "blankAnswer": "190,000",
+   "acceptedAnswers": [
+    "190,000",
+    "190,000원"
+   ],
+   "relatedConceptIds": [
+    "IA315"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 200000.0,
+     "b": 30000.0,
+     "c": 40000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "비현금 비용 − 비현금 수익.",
+   "confusion": null,
+   "calculation": "200,000 + 30,000 − 40,000 = 190,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3977,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA317-Q03",
+   "primaryConceptId": "IA317",
+   "conceptIds": [
+    "IA317"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "현금 유출이 없는 비용인 감가상각비는 간접법에서 당기순이익에 (______)한다.",
+   "blankAnswer": "가산",
+   "acceptedAnswers": [
+    "가산"
+   ],
+   "relatedConceptIds": [
+    "IA315"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비현금 비용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3978,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA318-Q01",
+   "primaryConceptId": "IA318",
+   "conceptIds": [
+    "IA318"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "처분한 기계의 장부금액이 400,000원이고 처분이익이 50,000원이다(전액 현금 수령). 투자활동 현금유입은 (______)원이다.",
+   "blankAnswer": "450,000",
+   "acceptedAnswers": [
+    "450,000",
+    "450,000원"
+   ],
+   "relatedConceptIds": [
+    "IA312",
+    "IA317"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 400000.0,
+     "b": 50000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "장부금액 + 처분이익.",
+   "confusion": null,
+   "calculation": "400,000 + 50,000 = 450,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3979,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA318-Q02",
+   "primaryConceptId": "IA318",
+   "conceptIds": [
+    "IA318"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "간접법에서 유형자산처분이익은 영업활동 현금흐름 계산 시 당기순이익에서 (______)한다.",
+   "blankAnswer": "차감",
+   "acceptedAnswers": [
+    "차감"
+   ],
+   "relatedConceptIds": [
+    "IA312",
+    "IA317"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "투자활동에 포함.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3980,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA318-Q03",
+   "primaryConceptId": "IA318",
+   "conceptIds": [
+    "IA318"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "유형자산 처분으로 받은 현금은 (______)활동 현금유입이다.",
+   "blankAnswer": "투자",
+   "acceptedAnswers": [
+    "투자"
+   ],
+   "relatedConceptIds": [
+    "IA312",
+    "IA317"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3981,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA319-Q01",
+   "primaryConceptId": "IA319",
+   "conceptIds": [
+    "IA319"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "classification",
+   "questionText": "다음 현금흐름에 선택할 수 있는 활동을 연결하시오.",
+   "blankAnswer": "이자 지급 → 영업 또는 재무 / 배당금 수취 → 영업 또는 투자 / 배당금 지급 → 재무 또는 영업",
+   "acceptedAnswers": [
+    "이자 지급 → 영업 또는 재무 / 배당금 수취 → 영업 또는 투자 / 배당금 지급 → 재무 또는 영업"
+   ],
+   "relatedConceptIds": [
+    "IA313",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "영업 또는 재무",
+    "영업 또는 투자",
+    "재무 또는 영업",
+    "투자만"
+   ],
+   "slots": [
+    {
+     "label": "이자 지급",
+     "answer": "영업 또는 재무"
+    },
+    {
+     "label": "배당금 수취",
+     "answer": "영업 또는 투자"
+    },
+    {
+     "label": "배당금 지급",
+     "answer": "재무 또는 영업"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "K-IFRS 제1007호 선택.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3982,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA319-Q02",
+   "primaryConceptId": "IA319",
+   "conceptIds": [
+    "IA319"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "이자와 배당금의 분류는 매 기간 (______)되게 적용한다.",
+   "blankAnswer": "일관",
+   "acceptedAnswers": [
+    "일관"
+   ],
+   "relatedConceptIds": [
+    "IA313",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비교 가능성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3983,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA319-Q03",
+   "primaryConceptId": "IA319",
+   "conceptIds": [
+    "IA319"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "exception",
+   "questionText": "배당금 수취를 분류할 수 없는 활동은?",
+   "blankAnswer": "재무활동",
+   "acceptedAnswers": [
+    "재무활동"
+   ],
+   "relatedConceptIds": [
+    "IA313",
+    "IA311"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재무활동",
+    "영업활동",
+    "투자활동",
+    "정답 없음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수취는 영업 또는 투자.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3984,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA320-Q01",
+   "primaryConceptId": "IA320",
+   "conceptIds": [
+    "IA320"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "법인세비용 200,000원, 미지급법인세 증가 30,000원, 이연법인세부채 증가 10,000원일 때 법인세 납부액은 (______)원이다.",
+   "blankAnswer": "160,000",
+   "acceptedAnswers": [
+    "160,000",
+    "160,000원"
+   ],
+   "relatedConceptIds": [
+    "IA311",
+    "IA271"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "sub3",
+    "params": {
+     "a": 200000.0,
+     "b": 30000.0,
+     "c": 10000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "비용 − 부채 증가분.",
+   "confusion": null,
+   "calculation": "200,000 − 30,000 − 10,000 = 160,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3985,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA320-Q02",
+   "primaryConceptId": "IA320",
+   "conceptIds": [
+    "IA320"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "법인세로 인한 현금흐름은 투자·재무활동과 명백히 관련되지 않으면 (______)활동으로 분류한다.",
+   "blankAnswer": "영업",
+   "acceptedAnswers": [
+    "영업"
+   ],
+   "relatedConceptIds": [
+    "IA311",
+    "IA271"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3986,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA320-Q03",
+   "primaryConceptId": "IA320",
+   "conceptIds": [
+    "IA320"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "choice",
+   "questionText": "법인세 현금흐름 공시에 관한 설명으로 옳은 것은?",
+   "blankAnswer": "별도로 공시한다",
+   "acceptedAnswers": [
+    "별도로 공시한다"
+   ],
+   "relatedConceptIds": [
+    "IA311",
+    "IA271"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "별도로 공시한다",
+    "공시하지 않는다",
+    "항상 재무활동이다",
+    "영업활동에 포함하므로 별도 공시하지 않는다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법인세 현금흐름 별도 공시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3987,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA321-Q01",
+   "primaryConceptId": "IA321",
+   "conceptIds": [
+    "IA321"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "기초 외화예금 1,000달러를 그대로 보유했고 원화 환산액이 기초 1,200,000원에서 기말 1,300,000원이 되었다. 현금흐름표에 별도 표시할 환율변동효과는 (______)원이다.",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000원"
+   ],
+   "relatedConceptIds": [
+    "IA323"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1300000.0,
+     "b": 1200000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기말 환산액 − 기초 환산액.",
+   "confusion": null,
+   "calculation": "1,300,000 − 1,200,000 = 100,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3988,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA321-Q02",
+   "primaryConceptId": "IA321",
+   "conceptIds": [
+    "IA321"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "외화 현금흐름은 현금흐름 (______)일의 환율로 환산한다.",
+   "blankAnswer": "발생",
+   "acceptedAnswers": [
+    "발생"
+   ],
+   "relatedConceptIds": [
+    "IA323"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "환산 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3989,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA321-Q03",
+   "primaryConceptId": "IA321",
+   "conceptIds": [
+    "IA321"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "외화 현금의 환율변동효과는 세 가지 활동과 (______)해 표시한다.",
+   "blankAnswer": "별도",
+   "acceptedAnswers": [
+    "별도",
+    "구분"
+   ],
+   "relatedConceptIds": [
+    "IA323"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분리 표시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3990,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA322-Q01",
+   "primaryConceptId": "IA322",
+   "conceptIds": [
+    "IA322"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "토지 500,000,000원을 취득하며 일부는 신주 발행 300,000,000원으로 지급하고 나머지는 현금으로 지급했다. 투자활동 현금유출은 (______)원이다.",
+   "blankAnswer": "200,000,000",
+   "acceptedAnswers": [
+    "200,000,000",
+    "200,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA312",
+    "IA313"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 500000000.0,
+     "b": 300000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "총 취득가 − 비현금 지급분.",
+   "confusion": null,
+   "calculation": "500,000,000 − 300,000,000 = 200,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3991,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA322-Q02",
+   "primaryConceptId": "IA322",
+   "conceptIds": [
+    "IA322"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "classification",
+   "questionText": "다음 거래의 현금흐름표 표시를 연결하시오.",
+   "blankAnswer": "전환사채의 주식 전환 → 주석 공시(비현금거래) / 유상증자 현금 납입 → 재무활동 유입",
+   "acceptedAnswers": [
+    "전환사채의 주식 전환 → 주석 공시(비현금거래) / 유상증자 현금 납입 → 재무활동 유입"
+   ],
+   "relatedConceptIds": [
+    "IA312",
+    "IA313"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "주석 공시(비현금거래)",
+    "재무활동 유입",
+    "투자활동 유출"
+   ],
+   "slots": [
+    {
+     "label": "전환사채의 주식 전환",
+     "answer": "주석 공시(비현금거래)"
+    },
+    {
+     "label": "유상증자 현금 납입",
+     "answer": "재무활동 유입"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금 이동 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3992,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA322-Q03",
+   "primaryConceptId": "IA322",
+   "conceptIds": [
+    "IA322"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "현금이 필요하지 않은 투자·재무거래는 현금흐름표에서 (______)하고 주석에 공시한다.",
+   "blankAnswer": "제외",
+   "acceptedAnswers": [
+    "제외"
+   ],
+   "relatedConceptIds": [
+    "IA312",
+    "IA313"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비현금거래.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3993,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA323-Q01",
+   "primaryConceptId": "IA323",
+   "conceptIds": [
+    "IA323"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "calculation",
+   "questionText": "기초 현금 500,000원에 세 활동의 순현금흐름 합계 300,000원과 환율변동효과 10,000원을 더하면 기말 현금은 (______)원이다.",
+   "blankAnswer": "810,000",
+   "acceptedAnswers": [
+    "810,000",
+    "810,000원"
+   ],
+   "relatedConceptIds": [
+    "IA321",
+    "IA006"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add3",
+    "params": {
+     "a": 500000.0,
+     "b": 300000.0,
+     "c": 10000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 + 순현금흐름 + 환율효과.",
+   "confusion": null,
+   "calculation": "500,000 + 300,000 + 10,000 = 810,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3994,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA323-Q02",
+   "primaryConceptId": "IA323",
+   "conceptIds": [
+    "IA323"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "definition",
+   "questionText": "현금흐름표는 기초 현금및현금성자산을 기말 금액과 (______)시킨다.",
+   "blankAnswer": "일치",
+   "acceptedAnswers": [
+    "일치"
+   ],
+   "relatedConceptIds": [
+    "IA321",
+    "IA006"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3995,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA323-Q03",
+   "primaryConceptId": "IA323",
+   "conceptIds": [
+    "IA323"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-CF",
+   "questionType": "choice",
+   "questionText": "현금흐름표에서 당좌차월을 현금및현금성자산의 구성요소로 포함한 경우 필요한 공시는?",
+   "blankAnswer": "재무상태표 금액과의 조정 내용",
+   "acceptedAnswers": [
+    "재무상태표 금액과의 조정 내용"
+   ],
+   "relatedConceptIds": [
+    "IA321",
+    "IA006"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재무상태표 금액과의 조정 내용",
+    "공시 필요 없음",
+    "당좌차월 이자율만",
+    "은행명"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구성요소와 조정 공시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1007호 '현금흐름표'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3996,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

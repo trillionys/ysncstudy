@@ -160,6 +160,8 @@ object FormulaEngine {
         percent("mult_ratio") { r2(it["a"] / it["b"]) }
         amount("poc_rev") { r0(it["contract"] * it["cum"] / it["total"] - it["prior"]) }
         amount("cum_alloc") { r0(it["total"] * it["elapsed"] / it["period"] - it["prior"]) }
+        put("wavg_sh", Formula(Kind.QTY) { r0(it["base"] + it["add"] * it["months"] / 12.0) })
+        put("tsm", Formula(Kind.QTY) { r0(it["n"] - it["n"] * it["ex"] / it["avg"]) })
         amount("mul2") { r0(it["a"] * it["b"]) }
         amount("ev2") { r0(it["a"] * it["ra"] / 100.0 + it["b"] * it["rb"] / 100.0) }
         amount("fv") { r0(it["pv"] * (1 + pc(it["r"])).pow(it["n"])) }

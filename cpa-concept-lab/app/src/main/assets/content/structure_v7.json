@@ -741,6 +741,24 @@
    "title": "법인세회계",
    "englishTitle": "Income taxes",
    "sortOrder": 71
+  },
+  {
+   "partTitle": "주당이익",
+   "id": "IA-EP",
+   "code": "EP",
+   "subjectId": "IA",
+   "title": "주당이익",
+   "englishTitle": "Earnings per share",
+   "sortOrder": 72
+  },
+  {
+   "partTitle": "현금흐름표",
+   "id": "IA-CF",
+   "code": "CF",
+   "subjectId": "IA",
+   "title": "현금흐름표",
+   "englishTitle": "Statement of cash flows",
+   "sortOrder": 73
   }
  ],
  "sections": [
@@ -2321,6 +2339,36 @@
    "chapterId": "IA-TX",
    "title": "이연법인세의 예외와 배분",
    "sortOrder": 2
+  },
+  {
+   "id": "IA-EP-S01",
+   "chapterId": "IA-EP",
+   "title": "기본주당이익",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-EP-S02",
+   "chapterId": "IA-EP",
+   "title": "희석주당이익",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-CF-S01",
+   "chapterId": "IA-CF",
+   "title": "현금흐름의 구분",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-CF-S02",
+   "chapterId": "IA-CF",
+   "title": "영업활동 현금흐름의 작성 방법",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-CF-S03",
+   "chapterId": "IA-CF",
+   "title": "특수한 현금흐름의 분류",
+   "sortOrder": 3
   },
   {
    "id": "AA-A-S90",
@@ -6267,8 +6315,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "기본주당이익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA290"
+   ],
+   "covered": true,
    "sortOrder": 296
   },
   {
@@ -6276,8 +6326,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "보통주 귀속손익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA291"
+   ],
+   "covered": true,
    "sortOrder": 297
   },
   {
@@ -6285,8 +6337,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "가중평균유통보통주식수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA292"
+   ],
+   "covered": true,
    "sortOrder": 298
   },
   {
@@ -6294,8 +6348,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "무상증자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA293"
+   ],
+   "covered": true,
    "sortOrder": 299
   },
   {
@@ -6303,8 +6359,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "주식분할",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA294"
+   ],
+   "covered": true,
    "sortOrder": 300
   },
   {
@@ -6312,8 +6370,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "유상증자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA295"
+   ],
+   "covered": true,
    "sortOrder": 301
   },
   {
@@ -6321,8 +6381,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "권리발행",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA296"
+   ],
+   "covered": true,
    "sortOrder": 302
   },
   {
@@ -6330,8 +6392,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "희석주당이익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA297"
+   ],
+   "covered": true,
    "sortOrder": 303
   },
   {
@@ -6339,8 +6403,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "잠재적보통주",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA298"
+   ],
+   "covered": true,
    "sortOrder": 304
   },
   {
@@ -6348,8 +6414,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "전환사채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA299"
+   ],
+   "covered": true,
    "sortOrder": 305
   },
   {
@@ -6357,8 +6425,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "주식매수선택권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA300"
+   ],
+   "covered": true,
    "sortOrder": 306
   },
   {
@@ -6366,8 +6436,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "희석효과와 반희석효과",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA301"
+   ],
+   "covered": true,
    "sortOrder": 307
   },
   {
@@ -6375,8 +6447,10 @@
    "subjectId": "IA",
    "unit": "주당이익",
    "item": "계속영업손익 주당이익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA302"
+   ],
+   "covered": true,
    "sortOrder": 308
   },
   {
@@ -6384,8 +6458,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "현금흐름표 목적",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA310"
+   ],
+   "covered": true,
    "sortOrder": 309
   },
   {
@@ -6393,8 +6469,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "영업활동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA311"
+   ],
+   "covered": true,
    "sortOrder": 310
   },
   {
@@ -6402,8 +6480,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "투자활동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA312"
+   ],
+   "covered": true,
    "sortOrder": 311
   },
   {
@@ -6411,8 +6491,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "재무활동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA313"
+   ],
+   "covered": true,
    "sortOrder": 312
   },
   {
@@ -6420,8 +6502,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "직접법",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA314"
+   ],
+   "covered": true,
    "sortOrder": 313
   },
   {
@@ -6429,8 +6513,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "간접법",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA315"
+   ],
+   "covered": true,
    "sortOrder": 314
   },
   {
@@ -6438,8 +6524,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "운전자본 변동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA316"
+   ],
+   "covered": true,
    "sortOrder": 315
   },
   {
@@ -6447,8 +6535,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "비현금손익 조정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA317"
+   ],
+   "covered": true,
    "sortOrder": 316
   },
   {
@@ -6456,8 +6546,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "유형자산 처분과 현금흐름",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA318"
+   ],
+   "covered": true,
    "sortOrder": 317
   },
   {
@@ -6465,8 +6557,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "이자·배당의 분류",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA319"
+   ],
+   "covered": true,
    "sortOrder": 318
   },
   {
@@ -6474,8 +6568,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "법인세 현금흐름",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA320"
+   ],
+   "covered": true,
    "sortOrder": 319
   },
   {
@@ -6483,8 +6579,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "외화현금흐름",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA321"
+   ],
+   "covered": true,
    "sortOrder": 320
   },
   {
@@ -6492,8 +6590,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "비현금거래",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA322"
+   ],
+   "covered": true,
    "sortOrder": 321
   },
   {
@@ -6501,8 +6601,10 @@
    "subjectId": "IA",
    "unit": "현금흐름표",
    "item": "현금및현금성자산 변동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA323"
+   ],
+   "covered": true,
    "sortOrder": 322
   },
   {

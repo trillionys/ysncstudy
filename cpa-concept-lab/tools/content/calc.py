@@ -960,6 +960,20 @@ def cum_alloc(total, elapsed, period, prior):
     return v, f"총액 {fmt(total)} × {fmt(elapsed)} ÷ {fmt(period)} − 전기 누적 {fmt(prior)} = {fmt(v)}"
 
 
+@formula(kind="qty")
+def wavg_sh(base, add, months):
+    """가중평균유통보통주식수 = 기초 유통주식수 + 기중 발행주식수 × 유통 개월수 ÷ 12"""
+    v = r0(base + add * months / 12)
+    return v, f"{fmt(base)} + {fmt(add)} × {fmt(months)}/12 = {fmt(v)}"
+
+
+@formula(kind="qty")
+def tsm(n, ex, avg):
+    """자기주식법 증가 주식수 = 행사 가정 주식수 − 행사대금 ÷ 평균시가"""
+    v = r0(n - n * ex / avg)
+    return v, f"{fmt(n)} − {fmt(n)} × {fmt(ex)} ÷ {fmt(avg)} = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)
