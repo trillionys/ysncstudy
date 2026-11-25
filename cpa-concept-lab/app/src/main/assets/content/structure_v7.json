@@ -2473,6 +2473,18 @@
    "sortOrder": 3
   },
   {
+   "id": "HR-A-S03",
+   "chapterId": "HR-A",
+   "title": "인적자원 계획·확보·유지(v8)",
+   "sortOrder": 3
+  },
+  {
+   "id": "HR-B-S04",
+   "chapterId": "HR-B",
+   "title": "개인·집단 행동의 기초(v8)",
+   "sortOrder": 4
+  },
+  {
    "id": "AA-A-S90",
    "chapterId": "AA-A",
    "title": "지배력과 연결범위(기존 재무회계에서 이동)",
@@ -11187,8 +11199,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "인적자원관리의 목적",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR040"
+   ],
+   "covered": true,
    "sortOrder": 729
   },
   {
@@ -11207,8 +11221,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "인적자원계획",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR041"
+   ],
+   "covered": true,
    "sortOrder": 731
   },
   {
@@ -11348,8 +11364,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "면접",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR042"
+   ],
+   "covered": true,
    "sortOrder": 744
   },
   {
@@ -11357,8 +11375,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "인사배치",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR043"
+   ],
+   "covered": true,
    "sortOrder": 745
   },
   {
@@ -11410,8 +11430,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "승진관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR044"
+   ],
+   "covered": true,
    "sortOrder": 750
   },
   {
@@ -11463,8 +11485,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "복리후생",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR045"
+   ],
+   "covered": true,
    "sortOrder": 755
   },
   {
@@ -11472,8 +11496,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "유지관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR046"
+   ],
+   "covered": true,
    "sortOrder": 756
   },
   {
@@ -11481,8 +11507,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "이직관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR047"
+   ],
+   "covered": true,
    "sortOrder": 757
   },
   {
@@ -11490,8 +11518,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "평등고용기회",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR048"
+   ],
+   "covered": true,
    "sortOrder": 758
   },
   {
@@ -11499,8 +11529,10 @@
    "subjectId": "HR",
    "unit": "인적자원관리",
    "item": "차별과 공정성",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR049"
+   ],
+   "covered": true,
    "sortOrder": 759
   },
   {
@@ -11508,8 +11540,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "개인행동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR050"
+   ],
+   "covered": true,
    "sortOrder": 760
   },
   {
@@ -11528,8 +11562,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "가치관",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR051"
+   ],
+   "covered": true,
    "sortOrder": 762
   },
   {
@@ -11570,8 +11606,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "태도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR052"
+   ],
+   "covered": true,
    "sortOrder": 766
   },
   {
@@ -11601,8 +11639,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "감정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR053"
+   ],
+   "covered": true,
    "sortOrder": 769
   },
   {
@@ -11710,8 +11750,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "학습",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR054"
+   ],
+   "covered": true,
    "sortOrder": 779
   },
   {
@@ -11763,8 +11805,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "집단규범",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR055"
+   ],
+   "covered": true,
    "sortOrder": 784
   },
   {
@@ -11772,8 +11816,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "팀효과성",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR056"
+   ],
+   "covered": true,
    "sortOrder": 785
   },
   {
@@ -11781,8 +11827,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "의사소통",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR057"
+   ],
+   "covered": true,
    "sortOrder": 786
   },
   {
@@ -11823,8 +11871,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "정치적 행동",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR058"
+   ],
+   "covered": true,
    "sortOrder": 790
   },
   {
@@ -11986,8 +12036,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "분권화",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR059"
+   ],
+   "covered": true,
    "sortOrder": 805
   },
   {
@@ -12028,8 +12080,10 @@
    "subjectId": "HR",
    "unit": "조직행동",
    "item": "조직학습",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "HR060"
+   ],
+   "covered": true,
    "sortOrder": 809
   },
   {

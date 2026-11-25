@@ -5,104 +5,14 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | 시험과목 | 구축 | 전체 | 미구축 | 구축률 |
 |---|---:|---:|---:|---:|
 | 회계학 | 577 | 577 | 0 | 100.0% |
-| 경영학 | 152 | 232 | 80 | 65.5% |
+| 경영학 | 232 | 232 | 0 | 100.0% |
 | 경제원론 | 27 | 132 | 105 | 20.5% |
 | 기업법 | 127 | 131 | 4 | 96.9% |
 | 세법개론 | 159 | 161 | 2 | 98.8% |
-| **전체** | 1042 | 1233 | 191 | 84.5% |
+| **전체** | 1122 | 1233 | 111 | 91.0% |
 
 무결성 오류: 0건
 
-
-## 경영학 · 인사·조직 · 인적자원관리
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-HR-0729 | 인적자원관리의 목적 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0730 | 전략적 인적자원관리 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0731 | 인적자원계획 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0732 | 직무분석 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0733 | 직무기술서 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0734 | 직무명세서 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0735 | 직무평가 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0736 | 직무설계 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0737 | 직무확대 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0738 | 직무충실화 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0739 | 직무순환 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0740 | 모집 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0741 | 선발 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0742 | 선발도구의 신뢰성 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0743 | 선발도구의 타당성 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0744 | 면접 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0745 | 인사배치 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0746 | 성과평가 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0747 | 인사고과 오류 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0748 | 교육훈련 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0749 | 경력개발 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0750 | 승진관리 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0751 | 보상관리 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0752 | 임금체계 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0753 | 임금수준 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0754 | 성과급 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0755 | 복리후생 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0756 | 유지관리 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0757 | 이직관리 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0758 | 평등고용기회 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0759 | 차별과 공정성 | A | NOT_STARTED | 개념·문항 없음 |
-
-## 경영학 · 인사·조직 · 조직행동
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-HR-0760 | 개인행동 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0761 | 성격 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0762 | 가치관 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0763 | 지각 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0764 | 귀인 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0765 | 귀인이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0766 | 태도 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0767 | 직무만족 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0768 | 조직몰입 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0769 | 감정 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0771 | 매슬로우 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0772 | 허즈버그 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0773 | 맥그리거 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0774 | 기대이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0775 | 공정성이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0776 | 목표설정이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0777 | 강화이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0778 | 자기결정이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0779 | 학습 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0780 | 의사결정 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0781 | 집단의사결정 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0782 | 집단사고 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0783 | 사회적 태만 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0784 | 집단규범 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0785 | 팀효과성 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0786 | 의사소통 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0787 | 갈등 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0788 | 협상 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0789 | 권력 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0790 | 정치적 행동 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0791 | 리더십 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0792 | 특성이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0793 | 행동이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0794 | 상황이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0795 | 경로목표이론 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0796 | 변혁적 리더십 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0797 | 거래적 리더십 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0798 | 서번트 리더십 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0799 | 조직문화 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0800 | 조직구조 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0801 | 기계적 조직 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0802 | 유기적 조직 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0803 | 공식화 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0804 | 집권화 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0805 | 분권화 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-HR-0806 | 조직변화 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0807 | 조직개발 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0808 | 변화저항 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-| CUR-HR-0809 | 조직학습 | A | NOT_STARTED | 개념·문항 없음 |
 
 ## 경제원론 · 경제학 · 미시경제학
 

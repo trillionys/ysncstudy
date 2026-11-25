@@ -30,6 +30,7 @@ ORDER = [
     "cm_more",
     "fm_supplement",
     "fm_more",
+    "hr_v8",
 ]
 
 for name in ORDER:

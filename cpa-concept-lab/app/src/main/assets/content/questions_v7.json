@@ -211093,6 +211093,4344 @@
    "examArea": null,
    "mode": "BOTH",
    "contentVersion": 5
+  },
+  {
+   "id": "HR001-Q03",
+   "primaryConceptId": "HR001",
+   "conceptIds": [
+    "HR001"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "자원기반관점에서 지속적 경쟁우위의 원천이 되는 인적자원의 조건(VRIN)이 아닌 것은?",
+   "blankAnswer": "누구나 쉽게 구할 수 있을 것",
+   "acceptedAnswers": [
+    "누구나 쉽게 구할 수 있을 것"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "누구나 쉽게 구할 수 있을 것",
+    "가치가 있을 것",
+    "희소할 것",
+    "모방이 어려울 것"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "VRIN: 가치·희소성·모방 불가능성·대체 불가능성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4358,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR002-Q03",
+   "primaryConceptId": "HR002",
+   "conceptIds": [
+    "HR002"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "직무 수행 중 성과에 결정적이었던 행동 사례를 수집해 직무를 분석하는 방법은?",
+   "blankAnswer": "중요사건법",
+   "acceptedAnswers": [
+    "중요사건법"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "중요사건법",
+    "관찰법",
+    "질문지법",
+    "작업기록법"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직무분석 방법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4359,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR003-Q03",
+   "primaryConceptId": "HR003",
+   "conceptIds": [
+    "HR003"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "matching",
+   "questionText": "직무설계 방법과 내용을 연결하시오.",
+   "blankAnswer": "직무확대 → 과업 수를 수평적으로 늘림 / 직무충실화 → 계획·통제 권한을 수직적으로 부여 / 직무순환 → 여러 직무를 주기적으로 옮겨 수행",
+   "acceptedAnswers": [
+    "직무확대 → 과업 수를 수평적으로 늘림 / 직무충실화 → 계획·통제 권한을 수직적으로 부여 / 직무순환 → 여러 직무를 주기적으로 옮겨 수행"
+   ],
+   "relatedConceptIds": [
+    "HR002",
+    "HR021"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "과업 수를 수평적으로 늘림",
+    "계획·통제 권한을 수직적으로 부여",
+    "여러 직무를 주기적으로 옮겨 수행"
+   ],
+   "slots": [
+    {
+     "label": "직무확대",
+     "answer": "과업 수를 수평적으로 늘림"
+    },
+    {
+     "label": "직무충실화",
+     "answer": "계획·통제 권한을 수직적으로 부여"
+    },
+    {
+     "label": "직무순환",
+     "answer": "여러 직무를 주기적으로 옮겨 수행"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "확장 방향.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4360,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR003-Q04",
+   "primaryConceptId": "HR003",
+   "conceptIds": [
+    "HR003"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "직무의 구성요소별로 점수를 매겨 합산해 직무의 상대적 가치를 정하는 직무평가 방법은?",
+   "blankAnswer": "점수법",
+   "acceptedAnswers": [
+    "점수법"
+   ],
+   "relatedConceptIds": [
+    "HR002",
+    "HR021"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "점수법",
+    "서열법",
+    "분류법",
+    "요소비교법"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직무평가 방법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4361,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR004-Q03",
+   "primaryConceptId": "HR004",
+   "conceptIds": [
+    "HR004"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "comparison",
+   "questionText": "외부모집과 비교한 내부모집의 장점은?",
+   "blankAnswer": "승진 기회로 구성원 사기가 높아진다",
+   "acceptedAnswers": [
+    "승진 기회로 구성원 사기가 높아진다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "승진 기회로 구성원 사기가 높아진다",
+    "새로운 아이디어 유입이 많다",
+    "지원자 풀이 넓다",
+    "조직 내 파벌이 줄어든다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "내부모집 장점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4362,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR004-Q04",
+   "primaryConceptId": "HR004",
+   "conceptIds": [
+    "HR004"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "같은 사람에게 같은 시험을 시간 간격을 두고 다시 실시해 결과의 일관성을 보는 신뢰성 측정법을 (______)법이라 한다.",
+   "blankAnswer": "재시험",
+   "acceptedAnswers": [
+    "재시험",
+    "시험-재시험",
+    "재검사"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "신뢰성 측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4363,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR005-Q03",
+   "primaryConceptId": "HR005",
+   "conceptIds": [
+    "HR005"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "관대화·중심화 경향을 줄이기 위해 평가 등급별 비율을 미리 정해 두는 평가 방법은?",
+   "blankAnswer": "강제배분법",
+   "acceptedAnswers": [
+    "강제배분법"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "강제배분법",
+    "서열법",
+    "자기평가",
+    "대조표법"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분포 강제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4364,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR006-Q03",
+   "primaryConceptId": "HR006",
+   "conceptIds": [
+    "HR006"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "관리직 경로 외에 전문직으로도 승진할 수 있게 한 경력 제도를 (______)경력경로라 한다.",
+   "blankAnswer": "이중",
+   "acceptedAnswers": [
+    "이중"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "경력개발.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4365,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR007-Q03",
+   "primaryConceptId": "HR007",
+   "conceptIds": [
+    "HR007"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "classification",
+   "questionText": "임금체계와 결정 기준을 연결하시오.",
+   "blankAnswer": "연공급 → 근속연수 / 직무급 → 직무의 상대적 가치 / 직능급 → 직무수행 능력",
+   "acceptedAnswers": [
+    "연공급 → 근속연수 / 직무급 → 직무의 상대적 가치 / 직능급 → 직무수행 능력"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "근속연수",
+    "직무의 상대적 가치",
+    "직무수행 능력"
+   ],
+   "slots": [
+    {
+     "label": "연공급",
+     "answer": "근속연수"
+    },
+    {
+     "label": "직무급",
+     "answer": "직무의 상대적 가치"
+    },
+    {
+     "label": "직능급",
+     "answer": "직무수행 능력"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "임금체계 분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4366,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR007-Q04",
+   "primaryConceptId": "HR007",
+   "conceptIds": [
+    "HR007"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "시장 임금과 비교한 임금수준의 적정성은 (______)공정성과 관련된다.",
+   "blankAnswer": "외부",
+   "acceptedAnswers": [
+    "외부"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "임금수준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4367,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR020-Q03",
+   "primaryConceptId": "HR020",
+   "conceptIds": [
+    "HR020"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "matching",
+   "questionText": "Big 5 성격 요인과 특징을 연결하시오.",
+   "blankAnswer": "성실성 → 책임감·계획성 / 외향성 → 사교성·활동성 / 친화성 → 협조성·배려",
+   "acceptedAnswers": [
+    "성실성 → 책임감·계획성 / 외향성 → 사교성·활동성 / 친화성 → 협조성·배려"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "책임감·계획성",
+    "사교성·활동성",
+    "협조성·배려",
+    "정서 불안정"
+   ],
+   "slots": [
+    {
+     "label": "성실성",
+     "answer": "책임감·계획성"
+    },
+    {
+     "label": "외향성",
+     "answer": "사교성·활동성"
+    },
+    {
+     "label": "친화성",
+     "answer": "협조성·배려"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "성격 5요인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4368,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR020-Q04",
+   "primaryConceptId": "HR020",
+   "conceptIds": [
+    "HR020"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "자신의 기대나 관심에 맞는 정보만 받아들이는 지각 오류는?",
+   "blankAnswer": "선택적 지각",
+   "acceptedAnswers": [
+    "선택적 지각"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "선택적 지각",
+    "후광효과",
+    "대비효과",
+    "투사"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지각 오류 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4369,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR021-Q03",
+   "primaryConceptId": "HR021",
+   "conceptIds": [
+    "HR021"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "직무만족의 결과로 일반적으로 나타나는 현상은?",
+   "blankAnswer": "결근·이직 감소",
+   "acceptedAnswers": [
+    "결근·이직 감소"
+   ],
+   "relatedConceptIds": [
+    "HR020"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "결근·이직 감소",
+    "결근 증가",
+    "조직몰입 감소",
+    "생산성의 필연적 감소"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직무만족의 효과.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4370,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR022-Q03",
+   "primaryConceptId": "HR022",
+   "conceptIds": [
+    "HR022"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "매슬로우 욕구단계에서 가장 높은 단계의 욕구는 (______) 욕구다.",
+   "blankAnswer": "자아실현",
+   "acceptedAnswers": [
+    "자아실현"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "욕구단계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4371,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR022-Q04",
+   "primaryConceptId": "HR022",
+   "conceptIds": [
+    "HR022"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "comparison",
+   "questionText": "맥그리거의 Y이론이 가정하는 인간관은?",
+   "blankAnswer": "일을 즐기고 스스로 책임을 지려 한다",
+   "acceptedAnswers": [
+    "일을 즐기고 스스로 책임을 지려 한다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "일을 즐기고 스스로 책임을 지려 한다",
+    "일을 싫어해 통제가 필요하다",
+    "금전적 보상에만 반응한다",
+    "책임을 회피한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "X이론과 대비.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4372,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR023-Q03",
+   "primaryConceptId": "HR023",
+   "conceptIds": [
+    "HR023"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "공정성이론에서 자신의 투입 대비 산출 비율을 비교하는 대상을 (______)인이라 한다.",
+   "blankAnswer": "준거",
+   "acceptedAnswers": [
+    "준거"
+   ],
+   "relatedConceptIds": [
+    "HR022"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비교 대상.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4373,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR023-Q04",
+   "primaryConceptId": "HR023",
+   "conceptIds": [
+    "HR023"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "목표설정이론에서 성과를 가장 높이는 목표의 특성은?",
+   "blankAnswer": "구체적이고 어려운 목표",
+   "acceptedAnswers": [
+    "구체적이고 어려운 목표"
+   ],
+   "relatedConceptIds": [
+    "HR022"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "구체적이고 어려운 목표",
+    "모호하고 쉬운 목표",
+    "최선을 다하라는 목표",
+    "목표 없음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "로크.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4374,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR024-Q03",
+   "primaryConceptId": "HR024",
+   "conceptIds": [
+    "HR024"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "행동에 아무런 결과도 주지 않아 그 행동을 점차 사라지게 하는 강화 방법을 (______)라 한다.",
+   "blankAnswer": "소거",
+   "acceptedAnswers": [
+    "소거"
+   ],
+   "relatedConceptIds": [
+    "HR023"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "강화 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4375,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR030-Q03",
+   "primaryConceptId": "HR030",
+   "conceptIds": [
+    "HR030"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "구성원이 각자 아이디어를 적은 뒤 차례로 발표하고 투표로 결정해 집단사고를 줄이는 기법을 (______)집단법이라 한다.",
+   "blankAnswer": "명목",
+   "acceptedAnswers": [
+    "명목"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "집단의사결정 기법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4376,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR030-Q04",
+   "primaryConceptId": "HR030",
+   "conceptIds": [
+    "HR030"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "집단의 결정이 개인 결정보다 더 극단적인 방향으로 흐르는 현상은?",
+   "blankAnswer": "집단양극화",
+   "acceptedAnswers": [
+    "집단양극화"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "집단양극화",
+    "사회적 태만",
+    "동조",
+    "델파이"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "집단의사결정의 문제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4377,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR031-Q03",
+   "primaryConceptId": "HR031",
+   "conceptIds": [
+    "HR031"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "matching",
+   "questionText": "갈등관리 유형과 특징을 연결하시오.",
+   "blankAnswer": "협력 → 자기주장·협조성 모두 높음 / 회피 → 자기주장·협조성 모두 낮음 / 수용 → 협조성 높고 자기주장 낮음",
+   "acceptedAnswers": [
+    "협력 → 자기주장·협조성 모두 높음 / 회피 → 자기주장·협조성 모두 낮음 / 수용 → 협조성 높고 자기주장 낮음"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "자기주장·협조성 모두 높음",
+    "자기주장·협조성 모두 낮음",
+    "협조성 높고 자기주장 낮음"
+   ],
+   "slots": [
+    {
+     "label": "협력",
+     "answer": "자기주장·협조성 모두 높음"
+    },
+    {
+     "label": "회피",
+     "answer": "자기주장·협조성 모두 낮음"
+    },
+    {
+     "label": "수용",
+     "answer": "협조성 높고 자기주장 낮음"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "토마스-킬만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4378,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR031-Q04",
+   "primaryConceptId": "HR031",
+   "conceptIds": [
+    "HR031"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "comparison",
+   "questionText": "협상 당사자가 함께 이익의 크기(파이)를 키우려는 협상은?",
+   "blankAnswer": "통합적 협상",
+   "acceptedAnswers": [
+    "통합적 협상"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "통합적 협상",
+    "분배적 협상",
+    "강압적 협상",
+    "회피적 협상"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Win-Win.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4379,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR032-Q03",
+   "primaryConceptId": "HR032",
+   "conceptIds": [
+    "HR032"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "리더십 이론을 발전 단계와 연결하시오.",
+   "blankAnswer": "리더의 타고난 자질을 찾음 → 특성이론 / 효과적인 리더의 행동 유형을 찾음 → 행동이론 / 상황에 따라 효과적 리더십이 다름 → 상황이론",
+   "acceptedAnswers": [
+    "리더의 타고난 자질을 찾음 → 특성이론 / 효과적인 리더의 행동 유형을 찾음 → 행동이론 / 상황에 따라 효과적 리더십이 다름 → 상황이론"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "특성이론",
+    "행동이론",
+    "상황이론"
+   ],
+   "slots": [
+    {
+     "label": "리더의 타고난 자질을 찾음",
+     "answer": "특성이론"
+    },
+    {
+     "label": "효과적인 리더의 행동 유형을 찾음",
+     "answer": "행동이론"
+    },
+    {
+     "label": "상황에 따라 효과적 리더십이 다름",
+     "answer": "상황이론"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "리더십 이론 흐름.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4380,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR032-Q04",
+   "primaryConceptId": "HR032",
+   "conceptIds": [
+    "HR032"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "구성원의 성장과 공동체를 우선하며 섬기는 자세로 이끄는 리더십은?",
+   "blankAnswer": "서번트 리더십",
+   "acceptedAnswers": [
+    "서번트 리더십"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "서번트 리더십",
+    "거래적 리더십",
+    "과업지향 리더십",
+    "독재적 리더십"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "봉사 리더십.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4381,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR032-Q05",
+   "primaryConceptId": "HR032",
+   "conceptIds": [
+    "HR032"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "성과에 따른 보상과 교환 관계로 구성원을 이끄는 리더십을 (______)적 리더십이라 한다.",
+   "blankAnswer": "거래",
+   "acceptedAnswers": [
+    "거래"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "변혁적 리더십과 대비.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4382,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR033-Q03",
+   "primaryConceptId": "HR033",
+   "conceptIds": [
+    "HR033"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "프로젝트 중심의 유연한 조직으로 전문가들이 팀을 이루어 혁신을 추구하는 민츠버그의 조직 형태는?",
+   "blankAnswer": "애드호크라시",
+   "acceptedAnswers": [
+    "애드호크라시"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "애드호크라시",
+    "기계적 관료제",
+    "단순구조",
+    "사업부제"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "민츠버그 5유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4383,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR033-Q04",
+   "primaryConceptId": "HR033",
+   "conceptIds": [
+    "HR033"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "샤인의 조직문화 3수준 중 가장 깊은 수준은 당연하게 여겨지는 기본(______)이다.",
+   "blankAnswer": "가정",
+   "acceptedAnswers": [
+    "가정"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "문화 수준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4384,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR034-Q03",
+   "primaryConceptId": "HR034",
+   "conceptIds": [
+    "HR034"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "코터의 변화관리 8단계 중 첫 단계는?",
+   "blankAnswer": "위기감 조성",
+   "acceptedAnswers": [
+    "위기감 조성"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "위기감 조성",
+    "비전 수립",
+    "단기 성과 창출",
+    "변화의 제도화"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "코터 8단계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4385,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR040-Q01",
+   "primaryConceptId": "HR040",
+   "conceptIds": [
+    "HR040"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "인적자원관리의 구성원 측면 목적으로, 근로생활의 질을 영문 약어로 (______)이라 한다.",
+   "blankAnswer": "QWL",
+   "acceptedAnswers": [
+    "QWL",
+    "근로생활의 질"
+   ],
+   "relatedConceptIds": [
+    "HR001"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이중 목적.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4386,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR040-Q02",
+   "primaryConceptId": "HR040",
+   "conceptIds": [
+    "HR040"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "order",
+   "questionText": "인적자원관리 기능을 일반적인 흐름 순서로 배열하시오.",
+   "blankAnswer": "1단계 → 확보 / 2단계 → 개발 / 3단계 → 평가·보상 / 4단계 → 유지",
+   "acceptedAnswers": [
+    "1단계 → 확보 / 2단계 → 개발 / 3단계 → 평가·보상 / 4단계 → 유지"
+   ],
+   "relatedConceptIds": [
+    "HR001"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "개발",
+    "유지",
+    "평가·보상",
+    "확보"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "확보"
+    },
+    {
+     "label": "2단계",
+     "answer": "개발"
+    },
+    {
+     "label": "3단계",
+     "answer": "평가·보상"
+    },
+    {
+     "label": "4단계",
+     "answer": "유지"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "확보 → 개발 → 평가·보상 → 유지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4387,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR040-Q03",
+   "primaryConceptId": "HR040",
+   "conceptIds": [
+    "HR040"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "인적자원관리의 목적으로 가장 적절한 것은?",
+   "blankAnswer": "생산성 향상과 근로생활의 질 향상의 조화",
+   "acceptedAnswers": [
+    "생산성 향상과 근로생활의 질 향상의 조화"
+   ],
+   "relatedConceptIds": [
+    "HR001"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "생산성 향상과 근로생활의 질 향상의 조화",
+    "인건비 최소화",
+    "인원 수 최소화",
+    "노동조합 약화"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이중 목적.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4388,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR041-Q01",
+   "primaryConceptId": "HR041",
+   "conceptIds": [
+    "HR041"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "calculation",
+   "questionText": "대리 100명 중 내년 승진·퇴직으로 빠져나갈 인원이 30명(이동률 30%)으로 예상된다. 신규 충원이 없다면 내년 대리 잔류 인원은 (______)명이다.",
+   "blankAnswer": "70",
+   "acceptedAnswers": [
+    "70",
+    "70명"
+   ],
+   "relatedConceptIds": [
+    "HR040",
+    "HR044"
+   ],
+   "unit": "명",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 100.0,
+     "b": 30.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "현재 인원 − 이동 인원.",
+   "confusion": null,
+   "calculation": "100 − 30 = 70",
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4389,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR041-Q02",
+   "primaryConceptId": "HR041",
+   "conceptIds": [
+    "HR041"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "classification",
+   "questionText": "예측 기법을 용도와 연결하시오.",
+   "blankAnswer": "마코프 분석 → 내부 공급예측 / 기능목록 → 내부 공급예측 / 델파이법 → 수요예측",
+   "acceptedAnswers": [
+    "마코프 분석 → 내부 공급예측 / 기능목록 → 내부 공급예측 / 델파이법 → 수요예측"
+   ],
+   "relatedConceptIds": [
+    "HR040",
+    "HR044"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "수요예측",
+    "내부 공급예측"
+   ],
+   "slots": [
+    {
+     "label": "마코프 분석",
+     "answer": "내부 공급예측"
+    },
+    {
+     "label": "기능목록",
+     "answer": "내부 공급예측"
+    },
+    {
+     "label": "델파이법",
+     "answer": "수요예측"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수요 vs 공급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4390,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR041-Q03",
+   "primaryConceptId": "HR041",
+   "conceptIds": [
+    "HR041"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "직급 간 이동 확률로 미래 내부 인력 공급을 예측하는 기법을 (______) 분석이라 한다.",
+   "blankAnswer": "마코프",
+   "acceptedAnswers": [
+    "마코프"
+   ],
+   "relatedConceptIds": [
+    "HR040",
+    "HR044"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공급예측.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4391,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR042-Q01",
+   "primaryConceptId": "HR042",
+   "conceptIds": [
+    "HR042"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "classification",
+   "questionText": "면접 질문을 유형과 연결하시오.",
+   "blankAnswer": "과거에 실제로 어떻게 행동했는지 질문 → 행동면접 / 가상 상황에서 어떻게 하겠는지 질문 → 상황면접 / 모든 지원자에게 같은 질문·척도 적용 → 구조화 면접",
+   "acceptedAnswers": [
+    "과거에 실제로 어떻게 행동했는지 질문 → 행동면접 / 가상 상황에서 어떻게 하겠는지 질문 → 상황면접 / 모든 지원자에게 같은 질문·척도 적용 → 구조화 면접"
+   ],
+   "relatedConceptIds": [
+    "HR004"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "행동면접",
+    "상황면접",
+    "구조화 면접",
+    "스트레스 면접"
+   ],
+   "slots": [
+    {
+     "label": "과거에 실제로 어떻게 행동했는지 질문",
+     "answer": "행동면접"
+    },
+    {
+     "label": "가상 상황에서 어떻게 하겠는지 질문",
+     "answer": "상황면접"
+    },
+    {
+     "label": "모든 지원자에게 같은 질문·척도 적용",
+     "answer": "구조화 면접"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "면접 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4392,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR042-Q02",
+   "primaryConceptId": "HR042",
+   "conceptIds": [
+    "HR042"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "질문과 평가 기준을 미리 정해 모든 지원자에게 똑같이 적용하는 면접을 (______) 면접이라 한다.",
+   "blankAnswer": "구조화",
+   "acceptedAnswers": [
+    "구조화"
+   ],
+   "relatedConceptIds": [
+    "HR004"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4393,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR042-Q03",
+   "primaryConceptId": "HR042",
+   "conceptIds": [
+    "HR042"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "comparison",
+   "questionText": "일반적으로 신뢰성과 타당성이 가장 높은 면접 방식은?",
+   "blankAnswer": "구조화 면접",
+   "acceptedAnswers": [
+    "구조화 면접"
+   ],
+   "relatedConceptIds": [
+    "HR004"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "구조화 면접",
+    "비구조화 면접",
+    "스트레스 면접",
+    "자유 대화 면접"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "표준화의 효과.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4394,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR043-Q01",
+   "primaryConceptId": "HR043",
+   "conceptIds": [
+    "HR043"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "직무 요건과 개인의 능력·적성을 맞춰 배치하는 원칙을 (______)주의라 한다.",
+   "blankAnswer": "적재적소",
+   "acceptedAnswers": [
+    "적재적소"
+   ],
+   "relatedConceptIds": [
+    "HR003",
+    "HR044"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배치 원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4395,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR043-Q02",
+   "primaryConceptId": "HR043",
+   "conceptIds": [
+    "HR043"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "exception",
+   "questionText": "배치전환의 목적으로 보기 어려운 것은?",
+   "blankAnswer": "직급과 임금의 상향 조정",
+   "acceptedAnswers": [
+    "직급과 임금의 상향 조정"
+   ],
+   "relatedConceptIds": [
+    "HR003",
+    "HR044"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "직급과 임금의 상향 조정",
+    "적성 발견",
+    "매너리즘 방지",
+    "인력 수급 조정"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직급 상향은 승진.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4396,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR043-Q03",
+   "primaryConceptId": "HR043",
+   "conceptIds": [
+    "HR043"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "comparison",
+   "questionText": "인사이동의 형태를 연결하시오.",
+   "blankAnswer": "같은 직급 내 부서 이동 → 배치전환 / 상위 직급으로 이동 → 승진",
+   "acceptedAnswers": [
+    "같은 직급 내 부서 이동 → 배치전환 / 상위 직급으로 이동 → 승진"
+   ],
+   "relatedConceptIds": [
+    "HR003",
+    "HR044"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "배치전환",
+    "승진",
+    "강등"
+   ],
+   "slots": [
+    {
+     "label": "같은 직급 내 부서 이동",
+     "answer": "배치전환"
+    },
+    {
+     "label": "상위 직급으로 이동",
+     "answer": "승진"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수평 vs 수직.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4397,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR044-Q01",
+   "primaryConceptId": "HR044",
+   "conceptIds": [
+    "HR044"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "matching",
+   "questionText": "승진 유형과 내용을 연결하시오.",
+   "blankAnswer": "직무 변화 없이 직위·호칭만 상향 → 대용승진 / 직무의 상위 이동 → 직계승진 / 조직 개편으로 직위 신설·상향 → 조직변화승진",
+   "acceptedAnswers": [
+    "직무 변화 없이 직위·호칭만 상향 → 대용승진 / 직무의 상위 이동 → 직계승진 / 조직 개편으로 직위 신설·상향 → 조직변화승진"
+   ],
+   "relatedConceptIds": [
+    "HR043",
+    "HR041"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "대용승진",
+    "직계승진",
+    "조직변화승진",
+    "자격승진"
+   ],
+   "slots": [
+    {
+     "label": "직무 변화 없이 직위·호칭만 상향",
+     "answer": "대용승진"
+    },
+    {
+     "label": "직무의 상위 이동",
+     "answer": "직계승진"
+    },
+    {
+     "label": "조직 개편으로 직위 신설·상향",
+     "answer": "조직변화승진"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "승진 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4398,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR044-Q02",
+   "primaryConceptId": "HR044",
+   "conceptIds": [
+    "HR044"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "구성원이 자신의 무능력 수준까지 승진한다는 주장을 (______)의 원리라 한다.",
+   "blankAnswer": "피터",
+   "acceptedAnswers": [
+    "피터"
+   ],
+   "relatedConceptIds": [
+    "HR043",
+    "HR041"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "승진의 역기능.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4399,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR044-Q03",
+   "primaryConceptId": "HR044",
+   "conceptIds": [
+    "HR044"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "comparison",
+   "questionText": "능력주의 승진의 장점은?",
+   "blankAnswer": "성과와 승진을 연결해 동기부여 효과가 크다",
+   "acceptedAnswers": [
+    "성과와 승진을 연결해 동기부여 효과가 크다"
+   ],
+   "relatedConceptIds": [
+    "HR043",
+    "HR041"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "성과와 승진을 연결해 동기부여 효과가 크다",
+    "누구나 순서대로 승진해 예측이 쉽다",
+    "평가가 필요 없다",
+    "갈등이 전혀 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "연공주의와 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4400,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR045-Q01",
+   "primaryConceptId": "HR045",
+   "conceptIds": [
+    "HR045"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "구성원이 정해진 한도 안에서 원하는 복리후생 항목을 선택하는 제도를 (______)식 복리후생이라 한다.",
+   "blankAnswer": "카페테리아",
+   "acceptedAnswers": [
+    "카페테리아",
+    "선택적"
+   ],
+   "relatedConceptIds": [
+    "HR007",
+    "HR046"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선택적 복리후생.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4401,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR045-Q02",
+   "primaryConceptId": "HR045",
+   "conceptIds": [
+    "HR045"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "classification",
+   "questionText": "복리후생 항목을 분류하시오.",
+   "blankAnswer": "국민연금·건강보험 → 법정 복리후생 / 사내 어린이집 운영(의무 대상 아님) → 법정외 복리후생",
+   "acceptedAnswers": [
+    "국민연금·건강보험 → 법정 복리후생 / 사내 어린이집 운영(의무 대상 아님) → 법정외 복리후생"
+   ],
+   "relatedConceptIds": [
+    "HR007",
+    "HR046"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "법정 복리후생",
+    "법정외 복리후생"
+   ],
+   "slots": [
+    {
+     "label": "국민연금·건강보험",
+     "answer": "법정 복리후생"
+    },
+    {
+     "label": "사내 어린이집 운영(의무 대상 아님)",
+     "answer": "법정외 복리후생"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법적 의무 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4402,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR045-Q03",
+   "primaryConceptId": "HR045",
+   "conceptIds": [
+    "HR045"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "카페테리아식 복리후생의 장점으로 가장 적절한 것은?",
+   "blankAnswer": "구성원의 다양한 욕구를 효율적으로 충족",
+   "acceptedAnswers": [
+    "구성원의 다양한 욕구를 효율적으로 충족"
+   ],
+   "relatedConceptIds": [
+    "HR007",
+    "HR046"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "구성원의 다양한 욕구를 효율적으로 충족",
+    "모든 구성원에게 똑같은 혜택 보장",
+    "관리 비용이 전혀 없음",
+    "법정 복리후생을 대체"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선택권 부여.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4403,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR046-Q01",
+   "primaryConceptId": "HR046",
+   "conceptIds": [
+    "HR046"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "구성원의 불만을 접수해 공정하게 해결하는 제도를 (______)처리 제도라 한다.",
+   "blankAnswer": "고충",
+   "acceptedAnswers": [
+    "고충"
+   ],
+   "relatedConceptIds": [
+    "HR045",
+    "HR047"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유지관리 수단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4404,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR046-Q02",
+   "primaryConceptId": "HR046",
+   "conceptIds": [
+    "HR046"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "exception",
+   "questionText": "유지관리 활동으로 보기 어려운 것은?",
+   "blankAnswer": "신규 인력 모집 광고",
+   "acceptedAnswers": [
+    "신규 인력 모집 광고"
+   ],
+   "relatedConceptIds": [
+    "HR045",
+    "HR047"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "신규 인력 모집 광고",
+    "안전·보건 관리",
+    "고충처리",
+    "일과 삶의 균형 지원"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "모집은 확보 활동.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4405,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR046-Q03",
+   "primaryConceptId": "HR046",
+   "conceptIds": [
+    "HR046"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "핵심인재 유지 전략으로 가장 적절한 것은?",
+   "blankAnswer": "장기 인센티브와 경력경로 제공",
+   "acceptedAnswers": [
+    "장기 인센티브와 경력경로 제공"
+   ],
+   "relatedConceptIds": [
+    "HR045",
+    "HR047"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "장기 인센티브와 경력경로 제공",
+    "모든 직원에게 같은 처우",
+    "교육 기회 축소",
+    "업무 자율성 축소"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "리텐션 전략.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4406,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR047-Q01",
+   "primaryConceptId": "HR047",
+   "conceptIds": [
+    "HR047"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "calculation",
+   "questionText": "기간 중 이직자가 30명이고 평균 재직자가 200명이다. 이직률은 (______)%이다.",
+   "blankAnswer": "15",
+   "acceptedAnswers": [
+    "15",
+    "15%"
+   ],
+   "relatedConceptIds": [
+    "HR046"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 30.0,
+     "b": 200.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "이직자 ÷ 평균 재직자 × 100.",
+   "confusion": null,
+   "calculation": "30 ÷ 200 × 100 = 15%",
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4407,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR047-Q02",
+   "primaryConceptId": "HR047",
+   "conceptIds": [
+    "HR047"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "저성과자가 떠나 조직의 신진대사에 도움이 되는 이직을 (______)적 이직이라 한다.",
+   "blankAnswer": "순기능",
+   "acceptedAnswers": [
+    "순기능"
+   ],
+   "relatedConceptIds": [
+    "HR046"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이직의 질.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4408,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR047-Q03",
+   "primaryConceptId": "HR047",
+   "conceptIds": [
+    "HR047"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "떠나는 구성원과 면담해 이직 원인을 파악하는 것을 (______)면접이라 한다.",
+   "blankAnswer": "퇴직",
+   "acceptedAnswers": [
+    "퇴직"
+   ],
+   "relatedConceptIds": [
+    "HR046"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원인 분석.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4409,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR048-Q01",
+   "primaryConceptId": "HR048",
+   "conceptIds": [
+    "HR048"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "classification",
+   "questionText": "다음 사례를 차별 유형과 연결하시오.",
+   "blankAnswer": "'남성만 지원 가능' 공고 → 직접차별 / 직무와 무관한 신장 기준으로 특정 성별이 크게 불리 → 간접차별",
+   "acceptedAnswers": [
+    "'남성만 지원 가능' 공고 → 직접차별 / 직무와 무관한 신장 기준으로 특정 성별이 크게 불리 → 간접차별"
+   ],
+   "relatedConceptIds": [
+    "HR049"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "직접차별",
+    "간접차별",
+    "차별 아님"
+   ],
+   "slots": [
+    {
+     "label": "'남성만 지원 가능' 공고",
+     "answer": "직접차별"
+    },
+    {
+     "label": "직무와 무관한 신장 기준으로 특정 성별이 크게 불리",
+     "answer": "간접차별"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "명시적 vs 결과적.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4410,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR048-Q02",
+   "primaryConceptId": "HR048",
+   "conceptIds": [
+    "HR048"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "과거 차별로 불리한 집단의 채용 비중을 늘리기 위한 한시적 조치를 적극적 (______)개선조치라 한다.",
+   "blankAnswer": "고용",
+   "acceptedAnswers": [
+    "고용"
+   ],
+   "relatedConceptIds": [
+    "HR049"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "AA.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4411,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR048-Q03",
+   "primaryConceptId": "HR048",
+   "conceptIds": [
+    "HR048"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "평등고용기회 원칙에 관한 설명으로 옳은 것은?",
+   "blankAnswer": "직무와 관련 있는 진정한 직업 자격은 차별이 아니다",
+   "acceptedAnswers": [
+    "직무와 관련 있는 진정한 직업 자격은 차별이 아니다"
+   ],
+   "relatedConceptIds": [
+    "HR049"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "직무와 관련 있는 진정한 직업 자격은 차별이 아니다",
+    "중립적 기준이면 결과와 관계없이 허용된다",
+    "모든 선발 기준이 금지된다",
+    "승진에는 적용되지 않는다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "BFOQ 예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4412,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR049-Q01",
+   "primaryConceptId": "HR049",
+   "conceptIds": [
+    "HR049"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "classification",
+   "questionText": "다음 상황과 관련된 공정성 유형을 연결하시오.",
+   "blankAnswer": "보상 액수가 기여에 비례하는가 → 분배공정성 / 평가 과정에 이의 제기 기회가 있는가 → 절차공정성 / 상사가 결과를 존중하며 설명했는가 → 상호작용공정성",
+   "acceptedAnswers": [
+    "보상 액수가 기여에 비례하는가 → 분배공정성 / 평가 과정에 이의 제기 기회가 있는가 → 절차공정성 / 상사가 결과를 존중하며 설명했는가 → 상호작용공정성"
+   ],
+   "relatedConceptIds": [
+    "HR023",
+    "HR048"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "분배공정성",
+    "절차공정성",
+    "상호작용공정성"
+   ],
+   "slots": [
+    {
+     "label": "보상 액수가 기여에 비례하는가",
+     "answer": "분배공정성"
+    },
+    {
+     "label": "평가 과정에 이의 제기 기회가 있는가",
+     "answer": "절차공정성"
+    },
+    {
+     "label": "상사가 결과를 존중하며 설명했는가",
+     "answer": "상호작용공정성"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "결과·과정·대우.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4413,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR049-Q02",
+   "primaryConceptId": "HR049",
+   "conceptIds": [
+    "HR049"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "definition",
+   "questionText": "결정 과정이 일관되고 이의 제기 기회가 있는지에 관한 공정성을 (______)공정성이라 한다.",
+   "blankAnswer": "절차",
+   "acceptedAnswers": [
+    "절차"
+   ],
+   "relatedConceptIds": [
+    "HR023",
+    "HR048"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4414,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR049-Q03",
+   "primaryConceptId": "HR049",
+   "conceptIds": [
+    "HR049"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-A",
+   "questionType": "choice",
+   "questionText": "결과에 불만이 있어도 구성원이 결정을 수용하게 만드는 데 특히 중요한 공정성은?",
+   "blankAnswer": "절차공정성",
+   "acceptedAnswers": [
+    "절차공정성"
+   ],
+   "relatedConceptIds": [
+    "HR023",
+    "HR048"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "절차공정성",
+    "분배공정성만",
+    "임금 수준",
+    "직무 난이도"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "과정 공정성의 효과.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4415,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR050-Q01",
+   "primaryConceptId": "HR050",
+   "conceptIds": [
+    "HR050"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "성과 저하 원인을 MARS 요인과 연결하시오.",
+   "blankAnswer": "업무 기술 부족 → 능력 / 의욕 저하 → 동기 / 자기 역할과 우선순위를 모름 → 역할 지각 / 필요한 장비 부족 → 상황 요인",
+   "acceptedAnswers": [
+    "업무 기술 부족 → 능력 / 의욕 저하 → 동기 / 자기 역할과 우선순위를 모름 → 역할 지각 / 필요한 장비 부족 → 상황 요인"
+   ],
+   "relatedConceptIds": [
+    "HR020",
+    "HR051",
+    "HR052"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "능력",
+    "동기",
+    "역할 지각",
+    "상황 요인"
+   ],
+   "slots": [
+    {
+     "label": "업무 기술 부족",
+     "answer": "능력"
+    },
+    {
+     "label": "의욕 저하",
+     "answer": "동기"
+    },
+    {
+     "label": "자기 역할과 우선순위를 모름",
+     "answer": "역할 지각"
+    },
+    {
+     "label": "필요한 장비 부족",
+     "answer": "상황 요인"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "MARS.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4416,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR050-Q02",
+   "primaryConceptId": "HR050",
+   "conceptIds": [
+    "HR050"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "개인 성과를 동기·능력·역할 지각·상황 요인으로 설명하는 모형을 (______) 모형이라 한다.",
+   "blankAnswer": "MARS",
+   "acceptedAnswers": [
+    "MARS"
+   ],
+   "relatedConceptIds": [
+    "HR020",
+    "HR051",
+    "HR052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4417,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR050-Q03",
+   "primaryConceptId": "HR050",
+   "conceptIds": [
+    "HR050"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "situation",
+   "questionText": "역할 지각 부족으로 인한 성과 저하의 대응 방안으로 가장 적절한 것은?",
+   "blankAnswer": "명확한 목표 설정과 피드백",
+   "acceptedAnswers": [
+    "명확한 목표 설정과 피드백"
+   ],
+   "relatedConceptIds": [
+    "HR020",
+    "HR051",
+    "HR052"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "명확한 목표 설정과 피드백",
+    "임금 인상",
+    "장비 교체",
+    "인원 감축"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "요인별 대응.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4418,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR051-Q01",
+   "primaryConceptId": "HR051",
+   "conceptIds": [
+    "HR051"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "로키치 가치 분류를 연결하시오.",
+   "blankAnswer": "행복한 삶 → 궁극적 가치 / 정직 → 수단적 가치",
+   "acceptedAnswers": [
+    "행복한 삶 → 궁극적 가치 / 정직 → 수단적 가치"
+   ],
+   "relatedConceptIds": [
+    "HR050",
+    "HR052"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "궁극적 가치",
+    "수단적 가치"
+   ],
+   "slots": [
+    {
+     "label": "행복한 삶",
+     "answer": "궁극적 가치"
+    },
+    {
+     "label": "정직",
+     "answer": "수단적 가치"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "목표 vs 방식.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4419,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR051-Q02",
+   "primaryConceptId": "HR051",
+   "conceptIds": [
+    "HR051"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "홉스테드 문화 차원 중 위계와 영향력의 불평등한 분배를 받아들이는 정도를 (______)거리라 한다.",
+   "blankAnswer": "권력",
+   "acceptedAnswers": [
+    "권력"
+   ],
+   "relatedConceptIds": [
+    "HR050",
+    "HR052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "문화 차원.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4420,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR051-Q03",
+   "primaryConceptId": "HR051",
+   "conceptIds": [
+    "HR051"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "로키치는 가치를 궁극적 가치와 (______)적 가치로 구분했다.",
+   "blankAnswer": "수단",
+   "acceptedAnswers": [
+    "수단"
+   ],
+   "relatedConceptIds": [
+    "HR050",
+    "HR052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가치 분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4421,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR052-Q01",
+   "primaryConceptId": "HR052",
+   "conceptIds": [
+    "HR052"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "태도의 구성요소를 연결하시오.",
+   "blankAnswer": "상사가 공정하다고 믿는다 → 인지적 요소 / 상사가 좋다 → 감정적 요소 / 상사를 돕고 싶다 → 행동적 요소",
+   "acceptedAnswers": [
+    "상사가 공정하다고 믿는다 → 인지적 요소 / 상사가 좋다 → 감정적 요소 / 상사를 돕고 싶다 → 행동적 요소"
+   ],
+   "relatedConceptIds": [
+    "HR021",
+    "HR051"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "인지적 요소",
+    "감정적 요소",
+    "행동적 요소"
+   ],
+   "slots": [
+    {
+     "label": "상사가 공정하다고 믿는다",
+     "answer": "인지적 요소"
+    },
+    {
+     "label": "상사가 좋다",
+     "answer": "감정적 요소"
+    },
+    {
+     "label": "상사를 돕고 싶다",
+     "answer": "행동적 요소"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "태도 3요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4422,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR052-Q02",
+   "primaryConceptId": "HR052",
+   "conceptIds": [
+    "HR052"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "태도와 행동의 불일치로 생기는 불편함을 줄이려 한다는 페스팅거의 이론을 인지(______) 이론이라 한다.",
+   "blankAnswer": "부조화",
+   "acceptedAnswers": [
+    "부조화"
+   ],
+   "relatedConceptIds": [
+    "HR021",
+    "HR051"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4423,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR052-Q03",
+   "primaryConceptId": "HR052",
+   "conceptIds": [
+    "HR052"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "exception",
+   "questionText": "인지부조화를 줄이는 방법으로 보기 어려운 것은?",
+   "blankAnswer": "불일치를 그대로 두고 더 키운다",
+   "acceptedAnswers": [
+    "불일치를 그대로 두고 더 키운다"
+   ],
+   "relatedConceptIds": [
+    "HR021",
+    "HR051"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "불일치를 그대로 두고 더 키운다",
+    "행동을 바꾼다",
+    "태도를 바꾼다",
+    "새로운 인지를 추가해 합리화한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "부조화 감소 방법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4424,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR053-Q01",
+   "primaryConceptId": "HR053",
+   "conceptIds": [
+    "HR053"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "조직이 요구하는 표현 규칙 때문에 실제 느낌과 다른 표정·말투를 보여야 하는 노동을 (______)노동이라 한다.",
+   "blankAnswer": "감정",
+   "acceptedAnswers": [
+    "감정"
+   ],
+   "relatedConceptIds": [
+    "HR050"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4425,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR053-Q02",
+   "primaryConceptId": "HR053",
+   "conceptIds": [
+    "HR053"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "comparison",
+   "questionText": "감정노동 전략을 연결하시오.",
+   "blankAnswer": "속으로는 화가 나도 겉으로만 웃음 → 표면 연기 / 고객 입장에서 생각해 실제로 감정을 바꿈 → 내면 연기",
+   "acceptedAnswers": [
+    "속으로는 화가 나도 겉으로만 웃음 → 표면 연기 / 고객 입장에서 생각해 실제로 감정을 바꿈 → 내면 연기"
+   ],
+   "relatedConceptIds": [
+    "HR050"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "표면 연기",
+    "내면 연기"
+   ],
+   "slots": [
+    {
+     "label": "속으로는 화가 나도 겉으로만 웃음",
+     "answer": "표면 연기"
+    },
+    {
+     "label": "고객 입장에서 생각해 실제로 감정을 바꿈",
+     "answer": "내면 연기"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조절 대상.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4426,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR053-Q03",
+   "primaryConceptId": "HR053",
+   "conceptIds": [
+    "HR053"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "골먼의 감성지능 구성요소가 아닌 것은?",
+   "blankAnswer": "지능지수(IQ)",
+   "acceptedAnswers": [
+    "지능지수(IQ)"
+   ],
+   "relatedConceptIds": [
+    "HR050"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "지능지수(IQ)",
+    "자기 인식",
+    "공감",
+    "사회적 기술"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "감성지능은 IQ 와 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4427,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR054-Q01",
+   "primaryConceptId": "HR054",
+   "conceptIds": [
+    "HR054"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "학습 사례를 이론과 연결하시오.",
+   "blankAnswer": "종소리와 먹이의 연합 → 고전적 조건화 / 칭찬받은 행동이 늘어남 → 조작적 조건화 / 선배를 관찰하고 따라 함 → 사회학습이론",
+   "acceptedAnswers": [
+    "종소리와 먹이의 연합 → 고전적 조건화 / 칭찬받은 행동이 늘어남 → 조작적 조건화 / 선배를 관찰하고 따라 함 → 사회학습이론"
+   ],
+   "relatedConceptIds": [
+    "HR024",
+    "HR006"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "고전적 조건화",
+    "조작적 조건화",
+    "사회학습이론"
+   ],
+   "slots": [
+    {
+     "label": "종소리와 먹이의 연합",
+     "answer": "고전적 조건화"
+    },
+    {
+     "label": "칭찬받은 행동이 늘어남",
+     "answer": "조작적 조건화"
+    },
+    {
+     "label": "선배를 관찰하고 따라 함",
+     "answer": "사회학습이론"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "학습 이론.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4428,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR054-Q02",
+   "primaryConceptId": "HR054",
+   "conceptIds": [
+    "HR054"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "어떤 과업을 성공적으로 해낼 수 있다는 자기 믿음을 자기(______)이라 한다.",
+   "blankAnswer": "효능감",
+   "acceptedAnswers": [
+    "효능감"
+   ],
+   "relatedConceptIds": [
+    "HR024",
+    "HR006"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "반두라.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4429,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR054-Q03",
+   "primaryConceptId": "HR054",
+   "conceptIds": [
+    "HR054"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "order",
+   "questionText": "사회학습 과정을 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 주의 / 2단계 → 기억(유지) / 3단계 → 재생산 / 4단계 → 동기화",
+   "acceptedAnswers": [
+    "1단계 → 주의 / 2단계 → 기억(유지) / 3단계 → 재생산 / 4단계 → 동기화"
+   ],
+   "relatedConceptIds": [
+    "HR024",
+    "HR006"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기억(유지)",
+    "동기화",
+    "재생산",
+    "주의"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "주의"
+    },
+    {
+     "label": "2단계",
+     "answer": "기억(유지)"
+    },
+    {
+     "label": "3단계",
+     "answer": "재생산"
+    },
+    {
+     "label": "4단계",
+     "answer": "동기화"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "반두라의 관찰학습 단계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4430,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR055-Q01",
+   "primaryConceptId": "HR055",
+   "conceptIds": [
+    "HR055"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "order",
+   "questionText": "터크만의 집단발달 단계를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 형성기 / 2단계 → 격동기 / 3단계 → 규범기 / 4단계 → 성과기",
+   "acceptedAnswers": [
+    "1단계 → 형성기 / 2단계 → 격동기 / 3단계 → 규범기 / 4단계 → 성과기"
+   ],
+   "relatedConceptIds": [
+    "HR030",
+    "HR056"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "격동기",
+    "규범기",
+    "성과기",
+    "형성기"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "형성기"
+    },
+    {
+     "label": "2단계",
+     "answer": "격동기"
+    },
+    {
+     "label": "3단계",
+     "answer": "규범기"
+    },
+    {
+     "label": "4단계",
+     "answer": "성과기"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "형성 → 격동 → 규범 → 성과.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4431,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR055-Q02",
+   "primaryConceptId": "HR055",
+   "conceptIds": [
+    "HR055"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "situation",
+   "questionText": "응집력이 높고 성과 규범이 낮은 집단의 생산성은?",
+   "blankAnswer": "낮아진다",
+   "acceptedAnswers": [
+    "낮아진다"
+   ],
+   "relatedConceptIds": [
+    "HR030",
+    "HR056"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "낮아진다",
+    "가장 높다",
+    "영향 없다",
+    "항상 중간"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "응집력은 규범 방향으로 영향을 키운다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4432,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR055-Q03",
+   "primaryConceptId": "HR055",
+   "conceptIds": [
+    "HR055"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "다수 의견에 맞추어 자신의 판단을 바꾸는 경향을 (______)이라 한다.",
+   "blankAnswer": "동조",
+   "acceptedAnswers": [
+    "동조"
+   ],
+   "relatedConceptIds": [
+    "HR030",
+    "HR056"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "애쉬 실험.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4433,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR056-Q01",
+   "primaryConceptId": "HR056",
+   "conceptIds": [
+    "HR056"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "matching",
+   "questionText": "팀 유형과 특징을 연결하시오.",
+   "blankAnswer": "여러 부서 인력이 함께 과업 수행 → 교차기능팀 / 감독자 없이 스스로 관리 → 자율관리팀 / 원격 협업 도구로 일함 → 가상팀",
+   "acceptedAnswers": [
+    "여러 부서 인력이 함께 과업 수행 → 교차기능팀 / 감독자 없이 스스로 관리 → 자율관리팀 / 원격 협업 도구로 일함 → 가상팀"
+   ],
+   "relatedConceptIds": [
+    "HR030",
+    "HR055"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "교차기능팀",
+    "자율관리팀",
+    "가상팀",
+    "문제해결팀"
+   ],
+   "slots": [
+    {
+     "label": "여러 부서 인력이 함께 과업 수행",
+     "answer": "교차기능팀"
+    },
+    {
+     "label": "감독자 없이 스스로 관리",
+     "answer": "자율관리팀"
+    },
+    {
+     "label": "원격 협업 도구로 일함",
+     "answer": "가상팀"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "팀 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4434,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR056-Q02",
+   "primaryConceptId": "HR056",
+   "conceptIds": [
+    "HR056"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "comparison",
+   "questionText": "작업집단과 비교한 팀의 특징은?",
+   "blankAnswer": "상호 책임과 시너지를 추구한다",
+   "acceptedAnswers": [
+    "상호 책임과 시너지를 추구한다"
+   ],
+   "relatedConceptIds": [
+    "HR030",
+    "HR055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "상호 책임과 시너지를 추구한다",
+    "개인 책임만 있다",
+    "목표가 공유되지 않는다",
+    "기술이 모두 같다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "팀의 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4435,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR056-Q03",
+   "primaryConceptId": "HR056",
+   "conceptIds": [
+    "HR056"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "팀 규모가 지나치게 커지면 개인이 노력을 덜 하는 사회적 (______)이 늘어난다.",
+   "blankAnswer": "태만",
+   "acceptedAnswers": [
+    "태만"
+   ],
+   "relatedConceptIds": [
+    "HR030",
+    "HR055"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "규모의 문제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4436,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR057-Q01",
+   "primaryConceptId": "HR057",
+   "conceptIds": [
+    "HR057"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "order",
+   "questionText": "경로 풍부성이 높은 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 대면 대화 / 2단계 → 전화 / 3단계 → 개인 이메일 / 4단계 → 공식 게시 문서",
+   "acceptedAnswers": [
+    "1단계 → 대면 대화 / 2단계 → 전화 / 3단계 → 개인 이메일 / 4단계 → 공식 게시 문서"
+   ],
+   "relatedConceptIds": [
+    "HR058"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "개인 이메일",
+    "공식 게시 문서",
+    "대면 대화",
+    "전화"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "대면 대화"
+    },
+    {
+     "label": "2단계",
+     "answer": "전화"
+    },
+    {
+     "label": "3단계",
+     "answer": "개인 이메일"
+    },
+    {
+     "label": "4단계",
+     "answer": "공식 게시 문서"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "풍부성 순서.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4437,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR057-Q02",
+   "primaryConceptId": "HR057",
+   "conceptIds": [
+    "HR057"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "comparison",
+   "questionText": "의사소통 네트워크와 특징을 연결하시오.",
+   "blankAnswer": "수레바퀴형 → 중심인물 집중, 단순 과업에 신속 / 완전연결형 → 자유로운 소통, 복잡 과업·만족도 높음",
+   "acceptedAnswers": [
+    "수레바퀴형 → 중심인물 집중, 단순 과업에 신속 / 완전연결형 → 자유로운 소통, 복잡 과업·만족도 높음"
+   ],
+   "relatedConceptIds": [
+    "HR058"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "중심인물 집중, 단순 과업에 신속",
+    "자유로운 소통, 복잡 과업·만족도 높음"
+   ],
+   "slots": [
+    {
+     "label": "수레바퀴형",
+     "answer": "중심인물 집중, 단순 과업에 신속"
+    },
+    {
+     "label": "완전연결형",
+     "answer": "자유로운 소통, 복잡 과업·만족도 높음"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "네트워크 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4438,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR057-Q03",
+   "primaryConceptId": "HR057",
+   "conceptIds": [
+    "HR057"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "조직 내 비공식적 소문 전달 경로를 (______)이라 한다.",
+   "blankAnswer": "그레이프바인",
+   "acceptedAnswers": [
+    "그레이프바인",
+    "포도넝쿨"
+   ],
+   "relatedConceptIds": [
+    "HR058"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비공식 의사소통.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4439,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR058-Q01",
+   "primaryConceptId": "HR058",
+   "conceptIds": [
+    "HR058"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "영향력 전술을 사례와 연결하시오.",
+   "blankAnswer": "자료와 논리로 설득 → 합리적 설득 / 다른 사람들의 지지를 모음 → 연합 형성 / 상대를 칭찬해 호감을 얻음 → 환심 사기",
+   "acceptedAnswers": [
+    "자료와 논리로 설득 → 합리적 설득 / 다른 사람들의 지지를 모음 → 연합 형성 / 상대를 칭찬해 호감을 얻음 → 환심 사기"
+   ],
+   "relatedConceptIds": [
+    "HR031",
+    "HR049"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "합리적 설득",
+    "연합 형성",
+    "환심 사기",
+    "압력"
+   ],
+   "slots": [
+    {
+     "label": "자료와 논리로 설득",
+     "answer": "합리적 설득"
+    },
+    {
+     "label": "다른 사람들의 지지를 모음",
+     "answer": "연합 형성"
+    },
+    {
+     "label": "상대를 칭찬해 호감을 얻음",
+     "answer": "환심 사기"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "영향력 전술.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4440,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR058-Q02",
+   "primaryConceptId": "HR058",
+   "conceptIds": [
+    "HR058"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "조직정치를 늘리는 요인은?",
+   "blankAnswer": "모호한 평가 기준과 자원 부족",
+   "acceptedAnswers": [
+    "모호한 평가 기준과 자원 부족"
+   ],
+   "relatedConceptIds": [
+    "HR031",
+    "HR049"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "모호한 평가 기준과 자원 부족",
+    "명확한 성과 기준",
+    "투명한 자원 배분",
+    "공정한 절차"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "증가 요인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4441,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR058-Q03",
+   "primaryConceptId": "HR058",
+   "conceptIds": [
+    "HR058"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "타인이 자신을 어떻게 볼지 관리하려는 행동을 (______)관리라 한다.",
+   "blankAnswer": "인상",
+   "acceptedAnswers": [
+    "인상"
+   ],
+   "relatedConceptIds": [
+    "HR031",
+    "HR049"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정치적 행동.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4442,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR059-Q01",
+   "primaryConceptId": "HR059",
+   "conceptIds": [
+    "HR059"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "comparison",
+   "questionText": "권한 구조의 특징을 연결하시오.",
+   "blankAnswer": "분권화 → 현장의 신속한 의사결정 / 집권화 → 의사결정의 일관성·통제",
+   "acceptedAnswers": [
+    "분권화 → 현장의 신속한 의사결정 / 집권화 → 의사결정의 일관성·통제"
+   ],
+   "relatedConceptIds": [
+    "HR033"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "현장의 신속한 의사결정",
+    "의사결정의 일관성·통제"
+   ],
+   "slots": [
+    {
+     "label": "분권화",
+     "answer": "현장의 신속한 의사결정"
+    },
+    {
+     "label": "집권화",
+     "answer": "의사결정의 일관성·통제"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "장점 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4443,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR059-Q02",
+   "primaryConceptId": "HR059",
+   "conceptIds": [
+    "HR059"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "의사결정 권한을 하위 계층에 위임하는 정도가 높은 상태를 (______)라 한다.",
+   "blankAnswer": "분권화",
+   "acceptedAnswers": [
+    "분권화"
+   ],
+   "relatedConceptIds": [
+    "HR033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4444,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR059-Q03",
+   "primaryConceptId": "HR059",
+   "conceptIds": [
+    "HR059"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "분권화의 단점으로 가장 적절한 것은?",
+   "blankAnswer": "부서 간 조정이 어렵고 중복 투자가 생길 수 있다",
+   "acceptedAnswers": [
+    "부서 간 조정이 어렵고 중복 투자가 생길 수 있다"
+   ],
+   "relatedConceptIds": [
+    "HR033"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "부서 간 조정이 어렵고 중복 투자가 생길 수 있다",
+    "의사결정이 느려진다",
+    "현장 정보를 쓰지 못한다",
+    "하위 관리자 동기가 낮아진다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "단점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4445,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR060-Q01",
+   "primaryConceptId": "HR060",
+   "conceptIds": [
+    "HR060"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "classification",
+   "questionText": "학습 유형을 사례와 연결하시오.",
+   "blankAnswer": "기존 목표 안에서 작업 방법 개선 → 단일순환 학습 / 목표와 기본 가정 자체를 재검토 → 이중순환 학습",
+   "acceptedAnswers": [
+    "기존 목표 안에서 작업 방법 개선 → 단일순환 학습 / 목표와 기본 가정 자체를 재검토 → 이중순환 학습"
+   ],
+   "relatedConceptIds": [
+    "HR034"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "단일순환 학습",
+    "이중순환 학습"
+   ],
+   "slots": [
+    {
+     "label": "기존 목표 안에서 작업 방법 개선",
+     "answer": "단일순환 학습"
+    },
+    {
+     "label": "목표와 기본 가정 자체를 재검토",
+     "answer": "이중순환 학습"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "아지리스.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4446,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR060-Q02",
+   "primaryConceptId": "HR060",
+   "conceptIds": [
+    "HR060"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "choice",
+   "questionText": "센게가 제시한 학습조직의 다섯 가지 규율이 아닌 것은?",
+   "blankAnswer": "엄격한 위계 통제",
+   "acceptedAnswers": [
+    "엄격한 위계 통제"
+   ],
+   "relatedConceptIds": [
+    "HR034"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "엄격한 위계 통제",
+    "시스템 사고",
+    "공유 비전",
+    "팀 학습"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "5규율: 시스템 사고·개인적 숙련·정신 모형·공유 비전·팀 학습.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4447,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "HR060-Q03",
+   "primaryConceptId": "HR060",
+   "conceptIds": [
+    "HR060"
+   ],
+   "subjectId": "HR",
+   "chapterId": "HR-B",
+   "questionType": "definition",
+   "questionText": "센게가 제시한 다섯 가지 규율로 끊임없이 지식을 얻고 변화하는 조직을 (______)조직이라 한다.",
+   "blankAnswer": "학습",
+   "acceptedAnswers": [
+    "학습"
+   ],
+   "relatedConceptIds": [
+    "HR034"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "센게.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "인적자원관리·조직행동 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4448,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
   }
  ]
 }
