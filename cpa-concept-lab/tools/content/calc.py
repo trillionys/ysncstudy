@@ -946,6 +946,13 @@ def mul2(a, b):
     return v, f"{fmt(a)} × {fmt(b)} = {fmt(v)}"
 
 
+@formula()
+def poc_rev(contract, cum, total, prior):
+    """진행기준 당기 수익 = 계약금액 × 누적발생원가 ÷ 총예정원가 − 전기까지 인식한 누적수익"""
+    v = r0(contract * cum / total - prior)
+    return v, f"{fmt(contract)} × {fmt(cum)} ÷ {fmt(total)} − 전기 누적수익 {fmt(prior)} = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

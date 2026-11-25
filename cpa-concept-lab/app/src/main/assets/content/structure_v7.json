@@ -696,6 +696,15 @@
    "title": "자본",
    "englishTitle": "Equity",
    "sortOrder": 66
+  },
+  {
+   "partTitle": "고객과의 계약에서 생기는 수익",
+   "id": "IA-RV",
+   "code": "RV",
+   "subjectId": "IA",
+   "title": "고객과의 계약에서 생기는 수익",
+   "englishTitle": "Revenue from contracts with customers",
+   "sortOrder": 67
   }
  ],
  "sections": [
@@ -2215,6 +2224,24 @@
    "id": "IA-EQ-S03",
    "chapterId": "IA-EQ",
    "title": "배당과 주식 수의 변동",
+   "sortOrder": 3
+  },
+  {
+   "id": "IA-RV-S01",
+   "chapterId": "IA-RV",
+   "title": "수익인식 5단계",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-RV-S02",
+   "chapterId": "IA-RV",
+   "title": "거래가격의 구성요소",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-RV-S03",
+   "chapterId": "IA-RV",
+   "title": "특수한 수익 거래",
    "sortOrder": 3
   },
   {
@@ -5204,8 +5231,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "수익인식 5단계",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA170"
+   ],
+   "covered": true,
    "sortOrder": 209
   },
   {
@@ -5213,8 +5242,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "계약 식별",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA171"
+   ],
+   "covered": true,
    "sortOrder": 210
   },
   {
@@ -5222,8 +5253,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "수행의무 식별",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA172"
+   ],
+   "covered": true,
    "sortOrder": 211
   },
   {
@@ -5231,8 +5264,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "거래가격 산정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA173"
+   ],
+   "covered": true,
    "sortOrder": 212
   },
   {
@@ -5240,8 +5275,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "거래가격 배분",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA174"
+   ],
+   "covered": true,
    "sortOrder": 213
   },
   {
@@ -5249,8 +5286,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "수행의무 이행",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA175"
+   ],
+   "covered": true,
    "sortOrder": 214
   },
   {
@@ -5258,8 +5297,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "기간에 걸친 수익인식",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA176"
+   ],
+   "covered": true,
    "sortOrder": 215
   },
   {
@@ -5267,8 +5308,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "한 시점 수익인식",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA177"
+   ],
+   "covered": true,
    "sortOrder": 216
   },
   {
@@ -5276,8 +5319,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "변동대가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA178"
+   ],
+   "covered": true,
    "sortOrder": 217
   },
   {
@@ -5285,8 +5330,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "유의적인 금융요소",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA179"
+   ],
+   "covered": true,
    "sortOrder": 218
   },
   {
@@ -5294,8 +5341,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "비현금대가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA180"
+   ],
+   "covered": true,
    "sortOrder": 219
   },
   {
@@ -5303,8 +5352,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "고객에게 지급할 대가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA181"
+   ],
+   "covered": true,
    "sortOrder": 220
   },
   {
@@ -5323,8 +5374,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "보증",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA182"
+   ],
+   "covered": true,
    "sortOrder": 222
   },
   {
@@ -5332,8 +5385,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "본인과 대리인",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA183"
+   ],
+   "covered": true,
    "sortOrder": 223
   },
   {
@@ -5341,8 +5396,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "고객충성제도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA184"
+   ],
+   "covered": true,
    "sortOrder": 224
   },
   {
@@ -5350,8 +5407,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "상품권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA185"
+   ],
+   "covered": true,
    "sortOrder": 225
   },
   {
@@ -5359,8 +5418,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "계약변경",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA186"
+   ],
+   "covered": true,
    "sortOrder": 226
   },
   {
@@ -5368,8 +5429,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "계약원가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA187"
+   ],
+   "covered": true,
    "sortOrder": 227
   },
   {
@@ -5377,8 +5440,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "계약자산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA188"
+   ],
+   "covered": true,
    "sortOrder": 228
   },
   {
@@ -5386,8 +5451,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "계약부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA189"
+   ],
+   "covered": true,
    "sortOrder": 229
   },
   {
@@ -5395,8 +5462,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "공사계약",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA190"
+   ],
+   "covered": true,
    "sortOrder": 230
   },
   {
@@ -5404,8 +5473,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "진행률",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA191"
+   ],
+   "covered": true,
    "sortOrder": 231
   },
   {
@@ -5413,8 +5484,10 @@
    "subjectId": "IA",
    "unit": "고객과의 계약에서 생기는 수익",
    "item": "손실부담계약과 수익인식의 관계",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA192"
+   ],
+   "covered": true,
    "sortOrder": 232
   },
   {

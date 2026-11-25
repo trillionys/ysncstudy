@@ -178299,6 +178299,3333 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "IA170-Q01",
+   "primaryConceptId": "IA170",
+   "conceptIds": [
+    "IA170"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "order",
+   "questionText": "수익인식 5단계를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 계약 식별 / 2단계 → 수행의무 식별 / 3단계 → 거래가격 산정 / 4단계 → 거래가격 배분 / 5단계 → 수행의무 이행 시 수익 인식",
+   "acceptedAnswers": [
+    "1단계 → 계약 식별 / 2단계 → 수행의무 식별 / 3단계 → 거래가격 산정 / 4단계 → 거래가격 배분 / 5단계 → 수행의무 이행 시 수익 인식"
+   ],
+   "relatedConceptIds": [
+    "IA171",
+    "IA172",
+    "IA173",
+    "IA174",
+    "IA175"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "거래가격 배분",
+    "거래가격 산정",
+    "계약 식별",
+    "수행의무 식별",
+    "수행의무 이행 시 수익 인식"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "계약 식별"
+    },
+    {
+     "label": "2단계",
+     "answer": "수행의무 식별"
+    },
+    {
+     "label": "3단계",
+     "answer": "거래가격 산정"
+    },
+    {
+     "label": "4단계",
+     "answer": "거래가격 배분"
+    },
+    {
+     "label": "5단계",
+     "answer": "수행의무 이행 시 수익 인식"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "무엇을 → 얼마를 → 언제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3660,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA170-Q02",
+   "primaryConceptId": "IA170",
+   "conceptIds": [
+    "IA170"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "제1115호는 고객에게 재화·용역을 이전하는 대가로 받을 (______)를 갖게 될 것으로 예상하는 금액으로 수익을 인식한다.",
+   "blankAnswer": "권리",
+   "acceptedAnswers": [
+    "권리"
+   ],
+   "relatedConceptIds": [
+    "IA171",
+    "IA172",
+    "IA173",
+    "IA174",
+    "IA175"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "핵심 원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3661,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA170-Q03",
+   "primaryConceptId": "IA170",
+   "conceptIds": [
+    "IA170"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "choice",
+   "questionText": "5단계 중 '언제' 수익을 인식하는지를 정하는 단계는?",
+   "blankAnswer": "수행의무 이행",
+   "acceptedAnswers": [
+    "수행의무 이행"
+   ],
+   "relatedConceptIds": [
+    "IA171",
+    "IA172",
+    "IA173",
+    "IA174",
+    "IA175"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "수행의무 이행",
+    "계약 식별",
+    "거래가격 산정",
+    "거래가격 배분"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "5단계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3662,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA171-Q01",
+   "primaryConceptId": "IA171",
+   "conceptIds": [
+    "IA171"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "계약 식별 요건에는 고객에게 받을 대가의 (______) 가능성이 높아야 한다는 요건이 포함된다.",
+   "blankAnswer": "회수",
+   "acceptedAnswers": [
+    "회수"
+   ],
+   "relatedConceptIds": [
+    "IA170",
+    "IA186"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "5개 요건 중 하나.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3663,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA171-Q02",
+   "primaryConceptId": "IA171",
+   "conceptIds": [
+    "IA171"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "treatment",
+   "questionText": "계약 식별 요건을 충족하지 못한 상태에서 고객에게 받은 대가의 처리는?",
+   "blankAnswer": "부채로 인식",
+   "acceptedAnswers": [
+    "부채로 인식"
+   ],
+   "relatedConceptIds": [
+    "IA170",
+    "IA186"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "부채로 인식",
+    "즉시 수익 인식",
+    "기타포괄손익",
+    "자본으로 인식"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "의무가 남거나 환불 가능성이 있으면 부채.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3664,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA171-Q03",
+   "primaryConceptId": "IA171",
+   "conceptIds": [
+    "IA171"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "matching",
+   "questionText": "다음 상황이 계약 식별 요건 중 어느 것과 관련되는지 연결하시오.",
+   "blankAnswer": "고객 신용이 매우 나쁨 → 대가 회수 가능성 / 대금 지급 조건이 정해지지 않음 → 지급조건 식별",
+   "acceptedAnswers": [
+    "고객 신용이 매우 나쁨 → 대가 회수 가능성 / 대금 지급 조건이 정해지지 않음 → 지급조건 식별"
+   ],
+   "relatedConceptIds": [
+    "IA170",
+    "IA186"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "대가 회수 가능성",
+    "지급조건 식별",
+    "상업적 실질",
+    "계약 승인"
+   ],
+   "slots": [
+    {
+     "label": "고객 신용이 매우 나쁨",
+     "answer": "대가 회수 가능성"
+    },
+    {
+     "label": "대금 지급 조건이 정해지지 않음",
+     "answer": "지급조건 식별"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "5개 요건 적용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3665,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA172-Q01",
+   "primaryConceptId": "IA172",
+   "conceptIds": [
+    "IA172"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "고객에게 (______)되는 재화나 용역을 이전하기로 한 약속이 수행의무다.",
+   "blankAnswer": "구별",
+   "acceptedAnswers": [
+    "구별"
+   ],
+   "relatedConceptIds": [
+    "IA170",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구별 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3666,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA172-Q02",
+   "primaryConceptId": "IA172",
+   "conceptIds": [
+    "IA172"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "situation",
+   "questionText": "장비 판매와 설치 용역을 하나의 수행의무로 보아야 하는 경우는?",
+   "blankAnswer": "설치가 장비를 유의적으로 변형하는 맞춤 작업인 경우",
+   "acceptedAnswers": [
+    "설치가 장비를 유의적으로 변형하는 맞춤 작업인 경우"
+   ],
+   "relatedConceptIds": [
+    "IA170",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "설치가 장비를 유의적으로 변형하는 맞춤 작업인 경우",
+    "다른 업체도 설치할 수 있는 경우",
+    "설치 대가를 별도로 청구하는 경우",
+    "설치가 단순 작업인 경우"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "별도로 식별되지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3667,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA172-Q03",
+   "primaryConceptId": "IA172",
+   "conceptIds": [
+    "IA172"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "classification",
+   "questionText": "건설 계약에 투입되는 자재와 노무의 처리를 고르시오.",
+   "blankAnswer": "자재·노무·설계 → 통합된 하나의 수행의무 / 완공 후 별도 유지보수 3년 → 별개 수행의무",
+   "acceptedAnswers": [
+    "자재·노무·설계 → 통합된 하나의 수행의무 / 완공 후 별도 유지보수 3년 → 별개 수행의무"
+   ],
+   "relatedConceptIds": [
+    "IA170",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "통합된 하나의 수행의무",
+    "별개 수행의무"
+   ],
+   "slots": [
+    {
+     "label": "자재·노무·설계",
+     "answer": "통합된 하나의 수행의무"
+    },
+    {
+     "label": "완공 후 별도 유지보수 3년",
+     "answer": "별개 수행의무"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "통합 용역의 투입물은 하나.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3668,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA173-Q01",
+   "primaryConceptId": "IA173",
+   "conceptIds": [
+    "IA173"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "제3자를 대신해 회수하는 부가가치세는 (______)에 포함하지 않는다.",
+   "blankAnswer": "거래가격",
+   "acceptedAnswers": [
+    "거래가격"
+   ],
+   "relatedConceptIds": [
+    "IA177",
+    "IA178",
+    "IA179",
+    "IA180",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대리 회수.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3669,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA173-Q02",
+   "primaryConceptId": "IA173",
+   "conceptIds": [
+    "IA173"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "exception",
+   "questionText": "거래가격을 산정할 때 고려하지 않는 것은?",
+   "blankAnswer": "계약이 중도에 취소될 가능성",
+   "acceptedAnswers": [
+    "계약이 중도에 취소될 가능성"
+   ],
+   "relatedConceptIds": [
+    "IA177",
+    "IA178",
+    "IA179",
+    "IA180",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약이 중도에 취소될 가능성",
+    "변동대가",
+    "유의적인 금융요소",
+    "고객에게 지급할 대가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약이 취소·갱신·변경되지 않는다고 가정한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3670,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA173-Q03",
+   "primaryConceptId": "IA173",
+   "conceptIds": [
+    "IA173"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "제품을 판매하고 받은 총액이 1,100,000원이며 그중 부가가치세가 100,000원이다. 거래가격은 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA177",
+    "IA178",
+    "IA179",
+    "IA180",
+    "IA174"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1100000.0,
+     "b": 100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "총수령액 − 부가가치세.",
+   "confusion": null,
+   "calculation": "1,100,000 − 100,000 = 1,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3671,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA174-Q01",
+   "primaryConceptId": "IA174",
+   "conceptIds": [
+    "IA174"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "거래가격 1,000,000원인 계약에서 제품 A 의 개별 판매가격이 600,000원, 개별 판매가격 합계가 1,200,000원이다. 제품 A 에 배분할 금액은 (______)원이다.",
+   "blankAnswer": "500,000",
+   "acceptedAnswers": [
+    "500,000",
+    "500,000원"
+   ],
+   "relatedConceptIds": [
+    "IA172",
+    "IA173"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1000000.0,
+     "b": 600000.0,
+     "c": 1200000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "거래가격 × A 개별가 ÷ 합계.",
+   "confusion": null,
+   "calculation": "1,000,000 × 600,000 ÷ 1,200,000 = 500,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3672,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA174-Q02",
+   "primaryConceptId": "IA174",
+   "conceptIds": [
+    "IA174"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "거래가격은 계약 개시 시점에 각 수행의무의 개별 (______) 비율로 배분한다.",
+   "blankAnswer": "판매가격",
+   "acceptedAnswers": [
+    "판매가격"
+   ],
+   "relatedConceptIds": [
+    "IA172",
+    "IA173"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상대적 개별 판매가격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3673,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA174-Q03",
+   "primaryConceptId": "IA174",
+   "conceptIds": [
+    "IA174"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "choice",
+   "questionText": "개별 판매가격을 추정하는 방법이 아닌 것은?",
+   "blankAnswer": "계약 상대방이 제시한 희망가격 적용법",
+   "acceptedAnswers": [
+    "계약 상대방이 제시한 희망가격 적용법"
+   ],
+   "relatedConceptIds": [
+    "IA172",
+    "IA173"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약 상대방이 제시한 희망가격 적용법",
+    "시장평가 조정 접근법",
+    "예상원가 이윤 가산 접근법",
+    "잔여접근법(요건 충족 시)"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1115호의 추정 방법은 세 가지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3674,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA175-Q01",
+   "primaryConceptId": "IA175",
+   "conceptIds": [
+    "IA175"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "수행의무는 고객이 약속된 자산을 (______)하게 될 때 이행된다.",
+   "blankAnswer": "통제",
+   "acceptedAnswers": [
+    "통제"
+   ],
+   "relatedConceptIds": [
+    "IA176",
+    "IA177"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수익 인식 시점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3675,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA175-Q02",
+   "primaryConceptId": "IA175",
+   "conceptIds": [
+    "IA175"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "order",
+   "questionText": "수행의무 이행 시기 판단 순서를 배열하시오.",
+   "blankAnswer": "1단계 → 기간에 걸쳐 이행하는 요건 충족 여부 검토 / 2단계 → 충족하지 못하면 한 시점 이행으로 판단 / 3단계 → 통제 이전 지표로 시점 결정",
+   "acceptedAnswers": [
+    "1단계 → 기간에 걸쳐 이행하는 요건 충족 여부 검토 / 2단계 → 충족하지 못하면 한 시점 이행으로 판단 / 3단계 → 통제 이전 지표로 시점 결정"
+   ],
+   "relatedConceptIds": [
+    "IA176",
+    "IA177"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기간에 걸쳐 이행하는 요건 충족 여부 검토",
+    "충족하지 못하면 한 시점 이행으로 판단",
+    "통제 이전 지표로 시점 결정"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "기간에 걸쳐 이행하는 요건 충족 여부 검토"
+    },
+    {
+     "label": "2단계",
+     "answer": "충족하지 못하면 한 시점 이행으로 판단"
+    },
+    {
+     "label": "3단계",
+     "answer": "통제 이전 지표로 시점 결정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기간 요건을 먼저 본다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3676,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA175-Q03",
+   "primaryConceptId": "IA175",
+   "conceptIds": [
+    "IA175"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "choice",
+   "questionText": "통제의 정의로 옳은 것은?",
+   "blankAnswer": "자산의 사용을 지시하고 나머지 효익의 대부분을 얻는 능력",
+   "acceptedAnswers": [
+    "자산의 사용을 지시하고 나머지 효익의 대부분을 얻는 능력"
+   ],
+   "relatedConceptIds": [
+    "IA176",
+    "IA177"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "자산의 사용을 지시하고 나머지 효익의 대부분을 얻는 능력",
+    "대금을 지급한 상태",
+    "법적 소유권 등기",
+    "자산을 물리적으로 보관"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1115호 통제 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3677,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA176-Q01",
+   "primaryConceptId": "IA176",
+   "conceptIds": [
+    "IA176"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "matching",
+   "questionText": "다음 거래가 해당하는 기간 이행 요건을 연결하시오.",
+   "blankAnswer": "월간 청소 용역 → 고객이 효익을 동시에 얻고 소비 / 고객 토지 위 건물 건설 → 고객이 만들어지는 자산을 통제",
+   "acceptedAnswers": [
+    "월간 청소 용역 → 고객이 효익을 동시에 얻고 소비 / 고객 토지 위 건물 건설 → 고객이 만들어지는 자산을 통제"
+   ],
+   "relatedConceptIds": [
+    "IA175",
+    "IA177",
+    "IA190"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "고객이 효익을 동시에 얻고 소비",
+    "고객이 만들어지는 자산을 통제",
+    "대체 용도 없음 + 지급청구권"
+   ],
+   "slots": [
+    {
+     "label": "월간 청소 용역",
+     "answer": "고객이 효익을 동시에 얻고 소비"
+    },
+    {
+     "label": "고객 토지 위 건물 건설",
+     "answer": "고객이 만들어지는 자산을 통제"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "세 요건 중 하나.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3678,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA176-Q02",
+   "primaryConceptId": "IA176",
+   "conceptIds": [
+    "IA176"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "세 번째 요건은 대체 용도가 없는 자산이고 수행을 완료한 부분에 대해 집행 가능한 (______)이 있는 경우다.",
+   "blankAnswer": "지급청구권",
+   "acceptedAnswers": [
+    "지급청구권"
+   ],
+   "relatedConceptIds": [
+    "IA175",
+    "IA177",
+    "IA190"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 조건 동시 충족.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3679,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA176-Q03",
+   "primaryConceptId": "IA176",
+   "conceptIds": [
+    "IA176"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "기간에 걸쳐 이행하는 수행의무는 (______)에 따라 수익을 인식한다.",
+   "blankAnswer": "진행률",
+   "acceptedAnswers": [
+    "진행률"
+   ],
+   "relatedConceptIds": [
+    "IA175",
+    "IA177",
+    "IA190"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "산출법·투입법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3680,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA177-Q01",
+   "primaryConceptId": "IA177",
+   "conceptIds": [
+    "IA177"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "choice",
+   "questionText": "통제 이전의 지표가 아닌 것은?",
+   "blankAnswer": "판매 계약서 작성",
+   "acceptedAnswers": [
+    "판매 계약서 작성"
+   ],
+   "relatedConceptIds": [
+    "IA175",
+    "IA176"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "판매 계약서 작성",
+    "물리적 점유의 이전",
+    "법적 소유권의 이전",
+    "고객의 자산 인수"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약 체결 자체는 통제 이전 지표가 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3681,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA177-Q02",
+   "primaryConceptId": "IA177",
+   "conceptIds": [
+    "IA177"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "한 시점에 이행하는 수행의무는 고객이 자산을 (______)하게 되는 시점에 수익을 인식한다.",
+   "blankAnswer": "통제",
+   "acceptedAnswers": [
+    "통제"
+   ],
+   "relatedConceptIds": [
+    "IA175",
+    "IA176"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "통제 이전 시점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3682,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA177-Q03",
+   "primaryConceptId": "IA177",
+   "conceptIds": [
+    "IA177"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "comparison",
+   "questionText": "인도조건별 통제 이전 시점을 연결하시오(다른 지표가 같다고 가정).",
+   "blankAnswer": "선적지 인도조건 → 선적 시점 / 도착지 인도조건 → 도착 시점",
+   "acceptedAnswers": [
+    "선적지 인도조건 → 선적 시점 / 도착지 인도조건 → 도착 시점"
+   ],
+   "relatedConceptIds": [
+    "IA175",
+    "IA176"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "선적 시점",
+    "도착 시점",
+    "대금 수령 시점"
+   ],
+   "slots": [
+    {
+     "label": "선적지 인도조건",
+     "answer": "선적 시점"
+    },
+    {
+     "label": "도착지 인도조건",
+     "answer": "도착 시점"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "위험·점유 이전 시점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3683,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA178-Q01",
+   "primaryConceptId": "IA178",
+   "conceptIds": [
+    "IA178"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "판매 리베이트 조건에 따라 받을 대가가 1,000,000원일 확률 60%, 900,000원일 확률 40%이다. 기댓값으로 추정한 거래가격은 (______)원이다.",
+   "blankAnswer": "960,000",
+   "acceptedAnswers": [
+    "960,000",
+    "960,000원"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "L018"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ev2",
+    "params": {
+     "a": 1000000.0,
+     "ra": 60.0,
+     "b": 900000.0,
+     "rb": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "결과 × 확률의 합.",
+   "confusion": null,
+   "calculation": "1,000,000 × 60% + 900,000 × 40% = 960,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3684,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA178-Q02",
+   "primaryConceptId": "IA178",
+   "conceptIds": [
+    "IA178"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "할인·리베이트·성과보너스처럼 금액이 바뀔 수 있는 대가를 (______)대가라 한다.",
+   "blankAnswer": "변동",
+   "acceptedAnswers": [
+    "변동"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "L018"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "거래가격 구성요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3685,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA178-Q03",
+   "primaryConceptId": "IA178",
+   "conceptIds": [
+    "IA178"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "classification",
+   "questionText": "상황별 변동대가 추정 방법을 연결하시오.",
+   "blankAnswer": "비슷한 계약이 많은 수량 리베이트 → 기댓값 / 받거나 못 받는 성과보너스 → 가능성이 가장 높은 금액",
+   "acceptedAnswers": [
+    "비슷한 계약이 많은 수량 리베이트 → 기댓값 / 받거나 못 받는 성과보너스 → 가능성이 가장 높은 금액"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "L018"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기댓값",
+    "가능성이 가장 높은 금액",
+    "최댓값"
+   ],
+   "slots": [
+    {
+     "label": "비슷한 계약이 많은 수량 리베이트",
+     "answer": "기댓값"
+    },
+    {
+     "label": "받거나 못 받는 성과보너스",
+     "answer": "가능성이 가장 높은 금액"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "더 잘 예측하는 방법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3686,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA178-Q04",
+   "primaryConceptId": "IA178",
+   "conceptIds": [
+    "IA178"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "변동대가는 유의적인 수익 (______)이 일어나지 않을 가능성이 매우 높은 정도까지만 포함한다.",
+   "blankAnswer": "환원",
+   "acceptedAnswers": [
+    "환원",
+    "되돌림",
+    "환입"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "L018"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "추정치의 제약.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3687,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA179-Q01",
+   "primaryConceptId": "IA179",
+   "conceptIds": [
+    "IA179"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "고객이 2년 후 1,210,000원을 지급하기로 했다(유의적 금융요소, 할인율 10%). 인식할 매출은 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "IA032"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pv",
+    "params": {
+     "fv": 1210000.0,
+     "r": 10.0,
+     "n": 2.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "현재가치(현금판매가격).",
+   "confusion": null,
+   "calculation": "PV = 1,210,000 ÷ (1 + 10%)^2 = 1,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3688,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA179-Q02",
+   "primaryConceptId": "IA179",
+   "conceptIds": [
+    "IA179"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "situation",
+   "questionText": "고객에게서 3년 전에 선수금을 받고 3년 후 제품을 인도하는 계약의 회계처리로 옳은 것은?",
+   "blankAnswer": "계약부채에 이자비용을 인식해 증가시킨다",
+   "acceptedAnswers": [
+    "계약부채에 이자비용을 인식해 증가시킨다"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "IA032"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약부채에 이자비용을 인식해 증가시킨다",
+    "금융요소는 후불에만 있으므로 조정하지 않는다",
+    "선수금을 즉시 수익으로 인식한다",
+    "이자수익을 인식한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기업이 금융 효익을 얻는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3689,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA179-Q03",
+   "primaryConceptId": "IA179",
+   "conceptIds": [
+    "IA179"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "이전 시점과 지급 시점 사이가 (______) 이내로 예상되면 금융요소를 조정하지 않을 수 있다.",
+   "blankAnswer": "1년",
+   "acceptedAnswers": [
+    "1년",
+    "12개월"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "IA032"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실무적 간편법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3690,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA180-Q01",
+   "primaryConceptId": "IA180",
+   "conceptIds": [
+    "IA180"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "용역 대가로 고객 회사 주식 1,000주(계약 개시일 공정가치 주당 5,000원)를 받기로 했다. 거래가격은 (______)원이다.",
+   "blankAnswer": "5,000,000",
+   "acceptedAnswers": [
+    "5,000,000",
+    "5,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA173"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 1000.0,
+     "b": 5000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "주식 수 × 공정가치.",
+   "confusion": null,
+   "calculation": "1,000 × 5,000 = 5,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3691,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA180-Q02",
+   "primaryConceptId": "IA180",
+   "conceptIds": [
+    "IA180"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "비현금대가의 공정가치를 합리적으로 추정할 수 없으면 약속한 재화·용역의 개별 (______)을 참조해 측정한다.",
+   "blankAnswer": "판매가격",
+   "acceptedAnswers": [
+    "판매가격"
+   ],
+   "relatedConceptIds": [
+    "IA173"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "간접 측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3692,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA180-Q03",
+   "primaryConceptId": "IA180",
+   "conceptIds": [
+    "IA180"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "고객이 현금 외의 형태로 약속한 대가는 (______)로 측정해 거래가격에 포함한다.",
+   "blankAnswer": "공정가치",
+   "acceptedAnswers": [
+    "공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA173"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원칙.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3693,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA181-Q01",
+   "primaryConceptId": "IA181",
+   "conceptIds": [
+    "IA181"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "고객에게서 구별되는 재화·용역을 받지 않고 고객에게 지급하는 대가는 (______)에서 차감한다.",
+   "blankAnswer": "수익",
+   "acceptedAnswers": [
+    "수익",
+    "거래가격",
+    "매출"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "IA178"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "거래가격 차감.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3694,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA181-Q02",
+   "primaryConceptId": "IA181",
+   "conceptIds": [
+    "IA181"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "제품 매출 50,000,000원을 인식하면서 고객(유통업체)에게 대가 없는 판매장려금 1,000,000원을 지급했다. 순매출은 (______)원이다.",
+   "blankAnswer": "49,000,000",
+   "acceptedAnswers": [
+    "49,000,000",
+    "49,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "IA178"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 50000000.0,
+     "b": 1000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출 − 고객에게 지급할 대가.",
+   "confusion": null,
+   "calculation": "50,000,000 − 1,000,000 = 49,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3695,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA181-Q03",
+   "primaryConceptId": "IA181",
+   "conceptIds": [
+    "IA181"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "situation",
+   "questionText": "고객에게서 공정가치 800,000원인 구별되는 광고 용역을 받고 1,000,000원을 지급했다. 처리로 옳은 것은?",
+   "blankAnswer": "광고비 800,000원, 수익 차감 200,000원",
+   "acceptedAnswers": [
+    "광고비 800,000원, 수익 차감 200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA173",
+    "IA178"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "광고비 800,000원, 수익 차감 200,000원",
+    "수익 차감 1,000,000원",
+    "광고비 1,000,000원",
+    "자산 1,000,000원"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공정가치 초과분만 수익 차감.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3696,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA182-Q01",
+   "primaryConceptId": "IA182",
+   "conceptIds": [
+    "IA182"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "classification",
+   "questionText": "판매 계약에 포함된 보증을 유형에 따라 회계처리와 연결하시오.",
+   "blankAnswer": "규격 충족 확신만 주는 기본 보증 → 제품보증충당부채 / 별도 구매 가능한 연장 보증 → 별도 수행의무(수익 이연)",
+   "acceptedAnswers": [
+    "규격 충족 확신만 주는 기본 보증 → 제품보증충당부채 / 별도 구매 가능한 연장 보증 → 별도 수행의무(수익 이연)"
+   ],
+   "relatedConceptIds": [
+    "IA129"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "제품보증충당부채",
+    "별도 수행의무(수익 이연)",
+    "즉시 수익"
+   ],
+   "slots": [
+    {
+     "label": "규격 충족 확신만 주는 기본 보증",
+     "answer": "제품보증충당부채"
+    },
+    {
+     "label": "별도 구매 가능한 연장 보증",
+     "answer": "별도 수행의무(수익 이연)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "추가 용역·별도 구매 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3697,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA182-Q02",
+   "primaryConceptId": "IA182",
+   "conceptIds": [
+    "IA182"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "연장 보증(용역 유형)에 배분한 거래가격이 360,000원이고 보증 기간 36개월 중 당기에 12개월이 지났다. 당기 보증 수익은 (______)원이다.",
+   "blankAnswer": "120,000",
+   "acceptedAnswers": [
+    "120,000",
+    "120,000원"
+   ],
+   "relatedConceptIds": [
+    "IA129"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 360000.0,
+     "b": 12.0,
+     "c": 36.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "배분액 × 경과 기간 ÷ 전체 기간.",
+   "confusion": null,
+   "calculation": "360,000 × 12 ÷ 36 = 120,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3698,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA182-Q03",
+   "primaryConceptId": "IA182",
+   "conceptIds": [
+    "IA182"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "고객이 보증을 (______)로 구매할 수 있으면 용역 유형 보증으로 본다.",
+   "blankAnswer": "별도",
+   "acceptedAnswers": [
+    "별도"
+   ],
+   "relatedConceptIds": [
+    "IA129"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "별도 수행의무.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3699,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA183-Q01",
+   "primaryConceptId": "IA183",
+   "conceptIds": [
+    "IA183"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "대리인인 오픈마켓이 판매대금 1,000,000원 거래를 중개하고 수수료율 10%를 받는다. 오픈마켓의 수익은 (______)원이다.",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000원"
+   ],
+   "relatedConceptIds": [
+    "IA175"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 1000000.0,
+     "r": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "순액(수수료).",
+   "confusion": null,
+   "calculation": "1,000,000 × 10% = 100,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3700,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA183-Q02",
+   "primaryConceptId": "IA183",
+   "conceptIds": [
+    "IA183"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "choice",
+   "questionText": "본인임을 나타내는 지표가 아닌 것은?",
+   "blankAnswer": "판매 수수료가 고정되어 있음",
+   "acceptedAnswers": [
+    "판매 수수료가 고정되어 있음"
+   ],
+   "relatedConceptIds": [
+    "IA175"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "판매 수수료가 고정되어 있음",
+    "약속 이행의 주된 책임",
+    "재고위험 부담",
+    "가격 결정 재량"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "고정 수수료는 대리인의 특징에 가깝다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3701,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA183-Q03",
+   "primaryConceptId": "IA183",
+   "conceptIds": [
+    "IA183"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "고객에게 이전되기 전에 재화·용역을 통제하면 (______)으로서 총액으로 수익을 인식한다.",
+   "blankAnswer": "본인",
+   "acceptedAnswers": [
+    "본인"
+   ],
+   "relatedConceptIds": [
+    "IA175"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "본인·대리인 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3702,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA184-Q01",
+   "primaryConceptId": "IA184",
+   "conceptIds": [
+    "IA184"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "상품을 1,000,000원에 팔면서 포인트를 적립해 주었다. 상품과 포인트의 개별 판매가격 합계는 1,100,000원이고 그중 포인트의 개별 판매가격은 100,000원이다. 포인트에 배분할 거래가격은 (______)원이다.",
+   "blankAnswer": "90,909",
+   "acceptedAnswers": [
+    "90,909",
+    "90,909원"
+   ],
+   "relatedConceptIds": [
+    "IA174",
+    "IA189"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1000000.0,
+     "b": 100000.0,
+     "c": 1100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "거래가격 × 포인트 개별가 ÷ (상품 + 포인트) 개별가 합계.",
+   "confusion": null,
+   "calculation": "1,000,000 × 100,000 ÷ 1,100,000 = 90,909",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3703,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA184-Q02",
+   "primaryConceptId": "IA184",
+   "conceptIds": [
+    "IA184"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "포인트 배분액 90,909원 중 사용 예상 총포인트 80,000점 대비 당기 누적 사용 포인트가 60,000점이다(전기 인식액 없음). 당기 포인트 수익은 (______)원이다.",
+   "blankAnswer": "68,182",
+   "acceptedAnswers": [
+    "68,182",
+    "68,182원"
+   ],
+   "relatedConceptIds": [
+    "IA174",
+    "IA189"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 90909.0,
+     "b": 60000.0,
+     "c": 80000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "배분액 × 사용 ÷ 사용 예상.",
+   "confusion": null,
+   "calculation": "90,909 × 60,000 ÷ 80,000 = 68,182",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3704,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA184-Q03",
+   "primaryConceptId": "IA184",
+   "conceptIds": [
+    "IA184"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "고객충성 포인트 배분액은 포인트가 사용될 때까지 계약(______)로 인식한다.",
+   "blankAnswer": "부채",
+   "acceptedAnswers": [
+    "부채"
+   ],
+   "relatedConceptIds": [
+    "IA174",
+    "IA189"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "미이행 의무.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3705,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA185-Q01",
+   "primaryConceptId": "IA185",
+   "conceptIds": [
+    "IA185"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "상품권을 판매하고 받은 현금은 계약(______)로 인식한다.",
+   "blankAnswer": "부채",
+   "acceptedAnswers": [
+    "부채",
+    "부채(선수금)"
+   ],
+   "relatedConceptIds": [
+    "IA189"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선수금.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3706,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA185-Q02",
+   "primaryConceptId": "IA185",
+   "conceptIds": [
+    "IA185"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "상품권 10,000,000원을 팔았고 사용 예상액 기준 당기 행사 비율은 70%이다(미행사 예상분도 행사 양상에 비례해 인식, 전기 없음). 당기 상품권 관련 수익은 (______)원이다.",
+   "blankAnswer": "7,000,000",
+   "acceptedAnswers": [
+    "7,000,000",
+    "7,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA189"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 10000000.0,
+     "b": 70.0,
+     "c": 100.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "판매액 × 행사 비율(미행사분 비례 포함).",
+   "confusion": null,
+   "calculation": "10,000,000 × 70 ÷ 100 = 7,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3707,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA185-Q03",
+   "primaryConceptId": "IA185",
+   "conceptIds": [
+    "IA185"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "exception",
+   "questionText": "상품권 미행사 부분을 수익으로 인식하지 않고 부채로 두어야 하는 경우는?",
+   "blankAnswer": "법률에 따라 미사용 금액을 다른 당사자에게 넘겨야 하는 경우",
+   "acceptedAnswers": [
+    "법률에 따라 미사용 금액을 다른 당사자에게 넘겨야 하는 경우"
+   ],
+   "relatedConceptIds": [
+    "IA189"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "법률에 따라 미사용 금액을 다른 당사자에게 넘겨야 하는 경우",
+    "행사 양상이 예측 가능한 경우",
+    "유효기간이 지난 경우",
+    "상품권을 할인 판매한 경우"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기업이 받을 권리가 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3708,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA186-Q01",
+   "primaryConceptId": "IA186",
+   "conceptIds": [
+    "IA186"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "classification",
+   "questionText": "계약변경 유형별 처리를 연결하시오.",
+   "blankAnswer": "구별되는 재화 추가 + 개별 판매가격만큼 가격 상승 → 별도 계약 / 남은 재화가 구별됨(가격은 개별가 미반영) → 기존 계약 종료 후 새 계약 / 단일 공사 수행의무의 설계 변경 → 누적효과 일괄조정",
+   "acceptedAnswers": [
+    "구별되는 재화 추가 + 개별 판매가격만큼 가격 상승 → 별도 계약 / 남은 재화가 구별됨(가격은 개별가 미반영) → 기존 계약 종료 후 새 계약 / 단일 공사 수행의무의 설계 변경 → 누적효과 일괄조정"
+   ],
+   "relatedConceptIds": [
+    "IA171",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "별도 계약",
+    "기존 계약 종료 후 새 계약",
+    "누적효과 일괄조정"
+   ],
+   "slots": [
+    {
+     "label": "구별되는 재화 추가 + 개별 판매가격만큼 가격 상승",
+     "answer": "별도 계약"
+    },
+    {
+     "label": "남은 재화가 구별됨(가격은 개별가 미반영)",
+     "answer": "기존 계약 종료 후 새 계약"
+    },
+    {
+     "label": "단일 공사 수행의무의 설계 변경",
+     "answer": "누적효과 일괄조정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "변경의 실질로 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3709,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA186-Q02",
+   "primaryConceptId": "IA186",
+   "conceptIds": [
+    "IA186"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "계약변경은 계약 당사자들이 (______)한 계약 범위나 가격의 변경이다.",
+   "blankAnswer": "승인",
+   "acceptedAnswers": [
+    "승인"
+   ],
+   "relatedConceptIds": [
+    "IA171",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구두·관행 승인 포함.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3710,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA186-Q03",
+   "primaryConceptId": "IA186",
+   "conceptIds": [
+    "IA186"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "situation",
+   "questionText": "건설 공사(단일 수행의무) 진행 중 설계 변경으로 계약금액이 늘었다. 처리로 옳은 것은?",
+   "blankAnswer": "진행률과 거래가격을 다시 계산해 누적효과를 변경일에 조정",
+   "acceptedAnswers": [
+    "진행률과 거래가격을 다시 계산해 누적효과를 변경일에 조정"
+   ],
+   "relatedConceptIds": [
+    "IA171",
+    "IA174"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "진행률과 거래가격을 다시 계산해 누적효과를 변경일에 조정",
+    "별도 계약으로 처리",
+    "다음 연도부터 전진 적용",
+    "공사 완료 시 일괄 반영"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "남은 용역이 구별되지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3711,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA187-Q01",
+   "primaryConceptId": "IA187",
+   "conceptIds": [
+    "IA187"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "계약을 체결하지 않았다면 들지 않았을 원가를 계약체결 (______)원가라 한다.",
+   "blankAnswer": "증분",
+   "acceptedAnswers": [
+    "증분"
+   ],
+   "relatedConceptIds": [
+    "IA190"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자산 인식 가능.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3712,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA187-Q02",
+   "primaryConceptId": "IA187",
+   "conceptIds": [
+    "IA187"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "3년(36개월) 서비스 계약 체결 수수료 300,000원을 자산으로 인식했고 당기에 12개월 용역을 제공했다. 당기 상각액은 (______)원이다.",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000원"
+   ],
+   "relatedConceptIds": [
+    "IA190"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 300000.0,
+     "b": 12.0,
+     "c": 36.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "자산 × 경과 ÷ 전체.",
+   "confusion": null,
+   "calculation": "300,000 × 12 ÷ 36 = 100,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3713,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA187-Q03",
+   "primaryConceptId": "IA187",
+   "conceptIds": [
+    "IA187"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "exception",
+   "questionText": "계약체결 증분원가를 발생 시 비용으로 처리할 수 있는 경우는?",
+   "blankAnswer": "상각기간이 1년 이하인 경우",
+   "acceptedAnswers": [
+    "상각기간이 1년 이하인 경우"
+   ],
+   "relatedConceptIds": [
+    "IA190"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "상각기간이 1년 이하인 경우",
+    "금액이 큰 경우",
+    "계약이 3년 이상인 경우",
+    "고객이 신규인 경우"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실무적 간편법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3714,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA188-Q01",
+   "primaryConceptId": "IA188",
+   "conceptIds": [
+    "IA188"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "누적 인식 공사수익이 4,000,000원, 누적 청구액이 3,000,000원이다. 계약자산은 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA189",
+    "IA020"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 4000000.0,
+     "b": 3000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "누적 수익 − 누적 청구.",
+   "confusion": null,
+   "calculation": "4,000,000 − 3,000,000 = 1,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3715,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA188-Q02",
+   "primaryConceptId": "IA188",
+   "conceptIds": [
+    "IA188"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "이전한 재화의 대가를 받을 권리가 시간 경과 외의 조건에 달려 있으면 계약(______)으로 인식한다.",
+   "blankAnswer": "자산",
+   "acceptedAnswers": [
+    "자산"
+   ],
+   "relatedConceptIds": [
+    "IA189",
+    "IA020"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조건부 권리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3716,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA188-Q03",
+   "primaryConceptId": "IA188",
+   "conceptIds": [
+    "IA188"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "situation",
+   "questionText": "계약자산을 수취채권으로 대체하는 시점은?",
+   "blankAnswer": "대가를 받을 권리가 무조건적이 되었을 때",
+   "acceptedAnswers": [
+    "대가를 받을 권리가 무조건적이 되었을 때"
+   ],
+   "relatedConceptIds": [
+    "IA189",
+    "IA020"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "대가를 받을 권리가 무조건적이 되었을 때",
+    "현금을 받았을 때",
+    "계약을 체결했을 때",
+    "보고기간 말"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "청구 가능 시점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3717,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA189-Q01",
+   "primaryConceptId": "IA189",
+   "conceptIds": [
+    "IA189"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "연간 구독료 1,200,000원을 선불로 받았고 보고기간 말 현재 전체 12개월 중 남은 구독 기간이 4개월이다. 기말 계약부채는 (______)원이다.",
+   "blankAnswer": "400,000",
+   "acceptedAnswers": [
+    "400,000",
+    "400,000원"
+   ],
+   "relatedConceptIds": [
+    "IA188",
+    "IA185",
+    "IA184"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1200000.0,
+     "b": 4.0,
+     "c": 12.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "선수액 × 남은 개월 ÷ 전체 개월.",
+   "confusion": null,
+   "calculation": "1,200,000 × 4 ÷ 12 = 400,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3718,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA189-Q02",
+   "primaryConceptId": "IA189",
+   "conceptIds": [
+    "IA189"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "하나의 계약은 계약자산과 계약부채를 (______)으로 표시한다.",
+   "blankAnswer": "순액",
+   "acceptedAnswers": [
+    "순액"
+   ],
+   "relatedConceptIds": [
+    "IA188",
+    "IA185",
+    "IA184"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약별 순액.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3719,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA189-Q03",
+   "primaryConceptId": "IA189",
+   "conceptIds": [
+    "IA189"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "고객에게 대가를 미리 받고 아직 재화를 이전하지 않은 의무를 계약(______)라 한다.",
+   "blankAnswer": "부채",
+   "acceptedAnswers": [
+    "부채"
+   ],
+   "relatedConceptIds": [
+    "IA188",
+    "IA185",
+    "IA184"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선수금 성격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3720,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA190-Q01",
+   "primaryConceptId": "IA190",
+   "conceptIds": [
+    "IA190"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "계약금액 10,000,000원, 총예정원가 8,000,000원, 2년차 말 누적 발생원가 5,200,000원, 1년차에 인식한 수익 2,500,000원일 때 2년차 공사수익은 (______)원이다.",
+   "blankAnswer": "4,000,000",
+   "acceptedAnswers": [
+    "4,000,000",
+    "4,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA191",
+    "IA192",
+    "IA188",
+    "IA189"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "poc_rev",
+    "params": {
+     "contract": 10000000.0,
+     "cum": 5200000.0,
+     "total": 8000000.0,
+     "prior": 2500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "누적 수익 − 전기 누적 수익.",
+   "confusion": null,
+   "calculation": "10,000,000 × 5,200,000 ÷ 8,000,000 − 전기 누적수익 2,500,000 = 4,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3721,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA190-Q02",
+   "primaryConceptId": "IA190",
+   "conceptIds": [
+    "IA190"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "진행률을 합리적으로 측정할 수 없지만 원가 회수가 예상되면 (______)원가 범위에서만 수익을 인식한다.",
+   "blankAnswer": "발생",
+   "acceptedAnswers": [
+    "발생"
+   ],
+   "relatedConceptIds": [
+    "IA191",
+    "IA192",
+    "IA188",
+    "IA189"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원가 회수 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3722,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA190-Q03",
+   "primaryConceptId": "IA190",
+   "conceptIds": [
+    "IA190"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "1년차 공사수익 2,500,000원, 1년차 발생원가 2,000,000원일 때 1년차 공사이익은 (______)원이다.",
+   "blankAnswer": "500,000",
+   "acceptedAnswers": [
+    "500,000",
+    "500,000원"
+   ],
+   "relatedConceptIds": [
+    "IA191",
+    "IA192",
+    "IA188",
+    "IA189"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 2500000.0,
+     "b": 2000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공사수익 − 발생원가.",
+   "confusion": null,
+   "calculation": "2,500,000 − 2,000,000 = 500,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3723,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA191-Q01",
+   "primaryConceptId": "IA191",
+   "conceptIds": [
+    "IA191"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "누적 발생원가 5,200,000원, 총예정원가 8,000,000원일 때 원가기준 진행률은 (______)%이다.",
+   "blankAnswer": "65",
+   "acceptedAnswers": [
+    "65",
+    "65%"
+   ],
+   "relatedConceptIds": [
+    "IA190",
+    "IA176"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 5200000.0,
+     "b": 8000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "누적원가 ÷ 총예정원가.",
+   "confusion": null,
+   "calculation": "5,200,000 ÷ 8,000,000 × 100 = 65%",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3724,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA191-Q02",
+   "primaryConceptId": "IA191",
+   "conceptIds": [
+    "IA191"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "classification",
+   "questionText": "진행률 측정 방법을 연결하시오.",
+   "blankAnswer": "완료한 단계·측량 결과 → 산출법 / 발생원가·투입 노동시간 → 투입법",
+   "acceptedAnswers": [
+    "완료한 단계·측량 결과 → 산출법 / 발생원가·투입 노동시간 → 투입법"
+   ],
+   "relatedConceptIds": [
+    "IA190",
+    "IA176"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "산출법",
+    "투입법"
+   ],
+   "slots": [
+    {
+     "label": "완료한 단계·측량 결과",
+     "answer": "산출법"
+    },
+    {
+     "label": "발생원가·투입 노동시간",
+     "answer": "투입법"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "결과 vs 노력.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3725,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA191-Q03",
+   "primaryConceptId": "IA191",
+   "conceptIds": [
+    "IA191"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "exception",
+   "questionText": "원가기준 투입법에서 비정상적인 재료 낭비 원가는 진행률 계산에서 (______)한다.",
+   "blankAnswer": "제외",
+   "acceptedAnswers": [
+    "제외"
+   ],
+   "relatedConceptIds": [
+    "IA190",
+    "IA176"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이행에 기여하지 않음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3726,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA192-Q01",
+   "primaryConceptId": "IA192",
+   "conceptIds": [
+    "IA192"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "calculation",
+   "questionText": "계약금액 10,000,000원인 공사의 총예정원가가 11,000,000원으로 늘었다. 계약 전체 예상 손실은 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA190",
+    "IA127"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 11000000.0,
+     "b": 10000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "총예정원가 − 계약금액.",
+   "confusion": null,
+   "calculation": "11,000,000 − 10,000,000 = 1,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3727,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA192-Q02",
+   "primaryConceptId": "IA192",
+   "conceptIds": [
+    "IA192"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "definition",
+   "questionText": "손실이 예상되는 계약의 전체 예상 손실은 예상되는 시점에 (______) 인식한다.",
+   "blankAnswer": "즉시",
+   "acceptedAnswers": [
+    "즉시",
+    "전액",
+    "즉시 전액"
+   ],
+   "relatedConceptIds": [
+    "IA190",
+    "IA127"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손실부담계약.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3728,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA192-Q03",
+   "primaryConceptId": "IA192",
+   "conceptIds": [
+    "IA192"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-RV",
+   "questionType": "choice",
+   "questionText": "공사계약 예상 손실에 적용하는 기준서는?",
+   "blankAnswer": "제1037호 손실부담계약",
+   "acceptedAnswers": [
+    "제1037호 손실부담계약"
+   ],
+   "relatedConceptIds": [
+    "IA190",
+    "IA127"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "제1037호 손실부담계약",
+    "제1115호만",
+    "제1016호",
+    "제1002호"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1115호에는 손실 규정이 없고 제1037호를 적용한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1115호 '고객과의 계약에서 생기는 수익'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3729,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

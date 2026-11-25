@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 341,
+    "complete": 364,
     "total": 577,
-    "missing": 236,
+    "missing": 213,
     "needsReview": 12,
-    "storedFlagCovered": 411
+    "storedFlagCovered": 434
    },
    "경영학": {
     "complete": 21,
@@ -40,7 +40,7 @@
   },
   "packs": {
    "IA": {
-    "complete": 214,
+    "complete": 237,
     "total": 332
    },
    "AA": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 675,
+   "complete": 698,
    "total": 1233,
-   "missing": 558
+   "missing": 535
   }
  },
  "items": [
@@ -4711,15 +4711,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "수익인식 5단계",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA170"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA170-Q01",
+    "IA170-Q02",
+    "IA170-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0210",
@@ -4728,15 +4732,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "계약 식별",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA171"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA171-Q01",
+    "IA171-Q02",
+    "IA171-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0211",
@@ -4745,15 +4753,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "수행의무 식별",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA172"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA172-Q01",
+    "IA172-Q02",
+    "IA172-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0212",
@@ -4762,15 +4774,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "거래가격 산정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA173"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA173-Q01",
+    "IA173-Q02",
+    "IA173-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0213",
@@ -4779,15 +4795,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "거래가격 배분",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA174"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA174-Q01",
+    "IA174-Q02",
+    "IA174-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0214",
@@ -4796,15 +4816,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "수행의무 이행",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA175"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA175-Q01",
+    "IA175-Q02",
+    "IA175-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0215",
@@ -4813,15 +4837,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "기간에 걸친 수익인식",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA176"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA176-Q01",
+    "IA176-Q02",
+    "IA176-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0216",
@@ -4830,15 +4858,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "한 시점 수익인식",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA177"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA177-Q01",
+    "IA177-Q02",
+    "IA177-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0217",
@@ -4847,15 +4879,20 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "변동대가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA178"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA178-Q01",
+    "IA178-Q02",
+    "IA178-Q03",
+    "IA178-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0218",
@@ -4864,15 +4901,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "유의적인 금융요소",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA179"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA179-Q01",
+    "IA179-Q02",
+    "IA179-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0219",
@@ -4881,15 +4922,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "비현금대가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA180"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA180-Q01",
+    "IA180-Q02",
+    "IA180-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0220",
@@ -4898,15 +4943,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "고객에게 지급할 대가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA181"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA181-Q01",
+    "IA181-Q02",
+    "IA181-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0221",
@@ -4936,17 +4985,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "보증",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA182"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "IA129"
+   "existingQuestionIds": [
+    "IA182-Q01",
+    "IA182-Q02",
+    "IA182-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0223",
@@ -4955,17 +5006,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "본인과 대리인",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA183"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "A05"
+   "existingQuestionIds": [
+    "IA183-Q01",
+    "IA183-Q02",
+    "IA183-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0224",
@@ -4974,15 +5027,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "고객충성제도",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA184"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA184-Q01",
+    "IA184-Q02",
+    "IA184-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0225",
@@ -4991,15 +5048,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "상품권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA185"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA185-Q01",
+    "IA185-Q02",
+    "IA185-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0226",
@@ -5008,15 +5069,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "계약변경",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA186"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA186-Q01",
+    "IA186-Q02",
+    "IA186-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0227",
@@ -5025,15 +5090,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "계약원가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA187"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA187-Q01",
+    "IA187-Q02",
+    "IA187-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0228",
@@ -5042,15 +5111,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "계약자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA188"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA188-Q01",
+    "IA188-Q02",
+    "IA188-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0229",
@@ -5059,15 +5132,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "계약부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA189"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA189-Q01",
+    "IA189-Q02",
+    "IA189-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0230",
@@ -5076,15 +5153,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "공사계약",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA190"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA190-Q01",
+    "IA190-Q02",
+    "IA190-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0231",
@@ -5093,15 +5174,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "진행률",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA191"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA191-Q01",
+    "IA191-Q02",
+    "IA191-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0232",
@@ -5110,15 +5195,19 @@
    "packId": "IA",
    "parentChapter": "고객과의 계약에서 생기는 수익",
    "scopeTitle": "손실부담계약과 수익인식의 관계",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA192"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA192-Q01",
+    "IA192-Q02",
+    "IA192-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0233",

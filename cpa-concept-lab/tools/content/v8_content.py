@@ -19,6 +19,7 @@ ORDER = [
     "ia_financial_instruments",
     "ia_provisions",
     "ia_equity",
+    "ia_revenue",
 ]
 
 for name in ORDER:
