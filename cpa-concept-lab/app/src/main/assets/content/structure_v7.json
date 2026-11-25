@@ -2071,6 +2071,12 @@
    "sortOrder": 4
   },
   {
+   "id": "TX-G-S05",
+   "chapterId": "TX-G",
+   "title": "벤처기업 관련 특례",
+   "sortOrder": 5
+  },
+  {
    "id": "TX-H-S01",
    "chapterId": "TX-H",
    "title": "세목 간 비교",
@@ -16096,8 +16102,10 @@
    "subjectId": "TX",
    "unit": "소득세법",
    "item": "결정세액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TC024"
+   ],
+   "covered": true,
    "sortOrder": 1159
   },
   {
@@ -16898,8 +16906,12 @@
    "subjectId": "TX",
    "unit": "조세특례제한법",
    "item": "벤처기업 관련 특례",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "TG011",
+    "TG012",
+    "TG013"
+   ],
+   "covered": true,
    "sortOrder": 1232
   },
   {

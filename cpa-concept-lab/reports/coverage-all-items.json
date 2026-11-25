@@ -24,18 +24,18 @@
     "storedFlagCovered": 132
    },
    "기업법": {
-    "complete": 127,
+    "complete": 131,
     "total": 131,
-    "missing": 4,
-    "needsReview": 7,
+    "missing": 0,
+    "needsReview": 8,
     "storedFlagCovered": 131
    },
    "세법개론": {
-    "complete": 159,
+    "complete": 161,
     "total": 161,
-    "missing": 2,
+    "missing": 0,
     "needsReview": 0,
-    "storedFlagCovered": 159
+    "storedFlagCovered": 161
    }
   },
   "packs": {
@@ -68,19 +68,19 @@
     "total": 132
    },
    "CPA-LAW": {
-    "complete": 127,
+    "complete": 131,
     "total": 131
    },
    "TX": {
-    "complete": 159,
+    "complete": 161,
     "total": 161
    }
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 1227,
+   "complete": 1233,
    "total": 1233,
-   "missing": 6
+   "missing": 0
   }
  },
  "items": [
@@ -21263,13 +21263,12 @@
    ],
    "existingQuestionIds": [
     "LB030-Q01",
-    "LB030-Q02"
+    "LB030-Q02",
+    "LB030-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -21307,13 +21306,13 @@
    ],
    "existingQuestionIds": [
     "LC002-Q01",
-    "LC002-Q02"
+    "LC002-Q02",
+    "LC002-Q03",
+    "LC002-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -21450,13 +21449,13 @@
    ],
    "existingQuestionIds": [
     "LC002-Q01",
-    "LC002-Q02"
+    "LC002-Q02",
+    "LC002-Q03",
+    "LC002-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -22426,13 +22425,12 @@
    ],
    "existingQuestionIds": [
     "LD048-Q01",
-    "LD048-Q02"
+    "LD048-Q02",
+    "LD048-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "NEEDS_REVIEW",
+   "gapType": "F",
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -25559,15 +25557,22 @@
    "packId": "TX",
    "parentChapter": "소득세법",
    "scopeTitle": "결정세액",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "TC024"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "TC024-Q01",
+    "TC024-Q02",
+    "TC024-Q03",
+    "TC024-Q04",
+    "TC024-Q05",
+    "TC024-Q06"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-TX-1160",
@@ -27099,15 +27104,32 @@
    "packId": "TX",
    "parentChapter": "조세특례제한법",
    "scopeTitle": "벤처기업 관련 특례",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "TG011",
+    "TG012",
+    "TG013"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "TG011-Q01",
+    "TG011-Q02",
+    "TG011-Q03",
+    "TG011-Q04",
+    "TG011-Q05",
+    "TG012-Q01",
+    "TG012-Q02",
+    "TG012-Q03",
+    "TG012-Q04",
+    "TG012-Q05",
+    "TG013-Q01",
+    "TG013-Q02",
+    "TG013-Q03",
+    "TG013-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-TX-1233",

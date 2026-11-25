@@ -23,18 +23,18 @@
    "storedFlagCovered": 132
   },
   "기업법": {
-   "complete": 127,
+   "complete": 131,
    "total": 131,
-   "missing": 4,
-   "needsReview": 7,
+   "missing": 0,
+   "needsReview": 8,
    "storedFlagCovered": 131
   },
   "세법개론": {
-   "complete": 159,
+   "complete": 161,
    "total": 161,
-   "missing": 2,
+   "missing": 0,
    "needsReview": 0,
-   "storedFlagCovered": 159
+   "storedFlagCovered": 161
   }
  },
  "packs": {
@@ -67,18 +67,18 @@
    "total": 132
   },
   "CPA-LAW": {
-   "complete": 127,
+   "complete": 131,
    "total": 131
   },
   "TX": {
-   "complete": 159,
+   "complete": 161,
    "total": 161
   }
  },
  "integrityErrors": 0,
  "overall": {
-  "complete": 1227,
+  "complete": 1233,
   "total": 1233,
-  "missing": 6
+  "missing": 0
  }
 }

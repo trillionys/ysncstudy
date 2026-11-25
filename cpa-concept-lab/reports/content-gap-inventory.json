@@ -24,18 +24,18 @@
     "storedFlagCovered": 132
    },
    "기업법": {
-    "complete": 127,
+    "complete": 131,
     "total": 131,
-    "missing": 4,
-    "needsReview": 7,
+    "missing": 0,
+    "needsReview": 8,
     "storedFlagCovered": 131
    },
    "세법개론": {
-    "complete": 159,
+    "complete": 161,
     "total": 161,
-    "missing": 2,
+    "missing": 0,
     "needsReview": 0,
-    "storedFlagCovered": 159
+    "storedFlagCovered": 161
    }
   },
   "packs": {
@@ -68,144 +68,21 @@
     "total": 132
    },
    "CPA-LAW": {
-    "complete": 127,
+    "complete": 131,
     "total": 131
    },
    "TX": {
-    "complete": 159,
+    "complete": 161,
     "total": 161
    }
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 1227,
+   "complete": 1233,
    "total": 1233,
-   "missing": 6
+   "missing": 0
   }
  },
- "gaps": [
-  {
-   "scopeNodeId": "CUR-CPA-LAW-0978",
-   "officialSubject": "기업법",
-   "contentPack": "기업법",
-   "packId": "CPA-LAW",
-   "parentChapter": "상행위법",
-   "scopeTitle": "채권매입업",
-   "existingConceptIds": [
-    "LB030"
-   ],
-   "existingQuestionIds": [
-    "LB030-Q01",
-    "LB030-Q02"
-   ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
-   "linkCandidates": [],
-   "storedCoveredFlag": true
-  },
-  {
-   "scopeNodeId": "CUR-CPA-LAW-0980",
-   "officialSubject": "기업법",
-   "contentPack": "기업법",
-   "packId": "CPA-LAW",
-   "parentChapter": "회사법 총론",
-   "scopeTitle": "회사의 종류",
-   "existingConceptIds": [
-    "LC002"
-   ],
-   "existingQuestionIds": [
-    "LC002-Q01",
-    "LC002-Q02"
-   ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
-   "linkCandidates": [],
-   "storedCoveredFlag": true
-  },
-  {
-   "scopeNodeId": "CUR-CPA-LAW-0986",
-   "officialSubject": "기업법",
-   "contentPack": "기업법",
-   "packId": "CPA-LAW",
-   "parentChapter": "회사법 총론",
-   "scopeTitle": "회사형태 비교",
-   "existingConceptIds": [
-    "LC002"
-   ],
-   "existingQuestionIds": [
-    "LC002-Q01",
-    "LC002-Q02"
-   ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
-   "linkCandidates": [],
-   "storedCoveredFlag": true
-  },
-  {
-   "scopeNodeId": "CUR-CPA-LAW-1024",
-   "officialSubject": "기업법",
-   "contentPack": "기업법",
-   "packId": "CPA-LAW",
-   "parentChapter": "주식회사",
-   "scopeTitle": "전자주주총회",
-   "existingConceptIds": [
-    "LD048"
-   ],
-   "existingQuestionIds": [
-    "LD048-Q01",
-    "LD048-Q02"
-   ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
-   "linkCandidates": [],
-   "storedCoveredFlag": true
-  },
-  {
-   "scopeNodeId": "CUR-TX-1159",
-   "officialSubject": "세법개론",
-   "contentPack": "세법개론",
-   "packId": "TX",
-   "parentChapter": "소득세법",
-   "scopeTitle": "결정세액",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-TX-1232",
-   "officialSubject": "세법개론",
-   "contentPack": "세법개론",
-   "packId": "TX",
-   "parentChapter": "조세특례제한법",
-   "scopeTitle": "벤처기업 관련 특례",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  }
- ],
+ "gaps": [],
  "integrity": []
 }
