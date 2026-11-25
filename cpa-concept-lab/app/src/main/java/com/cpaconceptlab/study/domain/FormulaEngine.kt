@@ -158,6 +158,7 @@ object FormulaEngine {
         amount("eps") { r0((it["ni"] - it["pref"]) / it["shares"]) }
         percent("pct_ratio") { r2(it["a"] / it["b"] * 100) }
         percent("mult_ratio") { r2(it["a"] / it["b"]) }
+        amount("mul2") { r0(it["a"] * it["b"]) }
         amount("ev2") { r0(it["a"] * it["ra"] / 100.0 + it["b"] * it["rb"] / 100.0) }
         amount("fv") { r0(it["pv"] * (1 + pc(it["r"])).pow(it["n"])) }
         amount("pv") { r0(it["fv"] / (1 + pc(it["r"])).pow(it["n"])) }

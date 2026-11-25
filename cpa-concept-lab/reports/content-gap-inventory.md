@@ -4,12 +4,12 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 
 | 시험과목 | 구축 | 전체 | 미구축 | 구축률 |
 |---|---:|---:|---:|---:|
-| 회계학 | 324 | 577 | 253 | 56.2% |
+| 회계학 | 341 | 577 | 236 | 59.1% |
 | 경영학 | 21 | 232 | 211 | 9.1% |
 | 경제원론 | 27 | 132 | 105 | 20.5% |
 | 기업법 | 127 | 131 | 4 | 96.9% |
 | 세법개론 | 159 | 161 | 2 | 98.8% |
-| **전체** | 658 | 1233 | 575 | 53.4% |
+| **전체** | 675 | 1233 | 558 | 54.7% |
 
 무결성 오류: 0건
 
@@ -29,28 +29,6 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0078 | 비화폐성자산 교환 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0087 | 구성요소별 감가상각 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0092 | 재평가잉여금 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-
-## 회계학 · 중급회계 · 자본
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0191 | 자본금 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0192 | 자본잉여금 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0193 | 이익잉여금 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0194 | 기타포괄손익누계액 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0195 | 자기주식 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0196 | 유상증자 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0197 | 무상증자 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0198 | 유상감자 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0199 | 무상감자 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0200 | 주식발행초과금 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0201 | 주식할인발행차금 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0202 | 배당 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0203 | 주식배당 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0204 | 현금배당 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0205 | 주식분할 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0206 | 주식병합 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0208 | 자본거래와 손익거래 | A | NOT_STARTED | 개념·문항 없음 |
 
 ## 회계학 · 중급회계 · 고객과의 계약에서 생기는 수익
 
@@ -169,9 +147,9 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0296 | 기본주당이익 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0297 | 보통주 귀속손익 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0298 | 가중평균유통보통주식수 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0299 | 무상증자 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0300 | 주식분할 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0301 | 유상증자 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0299 | 무상증자 | E | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0300 | 주식분할 | E | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0301 | 유상증자 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0302 | 권리발행 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0303 | 희석주당이익 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0304 | 잠재적보통주 | A | NOT_STARTED | 개념·문항 없음 |

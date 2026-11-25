@@ -687,6 +687,15 @@
    "title": "충당부채 및 우발사항",
    "englishTitle": "Provisions and contingencies",
    "sortOrder": 65
+  },
+  {
+   "partTitle": "자본",
+   "id": "IA-EQ",
+   "code": "EQ",
+   "subjectId": "IA",
+   "title": "자본",
+   "englishTitle": "Equity",
+   "sortOrder": 66
   }
  ],
  "sections": [
@@ -2189,6 +2198,24 @@
    "chapterId": "IA-PR",
    "title": "우발부채·우발자산과 공시",
    "sortOrder": 4
+  },
+  {
+   "id": "IA-EQ-S01",
+   "chapterId": "IA-EQ",
+   "title": "자본의 구성",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-EQ-S02",
+   "chapterId": "IA-EQ",
+   "title": "자기주식과 증자·감자",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-EQ-S03",
+   "chapterId": "IA-EQ",
+   "title": "배당과 주식 수의 변동",
+   "sortOrder": 3
   },
   {
    "id": "AA-A-S90",
@@ -4979,8 +5006,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "자본금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA140"
+   ],
+   "covered": true,
    "sortOrder": 191
   },
   {
@@ -4988,8 +5017,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "자본잉여금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA141"
+   ],
+   "covered": true,
    "sortOrder": 192
   },
   {
@@ -4997,8 +5028,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "이익잉여금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA142"
+   ],
+   "covered": true,
    "sortOrder": 193
   },
   {
@@ -5006,8 +5039,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "기타포괄손익누계액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA143"
+   ],
+   "covered": true,
    "sortOrder": 194
   },
   {
@@ -5015,8 +5050,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "자기주식",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA144"
+   ],
+   "covered": true,
    "sortOrder": 195
   },
   {
@@ -5024,8 +5061,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "유상증자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA145"
+   ],
+   "covered": true,
    "sortOrder": 196
   },
   {
@@ -5033,8 +5072,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "무상증자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA146"
+   ],
+   "covered": true,
    "sortOrder": 197
   },
   {
@@ -5042,8 +5083,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "유상감자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA147"
+   ],
+   "covered": true,
    "sortOrder": 198
   },
   {
@@ -5051,8 +5094,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "무상감자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA148"
+   ],
+   "covered": true,
    "sortOrder": 199
   },
   {
@@ -5060,8 +5105,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "주식발행초과금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA149"
+   ],
+   "covered": true,
    "sortOrder": 200
   },
   {
@@ -5069,8 +5116,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "주식할인발행차금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA150"
+   ],
+   "covered": true,
    "sortOrder": 201
   },
   {
@@ -5078,8 +5127,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "배당",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA151"
+   ],
+   "covered": true,
    "sortOrder": 202
   },
   {
@@ -5087,8 +5138,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "주식배당",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA152"
+   ],
+   "covered": true,
    "sortOrder": 203
   },
   {
@@ -5096,8 +5149,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "현금배당",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA153"
+   ],
+   "covered": true,
    "sortOrder": 204
   },
   {
@@ -5105,8 +5160,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "주식분할",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA154"
+   ],
+   "covered": true,
    "sortOrder": 205
   },
   {
@@ -5114,8 +5171,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "주식병합",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA155"
+   ],
+   "covered": true,
    "sortOrder": 206
   },
   {
@@ -5134,8 +5193,10 @@
    "subjectId": "IA",
    "unit": "자본",
    "item": "자본거래와 손익거래",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA156"
+   ],
+   "covered": true,
    "sortOrder": 208
   },
   {

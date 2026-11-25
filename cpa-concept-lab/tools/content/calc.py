@@ -940,6 +940,12 @@ def ev2(a, ra, b, rb):
     return v, f"{fmt(a)} × {fmt(ra)}% + {fmt(b)} × {fmt(rb)}% = {fmt(v)}"
 
 
+@formula()
+def mul2(a, b):
+    v = r0(a * b)
+    return v, f"{fmt(a)} × {fmt(b)} = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

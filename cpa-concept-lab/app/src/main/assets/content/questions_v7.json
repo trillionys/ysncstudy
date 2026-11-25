@@ -175839,6 +175839,2466 @@
    "examArea": null,
    "mode": "BOTH",
    "contentVersion": 2
+  },
+  {
+   "id": "IA140-Q01",
+   "primaryConceptId": "IA140",
+   "conceptIds": [
+    "IA140"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "1주의 금액이 정관에 정해진 주식의 자본금은 발행주식수에 1주당 (______)금액을 곱한 금액이다.",
+   "blankAnswer": "액면",
+   "acceptedAnswers": [
+    "액면"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA145"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법정자본.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3609,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA140-Q02",
+   "primaryConceptId": "IA140",
+   "conceptIds": [
+    "IA140"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "1주당 액면 5,000원인 보통주 10,000주를 주당 8,000원에 발행했다. 자본금은 (______)원이다.",
+   "blankAnswer": "50,000,000",
+   "acceptedAnswers": [
+    "50,000,000",
+    "50,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA145"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 5000.0,
+     "b": 10000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "액면 × 발행주식수(발행가가 아님).",
+   "confusion": null,
+   "calculation": "5,000 × 10,000 = 50,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3610,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA140-Q03",
+   "primaryConceptId": "IA140",
+   "conceptIds": [
+    "IA140"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "comparison",
+   "questionText": "무액면주식의 자본금으로 계상하는 금액은?",
+   "blankAnswer": "발행가액 중 이사회 등이 자본금으로 정한 금액(1/2 이상)",
+   "acceptedAnswers": [
+    "발행가액 중 이사회 등이 자본금으로 정한 금액(1/2 이상)"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA145"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "발행가액 중 이사회 등이 자본금으로 정한 금액(1/2 이상)",
+    "발행가액 전액",
+    "액면금액",
+    "순자산 공정가치"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상법 제451조 ②.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3611,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA141-Q01",
+   "primaryConceptId": "IA141",
+   "conceptIds": [
+    "IA141"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "classification",
+   "questionText": "다음 자본 항목을 국내 실무의 자본 분류에 따라 연결하시오.",
+   "blankAnswer": "주식발행초과금 → 자본잉여금 / 감자차손 → 자본조정 / 자기주식처분이익 → 자본잉여금 / 이익준비금 → 이익잉여금",
+   "acceptedAnswers": [
+    "주식발행초과금 → 자본잉여금 / 감자차손 → 자본조정 / 자기주식처분이익 → 자본잉여금 / 이익준비금 → 이익잉여금"
+   ],
+   "relatedConceptIds": [
+    "IA142",
+    "IA144",
+    "IA149"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "자본잉여금",
+    "자본조정",
+    "이익잉여금",
+    "기타포괄손익누계액"
+   ],
+   "slots": [
+    {
+     "label": "주식발행초과금",
+     "answer": "자본잉여금"
+    },
+    {
+     "label": "감자차손",
+     "answer": "자본조정"
+    },
+    {
+     "label": "자기주식처분이익",
+     "answer": "자본잉여금"
+    },
+    {
+     "label": "이익준비금",
+     "answer": "이익잉여금"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "국내 실무 분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3612,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA141-Q02",
+   "primaryConceptId": "IA141",
+   "conceptIds": [
+    "IA141"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "증자·감자·자기주식 거래처럼 주주와의 거래에서 생긴 잉여금을 (______)잉여금이라 한다.",
+   "blankAnswer": "자본",
+   "acceptedAnswers": [
+    "자본"
+   ],
+   "relatedConceptIds": [
+    "IA142",
+    "IA144",
+    "IA149"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이익잉여금과 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3613,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA141-Q03",
+   "primaryConceptId": "IA141",
+   "conceptIds": [
+    "IA141"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "choice",
+   "questionText": "자본잉여금의 사용처로 옳은 것은?",
+   "blankAnswer": "결손 보전과 무상증자(자본전입)",
+   "acceptedAnswers": [
+    "결손 보전과 무상증자(자본전입)"
+   ],
+   "relatedConceptIds": [
+    "IA142",
+    "IA144",
+    "IA149"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "결손 보전과 무상증자(자본전입)",
+    "현금배당 재원(별도 절차 없이)",
+    "당기손익 조정",
+    "법인세 납부"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본준비금의 용도.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3614,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA142-Q01",
+   "primaryConceptId": "IA142",
+   "conceptIds": [
+    "IA142"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "금전배당 20,000,000원을 결의했다. 자본금이 100,000,000원, 기적립 이익준비금이 45,000,000원일 때 적립할 이익준비금 최소액은 (______)원이다.",
+   "blankAnswer": "2,000,000",
+   "acceptedAnswers": [
+    "2,000,000",
+    "2,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA153",
+    "IA151"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "legal_reserve_min",
+    "params": {
+     "div": 20000000.0,
+     "cap": 100000000.0,
+     "lres": 45000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "Min(배당액 × 1/10, 자본금의 1/2 − 기적립액).",
+   "confusion": null,
+   "calculation": "Min(배당액 20,000,000 × 1/10 = 2,000,000, 자본금의 1/2 50,000,000 − 기적립 이익준비금 45,000,000 = 5,000,000) = 2,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3615,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA142-Q02",
+   "primaryConceptId": "IA142",
+   "conceptIds": [
+    "IA142"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "이익준비금은 자본금의 2분의 1이 될 때까지 이익배당액의 (______) 이상을 적립한다.",
+   "blankAnswer": "10분의 1",
+   "acceptedAnswers": [
+    "10분의 1",
+    "1/10",
+    "10%"
+   ],
+   "relatedConceptIds": [
+    "IA153",
+    "IA151"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상법 제458조.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3616,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA142-Q03",
+   "primaryConceptId": "IA142",
+   "conceptIds": [
+    "IA142"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "classification",
+   "questionText": "이익잉여금의 구성요소를 성격별로 연결하시오.",
+   "blankAnswer": "이익준비금 → 법정적립금 / 사업확장적립금 → 임의적립금",
+   "acceptedAnswers": [
+    "이익준비금 → 법정적립금 / 사업확장적립금 → 임의적립금"
+   ],
+   "relatedConceptIds": [
+    "IA153",
+    "IA151"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "법정적립금",
+    "임의적립금",
+    "자본잉여금"
+   ],
+   "slots": [
+    {
+     "label": "이익준비금",
+     "answer": "법정적립금"
+    },
+    {
+     "label": "사업확장적립금",
+     "answer": "임의적립금"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "적립 근거로 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3617,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA143-Q01",
+   "primaryConceptId": "IA143",
+   "conceptIds": [
+    "IA143"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "classification",
+   "questionText": "후속 재분류 여부를 연결하시오.",
+   "blankAnswer": "FVOCI 채무상품 평가손익 → 재분류됨 / 유형자산 재평가잉여금 → 재분류 안 됨 / 해외사업장환산차이 → 재분류됨 / 확정급여 재측정요소 → 재분류 안 됨",
+   "acceptedAnswers": [
+    "FVOCI 채무상품 평가손익 → 재분류됨 / 유형자산 재평가잉여금 → 재분류 안 됨 / 해외사업장환산차이 → 재분류됨 / 확정급여 재측정요소 → 재분류 안 됨"
+   ],
+   "relatedConceptIds": [
+    "IA102"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "재분류됨",
+    "재분류 안 됨"
+   ],
+   "slots": [
+    {
+     "label": "FVOCI 채무상품 평가손익",
+     "answer": "재분류됨"
+    },
+    {
+     "label": "유형자산 재평가잉여금",
+     "answer": "재분류 안 됨"
+    },
+    {
+     "label": "해외사업장환산차이",
+     "answer": "재분류됨"
+    },
+    {
+     "label": "확정급여 재측정요소",
+     "answer": "재분류 안 됨"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1001호 표시 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3618,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA143-Q02",
+   "primaryConceptId": "IA143",
+   "conceptIds": [
+    "IA143"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "당기손익이 아닌 기타포괄손익으로 인식한 손익의 누적액을 기타포괄손익(______)이라 한다.",
+   "blankAnswer": "누계액",
+   "acceptedAnswers": [
+    "누계액"
+   ],
+   "relatedConceptIds": [
+    "IA102"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 구성요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3619,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA143-Q03",
+   "primaryConceptId": "IA143",
+   "conceptIds": [
+    "IA143"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "treatment",
+   "questionText": "유형자산 재평가잉여금의 실현 시 처리는?",
+   "blankAnswer": "이익잉여금으로 직접 대체할 수 있다",
+   "acceptedAnswers": [
+    "이익잉여금으로 직접 대체할 수 있다"
+   ],
+   "relatedConceptIds": [
+    "IA102"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "이익잉여금으로 직접 대체할 수 있다",
+    "당기손익으로 재분류한다",
+    "자본금으로 대체한다",
+    "부채로 대체한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재분류조정 대상이 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3620,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA144-Q01",
+   "primaryConceptId": "IA144",
+   "conceptIds": [
+    "IA144"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "취득원가 350,000원인 자기주식을 450,000원에 처분했다. 자기주식처분이익은 (______)원이다.",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000원"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA147"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 450000.0,
+     "b": 350000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "처분가 − 취득원가.",
+   "confusion": null,
+   "calculation": "450,000 − 350,000 = 100,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3621,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA144-Q02",
+   "primaryConceptId": "IA144",
+   "conceptIds": [
+    "IA144"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "자기주식은 재무상태표에 자산이 아니라 (______)의 차감 항목으로 표시한다.",
+   "blankAnswer": "자본",
+   "acceptedAnswers": [
+    "자본"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA147"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3622,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA144-Q03",
+   "primaryConceptId": "IA144",
+   "conceptIds": [
+    "IA144"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "classification",
+   "questionText": "자기주식 처분 결과를 분류하시오.",
+   "blankAnswer": "처분가 > 취득원가 → 자기주식처분이익(자본잉여금) / 처분가 < 취득원가 → 자기주식처분손실(자본조정)",
+   "acceptedAnswers": [
+    "처분가 > 취득원가 → 자기주식처분이익(자본잉여금) / 처분가 < 취득원가 → 자기주식처분손실(자본조정)"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA147"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "자기주식처분이익(자본잉여금)",
+    "자기주식처분손실(자본조정)",
+    "영업외수익",
+    "영업외비용"
+   ],
+   "slots": [
+    {
+     "label": "처분가 > 취득원가",
+     "answer": "자기주식처분이익(자본잉여금)"
+    },
+    {
+     "label": "처분가 < 취득원가",
+     "answer": "자기주식처분손실(자본조정)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손익이 아닌 자본 항목.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3623,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA145-Q01",
+   "primaryConceptId": "IA145",
+   "conceptIds": [
+    "IA145"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "유상증자 발행가액 총액 9,000,000원, 액면총액(자본금) 5,000,000원, 신주발행비 200,000원일 때 주식발행초과금은 (______)원이다.",
+   "blankAnswer": "3,800,000",
+   "acceptedAnswers": [
+    "3,800,000",
+    "3,800,000원"
+   ],
+   "relatedConceptIds": [
+    "IA149",
+    "IA140"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "sub3",
+    "params": {
+     "a": 9000000.0,
+     "b": 5000000.0,
+     "c": 200000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "발행가액 − 액면총액 − 발행비.",
+   "confusion": null,
+   "calculation": "9,000,000 − 5,000,000 − 200,000 = 3,800,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3624,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA145-Q02",
+   "primaryConceptId": "IA145",
+   "conceptIds": [
+    "IA145"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "유상증자의 신주발행비는 당기비용이 아니라 주식발행(______)에서 차감한다.",
+   "blankAnswer": "초과금",
+   "acceptedAnswers": [
+    "초과금"
+   ],
+   "relatedConceptIds": [
+    "IA149",
+    "IA140"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본거래 원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3625,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA145-Q03",
+   "primaryConceptId": "IA145",
+   "conceptIds": [
+    "IA145"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "effect",
+   "questionText": "유상증자가 자본에 미치는 영향은?",
+   "blankAnswer": "자본금과 자본총계가 모두 증가",
+   "acceptedAnswers": [
+    "자본금과 자본총계가 모두 증가"
+   ],
+   "relatedConceptIds": [
+    "IA149",
+    "IA140"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "자본금과 자본총계가 모두 증가",
+    "자본금만 증가하고 자본총계 불변",
+    "자본총계 감소",
+    "영향 없음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "외부 대가 유입.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3626,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA146-Q01",
+   "primaryConceptId": "IA146",
+   "conceptIds": [
+    "IA146"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "effect",
+   "questionText": "무상증자의 영향을 연결하시오.",
+   "blankAnswer": "자본금 → 증가 / 자본잉여금(전입 재원) → 감소 / 자본총계 → 불변",
+   "acceptedAnswers": [
+    "자본금 → 증가 / 자본잉여금(전입 재원) → 감소 / 자본총계 → 불변"
+   ],
+   "relatedConceptIds": [
+    "IA152",
+    "IA154"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "증가",
+    "감소",
+    "불변"
+   ],
+   "slots": [
+    {
+     "label": "자본금",
+     "answer": "증가"
+    },
+    {
+     "label": "자본잉여금(전입 재원)",
+     "answer": "감소"
+    },
+    {
+     "label": "자본총계",
+     "answer": "불변"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 내부 대체.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3627,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA146-Q02",
+   "primaryConceptId": "IA146",
+   "conceptIds": [
+    "IA146"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "잉여금을 자본금으로 옮기는 것을 자본(______)이라 한다.",
+   "blankAnswer": "전입",
+   "acceptedAnswers": [
+    "전입"
+   ],
+   "relatedConceptIds": [
+    "IA152",
+    "IA154"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "무상증자의 회계처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3628,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA146-Q03",
+   "primaryConceptId": "IA146",
+   "conceptIds": [
+    "IA146"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "주식발행초과금을 자본전입해 액면 5,000원 주식 2,000주를 무상 발행했다. 자본금 증가액은 (______)원이다.",
+   "blankAnswer": "10,000,000",
+   "acceptedAnswers": [
+    "10,000,000",
+    "10,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA152",
+    "IA154"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 5000.0,
+     "b": 2000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "액면 × 발행주식수(자본총계는 불변).",
+   "confusion": null,
+   "calculation": "5,000 × 2,000 = 10,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3629,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA147-Q01",
+   "primaryConceptId": "IA147",
+   "conceptIds": [
+    "IA147"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "유상감자로 소각한 주식의 액면총액이 5,000,000원이고 지급한 대가가 4,000,000원이다. 감자차익은 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA148",
+    "IA144"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 5000000.0,
+     "b": 4000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "액면총액 − 지급 대가.",
+   "confusion": null,
+   "calculation": "5,000,000 − 4,000,000 = 1,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3630,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA147-Q02",
+   "primaryConceptId": "IA147",
+   "conceptIds": [
+    "IA147"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "comparison",
+   "questionText": "유상감자에서 지급 대가가 액면총액보다 많을 때의 차액은?",
+   "blankAnswer": "감자차손(자본조정)",
+   "acceptedAnswers": [
+    "감자차손(자본조정)"
+   ],
+   "relatedConceptIds": [
+    "IA148",
+    "IA144"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "감자차손(자본조정)",
+    "감자차익(자본잉여금)",
+    "영업외비용",
+    "이익잉여금 증가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "감자차익과 먼저 상계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3631,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA147-Q03",
+   "primaryConceptId": "IA147",
+   "conceptIds": [
+    "IA147"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "유상감자는 주주에게 대가를 지급하므로 자본(______)가 감소한다.",
+   "blankAnswer": "총계",
+   "acceptedAnswers": [
+    "총계"
+   ],
+   "relatedConceptIds": [
+    "IA148",
+    "IA144"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "무상감자와 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3632,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA148-Q01",
+   "primaryConceptId": "IA148",
+   "conceptIds": [
+    "IA148"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "결손 보전을 위해 자본금 40,000,000원을 감소시켰고 보전한 결손금이 30,000,000원이다. 감자차익은 (______)원이다.",
+   "blankAnswer": "10,000,000",
+   "acceptedAnswers": [
+    "10,000,000",
+    "10,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA147"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 40000000.0,
+     "b": 30000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "자본금 감소액 − 결손 보전액.",
+   "confusion": null,
+   "calculation": "40,000,000 − 30,000,000 = 10,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3633,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA148-Q02",
+   "primaryConceptId": "IA148",
+   "conceptIds": [
+    "IA148"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "effect",
+   "questionText": "무상감자의 영향을 연결하시오.",
+   "blankAnswer": "자본금 → 감소 / 미처리결손금 → 감소(보전) / 자본총계 → 불변",
+   "acceptedAnswers": [
+    "자본금 → 감소 / 미처리결손금 → 감소(보전) / 자본총계 → 불변"
+   ],
+   "relatedConceptIds": [
+    "IA147"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "증가",
+    "감소",
+    "감소(보전)",
+    "불변"
+   ],
+   "slots": [
+    {
+     "label": "자본금",
+     "answer": "감소"
+    },
+    {
+     "label": "미처리결손금",
+     "answer": "감소(보전)"
+    },
+    {
+     "label": "자본총계",
+     "answer": "불변"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자원 유출 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3634,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA148-Q03",
+   "primaryConceptId": "IA148",
+   "conceptIds": [
+    "IA148"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "무상감자는 주로 누적 (______)을 보전하기 위해 한다.",
+   "blankAnswer": "결손금",
+   "acceptedAnswers": [
+    "결손금"
+   ],
+   "relatedConceptIds": [
+    "IA147"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재무구조 개선.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3635,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA149-Q01",
+   "primaryConceptId": "IA149",
+   "conceptIds": [
+    "IA149"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "유상증자에서 발행비 차감 후 액면 초과액이 1,300,000원이고 기존 주식할인발행차금 잔액이 500,000원이다. 표시할 주식발행초과금 증가액은 (______)원이다.",
+   "blankAnswer": "800,000",
+   "acceptedAnswers": [
+    "800,000",
+    "800,000원"
+   ],
+   "relatedConceptIds": [
+    "IA145",
+    "IA150"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1300000.0,
+     "b": 500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "할인발행차금과 먼저 상계.",
+   "confusion": null,
+   "calculation": "1,300,000 − 500,000 = 800,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3636,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA149-Q02",
+   "primaryConceptId": "IA149",
+   "conceptIds": [
+    "IA149"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "주식발행초과금은 기존 주식할인발행차금 잔액과 먼저 (______)한다.",
+   "blankAnswer": "상계",
+   "acceptedAnswers": [
+    "상계"
+   ],
+   "relatedConceptIds": [
+    "IA145",
+    "IA150"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "같은 성격.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3637,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA149-Q03",
+   "primaryConceptId": "IA149",
+   "conceptIds": [
+    "IA149"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "주식발행초과금은 자본 구성요소 중 자본(______)에 속한다.",
+   "blankAnswer": "잉여금",
+   "acceptedAnswers": [
+    "잉여금"
+   ],
+   "relatedConceptIds": [
+    "IA145",
+    "IA150"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본잉여금.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3638,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA150-Q01",
+   "primaryConceptId": "IA150",
+   "conceptIds": [
+    "IA150"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "액면총액 5,000,000원인 주식을 할인 발행하면서 신주발행비 50,000원을 지급했고 발행가액 총액은 4,500,000원이다(기존 주식발행초과금 없음). 주식할인발행차금은 (______)원이다.",
+   "blankAnswer": "550,000",
+   "acceptedAnswers": [
+    "550,000",
+    "550,000원"
+   ],
+   "relatedConceptIds": [
+    "IA149"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 5000000.0,
+     "b": 50000.0,
+     "c": 4500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "액면총액 + 발행비 − 발행가액.",
+   "confusion": null,
+   "calculation": "5,000,000 + 50,000 − 4,500,000 = 550,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3639,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA150-Q02",
+   "primaryConceptId": "IA150",
+   "conceptIds": [
+    "IA150"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "주식할인발행차금은 자본의 차감 항목인 자본(______)으로 표시한다.",
+   "blankAnswer": "조정",
+   "acceptedAnswers": [
+    "조정"
+   ],
+   "relatedConceptIds": [
+    "IA149"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3640,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA150-Q03",
+   "primaryConceptId": "IA150",
+   "conceptIds": [
+    "IA150"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "exception",
+   "questionText": "상법상 액면미달 발행의 요건이 아닌 것은?",
+   "blankAnswer": "이사회 결의만으로 가능",
+   "acceptedAnswers": [
+    "이사회 결의만으로 가능"
+   ],
+   "relatedConceptIds": [
+    "IA149"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "이사회 결의만으로 가능",
+    "회사 성립 후 2년 경과",
+    "주주총회 특별결의",
+    "법원의 인가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상법 제417조.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3641,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA151-Q01",
+   "primaryConceptId": "IA151",
+   "conceptIds": [
+    "IA151"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "순자산 500,000,000원, 자본금 200,000,000원, 자본준비금 60,000,000원, 이익준비금 40,000,000원, 당기 적립할 이익준비금 5,000,000원, 미실현이익 15,000,000원일 때 배당가능이익은 (______)원이다.",
+   "blankAnswer": "180,000,000",
+   "acceptedAnswers": [
+    "180,000,000",
+    "180,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA152",
+    "IA153",
+    "IA051"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "div_capacity",
+    "params": {
+     "na": 500000000.0,
+     "cap": 200000000.0,
+     "cres": 60000000.0,
+     "lres": 40000000.0,
+     "newres": 5000000.0,
+     "unreal": 15000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "상법 제462조 ①.",
+   "confusion": null,
+   "calculation": "순자산 500,000,000 − 자본금 200,000,000 − 자본준비금 60,000,000 − 이익준비금 40,000,000 − 적립할 이익준비금 5,000,000 − 미실현이익 15,000,000 = 180,000,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3642,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA151-Q02",
+   "primaryConceptId": "IA151",
+   "conceptIds": [
+    "IA151"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "이익배당은 결의일에 미지급(______)을 부채로 인식한다.",
+   "blankAnswer": "배당금",
+   "acceptedAnswers": [
+    "배당금"
+   ],
+   "relatedConceptIds": [
+    "IA152",
+    "IA153",
+    "IA051"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "결의 시 의무 확정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3643,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA151-Q03",
+   "primaryConceptId": "IA151",
+   "conceptIds": [
+    "IA151"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "order",
+   "questionText": "배당 관련 날짜를 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 배당기준일(보고기간 말) / 2단계 → 배당 결의일 / 3단계 → 배당금 지급일",
+   "acceptedAnswers": [
+    "1단계 → 배당기준일(보고기간 말) / 2단계 → 배당 결의일 / 3단계 → 배당금 지급일"
+   ],
+   "relatedConceptIds": [
+    "IA152",
+    "IA153",
+    "IA051"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "배당 결의일",
+    "배당금 지급일",
+    "배당기준일(보고기간 말)"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "배당기준일(보고기간 말)"
+    },
+    {
+     "label": "2단계",
+     "answer": "배당 결의일"
+    },
+    {
+     "label": "3단계",
+     "answer": "배당금 지급일"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기준일 → 결의 → 지급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3644,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA152-Q01",
+   "primaryConceptId": "IA152",
+   "conceptIds": [
+    "IA152"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "이익배당총액이 30,000,000원일 때 상법상 주식배당 한도는 (______)원이다.",
+   "blankAnswer": "15,000,000",
+   "acceptedAnswers": [
+    "15,000,000",
+    "15,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA146",
+    "IA151"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "stock_div_max",
+    "params": {
+     "total_div": 30000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "상법 제462조의2 ①.",
+   "confusion": null,
+   "calculation": "이익배당총액 30,000,000 × 1/2 = 15,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3645,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA152-Q02",
+   "primaryConceptId": "IA152",
+   "conceptIds": [
+    "IA152"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "effect",
+   "questionText": "주식배당의 영향을 연결하시오.",
+   "blankAnswer": "이익잉여금 → 감소 / 자본금 → 증가 / 자본총계 → 불변",
+   "acceptedAnswers": [
+    "이익잉여금 → 감소 / 자본금 → 증가 / 자본총계 → 불변"
+   ],
+   "relatedConceptIds": [
+    "IA146",
+    "IA151"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "증가",
+    "감소",
+    "불변"
+   ],
+   "slots": [
+    {
+     "label": "이익잉여금",
+     "answer": "감소"
+    },
+    {
+     "label": "자본금",
+     "answer": "증가"
+    },
+    {
+     "label": "자본총계",
+     "answer": "불변"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 내부 대체.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3646,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA152-Q03",
+   "primaryConceptId": "IA152",
+   "conceptIds": [
+    "IA152"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "주식배당 결의 후 주식 발행 전까지는 미교부(______)으로 표시한다.",
+   "blankAnswer": "주식배당금",
+   "acceptedAnswers": [
+    "주식배당금"
+   ],
+   "relatedConceptIds": [
+    "IA146",
+    "IA151"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3647,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA153-Q01",
+   "primaryConceptId": "IA153",
+   "conceptIds": [
+    "IA153"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "현금배당 10,000,000원을 결의했다. 이익준비금 한도에 여유가 충분할 때 최소 적립액은 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA142",
+    "IA151"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 10000000.0,
+     "r": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "배당액의 10%.",
+   "confusion": null,
+   "calculation": "10,000,000 × 10% = 1,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3648,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA153-Q02",
+   "primaryConceptId": "IA153",
+   "conceptIds": [
+    "IA153"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "effect",
+   "questionText": "현금배당 지급의 영향으로 옳은 것은?",
+   "blankAnswer": "자산과 자본총계가 감소",
+   "acceptedAnswers": [
+    "자산과 자본총계가 감소"
+   ],
+   "relatedConceptIds": [
+    "IA142",
+    "IA151"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "자산과 자본총계가 감소",
+    "자본총계 불변",
+    "비용 증가",
+    "부채와 자본 증가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "결의로 부채 생기고 지급으로 현금 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3649,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA153-Q03",
+   "primaryConceptId": "IA153",
+   "conceptIds": [
+    "IA153"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "comparison",
+   "questionText": "현금배당은 이익 분배이므로 손익계산서의 (______)으로 처리하지 않는다.",
+   "blankAnswer": "비용",
+   "acceptedAnswers": [
+    "비용"
+   ],
+   "relatedConceptIds": [
+    "IA142",
+    "IA151"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3650,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA154-Q01",
+   "primaryConceptId": "IA154",
+   "conceptIds": [
+    "IA154"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "액면 5,000원 주식 10,000주를 1주당 5주로 분할했다. 분할 후 발행주식수는 (______)주이다.",
+   "blankAnswer": "50,000",
+   "acceptedAnswers": [
+    "50,000",
+    "50,000주"
+   ],
+   "relatedConceptIds": [
+    "IA155",
+    "IA146"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 10000.0,
+     "b": 5.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "주식 수 × 분할 비율.",
+   "confusion": null,
+   "calculation": "10,000 × 5 = 50,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3651,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA154-Q02",
+   "primaryConceptId": "IA154",
+   "conceptIds": [
+    "IA154"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "comparison",
+   "questionText": "주식분할과 무상증자의 영향을 비교하시오.",
+   "blankAnswer": "주식분할의 자본금 → 불변 / 무상증자의 자본금 → 증가",
+   "acceptedAnswers": [
+    "주식분할의 자본금 → 불변 / 무상증자의 자본금 → 증가"
+   ],
+   "relatedConceptIds": [
+    "IA155",
+    "IA146"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "증가",
+    "감소",
+    "불변"
+   ],
+   "slots": [
+    {
+     "label": "주식분할의 자본금",
+     "answer": "불변"
+    },
+    {
+     "label": "무상증자의 자본금",
+     "answer": "증가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주식 수는 둘 다 증가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3652,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA154-Q03",
+   "primaryConceptId": "IA154",
+   "conceptIds": [
+    "IA154"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "주식분할은 자본의 구성요소가 변하지 않으므로 (______)이 필요 없다.",
+   "blankAnswer": "분개",
+   "acceptedAnswers": [
+    "분개",
+    "회계처리"
+   ],
+   "relatedConceptIds": [
+    "IA155",
+    "IA146"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회계처리 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3653,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA155-Q01",
+   "primaryConceptId": "IA155",
+   "conceptIds": [
+    "IA155"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "calculation",
+   "questionText": "주식 1,000,000주를 10주당 1주로 병합했다. 병합 후 주식 수는 (______)주이다.",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000주"
+   ],
+   "relatedConceptIds": [
+    "IA154"
+   ],
+   "unit": "주",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1000000.0,
+     "b": 1.0,
+     "c": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "주식 수 × 1/10.",
+   "confusion": null,
+   "calculation": "1,000,000 × 1 ÷ 10 = 100,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3654,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA155-Q02",
+   "primaryConceptId": "IA155",
+   "conceptIds": [
+    "IA155"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "주식병합은 주식 수를 줄이고 (______)금액을 높인다.",
+   "blankAnswer": "액면",
+   "acceptedAnswers": [
+    "액면"
+   ],
+   "relatedConceptIds": [
+    "IA154"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주식분할과 반대.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3655,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA155-Q03",
+   "primaryConceptId": "IA155",
+   "conceptIds": [
+    "IA155"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "situation",
+   "questionText": "주식병합이 주당이익 계산에 미치는 영향은?",
+   "blankAnswer": "비교 기간을 포함해 소급해 주식 수를 줄인다",
+   "acceptedAnswers": [
+    "비교 기간을 포함해 소급해 주식 수를 줄인다"
+   ],
+   "relatedConceptIds": [
+    "IA154"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "비교 기간을 포함해 소급해 주식 수를 줄인다",
+    "병합일 이후만 반영한다",
+    "영향 없다",
+    "다음 연도부터 반영한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자원 변동 없는 주식 수 변동은 소급.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3656,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA156-Q01",
+   "primaryConceptId": "IA156",
+   "conceptIds": [
+    "IA156"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "classification",
+   "questionText": "다음 거래를 분류하시오.",
+   "blankAnswer": "자기주식 처분이익 → 자본거래 / 유형자산 처분이익 → 손익거래 / 감자차익 → 자본거래 / FVOCI 채무상품 평가이익 → 손익거래",
+   "acceptedAnswers": [
+    "자기주식 처분이익 → 자본거래 / 유형자산 처분이익 → 손익거래 / 감자차익 → 자본거래 / FVOCI 채무상품 평가이익 → 손익거래"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA144"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "자본거래",
+    "손익거래"
+   ],
+   "slots": [
+    {
+     "label": "자기주식 처분이익",
+     "answer": "자본거래"
+    },
+    {
+     "label": "유형자산 처분이익",
+     "answer": "손익거래"
+    },
+    {
+     "label": "감자차익",
+     "answer": "자본거래"
+    },
+    {
+     "label": "FVOCI 채무상품 평가이익",
+     "answer": "손익거래"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주주와의 거래인지로 판단(OCI 도 손익거래).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3657,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA156-Q02",
+   "primaryConceptId": "IA156",
+   "conceptIds": [
+    "IA156"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "definition",
+   "questionText": "주주와 주주로서의 자격으로 하는 거래를 (______)거래라 한다.",
+   "blankAnswer": "자본",
+   "acceptedAnswers": [
+    "자본"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA144"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손익에 반영하지 않음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3658,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA156-Q03",
+   "primaryConceptId": "IA156",
+   "conceptIds": [
+    "IA156"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-EQ",
+   "questionType": "treatment",
+   "questionText": "자본거래 원가인 신주발행비의 처리는?",
+   "blankAnswer": "자본에서 차감",
+   "acceptedAnswers": [
+    "자본에서 차감"
+   ],
+   "relatedConceptIds": [
+    "IA141",
+    "IA144"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "자본에서 차감",
+    "당기비용",
+    "기타포괄손익",
+    "자산으로 계상"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본거래 원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호·제1001호, 상법 회사편(자본금·준비금·배당)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3659,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }
