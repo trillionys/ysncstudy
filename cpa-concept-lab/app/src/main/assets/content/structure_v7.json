@@ -2437,6 +2437,42 @@
    "sortOrder": 4
   },
   {
+   "id": "FM-A-S03",
+   "chapterId": "FM-A",
+   "title": "재무분석과 화폐의 시간가치 보강(v8)",
+   "sortOrder": 3
+  },
+  {
+   "id": "FM-B-S03",
+   "chapterId": "FM-B",
+   "title": "자본예산의 보완 기법과 위험 분석(v8)",
+   "sortOrder": 3
+  },
+  {
+   "id": "FM-C-S02",
+   "chapterId": "FM-C",
+   "title": "효율적 투자선과 위험회피도(v8)",
+   "sortOrder": 2
+  },
+  {
+   "id": "FM-D-S03",
+   "chapterId": "FM-D",
+   "title": "자금조달·M&A·운전자본관리(v8)",
+   "sortOrder": 3
+  },
+  {
+   "id": "FM-D-S04",
+   "chapterId": "FM-D",
+   "title": "상대가치 배수와 행동재무(v8)",
+   "sortOrder": 4
+  },
+  {
+   "id": "FM-E-S03",
+   "chapterId": "FM-E",
+   "title": "옵션 민감도·전략과 외환위험(v8)",
+   "sortOrder": 3
+  },
+  {
    "id": "AA-A-S90",
    "chapterId": "AA-A",
    "title": "지배력과 연결범위(기존 재무회계에서 이동)",
@@ -9522,8 +9558,10 @@
    "subjectId": "FM",
    "unit": "기초 재무관리",
    "item": "재무제표 분석",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM070"
+   ],
+   "covered": true,
    "sortOrder": 581
   },
   {
@@ -9597,8 +9635,10 @@
    "subjectId": "FM",
    "unit": "기초 재무관리",
    "item": "현금흐름 분석",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM071"
+   ],
+   "covered": true,
    "sortOrder": 588
   },
   {
@@ -9672,8 +9712,10 @@
    "subjectId": "FM",
    "unit": "화폐의 시간가치",
    "item": "성장연금",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM072"
+   ],
+   "covered": true,
    "sortOrder": 595
   },
   {
@@ -9725,8 +9767,10 @@
    "subjectId": "FM",
    "unit": "화폐의 시간가치",
    "item": "기간별 현금흐름",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM073"
+   ],
+   "covered": true,
    "sortOrder": 600
   },
   {
@@ -9756,8 +9800,10 @@
    "subjectId": "FM",
    "unit": "자본예산",
    "item": "수정IRR",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM074"
+   ],
+   "covered": true,
    "sortOrder": 603
   },
   {
@@ -9886,8 +9932,10 @@
    "subjectId": "FM",
    "unit": "자본예산",
    "item": "잔존가치",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM075"
+   ],
+   "covered": true,
    "sortOrder": 615
   },
   {
@@ -9906,8 +9954,10 @@
    "subjectId": "FM",
    "unit": "자본예산",
    "item": "위험조정할인율",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM076"
+   ],
+   "covered": true,
    "sortOrder": 617
   },
   {
@@ -9915,8 +9965,10 @@
    "subjectId": "FM",
    "unit": "자본예산",
    "item": "민감도분석",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM077"
+   ],
+   "covered": true,
    "sortOrder": 618
   },
   {
@@ -9924,8 +9976,10 @@
    "subjectId": "FM",
    "unit": "자본예산",
    "item": "시나리오분석",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM078"
+   ],
+   "covered": true,
    "sortOrder": 619
   },
   {
@@ -9933,8 +9987,10 @@
    "subjectId": "FM",
    "unit": "자본예산",
    "item": "의사결정나무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM079"
+   ],
+   "covered": true,
    "sortOrder": 620
   },
   {
@@ -10063,8 +10119,10 @@
    "subjectId": "FM",
    "unit": "포트폴리오",
    "item": "효율적 투자선",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM080"
+   ],
+   "covered": true,
    "sortOrder": 632
   },
   {
@@ -10083,8 +10141,10 @@
    "subjectId": "FM",
    "unit": "포트폴리오",
    "item": "자본배분선",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM081"
+   ],
+   "covered": true,
    "sortOrder": 634
   },
   {
@@ -10125,8 +10185,10 @@
    "subjectId": "FM",
    "unit": "포트폴리오",
    "item": "위험회피도",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM082"
+   ],
+   "covered": true,
    "sortOrder": 638
   },
   {
@@ -10398,8 +10460,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "유상증자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM083"
+   ],
+   "covered": true,
    "sortOrder": 663
   },
   {
@@ -10407,8 +10471,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "신주발행",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM084"
+   ],
+   "covered": true,
    "sortOrder": 664
   },
   {
@@ -10416,8 +10482,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "전환사채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM085"
+   ],
+   "covered": true,
    "sortOrder": 665
   },
   {
@@ -10425,8 +10493,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "M&A",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM086"
+   ],
+   "covered": true,
    "sortOrder": 666
   },
   {
@@ -10434,8 +10504,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "인수가격",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM087"
+   ],
+   "covered": true,
    "sortOrder": 667
   },
   {
@@ -10487,8 +10559,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "영구성장률",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM088"
+   ],
+   "covered": true,
    "sortOrder": 672
   },
   {
@@ -10507,8 +10581,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "상대가치평가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM089"
+   ],
+   "covered": true,
    "sortOrder": 674
   },
   {
@@ -10516,8 +10592,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "운전자본관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM090"
+   ],
+   "covered": true,
    "sortOrder": 675
   },
   {
@@ -10525,8 +10603,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "현금관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM091"
+   ],
+   "covered": true,
    "sortOrder": 676
   },
   {
@@ -10534,8 +10614,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "매출채권관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM092"
+   ],
+   "covered": true,
    "sortOrder": 677
   },
   {
@@ -10543,8 +10625,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "재고관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM093"
+   ],
+   "covered": true,
    "sortOrder": 678
   },
   {
@@ -10552,8 +10636,10 @@
    "subjectId": "FM",
    "unit": "기업재무",
    "item": "리스",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM094"
+   ],
+   "covered": true,
    "sortOrder": 679
   },
   {
@@ -10605,8 +10691,10 @@
    "subjectId": "FM",
    "unit": "증권가치평가",
    "item": "PBR",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM095"
+   ],
+   "covered": true,
    "sortOrder": 684
   },
   {
@@ -10614,8 +10702,10 @@
    "subjectId": "FM",
    "unit": "증권가치평가",
    "item": "PSR",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM096"
+   ],
+   "covered": true,
    "sortOrder": 685
   },
   {
@@ -10711,8 +10801,10 @@
    "subjectId": "FM",
    "unit": "증권가치평가",
    "item": "채권 포트폴리오",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM097"
+   ],
+   "covered": true,
    "sortOrder": 694
   },
   {
@@ -10742,8 +10834,10 @@
    "subjectId": "FM",
    "unit": "증권가치평가",
    "item": "행동재무",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM098"
+   ],
+   "covered": true,
    "sortOrder": 697
   },
   {
@@ -10818,7 +10912,8 @@
    "unit": "파생상품",
    "item": "옵션",
    "conceptIds": [
-    "FM061"
+    "FM061",
+    "FM103"
    ],
    "covered": true,
    "sortOrder": 704
@@ -10927,8 +11022,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "감마",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM099"
+   ],
+   "covered": true,
    "sortOrder": 714
   },
   {
@@ -10936,8 +11033,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "베가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM100"
+   ],
+   "covered": true,
    "sortOrder": 715
   },
   {
@@ -10945,8 +11044,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "세타",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM101"
+   ],
+   "covered": true,
    "sortOrder": 716
   },
   {
@@ -10954,8 +11055,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "로",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM102"
+   ],
+   "covered": true,
    "sortOrder": 717
   },
   {
@@ -10963,8 +11066,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "옵션투자전략",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM103"
+   ],
+   "covered": true,
    "sortOrder": 718
   },
   {
@@ -11005,8 +11110,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "외환시장",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM104"
+   ],
+   "covered": true,
    "sortOrder": 722
   },
   {
@@ -11025,8 +11132,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "환위험",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM105"
+   ],
+   "covered": true,
    "sortOrder": 724
   },
   {
@@ -11056,8 +11165,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "환위험 헤지",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM106"
+   ],
+   "covered": true,
    "sortOrder": 727
   },
   {
@@ -11065,8 +11176,10 @@
    "subjectId": "FM",
    "unit": "파생상품",
    "item": "VaR",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "FM107"
+   ],
+   "covered": true,
    "sortOrder": 728
   },
   {

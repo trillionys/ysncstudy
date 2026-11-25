@@ -9,11 +9,11 @@
    "storedFlagCovered": 577
   },
   "경영학": {
-   "complete": 21,
+   "complete": 152,
    "total": 232,
-   "missing": 211,
+   "missing": 80,
    "needsReview": 0,
-   "storedFlagCovered": 173
+   "storedFlagCovered": 211
   },
   "경제원론": {
    "complete": 27,
@@ -55,7 +55,7 @@
    "total": 35
   },
   "FM": {
-   "complete": 20,
+   "complete": 151,
    "total": 151
   },
   "HR": {
@@ -77,8 +77,8 @@
  },
  "integrityErrors": 0,
  "overall": {
-  "complete": 911,
+  "complete": 1042,
   "total": 1233,
-  "missing": 322
+  "missing": 191
  }
 }

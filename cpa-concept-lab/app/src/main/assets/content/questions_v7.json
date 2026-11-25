@@ -203561,6 +203561,7538 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "FM001-Q03",
+   "primaryConceptId": "FM001",
+   "conceptIds": [
+    "FM001"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "comparison",
+   "questionText": "주주부의 극대화가 이익 극대화보다 우월한 재무관리 목표로 여겨지는 이유는?",
+   "blankAnswer": "현금흐름의 크기·시기·위험을 모두 반영하기 때문",
+   "acceptedAnswers": [
+    "현금흐름의 크기·시기·위험을 모두 반영하기 때문"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "현금흐름의 크기·시기·위험을 모두 반영하기 때문",
+    "회계이익이 가장 크기 때문",
+    "법으로 정해져 있기 때문",
+    "단기 성과를 중시하기 때문"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주가는 미래 현금흐름의 현재가치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4196,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM002-Q03",
+   "primaryConceptId": "FM002",
+   "conceptIds": [
+    "FM002"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "순이익 120,000,000원, 자기자본 800,000,000원일 때 자기자본이익률(ROE)은 (______)%이다.",
+   "blankAnswer": "15",
+   "acceptedAnswers": [
+    "15",
+    "15%"
+   ],
+   "relatedConceptIds": [],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 120000000.0,
+     "b": 800000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "순이익 ÷ 자기자본.",
+   "confusion": null,
+   "calculation": "120,000,000 ÷ 800,000,000 × 100 = 15%",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4197,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM002-Q04",
+   "primaryConceptId": "FM002",
+   "conceptIds": [
+    "FM002"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "부채 600,000,000원, 자기자본 800,000,000원일 때 부채비율은 (______)%이다.",
+   "blankAnswer": "75",
+   "acceptedAnswers": [
+    "75",
+    "75%"
+   ],
+   "relatedConceptIds": [],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 600000000.0,
+     "b": 800000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "부채 ÷ 자기자본.",
+   "confusion": null,
+   "calculation": "600,000,000 ÷ 800,000,000 × 100 = 75%",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4198,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM002-Q05",
+   "primaryConceptId": "FM002",
+   "conceptIds": [
+    "FM002"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "classification",
+   "questionText": "다음 재무비율을 평가 목적과 연결하시오.",
+   "blankAnswer": "유동비율 → 단기 지급능력(유동성) / ROA → 수익성 / 이자보상비율 → 레버리지(안정성)",
+   "acceptedAnswers": [
+    "유동비율 → 단기 지급능력(유동성) / ROA → 수익성 / 이자보상비율 → 레버리지(안정성)"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "단기 지급능력(유동성)",
+    "수익성",
+    "레버리지(안정성)",
+    "활동성"
+   ],
+   "slots": [
+    {
+     "label": "유동비율",
+     "answer": "단기 지급능력(유동성)"
+    },
+    {
+     "label": "ROA",
+     "answer": "수익성"
+    },
+    {
+     "label": "이자보상비율",
+     "answer": "레버리지(안정성)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비율의 분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4199,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM003-Q03",
+   "primaryConceptId": "FM003",
+   "conceptIds": [
+    "FM003"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "매출액순이익률이 5%이고, 총자산회전율과 자기자본승수의 곱이 3이다. 듀퐁분석에 따른 ROE 는 (______)%이다.",
+   "blankAnswer": "15",
+   "acceptedAnswers": [
+    "15",
+    "15%"
+   ],
+   "relatedConceptIds": [
+    "FM002"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 5.0,
+     "b": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출액순이익률 × 총자산회전율 × 자기자본승수.",
+   "confusion": null,
+   "calculation": "5 × 3 = 15",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4200,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM012-Q03",
+   "primaryConceptId": "FM012",
+   "conceptIds": [
+    "FM012"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "연 명목이자율 12%를 월복리(12회)로 계산할 때 실효이자율은 (______)%이다.",
+   "blankAnswer": "12.68",
+   "acceptedAnswers": [
+    "12.68",
+    "12.68%"
+   ],
+   "relatedConceptIds": [
+    "FM010"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eff_rate",
+    "params": {
+     "apr": 12.0,
+     "m": 12.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(1 + APR/m)^m − 1.",
+   "confusion": null,
+   "calculation": "실효이자율 = (1 + 12%/12)^12 − 1 = 12.68%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4201,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM021-Q03",
+   "primaryConceptId": "FM021",
+   "conceptIds": [
+    "FM021"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "choice",
+   "questionText": "IRR 법의 한계로 옳은 것은?",
+   "blankAnswer": "현금흐름 부호가 여러 번 바뀌면 복수의 IRR 이 생길 수 있다",
+   "acceptedAnswers": [
+    "현금흐름 부호가 여러 번 바뀌면 복수의 IRR 이 생길 수 있다"
+   ],
+   "relatedConceptIds": [
+    "FM020"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "현금흐름 부호가 여러 번 바뀌면 복수의 IRR 이 생길 수 있다",
+    "화폐의 시간가치를 무시한다",
+    "자본비용과 비교할 수 없다",
+    "현금흐름을 사용하지 않는다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비전형적 현금흐름의 문제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4202,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM022-Q03",
+   "primaryConceptId": "FM022",
+   "conceptIds": [
+    "FM022"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "투자액 1,000,000원, 연간 현금유입 400,000원(매년 동일)일 때 단순 회수기간은 (______)년이다.",
+   "blankAnswer": "2.5",
+   "acceptedAnswers": [
+    "2.5",
+    "2.5년"
+   ],
+   "relatedConceptIds": [
+    "FM020"
+   ],
+   "unit": "년",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 1000000.0,
+     "b": 400000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "투자액 ÷ 연간 현금유입.",
+   "confusion": null,
+   "calculation": "1,000,000 ÷ 400,000 = 2.5",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4203,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM022-Q04",
+   "primaryConceptId": "FM022",
+   "conceptIds": [
+    "FM022"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "comparison",
+   "questionText": "할인회수기간법이 단순 회수기간법보다 개선한 점은?",
+   "blankAnswer": "화폐의 시간가치를 반영한다",
+   "acceptedAnswers": [
+    "화폐의 시간가치를 반영한다"
+   ],
+   "relatedConceptIds": [
+    "FM020"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "화폐의 시간가치를 반영한다",
+    "회수기간 이후 현금흐름을 반영한다",
+    "자본비용이 필요 없다",
+    "IRR 을 계산한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회수 이후 현금흐름은 여전히 무시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4204,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM024-Q03",
+   "primaryConceptId": "FM024",
+   "conceptIds": [
+    "FM024"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "comparison",
+   "questionText": "독립투자안의 채택 기준으로 옳은 것은?",
+   "blankAnswer": "NPV 가 0보다 큰 투자안을 모두 채택",
+   "acceptedAnswers": [
+    "NPV 가 0보다 큰 투자안을 모두 채택"
+   ],
+   "relatedConceptIds": [
+    "FM020",
+    "FM022"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "NPV 가 0보다 큰 투자안을 모두 채택",
+    "NPV 가 가장 큰 하나만 채택",
+    "회수기간이 가장 짧은 하나만 채택",
+    "IRR 이 가장 큰 하나만 채택"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "독립안은 서로 영향이 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4205,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM025-Q03",
+   "primaryConceptId": "FM025",
+   "conceptIds": [
+    "FM025"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "전통적 NPV 가 -100,000원이고 확장옵션의 가치가 300,000원이다. 실물옵션을 고려한 투자안 가치(확장된 NPV)는 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "FM020",
+    "FM061"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 300000.0,
+     "b": -100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "전통적 NPV + 옵션 가치.",
+   "confusion": null,
+   "calculation": "300,000 + -100,000 = 200,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4206,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM030-Q03",
+   "primaryConceptId": "FM030",
+   "conceptIds": [
+    "FM030"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "calculation",
+   "questionText": "호황 확률 60%에 수익률 20%, 불황 확률 40%에 수익률 5%인 주식의 기대수익률은 (______)%이다(수익률 × 확률의 합, 단위 %).",
+   "blankAnswer": "14",
+   "acceptedAnswers": [
+    "14",
+    "14%"
+   ],
+   "relatedConceptIds": [],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ev2",
+    "params": {
+     "a": 20.0,
+     "ra": 60.0,
+     "b": 5.0,
+     "rb": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "Σ 확률 × 수익률.",
+   "confusion": null,
+   "calculation": "20 × 60% + 5 × 40% = 14",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4207,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM030-Q04",
+   "primaryConceptId": "FM030",
+   "conceptIds": [
+    "FM030"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "수익률이 기대수익률에서 흩어진 정도의 제곱 평균을 (______)이라 하며, 그 제곱근이 표준편차다.",
+   "blankAnswer": "분산",
+   "acceptedAnswers": [
+    "분산"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "위험 척도.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4208,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM031-Q03",
+   "primaryConceptId": "FM031",
+   "conceptIds": [
+    "FM031"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "calculation",
+   "questionText": "두 자산의 표준편차가 각각 20%·20%, 상관계수 -1, 자산1 비중 50%일 때 포트폴리오 표준편차는 (______)%이다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "0%"
+   ],
+   "relatedConceptIds": [
+    "FM030"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "port_sd",
+    "params": {
+     "w1": 50.0,
+     "s1": 20.0,
+     "s2": 20.0,
+     "rho": -1.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "ρ = −1 이고 비중이 같으면 위험이 0.",
+   "confusion": null,
+   "calculation": "σp = √(w1²σ1² + w2²σ2² + 2w1w2ρσ1σ2) = 0.0%",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4209,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM031-Q04",
+   "primaryConceptId": "FM031",
+   "conceptIds": [
+    "FM031"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "choice",
+   "questionText": "최소분산포트폴리오에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "위험자산들로 만들 수 있는 포트폴리오 중 분산이 가장 작은 것",
+   "acceptedAnswers": [
+    "위험자산들로 만들 수 있는 포트폴리오 중 분산이 가장 작은 것"
+   ],
+   "relatedConceptIds": [
+    "FM030"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "위험자산들로 만들 수 있는 포트폴리오 중 분산이 가장 작은 것",
+    "기대수익률이 가장 높은 포트폴리오",
+    "무위험자산만으로 구성한 포트폴리오",
+    "시장포트폴리오와 항상 같다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효율적 투자선의 시작점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4210,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM032-Q03",
+   "primaryConceptId": "FM032",
+   "conceptIds": [
+    "FM032"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "체계적 위험의 크기를 나타내는 척도는 (______)이다.",
+   "blankAnswer": "베타",
+   "acceptedAnswers": [
+    "베타"
+   ],
+   "relatedConceptIds": [
+    "FM031",
+    "FM033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "시장 민감도.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4211,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM034-Q03",
+   "primaryConceptId": "FM034",
+   "conceptIds": [
+    "FM034"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "calculation",
+   "questionText": "무위험이자율 4%, 시장포트폴리오 기대수익률 12%이고, 효율적 포트폴리오의 표준편차가 시장포트폴리오 표준편차의 0.5배이다. CML 에 따른 기대수익률은 (______)%이다.",
+   "blankAnswer": "8",
+   "acceptedAnswers": [
+    "8",
+    "8%"
+   ],
+   "relatedConceptIds": [
+    "FM033"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "capm",
+    "params": {
+     "rf": 4.0,
+     "beta": 0.5,
+     "rm": 12.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "Rf + (E(Rm) − Rf) × σp/σm.",
+   "confusion": null,
+   "calculation": "요구수익률 = 4% + 0.5 × (12% − 4%) = 8.0%",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4212,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM034-Q04",
+   "primaryConceptId": "FM034",
+   "conceptIds": [
+    "FM034"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "CML 에서 투자자는 무위험자산과 (______)포트폴리오를 결합해 위험을 조절한다.",
+   "blankAnswer": "시장",
+   "acceptedAnswers": [
+    "시장"
+   ],
+   "relatedConceptIds": [
+    "FM033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "토빈의 분리정리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4213,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM035-Q03",
+   "primaryConceptId": "FM035",
+   "conceptIds": [
+    "FM035"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "여러 공통요인에 대한 민감도로 기대수익률을 설명하는 모형을 (______)모형이라 한다.",
+   "blankAnswer": "다요인",
+   "acceptedAnswers": [
+    "다요인"
+   ],
+   "relatedConceptIds": [
+    "FM033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "APT.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4214,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM036-Q03",
+   "primaryConceptId": "FM036",
+   "conceptIds": [
+    "FM036"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "comparison",
+   "questionText": "위험회피형 투자자의 확실성등가와 기대값의 관계로 옳은 것은?",
+   "blankAnswer": "확실성등가 < 기대값",
+   "acceptedAnswers": [
+    "확실성등가 < 기대값"
+   ],
+   "relatedConceptIds": [
+    "FM030"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "확실성등가 < 기대값",
+    "확실성등가 = 기대값",
+    "확실성등가 > 기대값",
+    "관계 없음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "위험프리미엄 = 기대값 − 확실성등가 > 0.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4215,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM040-Q03",
+   "primaryConceptId": "FM040",
+   "conceptIds": [
+    "FM040"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "무위험이자율 3%, 베타 1.2, 시장 기대수익률 8%일 때 CAPM 에 따른 자기자본비용은 (______)%이다.",
+   "blankAnswer": "9",
+   "acceptedAnswers": [
+    "9",
+    "9%"
+   ],
+   "relatedConceptIds": [
+    "FM033",
+    "FM041"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "capm",
+    "params": {
+     "rf": 3.0,
+     "beta": 1.2,
+     "rm": 8.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "Rf + β(Rm − Rf).",
+   "confusion": null,
+   "calculation": "요구수익률 = 3% + 1.2 × (8% − 3%) = 9.0%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4216,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM040-Q04",
+   "primaryConceptId": "FM040",
+   "conceptIds": [
+    "FM040"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "타인자본비용은 이자의 절세효과 때문에 (______) 비용으로 WACC 에 반영한다.",
+   "blankAnswer": "세후",
+   "acceptedAnswers": [
+    "세후"
+   ],
+   "relatedConceptIds": [
+    "FM033",
+    "FM041"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "kD × (1 − t).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4217,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM041-Q03",
+   "primaryConceptId": "FM041",
+   "conceptIds": [
+    "FM041"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "effect",
+   "questionText": "법인세가 없는 MM 이론에서 부채비율이 높아질 때 자기자본비용의 변화는?",
+   "blankAnswer": "증가한다",
+   "acceptedAnswers": [
+    "증가한다"
+   ],
+   "relatedConceptIds": [
+    "FM040",
+    "FM042"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "증가한다",
+    "감소한다",
+    "변하지 않는다",
+    "0이 된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재무위험만큼 자기자본비용 상승, WACC 는 일정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4218,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM042-Q03",
+   "primaryConceptId": "FM042",
+   "conceptIds": [
+    "FM042"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "choice",
+   "questionText": "상충이론에서 최적 자본구조가 결정되는 지점은?",
+   "blankAnswer": "부채의 한계 절세효과와 한계 파산·대리인비용이 같아지는 점",
+   "acceptedAnswers": [
+    "부채의 한계 절세효과와 한계 파산·대리인비용이 같아지는 점"
+   ],
+   "relatedConceptIds": [
+    "FM041"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "부채의 한계 절세효과와 한계 파산·대리인비용이 같아지는 점",
+    "부채비율 100%",
+    "부채가 없는 점",
+    "자기자본비용이 최소인 점"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상충 관계의 균형점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4219,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM042-Q04",
+   "primaryConceptId": "FM042",
+   "conceptIds": [
+    "FM042"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "classification",
+   "questionText": "부채 사용의 비용 항목을 분류하시오.",
+   "blankAnswer": "기업이 도산 위기에 빠질 때 드는 법률·영업 손실 → 파산비용 / 주주와 채권자의 이해 상충으로 생기는 비용 → 대리인비용",
+   "acceptedAnswers": [
+    "기업이 도산 위기에 빠질 때 드는 법률·영업 손실 → 파산비용 / 주주와 채권자의 이해 상충으로 생기는 비용 → 대리인비용"
+   ],
+   "relatedConceptIds": [
+    "FM041"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "파산비용",
+    "대리인비용",
+    "절세효과"
+   ],
+   "slots": [
+    {
+     "label": "기업이 도산 위기에 빠질 때 드는 법률·영업 손실",
+     "answer": "파산비용"
+    },
+    {
+     "label": "주주와 채권자의 이해 상충으로 생기는 비용",
+     "answer": "대리인비용"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상충이론의 비용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4220,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM043-Q03",
+   "primaryConceptId": "FM043",
+   "conceptIds": [
+    "FM043"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "comparison",
+   "questionText": "자사주매입이 현금배당과 다른 점은?",
+   "blankAnswer": "유통주식수가 줄어든다",
+   "acceptedAnswers": [
+    "유통주식수가 줄어든다"
+   ],
+   "relatedConceptIds": [
+    "FM041"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "유통주식수가 줄어든다",
+    "주주에게 현금이 지급되지 않는다",
+    "기업가치가 반드시 증가한다",
+    "회계상 비용이 된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금 환원은 같지만 주식수 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4221,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM044-Q03",
+   "primaryConceptId": "FM044",
+   "conceptIds": [
+    "FM044"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "주가 15,000원, 주당순이익 1,250원일 때 PER 은 (______)배이다.",
+   "blankAnswer": "12",
+   "acceptedAnswers": [
+    "12",
+    "12배"
+   ],
+   "relatedConceptIds": [
+    "FM011"
+   ],
+   "unit": "배",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 15000.0,
+     "b": 1250.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "주가 ÷ 주당순이익.",
+   "confusion": null,
+   "calculation": "15,000 ÷ 1,250 = 12",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4222,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM044-Q04",
+   "primaryConceptId": "FM044",
+   "conceptIds": [
+    "FM044"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "내년 배당 1,000원, 요구수익률 10%, 성장률 5%인 주식의 항상성장모형 가치는 (______)원이다.",
+   "blankAnswer": "20,000",
+   "acceptedAnswers": [
+    "20,000",
+    "20,000원"
+   ],
+   "relatedConceptIds": [
+    "FM011"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "growing_perp",
+    "params": {
+     "c1": 1000.0,
+     "r": 10.0,
+     "g": 5.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "D1 ÷ (k − g).",
+   "confusion": null,
+   "calculation": "성장영구연금 현재가치 = 1,000 ÷ (10% − 5%) = 20,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4223,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM045-Q03",
+   "primaryConceptId": "FM045",
+   "conceptIds": [
+    "FM045"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "FCFF 의 현재가치 합계(기업가치)가 5,000,000,000원이고 부채가치가 2,000,000,000원이다. 주주가치는 (______)원이다.",
+   "blankAnswer": "3,000,000,000",
+   "acceptedAnswers": [
+    "3,000,000,000",
+    "3,000,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM040"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 5000000000.0,
+     "b": 2000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기업가치 − 부채가치.",
+   "confusion": null,
+   "calculation": "5,000,000,000 − 2,000,000,000 = 3,000,000,000",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4224,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM045-Q04",
+   "primaryConceptId": "FM045",
+   "conceptIds": [
+    "FM045"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "무부채 기업가치에 부채의 절세효과 등 순효과를 더해 평가하는 방법을 (______)법이라 한다.",
+   "blankAnswer": "APV",
+   "acceptedAnswers": [
+    "APV",
+    "조정현재가치"
+   ],
+   "relatedConceptIds": [
+    "FM040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조정현재가치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4225,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM045-Q05",
+   "primaryConceptId": "FM045",
+   "conceptIds": [
+    "FM045"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "미래 현금흐름을 적절한 할인율로 현재가치화해 가치를 평가하는 방법을 (______)법이라 한다.",
+   "blankAnswer": "DCF",
+   "acceptedAnswers": [
+    "DCF",
+    "현금흐름할인"
+   ],
+   "relatedConceptIds": [
+    "FM040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금흐름할인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4226,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM050-Q03",
+   "primaryConceptId": "FM050",
+   "conceptIds": [
+    "FM050"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "effect",
+   "questionText": "시장이자율이 상승할 때 채권가격의 변화는?",
+   "blankAnswer": "하락한다",
+   "acceptedAnswers": [
+    "하락한다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "하락한다",
+    "상승한다",
+    "변하지 않는다",
+    "액면으로 수렴한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "할인율 상승 → 현재가치 하락.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4227,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM051-Q03",
+   "primaryConceptId": "FM051",
+   "conceptIds": [
+    "FM051"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "수정듀레이션이 5이고 만기수익률이 1.5%p 하락하면 채권가격은 약 (______)% 상승한다.",
+   "blankAnswer": "8",
+   "acceptedAnswers": [
+    "8",
+    "8%"
+   ],
+   "relatedConceptIds": [
+    "FM050"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 5.0,
+     "b": 1.5
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "−수정듀레이션 × Δy.",
+   "confusion": null,
+   "calculation": "5 × 1.5 = 8",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4228,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM051-Q04",
+   "primaryConceptId": "FM051",
+   "conceptIds": [
+    "FM051"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "자산과 부채의 듀레이션을 일치시켜 이자율 변동 위험을 없애는 전략을 (______)전략이라 한다.",
+   "blankAnswer": "면역",
+   "acceptedAnswers": [
+    "면역"
+   ],
+   "relatedConceptIds": [
+    "FM050"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "듀레이션 매칭.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4229,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM051-Q05",
+   "primaryConceptId": "FM051",
+   "conceptIds": [
+    "FM051"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "choice",
+   "questionText": "볼록성이 큰 채권의 특징으로 옳은 것은?",
+   "blankAnswer": "같은 듀레이션이라도 금리 하락 시 더 오르고 상승 시 덜 내린다",
+   "acceptedAnswers": [
+    "같은 듀레이션이라도 금리 하락 시 더 오르고 상승 시 덜 내린다"
+   ],
+   "relatedConceptIds": [
+    "FM050"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "같은 듀레이션이라도 금리 하락 시 더 오르고 상승 시 덜 내린다",
+    "듀레이션이 항상 0이다",
+    "가격이 금리와 무관하다",
+    "만기가 짧을수록 볼록성이 크다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "볼록성은 투자자에게 유리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4230,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM052-Q03",
+   "primaryConceptId": "FM052",
+   "conceptIds": [
+    "FM052"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "1년 현물이자율 3%, 2년 현물이자율 4%일 때 1년 후 1년 만기 선도이자율은 (______)%이다.",
+   "blankAnswer": "5.01",
+   "acceptedAnswers": [
+    "5.01",
+    "5.01%"
+   ],
+   "relatedConceptIds": [
+    "FM050"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "fwd_rate",
+    "params": {
+     "r1": 3.0,
+     "r2y": 4.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(1+r2)²/(1+r1) − 1.",
+   "confusion": null,
+   "calculation": "1년 후 1년 선도이자율 = (1+4%)² ÷ (1+3%) − 1 = 5.01%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4231,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM052-Q04",
+   "primaryConceptId": "FM052",
+   "conceptIds": [
+    "FM052"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "만기별 현물이자율의 관계를 이자율 (______)구조라 한다.",
+   "blankAnswer": "기간",
+   "acceptedAnswers": [
+    "기간"
+   ],
+   "relatedConceptIds": [
+    "FM050"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수익률곡선.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4232,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM053-Q03",
+   "primaryConceptId": "FM053",
+   "conceptIds": [
+    "FM053"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "choice",
+   "questionText": "강형 효율시장에서도 초과수익을 얻을 수 없는 정보는?",
+   "blankAnswer": "내부자 정보",
+   "acceptedAnswers": [
+    "내부자 정보"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "내부자 정보",
+    "과거 가격 정보만",
+    "공개 정보만",
+    "기술적 분석 신호만"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "강형은 모든 정보 반영.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4233,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM060-Q03",
+   "primaryConceptId": "FM060",
+   "conceptIds": [
+    "FM060"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "현물가격 10,000원, 무위험이자율 4%, 만기 1년, 배당이 없는 주식의 이론 선물가격은 (______)원이다.",
+   "blankAnswer": "10,400",
+   "acceptedAnswers": [
+    "10,400",
+    "10,400원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "fv",
+    "params": {
+     "pv": 10000.0,
+     "r": 4.0,
+     "n": 1.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "S × (1 + r)^T (보유비용모형).",
+   "confusion": null,
+   "calculation": "FV = 10,000 × (1 + 4%)^1 = 10,400",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4234,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM060-Q04",
+   "primaryConceptId": "FM060",
+   "conceptIds": [
+    "FM060"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "선물 만기가 가까워지면 베이시스는 (______)으로 수렴한다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "영"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "만기 수렴.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4235,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM061-Q03",
+   "primaryConceptId": "FM061",
+   "conceptIds": [
+    "FM061"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "콜가격 10원, 주가 100원, 행사가격 100원, 무위험이자율 5%, 만기 1년인 유럽형 옵션에서 풋콜패리티에 따른 풋가격은 (______)원이다.",
+   "blankAnswer": "5.24",
+   "acceptedAnswers": [
+    "5.24",
+    "5.24원"
+   ],
+   "relatedConceptIds": [
+    "FM060"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "put_parity",
+    "params": {
+     "c": 10.0,
+     "s": 100.0,
+     "k": 100.0,
+     "r": 5.0,
+     "t": 1.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "P = C − S + K/(1+r)^T.",
+   "confusion": null,
+   "calculation": "P = C − S + K/(1+r)^T = 10 − 100 + 100/(1+5%)^1 = 5.24",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4236,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM061-Q04",
+   "primaryConceptId": "FM061",
+   "conceptIds": [
+    "FM061"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "주가 120원, 행사가격 100원인 콜옵션의 내재가치는 (______)원이다(주가 > 행사가).",
+   "blankAnswer": "20",
+   "acceptedAnswers": [
+    "20",
+    "20원"
+   ],
+   "relatedConceptIds": [
+    "FM060"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 120.0,
+     "b": 100.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "max(S − K, 0).",
+   "confusion": null,
+   "calculation": "120 − 100 = 20",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4237,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM061-Q05",
+   "primaryConceptId": "FM061",
+   "conceptIds": [
+    "FM061"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "옵션가치 중 내재가치를 초과하는 부분을 (______)가치라 한다.",
+   "blankAnswer": "시간",
+   "acceptedAnswers": [
+    "시간"
+   ],
+   "relatedConceptIds": [
+    "FM060"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4238,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM062-Q03",
+   "primaryConceptId": "FM062",
+   "conceptIds": [
+    "FM062"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "이항모형에서 상승 시 콜가치가 15원, 하락 시 콜가치가 0원이고 상승·하락 시 주가 차이가 30원이다. 헤지비율(델타)은 (______)이다.",
+   "blankAnswer": "0.5",
+   "acceptedAnswers": [
+    "0.5",
+    "0.5원"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 15.0,
+     "b": 30.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(Cu − Cd) ÷ (Su − Sd).",
+   "confusion": null,
+   "calculation": "15 ÷ 30 = 0.5",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4239,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM062-Q04",
+   "primaryConceptId": "FM062",
+   "conceptIds": [
+    "FM062"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "유럽형 옵션 가격을 연속시간에서 해석적으로 구하는 모형을 (______)모형이라 한다.",
+   "blankAnswer": "블랙숄즈",
+   "acceptedAnswers": [
+    "블랙숄즈",
+    "블랙-숄즈",
+    "Black-Scholes"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "옵션가격결정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4240,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM063-Q03",
+   "primaryConceptId": "FM063",
+   "conceptIds": [
+    "FM063"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "현물환율 1,200원/$, 원화 이자율 4%, 달러 이자율 2%일 때 이자율평가설에 따른 1년 선물환율은 (______)원/$이다.",
+   "blankAnswer": "1,223.53",
+   "acceptedAnswers": [
+    "1,223.53",
+    "1,223.53원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "irp_fwd",
+    "params": {
+     "s": 1200.0,
+     "id_": 4.0,
+     "if_": 2.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "S × (1 + i국내)/(1 + i외국).",
+   "confusion": null,
+   "calculation": "선물환율 = 현물환율 1200 × (1 + 자국이자율 4%) ÷ (1 + 외국이자율 2%) = 1223.53",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4241,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM063-Q04",
+   "primaryConceptId": "FM063",
+   "conceptIds": [
+    "FM063"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "두 나라의 물가 수준 비율로 환율이 결정된다고 보는 이론을 (______)설이라 한다.",
+   "blankAnswer": "구매력평가",
+   "acceptedAnswers": [
+    "구매력평가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "PPP.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4242,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM063-Q05",
+   "primaryConceptId": "FM063",
+   "conceptIds": [
+    "FM063"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "원화 차입금과 달러 차입금처럼 서로 다른 화폐로 표시된 원리금을 교환하는 계약을 (______)스왑이라 한다.",
+   "blankAnswer": "통화",
+   "acceptedAnswers": [
+    "통화"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "스왑 종류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4243,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM070-Q01",
+   "primaryConceptId": "FM070",
+   "conceptIds": [
+    "FM070"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "definition",
+   "questionText": "총자산 또는 매출액을 100%로 놓고 각 항목을 구성비로 표시한 재무제표를 (______)형 재무제표라 한다.",
+   "blankAnswer": "공통",
+   "acceptedAnswers": [
+    "공통"
+   ],
+   "relatedConceptIds": [
+    "FM002",
+    "FM003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구성비 분석.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4244,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM070-Q02",
+   "primaryConceptId": "FM070",
+   "conceptIds": [
+    "FM070"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "comparison",
+   "questionText": "분석 방법과 비교 대상을 연결하시오.",
+   "blankAnswer": "시계열(추세) 분석 → 같은 기업의 여러 기간 / 횡단면 분석 → 같은 기간의 동종 기업",
+   "acceptedAnswers": [
+    "시계열(추세) 분석 → 같은 기업의 여러 기간 / 횡단면 분석 → 같은 기간의 동종 기업"
+   ],
+   "relatedConceptIds": [
+    "FM002",
+    "FM003"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "같은 기업의 여러 기간",
+    "같은 기간의 동종 기업",
+    "다른 업종 평균"
+   ],
+   "slots": [
+    {
+     "label": "시계열(추세) 분석",
+     "answer": "같은 기업의 여러 기간"
+    },
+    {
+     "label": "횡단면 분석",
+     "answer": "같은 기간의 동종 기업"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비교 축.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4245,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM070-Q03",
+   "primaryConceptId": "FM070",
+   "conceptIds": [
+    "FM070"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "매출원가 700,000,000원, 매출액 1,000,000,000원일 때 공통형 손익계산서의 매출원가 구성비는 (______)%이다.",
+   "blankAnswer": "70",
+   "acceptedAnswers": [
+    "70",
+    "70%"
+   ],
+   "relatedConceptIds": [
+    "FM002",
+    "FM003"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 700000000.0,
+     "b": 1000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출원가 ÷ 매출액.",
+   "confusion": null,
+   "calculation": "700,000,000 ÷ 1,000,000,000 × 100 = 70%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4246,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM071-Q01",
+   "primaryConceptId": "FM071",
+   "conceptIds": [
+    "FM071"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "영업활동 현금흐름 50,000,000,000원, 자본적 지출 32,000,000,000원일 때 잉여현금흐름은 (______)원이다.",
+   "blankAnswer": "18,000,000,000",
+   "acceptedAnswers": [
+    "18,000,000,000",
+    "18,000,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM045",
+    "FM070"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 50000000000.0,
+     "b": 32000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "영업CF − 자본적 지출.",
+   "confusion": null,
+   "calculation": "50,000,000,000 − 32,000,000,000 = 18,000,000,000",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4247,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM071-Q02",
+   "primaryConceptId": "FM071",
+   "conceptIds": [
+    "FM071"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "classification",
+   "questionText": "기업 단계별 일반적인 현금흐름 부호를 연결하시오.",
+   "blankAnswer": "성숙기업의 재무활동 현금흐름 → 유출(−) / 성장기업의 재무활동 현금흐름 → 유입(+)",
+   "acceptedAnswers": [
+    "성숙기업의 재무활동 현금흐름 → 유출(−) / 성장기업의 재무활동 현금흐름 → 유입(+)"
+   ],
+   "relatedConceptIds": [
+    "FM045",
+    "FM070"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "유입(+)",
+    "유출(−)"
+   ],
+   "slots": [
+    {
+     "label": "성숙기업의 재무활동 현금흐름",
+     "answer": "유출(−)"
+    },
+    {
+     "label": "성장기업의 재무활동 현금흐름",
+     "answer": "유입(+)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자금 조달과 상환.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4248,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM071-Q03",
+   "primaryConceptId": "FM071",
+   "conceptIds": [
+    "FM071"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "definition",
+   "questionText": "영업활동 현금흐름에서 자본적 지출을 뺀 금액을 (______)현금흐름이라 한다.",
+   "blankAnswer": "잉여",
+   "acceptedAnswers": [
+    "잉여"
+   ],
+   "relatedConceptIds": [
+    "FM045",
+    "FM070"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "FCF.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4249,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM072-Q01",
+   "primaryConceptId": "FM072",
+   "conceptIds": [
+    "FM072"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "1년 후 1,000,000원에서 매년 3%씩 늘어 5년간 받는 현금흐름의 현재가치(할인율 8%)는 (______)원이다.",
+   "blankAnswer": "4,220,351",
+   "acceptedAnswers": [
+    "4,220,351",
+    "4,220,351원"
+   ],
+   "relatedConceptIds": [
+    "FM044"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "grow_annuity",
+    "params": {
+     "c1": 1000000.0,
+     "r": 8.0,
+     "g": 3.0,
+     "n": 5.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "C1/(r − g) × [1 − ((1+g)/(1+r))^n].",
+   "confusion": null,
+   "calculation": "1,000,000 ÷ (8% − 3%) × [1 − (1+3%)^5/(1+8%)^5] = 4,220,351",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4250,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM072-Q02",
+   "primaryConceptId": "FM072",
+   "conceptIds": [
+    "FM072"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "definition",
+   "questionText": "성장연금의 기간이 무한히 길어지면 성장(______)연금이 된다.",
+   "blankAnswer": "영구",
+   "acceptedAnswers": [
+    "영구"
+   ],
+   "relatedConceptIds": [
+    "FM044"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "특수한 경우.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4251,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM072-Q03",
+   "primaryConceptId": "FM072",
+   "conceptIds": [
+    "FM072"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "comparison",
+   "questionText": "성장률이 0인 성장연금의 현재가치는?",
+   "blankAnswer": "일반 연금의 현재가치와 같다",
+   "acceptedAnswers": [
+    "일반 연금의 현재가치와 같다"
+   ],
+   "relatedConceptIds": [
+    "FM044"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "일반 연금의 현재가치와 같다",
+    "0이다",
+    "성장영구연금과 같다",
+    "계산할 수 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "g = 0 이면 정상연금.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4252,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM073-Q01",
+   "primaryConceptId": "FM073",
+   "conceptIds": [
+    "FM073"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "calculation",
+   "questionText": "1년 후 1,000,000원, 2년 후 2,000,000원, 3년 후 3,000,000원을 받는 현금흐름의 현재가치(할인율 10%, 현재 지출 0원)는 (______)원이다.",
+   "blankAnswer": "4,815,928",
+   "acceptedAnswers": [
+    "4,815,928",
+    "4,815,928원"
+   ],
+   "relatedConceptIds": [
+    "FM072"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "npv3",
+    "params": {
+     "c0": 0.0,
+     "c1": 1000000.0,
+     "c2": 2000000.0,
+     "c3": 3000000.0,
+     "r": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "각 기간 할인 후 합산.",
+   "confusion": null,
+   "calculation": "NPV = −0 + 1,000,000/(1+10%) + 2,000,000/(1+10%)² + 3,000,000/(1+10%)³ = 4,815,928",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4253,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM073-Q02",
+   "primaryConceptId": "FM073",
+   "conceptIds": [
+    "FM073"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "definition",
+   "questionText": "기간마다 금액이 다른 현금흐름은 각 현금흐름을 해당 기간만큼 (______)해 더한다.",
+   "blankAnswer": "할인",
+   "acceptedAnswers": [
+    "할인"
+   ],
+   "relatedConceptIds": [
+    "FM072"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현재가치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4254,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM073-Q03",
+   "primaryConceptId": "FM073",
+   "conceptIds": [
+    "FM073"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-A",
+   "questionType": "situation",
+   "questionText": "2~5년 말에 매년 같은 금액을 받는 현금흐름의 현재가치를 구하는 방법으로 옳은 것은?",
+   "blankAnswer": "1년 말 시점 4년 연금 현재가치를 구한 뒤 1년 더 할인",
+   "acceptedAnswers": [
+    "1년 말 시점 4년 연금 현재가치를 구한 뒤 1년 더 할인"
+   ],
+   "relatedConceptIds": [
+    "FM072"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "1년 말 시점 4년 연금 현재가치를 구한 뒤 1년 더 할인",
+    "5년 연금 현재가치를 그대로 사용",
+    "4년 연금 현재가치를 그대로 사용",
+    "단리로 할인"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "거치 연금.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4255,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM074-Q01",
+   "primaryConceptId": "FM074",
+   "conceptIds": [
+    "FM074"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "현금유입을 자본비용으로 재투자한 3년 후 미래가치가 1,500,000원이고 투자의 현재가치가 1,000,000원이다. MIRR 은 (______)%이다.",
+   "blankAnswer": "14.47",
+   "acceptedAnswers": [
+    "14.47",
+    "14.47%"
+   ],
+   "relatedConceptIds": [
+    "FM021"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mirr",
+    "params": {
+     "fv_in": 1500000.0,
+     "pv_out": 1000000.0,
+     "n": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(종가 ÷ 투자 현재가치)^(1/n) − 1.",
+   "confusion": null,
+   "calculation": "(1,500,000 ÷ 1,000,000)^(1/3) − 1 = 14.47%",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4256,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM074-Q02",
+   "primaryConceptId": "FM074",
+   "conceptIds": [
+    "FM074"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "MIRR 은 현금유입이 (______)으로 재투자된다고 가정한다.",
+   "blankAnswer": "자본비용",
+   "acceptedAnswers": [
+    "자본비용"
+   ],
+   "relatedConceptIds": [
+    "FM021"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재투자 가정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4257,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM074-Q03",
+   "primaryConceptId": "FM074",
+   "conceptIds": [
+    "FM074"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "comparison",
+   "questionText": "MIRR 이 IRR 보다 개선한 점은?",
+   "blankAnswer": "복수 IRR 문제가 없고 재투자 가정이 현실적이다",
+   "acceptedAnswers": [
+    "복수 IRR 문제가 없고 재투자 가정이 현실적이다"
+   ],
+   "relatedConceptIds": [
+    "FM021"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "복수 IRR 문제가 없고 재투자 가정이 현실적이다",
+    "투자 규모 차이를 반영한다",
+    "할인율이 필요 없다",
+    "현금흐름을 무시한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "규모 문제는 남는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4258,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM075-Q01",
+   "primaryConceptId": "FM075",
+   "conceptIds": [
+    "FM075"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "투자종료 시 설비 처분가 3,000,000원, 장부가 2,000,000원, 법인세율 20%일 때 세후 잔존가치는 (______)원이다.",
+   "blankAnswer": "2,800,000",
+   "acceptedAnswers": [
+    "2,800,000",
+    "2,800,000원"
+   ],
+   "relatedConceptIds": [
+    "FM023"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ats",
+    "params": {
+     "sale": 3000000.0,
+     "book": 2000000.0,
+     "t": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "처분가 − 처분이익 × 세율.",
+   "confusion": null,
+   "calculation": "3,000,000 − (3,000,000 − 2,000,000) × 20% = 2,800,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4259,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM075-Q02",
+   "primaryConceptId": "FM075",
+   "conceptIds": [
+    "FM075"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "처분가 1,500,000원, 장부가 2,000,000원(처분손실), 법인세율 20%일 때 세후 잔존가치는 (______)원이다.",
+   "blankAnswer": "1,600,000",
+   "acceptedAnswers": [
+    "1,600,000",
+    "1,600,000원"
+   ],
+   "relatedConceptIds": [
+    "FM023"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ats",
+    "params": {
+     "sale": 1500000.0,
+     "book": 2000000.0,
+     "t": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "처분손실 절세효과만큼 증가.",
+   "confusion": null,
+   "calculation": "1,500,000 − (1,500,000 − 2,000,000) × 20% = 1,600,000",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4260,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM075-Q03",
+   "primaryConceptId": "FM075",
+   "conceptIds": [
+    "FM075"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "투자 초기에 투입한 순운전자본은 투자종료 시점에 (______)되는 현금유입으로 본다.",
+   "blankAnswer": "회수",
+   "acceptedAnswers": [
+    "회수"
+   ],
+   "relatedConceptIds": [
+    "FM023"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "종료 시 현금흐름.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4261,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM076-Q01",
+   "primaryConceptId": "FM076",
+   "conceptIds": [
+    "FM076"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "무위험이자율 3%, 투자안 베타 1.5, 시장 기대수익률 9%일 때 위험조정할인율은 (______)%이다.",
+   "blankAnswer": "12",
+   "acceptedAnswers": [
+    "12",
+    "12%"
+   ],
+   "relatedConceptIds": [
+    "FM040",
+    "FM036"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "capm",
+    "params": {
+     "rf": 3.0,
+     "beta": 1.5,
+     "rm": 9.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "Rf + β(Rm − Rf).",
+   "confusion": null,
+   "calculation": "요구수익률 = 3% + 1.5 × (9% − 3%) = 12.0%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4262,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM076-Q02",
+   "primaryConceptId": "FM076",
+   "conceptIds": [
+    "FM076"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "comparison",
+   "questionText": "위험 반영 방법을 연결하시오.",
+   "blankAnswer": "위험조정할인율법 → 할인율에 위험 반영 / 확실성등가법 → 현금흐름에 위험 반영 후 무위험이자율 할인",
+   "acceptedAnswers": [
+    "위험조정할인율법 → 할인율에 위험 반영 / 확실성등가법 → 현금흐름에 위험 반영 후 무위험이자율 할인"
+   ],
+   "relatedConceptIds": [
+    "FM040",
+    "FM036"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "할인율에 위험 반영",
+    "현금흐름에 위험 반영 후 무위험이자율 할인"
+   ],
+   "slots": [
+    {
+     "label": "위험조정할인율법",
+     "answer": "할인율에 위험 반영"
+    },
+    {
+     "label": "확실성등가법",
+     "answer": "현금흐름에 위험 반영 후 무위험이자율 할인"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "조정 위치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4263,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM076-Q03",
+   "primaryConceptId": "FM076",
+   "conceptIds": [
+    "FM076"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "회사 전체 WACC 를 모든 투자안에 쓰면 고위험 투자안을 (______)평가할 수 있다.",
+   "blankAnswer": "과대",
+   "acceptedAnswers": [
+    "과대"
+   ],
+   "relatedConceptIds": [
+    "FM040",
+    "FM036"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "할인율 오류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4264,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM077-Q01",
+   "primaryConceptId": "FM077",
+   "conceptIds": [
+    "FM077"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "다른 변수는 고정하고 한 변수만 바꿔 NPV 변화를 보는 분석을 (______)분석이라 한다.",
+   "blankAnswer": "민감도",
+   "acceptedAnswers": [
+    "민감도"
+   ],
+   "relatedConceptIds": [
+    "FM078",
+    "FM079"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4265,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM077-Q02",
+   "primaryConceptId": "FM077",
+   "conceptIds": [
+    "FM077"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "choice",
+   "questionText": "민감도분석의 한계로 옳은 것은?",
+   "blankAnswer": "변수 간 상관관계와 발생 확률을 반영하지 못한다",
+   "acceptedAnswers": [
+    "변수 간 상관관계와 발생 확률을 반영하지 못한다"
+   ],
+   "relatedConceptIds": [
+    "FM078",
+    "FM079"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "변수 간 상관관계와 발생 확률을 반영하지 못한다",
+    "NPV 를 계산할 수 없다",
+    "할인율을 사용하지 않는다",
+    "한 번에 모든 변수를 바꾼다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "한 변수씩 분석.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4266,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM077-Q03",
+   "primaryConceptId": "FM077",
+   "conceptIds": [
+    "FM077"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "판매량이 10% 감소하면 NPV 가 기본값 1,000,000원에서 400,000원만큼 줄어든다. NPV 감소율은 (______)%이다.",
+   "blankAnswer": "40",
+   "acceptedAnswers": [
+    "40",
+    "40%"
+   ],
+   "relatedConceptIds": [
+    "FM078",
+    "FM079"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 400000.0,
+     "b": 1000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "감소액 ÷ 기본 NPV.",
+   "confusion": null,
+   "calculation": "400,000 ÷ 1,000,000 × 100 = 40%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4267,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM078-Q01",
+   "primaryConceptId": "FM078",
+   "conceptIds": [
+    "FM078"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "낙관 시나리오 NPV 5,000,000원(확률 30%), 비관 시나리오 NPV -2,000,000원(확률 70%)일 때 기대 NPV 는 (______)원이다.",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000원"
+   ],
+   "relatedConceptIds": [
+    "FM077",
+    "FM079"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ev2",
+    "params": {
+     "a": 5000000.0,
+     "ra": 30.0,
+     "b": -2000000.0,
+     "rb": 70.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "Σ 확률 × NPV.",
+   "confusion": null,
+   "calculation": "5,000,000 × 30% + -2,000,000 × 70% = 100,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4268,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM078-Q02",
+   "primaryConceptId": "FM078",
+   "conceptIds": [
+    "FM078"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "확률분포로 수많은 시나리오를 무작위로 만들어 분석하는 방법을 몬테카를로 (______)이라 한다.",
+   "blankAnswer": "시뮬레이션",
+   "acceptedAnswers": [
+    "시뮬레이션"
+   ],
+   "relatedConceptIds": [
+    "FM077",
+    "FM079"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "확장 기법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4269,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM078-Q03",
+   "primaryConceptId": "FM078",
+   "conceptIds": [
+    "FM078"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "여러 변수가 함께 변하는 상황별로 NPV 를 계산하는 분석을 (______)분석이라 한다.",
+   "blankAnswer": "시나리오",
+   "acceptedAnswers": [
+    "시나리오"
+   ],
+   "relatedConceptIds": [
+    "FM077",
+    "FM079"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4270,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM079-Q01",
+   "primaryConceptId": "FM079",
+   "conceptIds": [
+    "FM079"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "calculation",
+   "questionText": "1단계 결과가 좋으면(확률 60%) 2단계 NPV 1,000,000원, 나쁘면(확률 40%) 포기해 0원이다. 2단계의 기대값은 (______)원이다.",
+   "blankAnswer": "600,000",
+   "acceptedAnswers": [
+    "600,000",
+    "600,000원"
+   ],
+   "relatedConceptIds": [
+    "FM025",
+    "FM078"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ev2",
+    "params": {
+     "a": 1000000.0,
+     "ra": 60.0,
+     "b": 0.0,
+     "rb": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "확률 가중 기대값.",
+   "confusion": null,
+   "calculation": "1,000,000 × 60% + 0 × 40% = 600,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4271,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM079-Q02",
+   "primaryConceptId": "FM079",
+   "conceptIds": [
+    "FM079"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "의사결정나무는 마지막 단계부터 거꾸로 기대값을 계산하는 (______) 방식으로 푼다.",
+   "blankAnswer": "역산",
+   "acceptedAnswers": [
+    "역산",
+    "후진"
+   ],
+   "relatedConceptIds": [
+    "FM025",
+    "FM078"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "풀이 방향.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4272,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM079-Q03",
+   "primaryConceptId": "FM079",
+   "conceptIds": [
+    "FM079"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-B",
+   "questionType": "definition",
+   "questionText": "나무 그림에서 투자자가 대안을 고르는 지점을 (______) 마디, 결과가 확률적으로 갈리는 지점을 확률 마디라 한다.",
+   "blankAnswer": "결정",
+   "acceptedAnswers": [
+    "결정"
+   ],
+   "relatedConceptIds": [
+    "FM025",
+    "FM078"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구성 요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4273,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM080-Q01",
+   "primaryConceptId": "FM080",
+   "conceptIds": [
+    "FM080"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "같은 위험이면 기대수익률이 높은 것을 고르는 원리를 (______)원리라 한다.",
+   "blankAnswer": "지배",
+   "acceptedAnswers": [
+    "지배"
+   ],
+   "relatedConceptIds": [
+    "FM031",
+    "FM081"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효율성 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4274,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM080-Q02",
+   "primaryConceptId": "FM080",
+   "conceptIds": [
+    "FM080"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "choice",
+   "questionText": "효율적 투자선에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "최소분산포트폴리오 위쪽의 포트폴리오 집합이다",
+   "acceptedAnswers": [
+    "최소분산포트폴리오 위쪽의 포트폴리오 집합이다"
+   ],
+   "relatedConceptIds": [
+    "FM031",
+    "FM081"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "최소분산포트폴리오 위쪽의 포트폴리오 집합이다",
+    "무위험자산을 포함한 직선이다",
+    "모든 개별 주식을 포함한다",
+    "위험이 0인 포트폴리오다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효율적 부분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4275,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM080-Q03",
+   "primaryConceptId": "FM080",
+   "conceptIds": [
+    "FM080"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "무위험자산이 없을 때 투자자의 무차별곡선이 효율적 투자선과 (______)하는 점이 최적 포트폴리오다.",
+   "blankAnswer": "접",
+   "acceptedAnswers": [
+    "접",
+    "접하",
+    "접촉"
+   ],
+   "relatedConceptIds": [
+    "FM031",
+    "FM081"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "최적 선택.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4276,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM081-Q01",
+   "primaryConceptId": "FM081",
+   "conceptIds": [
+    "FM081"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "calculation",
+   "questionText": "무위험이자율 4%, 위험포트폴리오 기대수익률 12%이고 위험포트폴리오 비중이 0.5(50%)일 때 결합 포트폴리오 기대수익률은 (______)%이다.",
+   "blankAnswer": "8",
+   "acceptedAnswers": [
+    "8",
+    "8%"
+   ],
+   "relatedConceptIds": [
+    "FM034",
+    "FM080"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "capm",
+    "params": {
+     "rf": 4.0,
+     "beta": 0.5,
+     "rm": 12.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "rf + y × (E(rp) − rf).",
+   "confusion": null,
+   "calculation": "요구수익률 = 4% + 0.5 × (12% − 4%) = 8.0%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4277,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM081-Q02",
+   "primaryConceptId": "FM081",
+   "conceptIds": [
+    "FM081"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "자본배분선의 기울기는 위험포트폴리오의 (______)비율이다.",
+   "blankAnswer": "샤프",
+   "acceptedAnswers": [
+    "샤프"
+   ],
+   "relatedConceptIds": [
+    "FM034",
+    "FM080"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "초과수익 ÷ 표준편차.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4278,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM081-Q03",
+   "primaryConceptId": "FM081",
+   "conceptIds": [
+    "FM081"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "기울기가 가장 큰 자본배분선은 효율적 투자선과 접하는 (______)포트폴리오로 만들어진다.",
+   "blankAnswer": "접점",
+   "acceptedAnswers": [
+    "접점"
+   ],
+   "relatedConceptIds": [
+    "FM034",
+    "FM080"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "최적 위험포트폴리오.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4279,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM082-Q01",
+   "primaryConceptId": "FM082",
+   "conceptIds": [
+    "FM082"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "calculation",
+   "questionText": "기대수익률 12%, 표준편차 20%, 위험회피계수 3인 투자자의 평균-분산 효용(확실성등가 수익률)은 (______)%이다.",
+   "blankAnswer": "6",
+   "acceptedAnswers": [
+    "6",
+    "6%"
+   ],
+   "relatedConceptIds": [
+    "FM036",
+    "FM081"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mv_util",
+    "params": {
+     "e": 12.0,
+     "a": 3.0,
+     "s": 20.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "E(r) − ½Aσ².",
+   "confusion": null,
+   "calculation": "12% − ½ × 3 × (20%)² = 6%",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4280,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM082-Q02",
+   "primaryConceptId": "FM082",
+   "conceptIds": [
+    "FM082"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "classification",
+   "questionText": "위험회피계수(A)에 따른 투자자 유형을 연결하시오.",
+   "blankAnswer": "A > 0 → 위험회피자 / A = 0 → 위험중립자 / A < 0 → 위험선호자",
+   "acceptedAnswers": [
+    "A > 0 → 위험회피자 / A = 0 → 위험중립자 / A < 0 → 위험선호자"
+   ],
+   "relatedConceptIds": [
+    "FM036",
+    "FM081"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "위험회피자",
+    "위험중립자",
+    "위험선호자"
+   ],
+   "slots": [
+    {
+     "label": "A > 0",
+     "answer": "위험회피자"
+    },
+    {
+     "label": "A = 0",
+     "answer": "위험중립자"
+    },
+    {
+     "label": "A < 0",
+     "answer": "위험선호자"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효용함수의 계수.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4281,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM082-Q03",
+   "primaryConceptId": "FM082",
+   "conceptIds": [
+    "FM082"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-C",
+   "questionType": "definition",
+   "questionText": "위험회피도가 클수록 최적 포트폴리오에서 위험자산 비중은 (______)진다.",
+   "blankAnswer": "작아",
+   "acceptedAnswers": [
+    "작아",
+    "작",
+    "줄어"
+   ],
+   "relatedConceptIds": [
+    "FM036",
+    "FM081"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "최적 비중.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4282,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM083-Q01",
+   "primaryConceptId": "FM083",
+   "conceptIds": [
+    "FM083"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "기존 주식 100주(권리락 전 주가 12,000원), 신주 25주를 주당 8,000원에 주주배정으로 발행한다. 권리락 이론주가는 (______)원이다.",
+   "blankAnswer": "11,200",
+   "acceptedAnswers": [
+    "11,200",
+    "11,200원"
+   ],
+   "relatedConceptIds": [
+    "FM084"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "ex_rights",
+    "params": {
+     "n": 100.0,
+     "p": 12000.0,
+     "m": 25.0,
+     "s": 8000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "가중평균.",
+   "confusion": null,
+   "calculation": "(100 × 12,000 + 25 × 8,000) ÷ (100 + 25) = 11,200",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4283,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM083-Q02",
+   "primaryConceptId": "FM083",
+   "conceptIds": [
+    "FM083"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "주주배정 유상증자에서 권리를 행사하지도 팔지도 않고 포기한 주주의 부는 (______)한다.",
+   "blankAnswer": "감소",
+   "acceptedAnswers": [
+    "감소"
+   ],
+   "relatedConceptIds": [
+    "FM084"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "희석 손실.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4284,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM083-Q03",
+   "primaryConceptId": "FM083",
+   "conceptIds": [
+    "FM083"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "matching",
+   "questionText": "유상증자 방식과 특징을 연결하시오.",
+   "blankAnswer": "주주배정 → 기존 주주에게 지분 비율대로 배정 / 제3자배정 → 특정 외부인에게 배정(기존 지분 희석)",
+   "acceptedAnswers": [
+    "주주배정 → 기존 주주에게 지분 비율대로 배정 / 제3자배정 → 특정 외부인에게 배정(기존 지분 희석)"
+   ],
+   "relatedConceptIds": [
+    "FM084"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기존 주주에게 지분 비율대로 배정",
+    "특정 외부인에게 배정(기존 지분 희석)",
+    "불특정 다수에게 공모"
+   ],
+   "slots": [
+    {
+     "label": "주주배정",
+     "answer": "기존 주주에게 지분 비율대로 배정"
+    },
+    {
+     "label": "제3자배정",
+     "answer": "특정 외부인에게 배정(기존 지분 희석)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배정 대상.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4285,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM084-Q01",
+   "primaryConceptId": "FM084",
+   "conceptIds": [
+    "FM084"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "공모가 20,000원인 주식이 상장 첫날 공모가보다 6,000원 올랐다. 첫날 수익률(저가발행 정도)은 (______)%이다.",
+   "blankAnswer": "30",
+   "acceptedAnswers": [
+    "30",
+    "30%"
+   ],
+   "relatedConceptIds": [
+    "FM083",
+    "FM042"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 6000.0,
+     "b": 20000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "상승액 ÷ 공모가.",
+   "confusion": null,
+   "calculation": "6,000 ÷ 20,000 × 100 = 30%",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4286,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM084-Q02",
+   "primaryConceptId": "FM084",
+   "conceptIds": [
+    "FM084"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "공모가가 상장 후 시장가보다 낮게 정해지는 현상을 (______)발행이라 한다.",
+   "blankAnswer": "저가",
+   "acceptedAnswers": [
+    "저가"
+   ],
+   "relatedConceptIds": [
+    "FM083",
+    "FM042"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "underpricing.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4287,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM084-Q03",
+   "primaryConceptId": "FM084",
+   "conceptIds": [
+    "FM084"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "choice",
+   "questionText": "유상증자(SEO) 발표 시 주가가 하락하는 이유로 가장 적절한 것은?",
+   "blankAnswer": "경영자가 주가 고평가 시 발행한다는 신호로 해석되기 때문",
+   "acceptedAnswers": [
+    "경영자가 주가 고평가 시 발행한다는 신호로 해석되기 때문"
+   ],
+   "relatedConceptIds": [
+    "FM083",
+    "FM042"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "경영자가 주가 고평가 시 발행한다는 신호로 해석되기 때문",
+    "현금이 늘어나 기업가치가 감소하기 때문",
+    "부채비율이 높아지기 때문",
+    "배당이 줄어들기 때문"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정보비대칭.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4288,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM085-Q01",
+   "primaryConceptId": "FM085",
+   "conceptIds": [
+    "FM085"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "전환비율이 50주이고 현재 주가가 24,000원이다. 전환가치는 (______)원이다.",
+   "blankAnswer": "1,200,000",
+   "acceptedAnswers": [
+    "1,200,000",
+    "1,200,000원"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 50.0,
+     "b": 24000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "전환비율 × 주가.",
+   "confusion": null,
+   "calculation": "50 × 24,000 = 1,200,000",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4289,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM085-Q02",
+   "primaryConceptId": "FM085",
+   "conceptIds": [
+    "FM085"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "사채 액면금액을 주식 1주로 바꿀 때 적용하는 가격으로 나누면 받을 주식 수가 나온다. 이 가격을 (______)가격이라 한다.",
+   "blankAnswer": "전환",
+   "acceptedAnswers": [
+    "전환"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계산.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4290,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM085-Q03",
+   "primaryConceptId": "FM085",
+   "conceptIds": [
+    "FM085"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "choice",
+   "questionText": "전환사채 가치의 하한으로 옳은 것은?",
+   "blankAnswer": "순수채권가치와 전환가치 중 큰 값",
+   "acceptedAnswers": [
+    "순수채권가치와 전환가치 중 큰 값"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "순수채권가치와 전환가치 중 큰 값",
+    "액면금액",
+    "전환가치와 무관한 순수채권가치만",
+    "주가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 가치 중 큰 값 이상.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4291,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM086-Q01",
+   "primaryConceptId": "FM086",
+   "conceptIds": [
+    "FM086"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "결합 후 기업가치 1,500,000,000원, 인수기업 단독가치 1,000,000,000원, 피인수기업 단독가치 400,000,000원일 때 시너지는 (______)원이다.",
+   "blankAnswer": "100,000,000",
+   "acceptedAnswers": [
+    "100,000,000",
+    "100,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM087"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "sub3",
+    "params": {
+     "a": 1500000000.0,
+     "b": 1000000000.0,
+     "c": 400000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "V(AB) − V(A) − V(B).",
+   "confusion": null,
+   "calculation": "1,500,000,000 − 1,000,000,000 − 400,000,000 = 100,000,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4292,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM086-Q02",
+   "primaryConceptId": "FM086",
+   "conceptIds": [
+    "FM086"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "시너지가 100,000,000원이고 인수 프리미엄이 60,000,000원일 때 인수기업 주주의 순현가(NPV)는 (______)원이다.",
+   "blankAnswer": "40,000,000",
+   "acceptedAnswers": [
+    "40,000,000",
+    "40,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM087"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 100000000.0,
+     "b": 60000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "시너지 − 프리미엄.",
+   "confusion": null,
+   "calculation": "100,000,000 − 60,000,000 = 40,000,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4293,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM086-Q03",
+   "primaryConceptId": "FM086",
+   "conceptIds": [
+    "FM086"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "classification",
+   "questionText": "합병 유형을 연결하시오.",
+   "blankAnswer": "같은 업종 경쟁사 합병 → 수평적 합병 / 원재료 공급업체 합병 → 수직적 합병 / 무관한 업종 합병 → 다각화 합병",
+   "acceptedAnswers": [
+    "같은 업종 경쟁사 합병 → 수평적 합병 / 원재료 공급업체 합병 → 수직적 합병 / 무관한 업종 합병 → 다각화 합병"
+   ],
+   "relatedConceptIds": [
+    "FM087"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "수평적 합병",
+    "수직적 합병",
+    "다각화 합병"
+   ],
+   "slots": [
+    {
+     "label": "같은 업종 경쟁사 합병",
+     "answer": "수평적 합병"
+    },
+    {
+     "label": "원재료 공급업체 합병",
+     "answer": "수직적 합병"
+    },
+    {
+     "label": "무관한 업종 합병",
+     "answer": "다각화 합병"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "업종 관계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4294,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM087-Q01",
+   "primaryConceptId": "FM087",
+   "conceptIds": [
+    "FM087"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "피인수기업 1주의 인수가격이 36,000원이고 인수기업 주가가 60,000원이다. 주식교환비율은 (______)이다.",
+   "blankAnswer": "0.6",
+   "acceptedAnswers": [
+    "0.6",
+    "0.6원"
+   ],
+   "relatedConceptIds": [
+    "FM086"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 36000.0,
+     "b": 60000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "인수가격 ÷ 인수기업 주가.",
+   "confusion": null,
+   "calculation": "36,000 ÷ 60,000 = 0.6",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4295,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM087-Q02",
+   "primaryConceptId": "FM087",
+   "conceptIds": [
+    "FM087"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "comparison",
+   "questionText": "인수 대가 형태와 시너지 위험 부담을 연결하시오.",
+   "blankAnswer": "현금 대가 → 인수기업 주주가 부담 / 주식 대가 → 양쪽 주주가 공유",
+   "acceptedAnswers": [
+    "현금 대가 → 인수기업 주주가 부담 / 주식 대가 → 양쪽 주주가 공유"
+   ],
+   "relatedConceptIds": [
+    "FM086"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "인수기업 주주가 부담",
+    "양쪽 주주가 공유",
+    "피인수기업 주주가 부담"
+   ],
+   "slots": [
+    {
+     "label": "현금 대가",
+     "answer": "인수기업 주주가 부담"
+    },
+    {
+     "label": "주식 대가",
+     "answer": "양쪽 주주가 공유"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대가 형태별 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4296,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM087-Q03",
+   "primaryConceptId": "FM087",
+   "conceptIds": [
+    "FM087"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "피인수기업 주식 1주당 교부하는 인수기업 주식 수를 주식(______)비율이라 한다.",
+   "blankAnswer": "교환",
+   "acceptedAnswers": [
+    "교환"
+   ],
+   "relatedConceptIds": [
+    "FM086"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4297,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM088-Q01",
+   "primaryConceptId": "FM088",
+   "conceptIds": [
+    "FM088"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "예측기간 다음 해 FCF 10,000,000,000원, WACC 10%, 영구성장률 2%일 때 예측기간 말 잔존가치는 (______)원이다.",
+   "blankAnswer": "125,000,000,000",
+   "acceptedAnswers": [
+    "125,000,000,000",
+    "125,000,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM045",
+    "FM044"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "growing_perp",
+    "params": {
+     "c1": 10000000000.0,
+     "r": 10.0,
+     "g": 2.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "FCF ÷ (WACC − g).",
+   "confusion": null,
+   "calculation": "성장영구연금 현재가치 = 10,000,000,000 ÷ (10% − 2%) = 125,000,000,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4298,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM088-Q02",
+   "primaryConceptId": "FM088",
+   "conceptIds": [
+    "FM088"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "영구성장률은 할인율보다 (______)야 한다.",
+   "blankAnswer": "낮아",
+   "acceptedAnswers": [
+    "낮아",
+    "작아"
+   ],
+   "relatedConceptIds": [
+    "FM045",
+    "FM044"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수렴 조건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4299,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM088-Q03",
+   "primaryConceptId": "FM088",
+   "conceptIds": [
+    "FM088"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "예측기간 이후 현금흐름의 가치를 (______)가치라 한다.",
+   "blankAnswer": "잔존",
+   "acceptedAnswers": [
+    "잔존",
+    "계속"
+   ],
+   "relatedConceptIds": [
+    "FM045",
+    "FM044"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계속가치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4300,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM089-Q01",
+   "primaryConceptId": "FM089",
+   "conceptIds": [
+    "FM089"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "유사기업 평균 EV/EBITDA 가 8배이고 대상기업 EBITDA 가 5,000,000,000원이다. 추정 기업가치(EV)는 (______)원이다.",
+   "blankAnswer": "40,000,000,000",
+   "acceptedAnswers": [
+    "40,000,000,000",
+    "40,000,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM044",
+    "FM095",
+    "FM096"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 8.0,
+     "b": 5000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "배수 × EBITDA.",
+   "confusion": null,
+   "calculation": "8 × 5,000,000,000 = 40,000,000,000",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4301,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM089-Q02",
+   "primaryConceptId": "FM089",
+   "conceptIds": [
+    "FM089"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "추정 EV 가 40,000,000,000원이고 순차입금이 12,000,000,000원이다. 주주가치는 (______)원이다.",
+   "blankAnswer": "28,000,000,000",
+   "acceptedAnswers": [
+    "28,000,000,000",
+    "28,000,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM044",
+    "FM095",
+    "FM096"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 40000000000.0,
+     "b": 12000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "EV − 순차입금.",
+   "confusion": null,
+   "calculation": "40,000,000,000 − 12,000,000,000 = 28,000,000,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4302,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM089-Q03",
+   "primaryConceptId": "FM089",
+   "conceptIds": [
+    "FM089"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "유사기업의 시장 배수를 이용해 가치를 추정하는 방법을 (______)가치평가라 한다.",
+   "blankAnswer": "상대",
+   "acceptedAnswers": [
+    "상대"
+   ],
+   "relatedConceptIds": [
+    "FM044",
+    "FM095",
+    "FM096"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4303,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM090-Q01",
+   "primaryConceptId": "FM090",
+   "conceptIds": [
+    "FM090"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "재고회전기간 60일, 매출채권회수기간 45일, 매입채무지급기간 40일일 때 현금전환주기는 (______)일이다.",
+   "blankAnswer": "65",
+   "acceptedAnswers": [
+    "65",
+    "65일"
+   ],
+   "relatedConceptIds": [
+    "FM091",
+    "FM092",
+    "FM093"
+   ],
+   "unit": "일",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 60.0,
+     "b": 45.0,
+     "c": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "재고 + 채권 − 채무 기간.",
+   "confusion": null,
+   "calculation": "60 + 45 − 40 = 65",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4304,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM090-Q02",
+   "primaryConceptId": "FM090",
+   "conceptIds": [
+    "FM090"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "재고회전기간과 매출채권회수기간의 합을 (______)주기라 한다.",
+   "blankAnswer": "영업",
+   "acceptedAnswers": [
+    "영업"
+   ],
+   "relatedConceptIds": [
+    "FM091",
+    "FM092",
+    "FM093"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4305,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM090-Q03",
+   "primaryConceptId": "FM090",
+   "conceptIds": [
+    "FM090"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "comparison",
+   "questionText": "보수적 운전자본 정책의 특징은?",
+   "blankAnswer": "유동성 위험은 낮지만 수익성도 낮다",
+   "acceptedAnswers": [
+    "유동성 위험은 낮지만 수익성도 낮다"
+   ],
+   "relatedConceptIds": [
+    "FM091",
+    "FM092",
+    "FM093"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "유동성 위험은 낮지만 수익성도 낮다",
+    "수익성과 위험이 모두 높다",
+    "유동자산을 최소로 보유한다",
+    "단기 차입에 크게 의존한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "위험-수익 상충.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4306,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM091-Q01",
+   "primaryConceptId": "FM091",
+   "conceptIds": [
+    "FM091"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "연간 현금 수요 7,200,000원, 1회 유가증권 매각 비용 1,000원, 현금 1원당 연간 기회비용 0.16원(이자율 16%)일 때 보몰모형의 최적 현금 인출액은 (______)원이다.",
+   "blankAnswer": "300,000",
+   "acceptedAnswers": [
+    "300,000",
+    "300,000원"
+   ],
+   "relatedConceptIds": [
+    "FM090",
+    "CM034"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "eoq",
+    "params": {
+     "d": 7200000.0,
+     "s": 1000.0,
+     "h": 0.16
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "√(2TF ÷ k).",
+   "confusion": null,
+   "calculation": "EOQ = √(2 × 연간수요 7,200,000 × 1회 주문비 1,000 ÷ 단위당 유지비 0.16) = 300,000",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4307,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM091-Q02",
+   "primaryConceptId": "FM091",
+   "conceptIds": [
+    "FM091"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "현금 흐름이 불규칙할 때 상한과 하한 사이에서 현금을 관리하는 모형을 밀러-(______) 모형이라 한다.",
+   "blankAnswer": "오르",
+   "acceptedAnswers": [
+    "오르"
+   ],
+   "relatedConceptIds": [
+    "FM090",
+    "CM034"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "모형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4308,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM091-Q03",
+   "primaryConceptId": "FM091",
+   "conceptIds": [
+    "FM091"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "effect",
+   "questionText": "이자율이 오를 때 보몰모형의 최적 현금 인출액은?",
+   "blankAnswer": "감소한다",
+   "acceptedAnswers": [
+    "감소한다"
+   ],
+   "relatedConceptIds": [
+    "FM090",
+    "CM034"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "감소한다",
+    "증가한다",
+    "변하지 않는다",
+    "0이 된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기회비용 상승.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4309,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM092-Q01",
+   "primaryConceptId": "FM092",
+   "conceptIds": [
+    "FM092"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "'2/10, net 30' 조건(할인기간 10일)에서 현금할인을 포기하는 연간 비용은 (______)%이다.",
+   "blankAnswer": "37.24",
+   "acceptedAnswers": [
+    "37.24",
+    "37.24%"
+   ],
+   "relatedConceptIds": [
+    "FM090"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "cd_cost",
+    "params": {
+     "d": 2.0,
+     "credit": 30.0,
+     "disc": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "d/(1 − d) × 365/(신용기간 − 할인기간).",
+   "confusion": null,
+   "calculation": "2%/(1 − 2%) × 365/(30 − 10) = 37.24%",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4310,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM092-Q02",
+   "primaryConceptId": "FM092",
+   "conceptIds": [
+    "FM092"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "matching",
+   "questionText": "신용정책 변수와 내용을 연결하시오.",
+   "blankAnswer": "신용기준 → 외상을 허용할 고객의 조건 / 신용기간 → 대금 지급 만기 / 현금할인 → 조기 지급 시 할인율",
+   "acceptedAnswers": [
+    "신용기준 → 외상을 허용할 고객의 조건 / 신용기간 → 대금 지급 만기 / 현금할인 → 조기 지급 시 할인율"
+   ],
+   "relatedConceptIds": [
+    "FM090"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "외상을 허용할 고객의 조건",
+    "대금 지급 만기",
+    "조기 지급 시 할인율"
+   ],
+   "slots": [
+    {
+     "label": "신용기준",
+     "answer": "외상을 허용할 고객의 조건"
+    },
+    {
+     "label": "신용기간",
+     "answer": "대금 지급 만기"
+    },
+    {
+     "label": "현금할인",
+     "answer": "조기 지급 시 할인율"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "신용정책 구성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4311,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM092-Q03",
+   "primaryConceptId": "FM092",
+   "conceptIds": [
+    "FM092"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "현금할인 포기 비용이 차입이자율보다 크면 차입해서라도 할인을 (______)는 것이 유리하다.",
+   "blankAnswer": "받",
+   "acceptedAnswers": [
+    "받",
+    "받는",
+    "이용하"
+   ],
+   "relatedConceptIds": [
+    "FM090"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "의사결정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4312,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM093-Q01",
+   "primaryConceptId": "FM093",
+   "conceptIds": [
+    "FM093"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "안전재고 100개, 일평균 사용량 50개, 조달기간 6일일 때 재주문점은 (______)개이다.",
+   "blankAnswer": "400",
+   "acceptedAnswers": [
+    "400",
+    "400개"
+   ],
+   "relatedConceptIds": [
+    "CM034",
+    "FM090"
+   ],
+   "unit": "개",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "lin",
+    "params": {
+     "f": 100.0,
+     "v": 50.0,
+     "x": 6.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "일평균 사용량 × 조달기간 + 안전재고.",
+   "confusion": null,
+   "calculation": "100 + 50 × 6 = 400",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4313,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM093-Q02",
+   "primaryConceptId": "FM093",
+   "conceptIds": [
+    "FM093"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "수요와 조달기간의 불확실성에 대비해 추가로 보유하는 재고를 (______)재고라 한다.",
+   "blankAnswer": "안전",
+   "acceptedAnswers": [
+    "안전"
+   ],
+   "relatedConceptIds": [
+    "CM034",
+    "FM090"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4314,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM093-Q03",
+   "primaryConceptId": "FM093",
+   "conceptIds": [
+    "FM093"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "comparison",
+   "questionText": "JIT 재고관리의 특징으로 옳은 것은?",
+   "blankAnswer": "재고 보유비용은 줄지만 공급 차질 위험이 커진다",
+   "acceptedAnswers": [
+    "재고 보유비용은 줄지만 공급 차질 위험이 커진다"
+   ],
+   "relatedConceptIds": [
+    "CM034",
+    "FM090"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재고 보유비용은 줄지만 공급 차질 위험이 커진다",
+    "안전재고를 크게 늘린다",
+    "주문 횟수를 최소화한다",
+    "재고 부족 위험이 사라진다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "적시생산.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4315,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM094-Q01",
+   "primaryConceptId": "FM094",
+   "conceptIds": [
+    "FM094"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "자산 구입가 1,000,000,000원, 세후 리스료 현재가치 700,000,000원, 포기하는 감가상각 절세효과 현재가치 250,000,000원일 때 리스의 순현재가치(NAL)는 (______)원이다.",
+   "blankAnswer": "50,000,000",
+   "acceptedAnswers": [
+    "50,000,000",
+    "50,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM040"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "sub3",
+    "params": {
+     "a": 1000000000.0,
+     "b": 700000000.0,
+     "c": 250000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "구입가 − 세후 리스료 PV − 절세효과 PV.",
+   "confusion": null,
+   "calculation": "1,000,000,000 − 700,000,000 − 250,000,000 = 50,000,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4316,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM094-Q02",
+   "primaryConceptId": "FM094",
+   "conceptIds": [
+    "FM094"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "리스 대 구입 분석의 할인율은 (______) 차입이자율이다.",
+   "blankAnswer": "세후",
+   "acceptedAnswers": [
+    "세후"
+   ],
+   "relatedConceptIds": [
+    "FM040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "kD(1 − t).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4317,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM094-Q03",
+   "primaryConceptId": "FM094",
+   "conceptIds": [
+    "FM094"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "NAL 이 0보다 크면 돈을 빌려 사는 것보다 자산을 (______)하는 것이 유리하다.",
+   "blankAnswer": "리스",
+   "acceptedAnswers": [
+    "리스",
+    "임차"
+   ],
+   "relatedConceptIds": [
+    "FM040"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판단 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4318,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM095-Q01",
+   "primaryConceptId": "FM095",
+   "conceptIds": [
+    "FM095"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "주가 20,000원, 주당순자산 16,000원일 때 PBR 은 (______)배이다.",
+   "blankAnswer": "1.25",
+   "acceptedAnswers": [
+    "1.25",
+    "1.25배"
+   ],
+   "relatedConceptIds": [
+    "FM044",
+    "FM089"
+   ],
+   "unit": "배",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 20000.0,
+     "b": 16000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "주가 ÷ BPS.",
+   "confusion": null,
+   "calculation": "20,000 ÷ 16,000 = 1.25",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4319,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM095-Q02",
+   "primaryConceptId": "FM095",
+   "conceptIds": [
+    "FM095"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "comparison",
+   "questionText": "주가순자산비율은 자기자본이익률(ROE)과 주가를 주당순이익으로 나눈 배수의 곱으로 분해된다. 이 배수를 (______)이라 한다.",
+   "blankAnswer": "PER",
+   "acceptedAnswers": [
+    "PER",
+    "주가수익비율"
+   ],
+   "relatedConceptIds": [
+    "FM044",
+    "FM089"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배수 관계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4320,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM095-Q03",
+   "primaryConceptId": "FM095",
+   "conceptIds": [
+    "FM095"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "주가를 1주당 장부상 자본으로 나눈 배수를 주가(______)비율이라 한다.",
+   "blankAnswer": "순자산",
+   "acceptedAnswers": [
+    "순자산"
+   ],
+   "relatedConceptIds": [
+    "FM044",
+    "FM089"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "PBR.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4321,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM096-Q01",
+   "primaryConceptId": "FM096",
+   "conceptIds": [
+    "FM096"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "calculation",
+   "questionText": "시가총액 300,000,000,000원, 매출액 100,000,000,000원일 때 PSR 은 (______)배이다.",
+   "blankAnswer": "3",
+   "acceptedAnswers": [
+    "3",
+    "3배"
+   ],
+   "relatedConceptIds": [
+    "FM089",
+    "FM095"
+   ],
+   "unit": "배",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 300000000000.0,
+     "b": 100000000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "시가총액 ÷ 매출액.",
+   "confusion": null,
+   "calculation": "300,000,000,000 ÷ 100,000,000,000 = 3",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4322,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM096-Q02",
+   "primaryConceptId": "FM096",
+   "conceptIds": [
+    "FM096"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "situation",
+   "questionText": "PSR 이 특히 유용한 평가 대상은?",
+   "blankAnswer": "적자인 초기 성장기업",
+   "acceptedAnswers": [
+    "적자인 초기 성장기업"
+   ],
+   "relatedConceptIds": [
+    "FM089",
+    "FM095"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "적자인 초기 성장기업",
+    "안정적 흑자 공기업",
+    "청산 중인 기업",
+    "금융지주회사"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이익이 음수면 PER 사용 곤란.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4323,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM096-Q03",
+   "primaryConceptId": "FM096",
+   "conceptIds": [
+    "FM096"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "PSR 의 한계는 기업의 (______)을 반영하지 못한다는 점이다.",
+   "blankAnswer": "수익성",
+   "acceptedAnswers": [
+    "수익성",
+    "이익률"
+   ],
+   "relatedConceptIds": [
+    "FM089",
+    "FM095"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이익률 미반영.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4324,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM097-Q01",
+   "primaryConceptId": "FM097",
+   "conceptIds": [
+    "FM097"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "classification",
+   "questionText": "금리 전망에 따른 듀레이션 조정을 연결하시오.",
+   "blankAnswer": "금리 하락 예상 → 듀레이션 확대 / 금리 상승 예상 → 듀레이션 축소",
+   "acceptedAnswers": [
+    "금리 하락 예상 → 듀레이션 확대 / 금리 상승 예상 → 듀레이션 축소"
+   ],
+   "relatedConceptIds": [
+    "FM051",
+    "FM052"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "듀레이션 확대",
+    "듀레이션 축소",
+    "변화 없음"
+   ],
+   "slots": [
+    {
+     "label": "금리 하락 예상",
+     "answer": "듀레이션 확대"
+    },
+    {
+     "label": "금리 상승 예상",
+     "answer": "듀레이션 축소"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격 민감도 활용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4325,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM097-Q02",
+   "primaryConceptId": "FM097",
+   "conceptIds": [
+    "FM097"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "matching",
+   "questionText": "채권 만기 구성 전략을 연결하시오.",
+   "blankAnswer": "만기를 고르게 분산 → 사다리형 / 단기와 장기에 집중 → 바벨형",
+   "acceptedAnswers": [
+    "만기를 고르게 분산 → 사다리형 / 단기와 장기에 집중 → 바벨형"
+   ],
+   "relatedConceptIds": [
+    "FM051",
+    "FM052"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "사다리형",
+    "바벨형",
+    "총알형"
+   ],
+   "slots": [
+    {
+     "label": "만기를 고르게 분산",
+     "answer": "사다리형"
+    },
+    {
+     "label": "단기와 장기에 집중",
+     "answer": "바벨형"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "만기 분포.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4326,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM097-Q03",
+   "primaryConceptId": "FM097",
+   "conceptIds": [
+    "FM097"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "자산과 부채의 듀레이션을 맞추는 소극적 전략을 (______)전략이라 한다.",
+   "blankAnswer": "면역",
+   "acceptedAnswers": [
+    "면역"
+   ],
+   "relatedConceptIds": [
+    "FM051",
+    "FM052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "소극적 전략.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4327,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM098-Q01",
+   "primaryConceptId": "FM098",
+   "conceptIds": [
+    "FM098"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "classification",
+   "questionText": "다음 행동을 심리적 편향과 연결하시오.",
+   "blankAnswer": "오른 주식은 일찍 팔고 내린 주식은 계속 보유 → 처분효과 / 자기 분석 능력을 과대평가해 잦은 매매 → 과잉확신 / 다른 투자자를 따라 매수 → 군집행동",
+   "acceptedAnswers": [
+    "오른 주식은 일찍 팔고 내린 주식은 계속 보유 → 처분효과 / 자기 분석 능력을 과대평가해 잦은 매매 → 과잉확신 / 다른 투자자를 따라 매수 → 군집행동"
+   ],
+   "relatedConceptIds": [
+    "FM053"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "처분효과",
+    "과잉확신",
+    "군집행동",
+    "손실회피"
+   ],
+   "slots": [
+    {
+     "label": "오른 주식은 일찍 팔고 내린 주식은 계속 보유",
+     "answer": "처분효과"
+    },
+    {
+     "label": "자기 분석 능력을 과대평가해 잦은 매매",
+     "answer": "과잉확신"
+    },
+    {
+     "label": "다른 투자자를 따라 매수",
+     "answer": "군집행동"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "편향 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4328,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM098-Q02",
+   "primaryConceptId": "FM098",
+   "conceptIds": [
+    "FM098"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "definition",
+   "questionText": "같은 크기의 이익보다 손실을 더 크게 느끼는 성향을 손실(______)라 한다.",
+   "blankAnswer": "회피",
+   "acceptedAnswers": [
+    "회피"
+   ],
+   "relatedConceptIds": [
+    "FM053"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전망이론.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4329,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM098-Q03",
+   "primaryConceptId": "FM098",
+   "conceptIds": [
+    "FM098"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-D",
+   "questionType": "choice",
+   "questionText": "행동재무에서 비합리적 가격이 오래 지속될 수 있다고 보는 이유는?",
+   "blankAnswer": "차익거래에 위험과 비용이 따르는 한계 때문",
+   "acceptedAnswers": [
+    "차익거래에 위험과 비용이 따르는 한계 때문"
+   ],
+   "relatedConceptIds": [
+    "FM053"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "차익거래에 위험과 비용이 따르는 한계 때문",
+    "모든 투자자가 합리적이기 때문",
+    "정보가 즉시 반영되기 때문",
+    "공매도가 무제한 가능하기 때문"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "차익거래의 한계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4330,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM099-Q01",
+   "primaryConceptId": "FM099",
+   "conceptIds": [
+    "FM099"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "situation",
+   "questionText": "감마가 큰 포지션은 델타가 빨리 변하므로 델타중립을 유지하려면 헤지를 (______) 재조정해야 한다.",
+   "blankAnswer": "자주",
+   "acceptedAnswers": [
+    "자주",
+    "빈번하게"
+   ],
+   "relatedConceptIds": [
+    "FM062",
+    "FM100"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "감마와 헤지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4331,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM099-Q02",
+   "primaryConceptId": "FM099",
+   "conceptIds": [
+    "FM099"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "기초자산 가격 변화에 따른 델타의 변화율을 (______)라 한다.",
+   "blankAnswer": "감마",
+   "acceptedAnswers": [
+    "감마"
+   ],
+   "relatedConceptIds": [
+    "FM062",
+    "FM100"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "2차 민감도.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4332,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM099-Q03",
+   "primaryConceptId": "FM099",
+   "conceptIds": [
+    "FM099"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "choice",
+   "questionText": "감마가 가장 큰 옵션은?",
+   "blankAnswer": "만기가 가까운 등가격 옵션",
+   "acceptedAnswers": [
+    "만기가 가까운 등가격 옵션"
+   ],
+   "relatedConceptIds": [
+    "FM062",
+    "FM100"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "만기가 가까운 등가격 옵션",
+    "만기가 먼 깊은 내가격 옵션",
+    "만기가 먼 깊은 외가격 옵션",
+    "만기가 지난 옵션"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "ATM·만기 근접.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4333,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM100-Q01",
+   "primaryConceptId": "FM100",
+   "conceptIds": [
+    "FM100"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "베가가 변동성 1%p당 20원인 옵션의 변동성이 3%p 오르면 옵션가격은 약 (______)원 오른다.",
+   "blankAnswer": "60",
+   "acceptedAnswers": [
+    "60",
+    "60원"
+   ],
+   "relatedConceptIds": [
+    "FM099",
+    "FM101"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 20.0,
+     "b": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "베가 × 변동성 변화.",
+   "confusion": null,
+   "calculation": "20 × 3 = 60",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4334,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM100-Q02",
+   "primaryConceptId": "FM100",
+   "conceptIds": [
+    "FM100"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "옵션가격에서 역산한 기초자산의 변동성을 (______)변동성이라 한다.",
+   "blankAnswer": "내재",
+   "acceptedAnswers": [
+    "내재"
+   ],
+   "relatedConceptIds": [
+    "FM099",
+    "FM101"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "implied volatility.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4335,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM100-Q03",
+   "primaryConceptId": "FM100",
+   "conceptIds": [
+    "FM100"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "변동성이 커지면 콜·풋 매입 포지션의 가치는 모두 (______)한다.",
+   "blankAnswer": "증가",
+   "acceptedAnswers": [
+    "증가",
+    "상승"
+   ],
+   "relatedConceptIds": [
+    "FM099",
+    "FM101"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "베가 +.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4336,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM101-Q01",
+   "primaryConceptId": "FM101",
+   "conceptIds": [
+    "FM101"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "세타가 1일당 5원 감소인 콜옵션을 10일 보유하면 다른 조건이 같을 때 가치가 약 (______)원 줄어든다.",
+   "blankAnswer": "50",
+   "acceptedAnswers": [
+    "50",
+    "50원"
+   ],
+   "relatedConceptIds": [
+    "FM100",
+    "FM099"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 5.0,
+     "b": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "|세타| × 일수.",
+   "confusion": null,
+   "calculation": "5 × 10 = 50",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4337,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM101-Q02",
+   "primaryConceptId": "FM101",
+   "conceptIds": [
+    "FM101"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "시간 경과에 따른 옵션가격 변화를 (______)라 한다.",
+   "blankAnswer": "세타",
+   "acceptedAnswers": [
+    "세타"
+   ],
+   "relatedConceptIds": [
+    "FM100",
+    "FM099"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4338,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM101-Q03",
+   "primaryConceptId": "FM101",
+   "conceptIds": [
+    "FM101"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "comparison",
+   "questionText": "옵션 매도 포지션의 세타 부호는?",
+   "blankAnswer": "양(+)",
+   "acceptedAnswers": [
+    "양(+)"
+   ],
+   "relatedConceptIds": [
+    "FM100",
+    "FM099"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "양(+)",
+    "음(−)",
+    "0",
+    "기초자산에 따라 무작위"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "시간가치 소멸이 매도자에게 이익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4339,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM102-Q01",
+   "primaryConceptId": "FM102",
+   "conceptIds": [
+    "FM102"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "classification",
+   "questionText": "무위험이자율 상승 시 옵션가격 변화를 연결하시오.",
+   "blankAnswer": "콜옵션 → 상승 / 풋옵션 → 하락",
+   "acceptedAnswers": [
+    "콜옵션 → 상승 / 풋옵션 → 하락"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "상승",
+    "하락",
+    "변화 없음"
+   ],
+   "slots": [
+    {
+     "label": "콜옵션",
+     "answer": "상승"
+    },
+    {
+     "label": "풋옵션",
+     "answer": "하락"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "행사가격 현재가치 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4340,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM102-Q02",
+   "primaryConceptId": "FM102",
+   "conceptIds": [
+    "FM102"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "무위험이자율 변화에 따른 옵션가격의 변화를 (______)라 한다.",
+   "blankAnswer": "로",
+   "acceptedAnswers": [
+    "로",
+    "rho"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "rho.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4341,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM102-Q03",
+   "primaryConceptId": "FM102",
+   "conceptIds": [
+    "FM102"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "이자율이 오르면 행사가격의 (______)가 줄어 콜옵션 가격이 오른다.",
+   "blankAnswer": "현재가치",
+   "acceptedAnswers": [
+    "현재가치"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4342,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM103-Q01",
+   "primaryConceptId": "FM103",
+   "conceptIds": [
+    "FM103"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "주가 100원에 산 주식에 행사가격 95원 풋(프리미엄 3원)을 매입했다. 만기 주가와 관계없는 최대 손실은 (______)원이다.",
+   "blankAnswer": "8",
+   "acceptedAnswers": [
+    "8",
+    "8원"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 100.0,
+     "b": 3.0,
+     "c": 95.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매입가 + 프리미엄 − 행사가.",
+   "confusion": null,
+   "calculation": "100 + 3 − 95 = 8",
+   "difficulty": 4,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4343,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM103-Q02",
+   "primaryConceptId": "FM103",
+   "conceptIds": [
+    "FM103"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "matching",
+   "questionText": "투자 전망과 옵션 전략을 연결하시오.",
+   "blankAnswer": "큰 변동 예상, 방향 불확실 → 스트래들 매입 / 보유 주식의 하락 위험 제한 → 보호적 풋 / 보유 주식에서 추가 수입, 상승 제한 감수 → 커버드 콜",
+   "acceptedAnswers": [
+    "큰 변동 예상, 방향 불확실 → 스트래들 매입 / 보유 주식의 하락 위험 제한 → 보호적 풋 / 보유 주식에서 추가 수입, 상승 제한 감수 → 커버드 콜"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "스트래들 매입",
+    "보호적 풋",
+    "커버드 콜",
+    "강세 스프레드"
+   ],
+   "slots": [
+    {
+     "label": "큰 변동 예상, 방향 불확실",
+     "answer": "스트래들 매입"
+    },
+    {
+     "label": "보유 주식의 하락 위험 제한",
+     "answer": "보호적 풋"
+    },
+    {
+     "label": "보유 주식에서 추가 수입, 상승 제한 감수",
+     "answer": "커버드 콜"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "목적별 전략.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4344,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM103-Q03",
+   "primaryConceptId": "FM103",
+   "conceptIds": [
+    "FM103"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "같은 행사가격의 콜과 풋을 동시에 매입하는 전략을 (______)이라 한다.",
+   "blankAnswer": "스트래들",
+   "acceptedAnswers": [
+    "스트래들"
+   ],
+   "relatedConceptIds": [
+    "FM061"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "변동성 전략.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4345,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM104-Q01",
+   "primaryConceptId": "FM104",
+   "conceptIds": [
+    "FM104"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "원/달러 환율 1,300원, 엔/달러 환율 150엔일 때 원/엔 교차환율은 (______)원이다.",
+   "blankAnswer": "8.67",
+   "acceptedAnswers": [
+    "8.67",
+    "8.67원"
+   ],
+   "relatedConceptIds": [
+    "FM063",
+    "FM105"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mult_ratio",
+    "params": {
+     "a": 1300.0,
+     "b": 150.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원/달러 ÷ 엔/달러.",
+   "confusion": null,
+   "calculation": "1,300 ÷ 150 = 8.67",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4346,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM104-Q02",
+   "primaryConceptId": "FM104",
+   "conceptIds": [
+    "FM104"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "외국통화 1단위의 자국통화 가격으로 환율을 나타내는 방법을 (______)표시라 한다.",
+   "blankAnswer": "직접",
+   "acceptedAnswers": [
+    "직접"
+   ],
+   "relatedConceptIds": [
+    "FM063",
+    "FM105"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자국통화 표시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4347,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM104-Q03",
+   "primaryConceptId": "FM104",
+   "conceptIds": [
+    "FM104"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "situation",
+   "questionText": "고객이 은행에서 달러를 살 때 적용되는 환율은?",
+   "blankAnswer": "은행의 매도률(ask)",
+   "acceptedAnswers": [
+    "은행의 매도률(ask)"
+   ],
+   "relatedConceptIds": [
+    "FM063",
+    "FM105"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "은행의 매도률(ask)",
+    "은행의 매입률(bid)",
+    "기준환율",
+    "교차환율"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "은행이 고객에게 판다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4348,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM105-Q01",
+   "primaryConceptId": "FM105",
+   "conceptIds": [
+    "FM105"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "classification",
+   "questionText": "다음 상황을 환노출 유형과 연결하시오.",
+   "blankAnswer": "3개월 후 받을 수출대금 → 거래노출 / 해외 자회사 재무제표 환산 → 환산노출 / 환율 변화로 인한 장기 가격 경쟁력 변화 → 경제적 노출",
+   "acceptedAnswers": [
+    "3개월 후 받을 수출대금 → 거래노출 / 해외 자회사 재무제표 환산 → 환산노출 / 환율 변화로 인한 장기 가격 경쟁력 변화 → 경제적 노출"
+   ],
+   "relatedConceptIds": [
+    "FM106"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "거래노출",
+    "환산노출",
+    "경제적 노출"
+   ],
+   "slots": [
+    {
+     "label": "3개월 후 받을 수출대금",
+     "answer": "거래노출"
+    },
+    {
+     "label": "해외 자회사 재무제표 환산",
+     "answer": "환산노출"
+    },
+    {
+     "label": "환율 변화로 인한 장기 가격 경쟁력 변화",
+     "answer": "경제적 노출"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "노출 유형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4349,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM105-Q02",
+   "primaryConceptId": "FM105",
+   "conceptIds": [
+    "FM105"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "환율 변화가 미래 영업현금흐름과 경쟁력에 미치는 영향을 (______)적 노출이라 한다.",
+   "blankAnswer": "경제",
+   "acceptedAnswers": [
+    "경제"
+   ],
+   "relatedConceptIds": [
+    "FM106"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4350,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM105-Q03",
+   "primaryConceptId": "FM105",
+   "conceptIds": [
+    "FM105"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "choice",
+   "questionText": "경제적 노출의 관리 방법으로 가장 적절한 것은?",
+   "blankAnswer": "생산기지와 원재료 조달처를 다변화",
+   "acceptedAnswers": [
+    "생산기지와 원재료 조달처를 다변화"
+   ],
+   "relatedConceptIds": [
+    "FM106"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "생산기지와 원재료 조달처를 다변화",
+    "3개월 선물환 매도",
+    "해외 자회사 재무제표 환산 방법 변경",
+    "외화예금 만기 연장"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "장기 영업 전략.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4351,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM106-Q01",
+   "primaryConceptId": "FM106",
+   "conceptIds": [
+    "FM106"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "3개월 후 1,000,000달러를 받을 수출업체가 3개월 선물환율 1,280원으로 선물환을 매도했다. 확정 원화 수취액은 (______)원이다.",
+   "blankAnswer": "1,280,000,000",
+   "acceptedAnswers": [
+    "1,280,000,000",
+    "1,280,000,000원"
+   ],
+   "relatedConceptIds": [
+    "FM105",
+    "FM063"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 1000000.0,
+     "b": 1280.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "외화 × 선물환율.",
+   "confusion": null,
+   "calculation": "1,000,000 × 1,280 = 1,280,000,000",
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4352,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM106-Q02",
+   "primaryConceptId": "FM106",
+   "conceptIds": [
+    "FM106"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "comparison",
+   "questionText": "헤지 수단의 특징을 연결하시오.",
+   "blankAnswer": "선물환 매도 → 환율 손익을 모두 고정 / 통화 풋옵션 매입 → 하락 손실만 제한(프리미엄 지급)",
+   "acceptedAnswers": [
+    "선물환 매도 → 환율 손익을 모두 고정 / 통화 풋옵션 매입 → 하락 손실만 제한(프리미엄 지급)"
+   ],
+   "relatedConceptIds": [
+    "FM105",
+    "FM063"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "환율 손익을 모두 고정",
+    "하락 손실만 제한(프리미엄 지급)",
+    "헤지 효과 없음"
+   ],
+   "slots": [
+    {
+     "label": "선물환 매도",
+     "answer": "환율 손익을 모두 고정"
+    },
+    {
+     "label": "통화 풋옵션 매입",
+     "answer": "하락 손실만 제한(프리미엄 지급)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "고정 vs 보험.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4353,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM106-Q03",
+   "primaryConceptId": "FM106",
+   "conceptIds": [
+    "FM106"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "외화 수취·지급 시기를 앞당기거나 늦추는 헤지 방법을 리딩·(______)이라 한다.",
+   "blankAnswer": "래깅",
+   "acceptedAnswers": [
+    "래깅"
+   ],
+   "relatedConceptIds": [
+    "FM105",
+    "FM063"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "운영 헤지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4354,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM107-Q01",
+   "primaryConceptId": "FM107",
+   "conceptIds": [
+    "FM107"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "calculation",
+   "questionText": "포지션 1,000,000,000원, 일간 수익률 표준편차 1%, 99% 신뢰수준(z = 2.33)일 때 1일 VaR 는 (______)원이다(포지션 × 2.33 ÷ 100).",
+   "blankAnswer": "23,300,000",
+   "acceptedAnswers": [
+    "23,300,000",
+    "23,300,000원"
+   ],
+   "relatedConceptIds": [
+    "FM030"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1000000000.0,
+     "b": 2.33,
+     "c": 100.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "z × σ × 포지션.",
+   "confusion": null,
+   "calculation": "1,000,000,000 × 2.33 ÷ 100 = 23,300,000",
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4355,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM107-Q02",
+   "primaryConceptId": "FM107",
+   "conceptIds": [
+    "FM107"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "VaR 를 넘어서는 꼬리 영역의 평균 피해 금액을 재는 보완 지표를 기대(______)이라 한다.",
+   "blankAnswer": "손실",
+   "acceptedAnswers": [
+    "손실",
+    "부족"
+   ],
+   "relatedConceptIds": [
+    "FM030"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "ES.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4356,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "FM107-Q03",
+   "primaryConceptId": "FM107",
+   "conceptIds": [
+    "FM107"
+   ],
+   "subjectId": "FM",
+   "chapterId": "FM-E",
+   "questionType": "definition",
+   "questionText": "주어진 신뢰수준과 기간에서 발생할 수 있는 최대 예상손실을 (______)라 한다.",
+   "blankAnswer": "VaR",
+   "acceptedAnswers": [
+    "VaR",
+    "최대예상손실"
+   ],
+   "relatedConceptIds": [
+    "FM030"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "재무관리 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4357,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
   }
  ]
 }

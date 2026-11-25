@@ -164,6 +164,12 @@ object FormulaEngine {
         put("tsm", Formula(Kind.QTY) { r0(it["n"] - it["n"] * it["ex"] / it["avg"]) })
         amount("lin") { r0(it["f"] + it["v"] * it["x"]) }
         amount("dmul") { r0((it["a"] - it["b"]) * it["n"]) }
+        amount("grow_annuity") { val i = pc(it["r"]); val g = pc(it["g"]); r0(it["c1"] / (i - g) * (1 - ((1 + g) / (1 + i)).pow(it["n"]))) }
+        percent("mirr") { r2(((it["fv_in"] / it["pv_out"]).pow(1.0 / it["n"]) - 1) * 100) }
+        amount("ats") { r0(it["sale"] - (it["sale"] - it["book"]) * it["t"] / 100.0) }
+        percent("mv_util") { r2(it["e"] - 0.5 * it["a"] * (it["s"] / 100.0).pow(2) * 100) }
+        amount("ex_rights") { r0((it["n"] * it["p"] + it["m"] * it["s"]) / (it["n"] + it["m"])) }
+        percent("cd_cost") { val d = pc(it["d"]); r2(d / (1 - d) * 365.0 / (it["credit"] - it["disc"]) * 100) }
         amount("mul2") { r0(it["a"] * it["b"]) }
         amount("ev2") { r0(it["a"] * it["ra"] / 100.0 + it["b"] * it["rb"] / 100.0) }
         amount("fv") { r0(it["pv"] * (1 + pc(it["r"])).pow(it["n"])) }

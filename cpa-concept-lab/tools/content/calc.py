@@ -988,6 +988,50 @@ def dmul(a, b, n):
     return v, f"({fmt(a)} − {fmt(b)}) × {fmt(n)} = {fmt(v)}"
 
 
+@formula()
+def grow_annuity(c1, r, g, n):
+    """성장연금 현재가치 = C1/(r − g) × [1 − ((1+g)/(1+r))^n]"""
+    i, gg = r / 100, g / 100
+    v = r0(c1 / (i - gg) * (1 - ((1 + gg) / (1 + i)) ** n))
+    return v, f"{fmt(c1)} ÷ ({fmt(r)}% − {fmt(g)}%) × [1 − (1+{fmt(g)}%)^{fmt(n)}/(1+{fmt(r)}%)^{fmt(n)}] = {fmt(v)}"
+
+
+@formula(kind="percent")
+def mirr(fv_in, pv_out, n):
+    """수정내부수익률 = (현금유입의 재투자 미래가치 ÷ 투자 현재가치)^(1/n) − 1"""
+    v = r2(((fv_in / pv_out) ** (1 / n) - 1) * 100)
+    return v, f"({fmt(fv_in)} ÷ {fmt(pv_out)})^(1/{fmt(n)}) − 1 = {fmt(v)}%"
+
+
+@formula()
+def ats(sale, book, t):
+    """세후 잔존가치 = 처분가 − (처분가 − 장부가) × 세율"""
+    v = r0(sale - (sale - book) * t / 100)
+    return v, f"{fmt(sale)} − ({fmt(sale)} − {fmt(book)}) × {fmt(t)}% = {fmt(v)}"
+
+
+@formula(kind="percent")
+def mv_util(e, a, s):
+    """평균-분산 효용(%) = E(r) − ½ × A × σ² (E·σ 는 % 단위)"""
+    v = r2(e - 0.5 * a * (s / 100) ** 2 * 100)
+    return v, f"{fmt(e)}% − ½ × {fmt(a)} × ({fmt(s)}%)² = {fmt(v)}%"
+
+
+@formula()
+def ex_rights(n, p, m, s):
+    """권리락 이론주가 = (기존주식수 × 권리락 전 주가 + 신주수 × 발행가) ÷ (기존 + 신주)"""
+    v = r0((n * p + m * s) / (n + m))
+    return v, f"({fmt(n)} × {fmt(p)} + {fmt(m)} × {fmt(s)}) ÷ ({fmt(n)} + {fmt(m)}) = {fmt(v)}"
+
+
+@formula(kind="percent")
+def cd_cost(d, credit, disc):
+    """현금할인 포기의 연간 비용(%) = d/(1 − d) × 365/(신용기간 − 할인기간)"""
+    dd = d / 100
+    v = r2(dd / (1 - dd) * 365 / (credit - disc) * 100)
+    return v, f"{fmt(d)}%/(1 − {fmt(d)}%) × 365/({fmt(credit)} − {fmt(disc)}) = {fmt(v)}%"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)
