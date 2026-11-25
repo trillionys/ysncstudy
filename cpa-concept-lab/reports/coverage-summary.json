@@ -2,11 +2,11 @@
  "contentVersion": 7,
  "exams": {
   "회계학": {
-   "complete": 364,
+   "complete": 384,
    "total": 577,
-   "missing": 213,
+   "missing": 193,
    "needsReview": 12,
-   "storedFlagCovered": 434
+   "storedFlagCovered": 454
   },
   "경영학": {
    "complete": 21,
@@ -39,7 +39,7 @@
  },
  "packs": {
   "IA": {
-   "complete": 237,
+   "complete": 257,
    "total": 332
   },
   "AA": {
@@ -77,8 +77,8 @@
  },
  "integrityErrors": 0,
  "overall": {
-  "complete": 698,
+  "complete": 718,
   "total": 1233,
-  "missing": 535
+  "missing": 515
  }
 }

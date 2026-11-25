@@ -705,6 +705,15 @@
    "title": "고객과의 계약에서 생기는 수익",
    "englishTitle": "Revenue from contracts with customers",
    "sortOrder": 67
+  },
+  {
+   "partTitle": "리스",
+   "id": "IA-LS",
+   "code": "LS",
+   "subjectId": "IA",
+   "title": "리스",
+   "englishTitle": "Leases",
+   "sortOrder": 68
   }
  ],
  "sections": [
@@ -2242,6 +2251,24 @@
    "id": "IA-RV-S03",
    "chapterId": "IA-RV",
    "title": "특수한 수익 거래",
+   "sortOrder": 3
+  },
+  {
+   "id": "IA-LS-S01",
+   "chapterId": "IA-LS",
+   "title": "리스의 식별",
+   "sortOrder": 1
+  },
+  {
+   "id": "IA-LS-S02",
+   "chapterId": "IA-LS",
+   "title": "리스이용자 회계",
+   "sortOrder": 2
+  },
+  {
+   "id": "IA-LS-S03",
+   "chapterId": "IA-LS",
+   "title": "리스제공자 회계",
    "sortOrder": 3
   },
   {
@@ -5495,8 +5522,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "리스의 정의",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA200"
+   ],
+   "covered": true,
    "sortOrder": 233
   },
   {
@@ -5504,8 +5533,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "식별자산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA201"
+   ],
+   "covered": true,
    "sortOrder": 234
   },
   {
@@ -5513,8 +5544,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "사용통제권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA202"
+   ],
+   "covered": true,
    "sortOrder": 235
   },
   {
@@ -5522,8 +5555,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "사용권자산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA204"
+   ],
+   "covered": true,
    "sortOrder": 236
   },
   {
@@ -5531,8 +5566,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "리스부채",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA203"
+   ],
+   "covered": true,
    "sortOrder": 237
   },
   {
@@ -5540,8 +5577,11 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "최초 측정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA203",
+    "IA204"
+   ],
+   "covered": true,
    "sortOrder": 238
   },
   {
@@ -5549,8 +5589,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "할인율",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA205"
+   ],
+   "covered": true,
    "sortOrder": 239
   },
   {
@@ -5558,8 +5600,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "리스기간",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA206"
+   ],
+   "covered": true,
    "sortOrder": 240
   },
   {
@@ -5567,8 +5611,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "리스료",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA207"
+   ],
+   "covered": true,
    "sortOrder": 241
   },
   {
@@ -5576,8 +5622,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "잔존가치보증",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA208"
+   ],
+   "covered": true,
    "sortOrder": 242
   },
   {
@@ -5585,8 +5633,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "매수선택권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA209"
+   ],
+   "covered": true,
    "sortOrder": 243
   },
   {
@@ -5594,8 +5644,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "연장·종료선택권",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA210"
+   ],
+   "covered": true,
    "sortOrder": 244
   },
   {
@@ -5603,8 +5655,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "리스변경",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA211"
+   ],
+   "covered": true,
    "sortOrder": 245
   },
   {
@@ -5612,8 +5666,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "리스재측정",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA212"
+   ],
+   "covered": true,
    "sortOrder": 246
   },
   {
@@ -5621,8 +5677,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "단기리스",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA213"
+   ],
+   "covered": true,
    "sortOrder": 247
   },
   {
@@ -5630,8 +5688,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "소액기초자산리스",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA214"
+   ],
+   "covered": true,
    "sortOrder": 248
   },
   {
@@ -5639,8 +5699,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "판매후리스",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA215"
+   ],
+   "covered": true,
    "sortOrder": 249
   },
   {
@@ -5648,8 +5710,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "운용리스와 금융리스의 제공자 회계",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA216"
+   ],
+   "covered": true,
    "sortOrder": 250
   },
   {
@@ -5657,8 +5721,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "리스제공자의 손익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA217"
+   ],
+   "covered": true,
    "sortOrder": 251
   },
   {
@@ -5666,8 +5732,10 @@
    "subjectId": "IA",
    "unit": "리스",
    "item": "제조자·판매자 리스제공자",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "IA218"
+   ],
+   "covered": true,
    "sortOrder": 252
   },
   {

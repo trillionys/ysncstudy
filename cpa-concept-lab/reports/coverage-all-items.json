@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 364,
+    "complete": 384,
     "total": 577,
-    "missing": 213,
+    "missing": 193,
     "needsReview": 12,
-    "storedFlagCovered": 434
+    "storedFlagCovered": 454
    },
    "경영학": {
     "complete": 21,
@@ -40,7 +40,7 @@
   },
   "packs": {
    "IA": {
-    "complete": 237,
+    "complete": 257,
     "total": 332
    },
    "AA": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 698,
+   "complete": 718,
    "total": 1233,
-   "missing": 535
+   "missing": 515
   }
  },
  "items": [
@@ -5216,15 +5216,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "리스의 정의",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA200"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA200-Q01",
+    "IA200-Q02",
+    "IA200-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0234",
@@ -5233,15 +5237,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "식별자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA201"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA201-Q01",
+    "IA201-Q02",
+    "IA201-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0235",
@@ -5250,15 +5258,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "사용통제권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA202"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA202-Q01",
+    "IA202-Q02",
+    "IA202-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0236",
@@ -5267,17 +5279,20 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "사용권자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA204"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P073"
+   "existingQuestionIds": [
+    "IA204-Q01",
+    "IA204-Q02",
+    "IA204-Q03",
+    "IA204-Q04"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0237",
@@ -5286,15 +5301,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "리스부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA203"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA203-Q01",
+    "IA203-Q02",
+    "IA203-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0238",
@@ -5303,20 +5322,24 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "최초 측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA203",
+    "IA204"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P007",
-    "R006",
-    "IA023",
-    "IA093"
+   "existingQuestionIds": [
+    "IA203-Q01",
+    "IA203-Q02",
+    "IA203-Q03",
+    "IA204-Q01",
+    "IA204-Q02",
+    "IA204-Q03",
+    "IA204-Q04"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0239",
@@ -5325,15 +5348,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "할인율",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA205"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA205-Q01",
+    "IA205-Q02",
+    "IA205-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0240",
@@ -5342,15 +5369,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "리스기간",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA206"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA206-Q01",
+    "IA206-Q02",
+    "IA206-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0241",
@@ -5359,15 +5390,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "리스료",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA207"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA207-Q01",
+    "IA207-Q02",
+    "IA207-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0242",
@@ -5376,15 +5411,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "잔존가치보증",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA208"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA208-Q01",
+    "IA208-Q02",
+    "IA208-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0243",
@@ -5393,15 +5432,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "매수선택권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA209"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA209-Q01",
+    "IA209-Q02",
+    "IA209-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0244",
@@ -5410,15 +5453,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "연장·종료선택권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA210"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA210-Q01",
+    "IA210-Q02",
+    "IA210-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0245",
@@ -5427,15 +5474,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "리스변경",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA211"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA211-Q01",
+    "IA211-Q02",
+    "IA211-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0246",
@@ -5444,15 +5495,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "리스재측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA212"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA212-Q01",
+    "IA212-Q02",
+    "IA212-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0247",
@@ -5461,15 +5516,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "단기리스",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA213"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA213-Q01",
+    "IA213-Q02",
+    "IA213-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0248",
@@ -5478,15 +5537,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "소액기초자산리스",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA214"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA214-Q01",
+    "IA214-Q02",
+    "IA214-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0249",
@@ -5495,15 +5558,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "판매후리스",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA215"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA215-Q01",
+    "IA215-Q02",
+    "IA215-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0250",
@@ -5512,15 +5579,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "운용리스와 금융리스의 제공자 회계",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA216"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA216-Q01",
+    "IA216-Q02",
+    "IA216-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0251",
@@ -5529,15 +5600,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "리스제공자의 손익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA217"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA217-Q01",
+    "IA217-Q02",
+    "IA217-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0252",
@@ -5546,15 +5621,19 @@
    "packId": "IA",
    "parentChapter": "리스",
    "scopeTitle": "제조자·판매자 리스제공자",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "IA218"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "IA218-Q01",
+    "IA218-Q02",
+    "IA218-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-IA-0253",
@@ -7937,7 +8016,8 @@
     "P007",
     "R006",
     "IA023",
-    "IA093"
+    "IA093",
+    "IA203"
    ],
    "storedCoveredFlag": false
   },

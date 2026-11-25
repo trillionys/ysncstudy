@@ -181626,6 +181626,2757 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "IA200-Q01",
+   "primaryConceptId": "IA200",
+   "conceptIds": [
+    "IA200"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스는 대가와 교환해 식별되는 자산의 (______)을 일정 기간 이전하는 계약이다.",
+   "blankAnswer": "사용통제권",
+   "acceptedAnswers": [
+    "사용통제권"
+   ],
+   "relatedConceptIds": [
+    "IA201",
+    "IA202"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1116호 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3730,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA200-Q02",
+   "primaryConceptId": "IA200",
+   "conceptIds": [
+    "IA200"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "order",
+   "questionText": "계약이 리스를 포함하는지 판단하는 순서를 배열하시오.",
+   "blankAnswer": "1단계 → 식별되는 자산 존재 여부 / 2단계 → 경제적 효익 대부분을 얻을 권리 / 3단계 → 사용을 지시할 권리",
+   "acceptedAnswers": [
+    "1단계 → 식별되는 자산 존재 여부 / 2단계 → 경제적 효익 대부분을 얻을 권리 / 3단계 → 사용을 지시할 권리"
+   ],
+   "relatedConceptIds": [
+    "IA201",
+    "IA202"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "경제적 효익 대부분을 얻을 권리",
+    "사용을 지시할 권리",
+    "식별되는 자산 존재 여부"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "식별되는 자산 존재 여부"
+    },
+    {
+     "label": "2단계",
+     "answer": "경제적 효익 대부분을 얻을 권리"
+    },
+    {
+     "label": "3단계",
+     "answer": "사용을 지시할 권리"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "식별자산 → 효익 → 지시권.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3731,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA200-Q03",
+   "primaryConceptId": "IA200",
+   "conceptIds": [
+    "IA200"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "choice",
+   "questionText": "다음 중 리스로 보기 어려운 계약은?",
+   "blankAnswer": "운송사가 선박을 정하는 화물 운송 계약",
+   "acceptedAnswers": [
+    "운송사가 선박을 정하는 화물 운송 계약"
+   ],
+   "relatedConceptIds": [
+    "IA201",
+    "IA202"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "운송사가 선박을 정하는 화물 운송 계약",
+    "전용 선박을 빌려 운항 경로를 직접 정하는 계약",
+    "특정 사무실을 5년간 사용하는 계약",
+    "특정 차량을 3년간 전용하는 계약"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공급자가 사용을 통제하는 용역계약.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3732,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA201-Q01",
+   "primaryConceptId": "IA201",
+   "conceptIds": [
+    "IA201"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "공급자가 사용 기간 내내 자산을 대체할 (______)인 권리를 가지면 식별되는 자산이 아니다.",
+   "blankAnswer": "실질적",
+   "acceptedAnswers": [
+    "실질적"
+   ],
+   "relatedConceptIds": [
+    "IA200",
+    "IA202"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대체권.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3733,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA201-Q02",
+   "primaryConceptId": "IA201",
+   "conceptIds": [
+    "IA201"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "exception",
+   "questionText": "공급자의 대체권이 실질적이라고 보기 어려운 경우는?",
+   "blankAnswer": "고장 수리를 위해서만 일시 교체할 수 있는 경우",
+   "acceptedAnswers": [
+    "고장 수리를 위해서만 일시 교체할 수 있는 경우"
+   ],
+   "relatedConceptIds": [
+    "IA200",
+    "IA202"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "고장 수리를 위해서만 일시 교체할 수 있는 경우",
+    "언제든 비용 없이 교체할 수 있고 그로써 이익을 얻는 경우",
+    "사용 기간 내내 교체 능력이 있는 경우",
+    "대체 자산을 쉽게 구할 수 있는 경우"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수리 목적 교체는 실질적 대체권이 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3734,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA201-Q03",
+   "primaryConceptId": "IA201",
+   "conceptIds": [
+    "IA201"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "classification",
+   "questionText": "다음 계약 대상을 식별 판단 결과와 연결하시오.",
+   "blankAnswer": "건물 10층 전체 → 물리적으로 구별되는 식별자산 / 광케이블 전체 용량의 10% → 구별되지 않는 용량 일부(식별 불가) / 공급자가 언제든 이익을 위해 바꿀 수 있는 차량 → 실질적 대체권(식별 불가)",
+   "acceptedAnswers": [
+    "건물 10층 전체 → 물리적으로 구별되는 식별자산 / 광케이블 전체 용량의 10% → 구별되지 않는 용량 일부(식별 불가) / 공급자가 언제든 이익을 위해 바꿀 수 있는 차량 → 실질적 대체권(식별 불가)"
+   ],
+   "relatedConceptIds": [
+    "IA200",
+    "IA202"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "물리적으로 구별되는 식별자산",
+    "구별되지 않는 용량 일부(식별 불가)",
+    "실질적 대체권(식별 불가)"
+   ],
+   "slots": [
+    {
+     "label": "건물 10층 전체",
+     "answer": "물리적으로 구별되는 식별자산"
+    },
+    {
+     "label": "광케이블 전체 용량의 10%",
+     "answer": "구별되지 않는 용량 일부(식별 불가)"
+    },
+    {
+     "label": "공급자가 언제든 이익을 위해 바꿀 수 있는 차량",
+     "answer": "실질적 대체권(식별 불가)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "물리적 구별·용량 비중·대체권.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3735,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA202-Q01",
+   "primaryConceptId": "IA202",
+   "conceptIds": [
+    "IA202"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "matching",
+   "questionText": "사용통제권의 두 요건을 고르시오.",
+   "blankAnswer": "요건① → 경제적 효익의 대부분을 얻을 권리 / 요건② → 사용 방법과 목적을 지시할 권리",
+   "acceptedAnswers": [
+    "요건① → 경제적 효익의 대부분을 얻을 권리 / 요건② → 사용 방법과 목적을 지시할 권리"
+   ],
+   "relatedConceptIds": [
+    "IA200",
+    "IA201"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "경제적 효익의 대부분을 얻을 권리",
+    "사용 방법과 목적을 지시할 권리",
+    "법적 소유권",
+    "유지보수 책임"
+   ],
+   "slots": [
+    {
+     "label": "요건①",
+     "answer": "경제적 효익의 대부분을 얻을 권리"
+    },
+    {
+     "label": "요건②",
+     "answer": "사용 방법과 목적을 지시할 권리"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "둘 다 필요.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3736,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA202-Q02",
+   "primaryConceptId": "IA202",
+   "conceptIds": [
+    "IA202"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "공급자가 정한 운행 한도·안전 규정 같은 (______)적 권리는 고객의 지시권을 없애지 않는다.",
+   "blankAnswer": "보호",
+   "acceptedAnswers": [
+    "보호"
+   ],
+   "relatedConceptIds": [
+    "IA200",
+    "IA201"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보호적 권리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3737,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA202-Q03",
+   "primaryConceptId": "IA202",
+   "conceptIds": [
+    "IA202"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "사용통제권이 있으려면 경제적 효익의 대부분을 얻을 권리와 사용을 (______)할 권리가 모두 있어야 한다.",
+   "blankAnswer": "지시",
+   "acceptedAnswers": [
+    "지시"
+   ],
+   "relatedConceptIds": [
+    "IA200",
+    "IA201"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3738,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA203-Q01",
+   "primaryConceptId": "IA203",
+   "conceptIds": [
+    "IA203"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "매년 말 리스료 1,000,000원을 3년간 지급하는 리스(할인율 10%)의 최초 리스부채는 (______)원이다.",
+   "blankAnswer": "2,486,852",
+   "acceptedAnswers": [
+    "2,486,852",
+    "2,486,852원"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA205",
+    "IA207"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "annuity_pv",
+    "params": {
+     "c": 1000000.0,
+     "r": 10.0,
+     "n": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "정상연금 현재가치.",
+   "confusion": null,
+   "calculation": "연금 현재가치 = 1,000,000 × [1 − (1+10%)^−3] ÷ 10% = 2,486,852",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3739,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA203-Q02",
+   "primaryConceptId": "IA203",
+   "conceptIds": [
+    "IA203"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "기초 리스부채 2,486,852원, 할인율 10%일 때 당기 리스부채 이자비용은 (______)원이다.",
+   "blankAnswer": "248,685",
+   "acceptedAnswers": [
+    "248,685",
+    "248,685원"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA205",
+    "IA207"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 2486852.0,
+     "r": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 리스부채 × 할인율.",
+   "confusion": null,
+   "calculation": "2,486,852 × 10% = 248,685",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3740,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA203-Q03",
+   "primaryConceptId": "IA203",
+   "conceptIds": [
+    "IA203"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스부채는 리스개시일에 지급되지 않은 리스료의 (______)로 측정한다.",
+   "blankAnswer": "현재가치",
+   "acceptedAnswers": [
+    "현재가치"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA205",
+    "IA207"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "할인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3741,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA204-Q01",
+   "primaryConceptId": "IA204",
+   "conceptIds": [
+    "IA204"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "사용권자산의 최초 원가에는 리스이용자가 부담한 리스(______)직접원가가 포함된다.",
+   "blankAnswer": "개설",
+   "acceptedAnswers": [
+    "개설"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA209"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원가 구성요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3742,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA204-Q02",
+   "primaryConceptId": "IA204",
+   "conceptIds": [
+    "IA204"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "리스부채 최초 측정액 2,486,852원, 리스개설직접원가 13,148원, 개시일 전 선급 리스료 100,000원일 때 사용권자산 원가는 (______)원이다(인센티브·복구원가 없음).",
+   "blankAnswer": "2,600,000",
+   "acceptedAnswers": [
+    "2,600,000",
+    "2,600,000원"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA209"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add3",
+    "params": {
+     "a": 2486852.0,
+     "b": 13148.0,
+     "c": 100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "리스부채 + 직접원가 + 선급 리스료.",
+   "confusion": null,
+   "calculation": "2,486,852 + 13,148 + 100,000 = 2,600,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3743,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA204-Q03",
+   "primaryConceptId": "IA204",
+   "conceptIds": [
+    "IA204"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "classification",
+   "questionText": "사용권자산 감가상각 기간을 연결하시오.",
+   "blankAnswer": "소유권이 이전되는 리스 → 기초자산의 내용연수 / 소유권 이전·매수선택권이 없는 리스 → 리스기간과 내용연수 중 짧은 기간",
+   "acceptedAnswers": [
+    "소유권이 이전되는 리스 → 기초자산의 내용연수 / 소유권 이전·매수선택권이 없는 리스 → 리스기간과 내용연수 중 짧은 기간"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA209"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기초자산의 내용연수",
+    "리스기간과 내용연수 중 짧은 기간",
+    "항상 리스기간"
+   ],
+   "slots": [
+    {
+     "label": "소유권이 이전되는 리스",
+     "answer": "기초자산의 내용연수"
+    },
+    {
+     "label": "소유권 이전·매수선택권이 없는 리스",
+     "answer": "리스기간과 내용연수 중 짧은 기간"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자산을 계속 쓸지로 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3744,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA204-Q04",
+   "primaryConceptId": "IA204",
+   "conceptIds": [
+    "IA204"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "사용권자산 원가 2,500,000원(잔존가치 0)을 리스기간 3년(내용연수 5년, 소유권 이전 없음) 정액법으로 상각한다. 1년분 감가상각비는 (______)원이다.",
+   "blankAnswer": "833,333",
+   "acceptedAnswers": [
+    "833,333",
+    "833,333원"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA209"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 2500000.0,
+     "b": 1.0,
+     "c": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원가 ÷ 리스기간.",
+   "confusion": null,
+   "calculation": "2,500,000 × 1 ÷ 3 = 833,333",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3745,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA205-Q01",
+   "primaryConceptId": "IA205",
+   "conceptIds": [
+    "IA205"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스이용자가 내재이자율을 쉽게 산정할 수 없으면 (______)이자율을 사용한다.",
+   "blankAnswer": "증분차입",
+   "acceptedAnswers": [
+    "증분차입"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대체 할인율.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3746,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA205-Q02",
+   "primaryConceptId": "IA205",
+   "conceptIds": [
+    "IA205"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "choice",
+   "questionText": "리스의 내재이자율 정의에 포함되는 요소는?",
+   "blankAnswer": "리스료·무보증잔존가치 현재가치 = 공정가치 + 리스제공자 리스개설직접원가",
+   "acceptedAnswers": [
+    "리스료·무보증잔존가치 현재가치 = 공정가치 + 리스제공자 리스개설직접원가"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "리스료·무보증잔존가치 현재가치 = 공정가치 + 리스제공자 리스개설직접원가",
+    "리스이용자의 신용등급만",
+    "시장 기준금리만",
+    "리스이용자의 가중평균자본비용"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "내재이자율 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3747,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA205-Q03",
+   "primaryConceptId": "IA205",
+   "conceptIds": [
+    "IA205"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "situation",
+   "questionText": "리스기간 판단이 바뀌어 리스부채를 재측정할 때는 (______) 할인율을 사용한다.",
+   "blankAnswer": "수정",
+   "acceptedAnswers": [
+    "수정"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재측정 시.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3748,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA206-Q01",
+   "primaryConceptId": "IA206",
+   "conceptIds": [
+    "IA206"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스기간에는 연장선택권을 행사할 것이 상당히 (______)한 기간이 포함된다.",
+   "blankAnswer": "확실",
+   "acceptedAnswers": [
+    "확실"
+   ],
+   "relatedConceptIds": [
+    "IA210",
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판단 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3749,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA206-Q02",
+   "primaryConceptId": "IA206",
+   "conceptIds": [
+    "IA206"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "해지불능기간 3년에 행사가 상당히 확실한 연장선택권 2년이 있다. 리스기간은 (______)년이다.",
+   "blankAnswer": "5",
+   "acceptedAnswers": [
+    "5",
+    "5년"
+   ],
+   "relatedConceptIds": [
+    "IA210",
+    "IA213"
+   ],
+   "unit": "년",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 3.0,
+     "b": 2.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "해지불능기간 + 확실한 연장기간.",
+   "confusion": null,
+   "calculation": "3 + 2 = 5",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3750,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA206-Q03",
+   "primaryConceptId": "IA206",
+   "conceptIds": [
+    "IA206"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "exception",
+   "questionText": "리스기간 판단 시 고려하지 않는 것은?",
+   "blankAnswer": "리스제공자만 갖는 종료권",
+   "acceptedAnswers": [
+    "리스제공자만 갖는 종료권"
+   ],
+   "relatedConceptIds": [
+    "IA210",
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "리스제공자만 갖는 종료권",
+    "중요한 리스개량",
+    "종료 시 부담할 원가",
+    "연장선택권의 행사 조건"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "리스이용자가 계약을 지켜야 하는 기간이 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3751,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA207-Q01",
+   "primaryConceptId": "IA207",
+   "conceptIds": [
+    "IA207"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "classification",
+   "questionText": "다음 지급액의 리스부채 포함 여부를 연결하시오.",
+   "blankAnswer": "소비자물가지수 연동 리스료 → 포함 / 매출액의 1% 변동리스료 → 제외(발생 시 비용) / 행사가 상당히 확실한 매수선택권 행사가격 → 포함",
+   "acceptedAnswers": [
+    "소비자물가지수 연동 리스료 → 포함 / 매출액의 1% 변동리스료 → 제외(발생 시 비용) / 행사가 상당히 확실한 매수선택권 행사가격 → 포함"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA208",
+    "IA209"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "포함",
+    "제외(발생 시 비용)"
+   ],
+   "slots": [
+    {
+     "label": "소비자물가지수 연동 리스료",
+     "answer": "포함"
+    },
+    {
+     "label": "매출액의 1% 변동리스료",
+     "answer": "제외(발생 시 비용)"
+    },
+    {
+     "label": "행사가 상당히 확실한 매수선택권 행사가격",
+     "answer": "포함"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "피할 수 없는 지급만 포함.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3752,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA207-Q02",
+   "primaryConceptId": "IA207",
+   "conceptIds": [
+    "IA207"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "매출액에 연동되는 변동리스료는 리스부채에 포함하지 않고 발생한 기간의 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익",
+    "비용"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA208",
+    "IA209"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비용 처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3753,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA207-Q03",
+   "primaryConceptId": "IA207",
+   "conceptIds": [
+    "IA207"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "choice",
+   "questionText": "리스료에서 차감하는 항목은?",
+   "blankAnswer": "받을 리스 인센티브",
+   "acceptedAnswers": [
+    "받을 리스 인센티브"
+   ],
+   "relatedConceptIds": [
+    "IA203",
+    "IA208",
+    "IA209"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "받을 리스 인센티브",
+    "잔존가치보증 예상 지급액",
+    "종료 위약금",
+    "지수 연동 리스료"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인센티브는 차감.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3754,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA208-Q01",
+   "primaryConceptId": "IA208",
+   "conceptIds": [
+    "IA208"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "리스이용자가 보증한 잔존가치가 500,000원이고 리스기간 말 예상 잔존가치가 300,000원이다. 리스이용자가 리스료에 포함할 금액은 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA207",
+    "IA217"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 500000.0,
+     "b": 300000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "보증액 − 예상 잔존가치.",
+   "confusion": null,
+   "calculation": "500,000 − 300,000 = 200,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3755,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA208-Q02",
+   "primaryConceptId": "IA208",
+   "conceptIds": [
+    "IA208"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "comparison",
+   "questionText": "잔존가치보증 500,000원(예상 잔존가치 300,000원)이 리스료에 포함되는 금액을 연결하시오.",
+   "blankAnswer": "리스이용자 → 200,000원 / 리스제공자 → 500,000원",
+   "acceptedAnswers": [
+    "리스이용자 → 200,000원 / 리스제공자 → 500,000원"
+   ],
+   "relatedConceptIds": [
+    "IA207",
+    "IA217"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "200,000원",
+    "300,000원",
+    "500,000원"
+   ],
+   "slots": [
+    {
+     "label": "리스이용자",
+     "answer": "200,000원"
+    },
+    {
+     "label": "리스제공자",
+     "answer": "500,000원"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "이용자는 예상 지급액, 제공자는 보증액.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3756,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA208-Q03",
+   "primaryConceptId": "IA208",
+   "conceptIds": [
+    "IA208"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스기간 말 기초자산 가치가 일정 금액 이상이라는 보증을 (______)보증이라 한다.",
+   "blankAnswer": "잔존가치",
+   "acceptedAnswers": [
+    "잔존가치"
+   ],
+   "relatedConceptIds": [
+    "IA207",
+    "IA217"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3757,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA209-Q01",
+   "primaryConceptId": "IA209",
+   "conceptIds": [
+    "IA209"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "매수선택권 행사가 상당히 확실하면 사용권자산을 기초자산의 (______) 동안 감가상각한다.",
+   "blankAnswer": "내용연수",
+   "acceptedAnswers": [
+    "내용연수"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA207",
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "리스기간이 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3758,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA209-Q02",
+   "primaryConceptId": "IA209",
+   "conceptIds": [
+    "IA209"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "exception",
+   "questionText": "매수선택권이 포함된 12개월 리스의 회계처리로 옳은 것은?",
+   "blankAnswer": "단기리스 면제를 적용할 수 없다",
+   "acceptedAnswers": [
+    "단기리스 면제를 적용할 수 없다"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA207",
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "단기리스 면제를 적용할 수 없다",
+    "단기리스로 비용 처리할 수 있다",
+    "리스가 아니다",
+    "소액리스로 본다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "매수선택권이 있으면 단기리스가 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3759,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA209-Q03",
+   "primaryConceptId": "IA209",
+   "conceptIds": [
+    "IA209"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스기간 말에 기초자산을 정해진 가격에 살 권리를 쓸 것이 상당히 확실하면 그 (______)가격을 리스료에 포함한다.",
+   "blankAnswer": "행사",
+   "acceptedAnswers": [
+    "행사"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA207",
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "리스료 구성.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3760,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA210-Q01",
+   "primaryConceptId": "IA210",
+   "conceptIds": [
+    "IA210"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "comparison",
+   "questionText": "선택권별 리스기간 포함 조건을 연결하시오.",
+   "blankAnswer": "연장선택권 → 행사가 상당히 확실하면 포함 / 종료선택권 → 행사하지 않을 것이 상당히 확실하면 그 기간 포함",
+   "acceptedAnswers": [
+    "연장선택권 → 행사가 상당히 확실하면 포함 / 종료선택권 → 행사하지 않을 것이 상당히 확실하면 그 기간 포함"
+   ],
+   "relatedConceptIds": [
+    "IA206",
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "행사가 상당히 확실하면 포함",
+    "행사하지 않을 것이 상당히 확실하면 그 기간 포함",
+    "항상 제외"
+   ],
+   "slots": [
+    {
+     "label": "연장선택권",
+     "answer": "행사가 상당히 확실하면 포함"
+    },
+    {
+     "label": "종료선택권",
+     "answer": "행사하지 않을 것이 상당히 확실하면 그 기간 포함"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실제 사용 예상 기간.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3761,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA210-Q02",
+   "primaryConceptId": "IA210",
+   "conceptIds": [
+    "IA210"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "선택권 재평가는 리스이용자가 (______)할 수 있는 유의적인 사건이 생겼을 때 한다.",
+   "blankAnswer": "통제",
+   "acceptedAnswers": [
+    "통제"
+   ],
+   "relatedConceptIds": [
+    "IA206",
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재평가 사유.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3762,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA210-Q03",
+   "primaryConceptId": "IA210",
+   "conceptIds": [
+    "IA210"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "situation",
+   "questionText": "선택권 행사 여부를 재평가해야 하는 사건은?",
+   "blankAnswer": "리스이용자의 중요한 리스개량 착수",
+   "acceptedAnswers": [
+    "리스이용자의 중요한 리스개량 착수"
+   ],
+   "relatedConceptIds": [
+    "IA206",
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "리스이용자의 중요한 리스개량 착수",
+    "시장 임대료 상승",
+    "기준금리 변동",
+    "리스제공자의 신용등급 하락"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "리스이용자가 통제하는 사건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3763,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA211-Q01",
+   "primaryConceptId": "IA211",
+   "conceptIds": [
+    "IA211"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "classification",
+   "questionText": "리스변경 유형별 처리를 연결하시오.",
+   "blankAnswer": "기초자산 추가 + 개별 가격만큼 대가 증가 → 별도 리스 / 리스 범위 축소 → 사용권자산 비례 감소 + 손익 인식 / 대가만 변경 → 수정 할인율로 재측정 + 사용권자산 조정",
+   "acceptedAnswers": [
+    "기초자산 추가 + 개별 가격만큼 대가 증가 → 별도 리스 / 리스 범위 축소 → 사용권자산 비례 감소 + 손익 인식 / 대가만 변경 → 수정 할인율로 재측정 + 사용권자산 조정"
+   ],
+   "relatedConceptIds": [
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "별도 리스",
+    "사용권자산 비례 감소 + 손익 인식",
+    "수정 할인율로 재측정 + 사용권자산 조정"
+   ],
+   "slots": [
+    {
+     "label": "기초자산 추가 + 개별 가격만큼 대가 증가",
+     "answer": "별도 리스"
+    },
+    {
+     "label": "리스 범위 축소",
+     "answer": "사용권자산 비례 감소 + 손익 인식"
+    },
+    {
+     "label": "대가만 변경",
+     "answer": "수정 할인율로 재측정 + 사용권자산 조정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "변경의 실질.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3764,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA211-Q02",
+   "primaryConceptId": "IA211",
+   "conceptIds": [
+    "IA211"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "별도 리스로 회계처리하지 않는 리스변경은 변경 유효일에 (______) 할인율로 리스부채를 재측정한다.",
+   "blankAnswer": "수정",
+   "acceptedAnswers": [
+    "수정"
+   ],
+   "relatedConceptIds": [
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3765,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA211-Q03",
+   "primaryConceptId": "IA211",
+   "conceptIds": [
+    "IA211"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "원래 계약 조건에 없던 방식으로 리스 범위나 대가를 새로 바꾸는 것을 리스(______)이라 한다.",
+   "blankAnswer": "변경",
+   "acceptedAnswers": [
+    "변경"
+   ],
+   "relatedConceptIds": [
+    "IA212"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3766,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA212-Q01",
+   "primaryConceptId": "IA212",
+   "conceptIds": [
+    "IA212"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "classification",
+   "questionText": "재측정 사유별 할인율을 연결하시오.",
+   "blankAnswer": "연장선택권 행사 판단 변경 → 수정 할인율 / 소비자물가지수 연동 리스료 변동 → 원래 할인율 / 잔존가치보증 예상 지급액 변경 → 원래 할인율",
+   "acceptedAnswers": [
+    "연장선택권 행사 판단 변경 → 수정 할인율 / 소비자물가지수 연동 리스료 변동 → 원래 할인율 / 잔존가치보증 예상 지급액 변경 → 원래 할인율"
+   ],
+   "relatedConceptIds": [
+    "IA211",
+    "IA210"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "수정 할인율",
+    "원래 할인율"
+   ],
+   "slots": [
+    {
+     "label": "연장선택권 행사 판단 변경",
+     "answer": "수정 할인율"
+    },
+    {
+     "label": "소비자물가지수 연동 리스료 변동",
+     "answer": "원래 할인율"
+    },
+    {
+     "label": "잔존가치보증 예상 지급액 변경",
+     "answer": "원래 할인율"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판단 변경은 수정, 금액 변동은 원래.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3767,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA212-Q02",
+   "primaryConceptId": "IA212",
+   "conceptIds": [
+    "IA212"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스부채 재측정액은 (______)의 장부금액을 조정해 반영한다.",
+   "blankAnswer": "사용권자산",
+   "acceptedAnswers": [
+    "사용권자산"
+   ],
+   "relatedConceptIds": [
+    "IA211",
+    "IA210"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상대계정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3768,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA212-Q03",
+   "primaryConceptId": "IA212",
+   "conceptIds": [
+    "IA212"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "exception",
+   "questionText": "리스부채 재측정으로 사용권자산 장부금액이 0까지 줄고도 감소액이 남은 경우의 처리는?",
+   "blankAnswer": "남은 금액을 당기손익으로 인식",
+   "acceptedAnswers": [
+    "남은 금액을 당기손익으로 인식"
+   ],
+   "relatedConceptIds": [
+    "IA211",
+    "IA210"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "남은 금액을 당기손익으로 인식",
+    "사용권자산을 음수로 표시",
+    "기타포괄손익",
+    "다음 기간으로 이월"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사용권자산 0 하한.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3769,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA213-Q01",
+   "primaryConceptId": "IA213",
+   "conceptIds": [
+    "IA213"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "단기리스는 리스개시일에 리스기간이 (______)개월 이하이고 매수선택권이 없는 리스다.",
+   "blankAnswer": "12",
+   "acceptedAnswers": [
+    "12"
+   ],
+   "relatedConceptIds": [
+    "IA214",
+    "IA209"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인식 면제 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3770,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA213-Q02",
+   "primaryConceptId": "IA213",
+   "conceptIds": [
+    "IA213"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "단기리스 인식 면제를 선택한 창고 리스의 월 리스료가 500,000원이고 당기 사용 기간이 10개월이다. 당기 리스비용은 (______)원이다.",
+   "blankAnswer": "5,000,000",
+   "acceptedAnswers": [
+    "5,000,000",
+    "5,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA214",
+    "IA209"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 500000.0,
+     "b": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "월 리스료 × 사용 개월(정액).",
+   "confusion": null,
+   "calculation": "500,000 × 10 = 5,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3771,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA213-Q03",
+   "primaryConceptId": "IA213",
+   "conceptIds": [
+    "IA213"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "comparison",
+   "questionText": "인식 면제의 선택 단위를 연결하시오.",
+   "blankAnswer": "단기리스 → 기초자산 유형별 / 소액기초자산리스 → 리스별",
+   "acceptedAnswers": [
+    "단기리스 → 기초자산 유형별 / 소액기초자산리스 → 리스별"
+   ],
+   "relatedConceptIds": [
+    "IA214",
+    "IA209"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기초자산 유형별",
+    "리스별",
+    "회사 전체"
+   ],
+   "slots": [
+    {
+     "label": "단기리스",
+     "answer": "기초자산 유형별"
+    },
+    {
+     "label": "소액기초자산리스",
+     "answer": "리스별"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선택 단위가 다르다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3772,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA214-Q01",
+   "primaryConceptId": "IA214",
+   "conceptIds": [
+    "IA214"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "소액 기초자산 여부는 기초자산이 (______)일 때의 가치로 판단한다.",
+   "blankAnswer": "새것",
+   "acceptedAnswers": [
+    "새것",
+    "신품"
+   ],
+   "relatedConceptIds": [
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "절대 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3773,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA214-Q02",
+   "primaryConceptId": "IA214",
+   "conceptIds": [
+    "IA214"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "exception",
+   "questionText": "소액 기초자산 리스 면제를 적용할 수 없는 것은?",
+   "blankAnswer": "중고 승용차",
+   "acceptedAnswers": [
+    "중고 승용차"
+   ],
+   "relatedConceptIds": [
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "중고 승용차",
+    "태블릿 컴퓨터",
+    "소형 사무가구",
+    "사무용 전화기"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자동차는 새것일 때 소액이 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3774,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA214-Q03",
+   "primaryConceptId": "IA214",
+   "conceptIds": [
+    "IA214"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스이용자가 기초자산을 (______)리스했거나 할 예정이면 원리스는 소액리스로 볼 수 없다.",
+   "blankAnswer": "전대",
+   "acceptedAnswers": [
+    "전대"
+   ],
+   "relatedConceptIds": [
+    "IA213"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3775,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA215-Q01",
+   "primaryConceptId": "IA215",
+   "conceptIds": [
+    "IA215"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "판매후리스에서 자산 이전이 판매에 해당하지 않으면 받은 대가를 (______)부채로 인식한다.",
+   "blankAnswer": "금융",
+   "acceptedAnswers": [
+    "금융"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA203"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "차입거래.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3776,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA215-Q02",
+   "primaryConceptId": "IA215",
+   "conceptIds": [
+    "IA215"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "판매후리스(판매 해당)에서 기존 장부금액이 1,000,000원이고 계속 보유하는 사용권 비율이 40%이다. 사용권자산은 (______)원이다.",
+   "blankAnswer": "400,000",
+   "acceptedAnswers": [
+    "400,000",
+    "400,000원"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA203"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 1000000.0,
+     "b": 40.0,
+     "c": 100.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기존 장부금액 × 보유 권리 비율.",
+   "confusion": null,
+   "calculation": "1,000,000 × 40 ÷ 100 = 400,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3777,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA215-Q03",
+   "primaryConceptId": "IA215",
+   "conceptIds": [
+    "IA215"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "treatment",
+   "questionText": "판매후리스에서 판매자-리스이용자가 인식하는 차손익은?",
+   "blankAnswer": "구매자에게 이전된 권리에 관련된 부분만",
+   "acceptedAnswers": [
+    "구매자에게 이전된 권리에 관련된 부분만"
+   ],
+   "relatedConceptIds": [
+    "IA204",
+    "IA203"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "구매자에게 이전된 권리에 관련된 부분만",
+    "처분 차익 전액",
+    "인식하지 않음(항상)",
+    "기타포괄손익으로 전액"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "보유 권리분은 인식하지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3778,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA216-Q01",
+   "primaryConceptId": "IA216",
+   "conceptIds": [
+    "IA216"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "classification",
+   "questionText": "다음 리스의 리스제공자 분류를 연결하시오.",
+   "blankAnswer": "리스기간 종료 시 소유권 이전 → 금융리스 / 내용연수 10년 자산을 1년 리스(선택권 없음) → 운용리스 / 리스이용자 전용 특수 설비 → 금융리스",
+   "acceptedAnswers": [
+    "리스기간 종료 시 소유권 이전 → 금융리스 / 내용연수 10년 자산을 1년 리스(선택권 없음) → 운용리스 / 리스이용자 전용 특수 설비 → 금융리스"
+   ],
+   "relatedConceptIds": [
+    "IA217",
+    "IA218"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "금융리스",
+    "운용리스"
+   ],
+   "slots": [
+    {
+     "label": "리스기간 종료 시 소유권 이전",
+     "answer": "금융리스"
+    },
+    {
+     "label": "내용연수 10년 자산을 1년 리스(선택권 없음)",
+     "answer": "운용리스"
+    },
+    {
+     "label": "리스이용자 전용 특수 설비",
+     "answer": "금융리스"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "위험과 보상 이전 지표.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3779,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA216-Q02",
+   "primaryConceptId": "IA216",
+   "conceptIds": [
+    "IA216"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "리스제공자는 위험과 보상의 대부분을 이전하는 리스를 (______)리스로 분류한다.",
+   "blankAnswer": "금융",
+   "acceptedAnswers": [
+    "금융"
+   ],
+   "relatedConceptIds": [
+    "IA217",
+    "IA218"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분류 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3780,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA216-Q03",
+   "primaryConceptId": "IA216",
+   "conceptIds": [
+    "IA216"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "comparison",
+   "questionText": "리스이용자의 회계처리에 관한 설명으로 옳은 것은?",
+   "blankAnswer": "금융·운용리스로 나누지 않고 사용권자산과 리스부채를 인식한다",
+   "acceptedAnswers": [
+    "금융·운용리스로 나누지 않고 사용권자산과 리스부채를 인식한다"
+   ],
+   "relatedConceptIds": [
+    "IA217",
+    "IA218"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "금융·운용리스로 나누지 않고 사용권자산과 리스부채를 인식한다",
+    "운용리스는 비용 처리한다",
+    "금융리스만 자산으로 인식한다",
+    "리스제공자의 분류를 따른다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "단일 모형(면제 제외).",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3781,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA217-Q01",
+   "primaryConceptId": "IA217",
+   "conceptIds": [
+    "IA217"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "운용리스 총리스료가 6,000,000원이고 리스기간이 3년이다(무상 기간 포함). 연간 리스수익은 (______)원이다(1년분).",
+   "blankAnswer": "2,000,000",
+   "acceptedAnswers": [
+    "2,000,000",
+    "2,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA216",
+    "IA218",
+    "IA208"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 6000000.0,
+     "b": 1.0,
+     "c": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "총리스료 ÷ 리스기간(정액).",
+   "confusion": null,
+   "calculation": "6,000,000 × 1 ÷ 3 = 2,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3782,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA217-Q02",
+   "primaryConceptId": "IA217",
+   "conceptIds": [
+    "IA217"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "금융리스의 기초 리스순투자가 3,790,787원, 내재이자율이 10%이다. 당기 이자수익은 (______)원이다.",
+   "blankAnswer": "379,079",
+   "acceptedAnswers": [
+    "379,079",
+    "379,079원"
+   ],
+   "relatedConceptIds": [
+    "IA216",
+    "IA218",
+    "IA208"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 3790787.0,
+     "r": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 리스순투자 × 내재이자율.",
+   "confusion": null,
+   "calculation": "3,790,787 × 10% = 379,079",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3783,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA217-Q03",
+   "primaryConceptId": "IA217",
+   "conceptIds": [
+    "IA217"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "운용리스 리스제공자의 리스개설직접원가는 기초자산의 (______)에 더해 리스기간 동안 비용 처리한다.",
+   "blankAnswer": "장부금액",
+   "acceptedAnswers": [
+    "장부금액"
+   ],
+   "relatedConceptIds": [
+    "IA216",
+    "IA218",
+    "IA208"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "운용리스.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3784,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA218-Q01",
+   "primaryConceptId": "IA218",
+   "conceptIds": [
+    "IA218"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "calculation",
+   "questionText": "금융리스로 제품을 제공한 제조자의 매출(공정가치와 시장이자율 리스료 현재가치 중 작은 금액)이 9,500,000원, 매출원가가 7,000,000원이다. 판매이익은 (______)원이다.",
+   "blankAnswer": "2,500,000",
+   "acceptedAnswers": [
+    "2,500,000",
+    "2,500,000원"
+   ],
+   "relatedConceptIds": [
+    "IA216",
+    "IA217"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 9500000.0,
+     "b": 7000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출 − 매출원가.",
+   "confusion": null,
+   "calculation": "9,500,000 − 7,000,000 = 2,500,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3785,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA218-Q02",
+   "primaryConceptId": "IA218",
+   "conceptIds": [
+    "IA218"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "definition",
+   "questionText": "제조자·판매자 리스제공자는 인위적으로 낮은 이자율을 제시해도 (______)이자율로 리스료를 할인한다.",
+   "blankAnswer": "시장",
+   "acceptedAnswers": [
+    "시장"
+   ],
+   "relatedConceptIds": [
+    "IA216",
+    "IA217"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "매출 측정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3786,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA218-Q03",
+   "primaryConceptId": "IA218",
+   "conceptIds": [
+    "IA218"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-LS",
+   "questionType": "treatment",
+   "questionText": "제조자·판매자 리스제공자의 리스 체결 원가 처리는?",
+   "blankAnswer": "판매이익을 인식할 때 비용",
+   "acceptedAnswers": [
+    "판매이익을 인식할 때 비용"
+   ],
+   "relatedConceptIds": [
+    "IA216",
+    "IA217"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "판매이익을 인식할 때 비용",
+    "리스순투자에 가산",
+    "기초자산 원가에 가산",
+    "이연 후 상각"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "리스개설직접원가로 보지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1116호 '리스'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3787,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 364,
+    "complete": 384,
     "total": 577,
-    "missing": 213,
+    "missing": 193,
     "needsReview": 12,
-    "storedFlagCovered": 434
+    "storedFlagCovered": 454
    },
    "경영학": {
     "complete": 21,
@@ -40,7 +40,7 @@
   },
   "packs": {
    "IA": {
-    "complete": 237,
+    "complete": 257,
     "total": 332
    },
    "AA": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 698,
+   "complete": 718,
    "total": 1233,
-   "missing": 535
+   "missing": 515
   }
  },
  "gaps": [
@@ -215,353 +215,6 @@
    "gapType": "B",
    "linkCandidates": [],
    "storedCoveredFlag": true
-  },
-  {
-   "scopeNodeId": "CUR-IA-0233",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "리스의 정의",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0234",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "식별자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0235",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "사용통제권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0236",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "사용권자산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P073"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0237",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "리스부채",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0238",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "최초 측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "P007",
-    "R006",
-    "IA023",
-    "IA093"
-   ],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0239",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "할인율",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0240",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "리스기간",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0241",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "리스료",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0242",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "잔존가치보증",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0243",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "매수선택권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0244",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "연장·종료선택권",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0245",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "리스변경",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0246",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "리스재측정",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0247",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "단기리스",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0248",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "소액기초자산리스",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0249",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "판매후리스",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0250",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "운용리스와 금융리스의 제공자 회계",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0251",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "리스제공자의 손익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
-  },
-  {
-   "scopeNodeId": "CUR-IA-0252",
-   "officialSubject": "회계학",
-   "contentPack": "중급회계",
-   "packId": "IA",
-   "parentChapter": "리스",
-   "scopeTitle": "제조자·판매자 리스제공자",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
-   ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
-   "linkCandidates": [],
-   "storedCoveredFlag": false
   },
   {
    "scopeNodeId": "CUR-IA-0253",
@@ -2067,7 +1720,8 @@
     "P007",
     "R006",
     "IA023",
-    "IA093"
+    "IA093",
+    "IA203"
    ],
    "storedCoveredFlag": false
   },
