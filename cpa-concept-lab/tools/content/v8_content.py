@@ -15,6 +15,8 @@ ORDER = [
     "ia_receivables",
     "ia_investment_property",
     "ia_changes",
+    "ia_intangibles",
+    "ia_financial_instruments",
 ]
 
 for name in ORDER:

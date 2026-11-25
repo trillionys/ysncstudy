@@ -167515,6 +167515,6237 @@
    "examArea": null,
    "mode": "OPTIONS",
    "contentVersion": 5
+  },
+  {
+   "id": "IA070-Q01",
+   "primaryConceptId": "IA070",
+   "conceptIds": [
+    "IA070"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "물리적 실체는 없지만 식별할 수 있는 비화폐성자산을 (______)이라 한다.",
+   "blankAnswer": "무형자산",
+   "acceptedAnswers": [
+    "무형자산"
+   ],
+   "relatedConceptIds": [
+    "IA071",
+    "IA072",
+    "IA073"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제1038호 정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3433,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA070-Q02",
+   "primaryConceptId": "IA070",
+   "conceptIds": [
+    "IA070"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "order",
+   "questionText": "무형자산 인식 판단을 순서대로 배열하시오.",
+   "blankAnswer": "1단계 → 식별가능성 / 2단계 → 자원에 대한 통제 / 3단계 → 미래경제적효익 / 4단계 → 효익 유입 가능성과 원가의 신뢰성 있는 측정",
+   "acceptedAnswers": [
+    "1단계 → 식별가능성 / 2단계 → 자원에 대한 통제 / 3단계 → 미래경제적효익 / 4단계 → 효익 유입 가능성과 원가의 신뢰성 있는 측정"
+   ],
+   "relatedConceptIds": [
+    "IA071",
+    "IA072",
+    "IA073"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "미래경제적효익",
+    "식별가능성",
+    "자원에 대한 통제",
+    "효익 유입 가능성과 원가의 신뢰성 있는 측정"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "식별가능성"
+    },
+    {
+     "label": "2단계",
+     "answer": "자원에 대한 통제"
+    },
+    {
+     "label": "3단계",
+     "answer": "미래경제적효익"
+    },
+    {
+     "label": "4단계",
+     "answer": "효익 유입 가능성과 원가의 신뢰성 있는 측정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의 요소를 먼저, 인식기준을 나중에 검토한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3434,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA070-Q03",
+   "primaryConceptId": "IA070",
+   "conceptIds": [
+    "IA070"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "choice",
+   "questionText": "다음 중 무형자산으로 인식할 수 있는 것은?",
+   "blankAnswer": "외부에서 구입한 특허권",
+   "acceptedAnswers": [
+    "외부에서 구입한 특허권"
+   ],
+   "relatedConceptIds": [
+    "IA071",
+    "IA072",
+    "IA073"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "외부에서 구입한 특허권",
+    "숙련된 직원 집단",
+    "내부적으로 창출한 영업권",
+    "브랜드 광고 지출"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "통제·식별가능성·효익을 모두 충족한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3435,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA071-Q01",
+   "primaryConceptId": "IA071",
+   "conceptIds": [
+    "IA071"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "무형자산은 분리가능하거나 계약상·(______) 권리에서 발생하면 식별가능하다.",
+   "blankAnswer": "법적",
+   "acceptedAnswers": [
+    "법적"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "둘 중 하나.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3436,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA071-Q02",
+   "primaryConceptId": "IA071",
+   "conceptIds": [
+    "IA071"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "exception",
+   "questionText": "양도가 법률로 금지된 정부 면허의 식별가능성에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "법적 권리에서 발생했으므로 식별가능하다",
+   "acceptedAnswers": [
+    "법적 권리에서 발생했으므로 식별가능하다"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "법적 권리에서 발생했으므로 식별가능하다",
+    "분리할 수 없으므로 식별가능하지 않다",
+    "영업권에 포함한다",
+    "무형자산이 아니라 유형자산이다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법적 권리 요건은 분리 가능 여부와 무관하다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3437,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA071-Q03",
+   "primaryConceptId": "IA071",
+   "conceptIds": [
+    "IA071"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "classification",
+   "questionText": "다음 항목의 식별가능성 근거를 연결하시오.",
+   "blankAnswer": "매각 가능한 고객목록 → 분리가능성 / 법적 보호를 받는 상표권 → 계약상·법적 권리",
+   "acceptedAnswers": [
+    "매각 가능한 고객목록 → 분리가능성 / 법적 보호를 받는 상표권 → 계약상·법적 권리"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "분리가능성",
+    "계약상·법적 권리",
+    "식별 불가"
+   ],
+   "slots": [
+    {
+     "label": "매각 가능한 고객목록",
+     "answer": "분리가능성"
+    },
+    {
+     "label": "법적 보호를 받는 상표권",
+     "answer": "계약상·법적 권리"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "어느 한 요건만 충족하면 된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3438,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA072-Q01",
+   "primaryConceptId": "IA072",
+   "conceptIds": [
+    "IA072"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "기업이 미래경제적효익을 얻고 제3자의 (______)을 제한할 수 있으면 무형자원을 통제한다.",
+   "blankAnswer": "접근",
+   "acceptedAnswers": [
+    "접근"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA073"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "통제의 의미.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3439,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA072-Q02",
+   "primaryConceptId": "IA072",
+   "conceptIds": [
+    "IA072"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "choice",
+   "questionText": "직원 교육훈련비를 자산으로 인식할 수 없는 가장 직접적인 이유는?",
+   "blankAnswer": "직원을 법적으로 통제할 수 없어서",
+   "acceptedAnswers": [
+    "직원을 법적으로 통제할 수 없어서"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA073"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "직원을 법적으로 통제할 수 없어서",
+    "식별가능하지 않아서",
+    "금액이 작아서",
+    "물리적 실체가 없어서"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효익을 기업이 독점할 수 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3440,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA072-Q03",
+   "primaryConceptId": "IA072",
+   "conceptIds": [
+    "IA072"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "exception",
+   "questionText": "법적 보호가 없는 고객관계라도 비슷한 고객관계를 (______)하는 거래가 있으면 통제의 증거가 된다.",
+   "blankAnswer": "교환",
+   "acceptedAnswers": [
+    "교환"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA073"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외적 증거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3441,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA073-Q01",
+   "primaryConceptId": "IA073",
+   "conceptIds": [
+    "IA073"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "무형자산의 미래경제적효익에는 매출수익뿐 아니라 (______)도 포함된다.",
+   "blankAnswer": "원가절감",
+   "acceptedAnswers": [
+    "원가절감"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA074"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효익의 형태.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3442,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA073-Q02",
+   "primaryConceptId": "IA073",
+   "conceptIds": [
+    "IA073"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "exception",
+   "questionText": "효익 유입 가능성이 높다는 인식기준을 항상 충족한 것으로 보는 무형자산은?",
+   "blankAnswer": "개별 취득한 무형자산",
+   "acceptedAnswers": [
+    "개별 취득한 무형자산"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA074"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "개별 취득한 무형자산",
+    "연구단계 지출",
+    "내부창출 브랜드",
+    "광고 지출"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구입가격에 효익 기대가 반영된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3443,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA073-Q03",
+   "primaryConceptId": "IA073",
+   "conceptIds": [
+    "IA073"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "matching",
+   "questionText": "무형자산 인식기준 두 가지를 고르시오.",
+   "blankAnswer": "기준① → 미래경제적효익 유입 가능성이 높음 / 기준② → 원가를 신뢰성 있게 측정 가능",
+   "acceptedAnswers": [
+    "기준① → 미래경제적효익 유입 가능성이 높음 / 기준② → 원가를 신뢰성 있게 측정 가능"
+   ],
+   "relatedConceptIds": [
+    "IA070",
+    "IA074"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "미래경제적효익 유입 가능성이 높음",
+    "원가를 신뢰성 있게 측정 가능",
+    "물리적 실체 존재",
+    "법적 소유권 등기"
+   ],
+   "slots": [
+    {
+     "label": "기준①",
+     "answer": "미래경제적효익 유입 가능성이 높음"
+    },
+    {
+     "label": "기준②",
+     "answer": "원가를 신뢰성 있게 측정 가능"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의 충족 후 적용하는 인식기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3444,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA074-Q01",
+   "primaryConceptId": "IA074",
+   "conceptIds": [
+    "IA074"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "calculation",
+   "questionText": "특허권 구입가격 50,000,000원, 등록 수수료 2,000,000원, 사용 전 기능 시험 원가 1,000,000원(출시 광고비 별도)일 때 특허권 원가는 (______)원이다.",
+   "blankAnswer": "53,000,000",
+   "acceptedAnswers": [
+    "53,000,000",
+    "53,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA073",
+    "IA075"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add3",
+    "params": {
+     "a": 50000000.0,
+     "b": 2000000.0,
+     "c": 1000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "구입가격 + 직접 관련 원가.",
+   "confusion": null,
+   "calculation": "50,000,000 + 2,000,000 + 1,000,000 = 53,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3445,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA074-Q02",
+   "primaryConceptId": "IA074",
+   "conceptIds": [
+    "IA074"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "exception",
+   "questionText": "개별 취득한 무형자산의 원가에 포함하지 않는 것은?",
+   "blankAnswer": "새 제품 출시 광고비",
+   "acceptedAnswers": [
+    "새 제품 출시 광고비"
+   ],
+   "relatedConceptIds": [
+    "IA073",
+    "IA075"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "새 제품 출시 광고비",
+    "등록 수수료",
+    "환급받을 수 없는 세금",
+    "기능 시험 원가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "광고·판촉 원가는 비용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3446,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA074-Q03",
+   "primaryConceptId": "IA074",
+   "conceptIds": [
+    "IA074"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "개별 취득한 무형자산의 원가는 구입가격에 사용 준비에 (______) 관련된 원가를 더한다.",
+   "blankAnswer": "직접",
+   "acceptedAnswers": [
+    "직접"
+   ],
+   "relatedConceptIds": [
+    "IA073",
+    "IA075"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "간접원가는 제외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3447,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA075-Q01",
+   "primaryConceptId": "IA075",
+   "conceptIds": [
+    "IA075"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "사업결합으로 취득한 무형자산은 취득일의 (______)로 측정한다.",
+   "blankAnswer": "공정가치",
+   "acceptedAnswers": [
+    "공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA076",
+    "IA071"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원가 = 공정가치.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3448,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA075-Q02",
+   "primaryConceptId": "IA075",
+   "conceptIds": [
+    "IA075"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "situation",
+   "questionText": "사업결합으로 취득한 진행 중인 연구개발 프로젝트에 취득 후 지출한 연구단계 원가의 처리는?",
+   "blankAnswer": "발생 시 비용",
+   "acceptedAnswers": [
+    "발생 시 비용"
+   ],
+   "relatedConceptIds": [
+    "IA076",
+    "IA071"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "발생 시 비용",
+    "무형자산에 가산",
+    "영업권에 가산",
+    "기타포괄손익"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "취득 후 지출은 내부창출 규정을 적용한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3449,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA075-Q03",
+   "primaryConceptId": "IA075",
+   "conceptIds": [
+    "IA075"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "treatment",
+   "questionText": "피취득자가 인식하지 않았던 무형자산도 식별가능하면 (______)과 분리하여 인식한다.",
+   "blankAnswer": "영업권",
+   "acceptedAnswers": [
+    "영업권"
+   ],
+   "relatedConceptIds": [
+    "IA076",
+    "IA071"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사업결합.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3450,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA076-Q01",
+   "primaryConceptId": "IA076",
+   "conceptIds": [
+    "IA076"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "내부 프로젝트에서 두 단계(탐구 단계와 실용화 단계)를 구분할 수 없으면 지출을 모두 (______)단계 지출로 보아 비용 처리한다.",
+   "blankAnswer": "연구",
+   "acceptedAnswers": [
+    "연구"
+   ],
+   "relatedConceptIds": [
+    "IA077",
+    "IA078",
+    "IA079",
+    "IA080"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구분 불가 시 연구단계로 본다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3451,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA076-Q02",
+   "primaryConceptId": "IA076",
+   "conceptIds": [
+    "IA076"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "exception",
+   "questionText": "내부적으로 창출했을 때 무형자산으로 인식할 수 없는 것은?",
+   "blankAnswer": "고객목록",
+   "acceptedAnswers": [
+    "고객목록"
+   ],
+   "relatedConceptIds": [
+    "IA077",
+    "IA078",
+    "IA079",
+    "IA080"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "고객목록",
+    "개발 요건을 충족한 소프트웨어 개발 지출",
+    "외부 구입 특허권",
+    "사업결합으로 취득한 상표권"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "내부창출 고객목록·브랜드·제호는 인식 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3452,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA076-Q03",
+   "primaryConceptId": "IA076",
+   "conceptIds": [
+    "IA076"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "comparison",
+   "questionText": "취득 형태에 따른 고객목록의 처리를 연결하시오.",
+   "blankAnswer": "외부에서 구입한 고객목록 → 무형자산 / 내부적으로 만든 고객목록 → 비용",
+   "acceptedAnswers": [
+    "외부에서 구입한 고객목록 → 무형자산 / 내부적으로 만든 고객목록 → 비용"
+   ],
+   "relatedConceptIds": [
+    "IA077",
+    "IA078",
+    "IA079",
+    "IA080"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "무형자산",
+    "비용",
+    "영업권"
+   ],
+   "slots": [
+    {
+     "label": "외부에서 구입한 고객목록",
+     "answer": "무형자산"
+    },
+    {
+     "label": "내부적으로 만든 고객목록",
+     "answer": "비용"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "내부창출 고객목록은 인식하지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3453,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA077-Q01",
+   "primaryConceptId": "IA077",
+   "conceptIds": [
+    "IA077"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "연구단계에서 발생한 지출은 발생 시점에 (______)으로 인식한다.",
+   "blankAnswer": "비용",
+   "acceptedAnswers": [
+    "비용"
+   ],
+   "relatedConceptIds": [
+    "IA078",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자산화 불가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3454,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA077-Q02",
+   "primaryConceptId": "IA077",
+   "conceptIds": [
+    "IA077"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "classification",
+   "questionText": "다음 활동을 연구·개발로 분류하시오.",
+   "blankAnswer": "여러 대체 공정을 탐색·평가 → 연구 / 생산 전 시제품의 설계·제작·시험 → 개발 / 새 지식을 얻기 위한 실험 → 연구",
+   "acceptedAnswers": [
+    "여러 대체 공정을 탐색·평가 → 연구 / 생산 전 시제품의 설계·제작·시험 → 개발 / 새 지식을 얻기 위한 실험 → 연구"
+   ],
+   "relatedConceptIds": [
+    "IA078",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "연구",
+    "개발"
+   ],
+   "slots": [
+    {
+     "label": "여러 대체 공정을 탐색·평가",
+     "answer": "연구"
+    },
+    {
+     "label": "생산 전 시제품의 설계·제작·시험",
+     "answer": "개발"
+    },
+    {
+     "label": "새 지식을 얻기 위한 실험",
+     "answer": "연구"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실용화 직전 단계가 개발.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3455,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA077-Q03",
+   "primaryConceptId": "IA077",
+   "conceptIds": [
+    "IA077"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "choice",
+   "questionText": "다음 중 연구활동의 예가 아닌 것은?",
+   "blankAnswer": "상업적 생산 전 시험공장의 설계·건설·가동",
+   "acceptedAnswers": [
+    "상업적 생산 전 시험공장의 설계·건설·가동"
+   ],
+   "relatedConceptIds": [
+    "IA078",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "상업적 생산 전 시험공장의 설계·건설·가동",
+    "새로운 지식을 얻으려는 활동",
+    "연구 결과를 응용하는 방법의 탐색",
+    "대체안의 최종 선택"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "시험공장은 개발활동이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3456,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA078-Q01",
+   "primaryConceptId": "IA078",
+   "conceptIds": [
+    "IA078"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "상업적 생산 전 시제품과 모형의 설계·제작·시험은 (______)활동이다.",
+   "blankAnswer": "개발",
+   "acceptedAnswers": [
+    "개발"
+   ],
+   "relatedConceptIds": [
+    "IA079",
+    "IA077"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "연구가 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3457,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA078-Q02",
+   "primaryConceptId": "IA078",
+   "conceptIds": [
+    "IA078"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "treatment",
+   "questionText": "개발단계에서 발생한 지출의 처리로 옳은 것은?",
+   "blankAnswer": "자산화 요건을 모두 충족한 이후 지출만 무형자산",
+   "acceptedAnswers": [
+    "자산화 요건을 모두 충족한 이후 지출만 무형자산"
+   ],
+   "relatedConceptIds": [
+    "IA079",
+    "IA077"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "자산화 요건을 모두 충족한 이후 지출만 무형자산",
+    "모두 무형자산",
+    "모두 비용",
+    "모두 영업권"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "개발단계여도 요건 충족 전 지출은 비용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3458,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA078-Q03",
+   "primaryConceptId": "IA078",
+   "conceptIds": [
+    "IA078"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "situation",
+   "questionText": "새 기술과 관련된 공구·주형·금형의 설계는 연구활동이 아니라 (______)활동의 예이다.",
+   "blankAnswer": "개발",
+   "acceptedAnswers": [
+    "개발"
+   ],
+   "relatedConceptIds": [
+    "IA079",
+    "IA077"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실용화 단계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3459,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA079-Q01",
+   "primaryConceptId": "IA079",
+   "conceptIds": [
+    "IA079"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "이전에 비용으로 인식한 개발 지출은 나중에 요건을 충족해도 (______)으로 되돌릴 수 없다.",
+   "blankAnswer": "자산",
+   "acceptedAnswers": [
+    "자산",
+    "무형자산"
+   ],
+   "relatedConceptIds": [
+    "IA078",
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "소급 자산화 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3460,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA079-Q02",
+   "primaryConceptId": "IA079",
+   "conceptIds": [
+    "IA079"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "calculation",
+   "questionText": "개발 프로젝트가 7월 1일 자산화 요건을 모두 충족했다. 연간 지출 100,000,000원 중 1~6월 지출이 40,000,000원이면 개발비(무형자산)로 인식할 금액은 (______)원이다.",
+   "blankAnswer": "60,000,000",
+   "acceptedAnswers": [
+    "60,000,000",
+    "60,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA078",
+    "IA083"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 100000000.0,
+     "b": 40000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "요건 충족 후 지출만 자산화.",
+   "confusion": null,
+   "calculation": "100,000,000 − 40,000,000 = 60,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3461,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA079-Q03",
+   "primaryConceptId": "IA079",
+   "conceptIds": [
+    "IA079"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "choice",
+   "questionText": "개발비 자산화 요건이 아닌 것은?",
+   "blankAnswer": "특허 등록 완료",
+   "acceptedAnswers": [
+    "특허 등록 완료"
+   ],
+   "relatedConceptIds": [
+    "IA078",
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "특허 등록 완료",
+    "기술적 실현가능성",
+    "필요한 기술적·재정적 자원의 이용가능성",
+    "지출을 신뢰성 있게 측정하는 능력"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "특허 등록은 요건이 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3462,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA079-Q04",
+   "primaryConceptId": "IA079",
+   "conceptIds": [
+    "IA079"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "comparison",
+   "questionText": "요건 충족 시점 전후 개발 지출의 처리를 연결하시오.",
+   "blankAnswer": "요건 충족 전 지출 → 경상개발비(비용) / 요건 충족 후 지출 → 개발비(무형자산)",
+   "acceptedAnswers": [
+    "요건 충족 전 지출 → 경상개발비(비용) / 요건 충족 후 지출 → 개발비(무형자산)"
+   ],
+   "relatedConceptIds": [
+    "IA078",
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "경상개발비(비용)",
+    "개발비(무형자산)",
+    "연구비(무형자산)"
+   ],
+   "slots": [
+    {
+     "label": "요건 충족 전 지출",
+     "answer": "경상개발비(비용)"
+    },
+    {
+     "label": "요건 충족 후 지출",
+     "answer": "개발비(무형자산)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "충족 시점이 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3463,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA080-Q01",
+   "primaryConceptId": "IA080",
+   "conceptIds": [
+    "IA080"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "내부적으로 창출한 영업권은 자산으로 (______)하지 않는다.",
+   "blankAnswer": "인식",
+   "acceptedAnswers": [
+    "인식"
+   ],
+   "relatedConceptIds": [
+    "IA076",
+    "IA075"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인식 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3464,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA080-Q02",
+   "primaryConceptId": "IA080",
+   "conceptIds": [
+    "IA080"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "choice",
+   "questionText": "영업권을 자산으로 인식할 수 있는 경우는?",
+   "blankAnswer": "사업결합에서 이전대가가 식별가능 순자산 공정가치를 초과할 때",
+   "acceptedAnswers": [
+    "사업결합에서 이전대가가 식별가능 순자산 공정가치를 초과할 때"
+   ],
+   "relatedConceptIds": [
+    "IA076",
+    "IA075"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "사업결합에서 이전대가가 식별가능 순자산 공정가치를 초과할 때",
+    "기업의 시가총액이 순자산보다 클 때",
+    "브랜드 평판이 높아졌을 때",
+    "고객충성도 조사 결과가 좋을 때"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "취득 영업권만 인식한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3465,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA080-Q03",
+   "primaryConceptId": "IA080",
+   "conceptIds": [
+    "IA080"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "situation",
+   "questionText": "내부창출 영업권은 원가를 신뢰성 있게 측정할 수 있는 (______)가능한 자원이 아니어서 인식하지 않는다.",
+   "blankAnswer": "식별",
+   "acceptedAnswers": [
+    "식별"
+   ],
+   "relatedConceptIds": [
+    "IA076",
+    "IA075"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인식 금지 이유.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3466,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA081-Q01",
+   "primaryConceptId": "IA081",
+   "conceptIds": [
+    "IA081"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "classification",
+   "questionText": "주문 기능이 있는 웹사이트 개발 단계별 지출의 처리를 연결하시오.",
+   "blankAnswer": "계획단계 → 비용 / 그래픽 디자인·콘텐츠 개발 단계(요건 충족) → 무형자산 / 운영단계 → 비용",
+   "acceptedAnswers": [
+    "계획단계 → 비용 / 그래픽 디자인·콘텐츠 개발 단계(요건 충족) → 무형자산 / 운영단계 → 비용"
+   ],
+   "relatedConceptIds": [
+    "IA079",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "비용",
+    "무형자산"
+   ],
+   "slots": [
+    {
+     "label": "계획단계",
+     "answer": "비용"
+    },
+    {
+     "label": "그래픽 디자인·콘텐츠 개발 단계(요건 충족)",
+     "answer": "무형자산"
+    },
+    {
+     "label": "운영단계",
+     "answer": "비용"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계획·운영은 비용, 개발은 요건 충족 시 자산.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3467,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA081-Q02",
+   "primaryConceptId": "IA081",
+   "conceptIds": [
+    "IA081"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "exception",
+   "questionText": "주로 자사 제품의 광고·판촉 목적인 웹사이트 개발 지출은 모두 (______)으로 인식한다.",
+   "blankAnswer": "비용",
+   "acceptedAnswers": [
+    "비용"
+   ],
+   "relatedConceptIds": [
+    "IA079",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효익 창출 방법 입증 불가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3468,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA081-Q03",
+   "primaryConceptId": "IA081",
+   "conceptIds": [
+    "IA081"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "웹사이트 개발의 계획단계는 내부창출 무형자산의 (______)단계와 성격이 같다.",
+   "blankAnswer": "연구",
+   "acceptedAnswers": [
+    "연구"
+   ],
+   "relatedConceptIds": [
+    "IA079",
+    "IA076"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비용 처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3469,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA082-Q01",
+   "primaryConceptId": "IA082",
+   "conceptIds": [
+    "IA082"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "계약상·법적 권리에서 생긴 무형자산의 내용연수는 그 권리의 (______)을 초과할 수 없다.",
+   "blankAnswer": "기간",
+   "acceptedAnswers": [
+    "기간"
+   ],
+   "relatedConceptIds": [
+    "IA083",
+    "IA084"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "갱신 요건 충족 시 갱신기간 포함.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3470,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA082-Q02",
+   "primaryConceptId": "IA082",
+   "conceptIds": [
+    "IA082"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "choice",
+   "questionText": "무형자산 내용연수에 관한 설명으로 옳은 것은?",
+   "blankAnswer": "비한정 내용연수는 무한을 뜻하지 않는다",
+   "acceptedAnswers": [
+    "비한정 내용연수는 무한을 뜻하지 않는다"
+   ],
+   "relatedConceptIds": [
+    "IA083",
+    "IA084"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "비한정 내용연수는 무한을 뜻하지 않는다",
+    "법적 권리 기간보다 길게 정할 수 있다",
+    "기술 진부화는 고려하지 않는다",
+    "갱신 원가가 커도 갱신 기간을 포함한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예측 가능한 제한이 없다는 의미일 뿐이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3471,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA082-Q03",
+   "primaryConceptId": "IA082",
+   "conceptIds": [
+    "IA082"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "exception",
+   "questionText": "갱신에 (______)인 원가가 들지 않는다는 증거가 있으면 갱신 기간을 내용연수에 포함한다.",
+   "blankAnswer": "유의적",
+   "acceptedAnswers": [
+    "유의적"
+   ],
+   "relatedConceptIds": [
+    "IA083",
+    "IA084"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "갱신 기간 포함 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3472,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA083-Q01",
+   "primaryConceptId": "IA083",
+   "conceptIds": [
+    "IA083"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "내용연수가 유한한 무형자산의 잔존가치는 원칙적으로 (______)으로 본다.",
+   "blankAnswer": "0",
+   "acceptedAnswers": [
+    "0",
+    "영"
+   ],
+   "relatedConceptIds": [
+    "IA085",
+    "IA082",
+    "IA084"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "예외: 구입약정·활성시장.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3473,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA083-Q02",
+   "primaryConceptId": "IA083",
+   "conceptIds": [
+    "IA083"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "calculation",
+   "questionText": "7월 1일 사용을 시작한 특허권 원가 20,000,000원, 잔존가치 0, 내용연수 10년(정액법). 당기(12월 결산) 상각비는 6개월분인 (______)원이다(원가 × 6 ÷ 120).",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA085",
+    "IA082",
+    "IA084"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 20000000.0,
+     "b": 6.0,
+     "c": 120.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원가 × 사용 월수 ÷ 전체 월수.",
+   "confusion": null,
+   "calculation": "20,000,000 × 6 ÷ 120 = 1,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3474,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA083-Q03",
+   "primaryConceptId": "IA083",
+   "conceptIds": [
+    "IA083"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "situation",
+   "questionText": "무형자산의 상각은 자산을 (______)할 수 있는 때부터 시작한다.",
+   "blankAnswer": "사용",
+   "acceptedAnswers": [
+    "사용"
+   ],
+   "relatedConceptIds": [
+    "IA085",
+    "IA082",
+    "IA084"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "취득 시점이 아님.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3475,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA084-Q01",
+   "primaryConceptId": "IA084",
+   "conceptIds": [
+    "IA084"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "내용연수가 비한정인 무형자산은 (______)하지 않는다.",
+   "blankAnswer": "상각",
+   "acceptedAnswers": [
+    "상각"
+   ],
+   "relatedConceptIds": [
+    "IA082",
+    "IA086"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손상검사로 대체.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3476,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA084-Q02",
+   "primaryConceptId": "IA084",
+   "conceptIds": [
+    "IA084"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "comparison",
+   "questionText": "내용연수 유형별 처리를 연결하시오.",
+   "blankAnswer": "유한 내용연수 → 상각 + 징후 시 손상검사 / 비한정 내용연수 → 상각 안 함 + 매년 손상검사",
+   "acceptedAnswers": [
+    "유한 내용연수 → 상각 + 징후 시 손상검사 / 비한정 내용연수 → 상각 안 함 + 매년 손상검사"
+   ],
+   "relatedConceptIds": [
+    "IA082",
+    "IA086"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "상각 + 징후 시 손상검사",
+    "상각 안 함 + 매년 손상검사",
+    "상각 안 함 + 손상검사 안 함"
+   ],
+   "slots": [
+    {
+     "label": "유한 내용연수",
+     "answer": "상각 + 징후 시 손상검사"
+    },
+    {
+     "label": "비한정 내용연수",
+     "answer": "상각 안 함 + 매년 손상검사"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비한정은 매년 손상검사.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3477,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA084-Q03",
+   "primaryConceptId": "IA084",
+   "conceptIds": [
+    "IA084"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "treatment",
+   "questionText": "비한정으로 보던 내용연수를 유한으로 바꾼 경우의 처리는?",
+   "blankAnswer": "회계추정치 변경으로 전진적용하고 손상검사",
+   "acceptedAnswers": [
+    "회계추정치 변경으로 전진적용하고 손상검사"
+   ],
+   "relatedConceptIds": [
+    "IA082",
+    "IA086"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "회계추정치 변경으로 전진적용하고 손상검사",
+    "회계정책 변경으로 소급적용",
+    "전기오류로 소급재작성",
+    "처리하지 않음"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "추정 변경이며 손상 징후가 될 수 있다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3478,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA085-Q01",
+   "primaryConceptId": "IA085",
+   "conceptIds": [
+    "IA085"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "calculation",
+   "questionText": "원가 50,000,000원인 공정기술의 총 예상 생산량이 1,000,000단위이고 당기 생산량이 200,000단위다. 생산량비례법 상각비는 (______)원이다.",
+   "blankAnswer": "10,000,000",
+   "acceptedAnswers": [
+    "10,000,000",
+    "10,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA083"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 50000000.0,
+     "b": 200000.0,
+     "c": 1000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "원가 × 당기 생산량 ÷ 총 생산량.",
+   "confusion": null,
+   "calculation": "50,000,000 × 200,000 ÷ 1,000,000 = 10,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3479,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA085-Q02",
+   "primaryConceptId": "IA085",
+   "conceptIds": [
+    "IA085"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "수익에 기초한 무형자산 상각방법은 원칙적으로 (______)하지 않다고 본다.",
+   "blankAnswer": "적절",
+   "acceptedAnswers": [
+    "적절"
+   ],
+   "relatedConceptIds": [
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "반증 가능 추정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3480,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA085-Q03",
+   "primaryConceptId": "IA085",
+   "conceptIds": [
+    "IA085"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "situation",
+   "questionText": "제조공정에 사용되는 특허권의 상각비 처리로 옳은 것은?",
+   "blankAnswer": "재고자산(제조원가)에 포함",
+   "acceptedAnswers": [
+    "재고자산(제조원가)에 포함"
+   ],
+   "relatedConceptIds": [
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재고자산(제조원가)에 포함",
+    "항상 판매비와관리비",
+    "기타포괄손익",
+    "영업외비용"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "다른 자산의 원가에 포함되는 경우의 예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3481,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA086-Q01",
+   "primaryConceptId": "IA086",
+   "conceptIds": [
+    "IA086"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "calculation",
+   "questionText": "장부금액 30,000,000원인 특허권의 순공정가치가 18,000,000원, 사용가치가 22,000,000원이다. 손상차손은 (______)원이다.",
+   "blankAnswer": "8,000,000",
+   "acceptedAnswers": [
+    "8,000,000",
+    "8,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA084",
+    "IA083"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 30000000.0,
+     "b": 22000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "회수가능액 = max(순공정가치, 사용가치) = 22,000,000원. 장부금액 − 회수가능액.",
+   "confusion": null,
+   "calculation": "30,000,000 − 22,000,000 = 8,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3482,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA086-Q02",
+   "primaryConceptId": "IA086",
+   "conceptIds": [
+    "IA086"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "아직 사용할 수 없는 무형자산은 손상 징후와 관계없이 (______) 손상검사를 한다.",
+   "blankAnswer": "매년",
+   "acceptedAnswers": [
+    "매년"
+   ],
+   "relatedConceptIds": [
+    "IA084",
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "개발 중 개발비 등.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3483,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA086-Q03",
+   "primaryConceptId": "IA086",
+   "conceptIds": [
+    "IA086"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "comparison",
+   "questionText": "손상차손 환입 가능 여부를 연결하시오.",
+   "blankAnswer": "특허권 → 환입 가능 / 영업권 → 환입 불가",
+   "acceptedAnswers": [
+    "특허권 → 환입 가능 / 영업권 → 환입 불가"
+   ],
+   "relatedConceptIds": [
+    "IA084",
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "환입 가능",
+    "환입 불가"
+   ],
+   "slots": [
+    {
+     "label": "특허권",
+     "answer": "환입 가능"
+    },
+    {
+     "label": "영업권",
+     "answer": "환입 불가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "영업권만 환입 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3484,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA087-Q01",
+   "primaryConceptId": "IA087",
+   "conceptIds": [
+    "IA087"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "무형자산의 재평가모형은 공정가치를 (______)시장을 기초로 측정할 수 있을 때만 적용할 수 있다.",
+   "blankAnswer": "활성",
+   "acceptedAnswers": [
+    "활성"
+   ],
+   "relatedConceptIds": [
+    "IA086"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유형자산과 다른 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3485,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA087-Q02",
+   "primaryConceptId": "IA087",
+   "conceptIds": [
+    "IA087"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "treatment",
+   "questionText": "재평가모형 무형자산의 재평가 증가액(이전 감소분 없음)의 처리는?",
+   "blankAnswer": "기타포괄손익(재평가잉여금)",
+   "acceptedAnswers": [
+    "기타포괄손익(재평가잉여금)"
+   ],
+   "relatedConceptIds": [
+    "IA086"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "기타포괄손익(재평가잉여금)",
+    "당기손익",
+    "이익잉여금 직접 가산",
+    "부채"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "증가분은 OCI.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3486,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA087-Q03",
+   "primaryConceptId": "IA087",
+   "conceptIds": [
+    "IA087"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "calculation",
+   "questionText": "재평가모형 무형자산의 활성시장 기초 공정가치가 12,000,000원, 재평가 전 장부금액이 10,000,000원이다(이전 재평가 감소 없음). 재평가잉여금은 (______)원이다.",
+   "blankAnswer": "2,000,000",
+   "acceptedAnswers": [
+    "2,000,000",
+    "2,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA086"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 12000000.0,
+     "b": 10000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공정가치 − 장부금액.",
+   "confusion": null,
+   "calculation": "12,000,000 − 10,000,000 = 2,000,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3487,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA088-Q01",
+   "primaryConceptId": "IA088",
+   "conceptIds": [
+    "IA088"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "calculation",
+   "questionText": "상표권 매각대금 18,000,000원, 처분비용 500,000원, 장부금액 15,000,000원일 때 처분이익은 (______)원이다.",
+   "blankAnswer": "2,500,000",
+   "acceptedAnswers": [
+    "2,500,000",
+    "2,500,000원"
+   ],
+   "relatedConceptIds": [
+    "IA083"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "sub3",
+    "params": {
+     "a": 18000000.0,
+     "b": 500000.0,
+     "c": 15000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "순매각금액 − 장부금액.",
+   "confusion": null,
+   "calculation": "18,000,000 − 500,000 − 15,000,000 = 2,500,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3488,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA088-Q02",
+   "primaryConceptId": "IA088",
+   "conceptIds": [
+    "IA088"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "definition",
+   "questionText": "무형자산 처분손익은 순매각금액과 (______)의 차이다.",
+   "blankAnswer": "장부금액",
+   "acceptedAnswers": [
+    "장부금액"
+   ],
+   "relatedConceptIds": [
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "당기손익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3489,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA088-Q03",
+   "primaryConceptId": "IA088",
+   "conceptIds": [
+    "IA088"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-IN",
+   "questionType": "comparison",
+   "questionText": "무형자산 처분이익은 수익(매출)이 아니라 (______)으로 분류한다.",
+   "blankAnswer": "차익",
+   "acceptedAnswers": [
+    "차익",
+    "기타수익"
+   ],
+   "relatedConceptIds": [
+    "IA083"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기타수익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1038호 '무형자산'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3490,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA090-Q01",
+   "primaryConceptId": "IA090",
+   "conceptIds": [
+    "IA090"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "현금 등 금융자산을 받을 (______) 권리는 금융자산이다.",
+   "blankAnswer": "계약상",
+   "acceptedAnswers": [
+    "계약상"
+   ],
+   "relatedConceptIds": [
+    "IA091",
+    "IA094"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "법률상 권리는 제외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3491,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA090-Q02",
+   "primaryConceptId": "IA090",
+   "conceptIds": [
+    "IA090"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "classification",
+   "questionText": "다음 항목을 분류하시오.",
+   "blankAnswer": "다른 회사 보통주 → 금융자산 / 상품 선급금 → 비금융자산 / 대여금 → 금융자산 / 미수법인세환급액 → 비금융자산",
+   "acceptedAnswers": [
+    "다른 회사 보통주 → 금융자산 / 상품 선급금 → 비금융자산 / 대여금 → 금융자산 / 미수법인세환급액 → 비금융자산"
+   ],
+   "relatedConceptIds": [
+    "IA091",
+    "IA094"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "금융자산",
+    "비금융자산"
+   ],
+   "slots": [
+    {
+     "label": "다른 회사 보통주",
+     "answer": "금융자산"
+    },
+    {
+     "label": "상품 선급금",
+     "answer": "비금융자산"
+    },
+    {
+     "label": "대여금",
+     "answer": "금융자산"
+    },
+    {
+     "label": "미수법인세환급액",
+     "answer": "비금융자산"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금을 받을 계약상 권리인지로 판단한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3492,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA090-Q03",
+   "primaryConceptId": "IA090",
+   "conceptIds": [
+    "IA090"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "choice",
+   "questionText": "보유 중인 다음 항목 가운데 금융자산으로 분류할 수 없는 것은?",
+   "blankAnswer": "선급비용",
+   "acceptedAnswers": [
+    "선급비용"
+   ],
+   "relatedConceptIds": [
+    "IA091",
+    "IA094"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "선급비용",
+    "매출채권",
+    "국채",
+    "다른 기업의 지분상품"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "선급비용은 용역을 받을 권리다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3493,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA091-Q01",
+   "primaryConceptId": "IA091",
+   "conceptIds": [
+    "IA091"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "선수금은 현금이 아니라 재화를 인도할 의무이므로 (______)부채가 아니다.",
+   "blankAnswer": "금융",
+   "acceptedAnswers": [
+    "금융"
+   ],
+   "relatedConceptIds": [
+    "IA090",
+    "IA103",
+    "IA112"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비금융부채.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3494,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA091-Q02",
+   "primaryConceptId": "IA091",
+   "conceptIds": [
+    "IA091"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "choice",
+   "questionText": "다음 중 금융부채에 해당하는 것은?",
+   "blankAnswer": "사채",
+   "acceptedAnswers": [
+    "사채"
+   ],
+   "relatedConceptIds": [
+    "IA090",
+    "IA103",
+    "IA112"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "사채",
+    "선수수익",
+    "제품보증충당부채",
+    "미지급법인세"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사채는 현금 지급 계약상 의무다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3495,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA091-Q03",
+   "primaryConceptId": "IA091",
+   "conceptIds": [
+    "IA091"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "classification",
+   "questionText": "다음 부채를 분류하시오.",
+   "blankAnswer": "매입채무 → 금융부채 / 선수금 → 비금융부채 / 미지급법인세 → 비금융부채",
+   "acceptedAnswers": [
+    "매입채무 → 금융부채 / 선수금 → 비금융부채 / 미지급법인세 → 비금융부채"
+   ],
+   "relatedConceptIds": [
+    "IA090",
+    "IA103",
+    "IA112"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "금융부채",
+    "비금융부채"
+   ],
+   "slots": [
+    {
+     "label": "매입채무",
+     "answer": "금융부채"
+    },
+    {
+     "label": "선수금",
+     "answer": "비금융부채"
+    },
+    {
+     "label": "미지급법인세",
+     "answer": "비금융부채"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약상 현금 지급 의무인지 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3496,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA092-Q01",
+   "primaryConceptId": "IA092",
+   "conceptIds": [
+    "IA092"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "금융상품은 기업이 그 금융상품의 계약 (______)가 되는 때에만 인식한다.",
+   "blankAnswer": "당사자",
+   "acceptedAnswers": [
+    "당사자"
+   ],
+   "relatedConceptIds": [
+    "IA093"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "최초 인식 시점.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3497,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA092-Q02",
+   "primaryConceptId": "IA092",
+   "conceptIds": [
+    "IA092"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "matching",
+   "questionText": "정형화된 매매의 인식일 기준을 연결하시오.",
+   "blankAnswer": "매매일 회계처리 → 거래 체결일에 인식 / 결제일 회계처리 → 인도·결제일에 인식",
+   "acceptedAnswers": [
+    "매매일 회계처리 → 거래 체결일에 인식 / 결제일 회계처리 → 인도·결제일에 인식"
+   ],
+   "relatedConceptIds": [
+    "IA093"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "거래 체결일에 인식",
+    "인도·결제일에 인식",
+    "보고기간 말에 인식"
+   ],
+   "slots": [
+    {
+     "label": "매매일 회계처리",
+     "answer": "거래 체결일에 인식"
+    },
+    {
+     "label": "결제일 회계처리",
+     "answer": "인도·결제일에 인식"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기업이 선택해 일관 적용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3498,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA092-Q03",
+   "primaryConceptId": "IA092",
+   "conceptIds": [
+    "IA092"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "situation",
+   "questionText": "선도계약을 체결한 날의 회계처리로 옳은 것은?",
+   "blankAnswer": "계약일에 인식하며 최초 공정가치는 일반적으로 0이다",
+   "acceptedAnswers": [
+    "계약일에 인식하며 최초 공정가치는 일반적으로 0이다"
+   ],
+   "relatedConceptIds": [
+    "IA093"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약일에 인식하며 최초 공정가치는 일반적으로 0이다",
+    "결제일까지 인식하지 않는다",
+    "명목금액으로 자산·부채를 총액 인식한다",
+    "주석 공시만 한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "파생상품은 계약 당사자가 될 때 인식.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3499,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA093-Q01",
+   "primaryConceptId": "IA093",
+   "conceptIds": [
+    "IA093"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "상각후원가측정 채권을 공정가치 9,500,000원에 취득하고 직접 거래원가 100,000원을 지급했다. 최초 장부금액은 (______)원이다.",
+   "blankAnswer": "9,600,000",
+   "acceptedAnswers": [
+    "9,600,000",
+    "9,600,000원"
+   ],
+   "relatedConceptIds": [
+    "IA092",
+    "IA097",
+    "IA099"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 9500000.0,
+     "b": 100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공정가치 + 거래원가.",
+   "confusion": null,
+   "calculation": "9,500,000 + 100,000 = 9,600,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3500,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA093-Q02",
+   "primaryConceptId": "IA093",
+   "conceptIds": [
+    "IA093"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "comparison",
+   "questionText": "당기손익-공정가치측정 주식의 취득 수수료 처리는?",
+   "blankAnswer": "당기비용",
+   "acceptedAnswers": [
+    "당기비용"
+   ],
+   "relatedConceptIds": [
+    "IA092",
+    "IA097",
+    "IA099"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "당기비용",
+    "취득원가에 가산",
+    "기타포괄손익",
+    "자본에서 차감"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "FVTPL 은 거래원가를 비용 처리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3501,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA093-Q03",
+   "primaryConceptId": "IA093",
+   "conceptIds": [
+    "IA093"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "exception",
+   "questionText": "최초 인식 시 공정가치가 거래가격과 다르고 그 공정가치가 관측 가능한 시장자료로만 입증되지 않으면 차이를 (______)한다.",
+   "blankAnswer": "이연",
+   "acceptedAnswers": [
+    "이연"
+   ],
+   "relatedConceptIds": [
+    "IA092",
+    "IA097",
+    "IA099"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "Day-1 손익.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3502,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA094-Q01",
+   "primaryConceptId": "IA094",
+   "conceptIds": [
+    "IA094"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "classification",
+   "questionText": "SPPI 를 충족하는 채무상품의 사업모형별 분류를 연결하시오.",
+   "blankAnswer": "계약상 현금흐름 수취 → 상각후원가 / 수취와 매도 둘 다 → 기타포괄손익-공정가치 / 매도·공정가치 관리 → 당기손익-공정가치",
+   "acceptedAnswers": [
+    "계약상 현금흐름 수취 → 상각후원가 / 수취와 매도 둘 다 → 기타포괄손익-공정가치 / 매도·공정가치 관리 → 당기손익-공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA095",
+    "IA096",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "상각후원가",
+    "기타포괄손익-공정가치",
+    "당기손익-공정가치"
+   ],
+   "slots": [
+    {
+     "label": "계약상 현금흐름 수취",
+     "answer": "상각후원가"
+    },
+    {
+     "label": "수취와 매도 둘 다",
+     "answer": "기타포괄손익-공정가치"
+    },
+    {
+     "label": "매도·공정가치 관리",
+     "answer": "당기손익-공정가치"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "사업모형 + SPPI 로 분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3503,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA094-Q02",
+   "primaryConceptId": "IA094",
+   "conceptIds": [
+    "IA094"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "사업모형은 개별 상품이 아니라 핵심 경영진이 정한 (______) 수준에서 판단한다.",
+   "blankAnswer": "포트폴리오",
+   "acceptedAnswers": [
+    "포트폴리오"
+   ],
+   "relatedConceptIds": [
+    "IA095",
+    "IA096",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "집합 수준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3504,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA094-Q03",
+   "primaryConceptId": "IA094",
+   "conceptIds": [
+    "IA094"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "exception",
+   "questionText": "수취 목적 사업모형에서도 허용되는 매도는?",
+   "blankAnswer": "신용위험이 증가한 채권의 매도",
+   "acceptedAnswers": [
+    "신용위험이 증가한 채권의 매도"
+   ],
+   "relatedConceptIds": [
+    "IA095",
+    "IA096",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "신용위험이 증가한 채권의 매도",
+    "매년 대부분을 매도",
+    "공정가치 차익을 위한 빈번한 매도",
+    "단기매매 목적 매도"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "신용위험 관리 목적 매도는 사업모형과 모순되지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3505,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA095-Q01",
+   "primaryConceptId": "IA095",
+   "conceptIds": [
+    "IA095"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "SPPI 는 계약상 현금흐름이 원금과 원금잔액에 대한 (______)의 지급만으로 구성되는지를 뜻한다.",
+   "blankAnswer": "이자",
+   "acceptedAnswers": [
+    "이자"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원리금 지급만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3506,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA095-Q02",
+   "primaryConceptId": "IA095",
+   "conceptIds": [
+    "IA095"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "choice",
+   "questionText": "다음 중 SPPI 요건을 충족하지 못하는 금융자산은?",
+   "blankAnswer": "보유 중인 전환사채",
+   "acceptedAnswers": [
+    "보유 중인 전환사채"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "보유 중인 전환사채",
+    "고정금리 회사채",
+    "변동금리 대여금(시장금리 연동)",
+    "무이자 매출채권"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전환권 가치가 현금흐름에 포함되어 원리금만으로 구성되지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3507,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA095-Q03",
+   "primaryConceptId": "IA095",
+   "conceptIds": [
+    "IA095"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "classification",
+   "questionText": "SPPI 충족 여부를 연결하시오.",
+   "blankAnswer": "고정금리 국채 → 충족 / 보통주 → 불충족 / 이자가 금 가격에 연동된 채권 → 불충족",
+   "acceptedAnswers": [
+    "고정금리 국채 → 충족 / 보통주 → 불충족 / 이자가 금 가격에 연동된 채권 → 불충족"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "충족",
+    "불충족"
+   ],
+   "slots": [
+    {
+     "label": "고정금리 국채",
+     "answer": "충족"
+    },
+    {
+     "label": "보통주",
+     "answer": "불충족"
+    },
+    {
+     "label": "이자가 금 가격에 연동된 채권",
+     "answer": "불충족"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원리금 외 변수에 연동되면 불충족.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3508,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA096-Q01",
+   "primaryConceptId": "IA096",
+   "conceptIds": [
+    "IA096"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "상각후원가측정 채권의 기초 장부금액이 9,226,872원이고 유효이자율이 8%이다. 당기 이자수익은 (______)원이다.",
+   "blankAnswer": "738,150",
+   "acceptedAnswers": [
+    "738,150",
+    "738,150원"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA099",
+    "IA100"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 9226872.0,
+     "r": 8.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 장부금액 × 유효이자율.",
+   "confusion": null,
+   "calculation": "9,226,872 × 8% = 738,150",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3509,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA096-Q02",
+   "primaryConceptId": "IA096",
+   "conceptIds": [
+    "IA096"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "기초 장부금액 9,226,872원, 이자수익 738,150원, 표시이자 수취액 500,000원일 때 기말 상각후원가(손실충당금 무시)는 (______)원이다.",
+   "blankAnswer": "9,465,022",
+   "acceptedAnswers": [
+    "9,465,022",
+    "9,465,022원"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA099",
+    "IA100"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 9226872.0,
+     "b": 738150.0,
+     "c": 500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 + 이자수익 − 현금이자.",
+   "confusion": null,
+   "calculation": "9,226,872 + 738,150 − 500,000 = 9,465,022",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3510,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA096-Q03",
+   "primaryConceptId": "IA096",
+   "conceptIds": [
+    "IA096"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "상각후원가측정 금융자산은 보고기간 말 (______) 변동을 인식하지 않는다.",
+   "blankAnswer": "공정가치",
+   "acceptedAnswers": [
+    "공정가치"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA099",
+    "IA100"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회수 현금흐름 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3511,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA097-Q01",
+   "primaryConceptId": "IA097",
+   "conceptIds": [
+    "IA097"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "단기매매 목적 주식의 기말 공정가치가 1,080,000원이고 취득원가(수수료는 별도 비용 처리)가 1,000,000원이다. 당기 평가이익은 (______)원이다.",
+   "blankAnswer": "80,000",
+   "acceptedAnswers": [
+    "80,000",
+    "80,000원"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA095",
+    "IA098"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1080000.0,
+     "b": 1000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기말 공정가치 − 취득원가(거래원가 제외).",
+   "confusion": null,
+   "calculation": "1,080,000 − 1,000,000 = 80,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3512,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA097-Q02",
+   "primaryConceptId": "IA097",
+   "conceptIds": [
+    "IA097"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "회계불일치를 제거하기 위해 최초 인식 시 FVTPL 로 지정한 것은 나중에 (______)할 수 없다.",
+   "blankAnswer": "취소",
+   "acceptedAnswers": [
+    "취소"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA095",
+    "IA098"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공정가치 선택권.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3513,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA097-Q03",
+   "primaryConceptId": "IA097",
+   "conceptIds": [
+    "IA097"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "choice",
+   "questionText": "다음 중 반드시 FVTPL 로 측정하는 금융자산은?",
+   "blankAnswer": "위험회피수단이 아닌 파생상품 자산",
+   "acceptedAnswers": [
+    "위험회피수단이 아닌 파생상품 자산"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA095",
+    "IA098"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "위험회피수단이 아닌 파생상품 자산",
+    "수취 목적 고정금리 회사채",
+    "FVOCI 를 선택한 장기투자 주식",
+    "수취·매도 목적 국채"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "파생상품은 위험회피수단이 아니면 FVTPL.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3514,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA098-Q01",
+   "primaryConceptId": "IA098",
+   "conceptIds": [
+    "IA098"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "금융자산은 사업모형을 (______)하는 경우에만 재분류한다.",
+   "blankAnswer": "변경",
+   "acceptedAnswers": [
+    "변경"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA096",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "채무상품만.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3515,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA098-Q02",
+   "primaryConceptId": "IA098",
+   "conceptIds": [
+    "IA098"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "comparison",
+   "questionText": "재분류 유형별 재분류일 차액 처리를 연결하시오.",
+   "blankAnswer": "상각후원가 → FVTPL → 당기손익 / 상각후원가 → FVOCI → 기타포괄손익",
+   "acceptedAnswers": [
+    "상각후원가 → FVTPL → 당기손익 / 상각후원가 → FVOCI → 기타포괄손익"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA096",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "당기손익",
+    "기타포괄손익",
+    "이익잉여금"
+   ],
+   "slots": [
+    {
+     "label": "상각후원가 → FVTPL",
+     "answer": "당기손익"
+    },
+    {
+     "label": "상각후원가 → FVOCI",
+     "answer": "기타포괄손익"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "재분류 후 범주의 처리 방식을 따른다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3516,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA098-Q03",
+   "primaryConceptId": "IA098",
+   "conceptIds": [
+    "IA098"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "상각후원가 채권(장부금액 9,800,000원)을 FVTPL 로 재분류했다. 재분류일 공정가치가 9,900,000원이면 당기손익에 인식할 금액은 (______)원이다(장부금액 9,800,000원).",
+   "blankAnswer": "100,000",
+   "acceptedAnswers": [
+    "100,000",
+    "100,000원"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA096",
+    "IA097"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 9900000.0,
+     "b": 9800000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공정가치 − 장부금액.",
+   "confusion": null,
+   "calculation": "9,900,000 − 9,800,000 = 100,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3517,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA098-Q04",
+   "primaryConceptId": "IA098",
+   "conceptIds": [
+    "IA098"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "exception",
+   "questionText": "재분류할 수 없는 것은?",
+   "blankAnswer": "FVOCI 로 선택한 지분상품",
+   "acceptedAnswers": [
+    "FVOCI 로 선택한 지분상품"
+   ],
+   "relatedConceptIds": [
+    "IA094",
+    "IA096",
+    "IA097"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "FVOCI 로 선택한 지분상품",
+    "사업모형이 바뀐 AC 채무상품",
+    "사업모형이 바뀐 FVOCI 채무상품",
+    "사업모형이 바뀐 FVTPL 채무상품"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지분상품은 재분류하지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3518,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA099-Q01",
+   "primaryConceptId": "IA099",
+   "conceptIds": [
+    "IA099"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "액면 10,000,000원, 표시이자율 5%(연 1회 지급), 만기 3년 채권을 유효이자율 8%로 취득할 때 취득가격은 (______)원이다.",
+   "blankAnswer": "9,226,871",
+   "acceptedAnswers": [
+    "9,226,871",
+    "9,226,871원"
+   ],
+   "relatedConceptIds": [
+    "IA096",
+    "IA025"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "bond_price",
+    "params": {
+     "face": 10000000.0,
+     "cr": 5.0,
+     "y": 8.0,
+     "n": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "이자의 현재가치 + 원금의 현재가치.",
+   "confusion": null,
+   "calculation": "채권가격 = Σ 이자 500,000/(1+8%)^t + 액면 10,000,000/(1+8%)^3 = 9,226,871",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3519,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA099-Q02",
+   "primaryConceptId": "IA099",
+   "conceptIds": [
+    "IA099"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "exception",
+   "questionText": "취득 시 이미 신용이 손상된 금융자산은 (______) 유효이자율을 쓴다.",
+   "blankAnswer": "신용조정",
+   "acceptedAnswers": [
+    "신용조정"
+   ],
+   "relatedConceptIds": [
+    "IA096",
+    "IA025"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "POCI.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3520,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA099-Q03",
+   "primaryConceptId": "IA099",
+   "conceptIds": [
+    "IA099"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "유효이자율 계산에는 기대신용손실을 고려하지 않지만 거래원가와 (______)는 포함한다.",
+   "blankAnswer": "수수료",
+   "acceptedAnswers": [
+    "수수료",
+    "수수료·할인·할증"
+   ],
+   "relatedConceptIds": [
+    "IA096",
+    "IA025"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계약 관련 요소 포함.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3521,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA100-Q01",
+   "primaryConceptId": "IA100",
+   "conceptIds": [
+    "IA100"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "classification",
+   "questionText": "신용위험 상태별 손실충당금 측정을 연결하시오.",
+   "blankAnswer": "유의적 증가 없음 → 12개월 기대신용손실 / 유의적 증가 → 전체기간 기대신용손실 / 신용손상 → 전체기간 기대신용손실",
+   "acceptedAnswers": [
+    "유의적 증가 없음 → 12개월 기대신용손실 / 유의적 증가 → 전체기간 기대신용손실 / 신용손상 → 전체기간 기대신용손실"
+   ],
+   "relatedConceptIds": [
+    "IA101",
+    "IA026",
+    "IA096"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "12개월 기대신용손실",
+    "전체기간 기대신용손실"
+   ],
+   "slots": [
+    {
+     "label": "유의적 증가 없음",
+     "answer": "12개월 기대신용손실"
+    },
+    {
+     "label": "유의적 증가",
+     "answer": "전체기간 기대신용손실"
+    },
+    {
+     "label": "신용손상",
+     "answer": "전체기간 기대신용손실"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "3단계 모형.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3522,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA100-Q02",
+   "primaryConceptId": "IA100",
+   "conceptIds": [
+    "IA100"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "계약상 지급이 (______)일을 초과해 연체되면 신용위험이 유의적으로 증가했다고 추정한다(반증 가능).",
+   "blankAnswer": "30",
+   "acceptedAnswers": [
+    "30"
+   ],
+   "relatedConceptIds": [
+    "IA101",
+    "IA026",
+    "IA096"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "연체 기준 추정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3523,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA100-Q03",
+   "primaryConceptId": "IA100",
+   "conceptIds": [
+    "IA100"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "exception",
+   "questionText": "FVOCI 채무상품의 손실충당금 처리로 옳은 것은?",
+   "blankAnswer": "기타포괄손익에서 인식하고 재무상태표 장부금액(공정가치)을 줄이지 않는다",
+   "acceptedAnswers": [
+    "기타포괄손익에서 인식하고 재무상태표 장부금액(공정가치)을 줄이지 않는다"
+   ],
+   "relatedConceptIds": [
+    "IA101",
+    "IA026",
+    "IA096"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "기타포괄손익에서 인식하고 재무상태표 장부금액(공정가치)을 줄이지 않는다",
+    "장부금액에서 직접 차감한다",
+    "손실충당금을 인식하지 않는다",
+    "이익잉여금에서 조정한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손상차손은 당기손익, 상대계정은 OCI.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3524,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA101-Q01",
+   "primaryConceptId": "IA101",
+   "conceptIds": [
+    "IA101"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "신용이 손상된 채권의 총장부금액이 10,000,000원, 손실충당금이 4,000,000원, 유효이자율이 10%이다. 당기 이자수익은 (______)원이다.",
+   "blankAnswer": "600,000",
+   "acceptedAnswers": [
+    "600,000",
+    "600,000원"
+   ],
+   "relatedConceptIds": [
+    "IA100",
+    "IA099"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "diff_pct",
+    "params": {
+     "a": 10000000.0,
+     "b": 4000000.0,
+     "r": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(총장부금액 − 손실충당금) × 유효이자율.",
+   "confusion": null,
+   "calculation": "(10,000,000 − 4,000,000) × 10% = 600,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3525,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA101-Q02",
+   "primaryConceptId": "IA101",
+   "conceptIds": [
+    "IA101"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "choice",
+   "questionText": "다음 중 신용손상의 증거가 아닌 것은?",
+   "blankAnswer": "시장금리의 일반적인 상승",
+   "acceptedAnswers": [
+    "시장금리의 일반적인 상승"
+   ],
+   "relatedConceptIds": [
+    "IA100",
+    "IA099"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "시장금리의 일반적인 상승",
+    "차입자의 유의적인 재무적 어려움",
+    "원리금 지급 불이행",
+    "차입자의 파산 가능성 증가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "금리 변동은 신용손상 사건이 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3526,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA101-Q03",
+   "primaryConceptId": "IA101",
+   "conceptIds": [
+    "IA101"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "definition",
+   "questionText": "신용이 손상된 금융자산의 이자수익은 (______)에 유효이자율을 곱해 계산한다.",
+   "blankAnswer": "상각후원가",
+   "acceptedAnswers": [
+    "상각후원가"
+   ],
+   "relatedConceptIds": [
+    "IA100",
+    "IA099"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "손실충당금 차감 후 금액.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3527,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA102-Q01",
+   "primaryConceptId": "IA102",
+   "conceptIds": [
+    "IA102"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "comparison",
+   "questionText": "처분 시 누적 기타포괄손익의 처리를 연결하시오.",
+   "blankAnswer": "FVOCI 채무상품 → 당기손익으로 재분류 / FVOCI 지분상품 → 이익잉여금으로 대체 가능",
+   "acceptedAnswers": [
+    "FVOCI 채무상품 → 당기손익으로 재분류 / FVOCI 지분상품 → 이익잉여금으로 대체 가능"
+   ],
+   "relatedConceptIds": [
+    "IA029",
+    "IA098"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "당기손익으로 재분류",
+    "이익잉여금으로 대체 가능",
+    "부채로 대체"
+   ],
+   "slots": [
+    {
+     "label": "FVOCI 채무상품",
+     "answer": "당기손익으로 재분류"
+    },
+    {
+     "label": "FVOCI 지분상품",
+     "answer": "이익잉여금으로 대체 가능"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "지분상품은 재분류 금지.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3528,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA102-Q02",
+   "primaryConceptId": "IA102",
+   "conceptIds": [
+    "IA102"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "calculation",
+   "questionText": "상각후원가 채권(장부금액 9,465,022원)을 9,600,000원에 처분했다. 처분이익은 (______)원이다.",
+   "blankAnswer": "134,978",
+   "acceptedAnswers": [
+    "134,978",
+    "134,978원"
+   ],
+   "relatedConceptIds": [
+    "IA029",
+    "IA098"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 9600000.0,
+     "b": 9465022.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "처분대가 − 장부금액.",
+   "confusion": null,
+   "calculation": "9,600,000 − 9,465,022 = 134,978",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3529,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA102-Q03",
+   "primaryConceptId": "IA102",
+   "conceptIds": [
+    "IA102"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FI",
+   "questionType": "treatment",
+   "questionText": "양도 후에도 위험과 보상의 대부분을 보유하면 금융자산을 제거하지 않고 받은 대가를 (______)로 인식한다.",
+   "blankAnswer": "부채",
+   "acceptedAnswers": [
+    "부채"
+   ],
+   "relatedConceptIds": [
+    "IA029",
+    "IA098"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "차입거래.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1109호 '금융상품'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3530,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA103-Q01",
+   "primaryConceptId": "IA103",
+   "conceptIds": [
+    "IA103"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "사채의 기초 상각후원가가 9,500,000원, 유효이자율이 8%이다. 당기 이자비용은 (______)원이다.",
+   "blankAnswer": "760,000",
+   "acceptedAnswers": [
+    "760,000",
+    "760,000원"
+   ],
+   "relatedConceptIds": [
+    "IA104",
+    "IA105",
+    "IA091"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 9500000.0,
+     "r": 8.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 상각후원가 × 유효이자율.",
+   "confusion": null,
+   "calculation": "9,500,000 × 8% = 760,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3531,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA103-Q02",
+   "primaryConceptId": "IA103",
+   "conceptIds": [
+    "IA103"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "FVTPL 로 지정한 금융부채의 공정가치 변동 중 자기 (______) 변동분은 기타포괄손익으로 표시한다.",
+   "blankAnswer": "신용위험",
+   "acceptedAnswers": [
+    "신용위험"
+   ],
+   "relatedConceptIds": [
+    "IA104",
+    "IA105",
+    "IA091"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회계불일치 시 예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3532,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA103-Q03",
+   "primaryConceptId": "IA103",
+   "conceptIds": [
+    "IA103"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "choice",
+   "questionText": "금융부채의 원칙적인 후속 측정기준은?",
+   "blankAnswer": "상각후원가",
+   "acceptedAnswers": [
+    "상각후원가"
+   ],
+   "relatedConceptIds": [
+    "IA104",
+    "IA105",
+    "IA091"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "상각후원가",
+    "공정가치",
+    "명목금액",
+    "현행원가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "유효이자율법.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3533,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA104-Q01",
+   "primaryConceptId": "IA104",
+   "conceptIds": [
+    "IA104"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "조기상환일 사채 장부금액이 9,700,000원이고 상환금액이 9,500,000원이다. 사채상환이익은 (______)원이다.",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA103",
+    "IA105"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 9700000.0,
+     "b": 9500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "장부금액 − 상환금액.",
+   "confusion": null,
+   "calculation": "9,700,000 − 9,500,000 = 200,000",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3534,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA104-Q02",
+   "primaryConceptId": "IA104",
+   "conceptIds": [
+    "IA104"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "금융부채는 계약상 의무가 이행·취소·(______)되어 소멸한 경우에만 제거한다.",
+   "blankAnswer": "만료",
+   "acceptedAnswers": [
+    "만료"
+   ],
+   "relatedConceptIds": [
+    "IA103",
+    "IA105"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제거 요건.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3535,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA104-Q03",
+   "primaryConceptId": "IA104",
+   "conceptIds": [
+    "IA104"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "comparison",
+   "questionText": "사채 조기상환손익의 비교 기준은?",
+   "blankAnswer": "상환일의 상각후원가(장부금액)",
+   "acceptedAnswers": [
+    "상환일의 상각후원가(장부금액)"
+   ],
+   "relatedConceptIds": [
+    "IA103",
+    "IA105"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "상환일의 상각후원가(장부금액)",
+    "액면금액",
+    "최초 발행금액",
+    "상환일 공정가치"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상환일까지 상각한 장부금액과 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3536,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA105-Q01",
+   "primaryConceptId": "IA105",
+   "conceptIds": [
+    "IA105"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "새 조건 현금흐름의 현재가치가 기존 잔여 현금흐름 현재가치와 (______)% 이상 차이 나면 실질적 조건변경으로 본다.",
+   "blankAnswer": "10",
+   "acceptedAnswers": [
+    "10"
+   ],
+   "relatedConceptIds": [
+    "IA104"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "10% 테스트.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3537,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA105-Q02",
+   "primaryConceptId": "IA105",
+   "conceptIds": [
+    "IA105"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "기존 부채 잔여 현금흐름 현재가치가 10,000,000원, 새 조건 현금흐름(최초 유효이자율 할인) 현재가치가 1,500,000원이다. 차이 비율은 (______)%이다(기존 대비 감소율 = 차이 ÷ 기존).",
+   "blankAnswer": "15",
+   "acceptedAnswers": [
+    "15",
+    "15%"
+   ],
+   "relatedConceptIds": [
+    "IA104"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_ratio",
+    "params": {
+     "a": 1500000.0,
+     "b": 10000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "차이 1,500,000원 ÷ 10,000,000원.",
+   "confusion": null,
+   "calculation": "1,500,000 ÷ 10,000,000 × 100 = 15%",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3538,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA105-Q03",
+   "primaryConceptId": "IA105",
+   "conceptIds": [
+    "IA105"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "comparison",
+   "questionText": "조건변경 유형별 처리를 연결하시오.",
+   "blankAnswer": "실질적 변경 → 기존 부채 제거·새 부채 인식 / 실질적 변경 아님 → 기존 부채 장부금액 조정",
+   "acceptedAnswers": [
+    "실질적 변경 → 기존 부채 제거·새 부채 인식 / 실질적 변경 아님 → 기존 부채 장부금액 조정"
+   ],
+   "relatedConceptIds": [
+    "IA104"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "기존 부채 제거·새 부채 인식",
+    "기존 부채 장부금액 조정",
+    "주석 공시만"
+   ],
+   "slots": [
+    {
+     "label": "실질적 변경",
+     "answer": "기존 부채 제거·새 부채 인식"
+    },
+    {
+     "label": "실질적 변경 아님",
+     "answer": "기존 부채 장부금액 조정"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "10% 테스트 결과로 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3539,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA106-Q01",
+   "primaryConceptId": "IA106",
+   "conceptIds": [
+    "IA106"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "상계하려면 법적으로 집행 가능한 상계권리를 (______) 가지고 있어야 한다.",
+   "blankAnswer": "현재",
+   "acceptedAnswers": [
+    "현재"
+   ],
+   "relatedConceptIds": [
+    "IA090",
+    "IA091"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "미래 조건부 권리는 불가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3540,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA106-Q02",
+   "primaryConceptId": "IA106",
+   "conceptIds": [
+    "IA106"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "matching",
+   "questionText": "상계 요건 두 가지를 고르시오.",
+   "blankAnswer": "요건① → 법적으로 집행 가능한 상계권리 현재 보유 / 요건② → 차액 결제 또는 동시 실행 의도",
+   "acceptedAnswers": [
+    "요건① → 법적으로 집행 가능한 상계권리 현재 보유 / 요건② → 차액 결제 또는 동시 실행 의도"
+   ],
+   "relatedConceptIds": [
+    "IA090",
+    "IA091"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "법적으로 집행 가능한 상계권리 현재 보유",
+    "차액 결제 또는 동시 실행 의도",
+    "같은 통화로 표시",
+    "같은 만기"
+   ],
+   "slots": [
+    {
+     "label": "요건①",
+     "answer": "법적으로 집행 가능한 상계권리 현재 보유"
+    },
+    {
+     "label": "요건②",
+     "answer": "차액 결제 또는 동시 실행 의도"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "둘 다 충족해야 한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3541,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA106-Q03",
+   "primaryConceptId": "IA106",
+   "conceptIds": [
+    "IA106"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "exception",
+   "questionText": "거래상대방이 파산할 때만 행사할 수 있는 상계권이 있는 경우의 표시는?",
+   "blankAnswer": "총액 표시",
+   "acceptedAnswers": [
+    "총액 표시"
+   ],
+   "relatedConceptIds": [
+    "IA090",
+    "IA091"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "총액 표시",
+    "순액 표시",
+    "선택",
+    "주석 공시 후 순액 표시"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현재 집행 가능한 권리가 아니다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3542,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA106-Q04",
+   "primaryConceptId": "IA106",
+   "conceptIds": [
+    "IA106"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "상계 요건을 모두 충족한 매출채권 5,000,000원과 매입채무 3,000,000원이 있다. 순액으로 표시할 매출채권은 (______)원이다.",
+   "blankAnswer": "2,000,000",
+   "acceptedAnswers": [
+    "2,000,000",
+    "2,000,000원"
+   ],
+   "relatedConceptIds": [
+    "IA090",
+    "IA091"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 5000000.0,
+     "b": 3000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "채권 − 채무.",
+   "confusion": null,
+   "calculation": "5,000,000 − 3,000,000 = 2,000,000",
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3543,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA107-Q01",
+   "primaryConceptId": "IA107",
+   "conceptIds": [
+    "IA107"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "액면 10,000,000원, 표시이자 5%(연 1회), 만기 3년 전환사채를 액면 발행했다. 전환권이 없는 일반사채 시장이자율이 8%일 때 부채요소는 (______)원이다.",
+   "blankAnswer": "9,226,871",
+   "acceptedAnswers": [
+    "9,226,871",
+    "9,226,871원"
+   ],
+   "relatedConceptIds": [
+    "IA108",
+    "IA109",
+    "IA110"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "bond_price",
+    "params": {
+     "face": 10000000.0,
+     "cr": 5.0,
+     "y": 8.0,
+     "n": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "이자·원금을 일반사채 시장이자율로 할인.",
+   "confusion": null,
+   "calculation": "채권가격 = Σ 이자 500,000/(1+8%)^t + 액면 10,000,000/(1+8%)^3 = 9,226,871",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3544,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA107-Q02",
+   "primaryConceptId": "IA107",
+   "conceptIds": [
+    "IA107"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "복합금융상품의 자본요소는 발행금액에서 부채요소 공정가치를 뺀 (______)으로 측정한다.",
+   "blankAnswer": "잔여액",
+   "acceptedAnswers": [
+    "잔여액",
+    "잔여금액",
+    "잔액"
+   ],
+   "relatedConceptIds": [
+    "IA108",
+    "IA109",
+    "IA110"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "잔여 배분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3545,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA107-Q03",
+   "primaryConceptId": "IA107",
+   "conceptIds": [
+    "IA107"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "treatment",
+   "questionText": "복합금융상품 발행 거래원가의 처리는?",
+   "blankAnswer": "부채요소와 자본요소에 배분 비율로 나눈다",
+   "acceptedAnswers": [
+    "부채요소와 자본요소에 배분 비율로 나눈다"
+   ],
+   "relatedConceptIds": [
+    "IA108",
+    "IA109",
+    "IA110"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "부채요소와 자본요소에 배분 비율로 나눈다",
+    "전액 부채요소에서 차감",
+    "전액 당기비용",
+    "전액 자본요소에서 차감"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "최초 배분 비율에 따라 나눈다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3546,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA108-Q01",
+   "primaryConceptId": "IA108",
+   "conceptIds": [
+    "IA108"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "전환사채 부채요소의 기초 장부금액이 9,226,872원, 유효이자율이 8%이다. 당기 이자비용은 (______)원이다.",
+   "blankAnswer": "738,150",
+   "acceptedAnswers": [
+    "738,150",
+    "738,150원"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA109"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 9226872.0,
+     "r": 8.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 장부금액 × 유효이자율.",
+   "confusion": null,
+   "calculation": "9,226,872 × 8% = 738,150",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3547,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA108-Q02",
+   "primaryConceptId": "IA108",
+   "conceptIds": [
+    "IA108"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "전환 시점 부채요소 장부금액 9,500,000원과 전환권대가 700,000원을 자본으로 대체하며 자본금이 5,000,000원 늘었다. 주식발행초과금 증가액은 (______)원이다.",
+   "blankAnswer": "5,200,000",
+   "acceptedAnswers": [
+    "5,200,000",
+    "5,200,000원"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA109"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 9500000.0,
+     "b": 700000.0,
+     "c": 5000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "부채 장부금액 + 전환권대가 − 자본금.",
+   "confusion": null,
+   "calculation": "9,500,000 + 700,000 − 5,000,000 = 5,200,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3548,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA108-Q03",
+   "primaryConceptId": "IA108",
+   "conceptIds": [
+    "IA108"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "만기까지 전환하지 않은 보유자에게 액면에 더해 지급하는 금액을 (______)이라 하며 부채요소에 포함한다.",
+   "blankAnswer": "상환할증금",
+   "acceptedAnswers": [
+    "상환할증금"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA109"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "부채 현금흐름.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3549,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA109-Q01",
+   "primaryConceptId": "IA109",
+   "conceptIds": [
+    "IA109"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "전환사채 발행금액이 10,000,000원, 부채요소 현재가치가 9,226,872원이면 전환권대가는 (______)원이다.",
+   "blankAnswer": "773,128",
+   "acceptedAnswers": [
+    "773,128",
+    "773,128원"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA108"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 10000000.0,
+     "b": 9226872.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "발행금액 − 부채요소.",
+   "confusion": null,
+   "calculation": "10,000,000 − 9,226,872 = 773,128",
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3550,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA109-Q02",
+   "primaryConceptId": "IA109",
+   "conceptIds": [
+    "IA109"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "전환권대가는 재무상태표에 부채가 아니라 (______)으로 표시한다.",
+   "blankAnswer": "자본",
+   "acceptedAnswers": [
+    "자본"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA108"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기타자본구성요소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3551,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA109-Q03",
+   "primaryConceptId": "IA109",
+   "conceptIds": [
+    "IA109"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "situation",
+   "questionText": "전환사채가 만기까지 전환되지 않은 경우 전환권대가의 처리는?",
+   "blankAnswer": "다른 자본 항목으로 대체할 수 있다",
+   "acceptedAnswers": [
+    "다른 자본 항목으로 대체할 수 있다"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA108"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "다른 자본 항목으로 대체할 수 있다",
+    "당기이익으로 인식",
+    "부채로 재분류",
+    "기타포괄손익으로 재분류"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자본 내 대체만 가능하다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3552,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA110-Q01",
+   "primaryConceptId": "IA110",
+   "conceptIds": [
+    "IA110"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "calculation",
+   "questionText": "신주인수권 행사로 현금 1,000,000원이 납입되었고 관련 신주인수권대가가 150,000원, 자본금 증가가 500,000원이다(상환할증금 없음). 주식발행초과금 증가액은 (______)원이다.",
+   "blankAnswer": "650,000",
+   "acceptedAnswers": [
+    "650,000",
+    "650,000원"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA108"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 1000000.0,
+     "b": 150000.0,
+     "c": 500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "현금 + 신주인수권대가 − 자본금.",
+   "confusion": null,
+   "calculation": "1,000,000 + 150,000 − 500,000 = 650,000",
+   "difficulty": 4,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3553,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA110-Q02",
+   "primaryConceptId": "IA110",
+   "conceptIds": [
+    "IA110"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "comparison",
+   "questionText": "권리 행사 시 상황을 비교하시오.",
+   "blankAnswer": "전환사채 전환 → 사채 소멸·현금 납입 없음 / 신주인수권 행사 → 사채 존속·현금 납입",
+   "acceptedAnswers": [
+    "전환사채 전환 → 사채 소멸·현금 납입 없음 / 신주인수권 행사 → 사채 존속·현금 납입"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA108"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "사채 소멸·현금 납입 없음",
+    "사채 존속·현금 납입",
+    "사채 소멸·현금 납입"
+   ],
+   "slots": [
+    {
+     "label": "전환사채 전환",
+     "answer": "사채 소멸·현금 납입 없음"
+    },
+    {
+     "label": "신주인수권 행사",
+     "answer": "사채 존속·현금 납입"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 상품의 핵심 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3554,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA110-Q03",
+   "primaryConceptId": "IA110",
+   "conceptIds": [
+    "IA110"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "신주인수권을 행사해 신주를 발행해도 함께 발행된 채무증권인 (______)는 상환되지 않고 그대로 남는다.",
+   "blankAnswer": "사채",
+   "acceptedAnswers": [
+    "사채"
+   ],
+   "relatedConceptIds": [
+    "IA107",
+    "IA108"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전환사채와의 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3555,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA111-Q01",
+   "primaryConceptId": "IA111",
+   "conceptIds": [
+    "IA111"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "발행자가 현금 결제를 회피할 (______)적 권리가 없으면 그 금융상품은 금융부채다.",
+   "blankAnswer": "무조건",
+   "acceptedAnswers": [
+    "무조건"
+   ],
+   "relatedConceptIds": [
+    "IA112"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "핵심 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3556,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA111-Q02",
+   "primaryConceptId": "IA111",
+   "conceptIds": [
+    "IA111"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "exception",
+   "questionText": "조건부 결제 조항이 있어도 지분상품으로 분류할 수 있는 경우는?",
+   "blankAnswer": "발행자가 청산하는 경우에만 현금 결제를 요구하는 경우",
+   "acceptedAnswers": [
+    "발행자가 청산하는 경우에만 현금 결제를 요구하는 경우"
+   ],
+   "relatedConceptIds": [
+    "IA112"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "발행자가 청산하는 경우에만 현금 결제를 요구하는 경우",
+    "주가지수가 하락하면 현금 상환하는 경우",
+    "발행자의 이익이 감소하면 현금 상환하는 경우",
+    "시장금리가 오르면 현금 상환하는 경우"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "청산 시에만 결제하는 조항은 예외.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3557,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA111-Q03",
+   "primaryConceptId": "IA111",
+   "conceptIds": [
+    "IA111"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "발행자가 통제할 수 없는 미래 사건이 생기면 현금 지급 의무가 생기는 계약 조항을 조건부 (______) 조항이라 한다.",
+   "blankAnswer": "결제",
+   "acceptedAnswers": [
+    "결제"
+   ],
+   "relatedConceptIds": [
+    "IA112"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3558,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA112-Q01",
+   "primaryConceptId": "IA112",
+   "conceptIds": [
+    "IA112"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "classification",
+   "questionText": "다음 우선주를 분류하시오.",
+   "blankAnswer": "보유자가 상환을 청구할 수 있는 우선주 → 금융부채 / 발행자 재량 상환·재량 배당 우선주 → 지분상품 / 5년 후 의무 상환 우선주 → 금융부채",
+   "acceptedAnswers": [
+    "보유자가 상환을 청구할 수 있는 우선주 → 금융부채 / 발행자 재량 상환·재량 배당 우선주 → 지분상품 / 5년 후 의무 상환 우선주 → 금융부채"
+   ],
+   "relatedConceptIds": [
+    "IA111",
+    "IA107"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "금융부채",
+    "지분상품"
+   ],
+   "slots": [
+    {
+     "label": "보유자가 상환을 청구할 수 있는 우선주",
+     "answer": "금융부채"
+    },
+    {
+     "label": "발행자 재량 상환·재량 배당 우선주",
+     "answer": "지분상품"
+    },
+    {
+     "label": "5년 후 의무 상환 우선주",
+     "answer": "금융부채"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금 지급을 피할 수 있는지로 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3559,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA112-Q02",
+   "primaryConceptId": "IA112",
+   "conceptIds": [
+    "IA112"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "금융부채로 분류한 상환우선주의 배당은 이익잉여금 처분이 아니라 (______)으로 인식한다.",
+   "blankAnswer": "이자비용",
+   "acceptedAnswers": [
+    "이자비용"
+   ],
+   "relatedConceptIds": [
+    "IA111",
+    "IA107"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "부채의 원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3560,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA112-Q03",
+   "primaryConceptId": "IA112",
+   "conceptIds": [
+    "IA112"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "choice",
+   "questionText": "우선주 분류의 판단 기준은?",
+   "blankAnswer": "계약의 실질",
+   "acceptedAnswers": [
+    "계약의 실질"
+   ],
+   "relatedConceptIds": [
+    "IA111",
+    "IA107"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "계약의 실질",
+    "법적 형식(주식)",
+    "상법상 명칭",
+    "주주총회 결의"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "실질 우선.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3561,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA113-Q01",
+   "primaryConceptId": "IA113",
+   "conceptIds": [
+    "IA113"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "choice",
+   "questionText": "다음 중 파생상품의 정의 요소가 아닌 것은?",
+   "blankAnswer": "거래소에 상장되어 있을 것",
+   "acceptedAnswers": [
+    "거래소에 상장되어 있을 것"
+   ],
+   "relatedConceptIds": [
+    "IA092"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "거래소에 상장되어 있을 것",
+    "기초변수에 따라 가치가 변동할 것",
+    "최초 순투자금액이 없거나 적을 것",
+    "미래에 결제될 것"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "장외파생상품도 파생상품이다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3562,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA113-Q02",
+   "primaryConceptId": "IA113",
+   "conceptIds": [
+    "IA113"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "definition",
+   "questionText": "위험회피수단이 아닌 파생상품의 공정가치 변동은 (______)으로 인식한다.",
+   "blankAnswer": "당기손익",
+   "acceptedAnswers": [
+    "당기손익"
+   ],
+   "relatedConceptIds": [
+    "IA092"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "FVTPL.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3563,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "IA113-Q03",
+   "primaryConceptId": "IA113",
+   "conceptIds": [
+    "IA113"
+   ],
+   "subjectId": "IA",
+   "chapterId": "IA-FL",
+   "questionType": "exception",
+   "questionText": "주계약이 제1109호 적용 금융자산인 복합계약의 내재파생상품 처리는?",
+   "blankAnswer": "분리하지 않고 계약 전체를 분류",
+   "acceptedAnswers": [
+    "분리하지 않고 계약 전체를 분류"
+   ],
+   "relatedConceptIds": [
+    "IA092"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "분리하지 않고 계약 전체를 분류",
+    "항상 분리",
+    "주계약만 인식",
+    "내재파생상품만 인식"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "금융자산 주계약은 분리하지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "K-IFRS 제1032호 '금융상품: 표시'",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 3564,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

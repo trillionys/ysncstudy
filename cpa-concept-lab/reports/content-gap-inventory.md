@@ -4,12 +4,12 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 
 | 시험과목 | 구축 | 전체 | 미구축 | 구축률 |
 |---|---:|---:|---:|---:|
-| 회계학 | 265 | 577 | 312 | 45.9% |
+| 회계학 | 309 | 577 | 268 | 53.6% |
 | 경영학 | 21 | 232 | 211 | 9.1% |
 | 경제원론 | 27 | 132 | 105 | 20.5% |
 | 기업법 | 127 | 131 | 4 | 96.9% |
 | 세법개론 | 159 | 161 | 2 | 98.8% |
-| **전체** | 599 | 1233 | 634 | 48.6% |
+| **전체** | 643 | 1233 | 590 | 52.1% |
 
 무결성 오류: 0건
 
@@ -29,60 +29,6 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0078 | 비화폐성자산 교환 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0087 | 구성요소별 감가상각 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
 | CUR-IA-0092 | 재평가잉여금 | B | IN_PROGRESS | 활성 문항 2개(필요 3개) |
-
-## 회계학 · 중급회계 · 무형자산
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0128 | 무형자산 정의 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0129 | 식별가능성 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0130 | 통제 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0131 | 미래경제적효익 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0132 | 개별취득 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0133 | 사업결합으로 취득 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0134 | 내부창출 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0135 | 연구단계 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0136 | 개발단계 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0137 | 개발비 자산화 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0138 | 내부창출영업권 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0139 | 무형자산 내용연수 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0140 | 유한내용연수 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0141 | 비한정내용연수 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0142 | 상각 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0143 | 손상 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0144 | 재평가모형 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0145 | 무형자산 처분 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0146 | 홈페이지 개발원가 | A | NOT_STARTED | 개념·문항 없음 |
-
-## 회계학 · 중급회계 · 금융상품
-
-| 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
-|---|---|---|---|---|
-| CUR-IA-0147 | 금융자산 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0148 | 금융부채 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0150 | 금융상품 최초인식 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0151 | 최초 측정 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0152 | 사업모형 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0153 | 계약상 현금흐름 특성 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0154 | SPPI | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0155 | 상각후원가 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0157 | FVTPL | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0160 | 금융자산 재분류 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0161 | 유효이자율 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0162 | 기대신용손실 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0163 | 금융자산 손상 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0164 | 금융자산 제거 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0165 | 금융부채 후속측정 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0166 | 금융부채 제거 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0167 | 금융부채 조건변경 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0168 | 금융자산과 금융부채 상계 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0169 | 복합금융상품 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0170 | 전환사채 발행자 회계 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0171 | 전환권대가 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0172 | 신주인수권부사채 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0173 | 조건부 결제 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0174 | 우선주 분류 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0175 | 파생상품 기초 | A | NOT_STARTED | 개념·문항 없음 |
 
 ## 회계학 · 중급회계 · 충당부채 및 우발사항
 
@@ -211,7 +157,7 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0274 | 가득기간 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0275 | 보상원가 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0276 | 공정가치 | E | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0277 | 조건변경 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0277 | 조건변경 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0278 | 취소 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0279 | 현금결제형 재측정 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0280 | 종업원 주식매수선택권 | A | NOT_STARTED | 개념·문항 없음 |
@@ -249,7 +195,7 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 | CUR-IA-0302 | 권리발행 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0303 | 희석주당이익 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0304 | 잠재적보통주 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-IA-0305 | 전환사채 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-IA-0305 | 전환사채 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0306 | 주식매수선택권 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0307 | 희석효과와 반희석효과 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-IA-0308 | 계속영업손익 주당이익 | A | NOT_STARTED | 개념·문항 없음 |
@@ -322,12 +268,12 @@ CoverageValidator 가 빌드된 실제 데이터(목차→개념→문항)로 �
 
 | 목차 ID | 항목 | 유형 | 상태 | 부족한 점 |
 |---|---|---|---|---|
-| CUR-AA-0409 | 파생상품 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-AA-0409 | 파생상품 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-AA-0410 | 선도 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-AA-0411 | 선물 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-AA-0412 | 옵션 | A | NOT_STARTED | 개념·문항 없음 |
 | CUR-AA-0413 | 스왑 | A | NOT_STARTED | 개념·문항 없음 |
-| CUR-AA-0414 | 공정가치 측정 | A | NOT_STARTED | 개념·문항 없음 |
+| CUR-AA-0414 | 공정가치 측정 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-AA-0423 | 기타포괄손익 | E | NOT_STARTED | 개념·문항 없음 |
 | CUR-AA-0425 | 위험회피관계 중단 | A | NOT_STARTED | 개념·문항 없음 |
 
