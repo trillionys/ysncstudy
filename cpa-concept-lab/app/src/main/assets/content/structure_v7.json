@@ -2407,6 +2407,36 @@
    "sortOrder": 2
   },
   {
+   "id": "CM-A-S04",
+   "chapterId": "CM-A",
+   "title": "원가의 정의와 원가함수(v8 보강)",
+   "sortOrder": 4
+  },
+  {
+   "id": "CM-B-S03",
+   "chapterId": "CM-B",
+   "title": "실제원가계산·배부기준·재작업·혼합원가계산(v8 보강)",
+   "sortOrder": 3
+  },
+  {
+   "id": "CM-C-S03",
+   "chapterId": "CM-C",
+   "title": "목표이익 매출액과 관련수익(v8 보강)",
+   "sortOrder": 3
+  },
+  {
+   "id": "CM-D-S03",
+   "chapterId": "CM-D",
+   "title": "운영예산과 차이분석(v8 보강)",
+   "sortOrder": 3
+  },
+  {
+   "id": "CM-D-S04",
+   "chapterId": "CM-D",
+   "title": "전략적 원가관리와 성과평가(v8 보강)",
+   "sortOrder": 4
+  },
+  {
    "id": "AA-A-S90",
    "chapterId": "AA-A",
    "title": "지배력과 연결범위(기존 재무회계에서 이동)",
@@ -7797,8 +7827,10 @@
    "subjectId": "CM",
    "unit": "원가의 개념",
    "item": "원가의 정의",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM040"
+   ],
+   "covered": true,
    "sortOrder": 427
   },
   {
@@ -8081,8 +8113,10 @@
    "subjectId": "CM",
    "unit": "제조간접원가 배부",
    "item": "실제배부",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM043"
+   ],
+   "covered": true,
    "sortOrder": 453
   },
   {
@@ -8134,8 +8168,10 @@
    "subjectId": "CM",
    "unit": "제조간접원가 배부",
    "item": "실제원가계산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM042"
+   ],
+   "covered": true,
    "sortOrder": 458
   },
   {
@@ -8209,8 +8245,10 @@
    "subjectId": "CM",
    "unit": "보조부문원가 배부",
    "item": "배부기준",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM044"
+   ],
+   "covered": true,
    "sortOrder": 465
   },
   {
@@ -8284,8 +8322,10 @@
    "subjectId": "CM",
    "unit": "원가계산방법",
    "item": "재작업",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM045"
+   ],
+   "covered": true,
    "sortOrder": 472
   },
   {
@@ -8348,8 +8388,10 @@
    "subjectId": "CM",
    "unit": "원가계산방법",
    "item": "혼합원가계산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM046"
+   ],
+   "covered": true,
    "sortOrder": 478
   },
   {
@@ -8390,8 +8432,10 @@
    "subjectId": "CM",
    "unit": "원가행태 및 원가추정",
    "item": "혼합원가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM002"
+   ],
+   "covered": true,
    "sortOrder": 482
   },
   {
@@ -8421,8 +8465,10 @@
    "subjectId": "CM",
    "unit": "원가행태 및 원가추정",
    "item": "원가함수",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM041"
+   ],
+   "covered": true,
    "sortOrder": 485
   },
   {
@@ -8485,8 +8531,10 @@
    "subjectId": "CM",
    "unit": "CVP 분석",
    "item": "목표이익 매출액",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM047"
+   ],
+   "covered": true,
    "sortOrder": 491
   },
   {
@@ -8615,8 +8663,10 @@
    "subjectId": "CM",
    "unit": "관련원가 의사결정",
    "item": "관련수익",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM048"
+   ],
+   "covered": true,
    "sortOrder": 503
   },
   {
@@ -8657,8 +8707,10 @@
    "subjectId": "CM",
    "unit": "계획 및 통제",
    "item": "직접재료예산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM049"
+   ],
+   "covered": true,
    "sortOrder": 507
   },
   {
@@ -8666,8 +8718,10 @@
    "subjectId": "CM",
    "unit": "계획 및 통제",
    "item": "직접노무예산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM050"
+   ],
+   "covered": true,
    "sortOrder": 508
   },
   {
@@ -8675,8 +8729,10 @@
    "subjectId": "CM",
    "unit": "계획 및 통제",
    "item": "제조간접원가예산",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM051"
+   ],
+   "covered": true,
    "sortOrder": 509
   },
   {
@@ -8761,8 +8817,10 @@
    "subjectId": "CM",
    "unit": "계획 및 통제",
    "item": "제조간접원가차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM052"
+   ],
+   "covered": true,
    "sortOrder": 517
   },
   {
@@ -8770,8 +8828,10 @@
    "subjectId": "CM",
    "unit": "계획 및 통제",
    "item": "공헌이익차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM053"
+   ],
+   "covered": true,
    "sortOrder": 518
   },
   {
@@ -8779,8 +8839,10 @@
    "subjectId": "CM",
    "unit": "계획 및 통제",
    "item": "판매가격차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM054"
+   ],
+   "covered": true,
    "sortOrder": 519
   },
   {
@@ -8788,8 +8850,10 @@
    "subjectId": "CM",
    "unit": "계획 및 통제",
    "item": "판매수량차이",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM055"
+   ],
+   "covered": true,
    "sortOrder": 520
   },
   {
@@ -8940,8 +9004,10 @@
    "subjectId": "CM",
    "unit": "성과평가",
    "item": "고객수익성",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM056"
+   ],
+   "covered": true,
    "sortOrder": 534
   },
   {
@@ -8949,8 +9015,10 @@
    "subjectId": "CM",
    "unit": "성과평가",
    "item": "수명주기원가",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM057"
+   ],
+   "covered": true,
    "sortOrder": 535
   },
   {
@@ -9013,8 +9081,10 @@
    "subjectId": "CM",
    "unit": "성과평가",
    "item": "지속가능성·환경회계",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM058"
+   ],
+   "covered": true,
    "sortOrder": 541
   },
   {
@@ -9022,8 +9092,10 @@
    "subjectId": "CM",
    "unit": "성과평가",
    "item": "전략적 원가관리",
-   "conceptIds": [],
-   "covered": false,
+   "conceptIds": [
+    "CM059"
+   ],
+   "covered": true,
    "sortOrder": 542
   },
   {

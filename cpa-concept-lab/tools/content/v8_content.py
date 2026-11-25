@@ -26,6 +26,8 @@ ORDER = [
     "ia_eps_cf",
     "ia_supplement",
     "aa_advanced",
+    "cm_supplement",
+    "cm_more",
 ]
 
 for name in ORDER:

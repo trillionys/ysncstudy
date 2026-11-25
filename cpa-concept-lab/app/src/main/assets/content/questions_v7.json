@@ -199233,6 +199233,4334 @@
    "examArea": null,
    "mode": "BOTH",
    "contentVersion": 7
+  },
+  {
+   "id": "CM001-Q03",
+   "primaryConceptId": "CM001",
+   "conceptIds": [
+    "CM001"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "choice",
+   "questionText": "제품 A를 원가대상으로 할 때 간접원가에 해당하는 것은?",
+   "blankAnswer": "공장 전체 전력비",
+   "acceptedAnswers": [
+    "공장 전체 전력비"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "공장 전체 전력비",
+    "제품 A 전용 원재료",
+    "제품 A 생산 작업자의 임금",
+    "제품 A 전용 금형의 감가상각비"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "여러 제품이 함께 쓰는 원가는 특정 제품에 추적하기 어려워 배부한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4104,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM002-Q03",
+   "primaryConceptId": "CM002",
+   "conceptIds": [
+    "CM002"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "calculation",
+   "questionText": "전력요금이 기본요금 200,000원에 사용량당 150원이다. 사용량이 4,000단위이면 총전력비(준변동원가)는 (______)원이다.",
+   "blankAnswer": "800,000",
+   "acceptedAnswers": [
+    "800,000",
+    "800,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "lin",
+    "params": {
+     "f": 200000.0,
+     "v": 150.0,
+     "x": 4000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "고정 부분 + 변동 부분.",
+   "confusion": null,
+   "calculation": "200,000 + 150 × 4,000 = 800,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4105,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM002-Q04",
+   "primaryConceptId": "CM002",
+   "conceptIds": [
+    "CM002"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "exception",
+   "questionText": "조업도가 관련범위를 크게 벗어날 때의 설명으로 옳은 것은?",
+   "blankAnswer": "고정원가 총액도 달라질 수 있다",
+   "acceptedAnswers": [
+    "고정원가 총액도 달라질 수 있다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "고정원가 총액도 달라질 수 있다",
+    "변동원가 단위당 금액은 절대 변하지 않는다",
+    "원가행태 분석이 더 정확해진다",
+    "준변동원가가 고정원가가 된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원가행태는 관련범위 안에서만 성립한다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4106,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM003-Q03",
+   "primaryConceptId": "CM003",
+   "conceptIds": [
+    "CM003"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "choice",
+   "questionText": "다음 중 비제조원가(기간원가)에 해당하는 것은?",
+   "blankAnswer": "본사 관리직 급여",
+   "acceptedAnswers": [
+    "본사 관리직 급여"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "본사 관리직 급여",
+    "공장 감독자 급여",
+    "공장 전력비",
+    "직접재료원가"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "판매·관리 활동 원가는 발생 기간의 비용.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4107,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM004-Q03",
+   "primaryConceptId": "CM004",
+   "conceptIds": [
+    "CM004"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "특정 대안을 선택하면 발생하지 않게 되는 원가를 (______)원가라 하며 의사결정에 관련된다.",
+   "blankAnswer": "회피가능",
+   "acceptedAnswers": [
+    "회피가능"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "관련원가의 한 형태.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4108,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM004-Q04",
+   "primaryConceptId": "CM004",
+   "conceptIds": [
+    "CM004"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "matching",
+   "questionText": "두 대안을 비교할 때 다음 원가의 성격을 연결하시오.",
+   "blankAnswer": "대안 사이에 차이가 나는 원가 → 증분원가 / 이미 지출해 되돌릴 수 없는 원가 → 매몰원가",
+   "acceptedAnswers": [
+    "대안 사이에 차이가 나는 원가 → 증분원가 / 이미 지출해 되돌릴 수 없는 원가 → 매몰원가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "증분원가",
+    "매몰원가",
+    "기회원가"
+   ],
+   "slots": [
+    {
+     "label": "대안 사이에 차이가 나는 원가",
+     "answer": "증분원가"
+    },
+    {
+     "label": "이미 지출해 되돌릴 수 없는 원가",
+     "answer": "매몰원가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "관련원가와 비관련원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4109,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM005-Q03",
+   "primaryConceptId": "CM005",
+   "conceptIds": [
+    "CM005"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "calculation",
+   "questionText": "기초원재료 50,000원, 당기 원재료 매입 400,000원, 기말원재료 70,000원일 때 직접재료원가(원재료 사용액)는 (______)원이다.",
+   "blankAnswer": "380,000",
+   "acceptedAnswers": [
+    "380,000",
+    "380,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 50000.0,
+     "b": 400000.0,
+     "c": 70000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초 + 매입 − 기말.",
+   "confusion": null,
+   "calculation": "50,000 + 400,000 − 70,000 = 380,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4110,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM005-Q04",
+   "primaryConceptId": "CM005",
+   "conceptIds": [
+    "CM005"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "calculation",
+   "questionText": "기초제품 120,000원, 당기제품제조원가 1,050,000원, 기말제품 170,000원일 때 매출원가는 (______)원이다.",
+   "blankAnswer": "1,000,000",
+   "acceptedAnswers": [
+    "1,000,000",
+    "1,000,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 120000.0,
+     "b": 1050000.0,
+     "c": 170000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "기초제품 + 당기제품제조원가 − 기말제품.",
+   "confusion": null,
+   "calculation": "120,000 + 1,050,000 − 170,000 = 1,000,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4111,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM005-Q05",
+   "primaryConceptId": "CM005",
+   "conceptIds": [
+    "CM005"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "당기총제조원가와 당기제품제조원가의 계산 과정을 보여 주는 명세서를 (______)라 한다.",
+   "blankAnswer": "제조원가명세서",
+   "acceptedAnswers": [
+    "제조원가명세서"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제조원가 흐름.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4112,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM011-Q03",
+   "primaryConceptId": "CM011",
+   "conceptIds": [
+    "CM011"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "직접배부법에서 동력부 원가 600,000원을 제조부문 X·Y 에 동력 사용량 비율로 배부한다. X 사용량 3,000kWh, X·Y 합계 사용량 5,000kWh 일 때 X 배부액은 (______)원이다.",
+   "blankAnswer": "360,000",
+   "acceptedAnswers": [
+    "360,000",
+    "360,000원"
+   ],
+   "relatedConceptIds": [
+    "CM010"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 600000.0,
+     "b": 3000.0,
+     "c": 5000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "보조부문원가 × X 사용 ÷ 제조부문 사용 합계(보조부문 간 사용 무시).",
+   "confusion": null,
+   "calculation": "600,000 × 3,000 ÷ 5,000 = 360,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4113,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM011-Q04",
+   "primaryConceptId": "CM011",
+   "conceptIds": [
+    "CM011"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "classification",
+   "questionText": "다음 부문을 분류하시오.",
+   "blankAnswer": "동력부·수선부 → 보조(서비스)부문 / 절단부·조립부 → 제조부문",
+   "acceptedAnswers": [
+    "동력부·수선부 → 보조(서비스)부문 / 절단부·조립부 → 제조부문"
+   ],
+   "relatedConceptIds": [
+    "CM010"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "보조(서비스)부문",
+    "제조부문"
+   ],
+   "slots": [
+    {
+     "label": "동력부·수선부",
+     "answer": "보조(서비스)부문"
+    },
+    {
+     "label": "절단부·조립부",
+     "answer": "제조부문"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제품을 직접 가공하는지로 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4114,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM012-Q03",
+   "primaryConceptId": "CM012",
+   "conceptIds": [
+    "CM012"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "comparison",
+   "questionText": "개별원가계산에서 가장 중요한 계산 과제는?",
+   "blankAnswer": "제조간접원가의 배부",
+   "acceptedAnswers": [
+    "제조간접원가의 배부"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "제조간접원가의 배부",
+    "완성품환산량 계산",
+    "공정별 원가 집계",
+    "결합원가 배부"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "직접원가는 작업별로 추적되므로 간접원가 배부가 핵심.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4115,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM014-Q03",
+   "primaryConceptId": "CM014",
+   "conceptIds": [
+    "CM014"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "검사를 통과한 합격품이 9,000단위이고 정상공손 허용률이 합격품의 5%이다. 정상공손 수량은 (______)단위이다.",
+   "blankAnswer": "450",
+   "acceptedAnswers": [
+    "450",
+    "450단위"
+   ],
+   "relatedConceptIds": [
+    "CM013"
+   ],
+   "unit": "단위",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "pct_of",
+    "params": {
+     "a": 9000.0,
+     "r": 5.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "합격품 × 허용률.",
+   "confusion": null,
+   "calculation": "9,000 × 5% = 450",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4116,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM014-Q04",
+   "primaryConceptId": "CM014",
+   "conceptIds": [
+    "CM014"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "생산 과정에서 생기는 원재료 찌꺼기로 판매가치가 작은 것을 (______)이라 한다.",
+   "blankAnswer": "작업폐물",
+   "acceptedAnswers": [
+    "작업폐물"
+   ],
+   "relatedConceptIds": [
+    "CM013"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공손품과 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4117,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM015-Q03",
+   "primaryConceptId": "CM015",
+   "conceptIds": [
+    "CM015"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "결합원가 900,000원을 순실현가능가치 비율로 배부한다. 제품 A 의 순실현가능가치가 600,000원, 전체 순실현가능가치가 1,500,000원이면 A 배부액은 (______)원이다.",
+   "blankAnswer": "360,000",
+   "acceptedAnswers": [
+    "360,000",
+    "360,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 900000.0,
+     "b": 600000.0,
+     "c": 1500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "결합원가 × A NRV ÷ 전체 NRV.",
+   "confusion": null,
+   "calculation": "900,000 × 600,000 ÷ 1,500,000 = 360,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4118,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM015-Q04",
+   "primaryConceptId": "CM015",
+   "conceptIds": [
+    "CM015"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "결합제품 중 판매가치가 상대적으로 작은 제품을 (______)이라 한다.",
+   "blankAnswer": "부산물",
+   "acceptedAnswers": [
+    "부산물"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "주산물과 구분.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4119,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM016-Q03",
+   "primaryConceptId": "CM016",
+   "conceptIds": [
+    "CM016"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "작업준비 활동원가 400,000원을 작업준비 횟수로 배부한다. 제품 X 의 작업준비 횟수가 15회, 전체 40회이면 X 배부액은 (______)원이다.",
+   "blankAnswer": "150,000",
+   "acceptedAnswers": [
+    "150,000",
+    "150,000원"
+   ],
+   "relatedConceptIds": [
+    "CM010"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 400000.0,
+     "b": 15.0,
+     "c": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "활동원가 × X 동인 ÷ 전체 동인.",
+   "confusion": null,
+   "calculation": "400,000 × 15 ÷ 40 = 150,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4120,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM017-Q03",
+   "primaryConceptId": "CM017",
+   "conceptIds": [
+    "CM017"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "comparison",
+   "questionText": "전부원가계산에서는 제품원가지만 변동원가계산에서는 기간비용으로 처리하는 것은?",
+   "blankAnswer": "고정제조간접원가",
+   "acceptedAnswers": [
+    "고정제조간접원가"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "고정제조간접원가",
+    "변동제조간접원가",
+    "직접재료원가",
+    "판매관리비"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 방법의 유일한 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4121,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM019-Q03",
+   "primaryConceptId": "CM019",
+   "conceptIds": [
+    "CM019"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "모든 원가 자료를 이용해 원가와 조업도의 관계를 통계적으로 추정하는 방법을 (______)이라 한다.",
+   "blankAnswer": "회귀분석",
+   "acceptedAnswers": [
+    "회귀분석"
+   ],
+   "relatedConceptIds": [
+    "CM002"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "고저점법과 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4122,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM019-Q04",
+   "primaryConceptId": "CM019",
+   "conceptIds": [
+    "CM019"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "고저점법으로 추정한 시간당 변동원가가 30원이다. 최고 조업도(1,000시간)의 총원가가 50,000원이고 그중 변동원가가 30,000원이면 고정원가는 (______)원이다.",
+   "blankAnswer": "20,000",
+   "acceptedAnswers": [
+    "20,000",
+    "20,000원"
+   ],
+   "relatedConceptIds": [
+    "CM002"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 50000.0,
+     "b": 30000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "총원가 − 변동원가.",
+   "confusion": null,
+   "calculation": "50,000 − 30,000 = 20,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4123,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM021-Q03",
+   "primaryConceptId": "CM021",
+   "conceptIds": [
+    "CM021"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "세후 목표이익 160,000원, 법인세율 20%일 때 CVP 분석에 쓸 세전 목표이익은 (______)원이다(세후이익 × 100 ÷ 80).",
+   "blankAnswer": "200,000",
+   "acceptedAnswers": [
+    "200,000",
+    "200,000원"
+   ],
+   "relatedConceptIds": [
+    "CM020"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 160000.0,
+     "b": 100.0,
+     "c": 80.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "세후이익 ÷ (1 − 세율).",
+   "confusion": null,
+   "calculation": "160,000 × 100 ÷ 80 = 200,000",
+   "difficulty": 4,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4124,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM022-Q03",
+   "primaryConceptId": "CM022",
+   "conceptIds": [
+    "CM022"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "영업레버리지도가 4이고 매출액이 10% 증가하면 영업이익은 (______)% 증가한다.",
+   "blankAnswer": "40",
+   "acceptedAnswers": [
+    "40",
+    "40%"
+   ],
+   "relatedConceptIds": [
+    "CM021"
+   ],
+   "unit": "%",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 4.0,
+     "b": 10.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "DOL × 매출 변화율.",
+   "confusion": null,
+   "calculation": "4 × 10 = 40",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4125,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM023-Q03",
+   "primaryConceptId": "CM023",
+   "conceptIds": [
+    "CM023"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "고정원가 600,000원, 가중평균 공헌이익률이 40%일 때 손익분기점 매출액은 (______)원이다(고정원가 × 100 ÷ 40).",
+   "blankAnswer": "1,500,000",
+   "acceptedAnswers": [
+    "1,500,000",
+    "1,500,000원"
+   ],
+   "relatedConceptIds": [
+    "CM020"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 600000.0,
+     "b": 100.0,
+     "c": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "고정원가 ÷ 가중평균 공헌이익률.",
+   "confusion": null,
+   "calculation": "600,000 × 100 ÷ 40 = 1,500,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4126,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM024-Q03",
+   "primaryConceptId": "CM024",
+   "conceptIds": [
+    "CM024"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "유휴설비가 있는 상태에서 특별주문의 증분수익이 1,500,000원, 증분원가(변동원가)가 1,100,000원이다. 특별주문 수락에 따른 이익 증가액은 (______)원이다.",
+   "blankAnswer": "400,000",
+   "acceptedAnswers": [
+    "400,000",
+    "400,000원"
+   ],
+   "relatedConceptIds": [
+    "CM004"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1500000.0,
+     "b": 1100000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "증분수익 − 증분원가(기회원가 0).",
+   "confusion": null,
+   "calculation": "1,500,000 − 1,100,000 = 400,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4127,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM025-Q03",
+   "primaryConceptId": "CM025",
+   "conceptIds": [
+    "CM025"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "제품 A 의 단위당 공헌이익이 60원이고 단위당 기계시간이 3시간이다. 기계시간당 공헌이익은 (______)원이다.",
+   "blankAnswer": "20",
+   "acceptedAnswers": [
+    "20",
+    "20원"
+   ],
+   "relatedConceptIds": [
+    "CM024"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 60.0,
+     "b": 1.0,
+     "c": 3.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "단위당 공헌이익 ÷ 단위당 제약자원 사용량.",
+   "confusion": null,
+   "calculation": "60 × 1 ÷ 3 = 20",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4128,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM025-Q04",
+   "primaryConceptId": "CM025",
+   "conceptIds": [
+    "CM025"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "classification",
+   "questionText": "제품라인 폐지 결정에서 다음 원가의 관련성을 연결하시오.",
+   "blankAnswer": "폐지하면 없어지는 고정원가 → 관련원가 / 본사 공통고정원가 배부액 → 비관련원가",
+   "acceptedAnswers": [
+    "폐지하면 없어지는 고정원가 → 관련원가 / 본사 공통고정원가 배부액 → 비관련원가"
+   ],
+   "relatedConceptIds": [
+    "CM024"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "관련원가",
+    "비관련원가"
+   ],
+   "slots": [
+    {
+     "label": "폐지하면 없어지는 고정원가",
+     "answer": "관련원가"
+    },
+    {
+     "label": "본사 공통고정원가 배부액",
+     "answer": "비관련원가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "회피 가능성으로 판단.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4129,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM032-Q03",
+   "primaryConceptId": "CM032",
+   "conceptIds": [
+    "CM032"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "choice",
+   "questionText": "내부대체가격의 상한(최대대체가격)은?",
+   "blankAnswer": "구매사업부의 외부구입가격",
+   "acceptedAnswers": [
+    "구매사업부의 외부구입가격"
+   ],
+   "relatedConceptIds": [
+    "CM031"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "구매사업부의 외부구입가격",
+    "공급사업부의 변동원가",
+    "공급사업부의 전부원가",
+    "본사가 정한 목표가격"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구매사업부는 외부보다 비싸게 사지 않는다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4130,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM033-Q03",
+   "primaryConceptId": "CM033",
+   "conceptIds": [
+    "CM033"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "목표가격이 50,000원이고 목표이익이 10,000원이다. 목표원가는 (______)원이다.",
+   "blankAnswer": "40,000",
+   "acceptedAnswers": [
+    "40,000",
+    "40,000원"
+   ],
+   "relatedConceptIds": [],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 50000.0,
+     "b": 10000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "목표가격 − 목표이익.",
+   "confusion": null,
+   "calculation": "50,000 − 10,000 = 40,000",
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4131,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM033-Q04",
+   "primaryConceptId": "CM033",
+   "conceptIds": [
+    "CM033"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "classification",
+   "questionText": "다음 성과지표를 균형성과표 관점과 연결하시오.",
+   "blankAnswer": "고객 만족도 → 고객 관점 / 직원 1인당 교육시간 → 학습과 성장 관점 / 불량률 → 내부프로세스 관점",
+   "acceptedAnswers": [
+    "고객 만족도 → 고객 관점 / 직원 1인당 교육시간 → 학습과 성장 관점 / 불량률 → 내부프로세스 관점"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "재무 관점",
+    "고객 관점",
+    "내부프로세스 관점",
+    "학습과 성장 관점"
+   ],
+   "slots": [
+    {
+     "label": "고객 만족도",
+     "answer": "고객 관점"
+    },
+    {
+     "label": "직원 1인당 교육시간",
+     "answer": "학습과 성장 관점"
+    },
+    {
+     "label": "불량률",
+     "answer": "내부프로세스 관점"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "네 관점 분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4132,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM033-Q05",
+   "primaryConceptId": "CM033",
+   "conceptIds": [
+    "CM033"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "제약이론에서 전체 산출량을 제한하는 공정을 (______)공정이라 한다.",
+   "blankAnswer": "병목",
+   "acceptedAnswers": [
+    "병목"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "관리 대상.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4133,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM034-Q03",
+   "primaryConceptId": "CM034",
+   "conceptIds": [
+    "CM034"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "effect",
+   "questionText": "1회 주문비용이 커지면 경제적 주문량(EOQ)은?",
+   "blankAnswer": "증가한다",
+   "acceptedAnswers": [
+    "증가한다"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "증가한다",
+    "감소한다",
+    "변하지 않는다",
+    "0이 된다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "EOQ = √(2DS/H) 에서 S 증가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4134,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM035-Q03",
+   "primaryConceptId": "CM035",
+   "conceptIds": [
+    "CM035"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "불확실성하에서 각 대안의 상황별 결과에 확률을 곱해 합한 값을 (______)라 한다.",
+   "blankAnswer": "기대가치",
+   "acceptedAnswers": [
+    "기대가치",
+    "기댓값"
+   ],
+   "relatedConceptIds": [],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "의사결정 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4135,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM040-Q01",
+   "primaryConceptId": "CM040",
+   "conceptIds": [
+    "CM040"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "원가 중 아직 효익이 남아 있어 자산으로 표시되는 부분을 (______)원가라 한다.",
+   "blankAnswer": "미소멸",
+   "acceptedAnswers": [
+    "미소멸"
+   ],
+   "relatedConceptIds": [
+    "CM001",
+    "CM003"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "자산.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4136,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM040-Q02",
+   "primaryConceptId": "CM040",
+   "conceptIds": [
+    "CM040"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "classification",
+   "questionText": "다음 원재료 원가의 성격을 연결하시오.",
+   "blankAnswer": "기말 창고에 남은 원재료 → 자산(미소멸원가) / 판매된 제품에 투입된 원재료 → 비용(소멸원가) / 화재로 소실된 원재료 → 손실",
+   "acceptedAnswers": [
+    "기말 창고에 남은 원재료 → 자산(미소멸원가) / 판매된 제품에 투입된 원재료 → 비용(소멸원가) / 화재로 소실된 원재료 → 손실"
+   ],
+   "relatedConceptIds": [
+    "CM001",
+    "CM003"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "자산(미소멸원가)",
+    "비용(소멸원가)",
+    "손실"
+   ],
+   "slots": [
+    {
+     "label": "기말 창고에 남은 원재료",
+     "answer": "자산(미소멸원가)"
+    },
+    {
+     "label": "판매된 제품에 투입된 원재료",
+     "answer": "비용(소멸원가)"
+    },
+    {
+     "label": "화재로 소실된 원재료",
+     "answer": "손실"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "효익의 존재 여부.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4137,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM040-Q03",
+   "primaryConceptId": "CM040",
+   "conceptIds": [
+    "CM040"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "choice",
+   "questionText": "원가에 대한 설명으로 옳은 것은?",
+   "blankAnswer": "특정 목적을 위해 희생한 경제적 자원을 화폐로 측정한 것이다",
+   "acceptedAnswers": [
+    "특정 목적을 위해 희생한 경제적 자원을 화폐로 측정한 것이다"
+   ],
+   "relatedConceptIds": [
+    "CM001",
+    "CM003"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "특정 목적을 위해 희생한 경제적 자원을 화폐로 측정한 것이다",
+    "항상 손익계산서의 비용이다",
+    "현금 지출만 원가다",
+    "장부에 기록된 금액만 원가다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "기회원가처럼 기록되지 않는 원가도 있다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4138,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM041-Q01",
+   "primaryConceptId": "CM041",
+   "conceptIds": [
+    "CM041"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "calculation",
+   "questionText": "원가함수가 y = 200,000 + 150x 일 때 조업도 4,000단위의 총원가는 (______)원이다.",
+   "blankAnswer": "800,000",
+   "acceptedAnswers": [
+    "800,000",
+    "800,000원"
+   ],
+   "relatedConceptIds": [
+    "CM002",
+    "CM019"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "lin",
+    "params": {
+     "f": 200000.0,
+     "v": 150.0,
+     "x": 4000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "a + b × x.",
+   "confusion": null,
+   "calculation": "200,000 + 150 × 4,000 = 800,000",
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4139,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM041-Q02",
+   "primaryConceptId": "CM041",
+   "conceptIds": [
+    "CM041"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "matching",
+   "questionText": "원가추정 방법을 설명과 연결하시오.",
+   "blankAnswer": "최고·최저 조업도 두 점 사용 → 고저점법 / 모든 자료로 통계적 추정 → 회귀분석 / 계정별로 고정·변동 판단 → 계정분석법",
+   "acceptedAnswers": [
+    "최고·최저 조업도 두 점 사용 → 고저점법 / 모든 자료로 통계적 추정 → 회귀분석 / 계정별로 고정·변동 판단 → 계정분석법"
+   ],
+   "relatedConceptIds": [
+    "CM002",
+    "CM019"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "고저점법",
+    "회귀분석",
+    "계정분석법",
+    "산업공학적 방법"
+   ],
+   "slots": [
+    {
+     "label": "최고·최저 조업도 두 점 사용",
+     "answer": "고저점법"
+    },
+    {
+     "label": "모든 자료로 통계적 추정",
+     "answer": "회귀분석"
+    },
+    {
+     "label": "계정별로 고정·변동 판단",
+     "answer": "계정분석법"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "방법별 특징.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4140,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM041-Q03",
+   "primaryConceptId": "CM041",
+   "conceptIds": [
+    "CM041"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-A",
+   "questionType": "definition",
+   "questionText": "선형 원가함수 y = a + bx 에서 a 는 (______)원가를 나타낸다.",
+   "blankAnswer": "고정",
+   "acceptedAnswers": [
+    "고정"
+   ],
+   "relatedConceptIds": [
+    "CM002",
+    "CM019"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "절편.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4141,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM042-Q01",
+   "primaryConceptId": "CM042",
+   "conceptIds": [
+    "CM042"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "comparison",
+   "questionText": "원가계산 제도별 제조간접원가 배부 기준을 연결하시오.",
+   "blankAnswer": "실제원가계산 → 실제 발생액 / 정상원가계산 → 예정배부율 × 실제 조업도 / 표준원가계산 → 표준배부율 × 표준 조업도",
+   "acceptedAnswers": [
+    "실제원가계산 → 실제 발생액 / 정상원가계산 → 예정배부율 × 실제 조업도 / 표준원가계산 → 표준배부율 × 표준 조업도"
+   ],
+   "relatedConceptIds": [
+    "CM043"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "실제 발생액",
+    "예정배부율 × 실제 조업도",
+    "표준배부율 × 표준 조업도"
+   ],
+   "slots": [
+    {
+     "label": "실제원가계산",
+     "answer": "실제 발생액"
+    },
+    {
+     "label": "정상원가계산",
+     "answer": "예정배부율 × 실제 조업도"
+    },
+    {
+     "label": "표준원가계산",
+     "answer": "표준배부율 × 표준 조업도"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "제도별 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4142,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM042-Q02",
+   "primaryConceptId": "CM042",
+   "conceptIds": [
+    "CM042"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "재료·노무·간접원가를 모두 그 기간에 발생한 금액 그대로 제품에 집계하는 방법을 (______)원가계산이라 한다.",
+   "blankAnswer": "실제",
+   "acceptedAnswers": [
+    "실제"
+   ],
+   "relatedConceptIds": [
+    "CM043"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4143,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM042-Q03",
+   "primaryConceptId": "CM042",
+   "conceptIds": [
+    "CM042"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "choice",
+   "questionText": "실제원가계산의 한계로 옳은 것은?",
+   "blankAnswer": "제조간접원가 실제액이 기말에야 확정되어 적시성이 떨어진다",
+   "acceptedAnswers": [
+    "제조간접원가 실제액이 기말에야 확정되어 적시성이 떨어진다"
+   ],
+   "relatedConceptIds": [
+    "CM043"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "제조간접원가 실제액이 기말에야 확정되어 적시성이 떨어진다",
+    "원가가 표준과 달라 차이분석이 불가능하다",
+    "직접재료원가를 집계할 수 없다",
+    "재고자산을 평가할 수 없다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "적시성과 기간별 변동 문제.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4144,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM043-Q01",
+   "primaryConceptId": "CM043",
+   "conceptIds": [
+    "CM043"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "실제 제조간접원가 900,000원을 실제 직접노동시간 합계 3,000시간 기준으로 배부한다. 작업 #1 의 실제 노동시간이 1,200시간이면 배부액은 (______)원이다.",
+   "blankAnswer": "360,000",
+   "acceptedAnswers": [
+    "360,000",
+    "360,000원"
+   ],
+   "relatedConceptIds": [
+    "CM042"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 900000.0,
+     "b": 1200.0,
+     "c": 3000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "실제배부율 × 작업 시간.",
+   "confusion": null,
+   "calculation": "900,000 × 1,200 ÷ 3,000 = 360,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4145,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM043-Q02",
+   "primaryConceptId": "CM043",
+   "conceptIds": [
+    "CM043"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "실제배부율은 실제 제조간접원가를 실제 (______) 총량으로 나눈다.",
+   "blankAnswer": "배부기준",
+   "acceptedAnswers": [
+    "배부기준",
+    "조업도"
+   ],
+   "relatedConceptIds": [
+    "CM042"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계산.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4146,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM043-Q03",
+   "primaryConceptId": "CM043",
+   "conceptIds": [
+    "CM043"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "실제배부를 하면 예정배부와 달리 배부(______)가 생기지 않는다.",
+   "blankAnswer": "차이",
+   "acceptedAnswers": [
+    "차이"
+   ],
+   "relatedConceptIds": [
+    "CM042"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "배부차이 없음.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4147,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM044-Q01",
+   "primaryConceptId": "CM044",
+   "conceptIds": [
+    "CM044"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "matching",
+   "questionText": "다음 보조부문원가에 적절한 배부기준을 연결하시오.",
+   "blankAnswer": "동력부 원가 → 전력 사용량 / 건물 관리비 → 점유 면적 / 인사부 원가 → 종업원 수",
+   "acceptedAnswers": [
+    "동력부 원가 → 전력 사용량 / 건물 관리비 → 점유 면적 / 인사부 원가 → 종업원 수"
+   ],
+   "relatedConceptIds": [
+    "CM011",
+    "CM016"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "전력 사용량",
+    "점유 면적",
+    "종업원 수",
+    "매출액"
+   ],
+   "slots": [
+    {
+     "label": "동력부 원가",
+     "answer": "전력 사용량"
+    },
+    {
+     "label": "건물 관리비",
+     "answer": "점유 면적"
+    },
+    {
+     "label": "인사부 원가",
+     "answer": "종업원 수"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "인과관계 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4148,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM044-Q02",
+   "primaryConceptId": "CM044",
+   "conceptIds": [
+    "CM044"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "원가를 발생시킨 원가동인에 따라 배부하는 (______)관계 기준이 가장 바람직하다.",
+   "blankAnswer": "인과",
+   "acceptedAnswers": [
+    "인과"
+   ],
+   "relatedConceptIds": [
+    "CM011",
+    "CM016"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "권장 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4149,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM044-Q03",
+   "primaryConceptId": "CM044",
+   "conceptIds": [
+    "CM044"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "choice",
+   "questionText": "부담능력 기준 배부의 문제점은?",
+   "blankAnswer": "수익성 좋은 부문에 원가가 몰려 성과 평가가 왜곡될 수 있다",
+   "acceptedAnswers": [
+    "수익성 좋은 부문에 원가가 몰려 성과 평가가 왜곡될 수 있다"
+   ],
+   "relatedConceptIds": [
+    "CM011",
+    "CM016"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "수익성 좋은 부문에 원가가 몰려 성과 평가가 왜곡될 수 있다",
+    "계산이 불가능하다",
+    "인과관계가 가장 강하다",
+    "배부차이가 생긴다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "부담능력 기준의 한계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4150,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM045-Q01",
+   "primaryConceptId": "CM045",
+   "conceptIds": [
+    "CM045"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "classification",
+   "questionText": "재작업원가의 처리를 연결하시오.",
+   "blankAnswer": "특정 작업에서만 생기는 정상 재작업 → 그 작업의 원가 / 모든 작업 공통의 정상 재작업 → 제조간접원가 / 비정상 재작업 → 기간비용",
+   "acceptedAnswers": [
+    "특정 작업에서만 생기는 정상 재작업 → 그 작업의 원가 / 모든 작업 공통의 정상 재작업 → 제조간접원가 / 비정상 재작업 → 기간비용"
+   ],
+   "relatedConceptIds": [
+    "CM014"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "그 작업의 원가",
+    "제조간접원가",
+    "기간비용"
+   ],
+   "slots": [
+    {
+     "label": "특정 작업에서만 생기는 정상 재작업",
+     "answer": "그 작업의 원가"
+    },
+    {
+     "label": "모든 작업 공통의 정상 재작업",
+     "answer": "제조간접원가"
+    },
+    {
+     "label": "비정상 재작업",
+     "answer": "기간비용"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정상 여부와 귀속 대상.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4151,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM045-Q02",
+   "primaryConceptId": "CM045",
+   "conceptIds": [
+    "CM045"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "불량품에 추가 작업을 해서 정상 제품으로 판매하는 것을 (______)이라 한다.",
+   "blankAnswer": "재작업",
+   "acceptedAnswers": [
+    "재작업"
+   ],
+   "relatedConceptIds": [
+    "CM014"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4152,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM045-Q03",
+   "primaryConceptId": "CM045",
+   "conceptIds": [
+    "CM045"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "comparison",
+   "questionText": "공손·재작업·작업폐물 중 추가 작업 후 정상품으로 판매하는 것은?",
+   "blankAnswer": "재작업품",
+   "acceptedAnswers": [
+    "재작업품"
+   ],
+   "relatedConceptIds": [
+    "CM014"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "재작업품",
+    "공손품",
+    "작업폐물",
+    "부산물"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "공손품은 정상품이 될 수 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4153,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM046-Q01",
+   "primaryConceptId": "CM046",
+   "conceptIds": [
+    "CM046"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "comparison",
+   "questionText": "혼합원가계산에서 원가요소별 집계 방식을 연결하시오.",
+   "blankAnswer": "직접재료원가 → 배치별 추적(개별원가계산 방식) / 가공원가 → 공정별 집계·배부(종합원가계산 방식)",
+   "acceptedAnswers": [
+    "직접재료원가 → 배치별 추적(개별원가계산 방식) / 가공원가 → 공정별 집계·배부(종합원가계산 방식)"
+   ],
+   "relatedConceptIds": [
+    "CM012"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "배치별 추적(개별원가계산 방식)",
+    "공정별 집계·배부(종합원가계산 방식)"
+   ],
+   "slots": [
+    {
+     "label": "직접재료원가",
+     "answer": "배치별 추적(개별원가계산 방식)"
+    },
+    {
+     "label": "가공원가",
+     "answer": "공정별 집계·배부(종합원가계산 방식)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "두 방법의 결합.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4154,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM046-Q02",
+   "primaryConceptId": "CM046",
+   "conceptIds": [
+    "CM046"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "calculation",
+   "questionText": "배치 A 의 직접재료원가가 2,000,000원이고 공정별 배부율로 계산한 가공원가가 900,000원이다. 배치 A 원가는 (______)원이다.",
+   "blankAnswer": "2,900,000",
+   "acceptedAnswers": [
+    "2,900,000",
+    "2,900,000원"
+   ],
+   "relatedConceptIds": [
+    "CM012"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 2000000.0,
+     "b": 900000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "재료(개별) + 가공원가(공정 배부).",
+   "confusion": null,
+   "calculation": "2,000,000 + 900,000 = 2,900,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4155,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM046-Q03",
+   "primaryConceptId": "CM046",
+   "conceptIds": [
+    "CM046"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-B",
+   "questionType": "definition",
+   "questionText": "재료는 배치별로, 가공원가는 공정별로 집계하는 방법을 (______)원가계산이라 한다.",
+   "blankAnswer": "혼합",
+   "acceptedAnswers": [
+    "혼합",
+    "공정별"
+   ],
+   "relatedConceptIds": [
+    "CM012"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4156,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM047-Q01",
+   "primaryConceptId": "CM047",
+   "conceptIds": [
+    "CM047"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "고정원가와 목표이익의 합계가 800,000원이고 공헌이익률이 40%이다. 목표이익 매출액은 (______)원이다(합계 × 100 ÷ 40).",
+   "blankAnswer": "2,000,000",
+   "acceptedAnswers": [
+    "2,000,000",
+    "2,000,000원"
+   ],
+   "relatedConceptIds": [
+    "CM021",
+    "CM023"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "prorate",
+    "params": {
+     "a": 800000.0,
+     "b": 100.0,
+     "c": 40.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(고정원가 + 목표이익) ÷ 공헌이익률.",
+   "confusion": null,
+   "calculation": "800,000 × 100 ÷ 40 = 2,000,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4157,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM047-Q02",
+   "primaryConceptId": "CM047",
+   "conceptIds": [
+    "CM047"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "목표이익 매출액은 (고정원가 + 목표이익)을 공헌이익(______)로 나눈다.",
+   "blankAnswer": "률",
+   "acceptedAnswers": [
+    "률",
+    "률(%)"
+   ],
+   "relatedConceptIds": [
+    "CM021",
+    "CM023"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분모.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4158,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM047-Q03",
+   "primaryConceptId": "CM047",
+   "conceptIds": [
+    "CM047"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "treatment",
+   "questionText": "목표이익이 세후로 주어졌을 때의 처리로 옳은 것은?",
+   "blankAnswer": "세후이익 ÷ (1 − 세율)로 세전 목표이익을 구한다",
+   "acceptedAnswers": [
+    "세후이익 ÷ (1 − 세율)로 세전 목표이익을 구한다"
+   ],
+   "relatedConceptIds": [
+    "CM021",
+    "CM023"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "세후이익 ÷ (1 − 세율)로 세전 목표이익을 구한다",
+    "세후이익을 그대로 쓴다",
+    "세후이익 × 세율을 쓴다",
+    "고정원가에서 세금을 뺀다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "CVP 는 세전 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4159,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM048-Q01",
+   "primaryConceptId": "CM048",
+   "conceptIds": [
+    "CM048"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "calculation",
+   "questionText": "추가가공 후 판매가치가 800,000원, 분리점 판매가치가 500,000원이다. 추가가공의 증분(관련)수익은 (______)원이다.",
+   "blankAnswer": "300,000",
+   "acceptedAnswers": [
+    "300,000",
+    "300,000원"
+   ],
+   "relatedConceptIds": [
+    "CM004",
+    "CM024",
+    "CM025"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 800000.0,
+     "b": 500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "가공 후 − 분리점 판매가치.",
+   "confusion": null,
+   "calculation": "800,000 − 500,000 = 300,000",
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4160,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM048-Q02",
+   "primaryConceptId": "CM048",
+   "conceptIds": [
+    "CM048"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "definition",
+   "questionText": "의사결정 대안들 사이에 차이가 나는 미래 수익을 (______)수익이라 한다.",
+   "blankAnswer": "관련",
+   "acceptedAnswers": [
+    "관련"
+   ],
+   "relatedConceptIds": [
+    "CM004",
+    "CM024",
+    "CM025"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4161,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM048-Q03",
+   "primaryConceptId": "CM048",
+   "conceptIds": [
+    "CM048"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-C",
+   "questionType": "choice",
+   "questionText": "다음 중 의사결정에서 비관련수익인 것은?",
+   "blankAnswer": "어느 대안을 선택하든 같은 기존 고객 매출",
+   "acceptedAnswers": [
+    "어느 대안을 선택하든 같은 기존 고객 매출"
+   ],
+   "relatedConceptIds": [
+    "CM004",
+    "CM024",
+    "CM025"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "어느 대안을 선택하든 같은 기존 고객 매출",
+    "특별주문으로 늘어나는 매출",
+    "추가가공으로 늘어나는 판매가치",
+    "신제품 출시로 생기는 매출"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "대안 간 차이가 없다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4162,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM049-Q01",
+   "primaryConceptId": "CM049",
+   "conceptIds": [
+    "CM049"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "원재료 사용 예정량이 3,000kg, 기말 목표재고가 500kg, 기초재고가 400kg일 때 원재료 구입량은 (______)kg이다.",
+   "blankAnswer": "3,100",
+   "acceptedAnswers": [
+    "3,100",
+    "3,100kg"
+   ],
+   "relatedConceptIds": [
+    "CM030",
+    "CM050"
+   ],
+   "unit": "kg",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "adj",
+    "params": {
+     "a": 3000.0,
+     "b": 500.0,
+     "c": 400.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "사용량 + 기말 − 기초.",
+   "confusion": null,
+   "calculation": "3,000 + 500 − 400 = 3,100",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4163,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM049-Q02",
+   "primaryConceptId": "CM049",
+   "conceptIds": [
+    "CM049"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "원재료 사용량은 예산 (______)량에 단위당 표준 소요량을 곱해 구한다.",
+   "blankAnswer": "생산",
+   "acceptedAnswers": [
+    "생산"
+   ],
+   "relatedConceptIds": [
+    "CM030",
+    "CM050"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "생산예산 연계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4164,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM049-Q03",
+   "primaryConceptId": "CM049",
+   "conceptIds": [
+    "CM049"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "choice",
+   "questionText": "직접재료예산의 원재료 구입금액이 직접 연결되는 예산은?",
+   "blankAnswer": "현금예산",
+   "acceptedAnswers": [
+    "현금예산"
+   ],
+   "relatedConceptIds": [
+    "CM030",
+    "CM050"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "현금예산",
+    "판매예산",
+    "제조간접원가예산",
+    "자본예산"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "구입대금 지급 시기.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4165,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM050-Q01",
+   "primaryConceptId": "CM050",
+   "conceptIds": [
+    "CM050"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "예산 직접노동시간이 2,000시간이고 시간당 표준임률이 15,000원이다. 직접노무원가 예산은 (______)원이다.",
+   "blankAnswer": "30,000,000",
+   "acceptedAnswers": [
+    "30,000,000",
+    "30,000,000원"
+   ],
+   "relatedConceptIds": [
+    "CM049",
+    "CM051"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "mul2",
+    "params": {
+     "a": 2000.0,
+     "b": 15000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "시간 × 임률.",
+   "confusion": null,
+   "calculation": "2,000 × 15,000 = 30,000,000",
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4166,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM050-Q02",
+   "primaryConceptId": "CM050",
+   "conceptIds": [
+    "CM050"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "직접노동시간 예산은 판매량이 아니라 예산 (______)량을 기준으로 계산한다.",
+   "blankAnswer": "생산",
+   "acceptedAnswers": [
+    "생산"
+   ],
+   "relatedConceptIds": [
+    "CM049",
+    "CM051"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "생산예산 연계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4167,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM050-Q03",
+   "primaryConceptId": "CM050",
+   "conceptIds": [
+    "CM050"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "직접노무원가는 직접노동시간에 시간당 표준(______)을 곱한다.",
+   "blankAnswer": "임률",
+   "acceptedAnswers": [
+    "임률"
+   ],
+   "relatedConceptIds": [
+    "CM049",
+    "CM051"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "계산.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4168,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM051-Q01",
+   "primaryConceptId": "CM051",
+   "conceptIds": [
+    "CM051"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "고정제조간접원가 1,200,000원, 변동제조간접원가 시간당 500원, 예산 조업도 2,000시간일 때 제조간접원가예산은 (______)원이다.",
+   "blankAnswer": "2,200,000",
+   "acceptedAnswers": [
+    "2,200,000",
+    "2,200,000원"
+   ],
+   "relatedConceptIds": [
+    "CM050",
+    "CM052"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "lin",
+    "params": {
+     "f": 1200000.0,
+     "v": 500.0,
+     "x": 2000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "고정 + 변동배부율 × 조업도.",
+   "confusion": null,
+   "calculation": "1,200,000 + 500 × 2,000 = 2,200,000",
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4169,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM051-Q02",
+   "primaryConceptId": "CM051",
+   "conceptIds": [
+    "CM051"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "제조간접원가예산의 감가상각비는 지출이 따르지 않으므로 자금 수지 계획인 (______)예산에서 제외한다.",
+   "blankAnswer": "현금",
+   "acceptedAnswers": [
+    "현금"
+   ],
+   "relatedConceptIds": [
+    "CM050",
+    "CM052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "현금 조정.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4170,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM051-Q03",
+   "primaryConceptId": "CM051",
+   "conceptIds": [
+    "CM051"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "실제 조업도에 맞춰 다시 계산한 예산을 (______)예산이라 한다.",
+   "blankAnswer": "변동",
+   "acceptedAnswers": [
+    "변동"
+   ],
+   "relatedConceptIds": [
+    "CM050",
+    "CM052"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "고정예산과 비교.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4171,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM052-Q01",
+   "primaryConceptId": "CM052",
+   "conceptIds": [
+    "CM052"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "변동제조간접원가 표준배부율 시간당 500원, 실제 노동시간 2,100시간, 표준 노동시간 2,000시간일 때 능률차이(불리)는 (______)원이다.",
+   "blankAnswer": "50,000",
+   "acceptedAnswers": [
+    "50,000",
+    "50,000원"
+   ],
+   "relatedConceptIds": [
+    "CM051",
+    "CM031"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "dmul",
+    "params": {
+     "a": 2100.0,
+     "b": 2000.0,
+     "n": 500.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(실제시간 − 표준시간) × 표준배부율.",
+   "confusion": null,
+   "calculation": "(2,100 − 2,000) × 500 = 50,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4172,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM052-Q02",
+   "primaryConceptId": "CM052",
+   "conceptIds": [
+    "CM052"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "고정제조간접원가 예산이 1,200,000원, 표준시간에 배부된 고정제조간접원가가 1,080,000원이다. 조업도차이(불리)는 (______)원이다.",
+   "blankAnswer": "120,000",
+   "acceptedAnswers": [
+    "120,000",
+    "120,000원"
+   ],
+   "relatedConceptIds": [
+    "CM051",
+    "CM031"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 1200000.0,
+     "b": 1080000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "예산 − 배부액.",
+   "confusion": null,
+   "calculation": "1,200,000 − 1,080,000 = 120,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4173,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM052-Q03",
+   "primaryConceptId": "CM052",
+   "conceptIds": [
+    "CM052"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "matching",
+   "questionText": "제조간접원가 차이와 그 의미를 연결하시오.",
+   "blankAnswer": "변동 능률차이 → 작업시간의 효율성 / 고정 조업도차이 → 설비 활용도(기준조업도 대비)",
+   "acceptedAnswers": [
+    "변동 능률차이 → 작업시간의 효율성 / 고정 조업도차이 → 설비 활용도(기준조업도 대비)"
+   ],
+   "relatedConceptIds": [
+    "CM051",
+    "CM031"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "작업시간의 효율성",
+    "설비 활용도(기준조업도 대비)",
+    "구입가격 변동"
+   ],
+   "slots": [
+    {
+     "label": "변동 능률차이",
+     "answer": "작업시간의 효율성"
+    },
+    {
+     "label": "고정 조업도차이",
+     "answer": "설비 활용도(기준조업도 대비)"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "차이의 원인.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4174,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM053-Q01",
+   "primaryConceptId": "CM053",
+   "conceptIds": [
+    "CM053"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "판매가격차이 90,000원(유리)과 판매수량차이 60,000원(유리)의 합인 공헌이익차이는 (______)원이다.",
+   "blankAnswer": "150,000",
+   "acceptedAnswers": [
+    "150,000",
+    "150,000원"
+   ],
+   "relatedConceptIds": [
+    "CM054",
+    "CM055"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add2",
+    "params": {
+     "a": 90000.0,
+     "b": 60000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "공헌이익차이 = 가격차이 + 수량차이.",
+   "confusion": null,
+   "calculation": "90,000 + 60,000 = 150,000",
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4175,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM053-Q02",
+   "primaryConceptId": "CM053",
+   "conceptIds": [
+    "CM053"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "order",
+   "questionText": "공헌이익차이의 분해 순서를 위에서 아래로 배열하시오.",
+   "blankAnswer": "1단계 → 공헌이익차이 / 2단계 → 판매가격차이와 판매수량차이 / 3단계 → 판매수량차이를 매출배합차이와 매출수량차이로 분해",
+   "acceptedAnswers": [
+    "1단계 → 공헌이익차이 / 2단계 → 판매가격차이와 판매수량차이 / 3단계 → 판매수량차이를 매출배합차이와 매출수량차이로 분해"
+   ],
+   "relatedConceptIds": [
+    "CM054",
+    "CM055"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "공헌이익차이",
+    "판매가격차이와 판매수량차이",
+    "판매수량차이를 매출배합차이와 매출수량차이로 분해"
+   ],
+   "slots": [
+    {
+     "label": "1단계",
+     "answer": "공헌이익차이"
+    },
+    {
+     "label": "2단계",
+     "answer": "판매가격차이와 판매수량차이"
+    },
+    {
+     "label": "3단계",
+     "answer": "판매수량차이를 매출배합차이와 매출수량차이로 분해"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "상위 → 하위 차이.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4176,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM053-Q03",
+   "primaryConceptId": "CM053",
+   "conceptIds": [
+    "CM053"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "판매 관련 차이는 생산 부문의 원가 차이를 분리하기 위해 (______) 단위당 변동원가를 기준으로 계산한다.",
+   "blankAnswer": "예산",
+   "acceptedAnswers": [
+    "예산",
+    "표준"
+   ],
+   "relatedConceptIds": [
+    "CM054",
+    "CM055"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "표준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4177,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM054-Q01",
+   "primaryConceptId": "CM054",
+   "conceptIds": [
+    "CM054"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "실제 판매가격 520원, 예산 판매가격 500원, 실제 판매량 4,500개일 때 판매가격차이(유리)는 (______)원이다.",
+   "blankAnswer": "90,000",
+   "acceptedAnswers": [
+    "90,000",
+    "90,000원"
+   ],
+   "relatedConceptIds": [
+    "CM053",
+    "CM055"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "dmul",
+    "params": {
+     "a": 520.0,
+     "b": 500.0,
+     "n": 4500.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(실제 − 예산 가격) × 실제 판매량.",
+   "confusion": null,
+   "calculation": "(520 − 500) × 4,500 = 90,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4178,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM054-Q02",
+   "primaryConceptId": "CM054",
+   "conceptIds": [
+    "CM054"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "판매가격차이는 가격 차이에 (______) 판매량을 곱한다.",
+   "blankAnswer": "실제",
+   "acceptedAnswers": [
+    "실제"
+   ],
+   "relatedConceptIds": [
+    "CM053",
+    "CM055"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "수량 기준.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4179,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM054-Q03",
+   "primaryConceptId": "CM054",
+   "conceptIds": [
+    "CM054"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "effect",
+   "questionText": "실제 판매가격이 예산보다 낮아 생긴 판매가격차이의 성격은?",
+   "blankAnswer": "불리한 차이",
+   "acceptedAnswers": [
+    "불리한 차이"
+   ],
+   "relatedConceptIds": [
+    "CM053",
+    "CM055"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "불리한 차이",
+    "유리한 차이",
+    "조업도차이",
+    "능률차이"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격이 낮으면 이익 감소.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4180,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM055-Q01",
+   "primaryConceptId": "CM055",
+   "conceptIds": [
+    "CM055"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "실제 판매량 4,500개, 예산 판매량 4,000개, 예산 단위당 공헌이익 120원일 때 판매수량차이(유리)는 (______)원이다.",
+   "blankAnswer": "60,000",
+   "acceptedAnswers": [
+    "60,000",
+    "60,000원"
+   ],
+   "relatedConceptIds": [
+    "CM053",
+    "CM023"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "dmul",
+    "params": {
+     "a": 4500.0,
+     "b": 4000.0,
+     "n": 120.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "(실제 − 예산 수량) × 예산 단위당 공헌이익.",
+   "confusion": null,
+   "calculation": "(4,500 − 4,000) × 120 = 60,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4181,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM055-Q02",
+   "primaryConceptId": "CM055",
+   "conceptIds": [
+    "CM055"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "판매수량차이는 수량 차이에 (______) 단위당 공헌이익을 곱한다.",
+   "blankAnswer": "예산",
+   "acceptedAnswers": [
+    "예산",
+    "표준"
+   ],
+   "relatedConceptIds": [
+    "CM053",
+    "CM023"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "가격 영향 제거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4182,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM055-Q03",
+   "primaryConceptId": "CM055",
+   "conceptIds": [
+    "CM055"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "복수 제품의 판매수량차이는 매출(______)차이와 매출수량차이로 나눌 수 있다.",
+   "blankAnswer": "배합",
+   "acceptedAnswers": [
+    "배합"
+   ],
+   "relatedConceptIds": [
+    "CM053",
+    "CM023"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분해.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4183,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM056-Q01",
+   "primaryConceptId": "CM056",
+   "conceptIds": [
+    "CM056"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "고객 A 의 매출총이익이 3,000,000원이고 고객 관련 활동원가(주문 처리·배송·영업방문)가 2,500,000원이다. 고객 A 의 영업이익 기여액은 (______)원이다.",
+   "blankAnswer": "500,000",
+   "acceptedAnswers": [
+    "500,000",
+    "500,000원"
+   ],
+   "relatedConceptIds": [
+    "CM016"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "minus",
+    "params": {
+     "a": 3000000.0,
+     "b": 2500000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "매출총이익 − 고객 관련 원가.",
+   "confusion": null,
+   "calculation": "3,000,000 − 2,500,000 = 500,000",
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4184,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM056-Q02",
+   "primaryConceptId": "CM056",
+   "conceptIds": [
+    "CM056"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "classification",
+   "questionText": "다음 원가를 고객 원가 계층과 연결하시오.",
+   "blankAnswer": "주문 1건당 처리비용 → 고객 묶음 수준 / 고객별 정기 영업방문 → 고객 유지 수준",
+   "acceptedAnswers": [
+    "주문 1건당 처리비용 → 고객 묶음 수준 / 고객별 정기 영업방문 → 고객 유지 수준"
+   ],
+   "relatedConceptIds": [
+    "CM016"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "고객 산출단위 수준",
+    "고객 묶음 수준",
+    "고객 유지 수준",
+    "기업 유지 수준"
+   ],
+   "slots": [
+    {
+     "label": "주문 1건당 처리비용",
+     "answer": "고객 묶음 수준"
+    },
+    {
+     "label": "고객별 정기 영업방문",
+     "answer": "고객 유지 수준"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "원가 발생 단위.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4185,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM056-Q03",
+   "primaryConceptId": "CM056",
+   "conceptIds": [
+    "CM056"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "고객별 수익에서 고객 관련 활동원가까지 빼서 고객별 이익을 계산하는 것을 고객(______) 분석이라 한다.",
+   "blankAnswer": "수익성",
+   "acceptedAnswers": [
+    "수익성"
+   ],
+   "relatedConceptIds": [
+    "CM016"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "정의.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4186,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM057-Q01",
+   "primaryConceptId": "CM057",
+   "conceptIds": [
+    "CM057"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "calculation",
+   "questionText": "신제품의 연구개발·설계원가 300,000,000원, 생산원가 900,000,000원, 마케팅·서비스·폐기원가 200,000,000원이다. 수명주기원가는 (______)원이다.",
+   "blankAnswer": "1,400,000,000",
+   "acceptedAnswers": [
+    "1,400,000,000",
+    "1,400,000,000원"
+   ],
+   "relatedConceptIds": [
+    "CM033"
+   ],
+   "unit": "원",
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": {
+    "formulaId": "add3",
+    "params": {
+     "a": 300000000.0,
+     "b": 900000000.0,
+     "c": 200000000.0
+    }
+   },
+   "sourceProblemIds": [],
+   "explanation": "수명 전체 원가의 합.",
+   "confusion": null,
+   "calculation": "300,000,000 + 900,000,000 + 200,000,000 = 1,400,000,000",
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4187,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM057-Q02",
+   "primaryConceptId": "CM057",
+   "conceptIds": [
+    "CM057"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "수명주기원가의 대부분은 연구개발·(______) 단계에서 사실상 확정된다.",
+   "blankAnswer": "설계",
+   "acceptedAnswers": [
+    "설계"
+   ],
+   "relatedConceptIds": [
+    "CM033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "약정원가.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4188,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM057-Q03",
+   "primaryConceptId": "CM057",
+   "conceptIds": [
+    "CM057"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "choice",
+   "questionText": "수명주기원가 관리에서 원가 절감 효과가 가장 큰 단계는?",
+   "blankAnswer": "설계 단계",
+   "acceptedAnswers": [
+    "설계 단계"
+   ],
+   "relatedConceptIds": [
+    "CM033"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "설계 단계",
+    "생산 단계",
+    "판매 단계",
+    "폐기 단계"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "약정원가가 설계 단계에서 결정된다.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4189,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM058-Q01",
+   "primaryConceptId": "CM058",
+   "conceptIds": [
+    "CM058"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "classification",
+   "questionText": "다음 환경원가를 분류하시오.",
+   "blankAnswer": "직원 환경교육 → 예방원가 / 배출가스 측정 → 평가원가 / 공장 내 폐수 처리 → 내부실패원가 / 하천 오염 벌금 → 외부실패원가",
+   "acceptedAnswers": [
+    "직원 환경교육 → 예방원가 / 배출가스 측정 → 평가원가 / 공장 내 폐수 처리 → 내부실패원가 / 하천 오염 벌금 → 외부실패원가"
+   ],
+   "relatedConceptIds": [
+    "CM033"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "예방원가",
+    "평가원가",
+    "내부실패원가",
+    "외부실패원가"
+   ],
+   "slots": [
+    {
+     "label": "직원 환경교육",
+     "answer": "예방원가"
+    },
+    {
+     "label": "배출가스 측정",
+     "answer": "평가원가"
+    },
+    {
+     "label": "공장 내 폐수 처리",
+     "answer": "내부실패원가"
+    },
+    {
+     "label": "하천 오염 벌금",
+     "answer": "외부실패원가"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "품질원가와 같은 4분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4190,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM058-Q02",
+   "primaryConceptId": "CM058",
+   "conceptIds": [
+    "CM058"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "오염물질이 공장 밖으로 배출된 뒤 발생하는 정화 부담·벌금은 (______)실패원가다.",
+   "blankAnswer": "외부",
+   "acceptedAnswers": [
+    "외부"
+   ],
+   "relatedConceptIds": [
+    "CM033"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "환경원가 분류.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4191,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM058-Q03",
+   "primaryConceptId": "CM058",
+   "conceptIds": [
+    "CM058"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "choice",
+   "questionText": "환경원가 관리의 기본 논리로 옳은 것은?",
+   "blankAnswer": "예방·평가원가를 늘리면 실패원가가 줄어든다",
+   "acceptedAnswers": [
+    "예방·평가원가를 늘리면 실패원가가 줄어든다"
+   ],
+   "relatedConceptIds": [
+    "CM033"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "예방·평가원가를 늘리면 실패원가가 줄어든다",
+    "실패원가가 클수록 바람직하다",
+    "환경원가는 관리 대상이 아니다",
+    "평가원가는 항상 0이어야 한다"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "품질원가와 같은 상충관계.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4192,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM059-Q01",
+   "primaryConceptId": "CM059",
+   "conceptIds": [
+    "CM059"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "comparison",
+   "questionText": "경쟁전략과 원가관리 초점을 연결하시오.",
+   "blankAnswer": "원가우위 전략 → 규모의 경제·공정 효율화로 원가 절감 / 차별화 전략 → 고객 가치를 높이는 활동에 원가 투입",
+   "acceptedAnswers": [
+    "원가우위 전략 → 규모의 경제·공정 효율화로 원가 절감 / 차별화 전략 → 고객 가치를 높이는 활동에 원가 투입"
+   ],
+   "relatedConceptIds": [
+    "CM033",
+    "CM057"
+   ],
+   "unit": null,
+   "inputType": "slots",
+   "choices": [
+    "규모의 경제·공정 효율화로 원가 절감",
+    "고객 가치를 높이는 활동에 원가 투입",
+    "모든 원가 일괄 삭감"
+   ],
+   "slots": [
+    {
+     "label": "원가우위 전략",
+     "answer": "규모의 경제·공정 효율화로 원가 절감"
+    },
+    {
+     "label": "차별화 전략",
+     "answer": "고객 가치를 높이는 활동에 원가 투입"
+    }
+   ],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "전략과 원가관리.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 2,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4193,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM059-Q02",
+   "primaryConceptId": "CM059",
+   "conceptIds": [
+    "CM059"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "definition",
+   "questionText": "연구개발부터 고객 서비스까지 이어지는 활동별 원가와 고객 효익을 분석하는 기법을 (______)사슬 분석이라 한다.",
+   "blankAnswer": "가치",
+   "acceptedAnswers": [
+    "가치"
+   ],
+   "relatedConceptIds": [
+    "CM033",
+    "CM057"
+   ],
+   "unit": null,
+   "inputType": "text",
+   "choices": [],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "분석 도구.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 1,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4194,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "BOTH",
+   "contentVersion": 5
+  },
+  {
+   "id": "CM059-Q03",
+   "primaryConceptId": "CM059",
+   "conceptIds": [
+    "CM059"
+   ],
+   "subjectId": "CM",
+   "chapterId": "CM-D",
+   "questionType": "choice",
+   "questionText": "가치사슬 분석으로 우선 제거하려는 활동은?",
+   "blankAnswer": "고객 가치를 만들지 않는 비부가가치 활동",
+   "acceptedAnswers": [
+    "고객 가치를 만들지 않는 비부가가치 활동"
+   ],
+   "relatedConceptIds": [
+    "CM033",
+    "CM057"
+   ],
+   "unit": null,
+   "inputType": "choice",
+   "choices": [
+    "고객 가치를 만들지 않는 비부가가치 활동",
+    "연구개발 활동 전부",
+    "고객 서비스 활동 전부",
+    "모든 간접 활동"
+   ],
+   "slots": [],
+   "calcSpec": null,
+   "sourceProblemIds": [],
+   "explanation": "비부가가치 활동 제거.",
+   "confusion": null,
+   "calculation": null,
+   "difficulty": 3,
+   "standardReference": "원가관리회계 일반이론(교육용 정리, 공식 기준서 없음)",
+   "effectiveFrom": null,
+   "requiresReview": false,
+   "revisionNote": null,
+   "reviewStatus": "REVIEWED",
+   "isActive": true,
+   "revision": 2,
+   "sortOrder": 4195,
+   "legacyPackId": null,
+   "examReferenceNumbers": [],
+   "examArea": null,
+   "mode": "OPTIONS",
+   "contentVersion": 5
   }
  ]
 }

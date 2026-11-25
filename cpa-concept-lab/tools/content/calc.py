@@ -974,6 +974,20 @@ def tsm(n, ex, avg):
     return v, f"{fmt(n)} − {fmt(n)} × {fmt(ex)} ÷ {fmt(avg)} = {fmt(v)}"
 
 
+@formula()
+def lin(f, v, x):
+    """총원가 = 고정원가 + 단위당 변동원가 × 조업도"""
+    v_ = r0(f + v * x)
+    return v_, f"{fmt(f)} + {fmt(v)} × {fmt(x)} = {fmt(v_)}"
+
+
+@formula()
+def dmul(a, b, n):
+    """차이 × 수량: (a − b) × n"""
+    v = r0((a - b) * n)
+    return v, f"({fmt(a)} − {fmt(b)}) × {fmt(n)} = {fmt(v)}"
+
+
 def evaluate(formula_id, params):
     fn, kind = F[formula_id]
     return fn(**params)

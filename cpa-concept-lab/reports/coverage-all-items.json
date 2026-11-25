@@ -3,11 +3,11 @@
   "contentVersion": 7,
   "exams": {
    "회계학": {
-    "complete": 492,
+    "complete": 577,
     "total": 577,
-    "missing": 85,
+    "missing": 0,
     "needsReview": 12,
-    "storedFlagCovered": 556
+    "storedFlagCovered": 577
    },
    "경영학": {
     "complete": 21,
@@ -48,7 +48,7 @@
     "total": 94
    },
    "CM": {
-    "complete": 31,
+    "complete": 116,
     "total": 116
    },
    "GA": {
@@ -78,9 +78,9 @@
   },
   "integrityErrors": 0,
   "overall": {
-   "complete": 826,
+   "complete": 911,
    "total": 1233,
-   "missing": 407
+   "missing": 322
   }
  },
  "items": [
@@ -9314,17 +9314,19 @@
    "packId": "CM",
    "parentChapter": "원가의 개념",
    "scopeTitle": "원가의 정의",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM040"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "E",
-   "linkCandidates": [
-    "Q001"
+   "existingQuestionIds": [
+    "CM040-Q01",
+    "CM040-Q02",
+    "CM040-Q03"
    ],
-   "storedCoveredFlag": false
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
+   "linkCandidates": [],
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0428",
@@ -9338,13 +9340,12 @@
    ],
    "existingQuestionIds": [
     "CM001-Q01",
-    "CM001-Q02"
+    "CM001-Q02",
+    "CM001-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9360,13 +9361,12 @@
    ],
    "existingQuestionIds": [
     "CM001-Q01",
-    "CM001-Q02"
+    "CM001-Q02",
+    "CM001-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9382,13 +9382,12 @@
    ],
    "existingQuestionIds": [
     "CM001-Q01",
-    "CM001-Q02"
+    "CM001-Q02",
+    "CM001-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9404,13 +9403,12 @@
    ],
    "existingQuestionIds": [
     "CM003-Q01",
-    "CM003-Q02"
+    "CM003-Q02",
+    "CM003-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9426,13 +9424,12 @@
    ],
    "existingQuestionIds": [
     "CM003-Q01",
-    "CM003-Q02"
+    "CM003-Q02",
+    "CM003-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9448,13 +9445,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9470,13 +9468,12 @@
    ],
    "existingQuestionIds": [
     "CM003-Q01",
-    "CM003-Q02"
+    "CM003-Q02",
+    "CM003-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9492,13 +9489,13 @@
    ],
    "existingQuestionIds": [
     "CM002-Q01",
-    "CM002-Q02"
+    "CM002-Q02",
+    "CM002-Q03",
+    "CM002-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9514,13 +9511,13 @@
    ],
    "existingQuestionIds": [
     "CM002-Q01",
-    "CM002-Q02"
+    "CM002-Q02",
+    "CM002-Q03",
+    "CM002-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9536,13 +9533,13 @@
    ],
    "existingQuestionIds": [
     "CM002-Q01",
-    "CM002-Q02"
+    "CM002-Q02",
+    "CM002-Q03",
+    "CM002-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9558,13 +9555,13 @@
    ],
    "existingQuestionIds": [
     "CM004-Q01",
-    "CM004-Q02"
+    "CM004-Q02",
+    "CM004-Q03",
+    "CM004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9580,13 +9577,13 @@
    ],
    "existingQuestionIds": [
     "CM004-Q01",
-    "CM004-Q02"
+    "CM004-Q02",
+    "CM004-Q03",
+    "CM004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9602,13 +9599,13 @@
    ],
    "existingQuestionIds": [
     "CM004-Q01",
-    "CM004-Q02"
+    "CM004-Q02",
+    "CM004-Q03",
+    "CM004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9624,13 +9621,13 @@
    ],
    "existingQuestionIds": [
     "CM004-Q01",
-    "CM004-Q02"
+    "CM004-Q02",
+    "CM004-Q03",
+    "CM004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9646,13 +9643,13 @@
    ],
    "existingQuestionIds": [
     "CM004-Q01",
-    "CM004-Q02"
+    "CM004-Q02",
+    "CM004-Q03",
+    "CM004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9668,13 +9665,13 @@
    ],
    "existingQuestionIds": [
     "CM004-Q01",
-    "CM004-Q02"
+    "CM004-Q02",
+    "CM004-Q03",
+    "CM004-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9690,13 +9687,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9712,13 +9710,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9734,13 +9733,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9756,13 +9756,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9778,13 +9779,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9800,13 +9802,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9822,13 +9825,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9844,13 +9848,14 @@
    ],
    "existingQuestionIds": [
     "CM005-Q01",
-    "CM005-Q02"
+    "CM005-Q02",
+    "CM005-Q03",
+    "CM005-Q04",
+    "CM005-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -9882,15 +9887,19 @@
    "packId": "CM",
    "parentChapter": "제조간접원가 배부",
    "scopeTitle": "실제배부",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM043"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM043-Q01",
+    "CM043-Q02",
+    "CM043-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0454",
@@ -9983,15 +9992,19 @@
    "packId": "CM",
    "parentChapter": "제조간접원가 배부",
    "scopeTitle": "실제원가계산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM042"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM042-Q01",
+    "CM042-Q02",
+    "CM042-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0459",
@@ -10026,13 +10039,13 @@
    ],
    "existingQuestionIds": [
     "CM011-Q01",
-    "CM011-Q02"
+    "CM011-Q02",
+    "CM011-Q03",
+    "CM011-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10048,13 +10061,13 @@
    ],
    "existingQuestionIds": [
     "CM011-Q01",
-    "CM011-Q02"
+    "CM011-Q02",
+    "CM011-Q03",
+    "CM011-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10070,13 +10083,13 @@
    ],
    "existingQuestionIds": [
     "CM011-Q01",
-    "CM011-Q02"
+    "CM011-Q02",
+    "CM011-Q03",
+    "CM011-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10092,13 +10105,13 @@
    ],
    "existingQuestionIds": [
     "CM011-Q01",
-    "CM011-Q02"
+    "CM011-Q02",
+    "CM011-Q03",
+    "CM011-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10114,13 +10127,13 @@
    ],
    "existingQuestionIds": [
     "CM011-Q01",
-    "CM011-Q02"
+    "CM011-Q02",
+    "CM011-Q03",
+    "CM011-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10131,15 +10144,19 @@
    "packId": "CM",
    "parentChapter": "보조부문원가 배부",
    "scopeTitle": "배부기준",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM044"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM044-Q01",
+    "CM044-Q02",
+    "CM044-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0466",
@@ -10153,13 +10170,12 @@
    ],
    "existingQuestionIds": [
     "CM012-Q01",
-    "CM012-Q02"
+    "CM012-Q02",
+    "CM012-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10175,13 +10191,12 @@
    ],
    "existingQuestionIds": [
     "CM012-Q01",
-    "CM012-Q02"
+    "CM012-Q02",
+    "CM012-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10260,13 +10275,13 @@
    ],
    "existingQuestionIds": [
     "CM014-Q01",
-    "CM014-Q02"
+    "CM014-Q02",
+    "CM014-Q03",
+    "CM014-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10277,15 +10292,19 @@
    "packId": "CM",
    "parentChapter": "원가계산방법",
    "scopeTitle": "재작업",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM045"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM045-Q01",
+    "CM045-Q02",
+    "CM045-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0473",
@@ -10299,13 +10318,13 @@
    ],
    "existingQuestionIds": [
     "CM014-Q01",
-    "CM014-Q02"
+    "CM014-Q02",
+    "CM014-Q03",
+    "CM014-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10321,13 +10340,13 @@
    ],
    "existingQuestionIds": [
     "CM015-Q01",
-    "CM015-Q02"
+    "CM015-Q02",
+    "CM015-Q03",
+    "CM015-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10343,13 +10362,13 @@
    ],
    "existingQuestionIds": [
     "CM015-Q01",
-    "CM015-Q02"
+    "CM015-Q02",
+    "CM015-Q03",
+    "CM015-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10365,13 +10384,13 @@
    ],
    "existingQuestionIds": [
     "CM015-Q01",
-    "CM015-Q02"
+    "CM015-Q02",
+    "CM015-Q03",
+    "CM015-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10387,13 +10406,12 @@
    ],
    "existingQuestionIds": [
     "CM016-Q01",
-    "CM016-Q02"
+    "CM016-Q02",
+    "CM016-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10404,15 +10422,19 @@
    "packId": "CM",
    "parentChapter": "원가계산방법",
    "scopeTitle": "혼합원가계산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM046"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM046-Q01",
+    "CM046-Q02",
+    "CM046-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0479",
@@ -10447,13 +10469,12 @@
    ],
    "existingQuestionIds": [
     "CM017-Q01",
-    "CM017-Q02"
+    "CM017-Q02",
+    "CM017-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10469,13 +10490,12 @@
    ],
    "existingQuestionIds": [
     "CM017-Q01",
-    "CM017-Q02"
+    "CM017-Q02",
+    "CM017-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10486,15 +10506,20 @@
    "packId": "CM",
    "parentChapter": "원가행태 및 원가추정",
    "scopeTitle": "혼합원가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM002"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM002-Q01",
+    "CM002-Q02",
+    "CM002-Q03",
+    "CM002-Q04"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0483",
@@ -10508,13 +10533,13 @@
    ],
    "existingQuestionIds": [
     "CM019-Q01",
-    "CM019-Q02"
+    "CM019-Q02",
+    "CM019-Q03",
+    "CM019-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10530,13 +10555,13 @@
    ],
    "existingQuestionIds": [
     "CM019-Q01",
-    "CM019-Q02"
+    "CM019-Q02",
+    "CM019-Q03",
+    "CM019-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10547,15 +10572,19 @@
    "packId": "CM",
    "parentChapter": "원가행태 및 원가추정",
    "scopeTitle": "원가함수",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM041"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM041-Q01",
+    "CM041-Q02",
+    "CM041-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0486",
@@ -10569,13 +10598,13 @@
    ],
    "existingQuestionIds": [
     "CM002-Q01",
-    "CM002-Q02"
+    "CM002-Q02",
+    "CM002-Q03",
+    "CM002-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10654,13 +10683,12 @@
    ],
    "existingQuestionIds": [
     "CM021-Q01",
-    "CM021-Q02"
+    "CM021-Q02",
+    "CM021-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10671,15 +10699,19 @@
    "packId": "CM",
    "parentChapter": "CVP 분석",
    "scopeTitle": "목표이익 매출액",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM047"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM047-Q01",
+    "CM047-Q02",
+    "CM047-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0492",
@@ -10693,13 +10725,12 @@
    ],
    "existingQuestionIds": [
     "CM021-Q01",
-    "CM021-Q02"
+    "CM021-Q02",
+    "CM021-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10715,13 +10746,12 @@
    ],
    "existingQuestionIds": [
     "CM022-Q01",
-    "CM022-Q02"
+    "CM022-Q02",
+    "CM022-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10737,13 +10767,12 @@
    ],
    "existingQuestionIds": [
     "CM023-Q01",
-    "CM023-Q02"
+    "CM023-Q02",
+    "CM023-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10759,13 +10788,12 @@
    ],
    "existingQuestionIds": [
     "CM021-Q01",
-    "CM021-Q02"
+    "CM021-Q02",
+    "CM021-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10781,13 +10809,13 @@
    ],
    "existingQuestionIds": [
     "CM025-Q01",
-    "CM025-Q02"
+    "CM025-Q02",
+    "CM025-Q03",
+    "CM025-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10803,13 +10831,12 @@
    ],
    "existingQuestionIds": [
     "CM024-Q01",
-    "CM024-Q02"
+    "CM024-Q02",
+    "CM024-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10825,13 +10852,12 @@
    ],
    "existingQuestionIds": [
     "CM024-Q01",
-    "CM024-Q02"
+    "CM024-Q02",
+    "CM024-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10847,13 +10873,13 @@
    ],
    "existingQuestionIds": [
     "CM025-Q01",
-    "CM025-Q02"
+    "CM025-Q02",
+    "CM025-Q03",
+    "CM025-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10869,13 +10895,13 @@
    ],
    "existingQuestionIds": [
     "CM025-Q01",
-    "CM025-Q02"
+    "CM025-Q02",
+    "CM025-Q03",
+    "CM025-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10891,13 +10917,13 @@
    ],
    "existingQuestionIds": [
     "CM025-Q01",
-    "CM025-Q02"
+    "CM025-Q02",
+    "CM025-Q03",
+    "CM025-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10913,13 +10939,13 @@
    ],
    "existingQuestionIds": [
     "CM025-Q01",
-    "CM025-Q02"
+    "CM025-Q02",
+    "CM025-Q03",
+    "CM025-Q04"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -10930,15 +10956,19 @@
    "packId": "CM",
    "parentChapter": "관련원가 의사결정",
    "scopeTitle": "관련수익",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM048"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM048-Q01",
+    "CM048-Q02",
+    "CM048-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0504",
@@ -11010,15 +11040,19 @@
    "packId": "CM",
    "parentChapter": "계획 및 통제",
    "scopeTitle": "직접재료예산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM049"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM049-Q01",
+    "CM049-Q02",
+    "CM049-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0508",
@@ -11027,15 +11061,19 @@
    "packId": "CM",
    "parentChapter": "계획 및 통제",
    "scopeTitle": "직접노무예산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM050"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM050-Q01",
+    "CM050-Q02",
+    "CM050-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0509",
@@ -11044,15 +11082,19 @@
    "packId": "CM",
    "parentChapter": "계획 및 통제",
    "scopeTitle": "제조간접원가예산",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM051"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM051-Q01",
+    "CM051-Q02",
+    "CM051-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0510",
@@ -11208,15 +11250,19 @@
    "packId": "CM",
    "parentChapter": "계획 및 통제",
    "scopeTitle": "제조간접원가차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM052"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM052-Q01",
+    "CM052-Q02",
+    "CM052-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0518",
@@ -11225,15 +11271,19 @@
    "packId": "CM",
    "parentChapter": "계획 및 통제",
    "scopeTitle": "공헌이익차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM053"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM053-Q01",
+    "CM053-Q02",
+    "CM053-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0519",
@@ -11242,15 +11292,19 @@
    "packId": "CM",
    "parentChapter": "계획 및 통제",
    "scopeTitle": "판매가격차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM054"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM054-Q01",
+    "CM054-Q02",
+    "CM054-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0520",
@@ -11259,15 +11313,19 @@
    "packId": "CM",
    "parentChapter": "계획 및 통제",
    "scopeTitle": "판매수량차이",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM055"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM055-Q01",
+    "CM055-Q02",
+    "CM055-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0521",
@@ -11449,13 +11507,12 @@
    ],
    "existingQuestionIds": [
     "CM032-Q01",
-    "CM032-Q02"
+    "CM032-Q02",
+    "CM032-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11471,13 +11528,14 @@
    ],
    "existingQuestionIds": [
     "CM033-Q01",
-    "CM033-Q02"
+    "CM033-Q02",
+    "CM033-Q03",
+    "CM033-Q04",
+    "CM033-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11493,13 +11551,14 @@
    ],
    "existingQuestionIds": [
     "CM033-Q01",
-    "CM033-Q02"
+    "CM033-Q02",
+    "CM033-Q03",
+    "CM033-Q04",
+    "CM033-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11515,13 +11574,14 @@
    ],
    "existingQuestionIds": [
     "CM033-Q01",
-    "CM033-Q02"
+    "CM033-Q02",
+    "CM033-Q03",
+    "CM033-Q04",
+    "CM033-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11537,13 +11597,14 @@
    ],
    "existingQuestionIds": [
     "CM033-Q01",
-    "CM033-Q02"
+    "CM033-Q02",
+    "CM033-Q03",
+    "CM033-Q04",
+    "CM033-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11554,15 +11615,19 @@
    "packId": "CM",
    "parentChapter": "성과평가",
    "scopeTitle": "고객수익성",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM056"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM056-Q01",
+    "CM056-Q02",
+    "CM056-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0535",
@@ -11571,15 +11636,19 @@
    "packId": "CM",
    "parentChapter": "성과평가",
    "scopeTitle": "수명주기원가",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM057"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM057-Q01",
+    "CM057-Q02",
+    "CM057-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0536",
@@ -11593,13 +11662,14 @@
    ],
    "existingQuestionIds": [
     "CM033-Q01",
-    "CM033-Q02"
+    "CM033-Q02",
+    "CM033-Q03",
+    "CM033-Q04",
+    "CM033-Q05"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11615,13 +11685,12 @@
    ],
    "existingQuestionIds": [
     "CM034-Q01",
-    "CM034-Q02"
+    "CM034-Q02",
+    "CM034-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11637,13 +11706,12 @@
    ],
    "existingQuestionIds": [
     "CM034-Q01",
-    "CM034-Q02"
+    "CM034-Q02",
+    "CM034-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11659,13 +11727,12 @@
    ],
    "existingQuestionIds": [
     "CM035-Q01",
-    "CM035-Q02"
+    "CM035-Q02",
+    "CM035-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11681,13 +11748,12 @@
    ],
    "existingQuestionIds": [
     "CM035-Q01",
-    "CM035-Q02"
+    "CM035-Q02",
+    "CM035-Q03"
    ],
-   "missingComponents": [
-    "활성 문항 2개(필요 3개)"
-   ],
-   "currentCoverageStatus": "IN_PROGRESS",
-   "gapType": "B",
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
    "storedCoveredFlag": true
   },
@@ -11698,15 +11764,19 @@
    "packId": "CM",
    "parentChapter": "성과평가",
    "scopeTitle": "지속가능성·환경회계",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM058"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM058-Q01",
+    "CM058-Q02",
+    "CM058-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-CM-0542",
@@ -11715,15 +11785,19 @@
    "packId": "CM",
    "parentChapter": "성과평가",
    "scopeTitle": "전략적 원가관리",
-   "existingConceptIds": [],
-   "existingQuestionIds": [],
-   "missingComponents": [
-    "개념·문항 없음"
+   "existingConceptIds": [
+    "CM059"
    ],
-   "currentCoverageStatus": "NOT_STARTED",
-   "gapType": "A",
+   "existingQuestionIds": [
+    "CM059-Q01",
+    "CM059-Q02",
+    "CM059-Q03"
+   ],
+   "missingComponents": [],
+   "currentCoverageStatus": "COMPLETE",
+   "gapType": null,
    "linkCandidates": [],
-   "storedCoveredFlag": false
+   "storedCoveredFlag": true
   },
   {
    "scopeNodeId": "CUR-GA-0543",
