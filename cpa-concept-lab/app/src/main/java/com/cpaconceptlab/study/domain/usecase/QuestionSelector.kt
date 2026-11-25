@@ -202,8 +202,14 @@ class QuestionSelector(private val random: Random = Random.Default) {
      * 영역 안에서는 개념 중복 없이 대단원 비중을 유지해 뽑는다(selectMock).
      * 영역 문항이 배정보다 적으면 있는 만큼만 출제한다(부족분을 다른 영역으로 채우지 않아 비중이 왜곡되지 않게 함).
      */
-    fun selectWeighted(candidates: List<QuestionEntity>, areaQuota: Map<String, Int>): List<QuestionEntity> =
-        areaQuota.flatMap { (area, n) -> selectMock(candidates.filter { it.examArea == area }, n) }
+    /** 영역별 할당량만큼 뽑되, 여러 영역에 문항이 걸친 개념(종합 개념 등)이 두 영역에서 중복 출제되지 않게 한다. */
+    fun selectWeighted(candidates: List<QuestionEntity>, areaQuota: Map<String, Int>): List<QuestionEntity> {
+        val usedConcepts = mutableSetOf<String>()
+        return areaQuota.flatMap { (area, n) ->
+            selectMock(candidates.filter { it.examArea == area && it.primaryConceptId !in usedConcepts }, n)
+                .also { picked -> usedConcepts += picked.map { it.primaryConceptId } }
+        }
+    }
 
     private fun selectMock(candidates: List<QuestionEntity>, size: Int): List<QuestionEntity> {
         if (candidates.isEmpty() || size <= 0) return emptyList()

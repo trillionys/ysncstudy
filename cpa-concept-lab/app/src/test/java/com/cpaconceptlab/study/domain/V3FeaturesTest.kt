@@ -150,7 +150,9 @@ class V3FeaturesTest {
         val recent = QuizViewModel.candidatesFor(QuizScope(ScopeType.RECENT), content, user, 0)
         assertTrue(recent.isNotEmpty() && recent.all { it.subjectId in setOf("IA", "AA", "CM", "GA", "FM", "HR", "EC", "TX") })
         val v3 = content.questions.filter { it.chapterId in newChapters }
-        assertTrue(v3.isNotEmpty() && v3.all { it.contentVersion == 3 })
+        // v8 에서 같은 대단원 개념에 보강한 문항은 contentVersion 8(1.0.8 출시본 이후 새 ID), 그 외는 v3 그대로
+        assertTrue(v3.isNotEmpty() && v3.all { it.contentVersion == 3 || it.contentVersion == 8 })
+        assertTrue(v3.count { it.contentVersion == 3 } > v3.count { it.contentVersion == 8 })
     }
 
     @Test fun partStatsCoverInventoryPpeAndBorrowingCosts() {

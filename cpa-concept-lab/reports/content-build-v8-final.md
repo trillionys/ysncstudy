@@ -85,7 +85,16 @@
   - `ContentCoverageTest.everyCurriculumItemComplete`
   - FormulaVerificationTest v8 손계산 3종
 
-## 7. 확인하지 못한 것
+## 7. 테스트·빌드
+
+- `./gradlew testDebugUnitTest`: 123개 전부 통과.
+  - 첫 실행에서는 기존 테스트 2개가 실패했습니다.
+  - (1) 실전 비중 모의고사가 같은 개념을 두 번 뽑을 수 있는 기존 선택기 결함이 드러났습니다. 종합 개념 LI001·LI004·LI007·LI008은 문항이 두 영역에 걸쳐 있는데, 영역별로 따로 뽑았기 때문입니다. `QuestionSelector.selectWeighted` 가 앞 영역에서 뽑은 개념을 제외하도록 고쳤습니다.
+  - (2) v3 대단원 문항이 모두 contentVersion 3이라는 테스트 가정이 깨졌습니다. 같은 대단원에 v8 보강 문항(8)이 추가되었기 때문이며, 테스트 기대값을 고쳤습니다.
+- `./gradlew assembleDebug`: 성공. `dist/CPAConceptLab-1.0.9-debug.apk` (14.5MB, versionCode 10, 콘텐츠 v8)
+  - SHA-256 `f1881da55ee57615128ed2b631cbe4a1ac902138559039dced96e021c98b3f69`
+
+## 8. 확인하지 못한 것
 
 - 실기기·에뮬레이터 실행 테스트는 이 환경에 기기가 없어 하지 못했습니다. JVM 단위 테스트(Robolectric 포함)만 실행했습니다.
 - 회계학·경영학·경제원론 신규 콘텐츠의 공식 원문 대조는 하지 않았습니다. 앱에도 '공식 검증 완료'로 표시하지 않습니다.
